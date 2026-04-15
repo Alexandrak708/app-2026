@@ -79,6 +79,7 @@ function TabItem({
       transform: [
         { scale: withTiming(1 + progress * 0.2, ANIMATION_CONFIG) },
         { translateY: withTiming(-progress * 24, ANIMATION_CONFIG) },
+        { translateX: withTiming(progress * 6, ANIMATION_CONFIG) },
       ],
     };
   });
@@ -162,7 +163,7 @@ export function AnimatedTabBar({
   }, [state.index]);
 
   const animatedDomeStyle = useAnimatedStyle(() => {
-    const centerX = tabWidth * selectedIndex.value + tabWidth / 2;
+   const centerX = tabWidth * selectedIndex.value + tabWidth / 2;
 
     return {
       transform: [{ translateX: centerX }],

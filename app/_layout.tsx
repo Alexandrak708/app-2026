@@ -30,14 +30,13 @@ export default function RootLayout() {
     if (loading) return;
 
     const inTabsGroup = segments[0] === "(tabs)";
-  const inAuthScreen = segments[0] === undefined || segments[0] === "register";
-  
+  const inAuthScreen = segments[0] === undefined || segments[0] === "register" || segments[0] === "login";
+
     if (session && inAuthScreen) {
-      // User is signed in but on login/register → send them home
+
       router.replace("/(tabs)");
     } else if (!session && inTabsGroup) {
-      // User is signed out but inside tabs → kick them to sign in
-      router.replace("/");
+    router.replace("/login");
     }
   }, [session, loading, segments]);
 
@@ -51,7 +50,7 @@ export default function RootLayout() {
 
   return (
     <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="index" />
+      <Stack.Screen name="login" />
       <Stack.Screen name="register" />
       <Stack.Screen name="(tabs)" />
     </Stack>

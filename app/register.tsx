@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Platform, useWindowDimensions, ActivityIndicator, Alert } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityIndicator, Alert } from "react-native";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { supabase } from "../lib/supabase";
@@ -41,16 +41,48 @@ export default function Register() {
     }
 
     setLoading(true);
-    const { data, error } = await supabase.auth.signUp({ email, password });
-    setLoading(false);
 
-    if (error) {
-      Alert.alert("Грешка", error.message);
-      return;
+    try {
+      const { data, error } = await supabase.auth.signUp({ email, password });
+
+      if (error) {
+        setLoading(false);
+        Alert.alert("Грешка", error.message);
+        return;
+      }
+
+      // If session exists, navigation will be handled by auth listener
+      if (data.session) {
+        setLoading(false);
+        router.replace("/(tabs)");
+        return;
+      }
+
+      // If no session (email confirmation required), try to sign in directly
+      // This works if email confirmation is disabled in Supabase
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email,
+        password
+      });
+
+      setLoading(false);
+
+      if (signInError) {
+        // If sign in fails, it means email confirmation is required
+        Alert.alert(
+          "Успешна регистрация",
+          "Моля провери имейла си за потвърждение на акаунта.",
+          [{ text: "OK", onPress: () => router.replace("/") }]
+        );
+        return;
+      }
+
+      // Sign in successful, navigate to home
+      router.replace("/(tabs)");
+    } catch (err) {
+      setLoading(false);
+      Alert.alert("Грешка", "Възникна неочаквана грешка. Моля опитай отново.");
     }
-
-
-     router.replace("/(tabs)");
   };
 
   const formWidth = isDesktop ? 440 : "100%";
