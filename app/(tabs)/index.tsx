@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useState, useRef } from "react";
 import Animated, {useSharedValue,useAnimatedScrollHandler,useAnimatedStyle,interpolate,Extrapolation,SharedValue,withTiming,Easing,} 
 from "react-native-reanimated";
+import { useRouter } from "expo-router";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const CARD_WIDTH = SCREEN_WIDTH - 48;
@@ -249,6 +250,7 @@ function Dot({ index, scrollX }: { index: number; scrollX: SharedValue<number> }
 // ─── Main Screen ─────────────────────────────────────────────────
 export default function Index() {
   const scrollX = useSharedValue(0);
+  const router = useRouter();
 
   // Search + filter state
   const [searchText, setSearchText] = useState("");
@@ -594,9 +596,15 @@ export default function Index() {
         onScroll={scrollHandler}
         scrollEventThrottle={16}
       >
-        {filteredUniversities.map((item, index) => (
-          <UniversityCard key={item.id} item={item} index={index} scrollX={scrollX} />
-        ))}
+       {filteredUniversities.map((item, index) => (
+  <TouchableOpacity
+    key={item.id}
+    activeOpacity={0.92}
+   onPress={() => router.push(`/university/${item.id}` as any)}
+  >
+    <UniversityCard item={item} index={index} scrollX={scrollX} />
+  </TouchableOpacity>
+   ))}
       </AnimatedScrollView>
 
       {/* No results message */}
