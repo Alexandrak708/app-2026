@@ -14,6 +14,7 @@ import Animated, {
   useAnimatedStyle,
   withTiming,
   Easing,
+  SharedValue,
 } from "react-native-reanimated";
 import Svg, { Path } from "react-native-svg";
 import * as Haptics from "expo-haptics";
@@ -57,7 +58,7 @@ interface TabItemProps {
   isFocused: boolean;
   onPress: () => void;
   tabWidth: number;
-  selectedIndex: Animated.SharedValue<number>;
+  selectedIndex: SharedValue<number>;
 }
 
 function TabItem({
@@ -140,10 +141,7 @@ export function AnimatedTabBar({
   descriptors,
   navigation,
 }: BottomTabBarProps) {
-  const visibleRoutes = state.routes.filter((route) => {
-    const { options } = descriptors[route.key];
-    return options.href !== null;
-  });
+  const visibleRoutes = state.routes;
 
   const tabCount = visibleRoutes.length;
   const tabWidth = SCREEN_WIDTH / tabCount;

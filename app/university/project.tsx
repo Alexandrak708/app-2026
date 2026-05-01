@@ -3,165 +3,28 @@ import {
   Text,
   TouchableOpacity,
   ScrollView,
-  Dimensions,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
-
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
-
-// ─── Programs data per university ────────────────────────────────
-// Add or remove programs here whenever you need to update them
-const PROGRAMS: Record<string, { bachelor?: string[]; master?: string[] }> = {
-  "1": {
-    // Technical University
-    bachelor: [
-      "Automation, Information and Control Computer Systems (AICCS)",
-      "Automotive Engineering (AE)",
-      "Agronomy (A)",
-      "Renewable Energy Sources (RES)",
-      "Electric Power Engineering (EPE)",
-      "Electronics (E)",
-      "Ship Electrical Equipment (SEE)",
-      "Electric Power Supply and Electrical Equipment (EPSEE)",
-      "Electrical Engineering and Electrical Technologies (EEET)",
-      "Civil Protection in Disasters and Emergencies (CPDE)",
-      "Artificial Intelligence (AI)",
-      "Industrial Design (ID)",
-      "Industrial Management (IM)",
-      "Environmental (Ecological) Engineering (EE)",
-      "Intelligent Transport Systems (ITS)",
-      "Information and Communication Technologies (ICT)",
-      "Cybersecurity (CS)",
-      "Computerized Technologies in Mechanical Engineering (CTME)",
-      "Computer Systems and Technologies (CST)",
-      "Marine Engineering (Ship Machines and Mechanisms)",
-      "Navigation (Ship Maneuvering)",
-      "Naval Architecture and Marine Technology (NAMT)",
-      "Water Transport Logistics (WTL)",
-      "Mechanical Engineering and Technologies (MET)",
-      "Robotics and Mechatronics (RM)",
-      "Software and Internet Technologies (SIT)",
-      "Social Management (SM)",
-      "Construction Management (CM)",
-      "Technological Entrepreneurship and Innovation (TEI)",
-      "Heat Power Engineering and Investment Design (HPEID)",
-      "Transport Equipment and Technologies (TET)",
-    ],
-    master: [
-      "Data Analysis and Network Technologies (DANT)",
-      "Health and Safety at Work (HSW)",
-      "Renewable Energy Sources (RES)",
-      "Internal Combustion Engines and Automotive Engineering (ICEAE – Post-Professional Bachelor track)",
-      "Operation of Fleet and Ports (OFP)",
-      "Electric Power Systems (EPS)",
-      "Electronics (E)",
-      "Ship Electrical Equipment (SEE)",
-      "Electric Power Supply and Electrical Equipment in Water Transport (EPSEEWT)",
-      "Electric Power Supply and Electrical Equipment in Industry (EPSEEI)",
-      "Electrical Engineering (EE)",
-      "Industrial Design (ID)",
-      "Industrial Management (IM)",
-      "Environmental Engineering (EE)",
-      "Smart Cities",
-      "Cybersecurity (CS)",
-      "Computerized Technologies in Mechanical Engineering (CTME)",
-      "Computer Networks and Communications (CNC)",
-      "Marine Engineering (Ship Machines and Mechanisms)",
-      "Navigation",
-      "Naval Architecture and Marine Technology (NAMT)",
-      "Corporate Management (CM)",
-      "Water Transport Logistics (WTL)",
-      "Mechanical Engineering and Technologies (MET)",
-      "Design of Renewable Energy Facilities (DREF)",
-      "Seed Production and Plant Protection (SPPP)",
-      "Building Automation Systems (BAS)",
-      "Artificial Intelligence Systems (AIS)",
-      "Software Engineering (SE)",
-      "Social Management (SM)",
-      "Social Work with Individuals with Deviant Behavior (SWIDB)",
-      "Social Work with Children (SWC)",
-      "Social Entrepreneurship (SE)",
-      "Modern Systems in Agriculture (MSA)",
-      "Modern Technologies in Agriculture (MTA)",
-      "Telecommunications and Mobile Technologies (TMT)",
-      "Materials Processing Equipment and Technologies (MPET)",
-      "Technical and Insurance Expertise in Transport (TIET)",
-      "Heat Engineering and Renewable Energy Sources (HERES)",
-      "Transport Equipment and Technologies (TET)",
-      "Chemical Engineering (CE)",
-      "Siemens PLC Control Technologies (SIEMENS)",
-    ],
-  },
-  "2": {
-    // Medical University
-    bachelor: [
-      "Medicine",
-      "Dental Medicine",
-      "Pharmacy",
-      "Nursing",
-      "Midwifery",
-    ],
-    master: [
-      "Public Health",
-      "Health Management",
-      "Clinical Pharmacy",
-    ],
-  },
-  "3": {
-    // Economics University
-    bachelor: [
-      "Economics",
-      "Finance",
-      "Accounting",
-      "Marketing",
-      "International Business",
-    ],
-  },
-  "4": {
-    // Naval University
-    bachelor: [
-      "Navigation",
-      "Marine Engineering",
-      "Naval Architecture",
-      "Port Management",
-    ],
-  },
-  "5": {
-    // Free University
-    master: [
-      "Business Administration",
-      "International Relations",
-      "Public Administration",
-      "European Studies",
-    ],
-  },
-  "6": {
-    // University of Management
-    master: [
-      "Tourism Management",
-      "Hotel Management",
-      "Event Management",
-      "Digital Marketing",
-    ],
-  },
-};
-
-// ─── University names for the header ─────────────────────────────
-const UNIVERSITY_NAMES: Record<string, string> = {
-  "1": "Technical University",
-  "2": "Medical University",
-  "3": "Economics University",
-  "4": "Naval University",
-  "5": "Free University",
-  "6": "University of Management",
-};
+import {
+  getProgramSummaries,
+  getUniversityName,
+} from "./university-programs";
 
 // ─── Single program row ───────────────────────────────────────────
-function ProgramRow({ name, index }: { name: string; index: number }) {
+function ProgramRow({
+  name,
+  index,
+  onPress,
+}: {
+  name: string;
+  index: number;
+  onPress: () => void;
+}) {
   return (
-    <View
+    <TouchableOpacity
+      onPress={onPress}
       style={{
         flexDirection: "row",
         alignItems: "center",
@@ -196,16 +59,24 @@ function ProgramRow({ name, index }: { name: string; index: number }) {
         {name}
       </Text>
       <Ionicons name="chevron-forward" size={16} color="#cbd5e1" />
-    </View>
+    </TouchableOpacity>
   );
 }
 
 // ─── Main Page ────────────────────────────────────────────────────
 export default function ProgramsPage() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+  const { id } = useLocalSearchParams<{ id?: string | string[] }>();
   const router = useRouter();
 
-  const programs = PROGRAMS[id] ?? {};
+  const universityId = Array.isArray(id) ? id[0] : id;
+  const activeUniversityId = universityId ?? "";
+
+  const bachelorPrograms = getProgramSummaries(activeUniversityId, "bachelor");
+  const masterPrograms = getProgramSummaries(activeUniversityId, "master");
+  const programs = {
+    bachelor: bachelorPrograms,
+    master: masterPrograms,
+  };
   const hasBachelor = !!programs.bachelor && programs.bachelor.length > 0;
   const hasMaster = !!programs.master && programs.master.length > 0;
 
@@ -214,9 +85,23 @@ export default function ProgramsPage() {
     hasBachelor ? "bachelor" : "master"
   );
 
-  const universityName = UNIVERSITY_NAMES[id] ?? "University";
-  const currentPrograms =
-    activeTab === "bachelor" ? programs.bachelor ?? [] : programs.master ?? [];
+  const universityName = getUniversityName(activeUniversityId);
+  const currentPrograms = activeTab === "bachelor" ? programs.bachelor ?? [] : programs.master ?? [];
+
+  const openProgram = (programSlug: string) => {
+    if (!activeUniversityId) {
+      return;
+    }
+
+    router.push({
+      pathname: "/university/program/[programId]",
+      params: {
+        universityId: activeUniversityId,
+        level: activeTab,
+        programId: programSlug,
+      },
+    });
+  };
 
   return (
     <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
@@ -327,7 +212,12 @@ export default function ProgramsPage() {
         showsVerticalScrollIndicator={false}
       >
         {currentPrograms.map((program, index) => (
-          <ProgramRow key={program} name={program} index={index} />
+          <ProgramRow
+            key={program.slug}
+            name={program.title}
+            index={index}
+            onPress={() => openProgram(program.slug)}
+          />
         ))}
 
         {currentPrograms.length === 0 && (

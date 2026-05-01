@@ -242,13 +242,23 @@ function Dot({ index, scrollX }: { index: number; scrollX: SharedValue<number> }
       (index + 1) * (CARD_WIDTH + 16),
     ];
     const width = interpolate(scrollX.value, inputRange, [8, 24, 8], Extrapolation.CLAMP);
-    const opacity = interpolate(scrollX.value, inputRange, [0.5, 1, 0.5], Extrapolation.CLAMP);
+    const opacity = interpolate(scrollX.value, inputRange, [0.45, 1, 0.45], Extrapolation.CLAMP);
     return { width, opacity };
   });
 
   return (
     <Animated.View
-      style={[{ height: 8, borderRadius: 4, backgroundColor: "#334155" }, animatedDotStyle]}
+      style={[
+        {
+          height: 8,
+          borderRadius: 999,
+          backgroundColor: "#0f172a",
+          borderWidth: 1,
+          borderColor: "rgba(15, 23, 42, 0.12)",
+          marginHorizontal: 3,
+        },
+        animatedDotStyle,
+      ]}
     />
   );
 }
@@ -346,12 +356,7 @@ export default function Index() {
 
       {/* Header */}
       <View style={{ paddingTop: 60, paddingHorizontal: 24, paddingBottom: 12 }}>
-        <Text style={{ fontSize: 13, color: "#94a3b8", fontWeight: "600", letterSpacing: 1 }}>
-          DISCOVER
-        </Text>
-        <Text style={{ fontSize: 28, fontWeight: "800", color: "#0f172a", marginTop: 4 }}>
-          Universities
-        </Text>
+
       </View>
 
       {/* ── Search Bar + Filter Panel ── */}
@@ -592,6 +597,11 @@ export default function Index() {
         </Animated.View>
       </View>
 
+            {/* Recommended label */}
+           <Text style={{ fontSize: 18, fontWeight: "800", color: "#0f172a", paddingHorizontal: 24, marginBottom: 12 }}>
+          Recommended
+             </Text>
+
       {/* ── Carousel ── */}
       <AnimatedScrollView
         horizontal
@@ -630,16 +640,23 @@ export default function Index() {
       {filteredUniversities.length > 0 && (
         <View
           style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: 6,
-            marginTop: 16,
-            paddingVertical: 8,
-            paddingHorizontal: 16,
-            backgroundColor: "rgba(0,0,0,0.1)",
             alignSelf: "center",
-            borderRadius: 20,
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: 18,
+            marginBottom: 12,
+            paddingHorizontal: 12,
+            paddingVertical: 8,
+            borderRadius: 999,
+            backgroundColor: "rgba(255,255,255,0.78)",
+            borderWidth: 1,
+            borderColor: "rgba(15,23,42,0.08)",
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 4 },
+            shadowOpacity: 0.06,
+            shadowRadius: 10,
+            elevation: 3,
           }}
         >
           {filteredUniversities.map((_, index) => (
