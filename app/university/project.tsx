@@ -7,12 +7,12 @@ import {
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
+import { useTranslation } from "react-i18next"; // 👈 ADDED
 import {
   getProgramSummaries,
   getUniversityName,
 } from "./university-programs";
 
-// ─── Single program row ───────────────────────────────────────────
 function ProgramRow({
   name,
   index,
@@ -63,10 +63,10 @@ function ProgramRow({
   );
 }
 
-// ─── Main Page ────────────────────────────────────────────────────
 export default function ProgramsPage() {
   const { id } = useLocalSearchParams<{ id?: string | string[] }>();
   const router = useRouter();
+  const { t } = useTranslation(); // 👈 ADDED
 
   const universityId = Array.isArray(id) ? id[0] : id;
   const activeUniversityId = universityId ?? "";
@@ -80,7 +80,6 @@ export default function ProgramsPage() {
   const hasBachelor = !!programs.bachelor && programs.bachelor.length > 0;
   const hasMaster = !!programs.master && programs.master.length > 0;
 
-  // Default to whichever tab exists
   const [activeTab, setActiveTab] = useState<"bachelor" | "master">(
     hasBachelor ? "bachelor" : "master"
   );
@@ -89,10 +88,7 @@ export default function ProgramsPage() {
   const currentPrograms = activeTab === "bachelor" ? programs.bachelor ?? [] : programs.master ?? [];
 
   const openProgram = (programSlug: string) => {
-    if (!activeUniversityId) {
-      return;
-    }
-
+    if (!activeUniversityId) return;
     router.push({
       pathname: "/university/program/[programId]",
       params: {
@@ -106,10 +102,8 @@ export default function ProgramsPage() {
   return (
     <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
 
-      {/* ── Header ── */}
+      {/* Header */}
       <View style={{ paddingTop: 56, paddingHorizontal: 24, paddingBottom: 16 }}>
-
-        {/* Back button */}
         <TouchableOpacity
           onPress={() => router.back()}
           style={{
@@ -127,14 +121,14 @@ export default function ProgramsPage() {
         </TouchableOpacity>
 
         <Text style={{ fontSize: 13, color: "#94a3b8", fontWeight: "600", letterSpacing: 1 }}>
-          EXPLORE
+          {t("programs.explore")} {/* 👈 CHANGED */}
         </Text>
         <Text style={{ fontSize: 26, fontWeight: "800", color: "#0f172a", marginTop: 4 }}>
-          Programs
+          {t("programs.title")} {/* 👈 CHANGED */}
         </Text>
       </View>
 
-      {/* ── Tab Buttons ── */}
+      {/* Tab Buttons */}
       <View
         style={{
           flexDirection: "row",
@@ -156,14 +150,8 @@ export default function ProgramsPage() {
               backgroundColor: activeTab === "bachelor" ? "#0f172a" : "transparent",
             }}
           >
-            <Text
-              style={{
-                fontSize: 14,
-                fontWeight: "700",
-                color: activeTab === "bachelor" ? "#ffffff" : "#64748b",
-              }}
-            >
-              Bachelor
+            <Text style={{ fontSize: 14, fontWeight: "700", color: activeTab === "bachelor" ? "#ffffff" : "#64748b" }}>
+              {t("degrees.Bachelor")} {/* 👈 CHANGED */}
             </Text>
           </TouchableOpacity>
         )}
@@ -179,34 +167,19 @@ export default function ProgramsPage() {
               backgroundColor: activeTab === "master" ? "#0f172a" : "transparent",
             }}
           >
-            <Text
-              style={{
-                fontSize: 14,
-                fontWeight: "700",
-                color: activeTab === "master" ? "#ffffff" : "#64748b",
-              }}
-            >
-              Master
+            <Text style={{ fontSize: 14, fontWeight: "700", color: activeTab === "master" ? "#ffffff" : "#64748b" }}>
+              {t("degrees.Master")} {/* 👈 CHANGED */}
             </Text>
           </TouchableOpacity>
         )}
       </View>
 
-      {/* ── Program count ── */}
-      <Text
-        style={{
-          fontSize: 12,
-          color: "#94a3b8",
-          fontWeight: "600",
-          letterSpacing: 0.5,
-          marginHorizontal: 24,
-          marginBottom: 12,
-        }}
-      >
-        {currentPrograms.length} {currentPrograms.length === 1 ? "PROGRAM" : "PROGRAMS"} AVAILABLE
+      {/* Program count */}
+      <Text style={{ fontSize: 12, color: "#94a3b8", fontWeight: "600", letterSpacing: 0.5, marginHorizontal: 24, marginBottom: 12 }}>
+        {t("programs.available", { count: currentPrograms.length })} {/* 👈 CHANGED */}
       </Text>
 
-      {/* ── Programs List ── */}
+      {/* Programs List */}
       <ScrollView
         contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 40 }}
         showsVerticalScrollIndicator={false}
@@ -224,7 +197,7 @@ export default function ProgramsPage() {
           <View style={{ alignItems: "center", marginTop: 60 }}>
             <Ionicons name="school-outline" size={40} color="#cbd5e1" />
             <Text style={{ color: "#94a3b8", fontSize: 15, fontWeight: "600", marginTop: 12 }}>
-              No programs available
+              {t("programs.noneAvailable")} {/* 👈 CHANGED */}
             </Text>
           </View>
         )}

@@ -1,0 +1,83 @@
+{
+  "search": {
+    "placeholder": "Search universities...",
+    "noResults": "No universities found",
+    "tryDifferent": "Try different search terms or filters",
+    "found_one": "{{count}} university found",
+    "found_other": "{{count}} universities found",
+    "clearAll": "Clear all"
+  },
+  "filters": {
+    "location":"Location",
+    "degree": "DEGREE",
+    "scholarship": "SCHOLARSHIP",
+    "category": "CATEGORY",
+    "country": "COUNTRY",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "home": {
+    "recommended": "Recommended"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "logout": "Log Out"
+  },
+  "degrees": {
+    "Bachelor": "Bachelor",
+    "Master": "Master"
+  },
+  "categories": {
+    "Engineering": "Engineering",
+    "Medical": "Medical",
+    "Economics": "Economics",
+    "Business": "Business"
+  },
+  "tabs": {
+  "favourites": "Favourites",
+  "home": "Home",
+  "settings": "Settings"
+},
+"university": {
+  "notFound": "University not found",
+  "goBack": "Go back",
+  "about": "About",
+  "readMore": "Read more",
+  "showLess": "Show less",
+  "quickInfo": "Quick Info",
+  "programs": "Programs",
+  "viewMore": "View more",
+  "website": "Website",
+  "applyNow": "Apply Now",
+  "scholarshipAvailable": "Scholarship available",
+  "noScholarship": "No scholarship",
+  "available": "Available",
+  "notAvailable": "Not available",
+  "location": "Location"
+},
+"programs": {
+  "explore": "EXPLORE",
+  "title": "Programs",
+  "available_one": "{{count}} PROGRAM AVAILABLE",
+  "available_other": "{{count}} PROGRAMS AVAILABLE",
+  "noneAvailable": "No programs available"
+},
+"programDetail": {
+  "notFound": "Program not found",
+  "notFoundDesc": "The university or program link did not match any saved data.",
+  "backToPrograms": "Back to programs",
+  "returnToPrograms": "Return to programs",
+  "label": "PROGRAM DETAIL",
+  "overview": "Overview",
+  "snapshot": "Program Snapshot",
+  "university": "University",
+  "level": "Level",
+  "duration": "Duration",
+  "studyMode": "Study mode",
+  "keyFocus": "Key Focus",
+  "highlights": "Highlights",
+  "careers": "Career Paths",
+  "admissionNotes": "Admission Notes"
+}
+}

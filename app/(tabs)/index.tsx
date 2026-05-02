@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { View,Text,Dimensions,ScrollView,ImageBackground,TouchableOpacity,TextInput,KeyboardAvoidingView,Platform,} 
 from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -97,12 +98,10 @@ const UNIVERSITIES = [
   },
 ];
 
-// ─── FILTER PANEL HEIGHT (adjust if you add more filter rows) ───
 const FILTER_PANEL_HEIGHT = 260;
 
 const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
 
-// ─── Star Rating ────────────────────────────────────────────────
 function StarRating({ rating }: { rating: number }) {
   return (
     <View style={{ flexDirection: "row", gap: 4 }}>
@@ -117,7 +116,6 @@ function StarRating({ rating }: { rating: number }) {
     </View>
   );
 }
-
 
 function FilterChip({
   label,
@@ -142,20 +140,13 @@ function FilterChip({
         borderColor: selected ? "#0f172a" : "#e2e8f0",
       }}
     >
-      <Text
-        style={{
-          color: selected ? "#ffffff" : "#475569",
-          fontSize: 13,
-          fontWeight: "600",
-        }}
-      >
+      <Text style={{ color: selected ? "#ffffff" : "#475569", fontSize: 13, fontWeight: "600" }}>
         {label}
       </Text>
     </TouchableOpacity>
   );
 }
 
-// ─── University Card ─────────────────────────────────────────────
 function UniversityCard({
   item,
   index,
@@ -194,10 +185,7 @@ function UniversityCard({
         <View
           style={{
             position: "absolute",
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0,
+            top: 0, bottom: 0, left: 0, right: 0,
             backgroundColor: "rgba(0,0,0,0.5)",
           }}
         />
@@ -233,7 +221,6 @@ function UniversityCard({
   );
 }
 
-// ─── Dot ─────────────────────────────────────────────────────────
 function Dot({ index, scrollX }: { index: number; scrollX: SharedValue<number> }) {
   const animatedDotStyle = useAnimatedStyle(() => {
     const inputRange = [
@@ -267,8 +254,8 @@ function Dot({ index, scrollX }: { index: number; scrollX: SharedValue<number> }
 export default function Index() {
   const scrollX = useSharedValue(0);
   const router = useRouter();
+  const { t } = useTranslation(); // 👈 ADDED
 
-  // Search + filter state
   const [searchText, setSearchText] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
@@ -279,7 +266,6 @@ export default function Index() {
 
   const inputRef = useRef<TextInput>(null);
 
-  // Animated height for the slide-down filter panel
   const filterHeight = useSharedValue(0);
 
   const filterPanelStyle = useAnimatedStyle(() => ({
@@ -319,7 +305,6 @@ export default function Index() {
     setSelectedCountry(null);
   };
 
-  // Filter + search logic
   const filteredUniversities = UNIVERSITIES.filter((u) => {
     if (searchText.trim()) {
       const q = searchText.toLowerCase();
@@ -338,37 +323,24 @@ export default function Index() {
       style={{ flex: 1, backgroundColor: "#f5f0e8" }}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
-      {/* Tap-away overlay to close filter panel */}
       {showFilters && (
         <TouchableOpacity
           onPress={closeFilters}
           activeOpacity={1}
-          style={{
-            position: "absolute",
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0,
-            zIndex: 5,
-          }}
+          style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0, zIndex: 5 }}
         />
       )}
 
-      {/* Header */}
-      <View style={{ paddingTop: 60, paddingHorizontal: 24, paddingBottom: 12 }}>
+      <View style={{ paddingTop: 60, paddingHorizontal: 24, paddingBottom: 12 }} />
 
-      </View>
-
-      {/* ── Search Bar + Filter Panel ── */}
+      {/* Search Bar + Filter Panel */}
       <View style={{ paddingHorizontal: 24, marginBottom: 16, zIndex: 10 }}>
-
-        {/* Search Bar row */}
         <View
           style={{
             flexDirection: "row",
             alignItems: "center",
             backgroundColor: "#ffffff",
-            borderRadius: showFilters ? 16 : 16,
+            borderRadius: 16,
             borderBottomLeftRadius: showFilters ? 0 : 16,
             borderBottomRightRadius: showFilters ? 0 : 16,
             paddingHorizontal: 14,
@@ -380,7 +352,6 @@ export default function Index() {
             elevation: 4,
           }}
         >
-          {/* Search icon */}
           <Ionicons
             name="search"
             size={18}
@@ -388,36 +359,32 @@ export default function Index() {
             style={{ marginRight: 10 }}
           />
 
-          {/* Text input */}
           <TextInput
             ref={inputRef}
             value={searchText}
             onChangeText={setSearchText}
             onFocus={() => setIsSearchFocused(true)}
             onBlur={() => setIsSearchFocused(false)}
-            placeholder="Search universities..."
+            placeholder={t("search.placeholder")} // 👈 CHANGED
             placeholderTextColor="#94a3b8"
             style={{
               flex: 1,
               fontSize: 14,
               fontWeight: "500",
               color: "#0f172a",
-              paddingVertical: 0, // removes extra Android padding
+              paddingVertical: 0,
             }}
             returnKeyType="search"
           />
 
-          {/* Clear text button */}
           {searchText.length > 0 && (
             <TouchableOpacity onPress={() => setSearchText("")} style={{ marginRight: 8 }}>
               <Ionicons name="close-circle" size={18} color="#94a3b8" />
             </TouchableOpacity>
           )}
 
-          {/* Divider */}
           <View style={{ width: 1, height: 20, backgroundColor: "#e2e8f0", marginRight: 10 }} />
 
-          {/* Filter toggle button */}
           <TouchableOpacity
             onPress={toggleFilters}
             style={{ flexDirection: "row", alignItems: "center", gap: 5 }}
@@ -447,7 +414,7 @@ export default function Index() {
           </TouchableOpacity>
         </View>
 
-        {/* ── Slide-down Filter Panel ── */}
+        {/* Slide-down Filter Panel */}
         <Animated.View
           style={[
             filterPanelStyle,
@@ -468,141 +435,95 @@ export default function Index() {
             showsVerticalScrollIndicator={false}
             keyboardShouldPersistTaps="handled"
           >
-          <View style={{ padding: 16, paddingTop: 12 }}>
+            <View style={{ padding: 16, paddingTop: 12 }}>
+              <View style={{ height: 1, backgroundColor: "#f1f5f9", marginBottom: 14 }} />
 
-            {/* Thin top divider inside panel */}
-            <View style={{ height: 1, backgroundColor: "#f1f5f9", marginBottom: 14 }} />
-
-            {/* Degree */}
-            <Text
-              style={{
-                fontSize: 11,
-                fontWeight: "700",
-                color: "#94a3b8",
-                letterSpacing: 1,
-                marginBottom: 8,
-              }}
-            >
-              DEGREE
-            </Text>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
-              {["Bachelor", "Master"].map((d) => (
-                <FilterChip
-                  key={d}
-                  label={d}
-                  selected={selectedDegree === d}
-                  onPress={() => setSelectedDegree(selectedDegree === d ? null : d)}
-                />
-              ))}
-            </View>
-
-            {/* Scholarship */}
-            <Text
-              style={{
-                fontSize: 11,
-                fontWeight: "700",
-                color: "#94a3b8",
-                letterSpacing: 1,
-                marginBottom: 8,
-              }}
-            >
-              SCHOLARSHIP
-            </Text>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
-              <FilterChip
-                label="Yes"
-                selected={selectedScholarship === true}
-                onPress={() =>
-                  setSelectedScholarship(selectedScholarship === true ? null : true)
-                }
-              />
-              <FilterChip
-                label="No"
-                selected={selectedScholarship === false}
-                onPress={() =>
-                  setSelectedScholarship(selectedScholarship === false ? null : false)
-                }
-              />
-            </View>
-
-            {/* Category */}
-            <Text
-              style={{
-                fontSize: 11,
-                fontWeight: "700",
-                color: "#94a3b8",
-                letterSpacing: 1,
-                marginBottom: 8,
-              }}
-            >
-              CATEGORY
-            </Text>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
-              {["Engineering", "Medical", "Economics", "Business"].map((c) => (
-                <FilterChip
-                  key={c}
-                  label={c}
-                  selected={selectedCategory === c}
-                  onPress={() => setSelectedCategory(selectedCategory === c ? null : c)}
-                />
-              ))}
-            </View>
-
-            {/* Country */}
-            <Text
-              style={{
-                fontSize: 11,
-                fontWeight: "700",
-                color: "#94a3b8",
-                letterSpacing: 1,
-                marginBottom: 8,
-              }}
-            >
-              COUNTRY
-            </Text>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 6 }}>
-              {["Bulgaria"].map((c) => (
-                <FilterChip
-                  key={c}
-                  label={c}
-                  selected={selectedCountry === c}
-                  onPress={() => setSelectedCountry(selectedCountry === c ? null : c)}
-                />
-              ))}
-            </View>
-
-            {/* Bottom row: results count + clear */}
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginTop: 4,
-              }}
-            >
-              <Text style={{ fontSize: 13, color: "#64748b", fontWeight: "500" }}>
-                {filteredUniversities.length}{" "}
-                {filteredUniversities.length === 1 ? "university" : "universities"} found
+              {/* Degree */}
+              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+                {t("filters.degree")} {/* 👈 CHANGED */}
               </Text>
-              {activeFiltersCount > 0 && (
-                <TouchableOpacity onPress={clearFilters}>
-                  <Text style={{ fontSize: 13, color: "#94a3b8", fontWeight: "600" }}>
-                    Clear all
-                  </Text>
-                </TouchableOpacity>
-              )}
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
+                {["Bachelor", "Master"].map((d) => (
+                  <FilterChip
+                    key={d}
+                    label={t(`degrees.${d}`)} // 👈 CHANGED
+                    selected={selectedDegree === d}
+                    onPress={() => setSelectedDegree(selectedDegree === d ? null : d)}
+                  />
+                ))}
+              </View>
+
+              {/* Scholarship */}
+              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+                {t("filters.scholarship")} {/* 👈 CHANGED */}
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
+                <FilterChip
+                  label={t("filters.yes")} // 👈 CHANGED
+                  selected={selectedScholarship === true}
+                  onPress={() => setSelectedScholarship(selectedScholarship === true ? null : true)}
+                />
+                <FilterChip
+                  label={t("filters.no")} // 👈 CHANGED
+                  selected={selectedScholarship === false}
+                  onPress={() => setSelectedScholarship(selectedScholarship === false ? null : false)}
+                />
+              </View>
+
+              {/* Category */}
+              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+                {t("filters.category")} {/* 👈 CHANGED */}
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
+                {["Engineering", "Medical", "Economics", "Business"].map((c) => (
+                  <FilterChip
+                    key={c}
+                    label={t(`categories.${c}`)} // 👈 CHANGED
+                    selected={selectedCategory === c}
+                    onPress={() => setSelectedCategory(selectedCategory === c ? null : c)}
+                  />
+                ))}
+              </View>
+
+              {/* Country */}
+              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+                {t("filters.country")} {/* 👈 CHANGED */}
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 6 }}>
+                {["Bulgaria"].map((c) => (
+                  <FilterChip
+                    key={c}
+                    label={c}
+                    selected={selectedCountry === c}
+                    onPress={() => setSelectedCountry(selectedCountry === c ? null : c)}
+                  />
+                ))}
+              </View>
+
+              {/* Results count + clear */}
+              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 4 }}>
+                <Text style={{ fontSize: 13, color: "#64748b", fontWeight: "500" }}>
+                  {t("search.found", { count: filteredUniversities.length })} {/* 👈 CHANGED */}
+                </Text>
+                {activeFiltersCount > 0 && (
+                  <TouchableOpacity onPress={clearFilters}>
+                    <Text style={{ fontSize: 13, color: "#94a3b8", fontWeight: "600" }}>
+                      {t("search.clearAll")} {/* 👈 CHANGED */}
+                    </Text>
+                  </TouchableOpacity>
+                )}
+              </View>
             </View>
-          </View>
           </ScrollView>
         </Animated.View>
       </View>
 
-            {/* Recommended label */}
-           <Text style={{ fontSize: 18, fontWeight: "800", color: "#0f172a", paddingHorizontal: 24, marginBottom: 12 }}>
-          Recommended
-             </Text>
+      {/* Recommended label */}
+      <Text style={{ fontSize: 18, fontWeight: "800", color: "#0f172a", paddingHorizontal: 24, marginBottom: 12 }}>
+        {t("home.recommended")} {/* 👈 CHANGED */}
+      </Text>
 
-      {/* ── Carousel ── */}
+      {/* Carousel */}
       <AnimatedScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -612,15 +533,15 @@ export default function Index() {
         onScroll={scrollHandler}
         scrollEventThrottle={16}
       >
-       {filteredUniversities.map((item, index) => (
-  <TouchableOpacity
-    key={item.id}
-    activeOpacity={0.92}
-   onPress={() => router.push(`/university/${item.id}` as any)}
-  >
-    <UniversityCard item={item} index={index} scrollX={scrollX} />
-  </TouchableOpacity>
-   ))}
+        {filteredUniversities.map((item, index) => (
+          <TouchableOpacity
+            key={item.id}
+            activeOpacity={0.92}
+            onPress={() => router.push(`/university/${item.id}` as any)}
+          >
+            <UniversityCard item={item} index={index} scrollX={scrollX} />
+          </TouchableOpacity>
+        ))}
       </AnimatedScrollView>
 
       {/* No results message */}
@@ -628,10 +549,10 @@ export default function Index() {
         <View style={{ alignItems: "center", marginTop: 32 }}>
           <Ionicons name="search-outline" size={40} color="#cbd5e1" />
           <Text style={{ color: "#94a3b8", fontSize: 15, fontWeight: "600", marginTop: 12 }}>
-            No universities found
+            {t("search.noResults")} {/* 👈 CHANGED */}
           </Text>
           <Text style={{ color: "#cbd5e1", fontSize: 13, marginTop: 4 }}>
-            Try different search terms or filters
+            {t("search.tryDifferent")} {/* 👈 CHANGED */}
           </Text>
         </View>
       )}

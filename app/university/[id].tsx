@@ -9,10 +9,10 @@ import {
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
+import { useTranslation } from "react-i18next"; // 👈 ADDED
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
-// ── This must match the UNIVERSITIES array in index.tsx exactly ──
 const UNIVERSITIES = [
   {
     id: "1",
@@ -100,7 +100,6 @@ const UNIVERSITIES = [
   },
 ];
 
-// ─── Star Rating ─────────────────────────────────────────────────
 function StarRating({ rating }: { rating: number }) {
   return (
     <View style={{ flexDirection: "row", gap: 4 }}>
@@ -116,7 +115,6 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-// ─── Info Badge ───────────────────────────────────────────────────
 function InfoBadge({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; label: string }) {
   return (
     <View
@@ -138,7 +136,6 @@ function InfoBadge({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; labe
   );
 }
 
-// ─── Section Card ─────────────────────────────────────────────────
 function SectionCard({ children }: { children: React.ReactNode }) {
   return (
     <View
@@ -159,7 +156,6 @@ function SectionCard({ children }: { children: React.ReactNode }) {
   );
 }
 
-// ─── Action Button ────────────────────────────────────────────────
 function ActionButton({
   icon,
   label,
@@ -187,35 +183,32 @@ function ActionButton({
       }}
     >
       <Ionicons name={icon} size={18} color={primary ? "#ffffff" : "#475569"} />
-      <Text
-        style={{
-          color: primary ? "#ffffff" : "#475569",
-          fontSize: 14,
-          fontWeight: "700",
-        }}
-      >
+      <Text style={{ color: primary ? "#ffffff" : "#475569", fontSize: 14, fontWeight: "700" }}>
         {label}
       </Text>
     </TouchableOpacity>
   );
 }
 
-// ─── Main Page ────────────────────────────────────────────────────
 export default function UniversityPage() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
+  const { t } = useTranslation(); // 👈 ADDED
   const [expanded, setExpanded] = useState(false);
 
   const university = UNIVERSITIES.find((u) => u.id === id);
 
-  // Safety net — if somehow the ID doesn't match
   if (!university) {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#f5f0e8" }}>
         <Ionicons name="alert-circle-outline" size={48} color="#94a3b8" />
-        <Text style={{ color: "#94a3b8", fontSize: 16, marginTop: 12 }}>University not found</Text>
+        <Text style={{ color: "#94a3b8", fontSize: 16, marginTop: 12 }}>
+          {t("university.notFound")} {/* 👈 CHANGED */}
+        </Text>
         <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20 }}>
-          <Text style={{ color: "#0f172a", fontWeight: "700" }}>Go back</Text>
+          <Text style={{ color: "#0f172a", fontWeight: "700" }}>
+            {t("university.goBack")} {/* 👈 CHANGED */}
+          </Text>
         </TouchableOpacity>
       </View>
     );
@@ -225,14 +218,9 @@ export default function UniversityPage() {
     <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
       <ScrollView showsVerticalScrollIndicator={false} bounces>
 
-        {/* ── Hero Image ── */}
+        {/* Hero Image */}
         <View style={{ height: 320, width: SCREEN_WIDTH }}>
-          <ImageBackground
-            source={university.image}
-            style={{ flex: 1 }}
-            resizeMode="cover"
-          >
-            {/* Dark overlay */}
+          <ImageBackground source={university.image} style={{ flex: 1 }} resizeMode="cover">
             <View
               style={{
                 position: "absolute",
@@ -241,7 +229,6 @@ export default function UniversityPage() {
               }}
             />
 
-            {/* Back button */}
             <TouchableOpacity
               onPress={() => router.back()}
               style={{
@@ -256,9 +243,7 @@ export default function UniversityPage() {
               <Ionicons name="arrow-back" size={22} color="#ffffff" />
             </TouchableOpacity>
 
-            {/* Hero content at bottom */}
             <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 24 }}>
-              {/* Category pill */}
               <View
                 style={{
                   alignSelf: "flex-start",
@@ -270,7 +255,7 @@ export default function UniversityPage() {
                 }}
               >
                 <Text style={{ color: "#ffffff", fontSize: 11, fontWeight: "700", letterSpacing: 0.5 }}>
-                  {university.category.toUpperCase()}
+                  {t(`categories.${university.category}`).toUpperCase()} {/* 👈 CHANGED */}
                 </Text>
               </View>
 
@@ -285,51 +270,50 @@ export default function UniversityPage() {
                 </Text>
               </View>
 
-              {/* Info badges row */}
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 12 }}>
                 <InfoBadge icon="location-sharp" label={university.location} />
                 <InfoBadge icon="school-outline" label={university.degree} />
                 <InfoBadge
                   icon={university.scholarship ? "ribbon-outline" : "close-circle-outline"}
-                  label={university.scholarship ? "Scholarship available" : "No scholarship"}
+                  label={university.scholarship ? t("university.scholarshipAvailable") : t("university.noScholarship")} // 👈 CHANGED
                 />
               </View>
             </View>
           </ImageBackground>
         </View>
 
-        {/* ── Content ── */}
+        {/* Content */}
         <View style={{ padding: 20 }}>
 
           {/* About */}
-        <SectionCard>
-         <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a", marginBottom: 10 }}>
-         About
-         </Text>
-         <Text style={{ fontSize: 14, color: "#475569", lineHeight: 22 }} numberOfLines={expanded ? undefined : 3}>
-            {university.longDescription || university.description}
-         </Text>
-         <TouchableOpacity onPress={() => setExpanded(!expanded)} style={{ marginTop: 8 }}>
-          <Text style={{ fontSize: 13, fontWeight: "700", color: "#0f172a" }}>
-            {expanded ? "Show less" : "Read more"}
-          </Text>
-       </TouchableOpacity>
-      </SectionCard>
+          <SectionCard>
+            <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a", marginBottom: 10 }}>
+              {t("university.about")} {/* 👈 CHANGED */}
+            </Text>
+            <Text style={{ fontSize: 14, color: "#475569", lineHeight: 22 }} numberOfLines={expanded ? undefined : 3}>
+              {university.longDescription || university.description}
+            </Text>
+            <TouchableOpacity onPress={() => setExpanded(!expanded)} style={{ marginTop: 8 }}>
+              <Text style={{ fontSize: 13, fontWeight: "700", color: "#0f172a" }}>
+                {expanded ? t("university.showLess") : t("university.readMore")} {/* 👈 CHANGED */}
+              </Text>
+            </TouchableOpacity>
+          </SectionCard>
 
           {/* Quick Info */}
           <SectionCard>
             <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a", marginBottom: 14 }}>
-              Quick Info
+              {t("university.quickInfo")} {/* 👈 CHANGED */}
             </Text>
 
             {[
-              { icon: "earth-outline" as const, label: "Location", value: university.location },
-              { icon: "book-outline" as const, label: "Degree", value: university.degree },
-              { icon: "grid-outline" as const, label: "Category", value: university.category },
+              { icon: "earth-outline" as const, label: t("filters.location"), value: university.location },
+              { icon: "book-outline" as const, label: t("filters.degree"), value: university.degree },
+              { icon: "grid-outline" as const, label: t("filters.category"), value: t(`categories.${university.category}`) },
               {
                 icon: "ribbon-outline" as const,
-                label: "Scholarship",
-                value: university.scholarship ? "Available" : "Not available",
+                label: t("filters.scholarship"),
+                value: university.scholarship ? t("university.available") : t("university.notAvailable"),
               },
             ].map((row) => (
               <View
@@ -367,33 +351,27 @@ export default function UniversityPage() {
             ))}
           </SectionCard>
 
-          {/* 
-            ── ADD YOUR SECTIONS BELOW THIS LINE ──
-            Copy a <SectionCard> block and fill it with whatever you need:
-            programs list, campus map, contacts, gallery, etc.
-          */}
-
-          {/* Placeholder for future sections */}
+          {/* Programs */}
           <SectionCard>
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-    <View>
-      <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a" }}>
-        Programs
-      </Text>
-    </View>
-  <TouchableOpacity
-    onPress={() => router.push({ pathname: "/university/project", params: { id } })}
-    style={{ alignItems: "center" }}
-  >
-  <Text style={{ fontSize: 11, color: "#0f172a", fontWeight: "600" }}>View more</Text>
-  <Ionicons name="grid-outline" size={18} color="#0f172a" style={{ marginTop: 2 }} />
-</TouchableOpacity>
-  </View>
+              <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a" }}>
+                {t("university.programs")} {/* 👈 CHANGED */}
+              </Text>
+              <TouchableOpacity
+                onPress={() => router.push({ pathname: "/university/project", params: { id } })}
+                style={{ alignItems: "center" }}
+              >
+                <Text style={{ fontSize: 11, color: "#0f172a", fontWeight: "600" }}>
+                  {t("university.viewMore")} {/* 👈 CHANGED */}
+                </Text>
+                <Ionicons name="grid-outline" size={18} color="#0f172a" style={{ marginTop: 2 }} />
+              </TouchableOpacity>
+            </View>
           </SectionCard>
 
           <View style={{ flexDirection: "row", gap: 12, marginTop: 4, marginBottom: 32 }}>
-            <ActionButton icon="globe-outline" label="Website" primary={false} />
-            <ActionButton icon="paper-plane-outline" label="Apply Now" primary={true} />
+            <ActionButton icon="globe-outline" label={t("university.website")} primary={false} /> {/* 👈 CHANGED */}
+            <ActionButton icon="paper-plane-outline" label={t("university.applyNow")} primary={true} /> {/* 👈 CHANGED */}
           </View>
 
         </View>

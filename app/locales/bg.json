@@ -1,0 +1,83 @@
+{
+  "search": {
+    "placeholder": "Търси университети...",
+    "noResults": "Няма намерени университети",
+    "tryDifferent": "Опитай с различни думи или филтри",
+    "found_one": "{{count}} университет намерен",
+    "found_other": "{{count}} университета намерени",
+    "clearAll": "Изчисти всички"
+  },
+  "filters": {
+    "location": "Местоположение",
+    "degree": "СТЕПЕН",
+    "scholarship": "СТИПЕНДИЯ",
+    "category": "КАТЕГОРИЯ",
+    "country": "ДЪРЖАВА",
+    "yes": "Да",
+    "no": "Не"
+  },
+  "home": {
+    "recommended": "Препоръчани"
+  },
+  "settings": {
+    "title": "Настройки",
+    "language": "Език",
+    "logout": "Изход"
+  },
+  "degrees": {
+    "Bachelor": "Бакалавър",
+    "Master": "Магистър"
+  },
+  "categories": {
+    "Engineering": "Инженерство",
+    "Medical": "Медицина",
+    "Economics": "Икономика",
+    "Business": "Бизнес"
+  },
+  "tabs": {
+  "favourites": "Любими",
+  "home": "Начало",
+  "settings": "Настройки"
+},
+"university": {
+  "notFound": "Университетът не е намерен",
+  "goBack": "Назад",
+  "about": "За нас",
+  "readMore": "Прочети повече",
+  "showLess": "Скрий",
+  "quickInfo": "Бърза информация",
+  "programs": "Програми",
+  "viewMore": "Виж повече",
+  "website": "Уебсайт",
+  "applyNow": "Кандидатствай",
+  "scholarshipAvailable": "Налична стипендия",
+  "noScholarship": "Без стипендия",
+  "available": "Налична",
+  "notAvailable": "Не е налична",
+  "location": "Местоположение"
+},
+"programs": {
+  "explore": "РАЗГЛЕДАЙ",
+  "title": "Програми",
+  "available_one": "{{count}} НАЛИЧНА ПРОГРАМА",
+  "available_other": "{{count}} НАЛИЧНИ ПРОГРАМИ",
+  "noneAvailable": "Няма налични програми"
+},
+"programDetail": {
+  "notFound": "Програмата не е намерена",
+  "notFoundDesc": "Университетът или програмата не съвпадат със запазените данни.",
+  "backToPrograms": "Назад към програмите",
+  "returnToPrograms": "Върни се към програмите",
+  "label": "ДЕТАЙЛИ ЗА ПРОГРАМАТА",
+  "overview": "Общ преглед",
+  "snapshot": "Snapshot на програмата",
+  "university": "Университет",
+  "level": "Степен",
+  "duration": "Продължителност",
+  "studyMode": "Форма на обучение",
+  "keyFocus": "Основен фокус",
+  "highlights": "Акценти",
+  "careers": "Кариерни пътища",
+  "admissionNotes": "Бележки за кандидатстване"
+}
+}
