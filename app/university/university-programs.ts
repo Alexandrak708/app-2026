@@ -1,5 +1,4 @@
 import i18n from "../i18n";
-
 export type ProgramLevel = "bachelor" | "master";
 
 export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6";
@@ -22,6 +21,13 @@ export type ProgramDetail = {
   careers: string[];
   admissionNotes: string[];
 };
+
+type ProgramOverride = Partial<
+  Pick<
+    ProgramDetail,
+    "title" | "overview" | "keyFocus" | "duration" | "studyMode" | "highlights" | "careers" | "admissionNotes"
+  >
+>;
 
 type UniversityProfile = {
   name: string;
@@ -150,6 +156,10 @@ export function slugify(value: string) {
     .replace(/^-+|-+$/g, "");
 }
 
+function buildProgramOverrideKey(universityId: UniversityId, level: ProgramLevel, programTitle: string) {
+  return `${universityId}:${level}:${slugify(programTitle)}`;
+}
+
 function inferThemeKey(title: string): ProgramThemeKey {
   const lowerTitle = title.toLowerCase();
 
@@ -201,6 +211,16 @@ function getProgramTheme(themeKey: ProgramThemeKey) {
   }
 
   return theme;
+}
+
+function getProgramOverride(overrideKey: string): ProgramOverride | null {
+  const override = i18n.t(`programOverrides.${overrideKey}`, { returnObjects: true }) as ProgramOverride | string;
+
+  if (!override || typeof override === "string") {
+    return null;
+  }
+
+  return override;
 }
 
 function ensureArray(value: unknown): string[] {
@@ -272,7 +292,7 @@ export function buildProgramDetail(
   const localizedTitle = i18n.t(`programTitles.${slugify(title)}`, { defaultValue: title });
   const durationYears = normalizedLevel === "master" ? 2 : 4;
 
-  return {
+  const baseDetail: ProgramDetail = {
     universityId: normalizedId,
     universityName: profile.name,
     level: normalizedLevel,
@@ -289,6 +309,21 @@ export function buildProgramDetail(
     highlights: [profile.focus, ...ensureArray(theme.highlights)],
     careers: Array.from(new Set([...ensureArray(profile.careers), ...ensureArray(theme.careers)])),
     admissionNotes: Array.from(new Set([...ensureArray(profile.admissionNotes), ...ensureArray(theme.admissionNotes)])),
+  };
+
+  const overrideKey = buildProgramOverrideKey(normalizedId, normalizedLevel, title);
+  const override = getProgramOverride(overrideKey);
+
+  if (!override) {
+    return baseDetail;
+  }
+
+  return {
+    ...baseDetail,
+    ...override,
+    highlights: override.highlights ?? baseDetail.highlights,
+    careers: override.careers ?? baseDetail.careers,
+    admissionNotes: override.admissionNotes ?? baseDetail.admissionNotes,
   };
 }
 

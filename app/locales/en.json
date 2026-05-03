@@ -167,81 +167,201 @@
       "name": "Technical University",
       "focus": "engineering, automation, computing, renewable energy, and industrial systems",
       "style": "hands-on labs, applied research, and strong industry links",
-      "careers": ["Engineer", "Systems specialist", "Project coordinator", "Research assistant"],
-      "admissionNotes": ["Focus on mathematics and physics", "Portfolio or interview may help for design-focused tracks"]
+      "careers": [
+        "Engineer",
+        "Systems specialist",
+        "Project coordinator",
+        "Research assistant"
+      ],
+      "admissionNotes": [
+        "Focus on mathematics and physics",
+        "Portfolio or interview may help for design-focused tracks"
+      ]
     },
     "2": {
       "name": "Medical University",
       "focus": "clinical training, health sciences, and patient-centered practice",
       "style": "hospital placements, simulation labs, and research-based learning",
-      "careers": ["Clinician", "Health specialist", "Laboratory professional", "Public health coordinator"],
-      "admissionNotes": ["Expect a strong science background", "Competitive tracks may include entrance exams or interviews"]
+      "careers": [
+        "Clinician",
+        "Health specialist",
+        "Laboratory professional",
+        "Public health coordinator"
+      ],
+      "admissionNotes": [
+        "Expect a strong science background",
+        "Competitive tracks may include entrance exams or interviews"
+      ]
     },
     "3": {
       "name": "Economics University",
       "focus": "business strategy, finance, accounting, economics, and market analysis",
       "style": "case studies, analytics, and practical business projects",
-      "careers": ["Analyst", "Accountant", "Finance specialist", "Marketing consultant"],
-      "admissionNotes": ["Useful for students with interest in math and business", "Internships are valuable for employability"]
+      "careers": [
+        "Analyst",
+        "Accountant",
+        "Finance specialist",
+        "Marketing consultant"
+      ],
+      "admissionNotes": [
+        "Useful for students with interest in math and business",
+        "Internships are valuable for employability"
+      ]
     },
     "4": {
       "name": "Naval University",
       "focus": "maritime operations, navigation, ship systems, and port logistics",
       "style": "simulators, sea-focused practice, and technical training",
-      "careers": ["Navigator", "Marine engineer", "Port specialist", "Fleet operations officer"],
-      "admissionNotes": ["Best suited to students who enjoy technical and operational work", "Safety and discipline are core parts of the training"]
+      "careers": [
+        "Navigator",
+        "Marine engineer",
+        "Port specialist",
+        "Fleet operations officer"
+      ],
+      "admissionNotes": [
+        "Best suited to students who enjoy technical and operational work",
+        "Safety and discipline are core parts of the training"
+      ]
     },
     "5": {
       "name": "Free University",
       "focus": "international relations, public administration, and business-oriented studies",
       "style": "discussion-led seminars, policy analysis, and applied projects",
-      "careers": ["Policy officer", "Administrator", "Consultant", "International relations specialist"],
-      "admissionNotes": ["Good communication and research skills are important", "Group work is a major part of the study experience"]
+      "careers": [
+        "Policy officer",
+        "Administrator",
+        "Consultant",
+        "International relations specialist"
+      ],
+      "admissionNotes": [
+        "Good communication and research skills are important",
+        "Group work is a major part of the study experience"
+      ]
     },
     "6": {
       "name": "University of Management",
       "focus": "tourism, hospitality, event planning, and digital business management",
       "style": "practice-based learning, business cases, and service-industry projects",
-      "careers": ["Manager", "Tourism specialist", "Hotel coordinator", "Digital marketer"],
-      "admissionNotes": ["Helpful for students interested in leadership and customer experience", "Internships can strongly improve outcomes"]
+      "careers": [
+        "Manager",
+        "Tourism specialist",
+        "Hotel coordinator",
+        "Digital marketer"
+      ],
+      "admissionNotes": [
+        "Helpful for students interested in leadership and customer experience",
+        "Internships can strongly improve outcomes"
+      ]
     }
   },
   "programThemes": {
     "healthcare": {
       "keyFocus": "healthcare practice and patient support",
-      "highlights": ["Clinical placements", "Evidence-based learning", "Health-service readiness"],
-      "careers": ["Healthcare provider", "Clinical assistant", "Health analyst", "Patient services specialist"],
-      "admissionNotes": ["Strong biology and chemistry background is useful", "Practical experience matters in this field"]
+      "highlights": [
+        "Clinical placements",
+        "Evidence-based learning",
+        "Health-service readiness"
+      ],
+      "careers": [
+        "Healthcare provider",
+        "Clinical assistant",
+        "Health analyst",
+        "Patient services specialist"
+      ],
+      "admissionNotes": [
+        "Strong biology and chemistry background is useful",
+        "Practical experience matters in this field"
+      ]
     },
     "business": {
       "keyFocus": "business analysis, leadership, and strategic decision-making",
-      "highlights": ["Case-based learning", "Industry-focused assignments", "Career-oriented planning"],
-      "careers": ["Business analyst", "Manager", "Consultant", "Operations specialist"],
-      "admissionNotes": ["Math, communication, and problem-solving help a lot", "Internships can improve your profile"]
+      "highlights": [
+        "Case-based learning",
+        "Industry-focused assignments",
+        "Career-oriented planning"
+      ],
+      "careers": [
+        "Business analyst",
+        "Manager",
+        "Consultant",
+        "Operations specialist"
+      ],
+      "admissionNotes": [
+        "Math, communication, and problem-solving help a lot",
+        "Internships can improve your profile"
+      ]
     },
     "maritime": {
       "keyFocus": "maritime systems, transport operations, and technical control",
-      "highlights": ["Simulator practice", "Operational discipline", "Transport safety focus"],
-      "careers": ["Marine operator", "Fleet specialist", "Logistics coordinator", "Technical officer"],
-      "admissionNotes": ["Comfort with technical and operational work is important", "Field practice is a core part of training"]
+      "highlights": [
+        "Simulator practice",
+        "Operational discipline",
+        "Transport safety focus"
+      ],
+      "careers": [
+        "Marine operator",
+        "Fleet specialist",
+        "Logistics coordinator",
+        "Technical officer"
+      ],
+      "admissionNotes": [
+        "Comfort with technical and operational work is important",
+        "Field practice is a core part of training"
+      ]
     },
     "tech": {
       "keyFocus": "digital systems, coding, automation, and applied technology",
-      "highlights": ["Lab-driven learning", "Problem solving with technology", "Applied innovation"],
-      "careers": ["Developer", "Systems engineer", "IT specialist", "Automation consultant"],
-      "admissionNotes": ["Programming or math interest helps", "Projects and labs usually matter more than memorization"]
+      "highlights": [
+        "Lab-driven learning",
+        "Problem solving with technology",
+        "Applied innovation"
+      ],
+      "careers": [
+        "Developer",
+        "Systems engineer",
+        "IT specialist",
+        "Automation consultant"
+      ],
+      "admissionNotes": [
+        "Programming or math interest helps",
+        "Projects and labs usually matter more than memorization"
+      ]
     },
     "engineering": {
       "keyFocus": "engineering design, applied science, and technical problem solving",
-      "highlights": ["Hands-on engineering labs", "Applied mathematics", "Industry-aligned training"],
-      "careers": ["Engineer", "Project specialist", "Technical designer", "Operations expert"],
-      "admissionNotes": ["Math and physics are usually important", "Practical projects are central to the course"]
+      "highlights": [
+        "Hands-on engineering labs",
+        "Applied mathematics",
+        "Industry-aligned training"
+      ],
+      "careers": [
+        "Engineer",
+        "Project specialist",
+        "Technical designer",
+        "Operations expert"
+      ],
+      "admissionNotes": [
+        "Math and physics are usually important",
+        "Practical projects are central to the course"
+      ]
     },
     "general": {
       "keyFocus": "specialized academic development and practical skill building",
-      "highlights": ["University-specific teaching", "Applied course work", "Career preparation"],
-      "careers": ["Specialist", "Coordinator", "Advisor", "Research assistant"],
-      "admissionNotes": ["Check the exact entrance requirements for this track", "Project work and steady performance are important"]
+      "highlights": [
+        "University-specific teaching",
+        "Applied course work",
+        "Career preparation"
+      ],
+      "careers": [
+        "Specialist",
+        "Coordinator",
+        "Advisor",
+        "Research assistant"
+      ],
+      "admissionNotes": [
+        "Check the exact entrance requirements for this track",
+        "Project work and steady performance are important"
+      ]
     }
   },
   "programTitles": {
@@ -249,6 +369,7 @@
     "automotive-engineering-ae": "Automotive Engineering (AE)",
     "agronomy-a": "Agronomy (A)",
     "renewable-energy-sources-res": "Renewable Energy Sources (RES)",
+    "renewable-energy-resources": "Renewable Energy Sources (RES)",
     "electric-power-engineering-epe": "Electric Power Engineering (EPE)",
     "electronics-e": "Electronics (E)",
     "ship-electrical-equipment-see": "Ship Electrical Equipment (SEE)",
@@ -265,6 +386,7 @@
     "computerized-technologies-in-mechanical-engineering-ctme": "Computerized Technologies in Mechanical Engineering (CTME)",
     "computer-systems-and-technologies-cst": "Computer Systems and Technologies (CST)",
     "marine-engineering-ship-machines-and-mechanisms": "Marine Engineering (Ship Machines and Mechanisms)",
+    "ship-machines-and-mechanisms-smm": "Ship Machines and Mechanisms (SMM)",
     "navigation-ship-maneuvering": "Navigation (Ship Maneuvering)",
     "naval-architecture-and-marine-technology-namt": "Naval Architecture and Marine Technology (NAMT)",
     "water-transport-logistics-wtl": "Water Transport Logistics (WTL)",
@@ -329,5 +451,1484 @@
     "hotel-management": "Hotel Management",
     "event-management": "Event Management",
     "digital-marketing": "Digital Marketing"
+  },
+  "programOverrides": {
+    "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Full-time (4 years) / Part-time (5 years)",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Process Control Designer",
+        "Systems Engineer",
+        "Industrial Network Administrator",
+        "Building Automation Engineer",
+        "Control Room Operator",
+        "I&C Engineer",
+        "Engineering Manager",
+        "Academic/Educator"
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:automotive-engineering-ae": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:agronomy-a": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:renewable-energy-sources-res": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:electric-power-engineering-epe": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:electronics-e": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:ship-electrical-equipment-see": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:electric-power-supply-and-electrical-equipment-epsee": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:electrical-engineering-and-electrical-technologies-eeet": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:civil-protection-in-disasters-and-emergencies-cpde": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:artificial-intelligence-ai": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:industrial-design-id": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:industrial-management-im": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:environmental-ecological-engineering-ee": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:intelligent-transport-systems-its": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:information-and-communication-technologies-ict": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:cybersecurity-cs": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:computerized-technologies-in-mechanical-engineering-ctme": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:computer-systems-and-technologies-cst": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:marine-engineering-ship-machines-and-mechanisms": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:navigation-ship-maneuvering": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:naval-architecture-and-marine-technology-namt": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:water-transport-logistics-wtl": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:mechanical-engineering-and-technologies-met": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:robotics-and-mechatronics-rm": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:software-and-internet-technologies-sit": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:social-management-sm": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:construction-management-cm": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:technological-entrepreneurship-and-innovation-tei": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:heat-power-engineering-and-investment-design-hpeid": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:bachelor:transport-equipment-and-technologies-tet": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:data-analysis-and-network-technologies-dant": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:health-and-safety-at-work-hsw": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:renewable-energy-sources-res": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:operation-of-fleet-and-ports-ofp": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:electric-power-systems-eps": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:electronics-e": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:ship-electrical-equipment-see": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:electric-power-supply-and-electrical-equipment-in-industry-epseei": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:electrical-engineering-ee": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:industrial-design-id": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:industrial-management-im": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:environmental-engineering-ee": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:smart-cities": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:cybersecurity-cs": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:computerized-technologies-in-mechanical-engineering-ctme": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:computer-networks-and-communications-cnc": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:marine-engineering-ship-machines-and-mechanisms": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:navigation": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:naval-architecture-and-marine-technology-namt": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:corporate-management-cm": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:water-transport-logistics-wtl": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:mechanical-engineering-and-technologies-met": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:design-of-renewable-energy-facilities-dref": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:seed-production-and-plant-protection-sppp": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:building-automation-systems-bas": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:artificial-intelligence-systems-ais": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:software-engineering-se": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:social-management-sm": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:social-work-with-individuals-with-deviant-behavior-swidb": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:social-work-with-children-swc": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:social-entrepreneurship-se": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:modern-systems-in-agriculture-msa": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:modern-technologies-in-agriculture-mta": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:telecommunications-and-mobile-technologies-tmt": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:materials-processing-equipment-and-technologies-mpet": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:technical-and-insurance-expertise-in-transport-tiet": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:heat-engineering-and-renewable-energy-sources-heres": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:transport-equipment-and-technologies-tet": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:chemical-engineering-ce": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "1:master:siemens-plc-control-technologies-siemens": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:bachelor:medicine": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:bachelor:dental-medicine": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:bachelor:pharmacy": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:bachelor:nursing": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:bachelor:midwifery": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:master:public-health": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:master:health-management": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "2:master:clinical-pharmacy": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:economics": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:finance": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:accounting": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:marketing": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:international-business": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "4:bachelor:navigation": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "4:bachelor:marine-engineering": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "4:bachelor:naval-architecture": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "4:bachelor:port-management": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "5:master:business-administration": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "5:master:international-relations": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "5:master:public-administration": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "5:master:european-studies": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "6:master:tourism-management": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "6:master:hotel-management": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "6:master:event-management": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "6:master:digital-marketing": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit this study mode.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    }
   }
 }

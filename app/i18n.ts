@@ -22,6 +22,7 @@ export async function initI18n() {
     },
     lng: savedLanguage,
     fallbackLng: "en",
+    nsSeparator: false,
     interpolation: {
       escapeValue: false,
     },
