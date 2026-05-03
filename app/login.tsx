@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Platform, useWindowDimensions, ActivityIndicator, Alert } from "react-native";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { supabase } from "../lib/supabase";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
@@ -21,6 +22,7 @@ export default function SignIn() {
   const { width: screenWidth, height: screenHeight } = useWindowDimensions();
   const isDesktop = screenWidth >= 980;
   const router = useRouter();
+  const { t } = useTranslation();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +30,7 @@ export default function SignIn() {
 
   const handleSignIn = async () => {
     if (!email || !password) {
-      Alert.alert("Грешка", "Моля въведи email и парола.");
+      Alert.alert(t("auth.errorTitle"), t("auth.errorEmail"));
       return;
     }
 
@@ -37,7 +39,7 @@ export default function SignIn() {
     setLoading(false);
 
     if (error) {
-      Alert.alert("Грешка", error.message);
+      Alert.alert(t("auth.errorTitle"), error.message);
       return;
     }
 
@@ -50,12 +52,12 @@ export default function SignIn() {
 
   const FormContent = (
     <>
-      <Text className="text-3xl font-bold text-slate-900">Log In</Text>
+      <Text className="text-3xl font-bold text-slate-900">{t("auth.signIn")}</Text>
       <Text className="text-slate-500 mt-2 mb-7">
-        Welcome back. Continue your journey around the world.
+        {t("auth.signInSubtitle")}
       </Text>
       <TextInput
-        placeholder="Email"
+        placeholder={t("auth.email")}
         placeholderTextColor="#94a3b8"
         keyboardType="email-address"
         autoCapitalize="none"
@@ -64,7 +66,7 @@ export default function SignIn() {
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
       <TextInput
-        placeholder="Password"
+        placeholder={t("auth.password")}
         placeholderTextColor="#94a3b8"
         secureTextEntry
         value={password}
@@ -78,12 +80,12 @@ export default function SignIn() {
       >
         {loading
           ? <ActivityIndicator color="#ffffff" />
-          : <Text className="text-white text-base font-semibold">Log In</Text>
+          : <Text className="text-white text-base font-semibold">{t("auth.login")}</Text>
         }
       </TouchableOpacity>
       <TouchableOpacity onPress={() => router.push("/register")} style={{ marginTop: 16 }}>
         <Text className="text-slate-500 text-center text-sm">
-          Don't have an account? Register
+          {t("auth.loginQuestion")}
         </Text>
       </TouchableOpacity>
     </>

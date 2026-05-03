@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityIndicator, Alert } from "react-native";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { supabase } from "../lib/supabase";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
@@ -20,6 +21,7 @@ export default function Register() {
   const { width: screenWidth, height: screenHeight } = useWindowDimensions();
   const isDesktop = screenWidth >= 980;
   const router = useRouter();
+  const { t } = useTranslation();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,15 +30,15 @@ export default function Register() {
 
   const handleRegister = async () => {
     if (!email || !password || !confirmPassword) {
-      Alert.alert("Грешка", "Моля попълни всички полета.");
+      Alert.alert(t("auth.errorTitle"), t("auth.errorRequiredFields"));
       return;
     }
     if (password !== confirmPassword) {
-      Alert.alert("Грешка", "Паролите не съвпадат.");
+      Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordMismatch"));
       return;
     }
     if (password.length < 6) {
-      Alert.alert("Грешка", "Паролата трябва да е поне 6 символа.");
+      Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordLength"));
       return;
     }
 
@@ -47,7 +49,7 @@ export default function Register() {
 
       if (error) {
         setLoading(false);
-        Alert.alert("Грешка", error.message);
+        Alert.alert(t("auth.errorTitle"), error.message);
         return;
       }
 
@@ -70,8 +72,8 @@ export default function Register() {
       if (signInError) {
         // If sign in fails, it means email confirmation is required
         Alert.alert(
-          "Успешна регистрация",
-          "Моля провери имейла си за потвърждение на акаунта.",
+          t("auth.successRegistration"),
+          t("auth.successMessage"),
           [{ text: "OK", onPress: () => router.replace("/") }]
         );
         return;
@@ -81,7 +83,7 @@ export default function Register() {
       router.replace("/(tabs)");
     } catch (err) {
       setLoading(false);
-      Alert.alert("Грешка", "Възникна неочаквана грешка. Моля опитай отново.");
+      Alert.alert(t("auth.errorTitle"), t("auth.errorUnexpected"));
     }
   };
 
@@ -91,12 +93,12 @@ export default function Register() {
 
   const FormContent = (
     <>
-      <Text className="text-3xl font-bold text-slate-900">Register</Text>
+      <Text className="text-3xl font-bold text-slate-900">{t("auth.signUp")}</Text>
       <Text className="text-slate-500 mt-2 mb-7">
-        Create an account and start your journey.
+        {t("auth.signUpSubtitle")}
       </Text>
       <TextInput
-        placeholder="Email"
+        placeholder={t("auth.email")}
         placeholderTextColor="#94a3b8"
         keyboardType="email-address"
         autoCapitalize="none"
@@ -105,7 +107,7 @@ export default function Register() {
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
       <TextInput
-        placeholder="Password"
+        placeholder={t("auth.password")}
         placeholderTextColor="#94a3b8"
         secureTextEntry
         value={password}
@@ -113,7 +115,7 @@ export default function Register() {
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
       <TextInput
-        placeholder="Confirm Password"
+        placeholder={t("auth.confirmPassword")}
         placeholderTextColor="#94a3b8"
         secureTextEntry
         value={confirmPassword}
@@ -127,11 +129,11 @@ export default function Register() {
       >
         {loading
           ? <ActivityIndicator color="#ffffff" />
-          : <Text className="text-white text-base font-semibold">Create Account</Text>
+          : <Text className="text-white text-base font-semibold">{t("auth.signUpButton")}</Text>
         }
       </TouchableOpacity>
       <TouchableOpacity onPress={() => router.back()}>
-        <Text className="text-slate-500 text-center text-sm">Already have an account? Sign In</Text>
+        <Text className="text-slate-500 text-center text-sm">{t("auth.registerQuestion")}</Text>
       </TouchableOpacity>
     </>
   );

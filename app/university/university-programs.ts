@@ -316,3 +316,5 @@ export function buildProgramDetail(
     admissionNotes: Array.from(new Set([...profile.admissionNotes, ...theme.admissionNotes])),
   };
 }
+
+export default {};
