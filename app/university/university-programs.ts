@@ -1,3 +1,5 @@
+import i18n from "../i18n";
+
 export type ProgramLevel = "bachelor" | "master";
 
 export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6";
@@ -29,59 +31,7 @@ type UniversityProfile = {
   admissionNotes: string[];
 };
 
-export const UNIVERSITY_NAMES: Record<UniversityId, string> = {
-  "1": "Technical University",
-  "2": "Medical University",
-  "3": "Economics University",
-  "4": "Naval University",
-  "5": "Free University",
-  "6": "University of Management",
-};
-
-const UNIVERSITY_PROFILES: Record<UniversityId, UniversityProfile> = {
-  "1": {
-    name: "Technical University",
-    focus: "engineering, automation, computing, renewable energy, and industrial systems",
-    style: "hands-on labs, applied research, and strong industry links",
-    careers: ["Engineer", "Systems specialist", "Project coordinator", "Research assistant"],
-    admissionNotes: ["Focus on mathematics and physics", "Portfolio or interview may help for design-focused tracks"],
-  },
-  "2": {
-    name: "Medical University",
-    focus: "clinical training, health sciences, and patient-centered practice",
-    style: "hospital placements, simulation labs, and research-based learning",
-    careers: ["Clinician", "Health specialist", "Laboratory professional", "Public health coordinator"],
-    admissionNotes: ["Expect a strong science background", "Competitive tracks may include entrance exams or interviews"],
-  },
-  "3": {
-    name: "Economics University",
-    focus: "business strategy, finance, accounting, economics, and market analysis",
-    style: "case studies, analytics, and practical business projects",
-    careers: ["Analyst", "Accountant", "Finance specialist", "Marketing consultant"],
-    admissionNotes: ["Useful for students with interest in math and business", "Internships are valuable for employability"],
-  },
-  "4": {
-    name: "Naval University",
-    focus: "maritime operations, navigation, ship systems, and port logistics",
-    style: "simulators, sea-focused practice, and technical training",
-    careers: ["Navigator", "Marine engineer", "Port specialist", "Fleet operations officer"],
-    admissionNotes: ["Best suited to students who enjoy technical and operational work", "Safety and discipline are core parts of the training"],
-  },
-  "5": {
-    name: "Free University",
-    focus: "international relations, public administration, and business-oriented studies",
-    style: "discussion-led seminars, policy analysis, and applied projects",
-    careers: ["Policy officer", "Administrator", "Consultant", "International relations specialist"],
-    admissionNotes: ["Good communication and research skills are important", "Group work is a major part of the study experience"],
-  },
-  "6": {
-    name: "University of Management",
-    focus: "tourism, hospitality, event planning, and digital business management",
-    style: "practice-based learning, business cases, and service-industry projects",
-    careers: ["Manager", "Tourism specialist", "Hotel coordinator", "Digital marketer"],
-    admissionNotes: ["Helpful for students interested in leadership and customer experience", "Internships can strongly improve outcomes"],
-  },
-};
+type ProgramThemeKey = "healthcare" | "business" | "maritime" | "tech" | "engineering" | "general";
 
 const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
   "1": {
@@ -200,70 +150,75 @@ export function slugify(value: string) {
     .replace(/^-+|-+$/g, "");
 }
 
-function inferTheme(title: string) {
+function inferThemeKey(title: string): ProgramThemeKey {
   const lowerTitle = title.toLowerCase();
 
   if (/(medicine|pharmacy|nursing|midwifery|health|clinical|dental|public health)/.test(lowerTitle)) {
-    return {
-      keyFocus: "healthcare practice and patient support",
-      highlights: ["Clinical placements", "Evidence-based learning", "Health-service readiness"],
-      careers: ["Healthcare provider", "Clinical assistant", "Health analyst", "Patient services specialist"],
-      admissionNotes: ["Strong biology and chemistry background is useful", "Practical experience matters in this field"],
-    };
+    return "healthcare";
   }
 
   if (/(economics|finance|accounting|marketing|business|management|entrepreneur|administration|tourism|hotel|event|international relations|european studies|digital marketing)/.test(lowerTitle)) {
-    return {
-      keyFocus: "business analysis, leadership, and strategic decision-making",
-      highlights: ["Case-based learning", "Industry-focused assignments", "Career-oriented planning"],
-      careers: ["Business analyst", "Manager", "Consultant", "Operations specialist"],
-      admissionNotes: ["Math, communication, and problem-solving help a lot", "Internships can improve your profile"],
-    };
+    return "business";
   }
 
   if (/(navigation|marine|naval|port|ship|transport|fleet)/.test(lowerTitle)) {
-    return {
-      keyFocus: "maritime systems, transport operations, and technical control",
-      highlights: ["Simulator practice", "Operational discipline", "Transport safety focus"],
-      careers: ["Marine operator", "Fleet specialist", "Logistics coordinator", "Technical officer"],
-      admissionNotes: ["Comfort with technical and operational work is important", "Field practice is a core part of training"],
-    };
+    return "maritime";
   }
 
   if (/(ai|artificial intelligence|software|computer|cybersecurity|information|communication|data|network|telecommunications|electronics|robotics|mechatronics|plc|systems|automation|technology)/.test(lowerTitle)) {
-    return {
-      keyFocus: "digital systems, coding, automation, and applied technology",
-      highlights: ["Lab-driven learning", "Problem solving with technology", "Applied innovation"],
-      careers: ["Developer", "Systems engineer", "IT specialist", "Automation consultant"],
-      admissionNotes: ["Programming or math interest helps", "Projects and labs usually matter more than memorization"],
-    };
+    return "tech";
   }
 
   if (/(engineering|mechanical|electrical|energy|renewable|industrial|design|construction|environmental|agronomy|agriculture|chemical|materials|technologies)/.test(lowerTitle)) {
-    return {
-      keyFocus: "engineering design, applied science, and technical problem solving",
-      highlights: ["Hands-on engineering labs", "Applied mathematics", "Industry-aligned training"],
-      careers: ["Engineer", "Project specialist", "Technical designer", "Operations expert"],
-      admissionNotes: ["Math and physics are usually important", "Practical projects are central to the course"],
+    return "engineering";
+  }
+
+  return "general";
+}
+
+function getUniversityProfile(universityId: UniversityId): UniversityProfile | null {
+  const profile = i18n.t(`universityProfiles.${universityId}`, { returnObjects: true }) as UniversityProfile | string;
+
+  if (!profile || typeof profile === "string") {
+    return null;
+  }
+
+  return profile;
+}
+
+function getProgramTheme(themeKey: ProgramThemeKey) {
+  const theme = i18n.t(`programThemes.${themeKey}`, { returnObjects: true }) as
+    | { keyFocus: string; highlights: string[]; careers: string[]; admissionNotes: string[] }
+    | string;
+
+  if (!theme || typeof theme === "string") {
+    return i18n.t("programThemes.general", { returnObjects: true }) as {
+      keyFocus: string;
+      highlights: string[];
+      careers: string[];
+      admissionNotes: string[];
     };
   }
 
-  return {
-    keyFocus: "specialized academic development and practical skill building",
-    highlights: ["University-specific teaching", "Applied course work", "Career preparation"],
-    careers: ["Specialist", "Coordinator", "Advisor", "Research assistant"],
-    admissionNotes: ["Check the exact entrance requirements for this track", "Project work and steady performance are important"],
-  };
+  return theme;
+}
+
+function ensureArray(value: unknown): string[] {
+  if (Array.isArray(value)) {
+    return value as string[];
+  }
+
+  return [];
 }
 
 export function getUniversityName(universityId: string | string[] | undefined) {
   const normalizedId = normalizeInput(universityId) as UniversityId | undefined;
 
   if (!normalizedId) {
-    return "University";
+    return i18n.t("university.defaultName", { defaultValue: "University" });
   }
 
-  return UNIVERSITY_NAMES[normalizedId] ?? "University";
+  return i18n.t(`universities.${normalizedId}.name`, { defaultValue: "University" });
 }
 
 export function getProgramSummaries(universityId: string | string[] | undefined, level: ProgramLevel) {
@@ -273,10 +228,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
     return [];
   }
 
-  return PROGRAMS[normalizedId][level].map((title) => ({
-    title,
-    slug: slugify(title),
-  }));
+  return PROGRAMS[normalizedId][level].map((title) => {
+    const slug = slugify(title);
+    const localizedTitle = i18n.t(`programTitles.${slug}`, { defaultValue: title });
+
+    return {
+      title: localizedTitle,
+      slug,
+    };
+  });
 }
 
 export function buildProgramDetail(
@@ -298,22 +258,37 @@ export function buildProgramDetail(
     return null;
   }
 
-  const profile = UNIVERSITY_PROFILES[normalizedId];
-  const theme = inferTheme(title);
-  const levelLabel = normalizedLevel === "master" ? "Master" : "Bachelor";
+  const profile = getUniversityProfile(normalizedId);
+
+  if (!profile) {
+    return null;
+  }
+
+  const themeKey = inferThemeKey(title);
+  const theme = getProgramTheme(themeKey);
+  const levelLabel = normalizedLevel === "master"
+    ? i18n.t("degrees.Master")
+    : i18n.t("degrees.Bachelor");
+  const localizedTitle = i18n.t(`programTitles.${slugify(title)}`, { defaultValue: title });
+  const durationYears = normalizedLevel === "master" ? 2 : 4;
 
   return {
     universityId: normalizedId,
     universityName: profile.name,
     level: normalizedLevel,
-    title,
-    overview: `${title} at ${profile.name} combines ${profile.focus} with ${profile.style}. The program is shaped to build strong practical skills and clear career direction.`,
+    title: localizedTitle,
+    overview: i18n.t("programDetail.overviewTemplate", {
+      title: localizedTitle,
+      universityName: profile.name,
+      focus: profile.focus,
+      style: profile.style,
+    }),
     keyFocus: theme.keyFocus,
-    duration: normalizedLevel === "master" ? "2 years" : "4 years",
-    studyMode: `${levelLabel} track with classroom study, labs, and project work`,
-    highlights: [profile.focus, ...theme.highlights],
-    careers: Array.from(new Set([...profile.careers, ...theme.careers])),
-    admissionNotes: Array.from(new Set([...profile.admissionNotes, ...theme.admissionNotes])),
+    duration: i18n.t("programDetail.durationYears", { count: durationYears }),
+    studyMode: i18n.t("programDetail.studyModeTemplate", { level: levelLabel }),
+    highlights: [profile.focus, ...ensureArray(theme.highlights)],
+    careers: Array.from(new Set([...ensureArray(profile.careers), ...ensureArray(theme.careers)])),
+    admissionNotes: Array.from(new Set([...ensureArray(profile.admissionNotes), ...ensureArray(theme.admissionNotes)])),
   };
 }
 

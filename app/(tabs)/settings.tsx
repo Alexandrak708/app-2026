@@ -33,7 +33,7 @@ export default function Settings() {
           onPress={() => handleLanguageChange("en")}
         >
           <Text style={[styles.langText, currentLang === "en" && styles.langTextActive]}>
-            🇬🇧 English
+            🇬🇧 {t("languages.en")}
           </Text>
         </TouchableOpacity>
 
@@ -42,7 +42,7 @@ export default function Settings() {
           onPress={() => handleLanguageChange("bg")}
         >
           <Text style={[styles.langText, currentLang === "bg" && styles.langTextActive]}>
-            🇧🇬 Български
+            🇧🇬 {t("languages.bg")}
           </Text>
         </TouchableOpacity>
 

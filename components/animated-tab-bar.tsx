@@ -18,6 +18,7 @@ import Animated, {
 } from "react-native-reanimated";
 import Svg, { Path } from "react-native-svg";
 import * as Haptics from "expo-haptics";
+import { useTranslation } from "react-i18next";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -37,12 +38,6 @@ const TAB_ICONS: Record<string, IconName> = {
   settings: "settings",
 };
 
-const TAB_LABELS: Record<string, string> = {
-  favourites: "Favourites",
-  index: "Home",
-  settings: "Settings",
-};
-
 // Static dome path centered at x=0 - smooth half circle
 function getDomePath(): string {
   const halfDome = DOME_WIDTH / 2;
@@ -59,6 +54,7 @@ interface TabItemProps {
   onPress: () => void;
   tabWidth: number;
   selectedIndex: SharedValue<number>;
+  label: string;
 }
 
 function TabItem({
@@ -68,9 +64,9 @@ function TabItem({
   onPress,
   tabWidth,
   selectedIndex,
+  label,
 }: TabItemProps) {
   const iconName = TAB_ICONS[route.name] || "ellipse";
-  const labelText = TAB_LABELS[route.name] || "";
 
   const animatedIconStyle = useAnimatedStyle(() => {
     const distance = Math.abs(selectedIndex.value - index);
@@ -128,7 +124,7 @@ function TabItem({
               { color: isFocused ? "#0f172a" : "#64748b" },
             ]}
           >
-            {labelText}
+            {label}
           </Text>
         </Animated.View>
       </Animated.View>
@@ -141,6 +137,7 @@ export function AnimatedTabBar({
   descriptors,
   navigation,
 }: BottomTabBarProps) {
+  const { t } = useTranslation();
   const visibleRoutes = state.routes;
 
   const tabCount = visibleRoutes.length;
@@ -211,6 +208,12 @@ export function AnimatedTabBar({
             (r) => r.key === route.key
           );
           const isFocused = state.index === actualIndex;
+          const label =
+            route.name === "favourites"
+              ? t("tabs.favourites")
+              : route.name === "settings"
+                ? t("tabs.settings")
+                : t("tabs.home");
 
           return (
             <TabItem
@@ -221,6 +224,7 @@ export function AnimatedTabBar({
               onPress={() => handleTabPress(route, index, isFocused)}
               tabWidth={tabWidth}
               selectedIndex={selectedIndex}
+              label={label}
             />
           );
         })}

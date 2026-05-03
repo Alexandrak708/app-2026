@@ -45,6 +45,13 @@
     "language": "Език",
     "logout": "Изход"
   },
+  "languages": {
+    "en": "Английски",
+    "bg": "Български"
+  },
+  "countries": {
+    "Bulgaria": "България"
+  },
   "degrees": {
     "Bachelor": "Бакалавър",
     "Master": "Магистър"
@@ -63,6 +70,9 @@
   "modal": {
     "title": "Това е модален прозорец",
     "link": "Отиди на домашния екран"
+  },
+  "common": {
+    "ok": "OK"
   },
   "university": {
     "notFound": "Университетът не е намерен",
@@ -94,12 +104,15 @@
     "backToPrograms": "Назад към програмите",
     "returnToPrograms": "Върни се към програмите",
     "label": "ДЕТАЙЛИ ЗА ПРОГРАМАТА",
+    "overviewTemplate": "{{title}} в {{universityName}} съчетава {{focus}} с {{style}}. Програмата е насочена към изграждане на силни практически умения и ясна кариерна ориентация.",
     "overview": "Общ преглед",
-    "snapshot": "Snapshot на програмата",
+    "snapshot": "Преглед на програмата",
     "university": "Университет",
     "level": "Степен",
     "duration": "Продължителност",
+    "durationYears": "{{count}} години",
     "studyMode": "Форма на обучение",
+    "studyModeTemplate": "{{level}} програма с лекции, лаборатории и проектна работа",
     "keyFocus": "Основен фокус",
     "highlights": "Акценти",
     "careers": "Кариерни пътища",
@@ -193,31 +206,142 @@
       "admissionNotes": ["Подходящо за студенти, интересувани се от лидерство и обслужване на клиентите", "Стажантурите могат значително да подобрят перспективите за кариера"]
     }
   },
-  "programsDetail": {
-    "techMarketing": {
-      "description": "Технически и маркетингови дисциплини",
-      "focus": "дигитални системи, програмиране, автоматизация и приложна технология",
-      "highlights": ["Лабораторно базирано обучение", "Решаване на задачи чрез технология", "Приложна иновация"],
-      "careers": ["Разработчик", "Инженер на системи", "IT специалист", "Консултант по автоматизация"],
-      "admissionNotes": ["Интересът към програмирането или математиката е полезен", "Проекти и лаборатории обикновено имат по-голямо значение от теория"]
+  "programThemes": {
+    "healthcare": {
+      "keyFocus": "здравна практика и подкрепа на пациента",
+      "highlights": ["Клинични стажове", "Обучение на база доказателства", "Готовност за здравната система"],
+      "careers": ["Здравен специалист", "Клиничен асистент", "Здравен анализатор", "Специалист по грижи за пациента"],
+      "admissionNotes": ["Силна подготовка по биология и химия е полезна", "Практическият опит е важен в тази сфера"]
+    },
+    "business": {
+      "keyFocus": "бизнес анализ, лидерство и стратегически решения",
+      "highlights": ["Обучение чрез казуси", "Практически задачи с фокус върху индустрията", "Кариерно ориентирано планиране"],
+      "careers": ["Бизнес анализатор", "Мениджър", "Консултант", "Специалист по операции"],
+      "admissionNotes": ["Математика, комуникация и решаване на проблеми са важни", "Стажовете подобряват профила"]
+    },
+    "maritime": {
+      "keyFocus": "морски системи, транспортни операции и технически контрол",
+      "highlights": ["Практика със симулатори", "Оперативна дисциплина", "Фокус върху транспортната безопасност"],
+      "careers": ["Морски оператор", "Флотски специалист", "Координатор по логистика", "Технически офицер"],
+      "admissionNotes": ["Комфорт с техническа и оперативна работа е важен", "Теренната практика е ключова част от обучението"]
+    },
+    "tech": {
+      "keyFocus": "дигитални системи, програмиране, автоматизация и приложна технология",
+      "highlights": ["Лабораторно ориентирано обучение", "Решаване на задачи с технологии", "Приложни иновации"],
+      "careers": ["Разработчик", "Инженер по системи", "ИТ специалист", "Консултант по автоматизация"],
+      "admissionNotes": ["Интерес към програмиране или математика е плюс", "Проектите и лабораториите често са по-важни от запаметяването"]
     },
     "engineering": {
-      "focus": "инженерен дизайн, приложна наука и техническо решаване на задачи",
-      "highlights": ["Ръчни инженерни лаборатории", "Приложна математика", "Обучение съответстващо на индустрията"],
+      "keyFocus": "инженерен дизайн, приложна наука и техническо решаване на задачи",
+      "highlights": ["Практически инженерни лаборатории", "Приложна математика", "Обучение, съобразено с индустрията"],
       "careers": ["Инженер", "Специалист по проекти", "Технически дизайнер", "Експерт по операции"],
       "admissionNotes": ["Математиката и физиката обикновено са важни", "Практическите проекти са централни за курса"]
     },
-    "healthcare": {
-      "focus": "здравна практика и поддръжка на пациента",
-      "highlights": ["Клинични назначения", "Базирано на научни доказателства обучение", "Готовност на здравна система"],
-      "careers": ["Здравен доставчик", "Клиничен асистент", "Здравен анализатор", "Специалист по услуги за пациентите"],
-      "admissionNotes": ["Силна подготовка по биология и химия е полезна", "Практическият опит е важен в тази сфера"]
-    },
-    "navigation": {
-      "focus": "морски системи, транспортни операции и технически контрол",
-      "highlights": ["Практика с симулатор", "Оперативна дисциплина", "Фокус на транспортна безопасност"],
-      "careers": ["Морски оператор", "Флотски специалист", "Координатор на логистика", "Технически офицер"],
-      "admissionNotes": ["Комфорт с технически и оперативни работи е важен", "Теренната практика е основна част на обучението"]
+    "general": {
+      "keyFocus": "специализирано академично развитие и практическо изграждане на умения",
+      "highlights": ["Университетско специфично обучение", "Приложна курсова работа", "Кариерна подготовка"],
+      "careers": ["Специалист", "Координатор", "Съветник", "Изследователски асистент"],
+      "admissionNotes": ["Проверете конкретните изисквания за приема", "Проектната работа и постоянството са важни"]
     }
+  },
+  "programTitles": {
+    "automation-information-and-control-computer-systems-aiccs": "Автоматика, информационни и управляващи компютърни системи (АИУКС)",
+    "automotive-engineering-ae": "Автомобилна техника (АТ)",
+    "agronomy-a": "Агрономство (A)",
+    "renewable-energy-sources-res": "Възобновяеми енергийни източници (ВЕИ)",
+    "electric-power-engineering-epe": "Електроенергетика (ЕЕ)",
+    "electronics-e": "Електроника (E)",
+    "ship-electrical-equipment-see": "Електрообзавеждане на кораба (ЕOК)",
+    "electric-power-supply-and-electrical-equipment-epsee": "Електроснабдяване и електрообзавеждане (ЕСЕО)",
+    "electrical-engineering-and-electrical-technologies-eeet": "Електротехника и електротехнологии (ЕТЕТ)",
+    "civil-protection-in-disasters-and-emergencies-cpde": "Защита на населението при бедствия и аварии (ЗНБА)",
+    "artificial-intelligence-ai": "Изкуствен интелект (ИИ)",
+    "industrial-design-id": "Индустриален дизайн (ИД)",
+    "industrial-management-im": "Индустриален мениджмънт (ИМ)",
+    "environmental-ecological-engineering-ee": "Инженерна екология (ИЕ)",
+    "intelligent-transport-systems-its": "Интелигентни транспортни системи (ИТС)",
+    "information-and-communication-technologies-ict": "Информационни и комуникационни технологии (ИКТ)",
+    "cybersecurity-cs": "Киберсигурност (КС)",
+    "computerized-technologies-in-mechanical-engineering-ctme": "Компютъризирани технологии в машиностроенето (КТМ)",
+    "computer-systems-and-technologies-cst": "Компютърни системи и технологии (КСТ)",
+    "marine-engineering-ship-machines-and-mechanisms": "Корабни машини и механизми (КММ)",
+    "navigation-ship-maneuvering": "Корабоводене (КВ)",
+    "naval-architecture-and-marine-technology-namt": "Корабостроене и морска техника (КМТ)",
+    "water-transport-logistics-wtl": "Логистика на водния транспорт (ЛВТ)",
+    "mechanical-engineering-and-technologies-met": "Машиностроителна техника и технологии (МТТ)",
+    "robotics-and-mechatronics-rm": "Роботика и мехатроника (РМ)",
+    "software-and-internet-technologies-sit": "Софтуерни и интернет технологии (СИТ)",
+    "social-management-sm": "Социален мениджмънт (СМ)",
+    "construction-management-cm": "Строителен мениджмънт (СтМ)",
+    "technological-entrepreneurship-and-innovation-tei": "Технологично предприемачество и иновации (ТПИ)",
+    "heat-power-engineering-and-investment-design-hpeid": "Топлотехника и инвестиционно проектиране (ТИП)",
+    "transport-equipment-and-technologies-tet": "Транспортна техника и технологии (ТТТ)",
+    "data-analysis-and-network-technologies-dant": "Анализ на данни и мрежови технологии (АДМТ)",
+    "health-and-safety-at-work-hsw": "Безопасни и здравословни условия на труд (БЗУТ)",
+    "renewable-energy-resources": "Възобновяеми енергийни източници (ВЕИ)",
+    "internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": "ДВГ и Автомобилна техника (ДВГ - След професионален бакалавър)",
+    "operation-of-fleet-and-ports-ofp": "Експлоатация на флота и пристанищата (ЕФП)",
+    "electric-power-systems-eps": "Електроенергийни системи (ЕЕС)",
+    "electronics-e": "Електроника (Е)",
+    "ship-electrical-equipment-see": "Електрообзавеждане на кораба (ЕОК)",
+    "electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": "Електроснабдяване и електрообзавеждане на водния транспорт (ЕСЕОВТ)",
+    "electric-power-supply-and-electrical-equipment-in-industry-epseei": "Електроснабдяване и електрообзавеждане на промишлеността (ЕСЕОП)",
+    "electrical-engineering-ee": "Електротехника (EТ)",
+    "industrial-design-id": "Индустриален дизайн (ИД)",
+    "industrial-management-im": "Индустриален мениджмънт (ИМ)",
+    "environmental-engineering-ee": "Инженерна екология (ИЕ)",
+    "smart-cities": "Интелигентни градове",
+    "cybersecurity-cs": "Киберсигурност (КС)",
+    "computerized-technologies-in-mechanical-engineering-ctme": "Компютъризирани технологии в машиностроенето (КТМ)",
+    "computer-networks-and-communications-cnc": "Компютърни мрежи и комуникации (КМК)",
+    "ship-machines-and-mechanisms-smm": "Корабни машини и механизми (КММ)",
+    "navigation": "Корабоводене (КВ)",
+    "naval-architecture-and-marine-technology-namt": "Корабостроене и морска техника (КМТ)",
+    "corporate-management-cm": "Корпоративен мениджмънт (КМ)",
+    "water-transport-logistics-wtl": "Логистика на водния транспорт (ЛВТ)",
+    "mechanical-engineering-and-technologies-met": "Машиностроителна техника и технологии (МТТ)",
+    "design-of-renewable-energy-facilities-dref": "Проектиране на съоръжения за ВЕИ (ПСВЕИ)",
+    "seed-production-and-plant-protection-sppp": "Семепроизводство и растителна защита (СПРЗ)",
+    "building-automation-systems-bas": "Системи за автоматизация на сгради (САС)",
+    "artificial-intelligence-systems-ais": "Системи на изкуствен интелект (СИИ)",
+    "software-engineering-se": "Софтуерно инженерство (СИ)",
+    "social-management-sm": "Социален мениджмънт (СМ)",
+    "social-work-with-individuals-with-deviant-behavior-swidb": "Социална работа при лица с девиантно поведение (СРЛДП)",
+    "social-work-with-children-swc": "Социална работа с деца (СРД)",
+    "social-entrepreneurship-se": "Социално предприемачество (СП)",
+    "modern-systems-in-agriculture-msa": "Съвременни системи в земеделието (ССЗ)",
+    "modern-technologies-in-agriculture-mta": "Съвременни технологии в земеделието (СТЗ)",
+    "telecommunications-and-mobile-technologies-tmt": "Телекомуникации и мобилни технологии (ТМТ)",
+    "materials-processing-equipment-and-technologies-mpet": "Техника и технологии за обработване на материали (ТТОМ)",
+    "technical-and-insurance-expertise-in-transport-tiet": "Техническа и застрахователна експертиза в транспорта (ТЗЕТ)",
+    "technical-and-insurance-expertise-in-transport-tiet": "Техническа и застрахователна експертиза в транспорта (ТЗЕТ)",
+    "heat-engineering-and-renewable-energy-sources-heres": "Топлотехника и ВЕИ (ТВЕИ)",
+    "transport-equipment-and-technologies-tet": "Транспортна техника и технологии (ТТТ)",
+    "chemical-engineering-ce": "Химическо машиностроене (ХМ)",
+    "siemens-plc-control-technologies-siemens": "Siemens PLC технологии за управление (СИЕМЕНС)",
+    "medicine": "Медицина",
+    "dental-medicine": "Дентална медицина",
+    "pharmacy": "Фармация",
+    "nursing": "Сестринство",
+    "midwifery": "Акушерство",
+    "public-health": "Обществено здраве",
+    "health-management": "Здравен мениджмънт",
+    "clinical-pharmacy": "Клинична фармация",
+    "economics": "Икономика",
+    "finance": "Финанси",
+    "accounting": "Счетоводство",
+    "marketing": "Маркетинг",
+    "international-business": "Международен бизнес",
+    "marine-engineering": "Корабно машиностроене",
+    "naval-architecture": "Корабостроене",
+    "port-management": "Пристанищен мениджмънт",
+    "business-administration": "Бизнес администрация",
+    "international-relations": "Международни отношения",
+    "public-administration": "Публична администрация",
+    "european-studies": "Европейски изследвания",
+    "tourism-management": "Управление на туризма",
+    "hotel-management": "Хотелски мениджмънт",
+    "event-management": "Мениджмънт на събития",
+    "digital-marketing": "Дигитален маркетинг"
   }
 }

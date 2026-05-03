@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { buildUniversities, type UniversityDisplay } from "../university/university-data";
 import { View,Text,Dimensions,ScrollView,ImageBackground,TouchableOpacity,TextInput,KeyboardAvoidingView,Platform,} 
 from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -11,92 +12,6 @@ const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const CARD_WIDTH = SCREEN_WIDTH - 48;
 const CARD_HEIGHT = 220;
 
-const UNIVERSITIES = [
-  {
-    id: "1",
-    name: "Technical University",
-    description: "Leading engineering and technology programs with state-of-the-art research facilities.",
-     longDescription: "Technical University of Varna is the second-largest state technical university in Bulgaria. It holds institutional accreditation with the highest rating of Very Good for a six-year period, awarded by the National Evaluation and Accreditation Agency (NEAA). Furthermore, it is the first university in Bulgaria to receive institutional accreditation from the European University Association. The university maintains a high standard of education, certified under ISO 9001:2008, and boasts an extensive international network with mutual cooperation agreements with over 120 foreign universities.",
-    rating: 5,
-    color: "#1a3a5c",
-    image: require("../../assets/images/TU_Picture_01.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Engineering",
-    scholarship: true,
-    degree: "Bachelor and Master",
-  },
-  {
-    id: "2",
-    name: "Medical University",
-    description: "World-class medical education with top-ranked clinical training programs.",
-    longDescription: "The Medical University of Varna is a leading institution in Bulgarian medical education, known for its high-quality clinical training and research programs.",
-    rating: 5,
-    color: "#1a4a3a",
-    image: require("../../assets/images/mediczinski-universitet-varna-1.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Medical",
-    scholarship: true,
-    degree: "Master",
-  },
-  {
-    id: "3",
-    name: "Economics University",
-    description: "Premier business and economics programs shaping future leaders.",
-    longDescription: "The Economics University of Varna is a leading institution in Bulgarian economic education, known for its comprehensive programs and research initiatives.",
-    rating: 4,
-    color: "#3a1a4a",
-    image: require("../../assets/images/v4ZW_infe-uev.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Economics",
-    scholarship: false,
-    degree: "Bachelor",
-  },
-  {
-    id: "4",
-    name: "Naval University",
-    description: "Pioneering maritime intelligence: Specialized education and research for a global industry.",
-    longDescription: "The Naval University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
-    rating: 3,
-    color: "#4a2a1a",
-    image: require("../../assets/images/DJI_0181.webp"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Engineering",
-    scholarship: false,
-    degree: "Bachelor",
-  },
-  {
-    id: "5",
-    name: "Free University",
-    description: "Specialized maritime education with cutting-edge naval research and training.",
-    longDescription: "The Free University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
-    rating: 4,
-    color: "#4a2a1a",
-    image: require("../../assets/images/svoboden.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Economics",
-    scholarship: true,
-    degree: "Master",
-  },
-  {
-    id: "6",
-    name: "University of Management",
-    description: "Where theory meets practice: Shaping the next generation of global business and tourism leaders.",
-    longDescription: "The University of Management of Varna is a leading institution in Bulgarian business education, known for its comprehensive programs and research initiatives.",
-    rating: 3,
-    color: "#4a2a1a",
-    image: require("../../assets/images/vum.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Business",
-    scholarship: false,
-    degree: "Master",
-  },
-];
 
 const FILTER_PANEL_HEIGHT = 260;
 
@@ -152,7 +67,7 @@ function UniversityCard({
   index,
   scrollX,
 }: {
-  item: (typeof UNIVERSITIES)[0];
+  item: UniversityDisplay;
   index: number;
   scrollX: SharedValue<number>;
 }) {
@@ -255,11 +170,12 @@ export default function Index() {
   const scrollX = useSharedValue(0);
   const router = useRouter();
   const { t } = useTranslation(); // 👈 ADDED
+  const universities = buildUniversities(t);
 
   const [searchText, setSearchText] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
-  const [selectedDegree, setSelectedDegree] = useState<string | null>(null);
+  const [selectedDegree, setSelectedDegree] = useState<"Bachelor" | "Master" | null>(null);
   const [selectedScholarship, setSelectedScholarship] = useState<boolean | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
@@ -305,16 +221,16 @@ export default function Index() {
     setSelectedCountry(null);
   };
 
-  const filteredUniversities = UNIVERSITIES.filter((u) => {
+  const filteredUniversities = universities.filter((u) => {
     if (searchText.trim()) {
       const q = searchText.toLowerCase();
       if (!u.name.toLowerCase().includes(q) && !u.description.toLowerCase().includes(q))
         return false;
     }
-    if (selectedDegree && u.degree !== selectedDegree) return false;
+    if (selectedDegree && !u.degreeLevels.includes(selectedDegree)) return false;
     if (selectedScholarship !== null && u.scholarship !== selectedScholarship) return false;
     if (selectedCategory && u.category !== selectedCategory) return false;
-    if (selectedCountry && u.country !== selectedCountry) return false;
+    if (selectedCountry && u.countryKey !== selectedCountry) return false;
     return true;
   });
 
@@ -443,7 +359,7 @@ export default function Index() {
                 {t("filters.degree")} {/* 👈 CHANGED */}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
-                {["Bachelor", "Master"].map((d) => (
+                {(["Bachelor", "Master"] as const).map((d) => (
                   <FilterChip
                     key={d}
                     label={t(`degrees.${d}`)} // 👈 CHANGED
@@ -493,7 +409,7 @@ export default function Index() {
                 {["Bulgaria"].map((c) => (
                   <FilterChip
                     key={c}
-                    label={c}
+                    label={t(`countries.${c}`)}
                     selected={selectedCountry === c}
                     onPress={() => setSelectedCountry(selectedCountry === c ? null : c)}
                   />

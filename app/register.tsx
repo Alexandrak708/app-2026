@@ -74,7 +74,7 @@ export default function Register() {
         Alert.alert(
           t("auth.successRegistration"),
           t("auth.successMessage"),
-          [{ text: "OK", onPress: () => router.replace("/") }]
+          [{ text: t("common.ok"), onPress: () => router.replace("/") }]
         );
         return;
       }

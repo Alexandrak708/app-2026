@@ -45,6 +45,13 @@
     "language": "Language",
     "logout": "Log Out"
   },
+  "languages": {
+    "en": "English",
+    "bg": "Bulgarian"
+  },
+  "countries": {
+    "Bulgaria": "Bulgaria"
+  },
   "degrees": {
     "Bachelor": "Bachelor",
     "Master": "Master"
@@ -63,6 +70,9 @@
   "modal": {
     "title": "This is a modal",
     "link": "Go to home screen"
+  },
+  "common": {
+    "ok": "OK"
   },
   "university": {
     "notFound": "University not found",
@@ -94,12 +104,15 @@
     "backToPrograms": "Back to programs",
     "returnToPrograms": "Return to programs",
     "label": "PROGRAM DETAIL",
+    "overviewTemplate": "{{title}} at {{universityName}} combines {{focus}} with {{style}}. The program is shaped to build strong practical skills and clear career direction.",
     "overview": "Overview",
     "snapshot": "Program Snapshot",
     "university": "University",
     "level": "Level",
     "duration": "Duration",
+    "durationYears": "{{count}} years",
     "studyMode": "Study mode",
+    "studyModeTemplate": "{{level}} track with classroom study, labs, and project work",
     "keyFocus": "Key Focus",
     "highlights": "Highlights",
     "careers": "Career Paths",
@@ -193,31 +206,128 @@
       "admissionNotes": ["Helpful for students interested in leadership and customer experience", "Internships can strongly improve outcomes"]
     }
   },
-  "programs": {
-    "techMarketing": {
-      "description": "Technical and marketing disciplines",
-      "focus": "digital systems, coding, automation, and applied technology",
+  "programThemes": {
+    "healthcare": {
+      "keyFocus": "healthcare practice and patient support",
+      "highlights": ["Clinical placements", "Evidence-based learning", "Health-service readiness"],
+      "careers": ["Healthcare provider", "Clinical assistant", "Health analyst", "Patient services specialist"],
+      "admissionNotes": ["Strong biology and chemistry background is useful", "Practical experience matters in this field"]
+    },
+    "business": {
+      "keyFocus": "business analysis, leadership, and strategic decision-making",
+      "highlights": ["Case-based learning", "Industry-focused assignments", "Career-oriented planning"],
+      "careers": ["Business analyst", "Manager", "Consultant", "Operations specialist"],
+      "admissionNotes": ["Math, communication, and problem-solving help a lot", "Internships can improve your profile"]
+    },
+    "maritime": {
+      "keyFocus": "maritime systems, transport operations, and technical control",
+      "highlights": ["Simulator practice", "Operational discipline", "Transport safety focus"],
+      "careers": ["Marine operator", "Fleet specialist", "Logistics coordinator", "Technical officer"],
+      "admissionNotes": ["Comfort with technical and operational work is important", "Field practice is a core part of training"]
+    },
+    "tech": {
+      "keyFocus": "digital systems, coding, automation, and applied technology",
       "highlights": ["Lab-driven learning", "Problem solving with technology", "Applied innovation"],
       "careers": ["Developer", "Systems engineer", "IT specialist", "Automation consultant"],
       "admissionNotes": ["Programming or math interest helps", "Projects and labs usually matter more than memorization"]
     },
     "engineering": {
-      "focus": "engineering design, applied science, and technical problem solving",
+      "keyFocus": "engineering design, applied science, and technical problem solving",
       "highlights": ["Hands-on engineering labs", "Applied mathematics", "Industry-aligned training"],
       "careers": ["Engineer", "Project specialist", "Technical designer", "Operations expert"],
       "admissionNotes": ["Math and physics are usually important", "Practical projects are central to the course"]
     },
-    "healthcare": {
-      "focus": "healthcare practice and patient support",
-      "highlights": ["Clinical placements", "Evidence-based learning", "Health-service readiness"],
-      "careers": ["Healthcare provider", "Clinical assistant", "Health analyst", "Patient services specialist"],
-      "admissionNotes": ["Strong biology and chemistry background is useful", "Practical experience matters in this field"]
-    },
-    "navigation": {
-      "focus": "maritime systems, transport operations, and technical control",
-      "highlights": ["Simulator practice", "Operational discipline", "Transport safety focus"],
-      "careers": ["Marine operator", "Fleet specialist", "Logistics coordinator", "Technical officer"],
-      "admissionNotes": ["Comfort with technical and operational work is important", "Field practice is a core part of training"]
+    "general": {
+      "keyFocus": "specialized academic development and practical skill building",
+      "highlights": ["University-specific teaching", "Applied course work", "Career preparation"],
+      "careers": ["Specialist", "Coordinator", "Advisor", "Research assistant"],
+      "admissionNotes": ["Check the exact entrance requirements for this track", "Project work and steady performance are important"]
     }
+  },
+  "programTitles": {
+    "automation-information-and-control-computer-systems-aiccs": "Automation, Information and Control Computer Systems (AICCS)",
+    "automotive-engineering-ae": "Automotive Engineering (AE)",
+    "agronomy-a": "Agronomy (A)",
+    "renewable-energy-sources-res": "Renewable Energy Sources (RES)",
+    "electric-power-engineering-epe": "Electric Power Engineering (EPE)",
+    "electronics-e": "Electronics (E)",
+    "ship-electrical-equipment-see": "Ship Electrical Equipment (SEE)",
+    "electric-power-supply-and-electrical-equipment-epsee": "Electric Power Supply and Electrical Equipment (EPSEE)",
+    "electrical-engineering-and-electrical-technologies-eeet": "Electrical Engineering and Electrical Technologies (EEET)",
+    "civil-protection-in-disasters-and-emergencies-cpde": "Civil Protection in Disasters and Emergencies (CPDE)",
+    "artificial-intelligence-ai": "Artificial Intelligence (AI)",
+    "industrial-design-id": "Industrial Design (ID)",
+    "industrial-management-im": "Industrial Management (IM)",
+    "environmental-ecological-engineering-ee": "Environmental (Ecological) Engineering (EE)",
+    "intelligent-transport-systems-its": "Intelligent Transport Systems (ITS)",
+    "information-and-communication-technologies-ict": "Information and Communication Technologies (ICT)",
+    "cybersecurity-cs": "Cybersecurity (CS)",
+    "computerized-technologies-in-mechanical-engineering-ctme": "Computerized Technologies in Mechanical Engineering (CTME)",
+    "computer-systems-and-technologies-cst": "Computer Systems and Technologies (CST)",
+    "marine-engineering-ship-machines-and-mechanisms": "Marine Engineering (Ship Machines and Mechanisms)",
+    "navigation-ship-maneuvering": "Navigation (Ship Maneuvering)",
+    "naval-architecture-and-marine-technology-namt": "Naval Architecture and Marine Technology (NAMT)",
+    "water-transport-logistics-wtl": "Water Transport Logistics (WTL)",
+    "mechanical-engineering-and-technologies-met": "Mechanical Engineering and Technologies (MET)",
+    "robotics-and-mechatronics-rm": "Robotics and Mechatronics (RM)",
+    "software-and-internet-technologies-sit": "Software and Internet Technologies (SIT)",
+    "social-management-sm": "Social Management (SM)",
+    "construction-management-cm": "Construction Management (CM)",
+    "technological-entrepreneurship-and-innovation-tei": "Technological Entrepreneurship and Innovation (TEI)",
+    "heat-power-engineering-and-investment-design-hpeid": "Heat Power Engineering and Investment Design (HPEID)",
+    "transport-equipment-and-technologies-tet": "Transport Equipment and Technologies (TET)",
+    "data-analysis-and-network-technologies-dant": "Data Analysis and Network Technologies (DANT)",
+    "health-and-safety-at-work-hsw": "Health and Safety at Work (HSW)",
+    "internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": "Internal Combustion Engines and Automotive Engineering (ICEAE - Post-Professional Bachelor track)",
+    "operation-of-fleet-and-ports-ofp": "Operation of Fleet and Ports (OFP)",
+    "electric-power-systems-eps": "Electric Power Systems (EPS)",
+    "electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": "Electric Power Supply and Electrical Equipment in Water Transport (EPSEEWT)",
+    "electric-power-supply-and-electrical-equipment-in-industry-epseei": "Electric Power Supply and Electrical Equipment in Industry (EPSEEI)",
+    "electrical-engineering-ee": "Electrical Engineering (EE)",
+    "environmental-engineering-ee": "Environmental Engineering (EE)",
+    "smart-cities": "Smart Cities",
+    "computer-networks-and-communications-cnc": "Computer Networks and Communications (CNC)",
+    "navigation": "Navigation",
+    "corporate-management-cm": "Corporate Management (CM)",
+    "design-of-renewable-energy-facilities-dref": "Design of Renewable Energy Facilities (DREF)",
+    "seed-production-and-plant-protection-sppp": "Seed Production and Plant Protection (SPPP)",
+    "building-automation-systems-bas": "Building Automation Systems (BAS)",
+    "artificial-intelligence-systems-ais": "Artificial Intelligence Systems (AIS)",
+    "software-engineering-se": "Software Engineering (SE)",
+    "social-work-with-individuals-with-deviant-behavior-swidb": "Social Work with Individuals with Deviant Behavior (SWIDB)",
+    "social-work-with-children-swc": "Social Work with Children (SWC)",
+    "social-entrepreneurship-se": "Social Entrepreneurship (SE)",
+    "modern-systems-in-agriculture-msa": "Modern Systems in Agriculture (MSA)",
+    "modern-technologies-in-agriculture-mta": "Modern Technologies in Agriculture (MTA)",
+    "telecommunications-and-mobile-technologies-tmt": "Telecommunications and Mobile Technologies (TMT)",
+    "materials-processing-equipment-and-technologies-mpet": "Materials Processing Equipment and Technologies (MPET)",
+    "technical-and-insurance-expertise-in-transport-tiet": "Technical and Insurance Expertise in Transport (TIET)",
+    "heat-engineering-and-renewable-energy-sources-heres": "Heat Engineering and Renewable Energy Sources (HERES)",
+    "chemical-engineering-ce": "Chemical Engineering (CE)",
+    "siemens-plc-control-technologies-siemens": "Siemens PLC Control Technologies (SIEMENS)",
+    "medicine": "Medicine",
+    "dental-medicine": "Dental Medicine",
+    "pharmacy": "Pharmacy",
+    "nursing": "Nursing",
+    "midwifery": "Midwifery",
+    "public-health": "Public Health",
+    "health-management": "Health Management",
+    "clinical-pharmacy": "Clinical Pharmacy",
+    "economics": "Economics",
+    "finance": "Finance",
+    "accounting": "Accounting",
+    "marketing": "Marketing",
+    "international-business": "International Business",
+    "marine-engineering": "Marine Engineering",
+    "naval-architecture": "Naval Architecture",
+    "port-management": "Port Management",
+    "business-administration": "Business Administration",
+    "international-relations": "International Relations",
+    "public-administration": "Public Administration",
+    "european-studies": "European Studies",
+    "tourism-management": "Tourism Management",
+    "hotel-management": "Hotel Management",
+    "event-management": "Event Management",
+    "digital-marketing": "Digital Marketing"
   }
 }

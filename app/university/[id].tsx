@@ -10,95 +10,10 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { buildUniversities } from "./university-data";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
-const UNIVERSITIES = [
-  {
-    id: "1",
-    name: "Technical University",
-    description: "Leading engineering and technology programs with state-of-the-art research facilities.",
-    longDescription: "Technical University of Varna is the second-largest state technical university in Bulgaria. It holds institutional accreditation with the highest rating of Very Good for a six-year period, awarded by the National Evaluation and Accreditation Agency (NEAA). Furthermore, it is the first university in Bulgaria to receive institutional accreditation from the European University Association. The university maintains a high standard of education, certified under ISO 9001:2008, and boasts an extensive international network with mutual cooperation agreements with over 120 foreign universities.",
-    rating: 5,
-    color: "#1a3a5c",
-    image: require("../../assets/images/TU_Picture_01.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Engineering",
-    scholarship: true,
-    degree: "Bachelor and Master",
-  },
-  {
-    id: "2",
-    name: "Medical University",
-    description: "World-class medical education with top-ranked clinical training programs.",
-    longDescription: "The Medical University of Varna is a leading institution in Bulgarian medical education, known for its high-quality clinical training and research programs.",
-    rating: 5,
-    color: "#1a4a3a",
-    image: require("../../assets/images/mediczinski-universitet-varna-1.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Medical",
-    scholarship: true,
-    degree: "Master",
-  },
-  {
-    id: "3",
-    name: "Economics University",
-    description: "Premier business and economics programs shaping future leaders.",
-    longDescription: "The Economics University of Varna is a leading institution in Bulgarian economic education, known for its comprehensive programs and research initiatives.",
-    rating: 4,
-    color: "#3a1a4a",
-    image: require("../../assets/images/v4ZW_infe-uev.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Economics",
-    scholarship: false,
-    degree: "Bachelor",
-  },
-  {
-    id: "4",
-    name: "Naval University",
-    description: "Pioneering maritime intelligence: Specialized education and research for a global industry.",
-    longDescription: "The Naval University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
-    rating: 3,
-    color: "#4a2a1a",
-    image: require("../../assets/images/DJI_0181.webp"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Engineering",
-    scholarship: false,
-    degree: "Bachelor",
-  },
-  {
-    id: "5",
-    name: "Free University",
-    description: "Specialized maritime education with cutting-edge naval research and training.",
-    longDescription: "The Free University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
-    rating: 4,
-    color: "#4a2a1a",
-    image: require("../../assets/images/svoboden.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Economics",
-    scholarship: true,
-    degree: "Master",
-  },
-  {
-    id: "6",
-    name: "University of Management",
-    description: "Where theory meets practice: Shaping the next generation of global business and tourism leaders.",
-    longDescription: "The University of Management of Varna is a leading institution in Bulgarian business education, known for its comprehensive programs and research initiatives.",
-    rating: 3,
-    color: "#4a2a1a",
-    image: require("../../assets/images/vum.jpg"),
-    location: "Varna, Bulgaria",
-    country: "Bulgaria",
-    category: "Business",
-    scholarship: false,
-    degree: "Master",
-  },
-];
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -195,8 +110,9 @@ export default function UniversityPage() {
   const router = useRouter();
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
+  const universities = buildUniversities(t);
 
-  const university = UNIVERSITIES.find((u) => u.id === id);
+  const university = universities.find((u) => u.id === id);
 
   if (!university) {
     return (
@@ -214,21 +130,21 @@ export default function UniversityPage() {
     );
   }
 
-  const categoryLabel = t(`categories.${university.category}`) ?? university.category;
+  const categoryLabel = t(`categories.${university.category}`);
   const scholarshipLabel = university.scholarship
-    ? (t("university.scholarshipAvailable") ?? "Scholarship available")
-    : (t("university.noScholarship") ?? "No scholarship");
+    ? t("university.scholarshipAvailable")
+    : t("university.noScholarship");
 
   const quickInfoRows = [
-    { icon: "earth-outline" as const, label: t("filters.location") ?? "Location", value: university.location },
-    { icon: "book-outline" as const, label: t("filters.degree") ?? "Degree", value: university.degree },
-    { icon: "grid-outline" as const, label: t("filters.category") ?? "Category", value: categoryLabel },
+    { icon: "earth-outline" as const, label: t("filters.location"), value: university.location },
+    { icon: "book-outline" as const, label: t("filters.degree"), value: university.degreeLabel },
+    { icon: "grid-outline" as const, label: t("filters.category"), value: categoryLabel },
     {
       icon: "ribbon-outline" as const,
-      label: t("filters.scholarship") ?? "Scholarship",
+      label: t("filters.scholarship"),
       value: university.scholarship
-        ? (t("university.available") ?? "Available")
-        : (t("university.notAvailable") ?? "Not available"),
+        ? t("university.available")
+        : t("university.notAvailable"),
     },
   ];
 
@@ -290,7 +206,7 @@ export default function UniversityPage() {
 
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 12 }}>
                 <InfoBadge icon="location-sharp" label={university.location} />
-                <InfoBadge icon="school-outline" label={university.degree} />
+                <InfoBadge icon="school-outline" label={university.degreeLabel} />
                 <InfoBadge
                   icon={university.scholarship ? "ribbon-outline" : "close-circle-outline"}
                   label={scholarshipLabel}
