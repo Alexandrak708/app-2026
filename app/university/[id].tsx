@@ -5,32 +5,35 @@ import {
   TouchableOpacity,
   ScrollView,
   Dimensions,
+  ActivityIndicator,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { buildUniversities } from "./university-data";
+import { supabase } from "../../lib/supabase";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
 
 function StarRating({ rating }: { rating: number }) {
   return (
-    <View style={{ flexDirection: "row", gap: 4 }}>
+    <View style={{ flexDirection: "row", alignItems: "center" }}>
       {[1, 2, 3, 4, 5].map((star) => (
         <Ionicons
           key={star}
           name={star <= rating ? "star" : "star-outline"}
           size={16}
           color={star <= rating ? "#f59e0b" : "rgba(255,255,255,0.4)"}
+          style={{ marginRight: star === 5 ? 0 : 4 }}
         />
       ))}
     </View>
   );
 }
 
-function InfoBadge({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; label: string }) {
+function InfoBadge({ icon, label }: { icon: any; label: string }) {
   return (
     <View
       style={{
@@ -42,10 +45,10 @@ function InfoBadge({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; labe
         paddingVertical: 6,
         marginRight: 8,
         marginBottom: 8,
-        gap: 6,
+        // use margin on icon for spacing instead of unsupported `gap`
       }}
     >
-      <Ionicons name={icon} size={13} color="#ffffff" />
+      <Ionicons name={icon} size={13} color="#ffffff" style={{ marginRight: 6 }} />
       <Text style={{ color: "#ffffff", fontSize: 12, fontWeight: "600" }}>{label}</Text>
     </View>
   );
@@ -76,29 +79,32 @@ function ActionButton({
   label,
   onPress,
   primary = false,
+  disabled = false,
 }: {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
   onPress?: () => void;
   primary?: boolean;
+  disabled?: boolean;
 }) {
   return (
     <TouchableOpacity
       onPress={onPress}
+      disabled={disabled}
       style={{
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
-        gap: 8,
-        backgroundColor: primary ? "#0f172a" : "#f1f5f9",
+        backgroundColor: disabled ? "#e6e7eb" : primary ? "#0f172a" : "#f1f5f9",
         borderRadius: 14,
         paddingVertical: 14,
         paddingHorizontal: 20,
         flex: 1,
+        opacity: disabled ? 0.7 : 1,
       }}
     >
-      <Ionicons name={icon} size={18} color={primary ? "#ffffff" : "#475569"} />
-      <Text style={{ color: primary ? "#ffffff" : "#475569", fontSize: 14, fontWeight: "700" }}>
+      <Ionicons name={icon} size={18} color={disabled ? "#9ca3af" : primary ? "#ffffff" : "#475569"} style={{ marginRight: 8 }} />
+      <Text style={{ color: disabled ? "#9ca3af" : primary ? "#ffffff" : "#475569", fontSize: 14, fontWeight: "700" }}>
         {label}
       </Text>
     </TouchableOpacity>
@@ -113,6 +119,41 @@ export default function UniversityPage() {
   const universities = buildUniversities(t);
 
   const university = universities.find((u) => u.id === id);
+
+  const [admissionsEmail, setAdmissionsEmail] = useState<string | null | undefined>(
+    university?.admissionsEmail ?? undefined,
+  );
+
+  useEffect(() => {
+    if (!id) return;
+
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const { data, error } = await supabase
+          .from("universities")
+          .select("id, admissions_email")
+          .eq("id", id)
+          .single();
+
+        if (cancelled) return;
+
+        if (error || !data) {
+          // do not overwrite a local demo value with null — only clear if we explicitly have no local fallback
+          if (university?.admissionsEmail === undefined) setAdmissionsEmail(null);
+        } else {
+          setAdmissionsEmail(data.admissions_email ?? null);
+        }
+      } catch {
+        setAdmissionsEmail(null);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [id, university?.admissionsEmail]);
 
   if (!university) {
     return (
@@ -197,9 +238,9 @@ export default function UniversityPage() {
                 {university.name}
               </Text>
 
-              <View style={{ flexDirection: "row", alignItems: "center", marginTop: 8, gap: 8 }}>
+              <View style={{ flexDirection: "row", alignItems: "center", marginTop: 8 }}>
                 <StarRating rating={university.rating} />
-                <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>
+                <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12, marginLeft: 8 }}>
                   {university.rating}.0 / 5.0
                 </Text>
               </View>
@@ -249,7 +290,6 @@ export default function UniversityPage() {
                   paddingVertical: 10,
                   borderBottomWidth: 1,
                   borderBottomColor: "#f1f5f9",
-                  gap: 12,
                 }}
               >
                 <View
@@ -260,6 +300,7 @@ export default function UniversityPage() {
                     backgroundColor: "#f8fafc",
                     alignItems: "center",
                     justifyContent: "center",
+                    marginRight: 12,
                   }}
                 >
                   <Ionicons name={row.icon} size={18} color="#64748b" />
@@ -294,9 +335,31 @@ export default function UniversityPage() {
             </View>
           </SectionCard>
 
-          <View style={{ flexDirection: "row", gap: 12, marginTop: 4, marginBottom: 32 }}>
-            <ActionButton icon="globe-outline" label={t("university.website")} primary={false} />
-            <ActionButton icon="paper-plane-outline" label={t("university.applyNow")} primary={true} />
+          <View style={{ flexDirection: "row", marginTop: 4, marginBottom: 32 }}>
+            <View style={{ marginRight: 12, flex: 1 }}>
+              <ActionButton icon="globe-outline" label={t("university.website")} primary={false} />
+            </View>
+            <View style={{ flex: 1 }}>
+              {admissionsEmail === undefined ? (
+                <View style={{ paddingVertical: 14, alignItems: "center" }}>
+                  <ActivityIndicator />
+                </View>
+              ) : admissionsEmail === null ? (
+                <ActionButton
+                  icon="paper-plane-outline"
+                  label={t("university.applyNotAvailable")}
+                  primary={true}
+                  disabled={true}
+                />
+              ) : (
+                <ActionButton
+                  icon="paper-plane-outline"
+                  label={t("university.applyNow")}
+                  primary={true}
+                  onPress={() => router.push({ pathname: "/apply/[universityId]", params: { universityId: university.id } })}
+                />
+              )}
+            </View>
           </View>
 
         </View>

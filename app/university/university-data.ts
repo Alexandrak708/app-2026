@@ -20,6 +20,7 @@ export type UniversityDisplay = UniversityMeta & {
   location: string;
   degreeLabel: string;
   countryLabel: string;
+  admissionsEmail?: string | null;
 };
 
 const UNIVERSITY_META: UniversityMeta[] = [
@@ -88,6 +89,15 @@ const UNIVERSITY_META: UniversityMeta[] = [
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
   return UNIVERSITY_META.map((meta) => {
     const baseKey = `universities.${meta.id}`;
+    // demo admissions emails: only university 1 has a demo contact
+    const ADMISSIONS: Record<UniversityId, string | null> = {
+      1: "admissions@example-uni.edu",
+      2: null,
+      3: null,
+      4: null,
+      5: null,
+      6: null,
+    };
 
     return {
       ...meta,
@@ -97,6 +107,7 @@ export function buildUniversities(t: TFunction): UniversityDisplay[] {
       location: t(`${baseKey}.location`),
       degreeLabel: t(`${baseKey}.degree`),
       countryLabel: t(`countries.${meta.countryKey}`, { defaultValue: meta.countryKey }),
+      admissionsEmail: ADMISSIONS[meta.id],
     };
   });
 }
