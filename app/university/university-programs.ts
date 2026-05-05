@@ -17,6 +17,7 @@ export type ProgramDetail = {
   keyFocus: string;
   duration: string;
   studyMode: string;
+  partners?: string[];
   highlights: string[];
   careers: string[];
   admissionNotes: string[];
@@ -25,7 +26,7 @@ export type ProgramDetail = {
 type ProgramOverride = Partial<
   Pick<
     ProgramDetail,
-    "title" | "overview" | "keyFocus" | "duration" | "studyMode" | "highlights" | "careers" | "admissionNotes"
+    "title" | "overview" | "keyFocus" | "duration" | "studyMode" | "partners" | "highlights" | "careers" | "admissionNotes"
   >
 >;
 
@@ -306,6 +307,7 @@ export function buildProgramDetail(
     keyFocus: theme.keyFocus,
     duration: i18n.t("programDetail.durationYears", { count: durationYears }),
     studyMode: i18n.t("programDetail.studyModeTemplate", { level: levelLabel }),
+    partners: [],
     highlights: [profile.focus, ...ensureArray(theme.highlights)],
     careers: Array.from(new Set([...ensureArray(profile.careers), ...ensureArray(theme.careers)])),
     admissionNotes: Array.from(new Set([...ensureArray(profile.admissionNotes), ...ensureArray(theme.admissionNotes)])),
@@ -321,6 +323,7 @@ export function buildProgramDetail(
   return {
     ...baseDetail,
     ...override,
+    partners: override.partners ?? baseDetail.partners,
     highlights: override.highlights ?? baseDetail.highlights,
     careers: override.careers ?? baseDetail.careers,
     admissionNotes: override.admissionNotes ?? baseDetail.admissionNotes,

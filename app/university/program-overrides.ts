@@ -3,7 +3,7 @@ export type ProgramOverride = {
   overview?: string;
   keyFocus?: string;
   duration?: string;
-  studyMode?: string;
+  partners?: string;
   highlights?: string[];
   careers?: string[];
   admissionNotes?: string[];

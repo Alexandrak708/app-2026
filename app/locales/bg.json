@@ -111,8 +111,8 @@
     "level": "Степен",
     "duration": "Продължителност",
     "durationYears": "{{count}} години",
-    "studyMode": "Форма на обучение",
-    "studyModeTemplate": "{{level}} програма с лекции, лаборатории и проектна работа",
+    "studyMode": "Партньори",
+    "studyModeTemplate": "Партньори за {{level}} програма са индустриални лаборатории, научни центрове и местни работодатели",
     "keyFocus": "Основен фокус",
     "highlights": "Акценти",
     "careers": "Кариерни пътища",
@@ -457,7 +457,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Редовна (4 години) / Задочна (5 години)",
-      "studyMode": "Edit this study mode.",
+      "partners": ["Siemens", "ABB", "Festo", "National Instruments", "Schneider Electric"],
       "highlights": ["Edit this highlight."
       ],
       "careers": [
@@ -478,7 +478,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -493,7 +493,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -508,7 +508,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -523,7 +523,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -538,7 +538,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -553,7 +553,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -568,7 +568,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -583,7 +583,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -598,7 +598,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -613,7 +613,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -628,7 +628,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -643,7 +643,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -658,7 +658,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -673,7 +673,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -688,7 +688,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -703,7 +703,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -718,7 +718,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -733,7 +733,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -748,7 +748,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -763,7 +763,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -778,7 +778,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -793,7 +793,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -808,7 +808,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -823,7 +823,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -838,7 +838,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -853,7 +853,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -868,7 +868,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -883,7 +883,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -898,7 +898,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -913,7 +913,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -928,7 +928,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -943,7 +943,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -958,7 +958,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -973,7 +973,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -988,7 +988,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1003,7 +1003,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1018,7 +1018,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1033,7 +1033,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1048,7 +1048,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1063,7 +1063,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1078,7 +1078,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1093,7 +1093,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1108,7 +1108,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1123,7 +1123,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1138,7 +1138,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1153,7 +1153,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1168,7 +1168,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1183,7 +1183,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1198,7 +1198,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1213,7 +1213,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1228,7 +1228,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1243,7 +1243,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1258,7 +1258,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1273,7 +1273,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1288,7 +1288,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1303,7 +1303,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1318,7 +1318,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1333,7 +1333,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1348,7 +1348,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1363,7 +1363,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1378,7 +1378,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1393,7 +1393,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1408,7 +1408,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1423,7 +1423,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1438,7 +1438,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1453,7 +1453,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1468,7 +1468,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1483,7 +1483,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1498,7 +1498,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1513,7 +1513,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1528,7 +1528,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1543,7 +1543,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1558,7 +1558,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1573,7 +1573,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1588,7 +1588,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1603,7 +1603,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1618,7 +1618,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1633,7 +1633,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1648,7 +1648,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1663,7 +1663,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1678,7 +1678,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1693,7 +1693,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1708,7 +1708,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1723,7 +1723,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1738,7 +1738,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1753,7 +1753,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1768,7 +1768,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1783,7 +1783,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1798,7 +1798,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1813,7 +1813,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1828,7 +1828,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1843,7 +1843,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1858,7 +1858,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1873,7 +1873,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1888,7 +1888,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1903,7 +1903,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1918,7 +1918,7 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Edit this duration.",
-      "studyMode": "Edit this study mode.",
+      "studyMode": "Edit these partners.",
       "highlights": [
         "Edit this highlight."
       ],
@@ -1931,3 +1931,5 @@
     }
   }
 }
+
+
