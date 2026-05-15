@@ -11,6 +11,7 @@ import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
 import { supabase } from '../lib/supabase';
 import { useTranslation } from 'react-i18next';
+import { BackToSettingsButton } from '@/components/back-to-settings-button';
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
@@ -73,6 +74,7 @@ export default function ProfileScreen() {
 
   return (
     <ThemedView style={styles.container}>
+      <BackToSettingsButton />
       <View style={styles.card}>
         <ThemedText type="title">{t('profile.title')}</ThemedText>
 
@@ -90,13 +92,14 @@ export default function ProfileScreen() {
         <TouchableOpacity style={styles.save} onPress={save} disabled={saving}>
           {saving ? <ActivityIndicator /> : <ThemedText type="defaultSemiBold">{t('profile.save')}</ThemedText>}
         </TouchableOpacity>
+
       </View>
     </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 24, paddingTop: 48 },
+  container: { flex: 1, padding: 24, paddingTop: 76 },
   card: { gap: 12 },
   input: {
     borderBottomWidth: 1,

@@ -44,6 +44,7 @@
     "title": "Settings",
     "language": "Language",
     "logout": "Log Out",
+    "backToSettings": "Back to Settings",
     "cancel": "Cancel",
     "save": "Save",
     "errorTitle": "Error",

@@ -3,11 +3,13 @@ import { View, StyleSheet, ScrollView } from 'react-native';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
+import { BackToSettingsButton } from '@/components/back-to-settings-button';
 
 export default function HelpCenter() {
   const { t } = useTranslation();
   return (
     <ThemedView style={styles.container}>
+      <BackToSettingsButton />
       <ScrollView contentContainerStyle={styles.card}>
         <ThemedText type="title">{t('helpCenter.title')}</ThemedText>
 
@@ -19,6 +21,7 @@ export default function HelpCenter() {
 
         <ThemedText type="subtitle">{t('helpCenter.termsQuestion')}</ThemedText>
         <ThemedText>{t('helpCenter.termsAnswer')}</ThemedText>
+
       </ScrollView>
     </ThemedView>
   );
@@ -26,5 +29,5 @@ export default function HelpCenter() {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  card: { padding: 24, paddingTop: 48, gap: 16 },
+  card: { padding: 24, paddingTop: 76, gap: 16 },
 });

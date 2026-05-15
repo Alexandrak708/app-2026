@@ -6,6 +6,7 @@ import { ThemedView } from '@/components/themed-view';
 import { ThemeContext } from '@/components/theme-provider';
 import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
+import { BackToSettingsButton } from '@/components/back-to-settings-button';
 
 export default function AppearanceScreen() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function AppearanceScreen() {
 
   return (
     <ThemedView style={styles.container}>
+      <BackToSettingsButton />
       <View style={styles.card}>
         <ThemedText type="subtitle">{t('appearance.title')}</ThemedText>
 
@@ -36,14 +38,15 @@ export default function AppearanceScreen() {
         <TouchableOpacity style={styles.close} onPress={() => router.back()}>
           <ThemedText type="link">{t('appearance.done')}</ThemedText>
         </TouchableOpacity>
+
       </View>
     </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 24, paddingTop: 48 },
-  card: { gap: 18, marginTop: 18 },
+  container: { flex: 1, padding: 24, paddingTop: 76 },
+  card: { gap: 18, marginTop: 16 },
   row: {
     paddingVertical: 14,
     paddingHorizontal: 12,
