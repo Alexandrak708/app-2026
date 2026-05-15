@@ -5,10 +5,12 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ThemeContext } from '@/components/theme-provider';
 import { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function AppearanceScreen() {
   const router = useRouter();
   const ctx = useContext(ThemeContext)!;
+  const { t } = useTranslation();
 
   const set = (t: 'light' | 'dark' | 'system') => {
     ctx.setTheme(t);
@@ -17,22 +19,22 @@ export default function AppearanceScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.card}>
-        <ThemedText type="subtitle">Appearance</ThemedText>
+        <ThemedText type="subtitle">{t('appearance.title')}</ThemedText>
 
         <TouchableOpacity style={styles.row} onPress={() => set('light')}>
-          <ThemedText type="defaultSemiBold">Light</ThemedText>
+          <ThemedText type="defaultSemiBold">{t('appearance.light')}</ThemedText>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.row} onPress={() => set('dark')}>
-          <ThemedText type="defaultSemiBold">Dark</ThemedText>
+          <ThemedText type="defaultSemiBold">{t('appearance.dark')}</ThemedText>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.row} onPress={() => set('system')}>
-          <ThemedText type="defaultSemiBold">System</ThemedText>
+          <ThemedText type="defaultSemiBold">{t('appearance.system')}</ThemedText>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.close} onPress={() => router.back()}>
-          <ThemedText type="link">Done</ThemedText>
+          <ThemedText type="link">{t('appearance.done')}</ThemedText>
         </TouchableOpacity>
       </View>
     </ThemedView>

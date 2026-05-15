@@ -115,7 +115,7 @@ export default function Settings() {
   const handlePickAvatar = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (status !== "granted") {
-      Alert.alert("Permission needed", "Please allow access to your photo library.");
+      Alert.alert(t("settings.permissionNeededTitle"), t("settings.photoLibraryPermission"));
       return;
     }
 
@@ -167,7 +167,7 @@ export default function Settings() {
       setUser((prev: any) => ({ ...prev, avatar_url: publicUrl }));
     } catch (err: any) {
       console.error("Avatar upload error:", err);
-      Alert.alert("Error", err.message || "Failed to upload photo.");
+      Alert.alert(t("settings.errorTitle"), err.message || t("settings.failedToUploadPhoto"));
     } finally {
       setLoadingAvatar(false);
     }
@@ -175,7 +175,7 @@ export default function Settings() {
 
   const handleSaveName = async () => {
     if (!editedName.trim()) {
-      Alert.alert("Error", "Name cannot be empty");
+      Alert.alert(t("settings.errorTitle"), t("settings.nameCannotBeEmpty"));
       return;
     }
     setLoadingName(true);
@@ -190,7 +190,7 @@ export default function Settings() {
       setUser((prev: any) => ({ ...prev, full_name: editedName.trim() }));
       setIsEditingName(false);
     } catch (error) {
-      Alert.alert("Error", "Failed to update name. Please try again.");
+      Alert.alert(t("settings.errorTitle"), t("settings.failedToUpdateName"));
       console.error(error);
     } finally {
       setLoadingName(false);
@@ -219,9 +219,9 @@ export default function Settings() {
   const handleLogout = async () => {
     Alert.alert(
       t("settings.logout"),
-      "Are you sure you want to log out?",
+      t("settings.logoutConfirmMessage"),
       [
-        { text: "Cancel", style: "cancel" },
+        { text: t("settings.cancel"), style: "cancel" },
         {
           text: t("settings.logout"),
           style: "destructive",
@@ -234,7 +234,7 @@ export default function Settings() {
               router.replace("/login");
             } catch (error) {
               console.error("Logout error:", error);
-              Alert.alert("Error", "Failed to log out. Please try again.");
+              Alert.alert(t("settings.errorTitle"), t("settings.failedToLogOut"));
             }
           },
         },
@@ -257,7 +257,7 @@ export default function Settings() {
       contentContainerStyle={styles.scrollContent}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.pageTitle}>{t("settings.title") || "Settings"}</Text>
+      <Text style={styles.pageTitle}>{t("settings.title")}</Text>
 
       {/* ── Profile Card — all logic unchanged ── */}
       <View style={styles.profileCard}>
@@ -297,7 +297,7 @@ export default function Settings() {
                 style={styles.nameInput}
                 value={editedName}
                 onChangeText={setEditedName}
-                placeholder="Your name"
+                placeholder={t("settings.yourNamePlaceholder")}
                 placeholderTextColor="#94a3b8"
                 editable={!loadingName}
                 autoFocus
@@ -313,11 +313,11 @@ export default function Settings() {
                   {loadingName ? (
                     <ActivityIndicator color="#fff" size="small" />
                   ) : (
-                    <Text style={styles.saveBtnText}>Save</Text>
+                    <Text style={styles.saveBtnText}>{t("settings.save")}</Text>
                   )}
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.cancelBtn} onPress={handleCancelEdit}>
-                  <Text style={styles.cancelBtnText}>Cancel</Text>
+                  <Text style={styles.cancelBtnText}>{t("settings.cancel")}</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -327,7 +327,7 @@ export default function Settings() {
               style={styles.nameRow}
               activeOpacity={0.7}
             >
-              <Text style={styles.profileName}>{user?.full_name || "Add your name"}</Text>
+              <Text style={styles.profileName}>{user?.full_name || t("settings.addYourName")}</Text>
               <Text style={styles.editPencil}>✏️</Text>
             </TouchableOpacity>
           )}
@@ -336,22 +336,25 @@ export default function Settings() {
       </View>
 
       {/* ── Account ── */}
-      <Section title="ACCOUNT">
-        <SettingsRow label="Profile" onPress={() => router.push('/profile')} />
+      <Section title={t("settings.sections.account")}>
+        <SettingsRow label={t("settings.items.profile")} onPress={() => router.push('/profile')} />
         <View style={styles.separator} />
-        <SettingsRow label="Security" onPress={() => router.push('/security')} />
+        <SettingsRow label={t("settings.items.security")} onPress={() => router.push('/security')} />
         <View style={styles.separator} />
-        <SettingsRow label="Email Notifications" onPress={() => router.push('/email-notifications')} />
+        <SettingsRow
+          label={t("settings.items.emailNotifications")}
+          onPress={() => router.push('/email-notifications')}
+        />
       </Section>
 
       {/* ── Preferences ── */}
-      <Section title="PREFERENCES">
-        <SettingsRow label="Appearance" onPress={() => router.push('/appearance')} />
+      <Section title={t("settings.sections.preferences")}>
+        <SettingsRow label={t("settings.items.appearance")} onPress={() => router.push('/appearance')} />
         <View style={styles.separator} />
 
         {/* Language row — logic unchanged, restyled as inline pills */}
         <View style={styles.settingsRow}>
-          <Text style={styles.rowLabel}>{t("settings.language") || "Language"}</Text>
+          <Text style={styles.rowLabel}>{t("settings.language")}</Text>
           <View style={styles.langPills}>
             <TouchableOpacity
               style={[styles.langPill, currentLang === "en" && styles.langPillActive]}
@@ -360,7 +363,7 @@ export default function Settings() {
             >
               <Text style={styles.langPillFlag}>🇬🇧</Text>
               <Text style={[styles.langPillText, currentLang === "en" && styles.langPillTextActive]}>
-                EN
+                {t("languages.en")}
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -370,23 +373,23 @@ export default function Settings() {
             >
               <Text style={styles.langPillFlag}>🇧🇬</Text>
               <Text style={[styles.langPillText, currentLang === "bg" && styles.langPillTextActive]}>
-                BG
+                {t("languages.bg")}
               </Text>
             </TouchableOpacity>
           </View>
         </View>
 
         <View style={styles.separator} />
-        <SettingsRow label="Accessibility" onPress={() => router.push('/accessibility')} />
+        <SettingsRow label={t("settings.items.accessibility")} onPress={() => router.push('/accessibility')} />
       </Section>
 
       {/* ── Support ── */}
-      <Section title="SUPPORT">
-        <SettingsRow label="Help Center" onPress={() => router.push('/help-center')} />
+      <Section title={t("settings.sections.support")}>
+        <SettingsRow label={t("settings.items.helpCenter")} onPress={() => router.push('/help-center')} />
         <View style={styles.separator} />
-        <SettingsRow label="About" onPress={() => router.push('/about')} />
+        <SettingsRow label={t("settings.items.about")} onPress={() => router.push('/about')} />
         <View style={styles.separator} />
-        <SettingsRow label="Terms of Service" onPress={() => router.push('/terms')} />
+        <SettingsRow label={t("settings.items.termsOfService")} onPress={() => router.push('/terms')} />
       </Section>
 
       {/* ── Log Out — logic unchanged ── */}
@@ -394,7 +397,7 @@ export default function Settings() {
         <Text style={styles.logoutText}>{t("settings.logout") || "Log Out"}</Text>
       </TouchableOpacity>
 
-      <Text style={styles.versionText}>Version 1.0.0</Text>
+      <Text style={styles.versionText}>{t("settings.appVersion")}</Text>
     </ScrollView>
   );
 }

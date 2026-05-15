@@ -3,11 +3,13 @@ import { View, StyleSheet, Switch } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
+import { useTranslation } from 'react-i18next';
 
 const KEY_MARKETING = 'settings:email:marketing';
 const KEY_UPDATES = 'settings:email:updates';
 
 export default function EmailNotifications() {
+  const { t } = useTranslation();
   const [marketing, setMarketing] = useState(false);
   const [updates, setUpdates] = useState(false);
 
@@ -28,15 +30,15 @@ export default function EmailNotifications() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.card}>
-        <ThemedText type="title">Email Notifications</ThemedText>
+        <ThemedText type="title">{t('emailNotifications.title')}</ThemedText>
 
         <View style={styles.row}>
-          <ThemedText>Marketing</ThemedText>
+          <ThemedText>{t('emailNotifications.marketing')}</ThemedText>
           <Switch value={marketing} onValueChange={(v) => toggle(KEY_MARKETING, v, setMarketing)} />
         </View>
 
         <View style={styles.row}>
-          <ThemedText>Product Updates</ThemedText>
+          <ThemedText>{t('emailNotifications.productUpdates')}</ThemedText>
           <Switch value={updates} onValueChange={(v) => toggle(KEY_UPDATES, v, setUpdates)} />
         </View>
       </View>

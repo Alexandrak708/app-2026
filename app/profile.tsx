@@ -10,8 +10,10 @@ import {
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
 import { supabase } from '../lib/supabase';
+import { useTranslation } from 'react-i18next';
 
 export default function ProfileScreen() {
+  const { t } = useTranslation();
   const [authUser, setAuthUser] = useState<any>(null);
   const [user, setUser] = useState<any>(null);
   const [editedName, setEditedName] = useState('');
@@ -43,7 +45,7 @@ export default function ProfileScreen() {
   }, []);
 
   const save = async () => {
-    if (!editedName.trim()) return Alert.alert('Name required');
+    if (!editedName.trim()) return Alert.alert(t('profile.errorTitle'), t('profile.nameRequired'));
     setSaving(true);
     try {
       const { error } = await supabase
@@ -52,10 +54,10 @@ export default function ProfileScreen() {
         .eq('id', authUser.id);
       if (error) throw error;
       setUser((p: any) => ({ ...p, full_name: editedName.trim() }));
-      Alert.alert('Saved');
+      Alert.alert(t('profile.savedTitle'));
     } catch (err: any) {
       console.error(err);
-      Alert.alert('Error', err.message || 'Failed to save');
+      Alert.alert(t('profile.errorTitle'), err.message || t('profile.failedToSave'));
     } finally {
       setSaving(false);
     }
@@ -72,21 +74,21 @@ export default function ProfileScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.card}>
-        <ThemedText type="title">Profile</ThemedText>
+        <ThemedText type="title">{t('profile.title')}</ThemedText>
 
-        <ThemedText type="subtitle">Name</ThemedText>
+        <ThemedText type="subtitle">{t('profile.name')}</ThemedText>
         <TextInput
           value={editedName}
           onChangeText={setEditedName}
           style={styles.input}
-          placeholder="Your name"
+          placeholder={t('profile.namePlaceholder')}
         />
 
-        <ThemedText type="subtitle">Email</ThemedText>
+        <ThemedText type="subtitle">{t('profile.email')}</ThemedText>
         <ThemedText>{authUser?.email || ''}</ThemedText>
 
         <TouchableOpacity style={styles.save} onPress={save} disabled={saving}>
-          {saving ? <ActivityIndicator /> : <ThemedText type="defaultSemiBold">Save</ThemedText>}
+          {saving ? <ActivityIndicator /> : <ThemedText type="defaultSemiBold">{t('profile.save')}</ThemedText>}
         </TouchableOpacity>
       </View>
     </ThemedView>

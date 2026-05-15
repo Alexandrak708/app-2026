@@ -3,10 +3,12 @@ import { View, StyleSheet, Switch } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
+import { useTranslation } from 'react-i18next';
 
 const KEY = 'settings:security:usePasscode';
 
 export default function SecurityScreen() {
+  const { t } = useTranslation();
   const [enabled, setEnabled] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -27,10 +29,10 @@ export default function SecurityScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.card}>
-        <ThemedText type="title">Security</ThemedText>
+        <ThemedText type="title">{t('security.title')}</ThemedText>
 
         <View style={styles.row}>
-          <ThemedText>Use Passcode</ThemedText>
+          <ThemedText>{t('security.usePasscode')}</ThemedText>
           <Switch value={enabled} onValueChange={toggle} disabled={loading} />
         </View>
       </View>

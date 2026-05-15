@@ -2,15 +2,15 @@ import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
+import { useTranslation } from 'react-i18next';
 
 export default function Terms() {
+  const { t } = useTranslation();
   return (
     <ThemedView style={styles.container}>
       <ScrollView contentContainerStyle={styles.card}>
-        <ThemedText type="title">Terms of Service</ThemedText>
-        <ThemedText>
-          These are placeholder terms. Replace with your actual terms of service text.
-        </ThemedText>
+        <ThemedText type="title">{t('terms.title')}</ThemedText>
+        <ThemedText>{t('terms.description')}</ThemedText>
       </ScrollView>
     </ThemedView>
   );

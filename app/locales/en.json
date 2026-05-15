@@ -43,7 +43,85 @@
   "settings": {
     "title": "Settings",
     "language": "Language",
-    "logout": "Log Out"
+    "logout": "Log Out",
+    "cancel": "Cancel",
+    "save": "Save",
+    "errorTitle": "Error",
+    "permissionNeededTitle": "Permission needed",
+    "photoLibraryPermission": "Please allow access to your photo library.",
+    "failedToUploadPhoto": "Failed to upload photo.",
+    "nameCannotBeEmpty": "Name cannot be empty.",
+    "failedToUpdateName": "Failed to update name. Please try again.",
+    "failedToLogOut": "Failed to log out. Please try again.",
+    "logoutConfirmMessage": "Are you sure you want to log out?",
+    "yourNamePlaceholder": "Your name",
+    "addYourName": "Add your name",
+    "appVersion": "Version 1.0.0",
+    "sections": {
+      "account": "ACCOUNT",
+      "preferences": "PREFERENCES",
+      "support": "SUPPORT"
+    },
+    "items": {
+      "profile": "Profile",
+      "security": "Security",
+      "emailNotifications": "Email Notifications",
+      "appearance": "Appearance",
+      "accessibility": "Accessibility",
+      "helpCenter": "Help Center",
+      "about": "About",
+      "termsOfService": "Terms of Service"
+    }
+  },
+  "appearance": {
+    "title": "Appearance",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "done": "Done"
+  },
+  "profile": {
+    "title": "Profile",
+    "name": "Name",
+    "email": "Email",
+    "namePlaceholder": "Your name",
+    "save": "Save",
+    "savedTitle": "Saved",
+    "errorTitle": "Error",
+    "nameRequired": "Name required.",
+    "failedToSave": "Failed to save."
+  },
+  "security": {
+    "title": "Security",
+    "usePasscode": "Use Passcode"
+  },
+  "emailNotifications": {
+    "title": "Email Notifications",
+    "marketing": "Marketing",
+    "productUpdates": "Product Updates"
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "reduceMotion": "Reduce Motion",
+    "largeText": "Large Text"
+  },
+  "helpCenter": {
+    "title": "Help Center",
+    "contactQuestion": "How do I contact support?",
+    "contactAnswer": "Please email support@example.com for help.",
+    "profileQuestion": "How do I change my profile?",
+    "profileAnswer": "Go to Profile in Settings to edit your information.",
+    "termsQuestion": "Where can I see terms?",
+    "termsAnswer": "Open Terms of Service from the Support section."
+  },
+  "about": {
+    "title": "About",
+    "version": "Version 1.0.0",
+    "description": "This is a demo application. More information can be added here when you are ready."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "These are placeholder terms. Replace with your actual terms of service text."
   },
   "languages": {
     "en": "English",

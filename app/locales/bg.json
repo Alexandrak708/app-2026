@@ -43,7 +43,85 @@
   "settings": {
     "title": "Настройки",
     "language": "Език",
-    "logout": "Изход"
+    "logout": "Изход",
+    "cancel": "Отказ",
+    "save": "Запази",
+    "errorTitle": "Грешка",
+    "permissionNeededTitle": "Нужно е разрешение",
+    "photoLibraryPermission": "Моля разреши достъп до фото библиотеката.",
+    "failedToUploadPhoto": "Неуспешно качване на снимката.",
+    "nameCannotBeEmpty": "Името не може да бъде празно.",
+    "failedToUpdateName": "Неуспешна промяна на името. Моля опитай отново.",
+    "failedToLogOut": "Неуспешен изход. Моля опитай отново.",
+    "logoutConfirmMessage": "Сигурен ли си, че искаш да излезеш?",
+    "yourNamePlaceholder": "Твоето име",
+    "addYourName": "Добави име",
+    "appVersion": "Версия 1.0.0",
+    "sections": {
+      "account": "АКАУНТ",
+      "preferences": "ПРЕДПОЧИТАНИЯ",
+      "support": "ПОДДРЪЖКА"
+    },
+    "items": {
+      "profile": "Профил",
+      "security": "Сигурност",
+      "emailNotifications": "Имейл известия",
+      "appearance": "Външен вид",
+      "accessibility": "Достъпност",
+      "helpCenter": "Помощен център",
+      "about": "За нас",
+      "termsOfService": "Условия за ползване"
+    }
+  },
+  "appearance": {
+    "title": "Външен вид",
+    "light": "Светла",
+    "dark": "Тъмна",
+    "system": "Системна",
+    "done": "Готово"
+  },
+  "profile": {
+    "title": "Профил",
+    "name": "Име",
+    "email": "Имейл",
+    "namePlaceholder": "Твоето име",
+    "save": "Запази",
+    "savedTitle": "Запазено",
+    "errorTitle": "Грешка",
+    "nameRequired": "Името е задължително.",
+    "failedToSave": "Неуспешно запазване."
+  },
+  "security": {
+    "title": "Сигурност",
+    "usePasscode": "Използвай код"
+  },
+  "emailNotifications": {
+    "title": "Имейл известия",
+    "marketing": "Маркетинг",
+    "productUpdates": "Актуализации на продукта"
+  },
+  "accessibility": {
+    "title": "Достъпност",
+    "reduceMotion": "Намали анимациите",
+    "largeText": "Голям текст"
+  },
+  "helpCenter": {
+    "title": "Помощен център",
+    "contactQuestion": "Как да се свържа с поддръжката?",
+    "contactAnswer": "Моля изпрати имейл до support@example.com за помощ.",
+    "profileQuestion": "Как да променя профила си?",
+    "profileAnswer": "Отиди на Профил в Настройки, за да редактираш информацията си.",
+    "termsQuestion": "Къде мога да видя условията?",
+    "termsAnswer": "Отвори Условия за ползване от секцията Поддръжка."
+  },
+  "about": {
+    "title": "За нас",
+    "version": "Версия 1.0.0",
+    "description": "Това е демонстрационно приложение. Тук може да се добави повече информация, когато си готов."
+  },
+  "terms": {
+    "title": "Условия за ползване",
+    "description": "Това са временни условия. Замени ги с истинския текст на условията за ползване."
   },
   "languages": {
     "en": "Английски",

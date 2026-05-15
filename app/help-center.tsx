@@ -2,21 +2,23 @@ import React from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
+import { useTranslation } from 'react-i18next';
 
 export default function HelpCenter() {
+  const { t } = useTranslation();
   return (
     <ThemedView style={styles.container}>
       <ScrollView contentContainerStyle={styles.card}>
-        <ThemedText type="title">Help Center</ThemedText>
+        <ThemedText type="title">{t('helpCenter.title')}</ThemedText>
 
-        <ThemedText type="subtitle">How do I contact support?</ThemedText>
-        <ThemedText>Please email support@example.com for help.</ThemedText>
+        <ThemedText type="subtitle">{t('helpCenter.contactQuestion')}</ThemedText>
+        <ThemedText>{t('helpCenter.contactAnswer')}</ThemedText>
 
-        <ThemedText type="subtitle">How do I change my profile?</ThemedText>
-        <ThemedText>Go to Profile in Settings to edit your information.</ThemedText>
+        <ThemedText type="subtitle">{t('helpCenter.profileQuestion')}</ThemedText>
+        <ThemedText>{t('helpCenter.profileAnswer')}</ThemedText>
 
-        <ThemedText type="subtitle">Where can I see terms?</ThemedText>
-        <ThemedText>Open Terms of Service from the Support section.</ThemedText>
+        <ThemedText type="subtitle">{t('helpCenter.termsQuestion')}</ThemedText>
+        <ThemedText>{t('helpCenter.termsAnswer')}</ThemedText>
       </ScrollView>
     </ThemedView>
   );

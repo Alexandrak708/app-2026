@@ -2,16 +2,16 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <ThemedView style={styles.container}>
       <View style={styles.card}>
-        <ThemedText type="title">About</ThemedText>
-        <ThemedText type="subtitle">Version 1.0.0</ThemedText>
-        <ThemedText>
-          This is a demo application. More information can be added here when you are ready.
-        </ThemedText>
+        <ThemedText type="title">{t('about.title')}</ThemedText>
+        <ThemedText type="subtitle">{t('about.version')}</ThemedText>
+        <ThemedText>{t('about.description')}</ThemedText>
       </View>
     </ThemedView>
   );

@@ -3,11 +3,13 @@ import { View, StyleSheet, Switch } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
+import { useTranslation } from 'react-i18next';
 
 const KEY_REDUCE = 'settings:accessibility:reduceMotion';
 const KEY_LARGE = 'settings:accessibility:largeText';
 
 export default function AccessibilityScreen() {
+  const { t } = useTranslation();
   const [reduce, setReduce] = useState(false);
   const [large, setLarge] = useState(false);
 
@@ -28,15 +30,15 @@ export default function AccessibilityScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.card}>
-        <ThemedText type="title">Accessibility</ThemedText>
+        <ThemedText type="title">{t('accessibility.title')}</ThemedText>
 
         <View style={styles.row}>
-          <ThemedText>Reduce Motion</ThemedText>
+          <ThemedText>{t('accessibility.reduceMotion')}</ThemedText>
           <Switch value={reduce} onValueChange={(v) => toggle(KEY_REDUCE, v, setReduce)} />
         </View>
 
         <View style={styles.row}>
-          <ThemedText>Large Text</ThemedText>
+          <ThemedText>{t('accessibility.largeText')}</ThemedText>
           <Switch value={large} onValueChange={(v) => toggle(KEY_LARGE, v, setLarge)} />
         </View>
       </View>
