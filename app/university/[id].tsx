@@ -11,6 +11,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { buildUniversities } from "./university-data";
+import { useFavourites } from "@/contexts/FavouritesContext";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -114,6 +115,8 @@ export default function UniversityPage() {
 
   const university = universities.find((u) => u.id === id);
 
+  const { toggleFavourite, isFavourite: checkFavourite } = useFavourites();
+
   if (!university) {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#f5f0e8" }}>
@@ -175,6 +178,25 @@ export default function UniversityPage() {
               }}
             >
               <Ionicons name="arrow-back" size={22} color="#ffffff" />
+            </TouchableOpacity>
+
+            {/* Heart button in top-right of hero */}
+            <TouchableOpacity
+              onPress={() => toggleFavourite(id as any)}
+              style={{
+                position: "absolute",
+                top: 56,
+                right: 20,
+                backgroundColor: "rgba(255,255,255,0.2)",
+                borderRadius: 12,
+                padding: 8,
+              }}
+            >
+              <Ionicons
+                name={checkFavourite(id as any) ? "heart" : "heart-outline"}
+                size={22}
+                color={checkFavourite(id as any) ? "#ef4444" : "#ffffff"}
+              />
             </TouchableOpacity>
 
             <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 24 }}>

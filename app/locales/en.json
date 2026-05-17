@@ -40,6 +40,13 @@
   "home": {
     "recommended": "Recommended"
   },
+  "favourites": {
+    "title": "Favourites",
+    "subtitle": "Universities you saved with the heart button appear here.",
+    "emptyTitle": "No favourites yet",
+    "emptyMessage": "Tap the heart on any university card to save it here.",
+    "remove": "Remove from favourites"
+  },
   "settings": {
     "title": "Settings",
     "language": "Language",

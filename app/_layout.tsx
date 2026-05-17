@@ -6,6 +6,7 @@ import { supabase } from "../lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { View, ActivityIndicator } from "react-native";
 import ThemeProvider from '@/components/theme-provider';
+import { FavouritesProvider } from '@/contexts/FavouritesContext';
 
 export default function RootLayout() {
   const [session, setSession] = useState<Session | null>(null);
@@ -56,11 +57,13 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider>
+      <FavouritesProvider>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="login" />
         <Stack.Screen name="register" />
         <Stack.Screen name="(tabs)" />
       </Stack>
+      </FavouritesProvider>
     </ThemeProvider>
   );
 }
