@@ -11,11 +11,11 @@ export function BackToSettingsButton() {
 
   return (
     <TouchableOpacity
-      onPress={() => router.replace('/(tabs)/settings')}
+      onPress={() => router.push('/settings')}
       activeOpacity={0.8}
       accessibilityRole="button"
       accessibilityLabel={t('settings.backToSettings')}
-      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+      hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }}
       style={styles.button}
     >
       <View style={styles.content}>
@@ -30,10 +30,9 @@ export function BackToSettingsButton() {
 
 const styles = StyleSheet.create({
   button: {
-    position: 'absolute',
-    top: 18,
-    left: 16,
-    zIndex: 20,
+    alignSelf: 'flex-start',
+    marginTop: 4,
+    marginBottom: 16,
     backgroundColor: '#ffffff',
     borderRadius: 999,
     borderWidth: 1,
