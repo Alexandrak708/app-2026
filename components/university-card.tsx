@@ -87,7 +87,13 @@ export default function UniversityCard({
               >
                 {item.description}
               </Text>
-              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 8 }}>
+              <View style={{ marginTop: 10, gap: 6 }}>
+                <View style={{ flexDirection: "row", alignItems: "center" }}>
+                  <Ionicons name="cash-outline" size={12} color="rgba(255,255,255,0.8)" />
+                  <Text style={{ color: "rgba(255,255,255,0.8)", fontSize: 11, marginLeft: 3 }}>
+                    {item.tuitionRange}
+                  </Text>
+                </View>
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
                   <Ionicons name="location-sharp" size={12} color="rgba(255,255,255,0.8)" />
                   <Text style={{ color: "rgba(255,255,255,0.8)", fontSize: 11, marginLeft: 3 }}>

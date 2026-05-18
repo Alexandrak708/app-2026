@@ -19,6 +19,7 @@ export type UniversityDisplay = UniversityMeta & {
   longDescription: string;
   location: string;
   degreeLabel: string;
+  tuitionRange: string;
   countryLabel: string;
 };
 
@@ -96,6 +97,7 @@ export function buildUniversities(t: TFunction): UniversityDisplay[] {
       longDescription: t(`${baseKey}.longDescription`),
       location: t(`${baseKey}.location`),
       degreeLabel: t(`${baseKey}.degree`),
+      tuitionRange: t(`${baseKey}.tuitionRange`),
       countryLabel: t(`countries.${meta.countryKey}`, { defaultValue: meta.countryKey }),
     };
   });
