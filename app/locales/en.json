@@ -38,12 +38,99 @@
     "no": "No"
   },
   "home": {
-    "recommended": "Recommended"
+    "recommended": "Most searched",
+    "allUniversities": "All universities"
+  },
+  "favourites": {
+    "title": "Favourites",
+    "subtitle": "Universities you saved with the heart button appear here.",
+    "emptyTitle": "No favourites yet",
+    "emptyMessage": "Tap the heart on any university card to save it here.",
+    "remove": "Remove from favourites"
   },
   "settings": {
     "title": "Settings",
     "language": "Language",
-    "logout": "Log Out"
+    "logout": "Log Out",
+    "backToSettings": "Back to Settings",
+    "cancel": "Cancel",
+    "save": "Save",
+    "errorTitle": "Error",
+    "permissionNeededTitle": "Permission needed",
+    "photoLibraryPermission": "Please allow access to your photo library.",
+    "failedToUploadPhoto": "Failed to upload photo.",
+    "nameCannotBeEmpty": "Name cannot be empty.",
+    "failedToUpdateName": "Failed to update name. Please try again.",
+    "failedToLogOut": "Failed to log out. Please try again.",
+    "logoutConfirmMessage": "Are you sure you want to log out?",
+    "yourNamePlaceholder": "Your name",
+    "addYourName": "Add your name",
+    "appVersion": "Version 1.0.0",
+    "sections": {
+      "account": "ACCOUNT",
+      "preferences": "PREFERENCES",
+      "support": "SUPPORT"
+    },
+    "items": {
+      "profile": "Profile",
+      "security": "Security",
+      "emailNotifications": "Email Notifications",
+      "appearance": "Appearance",
+      "accessibility": "Accessibility",
+      "helpCenter": "Help Center",
+      "about": "About",
+      "termsOfService": "Terms of Service"
+    }
+  },
+  "appearance": {
+    "title": "Appearance",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "done": "Done"
+  },
+  "profile": {
+    "title": "Profile",
+    "name": "Name",
+    "email": "Email",
+    "namePlaceholder": "Your name",
+    "save": "Save",
+    "savedTitle": "Saved",
+    "errorTitle": "Error",
+    "nameRequired": "Name required.",
+    "failedToSave": "Failed to save."
+  },
+  "security": {
+    "title": "Security",
+    "usePasscode": "Use Passcode"
+  },
+  "emailNotifications": {
+    "title": "Email Notifications",
+    "marketing": "Marketing",
+    "productUpdates": "Product Updates"
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "reduceMotion": "Reduce Motion",
+    "largeText": "Large Text"
+  },
+  "helpCenter": {
+    "title": "Help Center",
+    "contactQuestion": "How do I contact support?",
+    "contactAnswer": "Please email support@example.com for help.",
+    "profileQuestion": "How do I change my profile?",
+    "profileAnswer": "Go to Profile in Settings to edit your information.",
+    "termsQuestion": "Where can I see terms?",
+    "termsAnswer": "Open Terms of Service from the Support section."
+  },
+  "about": {
+    "title": "About",
+    "version": "Version 1.0.0",
+    "description": "This is a demo application. More information can be added here when you are ready."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "These are placeholder terms. Replace with your actual terms of service text."
   },
   "languages": {
     "en": "English",
@@ -125,42 +212,48 @@
       "description": "Leading engineering and technology programs with state-of-the-art research facilities.",
       "longDescription": "Technical University of Varna is the second-largest state technical university in Bulgaria. It holds institutional accreditation with the highest rating of Very Good for a six-year period, awarded by the National Evaluation and Accreditation Agency (NEAA). Furthermore, it is the first university in Bulgaria to receive institutional accreditation from the European University Association. The university maintains a high standard of education, certified under ISO 9001:2008, and boasts an extensive international network with mutual cooperation agreements with over 120 foreign universities.",
       "location": "Varna, Bulgaria",
-      "degree": "Bachelor and Master"
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€137 - €410 / semester"
     },
     "2": {
       "name": "Medical University",
       "description": "World-class medical education with top-ranked clinical training programs.",
       "longDescription": "The Medical University of Varna is a leading institution in Bulgarian medical education, known for its high-quality clinical training and research programs.",
       "location": "Varna, Bulgaria",
-      "degree": "Master"
+      "degree": "Master",
+      "tuitionRange": "€2,500 - €7,000 / year"
     },
     "3": {
       "name": "Economics University",
       "description": "Premier business and economics programs shaping future leaders.",
       "longDescription": "The Economics University of Varna is a leading institution in Bulgarian economic education, known for its comprehensive programs and research initiatives.",
       "location": "Varna, Bulgaria",
-      "degree": "Bachelor"
+      "degree": "Bachelor",
+      "tuitionRange": "€1,100 - €3,200 / year"
     },
     "4": {
       "name": "Naval University",
       "description": "Pioneering maritime intelligence: Specialized education and research for a global industry.",
       "longDescription": "The Naval University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
       "location": "Varna, Bulgaria",
-      "degree": "Bachelor"
+      "degree": "Bachelor",
+      "tuitionRange": "€900 - €2,800 / year"
     },
     "5": {
       "name": "Free University",
       "description": "Specialized maritime education with cutting-edge naval research and training.",
       "longDescription": "The Free University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
       "location": "Varna, Bulgaria",
-      "degree": "Master"
+      "degree": "Master",
+      "tuitionRange": "€1,300 - €3,900 / year"
     },
     "6": {
       "name": "University of Management",
       "description": "Where theory meets practice: Shaping the next generation of global business and tourism leaders.",
       "longDescription": "The University of Management of Varna is a leading institution in Bulgarian business education, known for its comprehensive programs and research initiatives.",
       "location": "Varna, Bulgaria",
-      "degree": "Master"
+      "degree": "Master",
+      "tuitionRange": "€1,400 - €4,100 / year"
     }
   },
   "universityProfiles": {
