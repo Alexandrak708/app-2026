@@ -217,29 +217,13 @@ export default function Settings() {
   };
 
   const handleLogout = async () => {
-    Alert.alert(
-      t("settings.logout"),
-      t("settings.logoutConfirmMessage"),
-      [
-        { text: t("settings.cancel"), style: "cancel" },
-        {
-          text: t("settings.logout"),
-          style: "destructive",
-          onPress: async () => {
-            try {
-              const { error } = await supabase.auth.signOut();
-
-              if (error) throw error;
-
-              router.replace("/login");
-            } catch (error) {
-              console.error("Logout error:", error);
-              Alert.alert(t("settings.errorTitle"), t("settings.failedToLogOut"));
-            }
-          },
-        },
-      ]
-    );
+    try {
+      await supabase.auth.signOut({ scope: "local" });
+    } catch (error) {
+      console.error("Logout error:", error);
+    } finally {
+      router.replace("/login");
+    }
   };
 
   if (initialLoading) {
