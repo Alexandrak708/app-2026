@@ -254,150 +254,152 @@ export default function Settings() {
     <ScrollView
       ref={scrollRef}
       style={styles.container}
-      contentContainerStyle={styles.scrollContent}
+      contentContainerStyle={[styles.scrollContent, { alignItems: "center" }]}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.pageTitle}>{t("settings.title")}</Text>
+      <View style={{ width: "100%", maxWidth: 760, paddingHorizontal: 20 }}>
+        <Text style={styles.pageTitle}>{t("settings.title")}</Text>
 
-      {/* ── Profile Card — all logic unchanged ── */}
-      <View style={styles.profileCard}>
-        <TouchableOpacity
-          style={styles.avatarWrapper}
-          onPress={handlePickAvatar}
-          activeOpacity={0.85}
-          disabled={loadingAvatar}
-        >
-          <Animated.View style={[styles.avatarRing, { transform: [{ scale: pulseAnim }] }]}>
-            {loadingAvatar ? (
-              <View style={[styles.avatar, styles.avatarPlaceholder]}>
-                <ActivityIndicator color="#fff" size="small" />
+        {/* ── Profile Card — all logic unchanged ── */}
+        <View style={styles.profileCard}>
+          <TouchableOpacity
+            style={styles.avatarWrapper}
+            onPress={handlePickAvatar}
+            activeOpacity={0.85}
+            disabled={loadingAvatar}
+          >
+            <Animated.View style={[styles.avatarRing, { transform: [{ scale: pulseAnim }] }]}>
+              {loadingAvatar ? (
+                <View style={[styles.avatar, styles.avatarPlaceholder]}>
+                  <ActivityIndicator color="#fff" size="small" />
+                </View>
+              ) : (
+                <Image
+                  source={{
+                    uri:
+                      user?.avatar_url ||
+                      `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                        user?.full_name || "U"
+                      )}&background=1a1a2e&color=fff&size=200`,
+                  }}
+                  style={styles.avatar}
+                />
+              )}
+            </Animated.View>
+            <View style={styles.cameraOverlay}>
+              <Text style={styles.cameraIcon}>📷</Text>
+            </View>
+          </TouchableOpacity>
+
+          <View style={styles.profileInfo}>
+            {isEditingName ? (
+              <View style={styles.editBlock}>
+                <TextInput
+                  style={styles.nameInput}
+                  value={editedName}
+                  onChangeText={setEditedName}
+                  placeholder={t("settings.yourNamePlaceholder")}
+                  placeholderTextColor="#94a3b8"
+                  editable={!loadingName}
+                  autoFocus
+                  returnKeyType="done"
+                  onSubmitEditing={handleSaveName}
+                />
+                <View style={styles.editActions}>
+                  <TouchableOpacity
+                    style={styles.saveBtn}
+                    onPress={handleSaveName}
+                    disabled={loadingName}
+                  >
+                    {loadingName ? (
+                      <ActivityIndicator color="#fff" size="small" />
+                    ) : (
+                      <Text style={styles.saveBtnText}>{t("settings.save")}</Text>
+                    )}
+                  </TouchableOpacity>
+                  <TouchableOpacity style={styles.cancelBtn} onPress={handleCancelEdit}>
+                    <Text style={styles.cancelBtnText}>{t("settings.cancel")}</Text>
+                  </TouchableOpacity>
+                </View>
               </View>
             ) : (
-              <Image
-                source={{
-                  uri:
-                    user?.avatar_url ||
-                    `https://ui-avatars.com/api/?name=${encodeURIComponent(
-                      user?.full_name || "U"
-                    )}&background=1a1a2e&color=fff&size=200`,
-                }}
-                style={styles.avatar}
-              />
+              <TouchableOpacity
+                onPress={() => setIsEditingName(true)}
+                style={styles.nameRow}
+                activeOpacity={0.7}
+              >
+                <Text style={styles.profileName}>{user?.full_name || t("settings.addYourName")}</Text>
+                <Text style={styles.editPencil}>✏️</Text>
+              </TouchableOpacity>
             )}
-          </Animated.View>
-          <View style={styles.cameraOverlay}>
-            <Text style={styles.cameraIcon}>📷</Text>
+            <Text style={styles.profileEmail}>{authUser?.email || ""}</Text>
           </View>
+        </View>
+
+        {/* ── Account ── */}
+        <Section title={t("settings.sections.account")}>
+          <SettingsRow label={t("settings.items.profile")} onPress={() => router.push('/profile')} />
+          <View style={styles.separator} />
+          <SettingsRow label={t("settings.items.security")} onPress={() => router.push('/security')} />
+          <View style={styles.separator} />
+          <SettingsRow
+            label={t("settings.items.emailNotifications")}
+            onPress={() => router.push('/email-notifications')}
+          />
+        </Section>
+
+        {/* ── Preferences ── */}
+        <Section title={t("settings.sections.preferences")}>
+          <SettingsRow label={t("settings.items.appearance")} onPress={() => router.push('/appearance')} />
+          <View style={styles.separator} />
+
+          {/* Language row — logic unchanged, restyled as inline pills */}
+          <View style={styles.settingsRow}>
+            <Text style={styles.rowLabel}>{t("settings.language")}</Text>
+            <View style={styles.langPills}>
+              <TouchableOpacity
+                style={[styles.langPill, currentLang === "en" && styles.langPillActive]}
+                onPress={() => handleLanguageChange("en")}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.langPillFlag}>🇬🇧</Text>
+                <Text style={[styles.langPillText, currentLang === "en" && styles.langPillTextActive]}>
+                  {t("languages.en")}
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.langPill, currentLang === "bg" && styles.langPillActive]}
+                onPress={() => handleLanguageChange("bg")}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.langPillFlag}>🇧🇬</Text>
+                <Text style={[styles.langPillText, currentLang === "bg" && styles.langPillTextActive]}>
+                  {t("languages.bg")}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+
+          <View style={styles.separator} />
+          <SettingsRow label={t("settings.items.accessibility")} onPress={() => router.push('/accessibility')} />
+        </Section>
+
+        {/* ── Support ── */}
+        <Section title={t("settings.sections.support")}>
+          <SettingsRow label={t("settings.items.helpCenter")} onPress={() => router.push('/help-center')} />
+          <View style={styles.separator} />
+          <SettingsRow label={t("settings.items.about")} onPress={() => router.push('/about')} />
+          <View style={styles.separator} />
+          <SettingsRow label={t("settings.items.termsOfService")} onPress={() => router.push('/terms')} />
+        </Section>
+
+        {/* ── Log Out — logic unchanged ── */}
+        <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout} activeOpacity={0.8}>
+          <Text style={styles.logoutText}>{t("settings.logout") || "Log Out"}</Text>
         </TouchableOpacity>
 
-        <View style={styles.profileInfo}>
-          {isEditingName ? (
-            <View style={styles.editBlock}>
-              <TextInput
-                style={styles.nameInput}
-                value={editedName}
-                onChangeText={setEditedName}
-                placeholder={t("settings.yourNamePlaceholder")}
-                placeholderTextColor="#94a3b8"
-                editable={!loadingName}
-                autoFocus
-                returnKeyType="done"
-                onSubmitEditing={handleSaveName}
-              />
-              <View style={styles.editActions}>
-                <TouchableOpacity
-                  style={styles.saveBtn}
-                  onPress={handleSaveName}
-                  disabled={loadingName}
-                >
-                  {loadingName ? (
-                    <ActivityIndicator color="#fff" size="small" />
-                  ) : (
-                    <Text style={styles.saveBtnText}>{t("settings.save")}</Text>
-                  )}
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.cancelBtn} onPress={handleCancelEdit}>
-                  <Text style={styles.cancelBtnText}>{t("settings.cancel")}</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          ) : (
-            <TouchableOpacity
-              onPress={() => setIsEditingName(true)}
-              style={styles.nameRow}
-              activeOpacity={0.7}
-            >
-              <Text style={styles.profileName}>{user?.full_name || t("settings.addYourName")}</Text>
-              <Text style={styles.editPencil}>✏️</Text>
-            </TouchableOpacity>
-          )}
-          <Text style={styles.profileEmail}>{authUser?.email || ""}</Text>
-        </View>
+        <Text style={styles.versionText}>{t("settings.appVersion")}</Text>
       </View>
-
-      {/* ── Account ── */}
-      <Section title={t("settings.sections.account")}>
-        <SettingsRow label={t("settings.items.profile")} onPress={() => router.push('/profile')} />
-        <View style={styles.separator} />
-        <SettingsRow label={t("settings.items.security")} onPress={() => router.push('/security')} />
-        <View style={styles.separator} />
-        <SettingsRow
-          label={t("settings.items.emailNotifications")}
-          onPress={() => router.push('/email-notifications')}
-        />
-      </Section>
-
-      {/* ── Preferences ── */}
-      <Section title={t("settings.sections.preferences")}>
-        <SettingsRow label={t("settings.items.appearance")} onPress={() => router.push('/appearance')} />
-        <View style={styles.separator} />
-
-        {/* Language row — logic unchanged, restyled as inline pills */}
-        <View style={styles.settingsRow}>
-          <Text style={styles.rowLabel}>{t("settings.language")}</Text>
-          <View style={styles.langPills}>
-            <TouchableOpacity
-              style={[styles.langPill, currentLang === "en" && styles.langPillActive]}
-              onPress={() => handleLanguageChange("en")}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.langPillFlag}>🇬🇧</Text>
-              <Text style={[styles.langPillText, currentLang === "en" && styles.langPillTextActive]}>
-                {t("languages.en")}
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[styles.langPill, currentLang === "bg" && styles.langPillActive]}
-              onPress={() => handleLanguageChange("bg")}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.langPillFlag}>🇧🇬</Text>
-              <Text style={[styles.langPillText, currentLang === "bg" && styles.langPillTextActive]}>
-                {t("languages.bg")}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <View style={styles.separator} />
-        <SettingsRow label={t("settings.items.accessibility")} onPress={() => router.push('/accessibility')} />
-      </Section>
-
-      {/* ── Support ── */}
-      <Section title={t("settings.sections.support")}>
-        <SettingsRow label={t("settings.items.helpCenter")} onPress={() => router.push('/help-center')} />
-        <View style={styles.separator} />
-        <SettingsRow label={t("settings.items.about")} onPress={() => router.push('/about')} />
-        <View style={styles.separator} />
-        <SettingsRow label={t("settings.items.termsOfService")} onPress={() => router.push('/terms')} />
-      </Section>
-
-      {/* ── Log Out — logic unchanged ── */}
-      <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout} activeOpacity={0.8}>
-        <Text style={styles.logoutText}>{t("settings.logout") || "Log Out"}</Text>
-      </TouchableOpacity>
-
-      <Text style={styles.versionText}>{t("settings.appVersion")}</Text>
     </ScrollView>
   );
 }

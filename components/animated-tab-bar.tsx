@@ -3,9 +3,9 @@ import {
   View,
   TouchableOpacity,
   StyleSheet,
-  Dimensions,
   Platform,
   Text,
+  useWindowDimensions,
 } from "react-native";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
@@ -19,8 +19,6 @@ import Animated, {
 import Svg, { Path } from "react-native-svg";
 import * as Haptics from "expo-haptics";
 import { useTranslation } from "react-i18next";
-
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
 const TAB_BAR_HEIGHT = 65;
 const DOME_WIDTH = 80;
@@ -139,9 +137,10 @@ export function AnimatedTabBar({
 }: BottomTabBarProps) {
   const { t } = useTranslation();
   const visibleRoutes = state.routes;
+  const { width: screenWidth } = useWindowDimensions();
 
   const tabCount = visibleRoutes.length;
-  const tabWidth = SCREEN_WIDTH / tabCount;
+  const tabWidth = screenWidth / tabCount;
 
   const initialIndex = visibleRoutes.findIndex(
     (r) => r.key === state.routes[state.index].key

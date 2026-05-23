@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, Dimensions, ImageBackground, TouchableOpacity, Pressable } from "react-native";
+import React from "react";
+import { View, Text, ImageBackground, TouchableOpacity, Pressable, useWindowDimensions } from "react-native";
 import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/FavouritesContext";
 import type { UniversityDisplay, UniversityId } from "@/app/university/university-data";
 
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
-const CARD_WIDTH = SCREEN_WIDTH - 48;
+const CARD_GAP = 16;
+const CARD_HORIZONTAL_PADDING = 48;
+const MAX_CARD_WIDTH = 560;
 const CARD_HEIGHT = 220;
+
+export function getUniversityCardWidth(screenWidth: number) {
+  return Math.min(screenWidth - CARD_HORIZONTAL_PADDING, MAX_CARD_WIDTH);
+}
 
 export default function UniversityCard({
   item,
@@ -20,6 +25,8 @@ export default function UniversityCard({
   scrollX?: SharedValue<number>;
   onPress?: () => void;
 }) {
+  const { width: screenWidth } = useWindowDimensions();
+  const cardWidth = getUniversityCardWidth(screenWidth);
   const { favouriteIds, toggleFavourite, isFavourite: checkFavourite } = useFavourites();
   const isFavourite = checkFavourite(item.id as any);
 
@@ -31,9 +38,9 @@ export default function UniversityCard({
   const animatedStyle = useAnimatedStyle(() => {
     if (scrollX == null || index == null) return {} as any;
     const inputRange = [
-      (index - 1) * (CARD_WIDTH + 16),
-      index * (CARD_WIDTH + 16),
-      (index + 1) * (CARD_WIDTH + 16),
+      (index - 1) * (cardWidth + CARD_GAP),
+      index * (cardWidth + CARD_GAP),
+      (index + 1) * (cardWidth + CARD_GAP),
     ];
     const scale = interpolate(scrollX!.value, inputRange, [0.93, 1, 0.93], Extrapolation.CLAMP);
     const opacity = interpolate(scrollX!.value, inputRange, [0.6, 1, 0.6], Extrapolation.CLAMP);
@@ -44,9 +51,9 @@ export default function UniversityCard({
     <Animated.View
       style={[
         {
-          width: CARD_WIDTH,
+          width: cardWidth,
           height: CARD_HEIGHT,
-          marginRight: 16,
+          marginRight: CARD_GAP,
           borderRadius: 24,
           overflow: "hidden",
           backgroundColor: item.color,

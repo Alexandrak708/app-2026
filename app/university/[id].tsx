@@ -4,7 +4,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   ScrollView,
-  Dimensions,
+  useWindowDimensions,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -12,9 +12,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { buildUniversities } from "./university-data";
 import { useFavourites } from "@/contexts/FavouritesContext";
-
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
-
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -111,7 +108,9 @@ export default function UniversityPage() {
   const router = useRouter();
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
+  const { width: screenWidth } = useWindowDimensions();
   const universities = buildUniversities(t);
+  const pageWidth = Math.min(screenWidth, 1100);
 
   const university = universities.find((u) => u.id === id);
 
@@ -153,10 +152,10 @@ export default function UniversityPage() {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
-      <ScrollView showsVerticalScrollIndicator={false} bounces>
+      <ScrollView showsVerticalScrollIndicator={false} bounces contentContainerStyle={{ alignItems: "center" }}>
 
         {/* Hero Image */}
-        <View style={{ height: 320, width: SCREEN_WIDTH }}>
+        <View style={{ height: 320, width: "100%", maxWidth: pageWidth }}>
           <ImageBackground source={university.image} style={{ flex: 1 }} resizeMode="cover">
             <View
               style={{
@@ -239,7 +238,7 @@ export default function UniversityPage() {
         </View>
 
         {/* Content */}
-        <View style={{ padding: 20 }}>
+        <View style={{ padding: 20, width: "100%", maxWidth: pageWidth }}>
 
           {/* About */}
           <SectionCard>

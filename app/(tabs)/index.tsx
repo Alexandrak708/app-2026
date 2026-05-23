@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { useMemo, useRef, useState } from "react";
 import { buildUniversities, type UniversityDisplay } from "../university/university-data";
 import {
-  View, Text, Dimensions, ScrollView, TextInput, KeyboardAvoidingView,
-  Platform, TouchableOpacity,
+  View, Text, ScrollView, TextInput, KeyboardAvoidingView,
+  Platform, TouchableOpacity, useWindowDimensions,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Animated, {
@@ -15,10 +15,15 @@ import { useIsFocused } from "@react-navigation/native";
 import UniversityCard from "@/components/university-card";
 import CompactUniversityCard from "@/components/compact-university-card";
 
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
-const CARD_WIDTH = SCREEN_WIDTH - 48;
+const CARD_GAP = 16;
+const CARD_HORIZONTAL_PADDING = 48;
+const MAX_CARD_WIDTH = 560;
 const CARD_HEIGHT = 220;
 const FILTER_PANEL_HEIGHT = 340;
+
+function getCardWidth(screenWidth: number) {
+  return Math.min(screenWidth - CARD_HORIZONTAL_PADDING, MAX_CARD_WIDTH);
+}
 
 const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
 
@@ -44,12 +49,12 @@ function FilterChip({
   );
 }
 
-function Dot({ index, scrollX }: { index: number; scrollX: SharedValue<number> }) {
+function Dot({ index, scrollX, cardWidth }: { index: number; scrollX: SharedValue<number>; cardWidth: number }) {
   const animatedDotStyle = useAnimatedStyle(() => {
     const inputRange = [
-      (index - 1) * (CARD_WIDTH + 16),
-      index * (CARD_WIDTH + 16),
-      (index + 1) * (CARD_WIDTH + 16),
+      (index - 1) * (cardWidth + CARD_GAP),
+      index * (cardWidth + CARD_GAP),
+      (index + 1) * (cardWidth + CARD_GAP),
     ];
     const width = interpolate(scrollX.value, inputRange, [8, 24, 8], Extrapolation.CLAMP);
     const opacity = interpolate(scrollX.value, inputRange, [0.45, 1, 0.45], Extrapolation.CLAMP);
@@ -90,6 +95,8 @@ export default function Index() {
   const scrollX = useSharedValue(0);
   const router = useRouter();
   const { t } = useTranslation();
+  const { width: screenWidth } = useWindowDimensions();
+  const cardWidth = getCardWidth(screenWidth);
   const universities = useMemo(() => buildUniversities(t), [t]);
   const isFocused = useIsFocused();
 
@@ -126,6 +133,8 @@ export default function Index() {
   const scrollHandler = useAnimatedScrollHandler((event) => {
     scrollX.value = event.contentOffset.x;
   });
+
+  const cardSnapInterval = cardWidth + CARD_GAP;
 
   const searchQuery = searchText.trim().toLowerCase();
   const hasSearchQuery = searchQuery.length > 0;
@@ -376,7 +385,7 @@ export default function Index() {
               <AnimatedScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                snapToInterval={CARD_WIDTH + 16}
+                snapToInterval={cardSnapInterval}
                 decelerationRate="fast"
                 contentContainerStyle={{ paddingHorizontal: 24 }}
                 onScroll={scrollHandler}
@@ -408,7 +417,7 @@ export default function Index() {
                   }}
                 >
                   {filteredUniversities.map((_, index) => (
-                    <Dot key={index} index={index} scrollX={scrollX} />
+                    <Dot key={index} index={index} scrollX={scrollX} cardWidth={cardWidth} />
                   ))}
                 </View>
               )}
