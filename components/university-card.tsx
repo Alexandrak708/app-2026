@@ -19,11 +19,17 @@ export default function UniversityCard({
   index,
   scrollX,
   onPress,
+  showCompareButton,
+  compareSelected,
+  onComparePress,
 }: {
   item: UniversityDisplay;
   index?: number;
   scrollX?: SharedValue<number>;
   onPress?: () => void;
+  showCompareButton?: boolean;
+  compareSelected?: boolean;
+  onComparePress?: (event?: any) => void;
 }) {
   const { width: screenWidth } = useWindowDimensions();
   const cardWidth = getUniversityCardWidth(screenWidth);
@@ -71,6 +77,26 @@ export default function UniversityCard({
           <Ionicons name={isFavourite ? "heart" : "heart-outline"} size={20} color={isFavourite ? "#ef4444" : "#ffffff"} />
         </View>
       </Pressable>
+
+      {showCompareButton && isFavourite && onComparePress && (
+        <Pressable
+          onPress={onComparePress}
+          accessibilityLabel={`toggle-compare-${item.id}`}
+          style={{ position: "absolute", top: 12, left: 20, zIndex: 2 }}
+        >
+          <View
+            style={{
+              backgroundColor: compareSelected ? "rgba(15, 23, 42, 0.82)" : "rgba(255,255,255,0.12)",
+              padding: 8,
+              borderRadius: 999,
+              borderWidth: 1,
+              borderColor: compareSelected ? "rgba(255,255,255,0.28)" : "rgba(255,255,255,0.06)",
+            }}
+          >
+            <Ionicons name="swap-horizontal-outline" size={20} color="#ffffff" />
+          </View>
+        </Pressable>
+      )}
 
       <TouchableOpacity activeOpacity={0.92} onPress={onPress} style={{ flex: 1 }}>
         <ImageBackground source={item.image} style={{ flex: 1 }} resizeMode="cover">
