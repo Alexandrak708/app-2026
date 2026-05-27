@@ -10,6 +10,7 @@ import {
   Animated,
   Easing,
   ScrollView,
+  Platform,
 } from "react-native";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "../i18n";
@@ -64,6 +65,34 @@ export default function Settings() {
   const [initialLoading, setInitialLoading] = useState(true);
 
   const pulseAnim = useRef(new Animated.Value(1)).current;
+
+  const assetToBytes = async (asset: ImagePicker.ImagePickerAsset) => {
+    if (Platform.OS === "web") {
+      const webFile = (asset as ImagePicker.ImagePickerAsset & { file?: File }).file;
+
+      if (webFile) {
+        const buffer = await webFile.arrayBuffer();
+        return new Uint8Array(buffer);
+      }
+
+      const response = await fetch(asset.uri);
+      const buffer = await response.arrayBuffer();
+      return new Uint8Array(buffer);
+    }
+
+    const base64 = await FileSystem.readAsStringAsync(asset.uri, {
+      encoding: FileSystem.EncodingType.Base64,
+    });
+
+    const byteCharacters = atob(base64);
+    const byteNumbers = new Array(byteCharacters.length);
+
+    for (let i = 0; i < byteCharacters.length; i++) {
+      byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+
+    return new Uint8Array(byteNumbers);
+  };
 
   useEffect(() => {
     fetchUserProfile();
@@ -129,24 +158,22 @@ export default function Settings() {
     if (result.canceled || !result.assets?.[0]) return;
 
     const asset = result.assets[0];
+    if (!authUser) {
+      Alert.alert(t("settings.errorTitle"), t("settings.failedToUploadPhoto"));
+      return;
+    }
+
     startPulse();
     setLoadingAvatar(true);
 
     try {
-      const fileExt = asset.uri.split(".").pop()?.toLowerCase() ?? "jpeg";
+      const fileExt =
+        asset.mimeType?.split("/").pop()?.toLowerCase() ??
+        asset.uri.split(".").pop()?.toLowerCase() ??
+        "jpeg";
       const filePath = `${authUser.id}/avatar.${fileExt}`;
-      const contentType = `image/${fileExt === "jpg" ? "jpeg" : fileExt}`;
-
-      const base64 = await FileSystem.readAsStringAsync(asset.uri, {
-        encoding: FileSystem.EncodingType.Base64,
-      });
-
-      const byteCharacters = atob(base64);
-      const byteNumbers = new Array(byteCharacters.length);
-      for (let i = 0; i < byteCharacters.length; i++) {
-        byteNumbers[i] = byteCharacters.charCodeAt(i);
-      }
-      const byteArray = new Uint8Array(byteNumbers);
+      const contentType = asset.mimeType ?? `image/${fileExt === "jpg" ? "jpeg" : fileExt}`;
+      const byteArray = await assetToBytes(asset);
 
       const { error: uploadError } = await supabase.storage
         .from("avatars")
