@@ -461,11 +461,11 @@
     }
   },
   "programTitles": {
+    "___university_1": "University 1 — Technical University",
     "automation-information-and-control-computer-systems-aiccs": "Automation, Information and Control Computer Systems (AICCS)",
     "automotive-engineering-ae": "Automotive Engineering (AE)",
     "agronomy-a": "Agronomy (A)",
     "renewable-energy-sources-res": "Renewable Energy Sources (RES)",
-    "renewable-energy-resources": "Renewable Energy Sources (RES)",
     "electric-power-engineering-epe": "Electric Power Engineering (EPE)",
     "electronics-e": "Electronics (E)",
     "ship-electrical-equipment-see": "Ship Electrical Equipment (SEE)",
@@ -482,7 +482,6 @@
     "computerized-technologies-in-mechanical-engineering-ctme": "Computerized Technologies in Mechanical Engineering (CTME)",
     "computer-systems-and-technologies-cst": "Computer Systems and Technologies (CST)",
     "marine-engineering-ship-machines-and-mechanisms": "Marine Engineering (Ship Machines and Mechanisms)",
-    "ship-machines-and-mechanisms-smm": "Ship Machines and Mechanisms (SMM)",
     "navigation-ship-maneuvering": "Navigation (Ship Maneuvering)",
     "naval-architecture-and-marine-technology-namt": "Naval Architecture and Marine Technology (NAMT)",
     "water-transport-logistics-wtl": "Water Transport Logistics (WTL)",
@@ -494,35 +493,8 @@
     "technological-entrepreneurship-and-innovation-tei": "Technological Entrepreneurship and Innovation (TEI)",
     "heat-power-engineering-and-investment-design-hpeid": "Heat Power Engineering and Investment Design (HPEID)",
     "transport-equipment-and-technologies-tet": "Transport Equipment and Technologies (TET)",
-    "data-analysis-and-network-technologies-dant": "Data Analysis and Network Technologies (DANT)",
-    "health-and-safety-at-work-hsw": "Health and Safety at Work (HSW)",
-    "internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": "Internal Combustion Engines and Automotive Engineering (ICEAE - Post-Professional Bachelor track)",
-    "operation-of-fleet-and-ports-ofp": "Operation of Fleet and Ports (OFP)",
-    "electric-power-systems-eps": "Electric Power Systems (EPS)",
-    "electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": "Electric Power Supply and Electrical Equipment in Water Transport (EPSEEWT)",
-    "electric-power-supply-and-electrical-equipment-in-industry-epseei": "Electric Power Supply and Electrical Equipment in Industry (EPSEEI)",
-    "electrical-engineering-ee": "Electrical Engineering (EE)",
-    "environmental-engineering-ee": "Environmental Engineering (EE)",
-    "smart-cities": "Smart Cities",
-    "computer-networks-and-communications-cnc": "Computer Networks and Communications (CNC)",
-    "navigation": "Navigation",
-    "corporate-management-cm": "Corporate Management (CM)",
-    "design-of-renewable-energy-facilities-dref": "Design of Renewable Energy Facilities (DREF)",
-    "seed-production-and-plant-protection-sppp": "Seed Production and Plant Protection (SPPP)",
-    "building-automation-systems-bas": "Building Automation Systems (BAS)",
-    "artificial-intelligence-systems-ais": "Artificial Intelligence Systems (AIS)",
-    "software-engineering-se": "Software Engineering (SE)",
-    "social-work-with-individuals-with-deviant-behavior-swidb": "Social Work with Individuals with Deviant Behavior (SWIDB)",
-    "social-work-with-children-swc": "Social Work with Children (SWC)",
-    "social-entrepreneurship-se": "Social Entrepreneurship (SE)",
-    "modern-systems-in-agriculture-msa": "Modern Systems in Agriculture (MSA)",
-    "modern-technologies-in-agriculture-mta": "Modern Technologies in Agriculture (MTA)",
-    "telecommunications-and-mobile-technologies-tmt": "Telecommunications and Mobile Technologies (TMT)",
-    "materials-processing-equipment-and-technologies-mpet": "Materials Processing Equipment and Technologies (MPET)",
-    "technical-and-insurance-expertise-in-transport-tiet": "Technical and Insurance Expertise in Transport (TIET)",
-    "heat-engineering-and-renewable-energy-sources-heres": "Heat Engineering and Renewable Energy Sources (HERES)",
-    "chemical-engineering-ce": "Chemical Engineering (CE)",
-    "siemens-plc-control-technologies-siemens": "Siemens PLC Control Technologies (SIEMENS)",
+
+    "___university_2": "University 2 — Medical University",
     "medicine": "Medicine",
     "dental-medicine": "Dental Medicine",
     "pharmacy": "Pharmacy",
@@ -531,18 +503,75 @@
     "public-health": "Public Health",
     "health-management": "Health Management",
     "clinical-pharmacy": "Clinical Pharmacy",
-    "economics": "Economics",
-    "finance": "Finance",
-    "accounting": "Accounting",
+
+    "___university_3": "University 3 — Economics University",
+    "hotel-and-restaurant-management": "Hotel and Restaurant Management",
+    "tourism-and-entertainemnt-buisness-management": "Tourism and Entertainemnt Buisness Management",
+    "buisness-and-management-in-english": "Buisness and Management - In English",
+    "buisness-economics": "Buisness Economics",
+    "economics-and-trade": "Economics and Trade",
+    "construction-buisness-and-entrepreneurship": "Construction Buisness and Entrepreneurship",
+    "real-estate-and-investments": "Real Estate and Investments",
+    "industrial-buisness-and-entrepreneurship": "Industrial Buisness and Entrepreneurship",
+    "logistics": "Logistics",
+    "agricultural-buisnesses": "Agricultural Buisnesses",
+    "commodities-science-and-customs-activity": "Commodities Science and Customs Activity",
+    "business-digital-technologies": "Business Digital Technologies",
+    "informatics-and-computer-sciences": "Informatics and Computer Sciences",
+    "mobile-and-web-technologies": "Mobile and Web Technologies",
+    "data-science": "Data Science",
+    "international-business-in-english": "International Business - In English",
+    "maritime-business-and-international-trade-in-english": "Maritime business and international trade - In English",
+    "international-tourism-in-russian": "International Tourism - In Russian",
     "marketing": "Marketing",
-    "international-business": "International Business",
+    "international-economic-relations": "International Economic Relations",
+    "management": "Management",
+    "tourism": "Tourism",
+    "judicial-administration": "Judicial Administration",
+    "digital-media-and-pr": "Digital Media and PR",
+    "accounting-in-english": "Accounting - In English",
+    "accounting-and-audit": "Accounting and Audit",
+    "accounting-and-finance": "Accounting and Finance",
+    "banking-and-insurance": "Banking and Insurance",
+    "intercultural-business-in-english": "Intercultural Business - In English",
+    "international-business-and-management-in-english": "International Business and Management - In English",
+    "master-of-business-administration-in-english": "Master of business administration - In English",
+    "computer-science-in-english": "Computer Science - In English",
+    "accounting-and-auditing-control": "Accounting and Auditing/Control",
+    "bank-management": "Bank Management",
+    "finance-and-innovations": "Finance and Innovations",
+    "corporate-business-and-governance-management": "Corporate Business and Governance/Management",
+    "logistics-management": "Logistics Management",
+    "global-commercial-business": "Global Commercial Business",
+    "civil-engineering-entrepreneurship-and-real-estate": "Civil Engineering Entrepreneurship and Real Estate",
+    "eco-economics": "Eco-economics",
+    "agricultural-business": "Agricultural Business",
+    "quality-and-expert-examination-of-commodities": "Quality and Expert Examination of Commodities",
+    "sales-management-and-merchandising": "Sales Management and Merchandising",
+    "advertising-and-media-communications": "Advertising and Media Communications",
+    "management-of-organizations": "Management of Organizations",
+    "human-resources-management": "Human Resources Management",
+    "public-management-and-administrative-power": "Public Management and Administrative Power",
+    "international-tourist-business": "International Tourist Business",
+    "business-consulting": "Business Consulting",
+    "project-management": "Project Management",
+    "marketing-and-brand-management": "Marketing And Brand Management",
+
+    "___university_4": "University 4 — Naval / Maritime University",
     "marine-engineering": "Marine Engineering",
     "naval-architecture": "Naval Architecture",
     "port-management": "Port Management",
+
+    "___university_5": "University 5 — Free University",
+    "international-business": "International Business",
     "business-administration": "Business Administration",
     "international-relations": "International Relations",
     "public-administration": "Public Administration",
     "european-studies": "European Studies",
+
+    "___university_6": "University 6 — University of Management (VUM)",
+    "software-systems-and-technologies": "Software Systems and Technologies",
+    "master-of-business-administration": "Master of Business Administration",
     "tourism-management": "Tourism Management",
     "hotel-management": "Hotel Management",
     "event-management": "Event Management",
@@ -553,7 +582,13 @@
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Full-time (4 years) / Part-time (5 years)",
-      "partners": ["Siemens", "ABB", "Festo", "National Instruments", "Schneider Electric"],
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
         "Edit this highlight."
       ],
@@ -899,6 +934,107 @@
       ],
       "admissionNotes": [
         "Edit this admission note."
+      ]
+    },
+    "2:bachelor:medicine": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit these partners.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:international-business": {
+      "overview": "Edit this overview.",
+      "keyFocus": "Edit this key focus.",
+      "duration": "Edit this duration.",
+      "studyMode": "Edit these partners.",
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "4:bachelor:navigation-ship-maneuvering": {
+      "overview": "Navigation (Ship Maneuvering) at TU–Varna combines theoretical navigation with mandatory simulator training and sea practice complying with STCW conventions.",
+      "keyFocus": "Practical seamanship, navigation safety, and maritime operations",
+      "duration": "Full-time (4 years)",
+      "partners": [
+        "Maritime Qualification Centre (MQC)",
+        "Industry shipping partners"
+      ],
+      "highlights": [
+        "STCW-compliant simulator and sea training",
+        "Accredited professional certifications",
+        "Strong industry placement network"
+      ],
+      "careers": [
+        "Deck officer / Navigator",
+        "Port operations specialist",
+        "Logistics coordinator"
+      ],
+      "admissionNotes": [
+        "Program includes mandatory simulator and sea practice components",
+        "Contact the department for certification and training schedules"
+      ]
+    },
+    "6:bachelor:software-systems-and-technologies": {
+      "overview": "Software Systems and Technologies (BSc Hons) at VUM is a Cardiff Met dual-award programme combining software engineering fundamentals with industry-aligned internships and practical projects.",
+      "keyFocus": "Software development, algorithms, systems design and applied industry practice",
+      "duration": "Full-time (3 years typical; 3 / 3.5 / 4 year options with APL)",
+      "partners": [
+        "Cardiff Metropolitan University",
+        "Local & international industry partners"
+      ],
+      "highlights": [
+        "Cardiff Met dual-award recognition",
+        "Industrial simulation and mandatory internships",
+        "Modular ECTS structure with downloadable curriculum"
+      ],
+      "careers": [
+        "Software developer",
+        "Systems engineer",
+        "Quality assurance engineer",
+        "Technical lead"
+      ],
+      "admissionNotes": [
+        "Evening / weekend teaching options available",
+        "English language requirements and APL pathways apply"
+      ]
+    },
+    "6:master:master-of-business-administration": {
+      "overview": "The MBA at VUM is an international, Cardiff Met–validated programme focused on management, strategic leadership and applied business practice.",
+      "keyFocus": "Strategic management, finance, marketing and leadership",
+      "duration": "3–4 semesters (depending on prior degree)",
+      "partners": [
+        "Cardiff Metropolitan University",
+        "Industry mentors and partner organisations"
+      ],
+      "highlights": [
+        "Dual award MBA with Cardiff Met",
+        "Dissertation (15 ECTS) and core modules totalling ~90 ECTS",
+        "Mobile student networks and international mobility opportunities"
+      ],
+      "careers": [
+        "Senior manager",
+        "Business consultant",
+        "Entrepreneur",
+        "Strategy analyst"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor degree or equivalent professional experience",
+        "Check Cardiff Met admission alignment for postgraduate entry requirements"
       ]
     },
     "1:bachelor:mechanical-engineering-and-technologies-met": {
@@ -1651,21 +1787,6 @@
         "Edit this admission note."
       ]
     },
-    "2:bachelor:medicine": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
     "2:bachelor:dental-medicine": {
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
@@ -1831,21 +1952,6 @@
         "Edit this admission note."
       ]
     },
-    "3:bachelor:international-business": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
     "4:bachelor:navigation": {
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
@@ -1904,6 +2010,96 @@
       ],
       "admissionNotes": [
         "Edit this admission note."
+      ]
+    },
+    "5:bachelor:business-administration": {
+      "overview": "The BBA at Free University of Varna develops practical management and business skills for international careers.",
+      "keyFocus": "Management, entrepreneurship, and applied business practice",
+      "duration": "Full-time (3-4 years depending on programme)",
+      "partners": [
+        "Industry partners",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Practice-based learning",
+        "Internships and industry projects",
+        "International exchange opportunities"
+      ],
+      "careers": [
+        "Business manager",
+        "Entrepreneur",
+        "Consultant",
+        "Operations specialist"
+      ],
+      "admissionNotes": [
+        "Check the university admission pages for entry requirements",
+        "English-track intake available for international applicants"
+      ]
+    },
+    "5:bachelor:international-relations": {
+      "overview": "A BA in International Relations at Free University covers diplomacy, policy analysis and international organisations.",
+      "keyFocus": "Diplomacy, policy analysis and global affairs",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "Regional policy institutes",
+        "Erasmus+ partners"
+      ],
+      "highlights": [
+        "Policy-focused modules",
+        "Opportunities for internships in NGOs and public bodies"
+      ],
+      "careers": [
+        "Policy analyst",
+        "Diplomatic service",
+        "International NGO officer"
+      ],
+      "admissionNotes": [
+        "Strong writing and research skills are useful",
+        "Check specific document requirements on the university site"
+      ]
+    },
+    "5:bachelor:public-administration": {
+      "overview": "The BA in Public Administration prepares students for careers in public sector management and policy implementation.",
+      "keyFocus": "Public policy, administration and governance",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "Local government bodies",
+        "Public sector partners"
+      ],
+      "highlights": [
+        "Applied governance training",
+        "Practical projects with public institutions"
+      ],
+      "careers": [
+        "Public administrator",
+        "Policy officer",
+        "Civil service specialist"
+      ],
+      "admissionNotes": [
+        "Relevant internships are highly valued",
+        "Check civic and language requirements"
+      ]
+    },
+    "5:bachelor:european-studies": {
+      "overview": "European Studies focuses on the institutions, law and policy of the EU and its role in global affairs.",
+      "keyFocus": "EU institutions, law and comparative policy",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "European research centres",
+        "Erasmus+ partners"
+      ],
+      "highlights": [
+        "EU-focused modules",
+        "Exchange opportunities in EU universities"
+      ],
+      "careers": [
+        "EU policy advisor",
+        "Researcher",
+        "International affairs specialist"
+      ],
+      "admissionNotes": [
+        "Language skills are an advantage",
+        "Check programme-specific entry rules"
       ]
     },
     "5:master:business-administration": {
@@ -1966,6 +2162,94 @@
         "Edit this admission note."
       ]
     },
+    "6:bachelor:tourism-management": {
+      "overview": "The BSc Tourism Management at University of Management focuses on tourism operations, strategy and destination marketing.",
+      "keyFocus": "Tourism operations, destination management and service design",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "Hospitality industry partners",
+        "Regional tourism boards"
+      ],
+      "highlights": [
+        "Industry placements",
+        "Practical workshops and case studies"
+      ],
+      "careers": [
+        "Tourism manager",
+        "Destination marketer",
+        "Operations coordinator"
+      ],
+      "admissionNotes": [
+        "Work experience and language skills are an advantage",
+        "Check specific entrance requirements"
+      ]
+    },
+    "6:bachelor:hotel-management": {
+      "overview": "Hotel Management trains students in hospitality operations, service management and revenue optimisation.",
+      "keyFocus": "Hospitality operations, service excellence and management",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "Hotel groups",
+        "Hospitality training centres"
+      ],
+      "highlights": [
+        "Practical training in hotels",
+        "Internships with industry partners"
+      ],
+      "careers": [
+        "Hotel manager",
+        "Front office manager",
+        "Revenue manager"
+      ],
+      "admissionNotes": [
+        "Practical placement is part of the curriculum",
+        "Check language requirements for international tracks"
+      ]
+    },
+    "6:bachelor:event-management": {
+      "overview": "Event Management provides skills in planning, logistics and promotion of events and conferences.",
+      "keyFocus": "Event planning, logistics and marketing",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "Event agencies",
+        "Conference organisers"
+      ],
+      "highlights": [
+        "Project-based event delivery",
+        "Live event experience"
+      ],
+      "careers": [
+        "Event manager",
+        "Conference coordinator",
+        "Production manager"
+      ],
+      "admissionNotes": [
+        "Portfolio of event work or related experience can help",
+        "Check programme details for placement requirements"
+      ]
+    },
+    "6:bachelor:digital-marketing": {
+      "overview": "Digital Marketing trains students in online marketing, analytics and campaign management.",
+      "keyFocus": "Digital channels, analytics and content strategy",
+      "duration": "Full-time (3 years)",
+      "partners": [
+        "Digital agencies",
+        "Marketing technology partners"
+      ],
+      "highlights": [
+        "Hands-on campaign projects",
+        "Analytics and tools training"
+      ],
+      "careers": [
+        "Digital marketer",
+        "SEO specialist",
+        "Performance marketer"
+      ],
+      "admissionNotes": [
+        "Prior marketing interest or portfolio useful",
+        "Check course prerequisites"
+      ]
+    },
     "6:master:tourism-management": {
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
@@ -2025,7 +2309,801 @@
       "admissionNotes": [
         "Edit this admission note."
       ]
+    },
+    "3:bachelor:hotel-and-restaurant-management": {
+      "overview": "Edit this overview for Hotel and Restaurant Management.",
+      "keyFocus": "Edit this key focus for Hotel and Restaurant Management.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:tourism-and-entertainemnt-buisness-management": {
+      "overview": "Edit this overview for Tourism and Entertainemnt Buisness Management.",
+      "keyFocus": "Edit this key focus for Tourism and Entertainemnt Buisness Management.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:buisness-and-management-in-english": {
+      "overview": "Edit this overview for Buisness and Management - In English.",
+      "keyFocus": "Edit this key focus for Buisness and Management - In English.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:buisness-economics": {
+      "overview": "Edit this overview for Buisness Economics.",
+      "keyFocus": "Edit this key focus for Buisness Economics.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:economics-and-trade": {
+      "overview": "Edit this overview for Economics and Trade.",
+      "keyFocus": "Edit this key focus for Economics and Trade.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:construction-buisness-and-entrepreneurship": {
+      "overview": "Edit this overview for Construction Buisness and Entrepreneurship.",
+      "keyFocus": "Edit this key focus for Construction Buisness and Entrepreneurship.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:real-estate-and-investments": {
+      "overview": "Edit this overview for Real Estate and Investments.",
+      "keyFocus": "Edit this key focus for Real Estate and Investments.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:industrial-buisness-and-entrepreneurship": {
+      "overview": "Edit this overview for Industrial Buisness and Entrepreneurship.",
+      "keyFocus": "Edit this key focus for Industrial Buisness and Entrepreneurship.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:logistics": {
+      "overview": "Edit this overview for Logistics.",
+      "keyFocus": "Edit this key focus for Logistics.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:agricultural-buisnesses": {
+      "overview": "Edit this overview for Agricultural Buisnesses.",
+      "keyFocus": "Edit this key focus for Agricultural Buisnesses.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:commodities-science-and-customs-activity": {
+      "overview": "Edit this overview for Commodities Science and Customs Activity.",
+      "keyFocus": "Edit this key focus for Commodities Science and Customs Activity.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:business-digital-technologies": {
+      "overview": "Edit this overview for Business Digital Technologies.",
+      "keyFocus": "Edit this key focus for Business Digital Technologies.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:informatics-and-computer-sciences": {
+      "overview": "Edit this overview for Informatics and Computer Sciences.",
+      "keyFocus": "Edit this key focus for Informatics and Computer Sciences.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:mobile-and-web-technologies": {
+      "overview": "Edit this overview for Mobile and Web Technologies.",
+      "keyFocus": "Edit this key focus for Mobile and Web Technologies.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:data-science": {
+      "overview": "Edit this overview for Data Science.",
+      "keyFocus": "Edit this key focus for Data Science.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:international-business-in-english": {
+      "overview": "Edit this overview for International Business - In English.",
+      "keyFocus": "Edit this key focus for International Business - In English.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:maritime-business-and-international-trade-in-english": {
+      "overview": "Edit this overview for Maritime business and international trade - In English.",
+      "keyFocus": "Edit this key focus for Maritime business and international trade - In English.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:international-tourism-in-russian": {
+      "overview": "Edit this overview for International Tourism - In Russian.",
+      "keyFocus": "Edit this key focus for International Tourism - In Russian.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:international-economic-relations": {
+      "overview": "Edit this overview for International Economic Relations.",
+      "keyFocus": "Edit this key focus for International Economic Relations.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:management": {
+      "overview": "Edit this overview for Management.",
+      "keyFocus": "Edit this key focus for Management.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:public-administration": {
+      "overview": "Edit this overview for Public Administration.",
+      "keyFocus": "Edit this key focus for Public Administration.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:tourism": {
+      "overview": "Edit this overview for Tourism.",
+      "keyFocus": "Edit this key focus for Tourism.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:judicial-administration": {
+      "overview": "Edit this overview for Judicial Administration.",
+      "keyFocus": "Edit this key focus for Judicial Administration.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:digital-media-and-pr": {
+      "overview": "Edit this overview for Digital Media and PR.",
+      "keyFocus": "Edit this key focus for Digital Media and PR.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:accounting-in-english": {
+      "overview": "Edit this overview for Accounting - In English.",
+      "keyFocus": "Edit this key focus for Accounting - In English.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:accounting-and-audit": {
+      "overview": "Edit this overview for Accounting and Audit.",
+      "keyFocus": "Edit this key focus for Accounting and Audit.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:accounting-and-finance": {
+      "overview": "Edit this overview for Accounting and Finance.",
+      "keyFocus": "Edit this key focus for Accounting and Finance.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:bachelor:banking-and-insurance": {
+      "overview": "Edit this overview for Banking and Insurance.",
+      "keyFocus": "Edit this key focus for Banking and Insurance.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:intercultural-business-in-english": {
+      "overview": "Edit this overview for Intercultural Business - In English.",
+      "keyFocus": "Edit this key focus for Intercultural Business - In English.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:international-business-and-management-in-english": {
+      "overview": "Edit this overview for International Business and Management - In English.",
+      "keyFocus": "Edit this key focus for International Business and Management - In English.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:master-of-business-administration-in-english": {
+      "overview": "Edit this overview for Master of business administration - In English.",
+      "keyFocus": "Edit this key focus for Master of business administration - In English.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:computer-science-in-english": {
+      "overview": "Edit this overview for Computer Science - In English.",
+      "keyFocus": "Edit this key focus for Computer Science - In English.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:accounting-and-auditing-control": {
+      "overview": "Edit this overview for Accounting and Auditing/Control.",
+      "keyFocus": "Edit this key focus for Accounting and Auditing/Control.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:bank-management": {
+      "overview": "Edit this overview for Bank Management.",
+      "keyFocus": "Edit this key focus for Bank Management.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:finance-and-innovations": {
+      "overview": "Edit this overview for Finance and Innovations.",
+      "keyFocus": "Edit this key focus for Finance and Innovations.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:corporate-business-and-governance-management": {
+      "overview": "Edit this overview for Corporate Business and Governance/Management.",
+      "keyFocus": "Edit this key focus for Corporate Business and Governance/Management.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:logistics-management": {
+      "overview": "Edit this overview for Logistics Management.",
+      "keyFocus": "Edit this key focus for Logistics Management.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:global-commercial-business": {
+      "overview": "Edit this overview for Global Commercial Business.",
+      "keyFocus": "Edit this key focus for Global Commercial Business.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:civil-engineering-entrepreneurship-and-real-estate": {
+      "overview": "Edit this overview for Civil Engineering Entrepreneurship and Real Estate.",
+      "keyFocus": "Edit this key focus for Civil Engineering Entrepreneurship and Real Estate.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:eco-economics": {
+      "overview": "Edit this overview for Eco-economics.",
+      "keyFocus": "Edit this key focus for Eco-economics.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:agricultural-business": {
+      "overview": "Edit this overview for Agricultural Business.",
+      "keyFocus": "Edit this key focus for Agricultural Business.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:quality-and-expert-examination-of-commodities": {
+      "overview": "Edit this overview for Quality and Expert Examination of Commodities.",
+      "keyFocus": "Edit this key focus for Quality and Expert Examination of Commodities.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:sales-management-and-merchandising": {
+      "overview": "Edit this overview for Sales Management and Merchandising.",
+      "keyFocus": "Edit this key focus for Sales Management and Merchandising.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:advertising-and-media-communications": {
+      "overview": "Edit this overview for Advertising and Media Communications.",
+      "keyFocus": "Edit this key focus for Advertising and Media Communications.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:management-of-organizations": {
+      "overview": "Edit this overview for Management of Organizations.",
+      "keyFocus": "Edit this key focus for Management of Organizations.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:human-resources-management": {
+      "overview": "Edit this overview for Human Resources Management.",
+      "keyFocus": "Edit this key focus for Human Resources Management.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:public-management-and-administrative-power": {
+      "overview": "Edit this overview for Public Management and Administrative Power.",
+      "keyFocus": "Edit this key focus for Public Management and Administrative Power.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:international-tourist-business": {
+      "overview": "Edit this overview for International Tourist Business.",
+      "keyFocus": "Edit this key focus for International Tourist Business.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:business-consulting": {
+      "overview": "Edit this overview for Business Consulting.",
+      "keyFocus": "Edit this key focus for Business Consulting.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:project-management": {
+      "overview": "Edit this overview for Project Management.",
+      "keyFocus": "Edit this key focus for Project Management.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:marketing-and-brand-management": {
+      "overview": "Edit this overview for Marketing And Brand Management.",
+      "keyFocus": "Edit this key focus for Marketing And Brand Management.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "3:master:mobile-and-web-technologies": {
+      "overview": "Edit this overview for Mobile and web technologies.",
+      "keyFocus": "Edit this key focus for Mobile and web technologies.",
+      "duration": "Full-time (1-2 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
+    },
+    "5:bachelor:international-business": {
+      "overview": "Edit this overview for International Business.",
+      "keyFocus": "Edit this key focus for International Business.",
+      "duration": "Full-time (3-4 years)",
+      "partners": [],
+      "highlights": [
+        "Edit this highlight."
+      ],
+      "careers": [
+        "Edit this career path."
+      ],
+      "admissionNotes": [
+        "Edit this admission note."
+      ]
     }
   }
 }
-
