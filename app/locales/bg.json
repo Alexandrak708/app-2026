@@ -110,6 +110,7 @@
   "emailNotifications": {
     "title": "Имейл известия",
     "marketing": "Маркетинг",
+    "___university_5": "Университет 5 — Свободен университет",
     "productUpdates": "Актуализации на продукта"
   },
   "accessibility": {
@@ -461,6 +462,7 @@
     }
   },
   "programTitles": {
+    "___university_1": "Университет 1 — Технически университет",
     "automation-information-and-control-computer-systems-aiccs": "Автоматика, информационни и управляващи компютърни системи (АИУКС)",
     "automotive-engineering-ae": "Автомобилна техника (АТ)",
     "agronomy-a": "Агрономство (A)",
@@ -523,6 +525,7 @@
     "heat-engineering-and-renewable-energy-sources-heres": "Топлотехника и ВЕИ (ТВЕИ)",
     "chemical-engineering-ce": "Химическо машиностроене (ХМ)",
     "siemens-plc-control-technologies-siemens": "Siemens PLC технологии за управление (СИЕМЕНС)",
+    "___university_2": "Университет 2 — Медицински университет",
     "medicine": "Медицина",
     "dental-medicine": "Дентална медицина",
     "pharmacy": "Фармация",
@@ -531,11 +534,13 @@
     "public-health": "Обществено здраве",
     "health-management": "Здравен мениджмънт",
     "clinical-pharmacy": "Клинична фармация",
+    "___university_3": "Университет 3 — Икономически университет",
     "economics": "Икономика",
     "finance": "Финанси",
     "accounting": "Счетоводство",
     "marketing": "Маркетинг",
     "international-business": "Международен бизнес",
+    "___university_4": "Университет 4 — Морско/Навално училище",
     "marine-engineering": "Корабно машиностроене",
     "naval-architecture": "Корабостроене",
     "port-management": "Пристанищен мениджмънт",
@@ -546,15 +551,75 @@
     "tourism-management": "Управление на туризма",
     "hotel-management": "Хотелски мениджмънт",
     "event-management": "Мениджмънт на събития",
-    "digital-marketing": "Дигитален маркетинг"
+    "digital-marketing": "Дигитален маркетинг",
+    "hotel-and-restaurant-management": "Управление на хотели и ресторанти",
+    "tourism-and-entertainemnt-buisness-management": "Управление на туризма и развлекателния бизнес",
+    "buisness-and-management-in-english": "Бизнес и мениджмънт - На английски",
+    "buisness-economics": "Бизнес икономика",
+    "economics-and-trade": "Икономика и търговия",
+    "construction-buisness-and-entrepreneurship": "Строителен бизнес и предприемачество",
+    "real-estate-and-investments": "Недвижими имоти и инвестиции",
+    "industrial-buisness-and-entrepreneurship": "Индустриален бизнес и предприемачество",
+    "logistics": "Логистика",
+    "agricultural-buisnesses": "Земеделски бизнеси",
+    "commodities-science-and-customs-activity": "Наука за стоките и таможена дейност",
+    "business-digital-technologies": "Бизнес дигитални технологии",
+    "informatics-and-computer-sciences": "Информатика и компютърни науки",
+    "mobile-and-web-technologies": "Мобилни и уеб технологии",
+    "data-science": "Наука за данни",
+    "international-business-in-english": "Международен бизнес - На английски",
+    "maritime-business-and-international-trade-in-english": "Морски бизнес и международна търговия - На английски",
+    "international-tourism-in-russian": "Международен туризъм - На руски",
+    "international-economic-relations": "Международни икономически отношения",
+    "management": "Мениджмънт",
+    "tourism": "Туризъм",
+    "judicial-administration": "Съдебна администрация",
+    "digital-media-and-pr": "Цифрови медии и PR",
+    "accounting-in-english": "Счетоводство - На английски",
+    "accounting-and-audit": "Счетоводство и аудит",
+    "accounting-and-finance": "Счетоводство и финанси",
+    "banking-and-insurance": "Банкиране и осигуряване",
+    "intercultural-business-in-english": "Междукултурен бизнес - На английски",
+    "international-business-and-management-in-english": "Международен бизнес и мениджмънт - На английски",
+    "master-of-business-administration-in-english": "Магистър по бизнес администрация - На английски",
+    "computer-science-in-english": "Компютърни науки - На английски",
+    "accounting-and-auditing-control": "Счетоводство и аудит/контрол",
+    "bank-management": "Управление на банки",
+    "finance-and-innovations": "Финанси и иновации",
+    "corporate-business-and-governance-management": "Корпоративен бизнес и управление/господарство",
+    "logistics-management": "Управление на логистиката",
+    "global-commercial-business": "Глобален търговски бизнес",
+    "civil-engineering-entrepreneurship-and-real-estate": "Гражданско инженерство, предприемачество и недвижими имоти",
+    "eco-economics": "Еко-икономика",
+    "agricultural-business": "Земеделски бизнес",
+    "quality-and-expert-examination-of-commodities": "Качество и експертна проверка на стоки",
+    "sales-management-and-merchandising": "Управление на продажби и маркетинг",
+    "advertising-and-media-communications": "Реклама и медийни комуникации",
+    "management-of-organizations": "Управление на организации",
+    "human-resources-management": "Управление на човешките ресурси",
+    "public-management-and-administrative-power": "Публичен мениджмънт и административна власт",
+    "international-tourist-business": "Международен туристически бизнес",
+    "business-consulting": "Бизнес консултиране",
+    "project-management": "Управление на проекти",
+    "marketing-and-brand-management": "Маркетинг и управление на брандове",
+    "software-systems-and-technologies": "Софтуерни системи и технологии",
+    "___university_6": "Университет 6 — Университет за управление (VUM)",
+    "master-of-business-administration": "Магистър по бизнес администрация"
   },
   "programOverrides": {
     "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
       "duration": "Редовна (4 години) / Задочна (5 години)",
-      "partners": ["Siemens", "ABB", "Festo", "National Instruments", "Schneider Electric"],
-      "highlights": ["Edit this highlight."
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
+      "highlights": [
+        "Edit this highlight."
       ],
       "careers": [
         "Проектант на АСУ ТП",
@@ -1905,6 +1970,96 @@
         "Edit this admission note."
       ]
     },
+    "5:bachelor:business-administration": {
+      "overview": "Бакалавърската програма по Бизнес администрация във ВУФ развива практическите управленски и бизнес умения за международна кариера.",
+      "keyFocus": "Управление, предприемачество и приложна бизнес практика",
+      "duration": "Дневна форма (3-4 години в зависимост от програмата)",
+      "partners": [
+        "Партньори от индустрията",
+        "Erasmus+ партньори"
+      ],
+      "highlights": [
+        "Практическо обучение",
+        "Стажове и проекти с бизнеса",
+        "Възможности за международни обменни програми"
+      ],
+      "careers": [
+        "Бизнес мениджър",
+        "Предприемач",
+        "Консултант",
+        "Специалист операции"
+      ],
+      "admissionNotes": [
+        "Проверете страницата за прием на университета за изисквания",
+        "Налични са английски програми за международни кандидати"
+      ]
+    },
+    "5:bachelor:international-relations": {
+      "overview": "Бакалавър по Международни отношения, покрива дипломация, анализ на политики и международни организации.",
+      "keyFocus": "Дипломация, анализ на политики и глобални въпроси",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Регионални институти за политики",
+        "Erasmus+ партньори"
+      ],
+      "highlights": [
+        "Модули фокусирани върху политика",
+        "Възможности за стажове в НПО и публични органи"
+      ],
+      "careers": [
+        "Аналитик политика",
+        "Дипломат",
+        "Служител в международна НПО"
+      ],
+      "admissionNotes": [
+        "Добри писмени и изследователски умения са полезни",
+        "Проверете изискванията на университета"
+      ]
+    },
+    "5:bachelor:public-administration": {
+      "overview": "Бакалавър по държавна администрация подготвя студенти за работa в публичния сектор и управление на политики.",
+      "keyFocus": "Публична политика, управление и администрация",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Местни власти",
+        "Публични институции"
+      ],
+      "highlights": [
+        "Прилагане на управленски практики",
+        "Проекти с публични организации"
+      ],
+      "careers": [
+        "Администратор в публичния сектор",
+        "Служител по политики",
+        "Специалист в администрацията"
+      ],
+      "admissionNotes": [
+        "Стажовете са силно ценени",
+        "Проверете езикови и специфични изисквания"
+      ]
+    },
+    "5:bachelor:european-studies": {
+      "overview": "Европейските изследвания се фокусират върху институциите, правото и политиките на ЕС и тяхната роля в света.",
+      "keyFocus": "Институции на ЕС, право и сравнителна политика",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Европейски изследователски центрове",
+        "Erasmus+ партньори"
+      ],
+      "highlights": [
+        "Модули фокусирани върху ЕС",
+        "Възможности за обмен в европейски университети"
+      ],
+      "careers": [
+        "Съветник по политики в ЕС",
+        "Изследовател",
+        "Специалист по международни отношения"
+      ],
+      "admissionNotes": [
+        "Езиковите умения са предимство",
+        "Проверете специфичните изисквания на програмата"
+      ]
+    },
     "5:master:business-administration": {
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
@@ -1963,6 +2118,94 @@
       ],
       "admissionNotes": [
         "Edit this admission note."
+      ]
+    },
+    "6:bachelor:tourism-management": {
+      "overview": "Бакалавър по Туризъм и мениджмънт се фокусира върху операциите в туризма, стратегия и маркетинг на дестинации.",
+      "keyFocus": "Операции в туризма, управление на дестинации и дизайн на услуги",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Партньори от хотелиерството",
+        "Регионални туристически бордове"
+      ],
+      "highlights": [
+        "Стажове в индустрията",
+        "Практически семинари и казуси"
+      ],
+      "careers": [
+        "Мениджър туризъм",
+        "Маркетинг специалист дестинации",
+        "Координатор операции"
+      ],
+      "admissionNotes": [
+        "Работният опит и езиковите умения са предимство",
+        "Проверете конкретните изисквания за прием"
+      ]
+    },
+    "6:bachelor:hotel-management": {
+      "overview": "Хотелският мениджмънт обучава студенти по операции, обслужване и оптимизация на приходи.",
+      "keyFocus": "Операции в хотелиерството, отлични услуги и управление",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Хотелски вериги",
+        "Центрове за обучение в хотелиерството"
+      ],
+      "highlights": [
+        "Практическо обучение в хотели",
+        "Стажове при партньори от индустрията"
+      ],
+      "careers": [
+        "Хотелски мениджър",
+        "Ръководител рецепция",
+        "Мениджър приходи"
+      ],
+      "admissionNotes": [
+        "Практическото обучение е част от програмата",
+        "Проверете езиковите изисквания за международни потоци"
+      ]
+    },
+    "6:bachelor:event-management": {
+      "overview": "Мениджмънт на събития осигурява умения за планиране, логистика и промоция на събития и конференции.",
+      "keyFocus": "Планиране на събития, логистика и маркетинг",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Агенции за събития",
+        "Организатори на конференции"
+      ],
+      "highlights": [
+        "Проектно реализиране на събития",
+        "Опит в реални събития"
+      ],
+      "careers": [
+        "Мениджър събития",
+        "Координатор конференции",
+        "Продукционен мениджър"
+      ],
+      "admissionNotes": [
+        "Портфолио от събитийна работа или свързан опит помага",
+        "Проверете изискванията за стаж"
+      ]
+    },
+    "6:bachelor:digital-marketing": {
+      "overview": "Дигиталният маркетинг обучава студенти в онлайн маркетинг, аналитика и управление на кампании.",
+      "keyFocus": "Дигитални канали, аналитика и стратегия за съдържание",
+      "duration": "Дневна форма (3 години)",
+      "partners": [
+        "Дигитални агенции",
+        "Партньори по маркетинг технологии"
+      ],
+      "highlights": [
+        "Практически кампании",
+        "Обучение по аналитични инструменти"
+      ],
+      "careers": [
+        "Дигитален маркетолог",
+        "SEO специалист",
+        "Performance маркетолог"
+      ],
+      "admissionNotes": [
+        "Предишен интерес към маркетинга или портфолио е полезно",
+        "Проверете предпоставките за курса"
       ]
     },
     "6:master:tourism-management": {
@@ -2024,8 +2267,846 @@
       "admissionNotes": [
         "Edit this admission note."
       ]
+    },
+    "3:bachelor:hotel-and-restaurant-management": {
+      "overview": "Редактирай този преглед за Hotel and Restaurant Management.",
+      "keyFocus": "Редактирай ключов фокус за Hotel and Restaurant Management.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:tourism-and-entertainemnt-buisness-management": {
+      "overview": "Редактирай този преглед за Tourism and Entertainemnt Buisness Management.",
+      "keyFocus": "Редактирай ключов фокус за Tourism and Entertainemnt Buisness Management.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:buisness-and-management-in-english": {
+      "overview": "Редактирай този преглед за Buisness and Management - In English.",
+      "keyFocus": "Редактирай ключов фокус за Buisness and Management - In English.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:buisness-economics": {
+      "overview": "Редактирай този преглед за Buisness Economics.",
+      "keyFocus": "Редактирай ключов фокус за Buisness Economics.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:economics-and-trade": {
+      "overview": "Редактирай този преглед за Economics and Trade.",
+      "keyFocus": "Редактирай ключов фокус за Economics and Trade.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:construction-buisness-and-entrepreneurship": {
+      "overview": "Редактирай този преглед за Construction Buisness and Entrepreneurship.",
+      "keyFocus": "Редактирай ключов фокус за Construction Buisness and Entrepreneurship.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:real-estate-and-investments": {
+      "overview": "Редактирай този преглед за Real Estate and Investments.",
+      "keyFocus": "Редактирай ключов фокус за Real Estate and Investments.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:industrial-buisness-and-entrepreneurship": {
+      "overview": "Редактирай този преглед за Industrial Buisness and Entrepreneurship.",
+      "keyFocus": "Редактирай ключов фокус за Industrial Buisness and Entrepreneurship.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:logistics": {
+      "overview": "Редактирай този преглед за Logistics.",
+      "keyFocus": "Редактирай ключов фокус за Logistics.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:agricultural-buisnesses": {
+      "overview": "Редактирай този преглед за Agricultural Buisnesses.",
+      "keyFocus": "Редактирай ключов фокус за Agricultural Buisnesses.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:commodities-science-and-customs-activity": {
+      "overview": "Редактирай този преглед за Commodities Science and Customs Activity.",
+      "keyFocus": "Редактирай ключов фокус за Commodities Science and Customs Activity.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:business-digital-technologies": {
+      "overview": "Редактирай този преглед за Business Digital Technologies.",
+      "keyFocus": "Редактирай ключов фокус за Business Digital Technologies.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:informatics-and-computer-sciences": {
+      "overview": "Редактирай този преглед за Informatics and Computer Sciences.",
+      "keyFocus": "Редактирай ключов фокус за Informatics and Computer Sciences.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:mobile-and-web-technologies": {
+      "overview": "Редактирай този преглед за Mobile and Web Technologies.",
+      "keyFocus": "Редактирай ключов фокус за Mobile and Web Technologies.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:data-science": {
+      "overview": "Редактирай този преглед за Data Science.",
+      "keyFocus": "Редактирай ключов фокус за Data Science.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:international-business-in-english": {
+      "overview": "Редактирай този преглед за International Business - In English.",
+      "keyFocus": "Редактирай ключов фокус за International Business - In English.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:maritime-business-and-international-trade-in-english": {
+      "overview": "Редактирай този преглед за Maritime business and international trade - In English.",
+      "keyFocus": "Редактирай ключов фокус за Maritime business and international trade - In English.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:international-tourism-in-russian": {
+      "overview": "Редактирай този преглед за International Tourism - In Russian.",
+      "keyFocus": "Редактирай ключов фокус за International Tourism - In Russian.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:international-economic-relations": {
+      "overview": "Редактирай този преглед за International Economic Relations.",
+      "keyFocus": "Редактирай ключов фокус за International Economic Relations.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:management": {
+      "overview": "Редактирай този преглед за Management.",
+      "keyFocus": "Редактирай ключов фокус за Management.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:public-administration": {
+      "overview": "Редактирай този преглед за Public Administration.",
+      "keyFocus": "Редактирай ключов фокус за Public Administration.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:tourism": {
+      "overview": "Редактирай този преглед за Tourism.",
+      "keyFocus": "Редактирай ключов фокус за Tourism.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:judicial-administration": {
+      "overview": "Редактирай този преглед за Judicial Administration.",
+      "keyFocus": "Редактирай ключов фокус за Judicial Administration.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:digital-media-and-pr": {
+      "overview": "Редактирай този преглед за Digital Media and PR.",
+      "keyFocus": "Редактирай ключов фокус за Digital Media and PR.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:accounting-in-english": {
+      "overview": "Редактирай този преглед за Accounting - In English.",
+      "keyFocus": "Редактирай ключов фокус за Accounting - In English.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:accounting-and-audit": {
+      "overview": "Редактирай този преглед за Accounting and Audit.",
+      "keyFocus": "Редактирай ключов фокус за Accounting and Audit.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:accounting-and-finance": {
+      "overview": "Редактирай този преглед за Accounting and Finance.",
+      "keyFocus": "Редактирай ключов фокус за Accounting and Finance.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:bachelor:banking-and-insurance": {
+      "overview": "Редактирай този преглед за Banking and Insurance.",
+      "keyFocus": "Редактирай ключов фокус за Banking and Insurance.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:intercultural-business-in-english": {
+      "overview": "Редактирай този преглед за Intercultural Business - In English.",
+      "keyFocus": "Редактирай ключов фокус за Intercultural Business - In English.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:international-business-and-management-in-english": {
+      "overview": "Редактирай този преглед за International Business and Management - In English.",
+      "keyFocus": "Редактирай ключов фокус за International Business and Management - In English.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:master-of-business-administration-in-english": {
+      "overview": "Редактирай този преглед за Master of business administration - In English.",
+      "keyFocus": "Редактирай ключов фокус за Master of business administration - In English.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:computer-science-in-english": {
+      "overview": "Редактирай този преглед за Computer Science - In English.",
+      "keyFocus": "Редактирай ключов фокус за Computer Science - In English.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:accounting-and-auditing-control": {
+      "overview": "Редактирай този преглед за Accounting and Auditing/Control.",
+      "keyFocus": "Редактирай ключов фокус за Accounting and Auditing/Control.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:bank-management": {
+      "overview": "Редактирай този преглед за Bank Management.",
+      "keyFocus": "Редактирай ключов фокус за Bank Management.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:finance-and-innovations": {
+      "overview": "Редактирай този преглед за Finance and Innovations.",
+      "keyFocus": "Редактирай ключов фокус за Finance and Innovations.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:corporate-business-and-governance-management": {
+      "overview": "Редактирай този преглед за Corporate Business and Governance/Management.",
+      "keyFocus": "Редактирай ключов фокус за Corporate Business and Governance/Management.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:logistics-management": {
+      "overview": "Редактирай този преглед за Logistics Management.",
+      "keyFocus": "Редактирай ключов фокус за Logistics Management.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:global-commercial-business": {
+      "overview": "Редактирай този преглед за Global Commercial Business.",
+      "keyFocus": "Редактирай ключов фокус за Global Commercial Business.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:civil-engineering-entrepreneurship-and-real-estate": {
+      "overview": "Редактирай този преглед за Civil Engineering Entrepreneurship and Real Estate.",
+      "keyFocus": "Редактирай ключов фокус за Civil Engineering Entrepreneurship and Real Estate.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:eco-economics": {
+      "overview": "Редактирай този преглед за Eco-economics.",
+      "keyFocus": "Редактирай ключов фокус за Eco-economics.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:agricultural-business": {
+      "overview": "Редактирай този преглед за Agricultural Business.",
+      "keyFocus": "Редактирай ключов фокус за Agricultural Business.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:quality-and-expert-examination-of-commodities": {
+      "overview": "Редактирай този преглед за Quality and Expert Examination of Commodities.",
+      "keyFocus": "Редактирай ключов фокус за Quality and Expert Examination of Commodities.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:sales-management-and-merchandising": {
+      "overview": "Редактирай този преглед за Sales Management and Merchandising.",
+      "keyFocus": "Редактирай ключов фокус за Sales Management and Merchandising.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:advertising-and-media-communications": {
+      "overview": "Редактирай този преглед за Advertising and Media Communications.",
+      "keyFocus": "Редактирай ключов фокус за Advertising and Media Communications.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:management-of-organizations": {
+      "overview": "Редактирай този преглед за Management of Organizations.",
+      "keyFocus": "Редактирай ключов фокус за Management of Organizations.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:human-resources-management": {
+      "overview": "Редактирай този преглед за Human Resources Management.",
+      "keyFocus": "Редактирай ключов фокус за Human Resources Management.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:public-management-and-administrative-power": {
+      "overview": "Редактирай този преглед за Public Management and Administrative Power.",
+      "keyFocus": "Редактирай ключов фокус за Public Management and Administrative Power.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:international-tourist-business": {
+      "overview": "Редактирай този преглед за International Tourist Business.",
+      "keyFocus": "Редактирай ключов фокус за International Tourist Business.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:business-consulting": {
+      "overview": "Редактирай този преглед за Business Consulting.",
+      "keyFocus": "Редактирай ключов фокус за Business Consulting.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:project-management": {
+      "overview": "Редактирай този преглед за Project Management.",
+      "keyFocus": "Редактирай ключов фокус за Project Management.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:marketing-and-brand-management": {
+      "overview": "Редактирай този преглед за Marketing And Brand Management.",
+      "keyFocus": "Редактирай ключов фокус за Marketing And Brand Management.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "3:master:mobile-and-web-technologies": {
+      "overview": "Редактирай този преглед за Mobile and web technologies.",
+      "keyFocus": "Редактирай ключов фокус за Mobile and web technologies.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "4:bachelor:navigation-ship-maneuvering": {
+      "overview": "Редактирай този преглед за Navigation (Ship Maneuvering).",
+      "keyFocus": "Редактирай ключов фокус за Navigation (Ship Maneuvering).",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "5:bachelor:international-business": {
+      "overview": "Редактирай този преглед за International Business.",
+      "keyFocus": "Редактирай ключов фокус за International Business.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "6:bachelor:software-systems-and-technologies": {
+      "overview": "Редактирай този преглед за Software Systems and Technologies.",
+      "keyFocus": "Редактирай ключов фокус за Software Systems and Technologies.",
+      "duration": "Дневна (3-4 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
+    },
+    "6:master:master-of-business-administration": {
+      "overview": "Редактирай този преглед за Master of Business Administration.",
+      "keyFocus": "Редактирай ключов фокус за Master of Business Administration.",
+      "duration": "Дневна (1-2 години)",
+      "partners": [],
+      "highlights": [
+        "Редактирайте това акцентиране."
+      ],
+      "careers": [
+        "Редактирайте пътя на кариерата."
+      ],
+      "admissionNotes": [
+        "Редактирайте това забележка за прием."
+      ]
     }
   }
 }
-
-
