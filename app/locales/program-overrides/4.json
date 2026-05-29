@@ -1,0 +1,85 @@
+{
+  "bachelor:navigation-ship-maneuvering": {
+    "overview": "Navigation (Ship Maneuvering) at TU–Varna combines theoretical navigation with mandatory simulator training and sea practice complying with STCW conventions.",
+    "keyFocus": "Practical seamanship, navigation safety, and maritime operations",
+    "duration": "Full-time (4 years)",
+    "partners": [
+      "Maritime Qualification Centre (MQC)",
+      "Industry shipping partners"
+    ],
+    "highlights": [
+      "STCW-compliant simulator and sea training",
+      "Accredited professional certifications",
+      "Strong industry placement network"
+    ],
+    "careers": [
+      "Deck officer / Navigator",
+      "Port operations specialist",
+      "Logistics coordinator"
+    ],
+    "admissionNotes": [
+      "Program includes mandatory simulator and sea practice components",
+      "Contact the department for certification and training schedules"
+    ]
+  },
+  "bachelor:navigation": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:marine-engineering": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:naval-architecture": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:port-management": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  }
+}

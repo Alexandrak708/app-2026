@@ -1,0 +1,198 @@
+{
+  "bachelor:software-systems-and-technologies": {
+    "overview": "Software Systems and Technologies (BSc Hons) at VUM is a Cardiff Met dual-award programme combining software engineering fundamentals with industry-aligned internships and practical projects.",
+    "keyFocus": "Software development, algorithms, systems design and applied industry practice",
+    "duration": "Full-time (3 years typical; 3 / 3.5 / 4 year options with APL)",
+    "partners": [
+      "Cardiff Metropolitan University",
+      "Local & international industry partners"
+    ],
+    "highlights": [
+      "Cardiff Met dual-award recognition",
+      "Industrial simulation and mandatory internships",
+      "Modular ECTS structure with downloadable curriculum"
+    ],
+    "careers": [
+      "Software developer",
+      "Systems engineer",
+      "Quality assurance engineer",
+      "Technical lead"
+    ],
+    "admissionNotes": [
+      "Evening / weekend teaching options available",
+      "English language requirements and APL pathways apply"
+    ]
+  },
+  "master:master-of-business-administration": {
+    "overview": "The MBA at VUM is an international, Cardiff Met–validated programme focused on management, strategic leadership and applied business practice.",
+    "keyFocus": "Strategic management, finance, marketing and leadership",
+    "duration": "3–4 semesters (depending on prior degree)",
+    "partners": [
+      "Cardiff Metropolitan University",
+      "Industry mentors and partner organisations"
+    ],
+    "highlights": [
+      "Dual award MBA with Cardiff Met",
+      "Dissertation (15 ECTS) and core modules totalling ~90 ECTS",
+      "Mobile student networks and international mobility opportunities"
+    ],
+    "careers": [
+      "Senior manager",
+      "Business consultant",
+      "Entrepreneur",
+      "Strategy analyst"
+    ],
+    "admissionNotes": [
+      "Requires a relevant bachelor degree or equivalent professional experience",
+      "Check Cardiff Met admission alignment for postgraduate entry requirements"
+    ]
+  },
+  "bachelor:tourism-management": {
+    "overview": "The BSc Tourism Management at University of Management focuses on tourism operations, strategy and destination marketing.",
+    "keyFocus": "Tourism operations, destination management and service design",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "Hospitality industry partners",
+      "Regional tourism boards"
+    ],
+    "highlights": [
+      "Industry placements",
+      "Practical workshops and case studies"
+    ],
+    "careers": [
+      "Tourism manager",
+      "Destination marketer",
+      "Operations coordinator"
+    ],
+    "admissionNotes": [
+      "Work experience and language skills are an advantage",
+      "Check specific entrance requirements"
+    ]
+  },
+  "bachelor:hotel-management": {
+    "overview": "Hotel Management trains students in hospitality operations, service management and revenue optimisation.",
+    "keyFocus": "Hospitality operations, service excellence and management",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "Hotel groups",
+      "Hospitality training centres"
+    ],
+    "highlights": [
+      "Practical training in hotels",
+      "Internships with industry partners"
+    ],
+    "careers": [
+      "Hotel manager",
+      "Front office manager",
+      "Revenue manager"
+    ],
+    "admissionNotes": [
+      "Practical placement is part of the curriculum",
+      "Check language requirements for international tracks"
+    ]
+  },
+  "bachelor:event-management": {
+    "overview": "Event Management provides skills in planning, logistics and promotion of events and conferences.",
+    "keyFocus": "Event planning, logistics and marketing",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "Event agencies",
+      "Conference organisers"
+    ],
+    "highlights": [
+      "Project-based event delivery",
+      "Live event experience"
+    ],
+    "careers": [
+      "Event manager",
+      "Conference coordinator",
+      "Production manager"
+    ],
+    "admissionNotes": [
+      "Portfolio of event work or related experience can help",
+      "Check programme details for placement requirements"
+    ]
+  },
+  "bachelor:digital-marketing": {
+    "overview": "Digital Marketing trains students in online marketing, analytics and campaign management.",
+    "keyFocus": "Digital channels, analytics and content strategy",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "Digital agencies",
+      "Marketing technology partners"
+    ],
+    "highlights": [
+      "Hands-on campaign projects",
+      "Analytics and tools training"
+    ],
+    "careers": [
+      "Digital marketer",
+      "SEO specialist",
+      "Performance marketer"
+    ],
+    "admissionNotes": [
+      "Prior marketing interest or portfolio useful",
+      "Check course prerequisites"
+    ]
+  },
+  "master:tourism-management": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:hotel-management": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:event-management": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:digital-marketing": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  }
+}
