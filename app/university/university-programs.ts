@@ -185,16 +185,44 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
     ],
   },
   "4": {
-    bachelor: ["Navigation (Ship Maneuvering)", "Marine Engineering", "Naval Architecture", "Port Management"],
-    master: [],
+    bachelor: [
+      "Cybersecurity",
+      "Information and Communication Technologies",
+      "Artificial Intelligence and Smart Technologies",
+      "Navigation",
+      "Marine Engines and Machinery",
+    ],
+    master: [
+      "Integrated Maritime Policy",
+      "Port and Ship Operations",
+      "Port Management and Logistics",
+      "Navigation",
+      "Artificial Intelligence",
+      "Digital Business Transformation",
+      "Space Engineering and Technologies",
+    ],
   },
   "5": {
     bachelor: ["International Business"],
     master: ["Business Administration", "International Relations", "Public Administration", "European Studies"],
   },
   "6": {
-    bachelor: ["Software Systems and Technologies"],
-    master: ["Master of Business Administration", "Tourism Management", "Hotel Management", "Event Management", "Digital Marketing"],
+    bachelor: [
+      "Software Engineering",
+      "Hotel Management",
+      "Hotel Management - Distance Learning Program",
+      "International Business and Management",
+      "Gastronomy and Culinary Arts",
+      "Hospitality and Culinary Arts",
+      "Pedagogy of education in Hospitality and Restaurant Business",
+      "Food technology in the culinary arts",
+      "Pedagogy of Teaching in Economics and Management",
+    ],
+    master: [
+      "Master in International Tourism",
+      "Master in International Tourism - Distance Learning Program",
+      "Master of Business Administration",
+    ],
   },
 };
 

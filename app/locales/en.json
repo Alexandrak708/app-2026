@@ -558,9 +558,18 @@
     "marketing-and-brand-management": "Marketing And Brand Management",
 
     "___university_4": "University 4 — Naval / Maritime University",
-    "marine-engineering": "Marine Engineering",
-    "naval-architecture": "Naval Architecture",
-    "port-management": "Port Management",
+    "cybersecurity": "Cybersecurity",
+    "information-and-communication-technologies": "Information and Communication Technologies",
+    "artificial-intelligence-and-smart-technologies": "Artificial Intelligence and Smart Technologies",
+    "navigation": "Navigation",
+    "marine-engines-and-machinery": "Marine Engines and Machinery",
+    "integrated-maritime-policy": "Integrated Maritime Policy",
+    "port-and-ship-operations": "Port and Ship Operations",
+    "port-management-and-logistics": "Port Management and Logistics",
+    "navigation": "Navigation",
+    "artificial-intelligence": "Artificial Intelligence",
+    "digital-business-transformation": "Digital Business Transformation",
+    "space-engineering-and-technologies": "Space Engineering and Technologies",
 
     "___university_5": "University 5 — Free University",
     "international-business": "International Business",
@@ -570,12 +579,19 @@
     "european-studies": "European Studies",
 
     "___university_6": "University 6 — University of Management (VUM)",
-    "software-systems-and-technologies": "Software Systems and Technologies",
-    "master-of-business-administration": "Master of Business Administration",
-    "tourism-management": "Tourism Management",
+    "software-engineering": "Software Engineering",
+    "digital-marketing": "Digital Marketing",
     "hotel-management": "Hotel Management",
-    "event-management": "Event Management",
-    "digital-marketing": "Digital Marketing"
+    "hotel-management-distance-learning-program": "Hotel Management - Distance Learning Program",
+    "international-business-and-management": "International Business and Management",
+    "gastronomy-and-culinary-arts": "Gastronomy and Culinary Arts",
+    "hospitality-and-culinary-arts": "Hospitality and Culinary Arts",
+    "pedagogy-of-education-in-hospitality-and-restaurant-business": "Pedagogy of education in Hospitality and Restaurant Business",
+    "food-technology-in-the-culinary-arts": "Food technology in the culinary arts",
+    "pedagogy-of-teaching-in-economics-and-management": "Pedagogy of Teaching in Economics and Management",
+    "master-in-international-tourism": "Master in International Tourism",
+    "master-in-international-tourism-distance-learning-program": "Master in International Tourism - Distance Learning Program",
+    "master-of-business-administration": "Master of Business Administration"
   },
   "programOverrides": {
     "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
