@@ -1,0 +1,122 @@
+{
+  "bachelor:medicine": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:dental-medicine": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:pharmacy": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:nursing": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:midwifery": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:public-health": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:health-management": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:clinical-pharmacy": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  }
+}

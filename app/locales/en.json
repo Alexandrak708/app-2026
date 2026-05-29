@@ -230,8 +230,8 @@
       "description": "Premier business and economics programs shaping future leaders.",
       "longDescription": "The Economics University of Varna is a leading institution in Bulgarian economic education, known for its comprehensive programs and research initiatives.",
       "location": "Varna, Bulgaria",
-      "degree": "Bachelor",
-      "tuitionRange": "€1,100 - €3,200 / year"
+      "degree": "Bachelor/Masters",
+      "tuitionRange": "230.08 € - 1 600 € (3 300 € for PhDs)/ year"
     },
     "4": {
       "name": "Naval University",
@@ -239,7 +239,7 @@
       "longDescription": "The Naval University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
       "location": "Varna, Bulgaria",
       "degree": "Bachelor",
-      "tuitionRange": "€900 - €2,800 / year"
+      "tuitionRange": "2 800 € - 4 000 € / year"
     },
     "5": {
       "name": "Free University",
@@ -247,7 +247,7 @@
       "longDescription": "The Free University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
       "location": "Varna, Bulgaria",
       "degree": "Master",
-      "tuitionRange": "€1,300 - €3,900 / year"
+      "tuitionRange": "664 € - 2 000 € / year"
     },
     "6": {
       "name": "University of Management",
@@ -255,7 +255,7 @@
       "longDescription": "The University of Management of Varna is a leading institution in Bulgarian business education, known for its comprehensive programs and research initiatives.",
       "location": "Varna, Bulgaria",
       "degree": "Master",
-      "tuitionRange": "€1,400 - €4,100 / year"
+      "tuitionRange": "720 € - 2 850 € / year"
     }
   },
   "universityProfiles": {

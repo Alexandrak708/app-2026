@@ -1,0 +1,167 @@
+{
+  "bachelor:business-administration": {
+    "overview": "The BBA at Free University of Varna develops practical management and business skills for international careers.",
+    "keyFocus": "Management, entrepreneurship, and applied business practice",
+    "duration": "Full-time (3-4 years depending on programme)",
+    "partners": [
+      "Industry partners",
+      "Erasmus+ partner universities"
+    ],
+    "highlights": [
+      "Practice-based learning",
+      "Internships and industry projects",
+      "International exchange opportunities"
+    ],
+    "careers": [
+      "Business manager",
+      "Entrepreneur",
+      "Consultant",
+      "Operations specialist"
+    ],
+    "admissionNotes": [
+      "Check the university admission pages for entry requirements",
+      "English-track intake available for international applicants"
+    ]
+  },
+  "bachelor:international-relations": {
+    "overview": "A BA in International Relations at Free University covers diplomacy, policy analysis and international organisations.",
+    "keyFocus": "Diplomacy, policy analysis and global affairs",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "Regional policy institutes",
+      "Erasmus+ partners"
+    ],
+    "highlights": [
+      "Policy-focused modules",
+      "Opportunities for internships in NGOs and public bodies"
+    ],
+    "careers": [
+      "Policy analyst",
+      "Diplomatic service",
+      "International NGO officer"
+    ],
+    "admissionNotes": [
+      "Strong writing and research skills are useful",
+      "Check specific document requirements on the university site"
+    ]
+  },
+  "bachelor:public-administration": {
+    "overview": "The BA in Public Administration prepares students for careers in public sector management and policy implementation.",
+    "keyFocus": "Public policy, administration and governance",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "Local government bodies",
+      "Public sector partners"
+    ],
+    "highlights": [
+      "Applied governance training",
+      "Practical projects with public institutions"
+    ],
+    "careers": [
+      "Public administrator",
+      "Policy officer",
+      "Civil service specialist"
+    ],
+    "admissionNotes": [
+      "Relevant internships are highly valued",
+      "Check civic and language requirements"
+    ]
+  },
+  "bachelor:european-studies": {
+    "overview": "European Studies focuses on the institutions, law and policy of the EU and its role in global affairs.",
+    "keyFocus": "EU institutions, law and comparative policy",
+    "duration": "Full-time (3 years)",
+    "partners": [
+      "European research centres",
+      "Erasmus+ partners"
+    ],
+    "highlights": [
+      "EU-focused modules",
+      "Exchange opportunities in EU universities"
+    ],
+    "careers": [
+      "EU policy advisor",
+      "Researcher",
+      "International affairs specialist"
+    ],
+    "admissionNotes": [
+      "Language skills are an advantage",
+      "Check programme-specific entry rules"
+    ]
+  },
+  "master:business-administration": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:international-relations": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:public-administration": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "master:european-studies": {
+    "overview": "Edit this overview.",
+    "keyFocus": "Edit this key focus.",
+    "duration": "Edit this duration.",
+    "studyMode": "Edit these partners.",
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  },
+  "bachelor:international-business": {
+    "overview": "Edit this overview for International Business.",
+    "keyFocus": "Edit this key focus for International Business.",
+    "duration": "Full-time (3-4 years)",
+    "partners": [],
+    "highlights": [
+      "Edit this highlight."
+    ],
+    "careers": [
+      "Edit this career path."
+    ],
+    "admissionNotes": [
+      "Edit this admission note."
+    ]
+  }
+}
