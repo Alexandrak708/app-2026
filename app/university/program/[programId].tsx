@@ -57,7 +57,7 @@ export default function ProgramDetailPage() {
 
   if (!detail) {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#f5f0e8", padding: 24 }}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#FCFBF7", padding: 24 }}>
         <Ionicons name="alert-circle-outline" size={48} color="#94a3b8" />
         <Text style={{ color: "#0f172a", fontSize: 18, fontWeight: "800", marginTop: 12, textAlign: "center" }}>
           {t("programDetail.notFound")} {/* 👈 CHANGED */}
@@ -78,7 +78,7 @@ export default function ProgramDetailPage() {
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
+    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 32 }}>
         <View style={{ paddingHorizontal: 24, paddingTop: 56, paddingBottom: 18 }}>
           <TouchableOpacity

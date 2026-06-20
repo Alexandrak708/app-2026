@@ -173,7 +173,7 @@ export default function Index() {
 
   return (
     <KeyboardAvoidingView
-      style={{ flex: 1, backgroundColor: "#f5f0e8" }}
+      style={{ flex: 1, backgroundColor: "#FCFBF7" }}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
       {showFilters && (
@@ -192,7 +192,7 @@ export default function Index() {
           <View
             style={{
               flexDirection: "row", alignItems: "center",
-              backgroundColor: "#ffffff",
+              backgroundColor: "#810B38",
               borderRadius: 16,
               borderBottomLeftRadius: showFilters ? 0 : 16,
               borderBottomRightRadius: showFilters ? 0 : 16,
@@ -203,7 +203,7 @@ export default function Index() {
           >
             <Ionicons
               name="search" size={18}
-              color={isSearchFocused ? "#0f172a" : "#94a3b8"}
+              color={isSearchFocused ? "#000000" : "#F1F5F9"}
               style={{ marginRight: 10 }}
             />
             <TextInput
@@ -213,28 +213,28 @@ export default function Index() {
               onFocus={() => setIsSearchFocused(true)}
               onBlur={() => setIsSearchFocused(false)}
               placeholder={t("search.placeholder")}
-              placeholderTextColor="#94a3b8"
-              style={{ flex: 1, fontSize: 14, fontWeight: "500", color: "#0f172a", paddingVertical: 0 }}
+              placeholderTextColor="#F1F5F9"
+              style={{ flex: 1, fontSize: 14, fontWeight: "500", color: isSearchFocused ? "#000000" : "#F1F5F9", paddingVertical: 0 }}
               returnKeyType="search"
             />
             {searchText.length > 0 && (
               <TouchableOpacity onPress={() => setSearchText("")} style={{ marginRight: 8 }}>
-                <Ionicons name="close-circle" size={18} color="#94a3b8" />
+                <Ionicons name="close-circle" size={18} color="#F1F5F9" />
               </TouchableOpacity>
             )}
-            <View style={{ width: 1, height: 20, backgroundColor: "#e2e8f0", marginRight: 10 }} />
+            <View style={{ width: 1, height: 20, backgroundColor: "#F1F5F9", marginRight: 10, opacity: 0.32 }} />
             <TouchableOpacity
               onPress={toggleFilters}
               style={{ flexDirection: "row", alignItems: "center", gap: 5 }}
             >
               <Ionicons
                 name="options-outline" size={18}
-                color={activeFiltersCount > 0 ? "#0f172a" : "#64748b"}
+                color={activeFiltersCount > 0 ? "#000000" : "#F1F5F9"}
               />
               {activeFiltersCount > 0 && (
                 <View
                   style={{
-                    backgroundColor: "#0f172a", borderRadius: 10,
+                    backgroundColor: "#000000", borderRadius: 10,
                     minWidth: 18, height: 18,
                     alignItems: "center", justifyContent: "center", paddingHorizontal: 4,
                   }}

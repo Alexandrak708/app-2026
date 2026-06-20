@@ -100,7 +100,7 @@ export default function ProgramsPage() {
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
+    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
 
       {/* Header */}
       <View style={{ paddingTop: 56, paddingHorizontal: 24, paddingBottom: 16 }}>

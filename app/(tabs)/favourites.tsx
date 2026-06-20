@@ -43,7 +43,7 @@ export default function Favourites() {
   // Use the shared UniversityCard for favourites list so design matches index
   
   return (
-    <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
+    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
       <ScrollView contentContainerStyle={{ padding: 24, paddingTop: 64, paddingBottom: 140 }}>
         <Text style={{ color: "#0f172a", fontSize: 30, fontWeight: "900", letterSpacing: -0.4 }}>
           {t("favourites.title")}

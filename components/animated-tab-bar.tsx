@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   TouchableOpacity,
@@ -65,6 +65,9 @@ function TabItem({
   label,
 }: TabItemProps) {
   const iconName = TAB_ICONS[route.name] || "ellipse";
+  const [isPressed, setIsPressed] = useState(false);
+  const activeColor = "#FFFFFF";
+  const inactiveColor = "#F1F5F9";
 
   const animatedIconStyle = useAnimatedStyle(() => {
     const distance = Math.abs(selectedIndex.value - index);
@@ -74,7 +77,7 @@ function TabItem({
       transform: [
         { scale: withTiming(1 + progress * 0.2, ANIMATION_CONFIG) },
         { translateY: withTiming(-progress * 24, ANIMATION_CONFIG) },
-        { translateX: withTiming(progress * 6, ANIMATION_CONFIG) },
+        { translateX: withTiming(progress * 3, ANIMATION_CONFIG) },
       ],
     };
   });
@@ -104,6 +107,8 @@ function TabItem({
       accessibilityRole="button"
       accessibilityState={isFocused ? { selected: true } : {}}
       onPress={onPress}
+      onPressIn={() => setIsPressed(true)}
+      onPressOut={() => setIsPressed(false)}
       style={[styles.tabItem, { width: tabWidth }]}
       activeOpacity={0.7}
     >
@@ -112,14 +117,17 @@ function TabItem({
           <Ionicons
             name={iconName}
             size={26}
-            color={isFocused ? "#0f172a" : "#64748b"}
+            color={isPressed || isFocused ? activeColor : inactiveColor}
           />
         </Animated.View>
         <Animated.View style={[styles.labelContainer, animatedLabelStyle]}>
           <Text
             style={[
               styles.labelText,
-              { color: isFocused ? "#0f172a" : "#64748b" },
+              {
+                color: isPressed || isFocused ? activeColor : inactiveColor,
+                transform: [{ translateX: 2 }],
+              },
             ]}
           >
             {label}
@@ -195,7 +203,7 @@ export function AnimatedTabBar({
           style={styles.domeSvg}
           viewBox={`${-DOME_WIDTH / 2} ${-DOME_WIDTH / 2} ${DOME_WIDTH} ${DOME_WIDTH / 2 + 5}`}
         >
-          <Path d={domePath} fill="#ffffff" />
+          <Path d={domePath} fill="#810B38" />
         </Svg>
       </Animated.View>
 
@@ -247,7 +255,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: TAB_BAR_HEIGHT,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#810B38",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -289,10 +297,13 @@ const styles = StyleSheet.create({
   },
   labelContainer: {
     marginTop: 4,
+    width: "100%",
+    alignItems: "center",
   },
   labelText: {
     fontSize: 10,
     fontWeight: "600",
     letterSpacing: 0.3,
+    textAlign: "center",
   },
 });

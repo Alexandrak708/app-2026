@@ -11,7 +11,7 @@ export function BackToSettingsButton() {
 
   return (
     <TouchableOpacity
-      onPress={() => router.push('/settings')}
+      onPress={() => router.back()}
       activeOpacity={0.8}
       accessibilityRole="button"
       accessibilityLabel={t('settings.backToSettings')}

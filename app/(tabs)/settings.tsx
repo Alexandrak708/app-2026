@@ -13,9 +13,7 @@ import {
   Platform,
 } from "react-native";
 import { useTranslation } from "react-i18next";
-import { changeLanguage } from "../i18n";
 import { useState, useEffect, useRef } from "react";
-import i18n from "../i18n";
 import { supabase } from "../../lib/supabase";
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
@@ -55,7 +53,6 @@ export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
   const scrollRef = useRef<ScrollView>(null);
-  const [currentLang, setCurrentLang] = useState(i18n.language);
   const [user, setUser] = useState<any>(null);
   const [authUser, setAuthUser] = useState<any>(null);
   const [isEditingName, setIsEditingName] = useState(false);
@@ -229,11 +226,6 @@ export default function Settings() {
     setIsEditingName(false);
   };
 
-  const handleLanguageChange = async (lang: "en" | "bg") => {
-    await changeLanguage(lang);
-    setCurrentLang(lang);
-  };
-
   const handleComingSoon = (featureName: string) => {
     Alert.alert(featureName, `${featureName} is not connected yet.`);
   };
@@ -268,7 +260,7 @@ export default function Settings() {
       contentContainerStyle={[styles.scrollContent, { alignItems: "center" }]}
       showsVerticalScrollIndicator={false}
     >
-      <View style={{ width: "100%", maxWidth: 760, paddingHorizontal: 20 }}>
+      <View style={{ width: "100%", maxWidth: 980, paddingHorizontal: 12 }}>
         <Text style={styles.pageTitle}>{t("settings.title")}</Text>
 
         {/* ── Profile Card — all logic unchanged ── */}
@@ -310,7 +302,7 @@ export default function Settings() {
                   value={editedName}
                   onChangeText={setEditedName}
                   placeholder={t("settings.yourNamePlaceholder")}
-                  placeholderTextColor="#94a3b8"
+                  placeholderTextColor="#810B38"
                   editable={!loadingName}
                   autoFocus
                   returnKeyType="done"
@@ -363,34 +355,7 @@ export default function Settings() {
         <Section title={t("settings.sections.preferences")}>
           <SettingsRow label={t("settings.items.appearance")} onPress={() => router.push('/appearance')} />
           <View style={styles.separator} />
-
-          {/* Language row — logic unchanged, restyled as inline pills */}
-          <View style={styles.settingsRow}>
-            <Text style={styles.rowLabel}>{t("settings.language")}</Text>
-            <View style={styles.langPills}>
-              <TouchableOpacity
-                style={[styles.langPill, currentLang === "en" && styles.langPillActive]}
-                onPress={() => handleLanguageChange("en")}
-                activeOpacity={0.8}
-              >
-                <Text style={styles.langPillFlag}>🇬🇧</Text>
-                <Text style={[styles.langPillText, currentLang === "en" && styles.langPillTextActive]}>
-                  {t("languages.en")}
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={[styles.langPill, currentLang === "bg" && styles.langPillActive]}
-                onPress={() => handleLanguageChange("bg")}
-                activeOpacity={0.8}
-              >
-                <Text style={styles.langPillFlag}>🇧🇬</Text>
-                <Text style={[styles.langPillText, currentLang === "bg" && styles.langPillTextActive]}>
-                  {t("languages.bg")}
-                </Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-
+          <SettingsRow label={t("settings.language")} onPress={() => router.push('/language')} />
           <View style={styles.separator} />
           <SettingsRow label={t("settings.items.accessibility")} onPress={() => router.push('/accessibility')} />
         </Section>
@@ -420,14 +385,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f5f0e8",
+    backgroundColor: "#FCFBF7",
   },
   container: {
     flex: 1,
-    backgroundColor: "#f5f0e8",
+    backgroundColor: "#FCFBF7",
   },
   scrollContent: {
-    padding: 24,
+    padding: 12,
     paddingTop: 64,
     paddingBottom: 48,
     flexGrow: 1,
@@ -437,6 +402,7 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     color: "#1a1a2e",
     marginBottom: 28,
+    marginLeft: 2,
     letterSpacing: -0.5,
   },
 
@@ -499,7 +465,7 @@ const styles = StyleSheet.create({
     letterSpacing: -0.3,
   },
   editPencil: { fontSize: 14, opacity: 0.5 },
-  profileEmail: { fontSize: 13, color: "#94a3b8", fontWeight: "500" },
+  profileEmail: { fontSize: 13, color: "#810B38", fontWeight: "500" },
   editBlock: { gap: 8 },
   nameInput: {
     fontSize: 18,
@@ -526,14 +492,14 @@ const styles = StyleSheet.create({
     paddingVertical: 7,
     borderRadius: 8,
   },
-  cancelBtnText: { color: "#64748b", fontWeight: "600", fontSize: 13 },
+  cancelBtnText: { color: "#810B38", fontWeight: "600", fontSize: 13 },
 
   // ── Sections ──
   section: { marginBottom: 20 },
   sectionLabel: {
     fontSize: 11,
     fontWeight: "700",
-    color: "#94a3b8",
+    color: "#810B38",
     letterSpacing: 1.5,
     textTransform: "uppercase",
     marginBottom: 10,
@@ -554,7 +520,7 @@ const styles = StyleSheet.create({
   settingsRow: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 18,
+    paddingHorizontal: 14,
     paddingVertical: 14,
     gap: 10,
     minHeight: 58,
@@ -566,26 +532,8 @@ const styles = StyleSheet.create({
     color: "#1a1a2e",
     letterSpacing: -0.1,
   },
-  rowChevron: { fontSize: 22, color: "#cbd5e1", fontWeight: "300" },
-  separator: { height: 1, backgroundColor: "#f1f5f9", marginLeft: 18 },
-
-  // ── Language pills ──
-  langPills: { flexDirection: "row", gap: 6 },
-  langPill: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 20,
-    borderWidth: 1.5,
-    borderColor: "#e2e8f0",
-    backgroundColor: "#f8fafc",
-  },
-  langPillActive: { backgroundColor: "#1a1a2e", borderColor: "#1a1a2e" },
-  langPillFlag: { fontSize: 14 },
-  langPillText: { fontSize: 12, fontWeight: "700", color: "#64748b", letterSpacing: 0.5 },
-  langPillTextActive: { color: "#ffffff" },
+  rowChevron: { fontSize: 22, color: "#810B38", fontWeight: "300" },
+  separator: { height: 1, backgroundColor: "#f1f5f9", marginLeft: 14 },
 
   // ── Logout (identical to original) ──
   logoutBtn: {
@@ -603,7 +551,7 @@ const styles = StyleSheet.create({
   versionText: {
     textAlign: "center",
     fontSize: 12,
-    color: "#cbd5e1",
+    color: "#810B38",
     fontWeight: "500",
     letterSpacing: 0.5,
   },

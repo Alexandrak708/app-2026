@@ -118,7 +118,7 @@ export default function UniversityPage() {
 
   if (!university) {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#f5f0e8" }}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#FCFBF7" }}>
         <Ionicons name="alert-circle-outline" size={48} color="#94a3b8" />
         <Text style={{ color: "#94a3b8", fontSize: 16, marginTop: 12 }}>
           {t("university.notFound")}
@@ -151,7 +151,7 @@ export default function UniversityPage() {
   ];
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f5f0e8" }}>
+    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
       <ScrollView showsVerticalScrollIndicator={false} bounces contentContainerStyle={{ alignItems: "center" }}>
 
         {/* Hero Image */}
