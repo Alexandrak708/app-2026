@@ -5,6 +5,7 @@ import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 
 import i18n, { changeLanguage } from "./i18n";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 type LanguageCode = "en" | "bg";
 
@@ -17,6 +18,7 @@ export default function LanguageScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const [currentLang, setCurrentLang] = useState<LanguageCode>(i18n.language as LanguageCode);
+  const { colors, isDark } = useAppTheme();
 
   useEffect(() => {
     setCurrentLang((i18n.language as LanguageCode) || "en");
@@ -28,15 +30,15 @@ export default function LanguageScreen() {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backButton} activeOpacity={0.8}>
-          <Ionicons name="chevron-back" size={22} color="#1a1a2e" />
+          <Ionicons name="chevron-back" size={22} color={colors.text} />
         </TouchableOpacity>
-        <Text style={styles.title}>{t("settings.language")}</Text>
+        <Text style={[styles.title, { color: colors.text }]}>{t("settings.language")}</Text>
       </View>
 
-      <View style={styles.card}>
+      <View style={[styles.card, { backgroundColor: colors.surface, shadowColor: colors.cardShadow }]}>
         {LANGUAGES.map((language, index) => {
           const selected = currentLang === language.code;
 
@@ -47,12 +49,13 @@ export default function LanguageScreen() {
               activeOpacity={0.85}
               style={[
                 styles.row,
+                { borderBottomColor: colors.softBorder },
                 selected && styles.rowSelected,
                 index === LANGUAGES.length - 1 && styles.rowLast,
               ]}
             >
-              <Text style={[styles.rowLabel, selected && styles.rowLabelSelected]}>{t(language.labelKey)}</Text>
-              {selected ? <Ionicons name="checkmark" size={20} color="#810B38" /> : <View style={styles.spacer} />}
+              <Text style={[styles.rowLabel, { color: selected ? (isDark ? "#0f172a" : "#810B38") : colors.text }]}>{t(language.labelKey)}</Text>
+              {selected ? <Ionicons name="checkmark" size={20} color={isDark ? "#0f172a" : "#810B38"} /> : <View style={styles.spacer} />}
             </TouchableOpacity>
           );
         })}
@@ -64,7 +67,6 @@ export default function LanguageScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FCFBF7",
     paddingHorizontal: 12,
     paddingTop: 64,
   },
@@ -90,11 +92,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: "800",
-    color: "#1a1a2e",
     letterSpacing: -0.4,
   },
   card: {
-    backgroundColor: "#ffffff",
     borderRadius: 20,
     overflow: "hidden",
     shadowColor: "#1a1a2e",
@@ -121,10 +121,6 @@ const styles = StyleSheet.create({
   rowLabel: {
     fontSize: 16,
     fontWeight: "700",
-    color: "#1a1a2e",
-  },
-  rowLabelSelected: {
-    color: "#810B38",
   },
   spacer: {
     width: 20,

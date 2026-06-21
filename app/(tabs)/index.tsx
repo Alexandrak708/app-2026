@@ -14,6 +14,7 @@ import { useRouter } from "expo-router";
 import { useIsFocused } from "@react-navigation/native";
 import UniversityCard from "@/components/university-card";
 import CompactUniversityCard from "@/components/compact-university-card";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 const CARD_GAP = 16;
 const CARD_HORIZONTAL_PADDING = 48;
@@ -32,17 +33,19 @@ function FilterChip({
 }: {
   label: string; selected: boolean; onPress: () => void;
 }) {
+  const { colors, isDark } = useAppTheme();
+
   return (
     <TouchableOpacity
       onPress={onPress}
       style={{
         paddingHorizontal: 14, paddingVertical: 7, borderRadius: 20,
-        backgroundColor: selected ? "#0f172a" : "#f1f5f9",
+        backgroundColor: selected ? (isDark ? "#e2e8f0" : "#0f172a") : colors.mutedSurface,
         marginRight: 8, marginBottom: 8,
-        borderWidth: 1, borderColor: selected ? "#0f172a" : "#e2e8f0",
+        borderWidth: 1, borderColor: selected ? (isDark ? "#cbd5e1" : "#0f172a") : colors.border,
       }}
     >
-      <Text style={{ color: selected ? "#ffffff" : "#475569", fontSize: 13, fontWeight: "600" }}>
+      <Text style={{ color: selected ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary, fontSize: 13, fontWeight: "600" }}>
         {label}
       </Text>
     </TouchableOpacity>
@@ -50,6 +53,8 @@ function FilterChip({
 }
 
 function Dot({ index, scrollX, cardWidth }: { index: number; scrollX: SharedValue<number>; cardWidth: number }) {
+  const { isDark } = useAppTheme();
+
   const animatedDotStyle = useAnimatedStyle(() => {
     const inputRange = [
       (index - 1) * (cardWidth + CARD_GAP),
@@ -65,8 +70,8 @@ function Dot({ index, scrollX, cardWidth }: { index: number; scrollX: SharedValu
     <Animated.View
       style={[
         {
-          height: 8, borderRadius: 999, backgroundColor: "#0f172a",
-          borderWidth: 1, borderColor: "rgba(15, 23, 42, 0.12)",
+          height: 8, borderRadius: 999, backgroundColor: isDark ? "#e2e8f0" : "#0f172a",
+          borderWidth: 1, borderColor: isDark ? "rgba(226, 232, 240, 0.28)" : "rgba(15, 23, 42, 0.12)",
           marginHorizontal: 3,
         },
         animatedDotStyle,
@@ -99,6 +104,7 @@ export default function Index() {
   const cardWidth = getCardWidth(screenWidth);
   const universities = useMemo(() => buildUniversities(t), [t]);
   const isFocused = useIsFocused();
+  const { colors, isDark } = useAppTheme();
 
   const [searchText, setSearchText] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -173,7 +179,7 @@ export default function Index() {
 
   return (
     <KeyboardAvoidingView
-      style={{ flex: 1, backgroundColor: "#FCFBF7" }}
+      style={{ flex: 1, backgroundColor: colors.background }}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
       {showFilters && (
@@ -192,18 +198,18 @@ export default function Index() {
           <View
             style={{
               flexDirection: "row", alignItems: "center",
-              backgroundColor: "#810B38",
+              backgroundColor: isDark ? "#6A2E36" : "#810B38",
               borderRadius: 16,
               borderBottomLeftRadius: showFilters ? 0 : 16,
               borderBottomRightRadius: showFilters ? 0 : 16,
               paddingHorizontal: 14, paddingVertical: 11,
-              shadowColor: "#000", shadowOffset: { width: 0, height: 2 },
+              shadowColor: colors.cardShadow, shadowOffset: { width: 0, height: 2 },
               shadowOpacity: 0.07, shadowRadius: 10, elevation: 4,
             }}
           >
             <Ionicons
               name="search" size={18}
-              color={isSearchFocused ? "#000000" : "#F1F5F9"}
+              color={isSearchFocused ? (isDark ? "#FFFFFF" : "#000000") : (isDark ? "#FFFFFF" : "#F1F5F9")}
               style={{ marginRight: 10 }}
             />
             <TextInput
@@ -213,33 +219,33 @@ export default function Index() {
               onFocus={() => setIsSearchFocused(true)}
               onBlur={() => setIsSearchFocused(false)}
               placeholder={t("search.placeholder")}
-              placeholderTextColor="#F1F5F9"
-              style={{ flex: 1, fontSize: 14, fontWeight: "500", color: isSearchFocused ? "#000000" : "#F1F5F9", paddingVertical: 0 }}
+              placeholderTextColor={isDark ? "rgba(255,255,255,0.7)" : "#F1F5F9"}
+              style={{ flex: 1, fontSize: 14, fontWeight: "500", color: isSearchFocused ? (isDark ? "#FFFFFF" : "#000000") : (isDark ? "#FFFFFF" : "#F1F5F9"), paddingVertical: 0 }}
               returnKeyType="search"
             />
             {searchText.length > 0 && (
-              <TouchableOpacity onPress={() => setSearchText("")} style={{ marginRight: 8 }}>
-                <Ionicons name="close-circle" size={18} color="#F1F5F9" />
+                <TouchableOpacity onPress={() => setSearchText("")} style={{ marginRight: 8 }}>
+                <Ionicons name="close-circle" size={18} color={isDark ? "#FFFFFF" : "#F1F5F9"} />
               </TouchableOpacity>
             )}
-            <View style={{ width: 1, height: 20, backgroundColor: "#F1F5F9", marginRight: 10, opacity: 0.32 }} />
+            <View style={{ width: 1, height: 20, backgroundColor: isDark ? "rgba(255,255,255,0.32)" : "#F1F5F9", marginRight: 10, opacity: 0.32 }} />
             <TouchableOpacity
               onPress={toggleFilters}
               style={{ flexDirection: "row", alignItems: "center", gap: 5 }}
             >
               <Ionicons
                 name="options-outline" size={18}
-                color={activeFiltersCount > 0 ? "#000000" : "#F1F5F9"}
+                color={activeFiltersCount > 0 ? (isDark ? "#FFFFFF" : "#000000") : (isDark ? "#FFFFFF" : "#F1F5F9")}
               />
               {activeFiltersCount > 0 && (
                 <View
                   style={{
-                    backgroundColor: "#000000", borderRadius: 10,
+                    backgroundColor: isDark ? "#0f172a" : "#000000", borderRadius: 10,
                     minWidth: 18, height: 18,
                     alignItems: "center", justifyContent: "center", paddingHorizontal: 4,
                   }}
                 >
-                  <Text style={{ color: "#fff", fontSize: 10, fontWeight: "700" }}>
+                  <Text style={{ color: isDark ? "#ffffff" : "#fff", fontSize: 10, fontWeight: "700" }}>
                     {activeFiltersCount}
                   </Text>
                 </View>
@@ -252,9 +258,9 @@ export default function Index() {
             style={[
               filterPanelStyle,
               {
-                backgroundColor: "#ffffff",
+                backgroundColor: colors.surface,
                 borderBottomLeftRadius: 16, borderBottomRightRadius: 16,
-                shadowColor: "#000", shadowOffset: { width: 0, height: 6 },
+                shadowColor: colors.cardShadow, shadowOffset: { width: 0, height: 6 },
                 shadowOpacity: 0.08, shadowRadius: 12, elevation: 12,
                 zIndex: 20,
               },
@@ -267,9 +273,9 @@ export default function Index() {
               keyboardShouldPersistTaps="always"
               nestedScrollEnabled
             >
-              <View style={{ height: 1, backgroundColor: "#f1f5f9", marginBottom: 14 }} />
+              <View style={{ height: 1, backgroundColor: colors.softBorder, marginBottom: 14 }} />
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
                 {t("filters.degree")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
@@ -282,7 +288,7 @@ export default function Index() {
                 ))}
               </View>
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
                 {t("filters.scholarship")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
@@ -296,7 +302,7 @@ export default function Index() {
                 />
               </View>
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
                 {t("filters.category")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
@@ -309,7 +315,7 @@ export default function Index() {
                 ))}
               </View>
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: "#94a3b8", letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
                 {t("filters.country")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 6 }}>
@@ -323,12 +329,12 @@ export default function Index() {
               </View>
 
               <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 4 }}>
-                <Text style={{ fontSize: 13, color: "#64748b", fontWeight: "500" }}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, fontWeight: "500" }}>
                   {t("search.found", { count: filteredUniversities.length })}
                 </Text>
                 {activeFiltersCount > 0 && (
                   <TouchableOpacity onPress={clearFilters}>
-                    <Text style={{ fontSize: 13, color: "#94a3b8", fontWeight: "600" }}>
+                    <Text style={{ fontSize: 13, color: colors.textMuted, fontWeight: "600" }}>
                       {t("search.clearAll")}
                     </Text>
                   </TouchableOpacity>
@@ -348,13 +354,13 @@ export default function Index() {
       >
         {hasSearchQuery ? (
           <View style={{ paddingHorizontal: 24, paddingTop: 6, paddingBottom: 12 }}>
-            <Text style={{ fontSize: 15, fontWeight: "800", color: "#0f172a", marginBottom: 10 }}>
+            <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text, marginBottom: 10 }}>
               {t("search.found", { count: displayedUniversities.length })}
             </Text>
 
             {displayedUniversities.length > 0 ? (
               <View>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: "#94a3b8", marginBottom: 10, textTransform: "uppercase", letterSpacing: 1 }}>
+                <Text style={{ fontSize: 12, fontWeight: "700", color: colors.textMuted, marginBottom: 10, textTransform: "uppercase", letterSpacing: 1 }}>
                   {t("search.closestMatch", { defaultValue: "Closest match" })}
                 </Text>
                 <UniversityCard
@@ -364,11 +370,11 @@ export default function Index() {
               </View>
             ) : (
               <View style={{ alignItems: "center", marginTop: 18 }}>
-                <Ionicons name="search-outline" size={40} color="#cbd5e1" />
-                <Text style={{ color: "#94a3b8", fontSize: 15, fontWeight: "600", marginTop: 12 }}>
+                <Ionicons name="search-outline" size={40} color={colors.textMuted} />
+                <Text style={{ color: colors.textMuted, fontSize: 15, fontWeight: "600", marginTop: 12 }}>
                   {t("search.noResults")}
                 </Text>
-                <Text style={{ color: "#cbd5e1", fontSize: 13, marginTop: 4, textAlign: "center" }}>
+                <Text style={{ color: colors.textSecondary, fontSize: 13, marginTop: 4, textAlign: "center" }}>
                   {t("search.tryDifferent")}
                 </Text>
               </View>
@@ -376,7 +382,7 @@ export default function Index() {
           </View>
         ) : (
           <>
-            <Text style={{ fontSize: 18, fontWeight: "800", color: "#0f172a", paddingHorizontal: 24, marginBottom: 12 }}>
+            <Text style={{ fontSize: 18, fontWeight: "800", color: colors.text, paddingHorizontal: 24, marginBottom: 12 }}>
               {t("home.recommended")}
             </Text>
 
@@ -410,9 +416,9 @@ export default function Index() {
                     marginTop: 14,
                     paddingHorizontal: 12, paddingVertical: 8,
                     borderRadius: 999,
-                    backgroundColor: "rgba(255,255,255,0.78)",
-                    borderWidth: 1, borderColor: "rgba(15,23,42,0.08)",
-                    shadowColor: "#000", shadowOffset: { width: 0, height: 4 },
+                    backgroundColor: colors.surface,
+                    borderWidth: 1, borderColor: colors.softBorder,
+                    shadowColor: colors.cardShadow, shadowOffset: { width: 0, height: 4 },
                     shadowOpacity: 0.06, shadowRadius: 10, elevation: 3,
                   }}
                 >
@@ -423,7 +429,7 @@ export default function Index() {
               )}
             </View>
 
-            <Text style={{ fontSize: 15, fontWeight: "800", color: "#0f172a", paddingHorizontal: 24, marginTop: 18, marginBottom: 10 }}>
+            <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text, paddingHorizontal: 24, marginTop: 18, marginBottom: 10 }}>
               {t("home.allUniversities")}
             </Text>
 
