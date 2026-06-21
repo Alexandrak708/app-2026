@@ -11,6 +11,7 @@ import {
   Easing,
   ScrollView,
   Platform,
+  type ViewStyle,
 } from "react-native";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
@@ -18,18 +19,22 @@ import { supabase } from "../../lib/supabase";
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
+import { Colors } from "@/constants/theme";
+import { useColorScheme } from "@/hooks/use-color-scheme";
 
 // ── Reusable row ──────────────────────────────────────────────────────────────
 type SettingsRowProps = {
   label: string;
   onPress?: () => void;
+  labelColor: string;
+  chevronColor: string;
 };
 
-function SettingsRow({ label, onPress }: SettingsRowProps) {
+function SettingsRow({ label, onPress, labelColor, chevronColor }: SettingsRowProps) {
   return (
     <TouchableOpacity style={styles.settingsRow} onPress={onPress} activeOpacity={0.7}>
-      <Text style={styles.rowLabel}>{label}</Text>
-      <Text style={styles.rowChevron}>›</Text>
+      <Text style={[styles.rowLabel, { color: labelColor }]}>{label}</Text>
+      <Text style={[styles.rowChevron, { color: chevronColor }]}>›</Text>
     </TouchableOpacity>
   );
 }
@@ -37,13 +42,15 @@ function SettingsRow({ label, onPress }: SettingsRowProps) {
 type SectionProps = {
   title: string;
   children: React.ReactNode;
+  titleColor: string;
+  cardStyle: ViewStyle;
 };
 
-function Section({ title, children }: SectionProps) {
+function Section({ title, children, titleColor, cardStyle }: SectionProps) {
   return (
     <View style={styles.section}>
-      <Text style={styles.sectionLabel}>{title}</Text>
-      <View style={styles.sectionCard}>{children}</View>
+      <Text style={[styles.sectionLabel, { color: titleColor }]}>{title}</Text>
+      <View style={[styles.sectionCard, cardStyle]}>{children}</View>
     </View>
   );
 }
@@ -52,6 +59,15 @@ function Section({ title, children }: SectionProps) {
 export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
+  const colorScheme = useColorScheme() ?? "light";
+  const isDark = colorScheme === "dark";
+  const basePalette = Colors[isDark ? "dark" : "light"];
+  const palette = {
+    ...basePalette,
+    border: isDark ? "#2a303c" : "#e6e9ee",
+    surface: isDark ? "#171a21" : "#ffffff",
+    surfaceMuted: isDark ? "#222733" : "#f1f5f9",
+  };
   const scrollRef = useRef<ScrollView>(null);
   const [user, setUser] = useState<any>(null);
   const [authUser, setAuthUser] = useState<any>(null);
@@ -247,8 +263,8 @@ export default function Settings() {
 
   if (initialLoading) {
     return (
-      <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#1a1a2e" />
+      <View style={[styles.loadingContainer, { backgroundColor: palette.background }]}>
+        <ActivityIndicator size="large" color={palette.text} />
       </View>
     );
   }
@@ -256,15 +272,23 @@ export default function Settings() {
   return (
     <ScrollView
       ref={scrollRef}
-      style={styles.container}
+      style={[styles.container, { backgroundColor: palette.background }]}
       contentContainerStyle={[styles.scrollContent, { alignItems: "center" }]}
       showsVerticalScrollIndicator={false}
     >
       <View style={{ width: "100%", maxWidth: 980, paddingHorizontal: 12 }}>
-        <Text style={styles.pageTitle}>{t("settings.title")}</Text>
+        <Text style={[styles.pageTitle, { color: palette.text }]}>{t("settings.title")}</Text>
 
         {/* ── Profile Card — all logic unchanged ── */}
-        <View style={styles.profileCard}>
+        <View
+          style={[
+            styles.profileCard,
+            {
+              backgroundColor: isDark ? "#171a21" : "#ffffff",
+              shadowColor: palette.text,
+            },
+          ]}
+        >
           <TouchableOpacity
             style={styles.avatarWrapper}
             onPress={handlePickAvatar}
@@ -273,7 +297,7 @@ export default function Settings() {
           >
             <Animated.View style={[styles.avatarRing, { transform: [{ scale: pulseAnim }] }]}>
               {loadingAvatar ? (
-                <View style={[styles.avatar, styles.avatarPlaceholder]}>
+                <View style={[styles.avatar, styles.avatarPlaceholder, { backgroundColor: palette.tint }]}>
                   <ActivityIndicator color="#fff" size="small" />
                 </View>
               ) : (
@@ -283,13 +307,13 @@ export default function Settings() {
                       user?.avatar_url ||
                       `https://ui-avatars.com/api/?name=${encodeURIComponent(
                         user?.full_name || "U"
-                      )}&background=1a1a2e&color=fff&size=200`,
+                      )}&background=${isDark ? "ECEDEE" : "1a1a2e"}&color=${isDark ? "151718" : "fff"}&size=200`,
                   }}
                   style={styles.avatar}
                 />
               )}
             </Animated.View>
-            <View style={styles.cameraOverlay}>
+            <View style={[styles.cameraOverlay, { backgroundColor: palette.background, borderColor: palette.border }]}>
               <Text style={styles.cameraIcon}>📷</Text>
             </View>
           </TouchableOpacity>
@@ -298,11 +322,11 @@ export default function Settings() {
             {isEditingName ? (
               <View style={styles.editBlock}>
                 <TextInput
-                  style={styles.nameInput}
+                  style={[styles.nameInput, { color: palette.text, borderBottomColor: palette.text }]}
                   value={editedName}
                   onChangeText={setEditedName}
                   placeholder={t("settings.yourNamePlaceholder")}
-                  placeholderTextColor="#810B38"
+                  placeholderTextColor={palette.icon}
                   editable={!loadingName}
                   autoFocus
                   returnKeyType="done"
@@ -310,7 +334,7 @@ export default function Settings() {
                 />
                 <View style={styles.editActions}>
                   <TouchableOpacity
-                    style={styles.saveBtn}
+                    style={[styles.saveBtn, { backgroundColor: palette.text }]}
                     onPress={handleSaveName}
                     disabled={loadingName}
                   >
@@ -320,8 +344,11 @@ export default function Settings() {
                       <Text style={styles.saveBtnText}>{t("settings.save")}</Text>
                     )}
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.cancelBtn} onPress={handleCancelEdit}>
-                    <Text style={styles.cancelBtnText}>{t("settings.cancel")}</Text>
+                  <TouchableOpacity
+                    style={[styles.cancelBtn, { backgroundColor: isDark ? "#222733" : "#f1f5f9" }]}
+                    onPress={handleCancelEdit}
+                  >
+                    <Text style={[styles.cancelBtnText, { color: palette.tint }]}>{t("settings.cancel")}</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -331,50 +358,114 @@ export default function Settings() {
                 style={styles.nameRow}
                 activeOpacity={0.7}
               >
-                <Text style={styles.profileName}>{user?.full_name || t("settings.addYourName")}</Text>
+                <Text style={[styles.profileName, { color: palette.text }]}>{user?.full_name || t("settings.addYourName")}</Text>
                 <Text style={styles.editPencil}>✏️</Text>
               </TouchableOpacity>
             )}
-            <Text style={styles.profileEmail}>{authUser?.email || ""}</Text>
+            <Text style={[styles.profileEmail, { color: palette.tint }]}>{authUser?.email || ""}</Text>
           </View>
         </View>
 
         {/* ── Account ── */}
-        <Section title={t("settings.sections.account")}>
-          <SettingsRow label={t("settings.items.profile")} onPress={() => router.push('/profile')} />
-          <View style={styles.separator} />
-          <SettingsRow label={t("settings.items.security")} onPress={() => router.push('/security')} />
-          <View style={styles.separator} />
+        <Section
+          title={t("settings.sections.account")}
+          titleColor={palette.tint}
+          cardStyle={{ backgroundColor: isDark ? "#171a21" : "#ffffff", shadowColor: palette.text }}
+        >
+          <SettingsRow
+            label={t("settings.items.profile")}
+            onPress={() => router.push('/profile')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
+          <SettingsRow
+            label={t("settings.items.security")}
+            onPress={() => router.push('/security')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
           <SettingsRow
             label={t("settings.items.emailNotifications")}
             onPress={() => router.push('/email-notifications')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
           />
         </Section>
 
         {/* ── Preferences ── */}
-        <Section title={t("settings.sections.preferences")}>
-          <SettingsRow label={t("settings.items.appearance")} onPress={() => router.push('/appearance')} />
-          <View style={styles.separator} />
-          <SettingsRow label={t("settings.language")} onPress={() => router.push('/language')} />
-          <View style={styles.separator} />
-          <SettingsRow label={t("settings.items.accessibility")} onPress={() => router.push('/accessibility')} />
+        <Section
+          title={t("settings.sections.preferences")}
+          titleColor={palette.tint}
+          cardStyle={{ backgroundColor: isDark ? "#171a21" : "#ffffff", shadowColor: palette.text }}
+        >
+          <SettingsRow
+            label={t("settings.items.appearance")}
+            onPress={() => router.push('/appearance')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
+          <SettingsRow
+            label={t("settings.language")}
+            onPress={() => router.push('/language')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
+          <SettingsRow
+            label={t("settings.items.accessibility")}
+            onPress={() => router.push('/accessibility')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
         </Section>
 
         {/* ── Support ── */}
-        <Section title={t("settings.sections.support")}>
-          <SettingsRow label={t("settings.items.helpCenter")} onPress={() => router.push('/help-center')} />
-          <View style={styles.separator} />
-          <SettingsRow label={t("settings.items.about")} onPress={() => router.push('/about')} />
-          <View style={styles.separator} />
-          <SettingsRow label={t("settings.items.termsOfService")} onPress={() => router.push('/terms')} />
+        <Section
+          title={t("settings.sections.support")}
+          titleColor={palette.tint}
+          cardStyle={{ backgroundColor: isDark ? "#171a21" : "#ffffff", shadowColor: palette.text }}
+        >
+          <SettingsRow
+            label={t("settings.items.helpCenter")}
+            onPress={() => router.push('/help-center')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
+          <SettingsRow
+            label={t("settings.items.about")}
+            onPress={() => router.push('/about')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
+          <SettingsRow
+            label={t("settings.items.termsOfService")}
+            onPress={() => router.push('/terms')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
         </Section>
 
         {/* ── Log Out — logic unchanged ── */}
-        <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout} activeOpacity={0.8}>
-          <Text style={styles.logoutText}>{t("settings.logout") || "Log Out"}</Text>
+        <TouchableOpacity
+          style={[
+            styles.logoutBtn,
+            {
+              backgroundColor: isDark ? "#2a1719" : "#fff0f0",
+              borderColor: isDark ? "#7f1d1d" : "#fecaca",
+            },
+          ]}
+          onPress={handleLogout}
+          activeOpacity={0.8}
+        >
+          <Text style={[styles.logoutText, { color: isDark ? "#fca5a5" : "#dc2626" }]}>{t("settings.logout") || "Log Out"}</Text>
         </TouchableOpacity>
 
-        <Text style={styles.versionText}>{t("settings.appVersion")}</Text>
+        <Text style={[styles.versionText, { color: palette.tint }]}>{t("settings.appVersion")}</Text>
       </View>
     </ScrollView>
   );

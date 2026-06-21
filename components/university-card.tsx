@@ -4,6 +4,7 @@ import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } f
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/FavouritesContext";
 import type { UniversityDisplay, UniversityId } from "@/app/university/university-data";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 const CARD_GAP = 16;
 const CARD_HORIZONTAL_PADDING = 48;
@@ -35,6 +36,7 @@ export default function UniversityCard({
   const cardWidth = getUniversityCardWidth(screenWidth);
   const { favouriteIds, toggleFavourite, isFavourite: checkFavourite } = useFavourites();
   const isFavourite = checkFavourite(item.id as any);
+  const { colors } = useAppTheme();
 
   function handleToggle(e?: any) {
     e?.stopPropagation?.();
@@ -105,7 +107,7 @@ export default function UniversityCard({
               style={{
                 position: "absolute",
                 top: 0, bottom: 0, left: 0, right: 0,
-                backgroundColor: "rgba(0,0,0,0.5)",
+                backgroundColor: colors.heroOverlay,
                 zIndex: 0,
               }}
             />
@@ -115,21 +117,21 @@ export default function UniversityCard({
                 {item.name}
               </Text>
               <Text
-                style={{ color: "rgba(255,255,255,0.75)", fontSize: 12, marginTop: 4, lineHeight: 18 }}
+                style={{ color: "rgba(255,255,255,0.78)", fontSize: 12, marginTop: 4, lineHeight: 18 }}
                 numberOfLines={2}
               >
                 {item.description}
               </Text>
               <View style={{ marginTop: 10, gap: 6 }}>
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
-                  <Ionicons name="cash-outline" size={12} color="rgba(255,255,255,0.8)" />
-                  <Text style={{ color: "rgba(255,255,255,0.8)", fontSize: 11, marginLeft: 3 }}>
+                  <Ionicons name="cash-outline" size={12} color="rgba(255,255,255,0.82)" />
+                  <Text style={{ color: "rgba(255,255,255,0.82)", fontSize: 11, marginLeft: 3 }}>
                     {item.tuitionRange}
                   </Text>
                 </View>
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
-                  <Ionicons name="location-sharp" size={12} color="rgba(255,255,255,0.8)" />
-                  <Text style={{ color: "rgba(255,255,255,0.8)", fontSize: 11, marginLeft: 3 }}>
+                  <Ionicons name="location-sharp" size={12} color="rgba(255,255,255,0.82)" />
+                  <Text style={{ color: "rgba(255,255,255,0.82)", fontSize: 11, marginLeft: 3 }}>
                     {item.location}
                   </Text>
                 </View>

@@ -7,6 +7,7 @@ import { useRouter } from "expo-router";
 import { buildUniversities, type UniversityDisplay, type UniversityId } from "../university/university-data";
 import UniversityCard from "@/components/university-card";
 import { useFavourites } from "@/contexts/FavouritesContext";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 export default function Favourites() {
   const { t } = useTranslation();
@@ -14,6 +15,7 @@ export default function Favourites() {
   const universities = buildUniversities(t);
   const { favouriteIds, toggleFavourite } = useFavourites();
   const [compareIds, setCompareIds] = useState<UniversityId[]>([]);
+  const { colors, isDark } = useAppTheme();
 
   const favouriteUniversities = useMemo(
     () => universities.filter((university) => favouriteIds.includes(university.id)),
@@ -43,37 +45,37 @@ export default function Favourites() {
   // Use the shared UniversityCard for favourites list so design matches index
   
   return (
-    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 24, paddingTop: 64, paddingBottom: 140 }}>
-        <Text style={{ color: "#0f172a", fontSize: 30, fontWeight: "900", letterSpacing: -0.4 }}>
+        <Text style={{ color: colors.text, fontSize: 30, fontWeight: "900", letterSpacing: -0.4 }}>
           {t("favourites.title")}
         </Text>
 
-        <Text style={{ color: "#64748b", fontSize: 14, marginTop: 8, marginBottom: 20 }}>
+        <Text style={{ color: colors.textSecondary, fontSize: 14, marginTop: 8, marginBottom: 20 }}>
           {t("favourites.subtitle")}
         </Text>
 
         {favouriteUniversities.length === 0 ? (
           <View
             style={{
-              backgroundColor: "#ffffff",
+              backgroundColor: colors.surface,
               borderRadius: 22,
               padding: 24,
               alignItems: "center",
               justifyContent: "center",
               minHeight: 220,
-              shadowColor: "#000",
+              shadowColor: colors.cardShadow,
               shadowOffset: { width: 0, height: 4 },
               shadowOpacity: 0.05,
               shadowRadius: 14,
               elevation: 3,
             }}
           >
-            <Ionicons name="heart-outline" size={42} color="#cbd5e1" />
-            <Text style={{ color: "#0f172a", fontSize: 18, fontWeight: "800", marginTop: 14 }}>
+            <Ionicons name="heart-outline" size={42} color={colors.textMuted} />
+            <Text style={{ color: colors.text, fontSize: 18, fontWeight: "800", marginTop: 14 }}>
               {t("favourites.emptyTitle")}
             </Text>
-            <Text style={{ color: "#64748b", fontSize: 14, textAlign: "center", marginTop: 8, lineHeight: 20 }}>
+            <Text style={{ color: colors.textSecondary, fontSize: 14, textAlign: "center", marginTop: 8, lineHeight: 20 }}>
               {t("favourites.emptyMessage")}
             </Text>
           </View>
@@ -111,19 +113,19 @@ export default function Favourites() {
               flexDirection: "row",
               alignItems: "center",
               gap: 10,
-              backgroundColor: "#0f172a",
+                backgroundColor: isDark ? "#e2e8f0" : "#0f172a",
               borderRadius: 999,
               paddingHorizontal: 18,
               paddingVertical: 14,
-              shadowColor: "#000",
+                shadowColor: colors.cardShadow,
               shadowOffset: { width: 0, height: 8 },
               shadowOpacity: 0.18,
               shadowRadius: 16,
               elevation: 12,
             }}
           >
-            <Ionicons name="swap-horizontal-outline" size={18} color="#ffffff" />
-            <Text style={{ color: "#ffffff", fontSize: 14, fontWeight: "800" }}>
+            <Ionicons name="swap-horizontal-outline" size={18} color={isDark ? "#0f172a" : "#ffffff"} />
+            <Text style={{ color: isDark ? "#0f172a" : "#ffffff", fontSize: 14, fontWeight: "800" }}>
               {t("favourites.compare")}
             </Text>
             <View
@@ -132,12 +134,12 @@ export default function Favourites() {
                 height: 24,
                 borderRadius: 999,
                 paddingHorizontal: 6,
-                backgroundColor: "rgba(255,255,255,0.16)",
+                backgroundColor: isDark ? "rgba(15,23,42,0.1)" : "rgba(255,255,255,0.16)",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              <Text style={{ color: "#ffffff", fontSize: 12, fontWeight: "800" }}>{compareCount}</Text>
+              <Text style={{ color: isDark ? "#0f172a" : "#ffffff", fontSize: 12, fontWeight: "800" }}>{compareCount}</Text>
             </View>
           </TouchableOpacity>
         </View>

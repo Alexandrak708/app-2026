@@ -12,6 +12,7 @@ import {
   getProgramSummaries,
   getUniversityName,
 } from "./university-programs";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 function ProgramRow({
   name,
@@ -22,6 +23,8 @@ function ProgramRow({
   index: number;
   onPress: () => void;
 }) {
+  const { colors } = useAppTheme();
+
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -30,10 +33,10 @@ function ProgramRow({
         alignItems: "center",
         paddingVertical: 14,
         paddingHorizontal: 16,
-        backgroundColor: "#ffffff",
+        backgroundColor: colors.surface,
         borderRadius: 14,
         marginBottom: 10,
-        shadowColor: "#000",
+        shadowColor: colors.cardShadow,
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.05,
         shadowRadius: 4,
@@ -46,19 +49,19 @@ function ProgramRow({
           width: 32,
           height: 32,
           borderRadius: 10,
-          backgroundColor: "#f1f5f9",
+          backgroundColor: colors.mutedSurface,
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Text style={{ fontSize: 13, fontWeight: "700", color: "#64748b" }}>
+        <Text style={{ fontSize: 13, fontWeight: "700", color: colors.textSecondary }}>
           {index + 1}
         </Text>
       </View>
-      <Text style={{ flex: 1, fontSize: 14, fontWeight: "600", color: "#0f172a" }}>
+      <Text style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}>
         {name}
       </Text>
-      <Ionicons name="chevron-forward" size={16} color="#cbd5e1" />
+      <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
     </TouchableOpacity>
   );
 }
@@ -83,6 +86,7 @@ export default function ProgramsPage() {
   const [activeTab, setActiveTab] = useState<"bachelor" | "master">(
     hasBachelor ? "bachelor" : "master"
   );
+  const { colors, isDark } = useAppTheme();
 
   const universityName = getUniversityName(activeUniversityId);
   const currentPrograms = activeTab === "bachelor" ? programs.bachelor ?? [] : programs.master ?? [];
@@ -100,7 +104,7 @@ export default function ProgramsPage() {
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
 
       {/* Header */}
       <View style={{ paddingTop: 56, paddingHorizontal: 24, paddingBottom: 16 }}>
@@ -114,16 +118,16 @@ export default function ProgramsPage() {
             alignSelf: "flex-start",
           }}
         >
-          <Ionicons name="arrow-back" size={20} color="#0f172a" />
-          <Text style={{ fontSize: 14, fontWeight: "600", color: "#0f172a" }}>
+          <Ionicons name="arrow-back" size={20} color={colors.text} />
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text }}>
             {universityName}
           </Text>
         </TouchableOpacity>
 
-        <Text style={{ fontSize: 13, color: "#94a3b8", fontWeight: "600", letterSpacing: 1 }}>
+        <Text style={{ fontSize: 13, color: colors.textMuted, fontWeight: "600", letterSpacing: 1 }}>
           {t("programs.explore")} {/* 👈 CHANGED */}
         </Text>
-        <Text style={{ fontSize: 26, fontWeight: "800", color: "#0f172a", marginTop: 4 }}>
+        <Text style={{ fontSize: 26, fontWeight: "800", color: colors.text, marginTop: 4 }}>
           {t("programs.title")} {/* 👈 CHANGED */}
         </Text>
       </View>
@@ -133,7 +137,7 @@ export default function ProgramsPage() {
         style={{
           flexDirection: "row",
           marginHorizontal: 24,
-          backgroundColor: "#e2e8f0",
+          backgroundColor: colors.mutedSurface,
           borderRadius: 14,
           padding: 4,
           marginBottom: 20,
@@ -147,10 +151,10 @@ export default function ProgramsPage() {
               paddingVertical: 10,
               borderRadius: 11,
               alignItems: "center",
-              backgroundColor: activeTab === "bachelor" ? "#0f172a" : "transparent",
+              backgroundColor: activeTab === "bachelor" ? (isDark ? "#e2e8f0" : "#0f172a") : "transparent",
             }}
           >
-            <Text style={{ fontSize: 14, fontWeight: "700", color: activeTab === "bachelor" ? "#ffffff" : "#64748b" }}>
+            <Text style={{ fontSize: 14, fontWeight: "700", color: activeTab === "bachelor" ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary }}>
               {t("degrees.Bachelor")} {/* 👈 CHANGED */}
             </Text>
           </TouchableOpacity>
@@ -164,10 +168,10 @@ export default function ProgramsPage() {
               paddingVertical: 10,
               borderRadius: 11,
               alignItems: "center",
-              backgroundColor: activeTab === "master" ? "#0f172a" : "transparent",
+              backgroundColor: activeTab === "master" ? (isDark ? "#e2e8f0" : "#0f172a") : "transparent",
             }}
           >
-            <Text style={{ fontSize: 14, fontWeight: "700", color: activeTab === "master" ? "#ffffff" : "#64748b" }}>
+            <Text style={{ fontSize: 14, fontWeight: "700", color: activeTab === "master" ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary }}>
               {t("degrees.Master")} {/* 👈 CHANGED */}
             </Text>
           </TouchableOpacity>
@@ -175,7 +179,7 @@ export default function ProgramsPage() {
       </View>
 
       {/* Program count */}
-      <Text style={{ fontSize: 12, color: "#94a3b8", fontWeight: "600", letterSpacing: 0.5, marginHorizontal: 24, marginBottom: 12 }}>
+      <Text style={{ fontSize: 12, color: colors.textMuted, fontWeight: "600", letterSpacing: 0.5, marginHorizontal: 24, marginBottom: 12 }}>
         {t("programs.available", { count: currentPrograms.length })} {/* 👈 CHANGED */}
       </Text>
 
@@ -195,8 +199,8 @@ export default function ProgramsPage() {
 
         {currentPrograms.length === 0 && (
           <View style={{ alignItems: "center", marginTop: 60 }}>
-            <Ionicons name="school-outline" size={40} color="#cbd5e1" />
-            <Text style={{ color: "#94a3b8", fontSize: 15, fontWeight: "600", marginTop: 12 }}>
+            <Ionicons name="school-outline" size={40} color={colors.textMuted} />
+            <Text style={{ color: colors.textMuted, fontSize: 15, fontWeight: "600", marginTop: 12 }}>
               {t("programs.noneAvailable")} {/* 👈 CHANGED */}
             </Text>
           </View>

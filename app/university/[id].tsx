@@ -12,6 +12,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { buildUniversities } from "./university-data";
 import { useFavourites } from "@/contexts/FavouritesContext";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -50,14 +51,16 @@ function InfoBadge({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; labe
 }
 
 function SectionCard({ children }: { children: React.ReactNode }) {
+  const { colors } = useAppTheme();
+
   return (
     <View
       style={{
-        backgroundColor: "#ffffff",
+        backgroundColor: colors.surface,
         borderRadius: 20,
         padding: 20,
         marginBottom: 16,
-        shadowColor: "#000",
+        shadowColor: colors.cardShadow,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.06,
         shadowRadius: 8,
@@ -80,6 +83,8 @@ function ActionButton({
   onPress?: () => void;
   primary?: boolean;
 }) {
+  const { colors, isDark } = useAppTheme();
+
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -88,15 +93,15 @@ function ActionButton({
         alignItems: "center",
         justifyContent: "center",
         gap: 8,
-        backgroundColor: primary ? "#0f172a" : "#f1f5f9",
+        backgroundColor: primary ? (isDark ? "#e2e8f0" : "#0f172a") : colors.mutedSurface,
         borderRadius: 14,
         paddingVertical: 14,
         paddingHorizontal: 20,
         flex: 1,
       }}
     >
-      <Ionicons name={icon} size={18} color={primary ? "#ffffff" : "#475569"} />
-      <Text style={{ color: primary ? "#ffffff" : "#475569", fontSize: 14, fontWeight: "700" }}>
+      <Ionicons name={icon} size={18} color={primary ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary} />
+      <Text style={{ color: primary ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary, fontSize: 14, fontWeight: "700" }}>
         {label}
       </Text>
     </TouchableOpacity>
@@ -111,6 +116,7 @@ export default function UniversityPage() {
   const { width: screenWidth } = useWindowDimensions();
   const universities = buildUniversities(t);
   const pageWidth = Math.min(screenWidth, 1100);
+  const { colors, isDark } = useAppTheme();
 
   const university = universities.find((u) => u.id === id);
 
@@ -118,13 +124,13 @@ export default function UniversityPage() {
 
   if (!university) {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#FCFBF7" }}>
-        <Ionicons name="alert-circle-outline" size={48} color="#94a3b8" />
-        <Text style={{ color: "#94a3b8", fontSize: 16, marginTop: 12 }}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: colors.background }}>
+        <Ionicons name="alert-circle-outline" size={48} color={colors.textMuted} />
+        <Text style={{ color: colors.textMuted, fontSize: 16, marginTop: 12 }}>
           {t("university.notFound")}
         </Text>
         <TouchableOpacity onPress={() => router.back()} style={{ marginTop: 20 }}>
-          <Text style={{ color: "#0f172a", fontWeight: "700" }}>
+          <Text style={{ color: colors.text, fontWeight: "700" }}>
             {t("university.goBack")}
           </Text>
         </TouchableOpacity>
@@ -151,7 +157,7 @@ export default function UniversityPage() {
   ];
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#FCFBF7" }}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView showsVerticalScrollIndicator={false} bounces contentContainerStyle={{ alignItems: "center" }}>
 
         {/* Hero Image */}
@@ -161,7 +167,7 @@ export default function UniversityPage() {
               style={{
                 position: "absolute",
                 top: 0, bottom: 0, left: 0, right: 0,
-                backgroundColor: "rgba(0,0,0,0.45)",
+                backgroundColor: isDark ? "rgba(0,0,0,0.58)" : "rgba(0,0,0,0.45)",
               }}
             />
 
@@ -242,14 +248,14 @@ export default function UniversityPage() {
 
           {/* About */}
           <SectionCard>
-            <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a", marginBottom: 10 }}>
+            <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 10 }}>
               {t("university.about")}
             </Text>
-            <Text style={{ fontSize: 14, color: "#475569", lineHeight: 22 }} numberOfLines={expanded ? undefined : 3}>
+            <Text style={{ fontSize: 14, color: colors.textSecondary, lineHeight: 22 }} numberOfLines={expanded ? undefined : 3}>
               {university.longDescription || university.description}
             </Text>
             <TouchableOpacity onPress={() => setExpanded(!expanded)} style={{ marginTop: 8 }}>
-              <Text style={{ fontSize: 13, fontWeight: "700", color: "#0f172a" }}>
+              <Text style={{ fontSize: 13, fontWeight: "700", color: colors.text }}>
                 {expanded ? t("university.showLess") : t("university.readMore")}
               </Text>
             </TouchableOpacity>
@@ -257,7 +263,7 @@ export default function UniversityPage() {
 
           {/* Quick Info */}
           <SectionCard>
-            <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a", marginBottom: 14 }}>
+            <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 14 }}>
               {t("university.quickInfo")}
             </Text>
 
@@ -269,7 +275,7 @@ export default function UniversityPage() {
                   alignItems: "center",
                   paddingVertical: 10,
                   borderBottomWidth: 1,
-                  borderBottomColor: "#f1f5f9",
+                  borderBottomColor: colors.softBorder,
                   gap: 12,
                 }}
               >
@@ -278,18 +284,18 @@ export default function UniversityPage() {
                     width: 36,
                     height: 36,
                     borderRadius: 10,
-                    backgroundColor: "#f8fafc",
+                    backgroundColor: colors.mutedSurface,
                     alignItems: "center",
                     justifyContent: "center",
                   }}
                 >
-                  <Ionicons name={row.icon} size={18} color="#64748b" />
+                  <Ionicons name={row.icon} size={18} color={colors.textSecondary} />
                 </View>
                 <View style={{ flex: 1 }}>
-                  <Text style={{ fontSize: 11, color: "#94a3b8", fontWeight: "600", letterSpacing: 0.5 }}>
+                  <Text style={{ fontSize: 11, color: colors.textMuted, fontWeight: "600", letterSpacing: 0.5 }}>
                     {row.label.toUpperCase()}
                   </Text>
-                  <Text style={{ fontSize: 14, color: "#0f172a", fontWeight: "600", marginTop: 1 }}>
+                  <Text style={{ fontSize: 14, color: colors.text, fontWeight: "600", marginTop: 1 }}>
                     {row.value}
                   </Text>
                 </View>
@@ -300,17 +306,17 @@ export default function UniversityPage() {
           {/* Programs */}
           <SectionCard>
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-              <Text style={{ fontSize: 16, fontWeight: "800", color: "#0f172a" }}>
+              <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text }}>
                 {t("university.programs")}
               </Text>
               <TouchableOpacity
                 onPress={() => router.push({ pathname: "/university/project", params: { id } })}
                 style={{ alignItems: "center" }}
               >
-                <Text style={{ fontSize: 11, color: "#0f172a", fontWeight: "600" }}>
+                <Text style={{ fontSize: 11, color: colors.text, fontWeight: "600" }}>
                   {t("university.viewMore")}
                 </Text>
-                <Ionicons name="grid-outline" size={18} color="#0f172a" style={{ marginTop: 2 }} />
+                <Ionicons name="grid-outline" size={18} color={colors.text} style={{ marginTop: 2 }} />
               </TouchableOpacity>
             </View>
           </SectionCard>

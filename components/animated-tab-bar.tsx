@@ -19,6 +19,7 @@ import Animated, {
 import Svg, { Path } from "react-native-svg";
 import * as Haptics from "expo-haptics";
 import { useTranslation } from "react-i18next";
+import { useAppTheme } from "@/hooks/use-app-theme";
 
 const TAB_BAR_HEIGHT = 65;
 const DOME_WIDTH = 80;
@@ -66,8 +67,9 @@ function TabItem({
 }: TabItemProps) {
   const iconName = TAB_ICONS[route.name] || "ellipse";
   const [isPressed, setIsPressed] = useState(false);
+  const { colors, isDark } = useAppTheme();
   const activeColor = "#FFFFFF";
-  const inactiveColor = "#F1F5F9";
+  const inactiveColor = isDark ? colors.textMuted : "#F1F5F9";
 
   const animatedIconStyle = useAnimatedStyle(() => {
     const distance = Math.abs(selectedIndex.value - index);
@@ -144,6 +146,7 @@ export function AnimatedTabBar({
   navigation,
 }: BottomTabBarProps) {
   const { t } = useTranslation();
+  const { colors, isDark } = useAppTheme();
   const visibleRoutes = state.routes;
   const { width: screenWidth } = useWindowDimensions();
 
@@ -193,7 +196,7 @@ export function AnimatedTabBar({
   return (
     <View style={styles.container}>
       {/* Background bar */}
-      <View style={styles.barBackground} />
+      <View style={[styles.barBackground, { backgroundColor: isDark ? "#6A2E36" : "#810B38" }]} />
 
       {/* Animated dome bump */}
       <Animated.View style={[styles.domeContainer, animatedDomeStyle]}>
@@ -203,7 +206,7 @@ export function AnimatedTabBar({
           style={styles.domeSvg}
           viewBox={`${-DOME_WIDTH / 2} ${-DOME_WIDTH / 2} ${DOME_WIDTH} ${DOME_WIDTH / 2 + 5}`}
         >
-          <Path d={domePath} fill="#810B38" />
+          <Path d={domePath} fill={isDark ? "#6A2E36" : "#810B38"} />
         </Svg>
       </Animated.View>
 

@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { Appearance, type ColorSchemeName } from 'react-native';
+import { Appearance, Text, TextInput, type ColorSchemeName } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type ThemeChoice = 'light' | 'dark' | 'system';
@@ -42,9 +42,25 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     return () => sub.remove();
   }, []);
 
+  useEffect(() => {
+    const activeScheme = theme === 'system' ? (resolvedScheme ?? 'light') : theme;
+    const textColor = activeScheme === 'dark' ? '#ECEDEE' : '#11181C';
+
+    Appearance.setColorScheme(theme === 'system' ? null : theme);
+    Text.defaultProps = {
+      ...Text.defaultProps,
+      style: [{ color: textColor }, Text.defaultProps?.style],
+    };
+    TextInput.defaultProps = {
+      ...TextInput.defaultProps,
+      style: [{ color: textColor }, TextInput.defaultProps?.style],
+    };
+  }, [theme, resolvedScheme]);
+
   const setTheme = (t: ThemeChoice) => {
     setThemeState(t);
     AsyncStorage.setItem(STORAGE_KEY, t).catch(() => {});
+    Appearance.setColorScheme(t === 'system' ? null : t);
   };
 
   return (
