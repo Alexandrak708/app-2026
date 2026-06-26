@@ -12,7 +12,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { buildUniversities } from "./university-data";
 import { useFavourites } from "@/contexts/FavouritesContext";
-import { useAppTheme } from "@/hooks/use-app-theme";
+import { useAppTheme } from "@/hooks/use-theme-color";
 
 function StarRating({ rating }: { rating: number }) {
   return (

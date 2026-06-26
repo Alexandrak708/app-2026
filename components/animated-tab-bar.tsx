@@ -19,7 +19,7 @@ import Animated, {
 import Svg, { Path } from "react-native-svg";
 import * as Haptics from "expo-haptics";
 import { useTranslation } from "react-i18next";
-import { useAppTheme } from "@/hooks/use-app-theme";
+import { useAppTheme } from "@/hooks/use-theme-color";
 
 const TAB_BAR_HEIGHT = 65;
 const DOME_WIDTH = 80;
