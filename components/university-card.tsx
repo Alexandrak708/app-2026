@@ -4,7 +4,7 @@ import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } f
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/FavouritesContext";
 import type { UniversityDisplay, UniversityId } from "@/app/university/university-data";
-import { useAppTheme } from "@/hooks/use-app-theme";
+import { useAppTheme } from "@/hooks/use-theme-color";
 
 const CARD_GAP = 16;
 const CARD_HORIZONTAL_PADDING = 48;

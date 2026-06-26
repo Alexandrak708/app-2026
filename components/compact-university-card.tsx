@@ -2,7 +2,7 @@ import { Text, TouchableOpacity, View, ImageBackground } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/FavouritesContext";
 import type { UniversityDisplay } from "@/app/university/university-data";
-import { useAppTheme } from "@/hooks/use-app-theme";
+import { useAppTheme } from "@/hooks/use-theme-color";
 
 export default function CompactUniversityCard({
   item,

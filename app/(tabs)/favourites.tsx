@@ -7,7 +7,7 @@ import { useRouter } from "expo-router";
 import { buildUniversities, type UniversityDisplay, type UniversityId } from "../university/university-data";
 import UniversityCard from "@/components/university-card";
 import { useFavourites } from "@/contexts/FavouritesContext";
-import { useAppTheme } from "@/hooks/use-app-theme";
+import { useAppTheme } from "@/hooks/use-theme-color";
 
 export default function Favourites() {
   const { t } = useTranslation();

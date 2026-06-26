@@ -12,7 +12,7 @@ import {
   getProgramSummaries,
   getUniversityName,
 } from "./university-programs";
-import { useAppTheme } from "@/hooks/use-app-theme";
+import { useAppTheme } from "@/hooks/use-theme-color";
 
 function ProgramRow({
   name,
