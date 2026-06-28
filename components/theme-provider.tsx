@@ -43,18 +43,19 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    const activeScheme = theme === 'system' ? (resolvedScheme ?? 'light') : theme;
-    const textColor = activeScheme === 'dark' ? '#ECEDEE' : '#11181C';
-
-    Appearance.setColorScheme(theme === 'system' ? null : theme);
-    Text.defaultProps = {
-      ...Text.defaultProps,
-      style: [{ color: textColor }, Text.defaultProps?.style],
-    };
-    TextInput.defaultProps = {
-      ...TextInput.defaultProps,
-      style: [{ color: textColor }, TextInput.defaultProps?.style],
-    };
+    try {
+      const activeScheme = theme === 'system' ? (resolvedScheme ?? 'light') : theme;
+      const textColor = activeScheme === 'dark' ? '#ECEDEE' : '#11181C';
+      Appearance.setColorScheme(theme === 'system' ? null : theme);
+      (Text as any).defaultProps = {
+        ...(Text as any).defaultProps,
+        style: [{ color: textColor }, (Text as any).defaultProps?.style],
+      };
+      (TextInput as any).defaultProps = {
+        ...(TextInput as any).defaultProps,
+        style: [{ color: textColor }, (TextInput as any).defaultProps?.style],
+      };
+    } catch {}
   }, [theme, resolvedScheme]);
 
   const setTheme = (t: ThemeChoice) => {

@@ -3,7 +3,7 @@ import { Appearance, useColorScheme as _useColorScheme } from 'react-native';
 import { ThemeContext } from '@/components/theme-provider';
 
 export function useColorScheme() {
-	const ctx = useContext(ThemeContext as any);
+	const ctx = useContext(ThemeContext);
 	const system = _useColorScheme();
 
 	if (!ctx) return system;

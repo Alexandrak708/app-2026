@@ -1,7 +1,7 @@
 {
   "bachelor:automation-information-and-control-computer-systems-aiccs": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
+    "overview": "Covers design, programming and maintenance of industrial control systems, PLCs, SCADA, and embedded systems with extensive lab work.",
+    "keyFocus": "industrial automation, PLC/SCADA systems, embedded control, IIoT",
     "duration": "Full-time (4 years) / Part-time (5 years)",
     "partners": [
       "Siemens",
@@ -11,7 +11,10 @@
       "Schneider Electric"
     ],
     "highlights": [
-      "Edit this highlight."
+      "Siemens-certified PLC labs",
+      "IIoT integration",
+      "Industry-sponsored projects",
+      "Building automation systems"
     ],
     "careers": [
       "Process Control Designer",
@@ -24,1087 +27,1651 @@
       "Academic/Educator"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong math and physics background recommended",
+      "Programming basics are a plus"
     ]
   },
   "bachelor:automotive-engineering-ae": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers design, diagnostics, and maintenance of modern automotive systems including electric and hybrid vehicles.",
+    "keyFocus": "vehicle design, diagnostics, electric vehicles, engine systems",
+    "duration": "Full-time (4 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Modern diagnostic equipment",
+      "EV technology labs",
+      "Industry partnerships with automotive workshops"
     ],
     "careers": [
-      "Edit this career path."
+      "Automotive Engineer",
+      "Diagnostic Specialist",
+      "Fleet Manager",
+      "R&D Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Interest in mechanics and electronics",
+      "Basic physics knowledge expected"
     ]
   },
   "bachelor:agronomy-a": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Focuses on modern agricultural technologies, crop production, soil science, and sustainable farming practices.",
+    "keyFocus": "crop science, soil management, plant protection, sustainable agriculture",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Experimental fields",
+      "Modern agronomy labs",
+      "Sustainable agriculture focus",
+      "Dobrudzha region partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Agronomist",
+      "Crop Consultant",
+      "Farm Manager",
+      "Agricultural Researcher"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Biology and chemistry background helpful",
+      "Interest in environmental science"
     ]
   },
   "bachelor:renewable-energy-sources-res": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers solar, wind, biomass and hydropower technologies, energy efficiency, and smart grid integration.",
+    "keyFocus": "solar, wind, biomass, hydropower, energy efficiency",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Renewable energy lab",
+      "Solar/wind measurement equipment",
+      "Energy efficiency projects",
+      "Industry site visits"
     ],
     "careers": [
-      "Edit this career path."
+      "Renewable Energy Engineer",
+      "Energy Auditor",
+      "Project Developer",
+      "Sustainability Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Physics and math foundation expected",
+      "Interest in green technologies"
     ]
   },
   "bachelor:electric-power-engineering-epe": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers generation, transmission and distribution of electrical energy, substation automation, smart grids, and power system protection.",
+    "keyFocus": "power generation, transmission, distribution, smart grids",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Power system simulation labs",
+      "High-voltage lab",
+      "Substation automation training",
+      "Smart grid demonstrations"
     ],
     "careers": [
-      "Edit this career path."
+      "Power Systems Engineer",
+      "Grid Operator",
+      "Substation Designer",
+      "Energy Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong math and physics required",
+      "Offered tuition-free"
     ]
   },
   "bachelor:electronics-e": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers design of analog and digital circuits, microelectronics, embedded systems, IoT devices, and electronic measurement systems.",
+    "keyFocus": "analog/digital circuits, microelectronics, embedded systems, IoT",
+    "duration": "Full-time (4 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Modern electronics lab",
+      "PCB design facilities",
+      "IoT development kits",
+      "Measurement equipment"
     ],
     "careers": [
-      "Edit this career path."
+      "Electronics Engineer",
+      "Embedded Systems Developer",
+      "IoT Specialist",
+      "Test Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Physics and math background expected",
+      "Interest in circuit design"
     ]
   },
   "bachelor:ship-electrical-equipment-see": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers ship electrical systems, marine automation, navigation electronics, and power management on vessels.",
+    "keyFocus": "marine electrical systems, ship automation, navigation equipment",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Marine electrical simulators",
+      "Ship automation labs",
+      "STCW-compliant training",
+      "Maritime Qualification Centre partnership"
     ],
     "careers": [
-      "Edit this career path."
+      "Marine Electrical Engineer",
+      "Ship Systems Specialist",
+      "Offshore Electrical Technician",
+      "Port Electrical Inspector"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Medical certificate from maritime-authorised institutions required",
+      "Interest in marine technology"
     ]
   },
   "bachelor:electric-power-supply-and-electrical-equipment-epsee": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers power supply design, industrial electrical equipment, energy distribution networks, and electrical installation safety.",
+    "keyFocus": "power supply systems, industrial electrical equipment, energy distribution",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Power distribution simulation",
+      "Industrial electrical equipment lab",
+      "Safety certification training"
     ],
     "careers": [
-      "Edit this career path."
+      "Power Supply Engineer",
+      "Electrical Equipment Specialist",
+      "Industrial Electrician",
+      "Energy Efficiency Expert"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Technical background in electricity and math expected",
+      "Offered tuition-free"
     ]
   },
   "bachelor:electrical-engineering-and-electrical-technologies-eeet": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers electrical machines, drives, power electronics, industrial heating, and electrical technology applications.",
+    "keyFocus": "electrical machines, drives, power electronics, electrical technologies",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Electrical machines lab",
+      "Power electronics lab",
+      "Industrial drives training"
     ],
     "careers": [
-      "Edit this career path."
+      "Electrical Engineer",
+      "Drive Systems Specialist",
+      "Power Electronics Designer",
+      "Industrial Automation Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong foundation in physics and mathematics expected"
     ]
   },
   "bachelor:civil-protection-in-disasters-and-emergencies-cpde": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers risk assessment, disaster management, emergency planning, fire safety, and civil protection systems.",
+    "keyFocus": "disaster management, emergency response, risk assessment, civil protection",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Emergency simulation training",
+      "Fire safety labs",
+      "Field exercises with civil protection agencies"
     ],
     "careers": [
-      "Edit this career path."
+      "Civil Protection Specialist",
+      "Emergency Planner",
+      "Safety Officer",
+      "Risk Assessment Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Physical fitness and psychological readiness important",
+      "Interest in public safety"
     ]
   },
   "bachelor:artificial-intelligence-ai": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers machine learning, neural networks, NLP, computer vision, and intelligent system design with hands-on AI projects.",
+    "keyFocus": "machine learning, neural networks, NLP, computer vision, intelligent systems",
+    "duration": "Full-time (4 years)",
     "highlights": [
-      "Edit this highlight."
+      "AI/ML lab",
+      "GPU computing cluster",
+      "Industry AI projects",
+      "Hackathons and competitions"
     ],
     "careers": [
-      "Edit this career path."
+      "AI Engineer",
+      "Machine Learning Specialist",
+      "Data Scientist",
+      "Computer Vision Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong programming and math skills recommended",
+      "Interest in intelligent systems"
     ]
   },
   "bachelor:industrial-design-id": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers product design, ergonomics, CAD/CAM, design visualization, prototyping, and human-centered design.",
+    "keyFocus": "product design, ergonomics, CAD/CAM, design visualization",
+    "duration": "Full-time (4 years)",
     "highlights": [
-      "Edit this highlight."
+      "Design studios",
+      "3D printing and prototyping lab",
+      "CAD/CAM software",
+      "Portfolio-based assessment"
     ],
     "careers": [
-      "Edit this career path."
+      "Industrial Designer",
+      "Product Development Specialist",
+      "CAD Designer",
+      "UX/UI Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Creative portfolio recommended",
+      "Interview may be required"
     ]
   },
   "bachelor:industrial-management-im": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers production management, supply chain, quality control, operations strategy, and industrial economics.",
+    "keyFocus": "production management, supply chain, quality control, operations",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Production simulation software",
+      "Quality management labs",
+      "Industry case studies",
+      "ERP system training"
     ],
     "careers": [
-      "Edit this career path."
+      "Production Manager",
+      "Supply Chain Analyst",
+      "Quality Manager",
+      "Operations Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Interest in both business and engineering",
+      "Math foundation useful"
     ]
   },
   "bachelor:environmental-ecological-engineering-ee": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers pollution control, waste management, water and air treatment, environmental monitoring, and ecological impact assessment.",
+    "keyFocus": "pollution control, waste management, water treatment, environmental monitoring",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Environmental analysis lab",
+      "Water treatment pilot plant",
+      "Field monitoring equipment",
+      "Ecological assessment projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Environmental Engineer",
+      "Waste Management Specialist",
+      "Water Treatment Engineer",
+      "Sustainability Officer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Chemistry and biology background helpful",
+      "Environmental awareness"
     ]
   },
   "bachelor:intelligent-transport-systems-its": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers traffic management, smart mobility solutions, transport telematics, GPS/ITS technologies, and logistics systems.",
+    "keyFocus": "traffic management, smart mobility, transport telematics, logistics",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Transport simulation software",
+      "ITS lab with traffic monitoring equipment",
+      "Smart city case studies"
     ],
     "careers": [
-      "Edit this career path."
+      "Transport Engineer",
+      "ITS Specialist",
+      "Traffic Management Analyst",
+      "Logistics Systems Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Math and IT skills recommended",
+      "Interest in smart mobility"
     ]
   },
   "bachelor:information-and-communication-technologies-ict": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers computer networking, telecommunications, cloud infrastructure, IoT systems, and ICT project management.",
+    "keyFocus": "networking, telecommunications, cloud computing, IoT infrastructure",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Cisco networking lab",
+      "Telecommunications equipment",
+      "Cloud platforms",
+      "IoT development kits"
     ],
     "careers": [
-      "Edit this career path."
+      "Network Engineer",
+      "ICT Specialist",
+      "Cloud Architect",
+      "Telecom Systems Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "IT interest and basic programming knowledge recommended"
     ]
   },
   "bachelor:cybersecurity-cs": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers network security, ethical hacking, cryptography, digital forensics, and security policy development.",
+    "keyFocus": "network security, ethical hacking, cryptography, digital forensics",
+    "duration": "Full-time (4 years)",
     "highlights": [
-      "Edit this highlight."
+      "Cybersecurity lab with penetration testing tools",
+      "CTF competitions",
+      "Security audit projects",
+      "Industry partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Security Analyst",
+      "Penetration Tester",
+      "Cybersecurity Consultant",
+      "Forensics Investigator"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Programming and networking knowledge recommended",
+      "Strong analytical skills"
     ]
   },
   "bachelor:computerized-technologies-in-mechanical-engineering-ctme": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers CAD/CAM, CNC programming, 3D modeling, additive manufacturing, and computerized quality control.",
+    "keyFocus": "CAD/CAM, CNC programming, 3D modeling, additive manufacturing",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "CNC machine lab",
+      "3D printing facilities",
+      "CAD/CAM software suites",
+      "Automated measurement equipment"
     ],
     "careers": [
-      "Edit this career path."
+      "CAD/CAM Engineer",
+      "CNC Programmer",
+      "Manufacturing Engineer",
+      "Quality Control Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Technical drawing and math skills recommended"
     ]
   },
   "bachelor:computer-systems-and-technologies-cst": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers computer architecture, operating systems, database systems, system programming, and network administration.",
+    "keyFocus": "computer architecture, operating systems, databases, system programming",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "System programming labs",
+      "Database management systems",
+      "Network administration training",
+      "Hardware interfacing projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Systems Programmer",
+      "Database Administrator",
+      "IT Infrastructure Specialist",
+      "Systems Architect"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Programming background expected",
+      "Interest in low-level systems"
     ]
   },
   "bachelor:marine-engineering-ship-machines-and-mechanisms": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers ship propulsion systems, marine diesel engines, auxiliary machinery, vessel maintenance, and marine engineering operations.",
+    "keyFocus": "ship propulsion, marine engines, auxiliary systems, vessel maintenance",
+    "duration": "Full-time (4 years)",
     "highlights": [
-      "Edit this highlight."
+      "Marine engine simulators",
+      "Ship machinery lab",
+      "STCW-compliant training",
+      "Sea practice components"
     ],
     "careers": [
-      "Edit this career path."
+      "Marine Engineer",
+      "Ship Machinery Specialist",
+      "Offshore Engineer",
+      "Classification Surveyor"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Medical certificate from maritime-authorised institutions required",
+      "Physical fitness important"
     ]
   },
   "bachelor:navigation-ship-maneuvering": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers ship navigation, maritime safety, cargo operations, ship handling, and STCW-standard maritime training.",
+    "keyFocus": "ship navigation, maritime safety, cargo operations, STCW standards",
+    "duration": "Full-time (4 years)",
     "highlights": [
-      "Edit this highlight."
+      "Navigation simulators",
+      "Bridge operations lab",
+      "STCW-certified training",
+      "Mandatory sea practice"
     ],
     "careers": [
-      "Edit this career path."
+      "Deck Officer",
+      "Ship Navigator",
+      "Port Operations Specialist",
+      "Maritime Safety Inspector"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Medical certificate from maritime-authorised institutions required",
+      "Strong eyesight and physical fitness"
     ]
   },
   "bachelor:naval-architecture-and-marine-technology-namt": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers ship design, offshore structures, marine hydrodynamics, structural analysis, and marine technology innovation.",
+    "keyFocus": "ship design, offshore structures, marine engineering, hydrodynamics",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Ship design CAD software",
+      "Towing tank facilities",
+      "Structural analysis labs",
+      "Industry shipyard partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Naval Architect",
+      "Marine Designer",
+      "Offshore Structure Engineer",
+      "Shipyard Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong physics and math required",
+      "Offered tuition-free"
     ]
   },
   "bachelor:water-transport-logistics-wtl": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers port management, shipping logistics, supply chain optimization, intermodal transport, and maritime commerce.",
+    "keyFocus": "port operations, shipping logistics, supply chain, maritime transport",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Logistics simulation software",
+      "Port operations case studies",
+      "Varna port industry links",
+      "Transport economics"
     ],
     "careers": [
-      "Edit this career path."
+      "Logistics Coordinator",
+      "Port Operations Manager",
+      "Shipping Agent",
+      "Supply Chain Analyst"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Interest in transport and logistics",
+      "Analytical skills recommended"
     ]
   },
   "bachelor:mechanical-engineering-and-technologies-met": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers machine design, materials science, manufacturing processes, thermal engineering, and mechanical systems analysis.",
+    "keyFocus": "machine design, materials science, manufacturing processes, thermal engineering",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Materials testing lab",
+      "Thermal engineering lab",
+      "CNC manufacturing",
+      "Design project studios"
     ],
     "careers": [
-      "Edit this career path."
+      "Mechanical Engineer",
+      "Design Engineer",
+      "Manufacturing Specialist",
+      "Project Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong math and physics expected",
+      "Interest in how things work"
     ]
   },
   "bachelor:robotics-and-mechatronics-rm": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers robotics, servo systems, embedded control, sensors, actuators, and cyber-physical system integration.",
+    "keyFocus": "robotics, automation, servo systems, embedded control, cyber-physical systems",
+    "duration": "Full-time (4 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Robotics lab with industrial arms",
+      "Mechatronics workstations",
+      "Embedded systems kits",
+      "Festo training modules"
     ],
     "careers": [
-      "Edit this career path."
+      "Robotics Engineer",
+      "Mechatronics Designer",
+      "Automation Engineer",
+      "Control Systems Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong programming and electronics background recommended"
     ]
   },
   "bachelor:software-and-internet-technologies-sit": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers web development, mobile applications, cloud services, software engineering methodologies, and modern development frameworks.",
+    "keyFocus": "web development, mobile apps, cloud services, software engineering",
+    "duration": "Full-time (4 years)",
     "highlights": [
-      "Edit this highlight."
+      "Modern software dev lab",
+      "Agile project methodology",
+      "Cloud platform access",
+      "Hackathons and coding competitions"
     ],
     "careers": [
-      "Edit this career path."
+      "Software Developer",
+      "Web Engineer",
+      "Mobile App Developer",
+      "Cloud Solutions Architect"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Programming experience expected",
+      "Portfolio of projects helpful"
     ]
   },
   "bachelor:social-management-sm": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers social policy, community management, NGO administration, human services, and social project management.",
+    "keyFocus": "social policy, community management, NGO administration, human services",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Field placements",
+      "Social policy analysis",
+      "NGO partnership projects",
+      "Community engagement initiatives"
     ],
     "careers": [
-      "Edit this career path."
+      "Social Services Manager",
+      "NGO Coordinator",
+      "Community Development Officer",
+      "Policy Analyst"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Strong communication and interpersonal skills",
+      "Interest in social development"
     ]
   },
   "bachelor:construction-management-cm": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers construction project management, building technology, cost estimation, site supervision, and building regulations.",
+    "keyFocus": "construction project management, building technology, cost estimation",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Construction simulation software",
+      "Building materials lab",
+      "Site visit programs",
+      "BIM training"
     ],
     "careers": [
-      "Edit this career path."
+      "Construction Manager",
+      "Site Supervisor",
+      "Quantity Surveyor",
+      "Project Planner"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Interest in construction and project organization",
+      "Math foundation useful"
     ]
   },
   "bachelor:technological-entrepreneurship-and-innovation-tei": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers technology commercialization, startup management, innovation strategy, R&D management, and tech venture development.",
+    "keyFocus": "tech commercialization, startup management, innovation strategy, R&D",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Startup incubator access",
+      "Business plan competitions",
+      "Innovation lab",
+      "Mentorship from tech entrepreneurs"
     ],
     "careers": [
-      "Edit this career path."
+      "Tech Entrepreneur",
+      "Innovation Manager",
+      "R&D Project Lead",
+      "Business Development Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Interest in both technology and business",
+      "Creative and proactive mindset"
     ]
   },
   "bachelor:heat-power-engineering-and-investment-design-hpeid": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers thermal systems, HVAC design, heat transfer, energy efficiency, and investment project design for heating and power.",
+    "keyFocus": "thermal systems, HVAC, heat transfer, energy efficiency design",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "National Instruments",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Thermal engineering lab",
+      "HVAC design software",
+      "Energy audit training",
+      "Investment project case studies"
     ],
     "careers": [
-      "Edit this career path."
+      "HVAC Engineer",
+      "Thermal Systems Designer",
+      "Energy Efficiency Expert",
+      "Investment Project Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Physics and math background expected",
+      "Offered tuition-free"
     ]
   },
   "bachelor:transport-equipment-and-technologies-tet": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers transport vehicle systems, transport infrastructure, logistics equipment, and transport technology management.",
+    "keyFocus": "vehicle systems, transport infrastructure, logistics equipment",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Transport equipment lab",
+      "Vehicle diagnostics",
+      "Logistics simulation",
+      "Industry transport partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Transport Engineer",
+      "Fleet Manager",
+      "Logistics Equipment Specialist",
+      "Transport Technology Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Interest in transport systems",
+      "Mechanical aptitude recommended"
     ]
   },
   "master:data-analysis-and-network-technologies-dant": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers data analytics, big data processing, network technologies, and distributed computing for data-driven decision making.",
+    "keyFocus": "data analytics, big data, network technologies, distributed computing",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Big data processing lab",
+      "Network simulation tools",
+      "Industry data analytics projects",
+      "Cloud computing platforms"
     ],
     "careers": [
-      "Edit this career path."
+      "Data Analyst",
+      "Network Engineer",
+      "Big Data Specialist",
+      "Data Architect"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in computer science or related field required",
+      "Programming experience recommended"
     ]
   },
   "master:health-and-safety-at-work-hsw": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers occupational health, workplace safety management, risk assessment, and regulatory compliance in industrial environments.",
+    "keyFocus": "occupational health, workplace safety, risk management, regulatory compliance",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Safety simulation training",
+      "Risk assessment methodologies",
+      "Industry case studies",
+      "Regulatory compliance workshops"
     ],
     "careers": [
-      "Edit this career path."
+      "Health and Safety Officer",
+      "Risk Manager",
+      "Safety Consultant",
+      "Occupational Health Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in engineering or related field preferred",
+      "Relevant work experience beneficial"
     ]
   },
   "master:renewable-energy-sources-res": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of renewable energy technologies, smart grid integration, energy storage systems, and sustainable energy policy.",
+    "keyFocus": "advanced renewable energy, smart grids, energy storage, energy policy",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Renewable energy system design lab",
+      "Smart grid simulation",
+      "Energy storage research",
+      "Industry site visits to renewable plants"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Renewable Energy Engineer",
+      "Smart Grid Specialist",
+      "Energy Storage Consultant",
+      "Sustainability Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical or energy engineering required",
+      "Background in power systems recommended"
     ]
   },
   "master:internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of internal combustion engines, automotive powertrain systems, emissions control, and alternative fuel technologies.",
+    "keyFocus": "advanced engine technology, powertrain systems, emissions control, alternative fuels",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Engine testing and measurement lab",
+      "Emissions analysis equipment",
+      "Alternative fuel research",
+      "Industry automotive partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Automotive Engineer",
+      "Engine Development Specialist",
+      "Emissions Control Engineer",
+      "Powertrain Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in mechanical or automotive engineering required",
+      "Professional experience in automotive field beneficial"
     ]
   },
   "master:operation-of-fleet-and-ports-ofp": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers fleet management, port operations, maritime logistics, vessel scheduling, and port infrastructure management.",
+    "keyFocus": "fleet management, port operations, maritime logistics, vessel scheduling",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Fleet management simulation",
+      "Port operations case studies",
+      "Varna port industry collaboration",
+      "Maritime logistics software"
     ],
     "careers": [
-      "Edit this career path."
+      "Fleet Manager",
+      "Port Operations Director",
+      "Maritime Logistics Coordinator",
+      "Shipping Operations Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in maritime studies, logistics or related field required",
+      "Maritime industry experience advantageous"
     ]
   },
   "master:electric-power-systems-eps": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced coverage of electric power systems, transmission and distribution networks, power system stability, and protection relaying.",
+    "keyFocus": "advanced power systems, transmission, distribution, protection, stability",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Power system simulation lab",
+      "Protection relay testing",
+      "SCADA system training",
+      "Smart grid research projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Power Systems Engineer",
+      "Protection Engineer",
+      "Grid Planning Specialist",
+      "Transmission System Operator"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical engineering required",
+      "Power systems background recommended"
     ]
   },
   "master:electronics-e": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of electronic systems, VLSI design, RF engineering, power electronics, and advanced measurement techniques.",
+    "keyFocus": "advanced electronics, VLSI, RF engineering, power electronics",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "National Instruments"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Advanced electronics design lab",
+      "VLSI design tools",
+      "RF measurement equipment",
+      "Power electronics test bench"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Electronics Engineer",
+      "VLSI Design Engineer",
+      "RF Engineer",
+      "Power Electronics Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electronics or electrical engineering required",
+      "Strong circuit design fundamentals expected"
     ]
   },
   "master:ship-electrical-equipment-see": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced coverage of marine electrical systems, ship power management, marine automation, and electrical propulsion systems.",
+    "keyFocus": "advanced marine electrical systems, ship automation, electrical propulsion",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Marine electrical system simulators",
+      "Ship power management training",
+      "Electrical propulsion labs",
+      "STCW-compliant advanced training"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Marine Electrical Engineer",
+      "Ship Automation Specialist",
+      "Marine Power Systems Designer",
+      "Electrical Propulsion Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical or marine engineering required",
+      "Previous maritime experience beneficial"
     ]
   },
   "master:electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers power supply systems for maritime vessels, port electrical infrastructure, and electrical equipment for water transport.",
+    "keyFocus": "maritime power supply, port electrical infrastructure, water transport equipment",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Maritime power system simulation",
+      "Port electrical design case studies",
+      "Shipboard power management",
+      "Industry port partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Maritime Power Engineer",
+      "Port Electrical Engineer",
+      "Ship Electrical Systems Designer",
+      "Water Transport Energy Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical engineering required",
+      "Interest in maritime applications"
     ]
   },
   "master:electric-power-supply-and-electrical-equipment-in-industry-epseei": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers industrial power supply systems, electrical equipment design, factory automation power distribution, and industrial safety.",
+    "keyFocus": "industrial power supply, electrical equipment, factory automation, power distribution",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Industrial power system design lab",
+      "Factory automation integration",
+      "Power quality analysis",
+      "Electrical safety certification"
     ],
     "careers": [
-      "Edit this career path."
+      "Industrial Power Engineer",
+      "Electrical Equipment Designer",
+      "Factory Automation Engineer",
+      "Industrial Energy Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical engineering required",
+      "Industrial experience beneficial"
     ]
   },
   "master:electrical-engineering-ee": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of electrical engineering covering electrical machines, power systems, control systems, and renewable integration.",
+    "keyFocus": "advanced electrical engineering, machines, power systems, control, renewables",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Electrical machine design lab",
+      "Advanced power system simulation",
+      "Control system prototyping",
+      "Renewable integration projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Electrical Engineer",
+      "Power System Designer",
+      "Control Systems Engineer",
+      "Electrical Project Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical engineering required",
+      "Strong mathematics foundation expected"
     ]
   },
   "master:industrial-design-id": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced product design focusing on design thinking, advanced CAD/CAM, design management, and innovation methodologies.",
+    "keyFocus": "advanced product design, design thinking, CAD/CAM, design management",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced design studios",
+      "Rapid prototyping facilities",
+      "Design management workshops",
+      "Industry design projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Industrial Designer",
+      "Design Manager",
+      "Innovation Consultant",
+      "Product Development Lead"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in industrial design or related field required",
+      "Portfolio submission required"
     ]
   },
   "master:industrial-management-im": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of industrial management covering operations strategy, supply chain optimization, lean management, and Industry 4.0.",
+    "keyFocus": "operations strategy, supply chain optimization, lean management, Industry 4.0",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Supply chain simulation software",
+      "Lean management workshops",
+      "Industry 4.0 case studies",
+      "ERP system advanced training"
     ],
     "careers": [
-      "Edit this career path."
+      "Operations Director",
+      "Supply Chain Manager",
+      "Lean Manufacturing Specialist",
+      "Industry 4.0 Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in industrial management, engineering or related field required",
+      "Professional experience advantageous"
     ]
   },
   "master:environmental-engineering-ee": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of environmental engineering covering pollution control technologies, environmental impact assessment, and sustainable development.",
+    "keyFocus": "advanced environmental engineering, pollution control, impact assessment, sustainability",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced environmental analysis lab",
+      "Environmental impact assessment tools",
+      "Sustainable engineering projects",
+      "Industry environmental partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Environmental Engineer",
+      "Environmental Consultant",
+      "Sustainability Manager",
+      "Regulatory Compliance Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in environmental engineering or related field required",
+      "Chemistry and biology background helpful"
     ]
   },
   "master:smart-cities": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers urban technology integration, IoT for cities, smart infrastructure, urban data analytics, and intelligent urban systems.",
+    "keyFocus": "urban technology, smart infrastructure, IoT, urban data analytics, intelligent systems",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Smart city simulation platform",
+      "IoT sensor network lab",
+      "Urban data analytics tools",
+      "Smart city case study projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Smart City Engineer",
+      "Urban Technology Specialist",
+      "IoT Solutions Architect",
+      "Urban Data Analyst"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in engineering, IT or urban planning required",
+      "Interest in urban sustainability"
     ]
   },
   "master:cybersecurity-cs": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced coverage of cybersecurity including penetration testing, security architecture, incident response, and security governance.",
+    "keyFocus": "advanced cybersecurity, penetration testing, security architecture, incident response",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced cybersecurity lab",
+      "Penetration testing suites",
+      "Security operations center simulation",
+      "CTF competitions and red team exercises"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Security Analyst",
+      "Security Architect",
+      "Incident Response Manager",
+      "Chief Information Security Officer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in cybersecurity, IT or computer science required",
+      "Industry certifications beneficial"
     ]
   },
   "master:computerized-technologies-in-mechanical-engineering-ctme": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced CAD/CAM, CNC programming, digital manufacturing, additive manufacturing technologies, and computerized quality assurance.",
+    "keyFocus": "advanced CAD/CAM, digital manufacturing, additive manufacturing, CNC",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Advanced CNC machining center",
+      "Industrial 3D printing lab",
+      "Digital twin simulation",
+      "Automated quality inspection systems"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior CAD/CAM Engineer",
+      "Digital Manufacturing Specialist",
+      "Additive Manufacturing Engineer",
+      "Automation Quality Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in mechanical engineering or related field required",
+      "CAD/CAM experience recommended"
     ]
   },
   "master:computer-networks-and-communications-cnc": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers advanced networking, telecommunications systems, network security, wireless communications, and network infrastructure design.",
+    "keyFocus": "networking, communications, network security, wireless, infrastructure",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced networking lab",
+      "Telecommunications test equipment",
+      "Network security tools",
+      "Wireless communications testbed"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Network Engineer",
+      "Telecommunications Specialist",
+      "Network Security Architect",
+      "Communications Systems Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in computer science, IT or telecommunications required",
+      "Networking certifications beneficial"
     ]
   },
   "master:marine-engineering-ship-machines-and-mechanisms": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of marine engineering covering ship machinery design, propulsion systems, marine thermodynamics, and vessel automation.",
+    "keyFocus": "advanced marine engineering, propulsion systems, ship machinery, vessel automation",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced marine engine simulators",
+      "Propulsion system design lab",
+      "Marine thermodynamics analysis",
+      "STCW-compliant advanced training"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Marine Engineer",
+      "Propulsion Systems Designer",
+      "Marine Technical Superintendent",
+      "Ship Classification Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in marine or mechanical engineering required",
+      "Sea service experience beneficial"
     ]
   },
   "master:navigation": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced maritime navigation covering bridge resource management, electronic navigation systems, maritime safety, and ship handling.",
+    "keyFocus": "advanced navigation, bridge management, electronic navigation, maritime safety",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Full-mission bridge simulators",
+      "Electronic chart display systems",
+      "Advanced ship handling training",
+      "STCW-compliant advanced certification"
     ],
     "careers": [
-      "Edit this career path."
+      "Chief Officer / Captain",
+      "Navigation Systems Specialist",
+      "Maritime Safety Superintendent",
+      "Vessel Traffic Services Operator"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in navigation or maritime studies required",
+      "STCW certification and sea service required"
     ]
   },
   "master:naval-architecture-and-marine-technology-namt": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of naval architecture, ship structural design, offshore engineering, hydrodynamics, and marine technology innovation.",
+    "keyFocus": "advanced naval architecture, ship design, offshore engineering, hydrodynamics",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced ship design CAD",
+      "Computational fluid dynamics lab",
+      "Structural analysis software",
+      "Offshore engineering projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Naval Architect",
+      "Marine Structural Engineer",
+      "Offshore Design Engineer",
+      "Hydrodynamics Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in naval architecture or marine engineering required",
+      "Strong physics and mathematics background"
     ]
   },
   "master:corporate-management-cm": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers corporate strategy, organizational management, financial management, strategic marketing, and corporate governance.",
+    "keyFocus": "corporate strategy, management, finance, marketing, governance",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Strategic management simulations",
+      "Corporate finance case studies",
+      "Leadership development workshops",
+      "Industry executive guest lectures"
     ],
     "careers": [
-      "Edit this career path."
+      "Corporate Manager",
+      "Strategy Consultant",
+      "Business Development Executive",
+      "Operations Director"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in management, economics or related field required",
+      "Professional experience beneficial"
     ]
   },
   "master:water-transport-logistics-wtl": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of maritime logistics, intermodal transport, supply chain management, port economics, and global trade operations.",
+    "keyFocus": "advanced maritime logistics, intermodal transport, supply chain, port economics",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced logistics simulation",
+      "Port economics analysis",
+      "Intermodal transport case studies",
+      "Industry maritime logistics partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Logistics Manager",
+      "Port Operations Director",
+      "Supply Chain Consultant",
+      "Maritime Commerce Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in logistics, maritime studies or related field required",
+      "Industry experience advantageous"
     ]
   },
   "master:mechanical-engineering-and-technologies-met": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced mechanical engineering covering machine design, finite element analysis, advanced materials, thermal systems, and manufacturing technology.",
+    "keyFocus": "advanced mechanical engineering, FEA, advanced materials, thermal systems",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Finite element analysis lab",
+      "Advanced materials testing",
+      "Thermal systems simulation",
+      "Advanced manufacturing workshop"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Mechanical Engineer",
+      "FEA Specialist",
+      "Advanced Materials Engineer",
+      "Mechanical Design Lead"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in mechanical engineering required",
+      "Strong computational skills expected"
     ]
   },
   "master:design-of-renewable-energy-facilities-dref": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers design, planning and implementation of renewable energy facilities including solar farms, wind parks, biomass plants, and hydropower stations.",
+    "keyFocus": "renewable energy facility design, solar farms, wind parks, biomass, hydropower",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Renewable facility design software",
+      "Site assessment and planning tools",
+      "Energy yield simulation",
+      "Real-world project case studies"
     ],
     "careers": [
-      "Edit this career path."
+      "Renewable Energy Project Designer",
+      "Solar Farm Engineer",
+      "Wind Park Planner",
+      "Biomass Facility Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in engineering required",
+      "Interest in renewable energy projects"
     ]
   },
   "master:seed-production-and-plant-protection-sppp": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers seed technology, plant breeding, crop protection, plant disease management, and quality seed production methodologies.",
+    "keyFocus": "seed technology, plant breeding, crop protection, disease management",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Seed analysis laboratory",
+      "Plant breeding research plots",
+      "Crop protection field trials",
+      "Seed quality certification training"
     ],
     "careers": [
-      "Edit this career path."
+      "Seed Production Specialist",
+      "Plant Breeder",
+      "Crop Protection Consultant",
+      "Agricultural Quality Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in agronomy, biology or related field required",
+      "Field research experience beneficial"
     ]
   },
   "master:building-automation-systems-bas": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers smart building technologies, building management systems, HVAC automation, lighting control, and energy-efficient building design.",
+    "keyFocus": "smart buildings, BMS, HVAC automation, lighting control, energy efficiency",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "BMS simulation lab",
+      "HVAC control systems",
+      "Smart lighting integration",
+      "Energy management case studies"
     ],
     "careers": [
-      "Edit this career path."
+      "Building Automation Engineer",
+      "BMS Specialist",
+      "Smart Building Consultant",
+      "Energy Management Systems Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in electrical, mechanical or automation engineering required",
+      "Interest in smart building technologies"
     ]
   },
   "master:artificial-intelligence-systems-ais": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced AI systems covering deep learning, reinforcement learning, natural language processing, computer vision, and AI deployment.",
+    "keyFocus": "advanced AI, deep learning, NLP, computer vision, AI systems",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Deep learning GPU cluster",
+      "NLP and computer vision labs",
+      "AI model deployment platforms",
+      "Industry AI research projects"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior AI Engineer",
+      "Deep Learning Specialist",
+      "NLP Engineer",
+      "Computer Vision Scientist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in computer science, AI or related field required",
+      "Strong mathematics and programming skills expected"
     ]
   },
   "master:software-engineering-se": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced software engineering covering software architecture, design patterns, DevOps, cloud-native development, and software project management.",
+    "keyFocus": "advanced software engineering, architecture, DevOps, cloud-native, project management",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Advanced development lab",
+      "Cloud-native development platforms",
+      "DevOps CI/CD pipelines",
+      "Agile project management training"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Software Engineer",
+      "Software Architect",
+      "DevOps Engineer",
+      "Technical Project Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in software engineering or computer science required",
+      "Professional software development experience recommended"
     ]
   },
   "master:social-management-sm": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of social management covering social policy analysis, community development, NGO management, and social project evaluation.",
+    "keyFocus": "advanced social management, social policy, community development, NGO management",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Social policy research lab",
+      "Community development field projects",
+      "NGO management simulations",
+      "Social impact assessment training"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Social Services Manager",
+      "NGO Director",
+      "Social Policy Advisor",
+      "Community Development Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in social sciences or related field required",
+      "Social work or community experience beneficial"
     ]
   },
   "master:social-work-with-individuals-with-deviant-behavior-swidb": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers social work approaches for individuals with deviant behavior, rehabilitation methods, criminal justice social work, and behavioral intervention.",
+    "keyFocus": "social work, deviant behavior, rehabilitation, behavioral intervention, criminal justice",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Behavioral intervention training",
+      "Rehabilitation program case studies",
+      "Criminal justice social work placements",
+      "Crisis intervention workshops"
     ],
     "careers": [
-      "Edit this career path."
+      "Social Worker (Corrections)",
+      "Behavioral Intervention Specialist",
+      "Rehabilitation Counselor",
+      "Probation Services Officer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in social work, psychology or related field required",
+      "Strong interpersonal skills and emotional resilience"
     ]
   },
   "master:social-work-with-children-swc": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers child welfare social work, child protection, family support systems, child development, and rights-based approaches to working with children.",
+    "keyFocus": "child welfare, child protection, family support, child development",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Child protection case studies",
+      "Family support program design",
+      "Child development assessment tools",
+      "Field placements with child welfare agencies"
     ],
     "careers": [
-      "Edit this career path."
+      "Child Welfare Social Worker",
+      "Child Protection Officer",
+      "Family Support Specialist",
+      "Children's Rights Advocate"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in social work or related field required",
+      "Experience working with children beneficial"
     ]
   },
   "master:social-entrepreneurship-se": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers social enterprise development, impact investing, social business models, nonprofit management, and sustainable social ventures.",
+    "keyFocus": "social enterprise, impact investing, social business, nonprofit management",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Social enterprise incubator access",
+      "Impact measurement tools",
+      "Social business plan competitions",
+      "Mentorship from social entrepreneurs"
     ],
     "careers": [
-      "Edit this career path."
+      "Social Entrepreneur",
+      "Impact Investment Analyst",
+      "Nonprofit Executive Director",
+      "Social Innovation Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in any field accepted",
+      "Passion for social impact and community development"
     ]
   },
   "master:modern-systems-in-agriculture-msa": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers precision agriculture, smart farming systems, agricultural IoT, automated machinery, and data-driven crop management.",
+    "keyFocus": "agri-tech, precision farming, smart agriculture, IoT, automation",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Precision agriculture lab with drones",
+      "Soil sensor networks",
+      "Automated irrigation systems",
+      "Farm management software platforms"
     ],
     "careers": [
-      "Edit this career path."
+      "Precision Agriculture Specialist",
+      "Agri-Tech Consultant",
+      "Smart Farming Engineer",
+      "Agricultural Data Analyst"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in agriculture, engineering or IT required",
+      "Interest in agricultural technology innovation"
     ]
   },
   "master:modern-technologies-in-agriculture-mta": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers modern agricultural technologies including biotechnology, hydroponics, vertical farming, greenhouse automation, and sustainable crop production.",
+    "keyFocus": "agricultural technology, biotechnology, hydroponics, vertical farming, greenhouse",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Hydroponics and aquaponics lab",
+      "Greenhouse automation systems",
+      "Biotechnology research facilities",
+      "Sustainable agriculture field trials"
     ],
     "careers": [
-      "Edit this career path."
+      "Agricultural Technology Specialist",
+      "Biotechnology Researcher",
+      "Greenhouse Operations Manager",
+      "Vertical Farming Engineer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in agriculture, biology or related field required",
+      "Interest in modern farming technologies"
     ]
   },
   "master:telecommunications-and-mobile-technologies-tmt": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers telecommunications systems, 5G networks, mobile technologies, wireless communications, and telecom infrastructure management.",
+    "keyFocus": "telecommunications, 5G, mobile technologies, wireless communications",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "5G testbed and simulation lab",
+      "Mobile network planning tools",
+      "Wireless communications equipment",
+      "Telecom infrastructure case studies"
     ],
     "careers": [
-      "Edit this career path."
+      "Telecommunications Engineer",
+      "5G Network Specialist",
+      "Mobile Technology Consultant",
+      "Wireless Systems Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in telecommunications, IT or electronics required",
+      "Knowledge of communication protocols expected"
     ]
   },
   "master:materials-processing-equipment-and-technologies-mpet": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers materials processing technologies, industrial equipment design, manufacturing processes, quality control, and materials testing.",
+    "keyFocus": "materials processing, industrial equipment, manufacturing, materials testing",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Festo"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Materials processing lab",
+      "Industrial equipment test bench",
+      "Manufacturing process simulation",
+      "Non-destructive testing equipment"
     ],
     "careers": [
-      "Edit this career path."
+      "Materials Processing Engineer",
+      "Manufacturing Equipment Designer",
+      "Quality Control Manager",
+      "Industrial Process Specialist"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in mechanical or materials engineering required",
+      "Manufacturing experience beneficial"
     ]
   },
   "master:technical-and-insurance-expertise-in-transport-tiet": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers transport technical expertise, vehicle damage assessment, insurance claims evaluation, accident investigation, and transport risk management.",
+    "keyFocus": "transport expertise, insurance claims, accident investigation, risk management",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Vehicle damage assessment lab",
+      "Accident reconstruction tools",
+      "Insurance case study workshops",
+      "Transport risk analysis methods"
     ],
     "careers": [
-      "Edit this career path."
+      "Transport Technical Expert",
+      "Insurance Claims Specialist",
+      "Accident Investigator",
+      "Transport Risk Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in transport engineering or related field required",
+      "Knowledge of insurance principles beneficial"
     ]
   },
   "master:heat-engineering-and-renewable-energy-sources-heres": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of thermal engineering combined with renewable energy, covering heat transfer, thermal systems, and renewable heating technologies.",
+    "keyFocus": "heat engineering, renewable energy, thermal systems, HVAC, energy efficiency",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Advanced thermal engineering lab",
+      "Renewable heating system design",
+      "Energy efficiency audit training",
+      "Combined heat and power case studies"
     ],
     "careers": [
-      "Edit this career path."
+      "Thermal Systems Engineer",
+      "Renewable Heating Specialist",
+      "Energy Efficiency Consultant",
+      "CHP Plant Designer"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in mechanical or thermal engineering required",
+      "Background in thermodynamics expected"
     ]
   },
   "master:transport-equipment-and-technologies-tet": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Advanced study of transport equipment design, vehicle technologies, transport infrastructure, and intelligent transport systems.",
+    "keyFocus": "advanced transport equipment, vehicle technologies, infrastructure, ITS",
+    "duration": "Full-time (1.5 years)",
     "highlights": [
-      "Edit this highlight."
+      "Vehicle dynamics simulation lab",
+      "Transport infrastructure design tools",
+      "ITS implementation projects",
+      "Industry transport technology partnerships"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior Transport Engineer",
+      "Vehicle Technology Specialist",
+      "Transport Infrastructure Designer",
+      "ITS Project Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in transport or mechanical engineering required",
+      "Interest in transport technology innovation"
     ]
   },
   "master:chemical-engineering-ce": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Covers chemical process engineering, reactor design, separation processes, process control, and chemical plant safety.",
+    "keyFocus": "chemical process engineering, reactor design, separation, process control, safety",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens",
+      "ABB",
+      "Schneider Electric"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Chemical process simulation lab",
+      "Reactor design software",
+      "Separation process equipment",
+      "Process safety management training"
     ],
     "careers": [
-      "Edit this career path."
+      "Chemical Engineer",
+      "Process Design Engineer",
+      "Plant Safety Specialist",
+      "Production Manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in chemical engineering required",
+      "Strong chemistry and mathematics background expected"
     ]
   },
   "master:siemens-plc-control-technologies-siemens": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Specialist program focused on Siemens PLC programming, TIA Portal, SCADA systems, industrial communication protocols, and automation project management.",
+    "keyFocus": "Siemens PLC, TIA Portal, SCADA, industrial automation, control technologies",
+    "duration": "Full-time (1.5 years)",
+    "partners": [
+      "Siemens"
+    ],
     "highlights": [
-      "Edit this highlight."
+      "Siemens TIA Portal certified lab",
+      "PLC programming workstations",
+      "SCADA system integration",
+      "Industrial communication networks",
+      "Siemens-certified training modules"
     ],
     "careers": [
-      "Edit this career path."
+      "PLC Programmer",
+      "Automation Engineer",
+      "SCADA Systems Engineer",
+      "Industrial Control Specialist",
+      "Siemens Technology Consultant"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor degree in automation, electrical or control engineering required",
+      "Basic PLC programming knowledge recommended"
     ]
   }
 }

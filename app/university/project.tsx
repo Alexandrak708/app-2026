@@ -16,10 +16,14 @@ import { useAppTheme } from "@/hooks/use-theme-color";
 
 function ProgramRow({
   name,
+  tuition,
+  faculty,
   index,
   onPress,
 }: {
   name: string;
+  tuition?: string;
+  faculty?: string;
   index: number;
   onPress: () => void;
 }) {
@@ -58,9 +62,37 @@ function ProgramRow({
           {index + 1}
         </Text>
       </View>
-      <Text style={{ flex: 1, fontSize: 14, fontWeight: "600", color: colors.text }}>
-        {name}
-      </Text>
+      <View style={{ flex: 1 }}>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+          <Text style={{ fontSize: 14, fontWeight: "600", color: colors.text, flex: 1 }}>
+            {name}
+          </Text>
+          {tuition && (tuition.includes("FREE") || tuition.includes("БЕЗПЛАТНО")) && (
+            <View style={{ backgroundColor: "#16a34a20", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
+              <Text style={{ fontSize: 10, fontWeight: "700", color: "#16a34a", letterSpacing: 0.3 }}>
+                FREE
+              </Text>
+            </View>
+          )}
+          {tuition && !tuition.includes("FREE") && !tuition.includes("БЕЗПЛАТНО") && (
+            <View style={{ backgroundColor: "#2563eb20", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 6 }}>
+              <Text style={{ fontSize: 10, fontWeight: "700", color: "#2563eb", letterSpacing: 0.3 }}>
+                PAID
+              </Text>
+            </View>
+          )}
+        </View>
+        {tuition && (
+          <Text style={{ fontSize: 11, color: colors.textMuted, marginTop: 2 }}>
+            {tuition}{faculty ? ` · ${faculty}` : ""}
+          </Text>
+        )}
+        {!tuition && faculty && (
+          <Text style={{ fontSize: 11, color: colors.textMuted, marginTop: 2 }}>
+            {faculty}
+          </Text>
+        )}
+      </View>
       <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
     </TouchableOpacity>
   );
@@ -192,6 +224,8 @@ export default function ProgramsPage() {
           <ProgramRow
             key={program.slug}
             name={program.title}
+            tuition={program.tuition}
+            faculty={program.faculty}
             index={index}
             onPress={() => openProgram(program.slug)}
           />
