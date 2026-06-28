@@ -34,6 +34,7 @@
     "degree": "СТЕПЕН",
     "scholarship": "СТИПЕНДИЯ",
     "category": "КАТЕГОРИЯ",
+    "tuition": "ТАКСА",
     "country": "ДЪРЖАВА",
     "yes": "Да",
     "no": "Не"
@@ -189,6 +190,76 @@
     "available_other": "{{count}} НАЛИЧНИ ПРОГРАМИ",
     "noneAvailable": "Няма налични програми"
   },
+  "universityStats": {
+    "title": "Основни факти",
+    "bachelorPrograms": "Бакалавърски програми",
+    "masterPrograms": "Магистърски програми",
+    "internationalPartners": "Международни партньори",
+    "yearsTradition": "Години традиция",
+    "studentsGraduated": "Завършили студенти",
+    "labs": "Лаборатории",
+    "fromCountries": "от {{count}} държави",
+    "tuitionFree": "4 специалности без такси"
+  },
+  "universityStatsValues": {
+    "1": {
+      "yearsTradition": "60+",
+      "bachelorPrograms": "33",
+      "masterPrograms": "92",
+      "internationalPartners": "155",
+      "countries": "47",
+      "studentsGraduated": "60K+",
+      "labs": "230+",
+      "tuitionFreeLabel": "€0"
+    }
+  },
+  "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
+  "tuitionTiers": {
+    "1": [
+      { "range": "€0", "label": "4 безплатни специалности" },
+      { "range": "€176-€220", "label": "Повечето редовни специалности" },
+      { "range": "€332-€358", "label": "Морско инженерство" },
+      { "range": "€409.50", "label": "Корабоводене" }
+    ]
+  },
+  "universityExtra": {
+    "scholarships": "Стипендии и финансиране",
+    "scholarshipsDesc": "ТУ-Варна предлага различни стипендии: Именни стипендии на Фондация ЕВРИКА (3 000 лв./годишно) в 11 области, Еразъм+ мобилност (€606-€674/месец), Национална програма Млади учени и постдокторанти, държавни стипендии за докторанти и проект Смарт PHD Lab 5.0.",
+    "evrika": "Фондация ЕВРИКА: Именни стипендии от 3 000 лв./годишно в 11 области – Компютърни науки, Математика, Физика, Инженерни науки, Икономика и др.",
+    "erasmusGrants": "Еразъм+: Мобилност от €606-€674/месец за обучение или стаж в 155 партньорски университета от 47 държави",
+    "youngScientists": "ННП Млади учени и постдокторанти – 2: Изследователско финансиране за млади учени",
+    "smartPHD": "Смарт PHD Lab 5.0: Докторантски стипендии в телекомуникации, ИИ, автоматизация и мехатроника (финансирани от ЕС)",
+    "stateScholarships": "Държавни стипендии за редовни докторанти с достъп до най-голямата техническа библиотека в Североизточна България",
+    "applicationInfo": "Кандидатстване (Бакалавър 2026/2027)",
+    "applicationDesc": "Приемът протича в 5 ранни етапа (октомври–май) и основен прием през юни. Кандидатствайте онлайн на ksp.tu-varna.bg или на място в Центъра за КСП, МТФ, пн–чт 8:00–16:30, пт 9:30–16:30.",
+    "earlyStages": "5 ранни етапа от 14 октомври до 14 май 2026 г.",
+    "mainRound": "Основен прием: документи 18 май – 19 юни 2026; класиране 23 юни; записване 23–26 юни",
+    "drawingExam": "Изпит по рисуване за Индустриален дизайн: 22 юни 2026 (4 часа)",
+    "onlineTest": "Електронни тестове онлайн всеки работен ден в 9:00, 11:30 и 14:00 с предварителна регистрация",
+    "appFees": "Такса обработка: 9 €; електронен тест/изпит по рисуване: 30 €; прием с ДЗИ: 20 €",
+    "appDocuments": "Необходими документи: диплома за средно образование (или удостоверение за завършен 1-ви гимназиален етап) + академична справка от 11-ти клас",
+    "maritimeMedical": "Корабоводене, Корабни машини и Електрообзавеждане на кораба изискват медицинско от ИА Морска администрация",
+    "masterFees": "Магистърски такси (2026/2027)",
+    "masterFeesDesc": "Семестриални такси за магистри в BGN:",
+    "masterSDR": "Държавна поръчка (СДО): 325 – 375 лв./семестър",
+    "masterNSDO": "Платено обучение (НСДО): 1 525 – 2 452 лв./семестър",
+    "masterDistance": "Задочно/Дистанционно: 500 – 992 лв./семестър",
+    "masterSiemens": "Siemens PLC технологии: 325 лв. (СДО) / 1 994 лв. (НСДО)",
+    "openDoors": "Дни на отворени врати",
+    "openDoorsDesc": "ТУ-Варна партнира с водещи компании за редовни Дни на отворени врати:",
+    "siemensHub": "Siemens Инженерен Хъб Варна – за специалности АИУКС, ИТС, Роботика и СИТ",
+    "mtgDelfin": "МТГ Делфин Корабостроителница – платени стажантски програми за морски специалности",
+    "schwarzIT": "Schwarz IT (Lidl/Kaufland) – стажове и сътрудничество в ИИ и електротранспорт",
+    "autodesk": "Autodesk – оторизиран център за обучение и сертифициране на AutoCAD, Inventor, Revit, Fusion 360",
+    "expressbank": "Societe Generale Експресбанк – Ден на отворените врати за ИТ специалности",
+    "partners": "Партньори и спонсори",
+    "partnersDesc": "ТУ-Варна поддържа 155 международни споразумения от 47 държави и силни индустриални партньорства:",
+    "industryPartners": "Siemens, ABB, Festo, Schneider Electric, National Instruments, Autodesk, Schwarz IT, МТГ Делфин",
+    "academicPartners": "Академични партньори чрез Еразъм+ със 155 университета в 47 държави – Германия, Франция, Великобритания, Австрия, Полша, Румъния, Турция, Гърция, Южна Корея, Китай и др.",
+    "ceepus": "CEEPUS мрежа: централноевропейски академичен обмен с Унгария, Австрия, Полша, Румъния, Словакия, Хърватия, Сърбия, Словения",
+    "internationalStudents": "Чуждестранни студенти",
+    "internationalDesc": "Отдел Международно сътрудничество и чуждестранни студенти (стая 326 НУК, email: international@tu-varna.bg) обработва приема на чуждестранни студенти. Кандидатите от ЕС/ЕИП следват процедури, аналогични на българските граждани."
+  },
   "programDetail": {
     "notFound": "Програмата не е намерена",
     "notFoundDesc": "Университетът или програмата не съвпадат със запазените данни.",
@@ -207,16 +278,269 @@
     "keyFocus": "Основен фокус",
     "highlights": "Акценти",
     "careers": "Кариерни пътища",
-    "admissionNotes": "Бележки за кандидатстване"
+    "admissionNotes": "Бележки за кандидатстване",
+    "tuition": "Такса (семестър)",
+    "faculty": "Факултет"
+  },
+  "tu_faculties": {
+    "fita": "Изчислителна техника и автоматизация (ФИТА)",
+    "mtf": "Машинно-технологичен (МТФ)",
+    "ef": "Електротехнически (ЕФ)",
+    "kf": "Корабостроителен (КФ)",
+    "dk": "Добруджански колеж (ДК)"
+  },
+  "tu_programInfo": {
+    "automation-information-and-control-computer-systems-aiccs": {
+      "tuition": "191.00 €",
+      "facultyKey": "fita"
+    },
+    "automotive-engineering-ae": {
+      "tuition": "191.00 €",
+      "facultyKey": "mtf"
+    },
+    "agronomy-a": {
+      "tuition": "220.50 €",
+      "facultyKey": "dk"
+    },
+    "renewable-energy-sources-res": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "electric-power-engineering-epe": {
+      "tuition": "БЕЗПЛАТНО",
+      "facultyKey": "ef"
+    },
+    "electronics-e": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "ship-electrical-equipment-see": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "kf"
+    },
+    "electric-power-supply-and-electrical-equipment-epsee": {
+      "tuition": "БЕЗПЛАТНО",
+      "facultyKey": "ef"
+    },
+    "electrical-engineering-and-electrical-technologies-eeet": {
+      "tuition": "191.00 €",
+      "facultyKey": "ef"
+    },
+    "civil-protection-in-disasters-and-emergencies-cpde": {
+      "tuition": "220.50 €",
+      "facultyKey": "ef"
+    },
+    "artificial-intelligence-ai": {
+      "tuition": "220.50 €",
+      "facultyKey": "fita"
+    },
+    "industrial-design-id": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "industrial-management-im": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "environmental-ecological-engineering-ee": {
+      "tuition": "191.00 €",
+      "facultyKey": "ef"
+    },
+    "intelligent-transport-systems-its": {
+      "tuition": "191.00 €",
+      "facultyKey": "fita"
+    },
+    "information-and-communication-technologies-ict": {
+      "tuition": "220.50 €",
+      "facultyKey": "fita"
+    },
+    "cybersecurity-cs": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "computerized-technologies-in-mechanical-engineering-ctme": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "computer-systems-and-technologies-cst": {
+      "tuition": "220.50 €",
+      "facultyKey": "fita"
+    },
+    "marine-engineering-ship-machines-and-mechanisms": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "kf"
+    },
+    "navigation-ship-maneuvering": {
+      "tuition": "409.50 €",
+      "facultyKey": "kf"
+    },
+    "naval-architecture-and-marine-technology-namt": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "kf"
+    },
+    "water-transport-logistics-wtl": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "kf"
+    },
+    "mechanical-engineering-and-technologies-met": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "robotics-and-mechatronics-rm": {
+      "tuition": "191.00 €",
+      "facultyKey": "fita"
+    },
+    "software-and-internet-technologies-sit": {
+      "tuition": "220.50 €",
+      "facultyKey": "fita"
+    },
+    "social-management-sm": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "construction-management-cm": {
+      "tuition": "220.50 €",
+      "facultyKey": "mtf"
+    },
+    "technological-entrepreneurship-and-innovation-tei": {
+      "tuition": "220.50 €",
+      "facultyKey": "mtf"
+    },
+    "heat-power-engineering-and-investment-design-hpeid": {
+      "tuition": "БЕЗПЛАТНО",
+      "facultyKey": "ef"
+    },
+    "transport-equipment-and-technologies-tet": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "data-analysis-and-network-technologies-dant": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "health-and-safety-at-work-hsw": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "operation-of-fleet-and-ports-ofp": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "kf"
+    },
+    "electric-power-systems-eps": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "electric-power-supply-and-electrical-equipment-in-industry-epseei": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "electrical-engineering-ee": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "environmental-engineering-ee": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "smart-cities": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "computer-networks-and-communications-cnc": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "navigation": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "kf"
+    },
+    "corporate-management-cm": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "design-of-renewable-energy-facilities-dref": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "seed-production-and-plant-protection-sppp": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "dk"
+    },
+    "building-automation-systems-bas": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "artificial-intelligence-systems-ais": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "software-engineering-se": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "social-work-with-individuals-with-deviant-behavior-swidb": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "social-work-with-children-swc": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "social-entrepreneurship-se": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "modern-systems-in-agriculture-msa": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "dk"
+    },
+    "modern-technologies-in-agriculture-mta": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "dk"
+    },
+    "telecommunications-and-mobile-technologies-tmt": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "fita"
+    },
+    "materials-processing-equipment-and-technologies-mpet": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "technical-and-insurance-expertise-in-transport-tiet": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "heat-engineering-and-renewable-energy-sources-heres": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "ef"
+    },
+    "chemical-engineering-ce": {
+      "tuition": "325-375 лв./сем (СДО)",
+      "facultyKey": "mtf"
+    },
+    "siemens-plc-control-technologies-siemens": {
+      "tuition": "325-1 994 лв./сем",
+      "facultyKey": "fita"
+    }
   },
   "universities": {
     "1": {
       "name": "Технически университет",
       "description": "Водещи инженерни и технологични програми със съвременни изследователски съоръжения.",
-      "longDescription": "Техническият университет във Варна е вторият по големина държавен технически университет в България. Притежава институционална акредитация с най-висок рейтинг на Много добро за период от шест години, присъден от Национална агенция за оценка и акредитация (НАОА). Освен това е първият университет в България, получил институционална акредитация от Европейската асоциация на университетите. Университетът поддържа висок стандарт на образованието, сертифициран по ISO 9001:2008, и разполага с разширена международна мрежа с договори за взаимно сътрудничество с повече от 120 чужди университета.",
+      "longDescription": "Техническият университет във Варна е вторият по големина държавен технически университет в България, основан през 1962 г. Притежава институционална акредитация с най-висок рейтинг на Много добро за период от шест години, присъден от Националната агенция за оценка и акредитация (НАОА). Първият университет в България, получил институционална акредитация от Европейската асоциация на университетите. Сертифициран по ISO 9001:2008 и разполага с разширена международна мрежа със 155 партньорски университета от 47 държави чрез програмата Еразъм+ и други.\n\nУниверситетът включва 4 факултета — Машинно-технологичен (МТФ), Корабостроителен (КФ), Електротехнически (ЕФ) и Изчислителна техника и автоматизация (ФИТА) — заедно с Добруджански технологичен колеж в Добрич, Колеж в структурата на ТУ-Варна, Научноизследователски институт и Високотехнологичен парк. Кампусът обхваща 200 декара и разполага с над 230 модерно оборудвани лаборатории, 50+ лекционни зали, спортен комплекс, 6 студентски общежития, стол, библиотека, кариерен център, CISCO Академия, Морски квалификационен център, оторизиран тренинг център на Autodesk и Докторантски център.\n\nНад 60 000 студенти са завършили от основаването му в 33 бакалавърски и 92 магистърски програми и докторантури. Университетът е партньор на водещи компании като Siemens, ABB, Festo, Schneider Electric, National Instruments, Autodesk, Schwarz IT и МТГ Делфин.\n\nНяколко специалности се предлагат без такси: Електроенергетика, Електроснабдяване и електрообзавеждане, Корабостроене и морска техника, и Топлотехника и инвестиционно проектиране. Ректор: проф. д-р Драгомир Пламенов.",
       "location": "Варна, България",
       "degree": "Бакалавър/Магистър",
-      "tuitionRange": "137 € - 410 € / на семестър"
+      "tuitionRange": "0 € - 409.50 € / на семестър (4 специалности без такси)",
+      "website": "https://www.tu-varna.bg",
+      "applyUrl": "https://ksp.tu-varna.bg"
     },
     "2": {
       "name": "Медицински университет",
@@ -224,7 +548,9 @@
       "longDescription": "Медицинският университет във Варна е водеща институция в българската медицинска подготовка, известна със своите висококачествени клинични програми за обучение и изследователски инициативи.",
       "location": "Варна, България",
       "degree": "Магистър",
-      "tuitionRange": "2 500 € - 7 000 € / година"
+      "tuitionRange": "2 500 € - 7 000 € / година",
+      "website": "https://www.mu-varna.bg",
+      "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
       "name": "Икономически университет",
@@ -232,7 +558,9 @@
       "longDescription": "Икономическият университет във Варна е водеща институция в българското икономическо образование, известна със своите комплексни програми и изследователски инициативи.",
       "location": "Варна, България",
       "degree": "Бакалавър/Магистър",
-      "tuitionRange": "230.08 € - 1 600 € (до 3 300 € за доктуранти)/ година"
+      "tuitionRange": "230.08 € - 1 600 € (до 3 300 € за доктуранти)/ година",
+      "website": "https://www.ue-varna.bg",
+      "applyUrl": "https://www.ue-varna.bg"
     },
     "4": {
       "name": "Военноморски университет",
@@ -240,7 +568,9 @@
       "longDescription": "Военноморският университет във Варна е водеща институция в българското морско образование, известна със своите специализирани програми за подготовка на кадри в морския сектор и передовите си изследователски инициативи.",
       "location": "Варна, България",
       "degree": "Бакалавър",
-      "tuitionRange": "2 800 € - 4 000 € / година"
+      "tuitionRange": "2 800 € - 4 000 € / година",
+      "website": "https://www.naval-acad.bg",
+      "applyUrl": "https://www.naval-acad.bg"
     },
     "5": {
       "name": "Свободен университет",
@@ -248,7 +578,9 @@
       "longDescription": "Свободният университет във Варна е водеща институция в България, известна със своите специализирани програми от различни académични направления и авангардни изследователски инициативи.",
       "location": "Варна, България",
       "degree": "Магистър",
-      "tuitionRange": "664 € - 4 000 € / година"
+      "tuitionRange": "664 € - 4 000 € / година",
+      "website": "https://www.vfu.bg",
+      "applyUrl": "https://www.vfu.bg"
     },
     "6": {
       "name": "Университет по мениджмънт",
@@ -256,23 +588,34 @@
       "longDescription": "Университетът по мениджмънт във Варна е водеща институция в българския бизнес туризмът образование, известна със своите комплексни програми и авангардни изследователски инициативи.",
       "location": "Варна, България",
       "degree": "Магистър",
-      "tuitionRange": "720 € - 2 850 € / година"
+      "tuitionRange": "720 € - 2 850 € / година",
+      "website": "https://www.vum.bg",
+      "applyUrl": "https://www.vum.bg"
     }
   },
   "universityProfiles": {
     "1": {
       "name": "Технически университет",
-      "focus": "инженерство, автоматизация, компютри, възобновяема енергия и промишлени системи",
-      "style": "ръчни лаборатории, приложни изследвания и силни връзки с индустрията",
+      "focus": "инженерство, автоматизация, компютри, възобновяема енергия, корабостроене, морска навигация, промишлени системи и ИИ",
+      "style": "практически лаборатории, приложни изследвания, навигационни симулатори, STCW-съвместимо морско обучение и силни връзки с индустрията — Siemens, ABB, Festo, Schneider Electric, National Instruments, Autodesk, Schwarz IT и МТГ Делфин",
       "careers": [
-        "Инженер",
+        "Машиностроителен / Електро / Автомобилен инженер",
         "Специалист по системи",
         "Координатор на проект",
-        "Помощник на изследвател"
+        "Научен сътрудник",
+        "Морски инженер / Корабоводител / Палубен офицер",
+        "Проектант на процесни системи",
+        "ИТ, ИИ и киберсигурност специалист",
+        "Корабостроител",
+        "Инженер по възобновяема енергия"
       ],
       "admissionNotes": [
-        "Фокус на математика и физика",
-        "Портфолио или интервю може да помогне за специализирани направления"
+        "Фокус върху математика и физика за инженерните специалности",
+        "Портфолио или интервю може да помогне за дизайнерски направления (Индустриален дизайн)",
+        "Корабоводене и корабни специалности изискват медицинско свидетелство от морски власти",
+        "Ранни кандидатствания от октомври до май (5 етапа); основен прием през юни",
+        "Такса за обработка на документи: 9 €; електронен тест: 30 €; прием с ДЗИ: 20 €",
+        "Онлайн кандидатстване на ksp.tu-varna.bg"
       ]
     },
     "2": {
@@ -494,7 +837,6 @@
     "technological-entrepreneurship-and-innovation-tei": "Технологично предприемачество и иновации (ТПИ)",
     "heat-power-engineering-and-investment-design-hpeid": "Топлотехника и инвестиционно проектиране (ТИП)",
     "transport-equipment-and-technologies-tet": "Транспортна техника и технологии (ТТТ)",
-
     "___university_2": "Университет 2 — Медицински университет",
     "medicine": "Медицина",
     "dental-medicine": "Дентална медицина",
@@ -504,18 +846,17 @@
     "public-health": "Обществено здраве",
     "health-management": "Здравен мениджмънт",
     "clinical-pharmacy": "Клинична фармация",
-
     "___university_3": "Университет 3 — Икономически университет",
     "hotel-and-restaurant-management": "Управление на хотели и ресторанти",
-    "tourism-and-entertainemnt-buisness-management": "Управление на туризма и развлекателния бизнес",
-    "buisness-and-management-in-english": "Бизнес и мениджмънт - на английски",
-    "buisness-economics": "Бизнес икономика",
+    "tourism-and-entertainment-business-management": "Управление на туризма и развлекателния бизнес",
+    "business-and-management-in-english": "Бизнес и мениджмънт - на английски",
+    "business-economics": "Бизнес икономика",
     "economics-and-trade": "Икономика и търговия",
-    "construction-buisness-and-entrepreneurship": "Строителен бизнес и предприемачество",
+    "construction-business-and-entrepreneurship": "Строителен бизнес и предприемачество",
     "real-estate-and-investments": "Недвижими имоти и инвестиции",
-    "industrial-buisness-and-entrepreneurship": "Индустриален бизнес и предприемачество",
+    "industrial-business-and-entrepreneurship": "Индустриален бизнес и предприемачество",
     "logistics": "Логистика",
-    "agricultural-buisnesses": "Земеделски бизнес",
+    "agricultural-businesses": "Земеделски бизнес",
     "commodities-science-and-customs-activity": "Стокознание и митническа дейност",
     "business-digital-technologies": "Бизнес дигитални технологии",
     "informatics-and-computer-sciences": "Информатика и компютърни науки",
@@ -557,7 +898,6 @@
     "business-consulting": "Бизнес консултиране",
     "project-management": "Управление на проекти",
     "marketing-and-brand-management": "Маркетинг и управление на бранд",
-
     "___university_4": "Университет 4 — Военноморски / Морски университет",
     "cybersecurity": "Киберсигурност",
     "information-and-communication-technologies": "Информационни и комуникационни технологии",
@@ -570,14 +910,12 @@
     "artificial-intelligence": "Изкуствен интелект",
     "digital-business-transformation": "Дигитална бизнес трансформация",
     "space-engineering-and-technologies": "Космическо инженерство и технологии",
-
     "___university_5": "Университет 5 — Свободен университет",
     "international-business": "Международен бизнес",
     "business-administration": "Бизнес администрация",
     "international-relations": "Международни отношения",
     "public-administration": "Публична администрация",
     "european-studies": "Европейски изследвания",
-
     "___university_6": "Университет 6 — Университет по мениджмънт (VUM)",
     "software-engineering": "Софтуерно инженерство",
     "digital-marketing": "Дигитален маркетинг",
@@ -595,8 +933,8 @@
   },
   "programOverrides": {
     "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
+      "overview": "Обучава по проектиране, програмиране и поддръжка на индустриални управляващи системи, PLC, SCADA и вградени системи с интензивна лабораторна работа.",
+      "keyFocus": "индустриална автоматизация, PLC/SCADA системи, вградени системи, IIoT",
       "duration": "Редовна (4 години) / Задочна (5 години)",
       "partners": [
         "Siemens",
@@ -606,7 +944,10 @@
         "Schneider Electric"
       ],
       "highlights": [
-        "Edit this highlight."
+        "Siemens-сертифицирани PLC лаборатории",
+        "IIoT интеграция",
+        "Индустриално спонсорирани проекти",
+        "Системи за сградна автоматизация"
       ],
       "careers": [
         "Проектант на АСУ ТП",
@@ -619,1087 +960,1931 @@
         "Преподавател / Експерт в образованието"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчва се силна подготовка по математика и физика",
+        "Основи на програмирането са предимство"
       ]
     },
     "1:bachelor:automotive-engineering-ae": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по проектиране, диагностика и поддръжка на съвременни автомобилни системи, включително електрически и хибридни превозни средства.",
+      "keyFocus": "автомобилен дизайн, диагностика, електрически превозни средства, двигателни системи",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Модерно диагностично оборудване",
+        "Лаборатории за EV технологии",
+        "Индустриални партньорства с автосервизи"
       ],
       "careers": [
-        "Edit this career path."
+        "Автомобилен инженер",
+        "Диагностичен специалист",
+        "Мениджър автопарк",
+        "R&D инженер"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Интерес към механика и електроника",
+        "Очакват се основни познания по физика"
       ]
     },
     "1:bachelor:agronomy-a": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Фокусира се върху съвременни земеделски технологии, растениевъдство, почвознание и устойчиви земеделски практики.",
+      "keyFocus": "растениевъдство, управление на почвите, растителна защита, устойчиво земеделие",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Експериментални полета",
+        "Модерни агрономически лаборатории",
+        "Фокус върху устойчивото земеделие",
+        "Партньорства с Добруджанския регион"
       ],
       "careers": [
-        "Edit this career path."
+        "Агроном",
+        "Консултант по растениевъдство",
+        "Управител на ферма",
+        "Научен сътрудник в агрономията"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Полезна е подготовка по биология и химия",
+        "Интерес към екологичните науки"
       ]
     },
     "1:bachelor:renewable-energy-sources-res": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по слънчеви, вятърни, биомасени и водноелектрически технологии, енергийна ефективност и интеграция на умни мрежи.",
+      "keyFocus": "слънчева енергия, вятър, биомаса, водна енергия, енергийна ефективност",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за възобновяема енергия",
+        "Оборудване за измерване на слънце/вятър",
+        "Проекти за енергийна ефективност",
+        "Посещения на индустриални обекти"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по възобновяема енергия",
+        "Енергиен одитор",
+        "Проектен разработчик",
+        "Консултант по устойчиво развитие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се основа по физика и математика",
+        "Интерес към зелени технологии"
       ]
     },
     "1:bachelor:electric-power-engineering-epe": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по генериране, пренос и разпределение на електрическа енергия, подстанционна автоматизация, умни мрежи и защита на енергийни системи.",
+      "keyFocus": "генериране на енергия, пренос, разпределение, умни мрежи",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатории за симулация на енергийни системи",
+        "Високоволтова лаборатория",
+        "Обучение по подстанционна автоматизация",
+        "Демонстрации на умни мрежи"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по енергийни системи",
+        "Оператор на електроразпределителна мрежа",
+        "Проектант на подстанции",
+        "Енергиен консултант"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се силна подготовка по математика и физика",
+        "Предлага се без такси"
       ]
     },
     "1:bachelor:electronics-e": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по проектиране на аналогови и цифрови схеми, микроелектроника, вградени системи, IoT устройства и електронни измервателни системи.",
+      "keyFocus": "аналогови/цифрови схеми, микроелектроника, вградени системи, IoT",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Модерна електронна лаборатория",
+        "Съоръжения за проектиране на печатни платки",
+        "IoT комплекти за разработка",
+        "Измервателна апаратура"
       ],
       "careers": [
-        "Edit this career path."
+        "Електронен инженер",
+        "Разработчик на вградени системи",
+        "IoT специалист",
+        "Тест инженер"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се подготовка по физика и математика",
+        "Интерес към проектиране на схеми"
       ]
     },
     "1:bachelor:ship-electrical-equipment-see": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по корабни електрически системи, морска автоматизация, навигационна електроника и управление на енергията на плавателни съдове.",
+      "keyFocus": "морски електрически системи, корабна автоматизация, навигационно оборудване",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Морски електрически симулатори",
+        "Корабни автоматизационни лаборатории",
+        "STCW-съвместимо обучение",
+        "Партньорство с Морски квалификационен център"
       ],
       "careers": [
-        "Edit this career path."
+        "Морски електроинженер",
+        "Специалист по корабни системи",
+        "Офшорен електротехник",
+        "Портов електрически инспектор"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се медицинско свидетелство от морски власти",
+        "Интерес към морската техника"
       ]
     },
     "1:bachelor:electric-power-supply-and-electrical-equipment-epsee": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по проектиране на електрозахранване, промишлено електрическо оборудване, разпределителни мрежи и безопасност на електрическите инсталации.",
+      "keyFocus": "електрозахранващи системи, промишлено електрическо оборудване, разпределение на енергия",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулация на електроразпределение",
+        "Лаборатория за промишлено ел. оборудване",
+        "Обучение за сертифициране по безопасност"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по електрозахранване",
+        "Специалист по електрическо оборудване",
+        "Промишлен електротехник",
+        "Експерт по енергийна ефективност"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се техническа подготовка по електричество и математика",
+        "Предлага се без такси"
       ]
     },
     "1:bachelor:electrical-engineering-and-electrical-technologies-eeet": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по електрически машини, задвижвания, силова електроника, промишлено отопление и електрически технологични приложения.",
+      "keyFocus": "електрически машини, задвижвания, силова електроника, електротехнологии",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за електрически машини",
+        "Лаборатория по силова електроника",
+        "Обучение по промишлени задвижвания"
       ],
       "careers": [
-        "Edit this career path."
+        "Електроинженер",
+        "Специалист по задвижващи системи",
+        "Проектант на силова електроника",
+        "Инженер по промишлена автоматизация"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се солидна основа по физика и математика"
       ]
     },
     "1:bachelor:civil-protection-in-disasters-and-emergencies-cpde": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по оценка на риска, управление при бедствия, аварийно планиране, пожарна безопасност и системи за гражданска защита.",
+      "keyFocus": "управление при бедствия, аварийна реакция, оценка на риска, гражданска защита",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулационно обучение за извънредни ситуации",
+        "Лаборатории за пожарна безопасност",
+        "Теренни упражнения с агенции за гражданска защита"
       ],
       "careers": [
-        "Edit this career path."
+        "Специалист по гражданска защита",
+        "Плановик за извънредни ситуации",
+        "Инспектор по безопасност",
+        "Консултант по оценка на риска"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Важни са физическата форма и психологическа готовност",
+        "Интерес към обществената безопасност"
       ]
     },
     "1:bachelor:artificial-intelligence-ai": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по машинно обучение, невронни мрежи, NLP, компютърно зрение и проектиране на интелигентни системи с практически AI проекти.",
+      "keyFocus": "машинно обучение, невронни мрежи, NLP, компютърно зрение, интелигентни системи",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "AI/ML лаборатория",
+        "GPU изчислителен клъстър",
+        "Индустриални AI проекти",
+        "Хакатони и състезания"
       ],
       "careers": [
-        "Edit this career path."
+        "AI инженер",
+        "Специалист по машинно обучение",
+        "Специалист по обработка на данни",
+        "Инженер по компютърно зрение"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчват се силни умения по програмиране и математика",
+        "Интерес към интелигентни системи"
       ]
     },
     "1:bachelor:industrial-design-id": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по продуктов дизайн, ергономия, CAD/CAM, дизайн визуализация, прототипиране и дизайн, ориентиран към човека.",
+      "keyFocus": "продуктов дизайн, ергономия, CAD/CAM, дизайн визуализация",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Дизайнерски студиа",
+        "Лаборатория за 3D принтиране и прототипиране",
+        "CAD/CAM софтуер",
+        "Оценяване на база портфолио"
       ],
       "careers": [
-        "Edit this career path."
+        "Индустриален дизайнер",
+        "Специалист по продуктово развитие",
+        "CAD дизайнер",
+        "UX/UI дизайнер"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчва се творческо портфолио",
+        "Може да се изисква интервю"
       ]
     },
     "1:bachelor:industrial-management-im": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по управление на производството, вериги за доставки, контрол на качеството, оперативна стратегия и индустриална икономика.",
+      "keyFocus": "управление на производството, верига за доставки, контрол на качеството, операции",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Софтуер за симулация на производство",
+        "Лаборатории за управление на качеството",
+        "Индустриални казуси",
+        "Обучение по ERP системи"
       ],
       "careers": [
-        "Edit this career path."
+        "Производствен мениджър",
+        "Аналитик на верига за доставки",
+        "Мениджър по качеството",
+        "Оперативен консултант"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Интерес както към бизнеса, така и към инженерството",
+        "Полезна е основа по математика"
       ]
     },
     "1:bachelor:environmental-ecological-engineering-ee": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по контрол на замърсяването, управление на отпадъци, пречистване на води и въздух, екологичен мониторинг и оценка на екологичното въздействие.",
+      "keyFocus": "контрол на замърсяването, управление на отпадъци, пречистване на води, екологичен мониторинг",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за екологичен анализ",
+        "Пилотна инсталация за пречистване на води",
+        "Оборудване за теренен мониторинг",
+        "Проекти за екологична оценка"
       ],
       "careers": [
-        "Edit this career path."
+        "Еколожки инженер",
+        "Специалист по управление на отпадъци",
+        "Инженер по пречистване на води",
+        "Служител по устойчиво развитие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Полезна е подготовка по химия и биология",
+        "Екологична осъзнатост"
       ]
     },
     "1:bachelor:intelligent-transport-systems-its": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по управление на трафика, интелигентни мобилни решения, транспортна телематика, GPS/ITS технологии и логистични системи.",
+      "keyFocus": "управление на трафика, интелигентна мобилност, транспортна телематика, логистика",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Транспортен симулационен софтуер",
+        "ITS лаборатория с оборудване за трафик мониторинг",
+        "Казуси за умни градове"
       ],
       "careers": [
-        "Edit this career path."
+        "Транспортен инженер",
+        "ITS специалист",
+        "Аналитик по управление на трафика",
+        "Проектант на логистични системи"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчват се умения по математика и ИТ",
+        "Интерес към интелигентната мобилност"
       ]
     },
     "1:bachelor:information-and-communication-technologies-ict": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по компютърни мрежи, далекосъобщения, облачна инфраструктура, IoT системи и управление на ИКТ проекти.",
+      "keyFocus": "мрежи, далекосъобщения, облачни изчисления, IoT инфраструктура",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Cisco мрежова лаборатория",
+        "Далекосъобщително оборудване",
+        "Облачни платформи",
+        "IoT комплекти за разработка"
       ],
       "careers": [
-        "Edit this career path."
+        "Мрежов инженер",
+        "ИКТ специалист",
+        "Облачен архитект",
+        "Инженер по далекосъобщителни системи"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчва се интерес към ИТ и основни познания по програмиране"
       ]
     },
     "1:bachelor:cybersecurity-cs": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по мрежова сигурност, етично хакерство, криптография, дигитална криминалистика и разработване на политики за сигурност.",
+      "keyFocus": "мрежова сигурност, етично хакерство, криптография, дигитална криминалистика",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория по киберсигурност с инструменти за тестване за проникване",
+        "CTF състезания",
+        "Проекти за одит на сигурността",
+        "Индустриални партньорства"
       ],
       "careers": [
-        "Edit this career path."
+        "Аналитик по сигурност",
+        "Специалист по тестване за проникване",
+        "Консултант по киберсигурност",
+        "Специалист по дигитална криминалистика"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчват се познания по програмиране и мрежи",
+        "Силни аналитични умения"
       ]
     },
     "1:bachelor:computerized-technologies-in-mechanical-engineering-ctme": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по CAD/CAM, CNC програмиране, 3D моделиране, адитивни технологии и компютъризиран контрол на качеството.",
+      "keyFocus": "CAD/CAM, CNC програмиране, 3D моделиране, адитивни технологии",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "CNC лаборатория с машинни инструменти",
+        "3D принтиращи съоръжения",
+        "CAD/CAM софтуерни пакети",
+        "Автоматизирано измервателно оборудване"
       ],
       "careers": [
-        "Edit this career path."
+        "CAD/CAM инженер",
+        "CNC програмист",
+        "Производствен инженер",
+        "Специалист по контрол на качеството"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчват се умения по техническо чертане и математика"
       ]
     },
     "1:bachelor:computer-systems-and-technologies-cst": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по компютърна архитектура, операционни системи, бази данни, системно програмиране и мрежова администрация.",
+      "keyFocus": "компютърна архитектура, операционни системи, бази данни, системно програмиране",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатории за системно програмиране",
+        "Системи за управление на бази данни",
+        "Обучение по мрежова администрация",
+        "Проекти за хардуерен интерфейс"
       ],
       "careers": [
-        "Edit this career path."
+        "Системен програмист",
+        "Администратор на бази данни",
+        "ИТ инфраструктурен специалист",
+        "Системен архитект"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се подготовка по програмиране",
+        "Интерес към нисконивови системи"
       ]
     },
     "1:bachelor:marine-engineering-ship-machines-and-mechanisms": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по корабни задвижващи системи, морски дизелови двигатели, спомагателни машини, поддръжка на плавателни съдове и морски инженерни операции.",
+      "keyFocus": "корабна пропулсия, морски двигатели, спомагателни системи, поддръжка на плавателни съдове",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Морски двигателни симулатори",
+        "Лаборатория за корабни машини",
+        "STCW-съвместимо обучение",
+        "Компоненти за морска практика"
       ],
       "careers": [
-        "Edit this career path."
+        "Морски инженер",
+        "Специалист по корабни машини",
+        "Офшорен инженер",
+        "Класификационен инспектор"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се медицинско свидетелство от морски власти",
+        "Важна е физическата форма"
       ]
     },
     "1:bachelor:navigation-ship-maneuvering": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по корабоводене, морска безопасност, товарни операции, управление на кораба и STCW-стандартно морско обучение.",
+      "keyFocus": "корабоводене, морска безопасност, товарни операции, STCW стандарти",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Навигационни симулатори",
+        "Лаборатория за мостови операции",
+        "STCW-сертифицирано обучение",
+        "Задължителна морска практика"
       ],
       "careers": [
-        "Edit this career path."
+        "Палубен офицер",
+        "Корабоводител",
+        "Специалист по пристанищни операции",
+        "Инспектор по морска безопасност"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се медицинско свидетелство от морски власти",
+        "Изисква се добро зрение и физическа форма"
       ]
     },
     "1:bachelor:naval-architecture-and-marine-technology-namt": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по корабостроене, офшорни конструкции, морска хидродинамика, структурен анализ и иновации в морската технология.",
+      "keyFocus": "корабостроене, офшорни конструкции, морско инженерство, хидродинамика",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "CAD софтуер за корабостроене",
+        "Буксировъчен басейн",
+        "Лаборатории за структурен анализ",
+        "Индустриални партньорства с корабостроителници"
       ],
       "careers": [
-        "Edit this career path."
+        "Корабостроител",
+        "Морски проектант",
+        "Инженер по офшорни конструкции",
+        "Корабостроителен инженер"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изискват се силна физика и математика",
+        "Предлага се без такси"
       ]
     },
     "1:bachelor:water-transport-logistics-wtl": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по управление на пристанища, корабоплавателна логистика, оптимизация на веригата за доставки, интермодален транспорт и морска търговия.",
+      "keyFocus": "пристанищни операции, корабоплавателна логистика, верига за доставки, морски транспорт",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Логистичен симулационен софтуер",
+        "Казуси за пристанищни операции",
+        "Връзки с пристанище Варна",
+        "Транспортна икономика"
       ],
       "careers": [
-        "Edit this career path."
+        "Логистичен координатор",
+        "Мениджър пристанищни операции",
+        "Корабоплавателен агент",
+        "Аналитик на верига за доставки"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Интерес към транспорта и логистиката",
+        "Препоръчват се аналитични умения"
       ]
     },
     "1:bachelor:mechanical-engineering-and-technologies-met": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по машинно проектиране, материалознание, производствени процеси, топлотехника и анализ на механични системи.",
+      "keyFocus": "машинно проектиране, материалознание, производствени процеси, топлотехника",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за изпитване на материали",
+        "Топлотехническа лаборатория",
+        "CNC производство",
+        "Проектни студиа"
       ],
       "careers": [
-        "Edit this career path."
+        "Машинен инженер",
+        "Проектант",
+        "Производствен специалист",
+        "Проектен инженер"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се силна подготовка по математика и физика",
+        "Интерес към това как работят нещата"
       ]
     },
     "1:bachelor:robotics-and-mechatronics-rm": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по роботика, серво системи, вградено управление, сензори, изпълнителни механизми и интеграция на кибер-физични системи.",
+      "keyFocus": "роботика, автоматизация, серво системи, вградено управление, кибер-физични системи",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Роботизирана лаборатория с индустриални роботи",
+        "Мехатронни работни станции",
+        "Комплекти за вградени системи",
+        "Обучителни модули на Festo"
       ],
       "careers": [
-        "Edit this career path."
+        "Роботик инженер",
+        "Мехатронен дизайнер",
+        "Инженер по автоматизация",
+        "Специалист по управляващи системи"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Препоръчва се силна подготовка по програмиране и електроника"
       ]
     },
     "1:bachelor:software-and-internet-technologies-sit": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по уеб разработка, мобилни приложения, облачни услуги, софтуерно инженерство и модерни рамки за разработка.",
+      "keyFocus": "уеб разработка, мобилни приложения, облачни услуги, софтуерно инженерство",
+      "duration": "Редовна (4 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Модерна софтуерна лаборатория",
+        "Agile проектна методология",
+        "Достъп до облачни платформи",
+        "Хакатони и състезания по програмиране"
       ],
       "careers": [
-        "Edit this career path."
+        "Софтуерен разработчик",
+        "Уеб инженер",
+        "Разработчик на мобилни приложения",
+        "Архитект на облачни решения"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се опит в програмирането",
+        "Полезно е портфолио от проекти"
       ]
     },
     "1:bachelor:social-management-sm": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по социална политика, управление на общности, администрация на НПО, човешки услуги и управление на социални проекти.",
+      "keyFocus": "социална политика, управление на общности, администрация на НПО, човешки услуги",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Теренни стажове",
+        "Анализ на социални политики",
+        "Проекти с партньорства с НПО",
+        "Инициативи за ангажиране на общността"
       ],
       "careers": [
-        "Edit this career path."
+        "Мениджър на социални услуги",
+        "Координатор в НПО",
+        "Служител за развитие на общността",
+        "Аналитик на политики"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Силни комуникационни и междуличностни умения",
+        "Интерес към социалното развитие"
       ]
     },
     "1:bachelor:construction-management-cm": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по управление на строителни проекти, строителна технология, оценка на разходите, строителен надзор и строителни норми.",
+      "keyFocus": "управление на строителни проекти, строителна технология, оценка на разходите",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Строителен симулационен софтуер",
+        "Лаборатория за строителни материали",
+        "Програми за посещения на обекти",
+        "BIM обучение"
       ],
       "careers": [
-        "Edit this career path."
+        "Строителен мениджър",
+        "Строителен надзорник",
+        "Количествен оценител",
+        "Проектен плановик"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Интерес към строителството и организация на проекти",
+        "Полезна е основа по математика"
       ]
     },
     "1:bachelor:technological-entrepreneurship-and-innovation-tei": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по комерсиализация на технологии, управление на стартиращи предприятия, иновационна стратегия, управление на научни изследвания и развитие на технологични предприятия.",
+      "keyFocus": "комерсиализация на технологии, управление на стартиращи предприятия, иновационна стратегия, научни изследвания",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Достъп до стартиращ инкубатор",
+        "Конкурси за бизнес планове",
+        "Иновационна лаборатория",
+        "Менторство от технологични предприемачи"
       ],
       "careers": [
-        "Edit this career path."
+        "Технологичен предприемач",
+        "Мениджър иновации",
+        "Ръководител на R&D проекти",
+        "Мениджър бизнес развитие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Интерес както към технологиите, така и към бизнеса",
+        "Творческо и проактивно мислене"
       ]
     },
     "1:bachelor:heat-power-engineering-and-investment-design-hpeid": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по топлинни системи, проектиране на ОВиК, топлообмен, енергийна ефективност и проектиране на инвестиционни проекти за отопление и енергетика.",
+      "keyFocus": "топлинни системи, ОВиК, топлообмен, проектиране на енергийна ефективност",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Топлотехническа лаборатория",
+        "Софтуер за проектиране на ОВиК",
+        "Обучение за енергиен одит",
+        "Казуси за инвестиционни проекти"
       ],
       "careers": [
-        "Edit this career path."
+        "ОВиК инженер",
+        "Проектант на топлинни системи",
+        "Експерт по енергийна ефективност",
+        "Консултант по инвестиционни проекти"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Очаква се подготовка по физика и математика",
+        "Предлага се без такси"
       ]
     },
     "1:bachelor:transport-equipment-and-technologies-tet": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по транспортни превозни средства, транспортна инфраструктура, логистично оборудване и управление на транспортни технологии.",
+      "keyFocus": "превозни средства, транспортна инфраструктура, логистично оборудване",
+      "duration": "Редовна (4 години) / Задочна (5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "National Instruments",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за транспортно оборудване",
+        "Диагностика на превозни средства",
+        "Логистична симулация",
+        "Индустриални транспортни партньорства"
       ],
       "careers": [
-        "Edit this career path."
+        "Транспортен инженер",
+        "Мениджър автопарк",
+        "Специалист по логистично оборудване",
+        "Консултант по транспортни технологии"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Интерес към транспортните системи",
+        "Препоръчва се механична нагласа"
       ]
     },
     "1:master:data-analysis-and-network-technologies-dant": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по анализ на данни, обработка на големи данни, мрежови технологии и разпределени изчисления за вземане на решения, базирани на данни.",
+      "keyFocus": "анализ на данни, големи данни, мрежови технологии, разпределени изчисления",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за обработка на големи данни",
+        "Инструменти за мрежова симулация",
+        "Индустриални проекти за анализ на данни",
+        "Облачни изчислителни платформи"
       ],
       "careers": [
-        "Edit this career path."
+        "Аналитик на данни",
+        "Мрежов инженер",
+        "Специалист по големи данни",
+        "Архитект на данни"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по компютърни науки или сродна специалност",
+        "Препоръчва се опит в програмирането"
       ]
     },
     "1:master:health-and-safety-at-work-hsw": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по професионално здраве, управление на безопасността на работното място, оценка на риска и регулаторно съответствие в индустриални среди.",
+      "keyFocus": "професионално здраве, безопасност на работното място, управление на риска, регулаторно съответствие",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулационно обучение по безопасност",
+        "Методологии за оценка на риска",
+        "Индустриални казуси",
+        "Семинари за регулаторно съответствие"
       ],
       "careers": [
-        "Edit this career path."
+        "Инспектор по здраве и безопасност",
+        "Мениджър по риска",
+        "Консултант по безопасност",
+        "Специалист по професионално здраве"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Предпочита се бакалавърска степен по инженерство или сродна област",
+        "Полезен е съответният професионален опит"
       ]
     },
     "1:master:renewable-energy-sources-res": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на технологии за възобновяема енергия, интеграция на умни мрежи, системи за съхранение на енергия и устойчива енергийна политика.",
+      "keyFocus": "напреднала възобновяема енергия, умни мрежи, съхранение на енергия, енергийна политика",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за проектиране на системи за възобновяема енергия",
+        "Симулация на умни мрежи",
+        "Изследвания за съхранение на енергия",
+        "Посещения на обекти за възобновяема енергия"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши инженер по възобновяема енергия",
+        "Специалист по умни мрежи",
+        "Консултант по съхранение на енергия",
+        "Мениджър по устойчиво развитие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника или енергетика",
+        "Препоръчва се основа по енергийни системи"
       ]
     },
     "1:master:internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на двигатели с вътрешно горене, автомобилни задвижващи системи, контрол на емисиите и алтернативни горивни технологии.",
+      "keyFocus": "напреднала двигателна технология, задвижващи системи, контрол на емисиите, алтернативни горива",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за изпитване на двигатели",
+        "Оборудване за анализ на емисиите",
+        "Изследвания на алтернативни горива",
+        "Индустриални автомобилни партньорства"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши автомобилен инженер",
+        "Специалист по развитие на двигатели",
+        "Инженер по контрол на емисиите",
+        "Проектант на задвижващи системи"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по машинно или автомобилно инженерство",
+        "Полезен е професионалният опит в автомобилния сектор"
       ]
     },
     "1:master:operation-of-fleet-and-ports-ofp": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по управление на флот, пристанищни операции, морска логистика, корабно планиране и управление на пристанищна инфраструктура.",
+      "keyFocus": "управление на флот, пристанищни операции, морска логистика, корабно планиране",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулация за управление на флот",
+        "Казуси за пристанищни операции",
+        "Сътрудничество с пристанище Варна",
+        "Софтуер за морска логистика"
       ],
       "careers": [
-        "Edit this career path."
+        "Мениджър флот",
+        "Директор пристанищни операции",
+        "Координатор по морска логистика",
+        "Мениджър корабни операции"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по морски изследвания, логистика или сродна област",
+        "Предимство е опитът в морската индустрия"
       ]
     },
     "1:master:electric-power-systems-eps": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено покритие на електрически енергийни системи, преносни и разпределителни мрежи, стабилност на енергийните системи и релейна защита.",
+      "keyFocus": "напреднали енергийни системи, пренос, разпределение, защита, стабилност",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за симулация на енергийни системи",
+        "Тестване на защитни релета",
+        "Обучение по SCADA системи",
+        "Изследователски проекти за умни мрежи"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши инженер по енергийни системи",
+        "Инженер по релейна защита",
+        "Специалист по планиране на мрежи",
+        "Оператор на преносна система"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника",
+        "Препоръчва се основа по енергийни системи"
       ]
     },
     "1:master:electronics-e": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на електронни системи, VLSI проектиране, RF инженерство, силова електроника и модерни измервателни техники.",
+      "keyFocus": "напреднала електроника, VLSI, RF инженерство, силова електроника",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за проектиране на напреднала електроника",
+        "VLSI инструменти за проектиране",
+        "RF измервателно оборудване",
+        "Тестов стенд за силова електроника"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши електронен инженер",
+        "VLSI инженер",
+        "RF инженер",
+        "Специалист по силова електроника"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електроника или електротехника",
+        "Очакват се солидни познания по проектиране на схеми"
       ]
     },
     "1:master:ship-electrical-equipment-see": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено покритие на морски електрически системи, корабно управление на енергията, морска автоматизация и електрически задвижващи системи.",
+      "keyFocus": "напреднали морски ел. системи, корабна автоматизация, електрическа пропулсия",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулатори на морски електрически системи",
+        "Обучение за управление на корабна енергия",
+        "Лаборатории за електрическа пропулсия",
+        "STCW-съвместимо напреднало обучение"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши морски електроинженер",
+        "Специалист по корабна автоматизация",
+        "Проектант на морски енергийни системи",
+        "Инженер по електрическа пропулсия"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника или морско инженерство",
+        "Полезен е предишен морски опит"
       ]
     },
     "1:master:electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по електрозахранващи системи за морски плавателни съдове, пристанищна електрическа инфраструктура и електрическо оборудване за воден транспорт.",
+      "keyFocus": "морско електрозахранване, пристанищна ел. инфраструктура, оборудване за воден транспорт",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулация на морски енергийни системи",
+        "Казуси за проектиране на пристанищни ел. инсталации",
+        "Корабно управление на енергията",
+        "Индустриални партньорства с пристанища"
       ],
       "careers": [
-        "Edit this career path."
+        "Морски енергиен инженер",
+        "Пристанищен електроинженер",
+        "Проектант на корабни електрически системи",
+        "Консултант по енергия за воден транспорт"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника",
+        "Интерес към морски приложения"
       ]
     },
     "1:master:electric-power-supply-and-electrical-equipment-in-industry-epseei": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по промишлени електрозахранващи системи, проектиране на електрическо оборудване, фабрично разпределение на енергия и промишлена безопасност.",
+      "keyFocus": "промишлено електрозахранване, електрическо оборудване, фабрична автоматизация, разпределение на енергия",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за проектиране на промишлени ел. системи",
+        "Интеграция на фабрична автоматизация",
+        "Анализ на качеството на енергията",
+        "Сертифициране за електрическа безопасност"
       ],
       "careers": [
-        "Edit this career path."
+        "Промишлен енергиен инженер",
+        "Проектант на електрическо оборудване",
+        "Инженер по фабрична автоматизация",
+        "Индустриален енергиен мениджър"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника",
+        "Полезен е промишлен опит"
       ]
     },
     "1:master:electrical-engineering-ee": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на електротехника, обхващащо електрически машини, енергийни системи, управляващи системи и интеграция на възобновяема енергия.",
+      "keyFocus": "напреднала електротехника, машини, енергийни системи, управление, възобновяема енергия",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за проектиране на електрически машини",
+        "Напреднала симулация на енергийни системи",
+        "Прототипиране на управляващи системи",
+        "Проекти за интеграция на възобновяема енергия"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши електроинженер",
+        "Проектант на енергийни системи",
+        "Инженер по управляващи системи",
+        "Мениджър електротехнически проекти"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника",
+        "Очаква се солидна математическа основа"
       ]
     },
     "1:master:industrial-design-id": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Напреднал продуктов дизайн, фокусиращ се върху дизайн мислене, напреднал CAD/CAM, управление на дизайна и иновационни методологии.",
+      "keyFocus": "напреднал продуктов дизайн, дизайн мислене, CAD/CAM, управление на дизайна",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднали дизайнерски студиа",
+        "Съоръжения за бързо прототипиране",
+        "Семинари за управление на дизайна",
+        "Индустриални дизайнерски проекти"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши индустриален дизайнер",
+        "Мениджър дизайн",
+        "Консултант по иновации",
+        "Ръководител продуктово развитие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по индустриален дизайн или сродна специалност",
+        "Изисква се представяне на портфолио"
       ]
     },
     "1:master:industrial-management-im": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на индустриален мениджмънт, обхващащо оперативна стратегия, оптимизация на веригата за доставки, lean управление и Индустрия 4.0.",
+      "keyFocus": "оперативна стратегия, оптимизация на веригата за доставки, lean управление, Индустрия 4.0",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулационен софтуер за верига за доставки",
+        "Lean управление семинари",
+        "Казуси за Индустрия 4.0",
+        "Напреднало обучение по ERP системи"
       ],
       "careers": [
-        "Edit this career path."
+        "Директор операции",
+        "Мениджър верига за доставки",
+        "Специалист по lean производство",
+        "Консултант по Индустрия 4.0"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по индустриален мениджмънт, инженерство или сродна област",
+        "Предимство е професионалният опит"
       ]
     },
     "1:master:environmental-engineering-ee": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на екологично инженерство, обхващащо технологии за контрол на замърсяването, оценка на въздействието върху околната среда и устойчиво развитие.",
+      "keyFocus": "напреднало екологично инженерство, контрол на замърсяването, оценка на въздействието, устойчивост",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднала лаборатория за екологичен анализ",
+        "Инструменти за оценка на въздействието върху околната среда",
+        "Проекти за устойчиво инженерство",
+        "Промишлени екологични партньорства"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши еколожки инженер",
+        "Екологичен консултант",
+        "Мениджър по устойчиво развитие",
+        "Специалист по регулаторно съответствие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по екологично инженерство или сродна област",
+        "Полезна е подготовка по химия и биология"
       ]
     },
     "1:master:smart-cities": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по градска технологична интеграция, IoT за градове, интелигентна инфраструктура, градска аналитика на данни и интелигентни градски системи.",
+      "keyFocus": "градска технология, интелигентна инфраструктура, IoT, градска аналитика на данни, интелигентни системи",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулационна платформа за умни градове",
+        "Лаборатория за IoT сензорни мрежи",
+        "Инструменти за градска аналитика на данни",
+        "Проекти с казуси за умни градове"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по умни градове",
+        "Специалист по градски технологии",
+        "Архитект на IoT решения",
+        "Аналитик на градски данни"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по инженерство, ИТ или градско планиране",
+        "Интерес към устойчивостта на градовете"
       ]
     },
     "1:master:cybersecurity-cs": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено покритие на киберсигурност, включващо тестване за проникване, сигурностна архитектура, реакция при инциденти и управление на сигурността.",
+      "keyFocus": "напреднала киберсигурност, тестване за проникване, сигурностна архитектура, реакция при инциденти",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднала лаборатория по киберсигурност",
+        "Комплекти за тестване за проникване",
+        "Симулация на център за сигурностни операции",
+        "CTF състезания и red team упражнения"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши аналитик по сигурност",
+        "Сигурностен архитект",
+        "Мениджър реакция при инциденти",
+        "Главен директор по информационна сигурност"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по киберсигурност, ИТ или компютърни науки",
+        "Полезни са индустриалните сертификати"
       ]
     },
     "1:master:computerized-technologies-in-mechanical-engineering-ctme": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Напреднал CAD/CAM, CNC програмиране, дигитално производство, адитивни технологични процеси и компютъризирано осигуряване на качеството.",
+      "keyFocus": "напреднал CAD/CAM, дигитално производство, адитивни технологии, CNC",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднал CNC обработващ център",
+        "Индустриална 3D принтираща лаборатория",
+        "Симулация с дигитален близнак",
+        "Автоматизирани системи за инспекция на качеството"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши CAD/CAM инженер",
+        "Специалист по дигитално производство",
+        "Инженер по адитивни технологии",
+        "Инженер по автоматизирано качество"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по машинно инженерство или сродна област",
+        "Препоръчва се опит с CAD/CAM"
       ]
     },
     "1:master:computer-networks-and-communications-cnc": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по напреднали мрежи, далекосъобщителни системи, мрежова сигурност, безжични комуникации и проектиране на мрежова инфраструктура.",
+      "keyFocus": "мрежи, комуникации, мрежова сигурност, безжични технологии, инфраструктура",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднала мрежова лаборатория",
+        "Тестово оборудване за далекосъобщения",
+        "Инструменти за мрежова сигурност",
+        "Тестова платформа за безжични комуникации"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши мрежов инженер",
+        "Специалист по далекосъобщения",
+        "Архитект на мрежова сигурност",
+        "Проектант на комуникационни системи"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по компютърни науки, ИТ или далекосъобщения",
+        "Полезни са мрежовите сертификати"
       ]
     },
     "1:master:marine-engineering-ship-machines-and-mechanisms": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на морско инженерство, обхващащо проектиране на корабни машини, задвижващи системи, морска термодинамика и корабна автоматизация.",
+      "keyFocus": "напреднало морско инженерство, задвижващи системи, корабни машини, корабна автоматизация",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднали морски двигателни симулатори",
+        "Лаборатория за проектиране на задвижващи системи",
+        "Анализ на морска термодинамика",
+        "STCW-съвместимо напреднало обучение"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши морски инженер",
+        "Проектант на задвижващи системи",
+        "Морски технически суперинтендант",
+        "Корабокласификационен инженер"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по морско или машинно инженерство",
+        "Полезен е опитът в морската практика"
       ]
     },
     "1:master:navigation": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Напреднало морско корабоводене, обхващащо управление на мостови ресурси, електронни навигационни системи, морска безопасност и управление на кораба.",
+      "keyFocus": "напреднало корабоводене, управление на мост, електронна навигация, морска безопасност",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Пълнофункционални мостови симулатори",
+        "Електронни картографски системи",
+        "Напреднало обучение за управление на кораб",
+        "STCW-съвместимо напреднало сертифициране"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши помощник / Капитан",
+        "Специалист по навигационни системи",
+        "Суперинтендант по морска безопасност",
+        "Оператор на услуги за корабен трафик"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по корабоводене или морски изследвания",
+        "Изисква се STCW сертификат и морска практика"
       ]
     },
     "1:master:naval-architecture-and-marine-technology-namt": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на корабостроене, структурно проектиране на кораби, офшорно инженерство, хидродинамика и иновации в морските технологии.",
+      "keyFocus": "напреднало корабостроене, корабен дизайн, офшорно инженерство, хидродинамика",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднал CAD за корабостроене",
+        "Лаборатория за изчислителна хидродинамика",
+        "Софтуер за структурен анализ",
+        "Проекти за офшорно инженерство"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши корабостроител",
+        "Морски конструктивен инженер",
+        "Офшорен проектант",
+        "Специалист по хидродинамика"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по корабостроене или морско инженерство",
+        "Силна основа по физика и математика"
       ]
     },
     "1:master:corporate-management-cm": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по корпоративна стратегия, организационно управление, финансово управление, стратегически маркетинг и корпоративно управление.",
+      "keyFocus": "корпоративна стратегия, управление, финанси, маркетинг, корпоративно управление",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулации за стратегическо управление",
+        "Казуси по корпоративни финанси",
+        "Уъркшопи за лидерско развитие",
+        "Гост-лекции от индустриални ръководители"
       ],
       "careers": [
-        "Edit this career path."
+        "Корпоративен мениджър",
+        "Стратегически консултант",
+        "Изпълнителен директор бизнес развитие",
+        "Директор операции"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по мениджмънт, икономика или сродна област",
+        "Полезен е професионалният опит"
       ]
     },
     "1:master:water-transport-logistics-wtl": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на морска логистика, интермодален транспорт, управление на веригата за доставки, пристанищна икономика и глобални търговски операции.",
+      "keyFocus": "напреднала морска логистика, интермодален транспорт, верига за доставки, пристанищна икономика",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднала логистична симулация",
+        "Анализ на пристанищна икономика",
+        "Казуси за интермодален транспорт",
+        "Индустриални партньорства за морска логистика"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши логистичен мениджър",
+        "Директор пристанищни операции",
+        "Консултант по верига за доставки",
+        "Специалист по морска търговия"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по логистика, морски изследвания или сродна област",
+        "Предимство е индустриалният опит"
       ]
     },
     "1:master:mechanical-engineering-and-technologies-met": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено машинно инженерство, обхващащо машинно проектиране, анализ чрез крайни елементи, напреднали материали, топлинни системи и производствени технологии.",
+      "keyFocus": "напреднало машинно инженерство, FEM анализ, напреднали материали, топлинни системи",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за анализ чрез крайни елементи",
+        "Изпитване на напреднали материали",
+        "Симулация на топлинни системи",
+        "Ателие за напреднало производство"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши машинен инженер",
+        "Специалист по FEM анализ",
+        "Инженер по напреднали материали",
+        "Ръководител механично проектиране"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по машинно инженерство",
+        "Очакват се силни изчислителни умения"
       ]
     },
     "1:master:design-of-renewable-energy-facilities-dref": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по проектиране, планиране и изпълнение на съоръжения за възобновяема енергия, включително слънчеви паркове, вятърни паркове, биомасови инсталации и ВЕЦ.",
+      "keyFocus": "проектиране на ВЕИ съоръжения, слънчеви паркове, вятърни паркове, биомаса, ВЕЦ",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Софтуер за проектиране на ВЕИ съоръжения",
+        "Инструменти за оценка и планиране на обекти",
+        "Симулация на енергиен добив",
+        "Казуси от реални проекти"
       ],
       "careers": [
-        "Edit this career path."
+        "Проектант на ВЕИ съоръжения",
+        "Инженер на слънчеви паркове",
+        "Плановик на вятърни паркове",
+        "Специалист по биомасови инсталации"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по инженерство",
+        "Интерес към проекти за възобновяема енергия"
       ]
     },
     "1:master:seed-production-and-plant-protection-sppp": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по семепроизводство, растителна селекция, растителна защита, управление на болести по растенията и методологии за качествено семепроизводство.",
+      "keyFocus": "семепроизводство, растителна селекция, растителна защита, управление на болести",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за анализ на семена",
+        "Изследователски парцели за растителна селекция",
+        "Полски изпитания за растителна защита",
+        "Обучение за сертифициране на качеството на семена"
       ],
       "careers": [
-        "Edit this career path."
+        "Специалист по семепроизводство",
+        "Растителен селекционер",
+        "Консултант по растителна защита",
+        "Мениджър по качество в селското стопанство"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по агрономство, биология или сродна област",
+        "Полезен е опитът в полеви изследвания"
       ]
     },
     "1:master:building-automation-systems-bas": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по интелигентни сградни технологии, системи за управление на сгради, автоматизация на ОВиК, осветителен контрол и енергийно ефективен сграден дизайн.",
+      "keyFocus": "интелигентни сгради, BMS, автоматизация на ОВиК, осветителен контрол, енергийна ефективност",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Симулационна лаборатория за BMS",
+        "Системи за управление на ОВиК",
+        "Интеграция на интелигентно осветление",
+        "Казуси за енергиен мениджмънт"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по сградна автоматизация",
+        "Специалист по BMS",
+        "Консултант по интелигентни сгради",
+        "Проектант на системи за енергиен мениджмънт"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по електротехника, машинно или автоматизационно инженерство",
+        "Интерес към интелигентни сградни технологии"
       ]
     },
     "1:master:artificial-intelligence-systems-ais": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Напреднали AI системи, обхващащи задълбочено обучение, обучение с подкрепление, обработка на естествен език, компютърно зрение и внедряване на AI.",
+      "keyFocus": "напреднал AI, задълбочено обучение, NLP, компютърно зрение, AI системи",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "GPU клъстер за задълбочено обучение",
+        "Лаборатории за NLP и компютърно зрение",
+        "Платформи за внедряване на AI модели",
+        "Индустриални изследователски AI проекти"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши AI инженер",
+        "Специалист по задълбочено обучение",
+        "NLP инженер",
+        "Изследовател по компютърно зрение"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по компютърни науки, AI или сродна област",
+        "Очакват се силни умения по математика и програмиране"
       ]
     },
     "1:master:software-engineering-se": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Напреднало софтуерно инженерство, обхващащо софтуерна архитектура, дизайн шаблони, DevOps, облачно-нативна разработка и управление на софтуерни проекти.",
+      "keyFocus": "напреднало софтуерно инженерство, архитектура, DevOps, облачно-нативна, управление на проекти",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднала лаборатория за разработка",
+        "Платформи за облачно-нативна разработка",
+        "DevOps CI/CD тръбопроводи",
+        "Обучение по Agile управление на проекти"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши софтуерен инженер",
+        "Софтуерен архитект",
+        "DevOps инженер",
+        "Технически ръководител проекти"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по софтуерно инженерство или компютърни науки",
+        "Препоръчва се професионален опит в софтуерната разработка"
       ]
     },
     "1:master:social-management-sm": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на социален мениджмънт, обхващащо анализ на социална политика, развитие на общности, управление на НПО и оценка на социални проекти.",
+      "keyFocus": "напреднал социален мениджмънт, социална политика, развитие на общности, управление на НПО",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Изследователска лаборатория за социална политика",
+        "Теренни проекти за развитие на общности",
+        "Симулации за управление на НПО",
+        "Обучение за оценка на социално въздействие"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши мениджър на социални услуги",
+        "Директор на НПО",
+        "Съветник по социална политика",
+        "Мениджър развитие на общности"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по социални науки или сродна област",
+        "Полезен е опит в социалната работа или общността"
       ]
     },
     "1:master:social-work-with-individuals-with-deviant-behavior-swidb": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по социална работа с лица с девиантно поведение, методи за рехабилитация, социална работа в наказателното правосъдие и поведенческа интервенция.",
+      "keyFocus": "социална работа, девиантно поведение, рехабилитация, поведенческа интервенция, наказателно правосъдие",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Обучение за поведенческа интервенция",
+        "Казуси за рехабилитационни програми",
+        "Стажове в наказателното правосъдие",
+        "Семинари за кризисна интервенция"
       ],
       "careers": [
-        "Edit this career path."
+        "Социален работник (поправителни служби)",
+        "Специалист по поведенческа интервенция",
+        "Консултант по рехабилитация",
+        "Служител в пробационни служби"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по социална работа, психология или сродна област",
+        "Силни междуличностни умения и емоционална устойчивост"
       ]
     },
     "1:master:social-work-with-children-swc": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по социална работа за закрила на децата, детска защита, системи за семейна подкрепа, детско развитие и подходи, основани на правата на детето.",
+      "keyFocus": "закрила на децата, детска защита, семейна подкрепа, детско развитие",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Казуси за закрила на децата",
+        "Проектиране на програми за семейна подкрепа",
+        "Инструменти за оценка на детското развитие",
+        "Теренни стажове в агенции за закрила на децата"
       ],
       "careers": [
-        "Edit this career path."
+        "Социален работник по закрила на децата",
+        "Служител по закрила на децата",
+        "Специалист по семейна подкрепа",
+        "Застъпник за правата на децата"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по социална работа или сродна област",
+        "Полезен е опитът с работа с деца"
       ]
     },
     "1:master:social-entrepreneurship-se": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по развитие на социални предприятия, импакт инвестиране, социални бизнес модели, управление на НПО и устойчиви социални предприятия.",
+      "keyFocus": "социално предприятие, импакт инвестиране, социален бизнес, управление на НПО",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Достъп до инкубатор за социални предприятия",
+        "Инструменти за измерване на въздействието",
+        "Конкурси за социални бизнес планове",
+        "Менторство от социални предприемачи"
       ],
       "careers": [
-        "Edit this career path."
+        "Социален предприемач",
+        "Аналитик по импакт инвестиции",
+        "Изпълнителен директор на НПО",
+        "Консултант по социални иновации"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Приема се бакалавърска степен от всяка област",
+        "Страст за социално въздействие и развитие на общности"
       ]
     },
     "1:master:modern-systems-in-agriculture-msa": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по прецизно земеделие, умни фермерски системи, земеделски IoT, автоматизирани машини и управление на култури, базирано на данни.",
+      "keyFocus": "agri-tech, прецизно земеделие, умно земеделие, IoT, автоматизация",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за прецизно земеделие с дронове",
+        "Сензорни мрежи за почва",
+        "Автоматизирани напоителни системи",
+        "Софтуерни платформи за управление на ферми"
       ],
       "careers": [
-        "Edit this career path."
+        "Специалист по прецизно земеделие",
+        "Agri-Tech консултант",
+        "Инженер по умно земеделие",
+        "Аналитик на земеделски данни"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по земеделие, инженерство или ИТ",
+        "Интерес към иновации в земеделските технологии"
       ]
     },
     "1:master:modern-technologies-in-agriculture-mta": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по модерни земеделски технологии, включително биотехнологии, хидропоника, вертикално земеделие, оранжерийна автоматизация и устойчиво производство.",
+      "keyFocus": "земеделска технология, биотехнологии, хидропоника, вертикално земеделие, оранжерии",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за хидропоника и аквапоника",
+        "Системи за оранжерийна автоматизация",
+        "Изследователски съоръжения за биотехнологии",
+        "Полски опити за устойчиво земеделие"
       ],
       "careers": [
-        "Edit this career path."
+        "Специалист по земеделски технологии",
+        "Изследовател по биотехнологии",
+        "Оперативен мениджър на оранжерии",
+        "Инженер по вертикално земеделие"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по земеделие, биология или сродна област",
+        "Интерес към съвременни земеделски технологии"
       ]
     },
     "1:master:telecommunications-and-mobile-technologies-tmt": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по далекосъобщителни системи, 5G мрежи, мобилни технологии, безжични комуникации и управление на телекомуникационна инфраструктура.",
+      "keyFocus": "далекосъобщения, 5G, мобилни технологии, безжични комуникации",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "5G тестова платформа и симулационна лаборатория",
+        "Инструменти за планиране на мобилни мрежи",
+        "Оборудване за безжични комуникации",
+        "Казуси за телекомуникационна инфраструктура"
       ],
       "careers": [
-        "Edit this career path."
+        "Далекосъобщителен инженер",
+        "Специалист по 5G мрежи",
+        "Консултант по мобилни технологии",
+        "Проектант на безжични системи"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по далекосъобщения, ИТ или електроника",
+        "Очакват се знания за комуникационни протоколи"
       ]
     },
     "1:master:materials-processing-equipment-and-technologies-mpet": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по технологии за обработка на материали, проектиране на промишлено оборудване, производствени процеси, контрол на качеството и изпитване на материали.",
+      "keyFocus": "обработка на материали, промишлено оборудване, производство, изпитване на материали",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Festo"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за обработка на материали",
+        "Тестов стенд за промишлено оборудване",
+        "Симулация на производствени процеси",
+        "Оборудване за неразрушителен контрол"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по обработка на материали",
+        "Проектант на производствено оборудване",
+        "Мениджър контрол на качеството",
+        "Специалист по промишлени процеси"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по машинно или материалознание",
+        "Полезен е производствен опит"
       ]
     },
     "1:master:technical-and-insurance-expertise-in-transport-tiet": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по транспортна техническа експертиза, оценка на щети по превозни средства, оценка на застрахователни претенции, разследване на произшествия и управление на транспортния риск.",
+      "keyFocus": "транспортна експертиза, застрахователни претенции, разследване на произшествия, управление на риска",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "National Instruments"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за оценка на щети по превозни средства",
+        "Инструменти за реконструкция на произшествия",
+        "Семинари със застрахователни казуси",
+        "Методи за анализ на транспортния риск"
       ],
       "careers": [
-        "Edit this career path."
+        "Транспортен технически експерт",
+        "Специалист по застрахователни претенции",
+        "Разследващ произшествия",
+        "Консултант по транспортен риск"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по транспортно инженерство или сродна област",
+        "Полезни са познания за застрахователни принципи"
       ]
     },
     "1:master:heat-engineering-and-renewable-energy-sources-heres": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на топлотехника, комбинирана с възобновяема енергия, обхващащо топлопренос, топлинни системи и технологии за възобновяемо отопление.",
+      "keyFocus": "топлотехника, възобновяема енергия, топлинни системи, ОВиК, енергийна ефективност",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Напреднала топлотехническа лаборатория",
+        "Проектиране на системи за възобновяемо отопление",
+        "Обучение за енергиен одит",
+        "Казуси за комбинирано производство на топлина и енергия"
       ],
       "careers": [
-        "Edit this career path."
+        "Инженер по топлинни системи",
+        "Специалист по възобновяемо отопление",
+        "Консултант по енергийна ефективност",
+        "Проектант на ТЕЦ инсталации"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по машинно или топлотехническо инженерство",
+        "Очаква се основа по термодинамика"
       ]
     },
     "1:master:transport-equipment-and-technologies-tet": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Задълбочено изучаване на дизайн на транспортно оборудване, превозни средства, транспортна инфраструктура и интелигентни транспортни системи.",
+      "keyFocus": "напреднало транспортно оборудване, превозни средства, инфраструктура, ИТС",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за симулация на динамика на превозни средства",
+        "Инструменти за проектиране на транспортна инфраструктура",
+        "Проекти за внедряване на ИТС",
+        "Индустриални партньорства за транспортни технологии"
       ],
       "careers": [
-        "Edit this career path."
+        "Старши транспортен инженер",
+        "Специалист по превозни средства",
+        "Проектант на транспортна инфраструктура",
+        "Ръководител ИТС проекти"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по транспортно или машинно инженерство",
+        "Интерес към иновации в транспортните технологии"
       ]
     },
     "1:master:chemical-engineering-ce": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Обучава по химично инженерство, проектиране на реактори, процеси на разделяне, процесен контрол и безопасност на химически инсталации.",
+      "keyFocus": "химично инженерство, проектиране на реактори, разделяне, процесен контрол, безопасност",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens",
+        "ABB",
+        "Schneider Electric"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Лаборатория за симулация на химически процеси",
+        "Софтуер за проектиране на реактори",
+        "Оборудване за процеси на разделяне",
+        "Обучение за управление на процесната безопасност"
       ],
       "careers": [
-        "Edit this career path."
+        "Химичен инженер",
+        "Инженер по процесен дизайн",
+        "Специалист по безопасност на инсталациите",
+        "Производствен мениджър"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по химично инженерство",
+        "Очаква се солидна основа по химия и математика"
       ]
     },
     "1:master:siemens-plc-control-technologies-siemens": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "Специализирана програма, фокусирана върху Siemens PLC програмиране, TIA Portal, SCADA системи, индустриални комуникационни протоколи и управление на автоматизационни проекти.",
+      "keyFocus": "Siemens PLC, TIA Portal, SCADA, индустриална автоматизация, управляващи технологии",
+      "duration": "Редовна (1.5 години)",
+      "partners": [
+        "Siemens"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Siemens TIA Portal сертифицирана лаборатория",
+        "PLC работни станции",
+        "Интеграция на SCADA системи",
+        "Индустриални комуникационни мрежи",
+        "Siemens-сертифицирани обучителни модули"
       ],
       "careers": [
-        "Edit this career path."
+        "PLC програмист",
+        "Инженер по автоматизация",
+        "SCADA системен инженер",
+        "Специалист по индустриално управление",
+        "Siemens технологичен консултант"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Изисква се бакалавърска степен по автоматизация, електротехника или управляващо инженерство",
+        "Препоръчват се основни познания по PLC програмиране"
       ]
     },
     "2:bachelor:medicine": {
@@ -1958,93 +3143,93 @@
       ]
     },
     "5:bachelor:business-administration": {
-      "overview": "Бакалавърската програма по Бизнес администрация във ВУФ развива практическите управленски и бизнес умения за международна кариера.",
-      "keyFocus": "Управление, предприемачество и приложна бизнес практика",
-      "duration": "Дневна форма (3-4 години в зависимост от програмата)",
+      "overview": "�������������� �������� �� ������ ������������� ��� ��� ������� ������������� ����������� � ������ ������ �� ������������ �������.",
+      "keyFocus": "����������, ���������������� � �������� ������ ��������",
+      "duration": "������ ����� (3-4 ������ � ���������� �� ����������)",
       "partners": [
-        "Партньори от индустрията",
-        "Erasmus+ партньори"
+        "��������� �� �����������",
+        "Erasmus+ ���������"
       ],
       "highlights": [
-        "Практическо обучение",
-        "Стажове и проекти с бизнеса",
-        "Възможности за международни обменни програми"
+        "����������� ��������",
+        "������� � ������� � �������",
+        "����������� �� ������������ ������� ��������"
       ],
       "careers": [
-        "Бизнес мениджър",
-        "Предприемач",
-        "Консултант",
-        "Специалист операции"
+        "������ ��������",
+        "�����������",
+        "����������",
+        "���������� ��������"
       ],
       "admissionNotes": [
-        "Проверете страницата за прием на университета за изисквания",
-        "Налични са английски програми за международни кандидати"
+        "��������� ���������� �� ����� �� ������������ �� ����������",
+        "������� �� ��������� �������� �� ������������ ���������"
       ]
     },
     "5:bachelor:international-relations": {
-      "overview": "Бакалавър по Международни отношения, покрива дипломация, анализ на политики и международни организации.",
-      "keyFocus": "Дипломация, анализ на политики и глобални въпроси",
-      "duration": "Дневна форма (3 години)",
+      "overview": "��������� �� ������������ ���������, ������� ����������, ������ �� �������� � ������������ �����������.",
+      "keyFocus": "����������, ������ �� �������� � �������� �������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Регионални институти за политики",
-        "Erasmus+ партньори"
+        "���������� ��������� �� ��������",
+        "Erasmus+ ���������"
       ],
       "highlights": [
-        "Модули фокусирани върху политика",
-        "Възможности за стажове в НПО и публични органи"
+        "������ ���������� ����� ��������",
+        "����������� �� ������� � ��� � �������� ������"
       ],
       "careers": [
-        "Аналитик политика",
-        "Дипломат",
-        "Служител в международна НПО"
+        "�������� ��������",
+        "��������",
+        "�������� � ������������ ���"
       ],
       "admissionNotes": [
-        "Добри писмени и изследователски умения са полезни",
-        "Проверете изискванията на университета"
+        "����� ������� � ��������������� ������ �� �������",
+        "��������� ������������ �� ������������"
       ]
     },
     "5:bachelor:public-administration": {
-      "overview": "Бакалавър по държавна администрация подготвя студенти за работa в публичния сектор и управление на политики.",
-      "keyFocus": "Публична политика, управление и администрация",
-      "duration": "Дневна форма (3 години)",
+      "overview": "��������� �� �������� ������������� �������� �������� �� �����a � ��������� ������ � ���������� �� ��������.",
+      "keyFocus": "�������� ��������, ���������� � �������������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Местни власти",
-        "Публични институции"
+        "������ ������",
+        "�������� ����������"
       ],
       "highlights": [
-        "Прилагане на управленски практики",
-        "Проекти с публични организации"
+        "��������� �� ����������� ��������",
+        "������� � �������� �����������"
       ],
       "careers": [
-        "Администратор в публичния сектор",
-        "Служител по политики",
-        "Специалист в администрацията"
+        "������������� � ��������� ������",
+        "�������� �� ��������",
+        "���������� � ���������������"
       ],
       "admissionNotes": [
-        "Стажовете са силно ценени",
-        "Проверете езикови и специфични изисквания"
+        "��������� �� ����� ������",
+        "��������� ������� � ���������� ����������"
       ]
     },
     "5:bachelor:european-studies": {
-      "overview": "Европейските изследвания се фокусират върху институциите, правото и политиките на ЕС и тяхната роля в света.",
-      "keyFocus": "Институции на ЕС, право и сравнителна политика",
-      "duration": "Дневна форма (3 години)",
+      "overview": "������������ ����������� �� ��������� ����� ������������, ������� � ���������� �� �� � ������� ���� � �����.",
+      "keyFocus": "���������� �� ��, ����� � ����������� ��������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Европейски изследователски центрове",
-        "Erasmus+ партньори"
+        "���������� ��������������� ��������",
+        "Erasmus+ ���������"
       ],
       "highlights": [
-        "Модули фокусирани върху ЕС",
-        "Възможности за обмен в европейски университети"
+        "������ ���������� ����� ��",
+        "����������� �� ����� � ���������� ������������"
       ],
       "careers": [
-        "Съветник по политики в ЕС",
-        "Изследовател",
-        "Специалист по международни отношения"
+        "�������� �� �������� � ��",
+        "������������",
+        "���������� �� ������������ ���������"
       ],
       "admissionNotes": [
-        "Езиковите умения са предимство",
-        "Проверете специфичните изисквания на програмата"
+        "��������� ������ �� ����������",
+        "��������� ������������ ���������� �� ����������"
       ]
     },
     "5:master:business-administration": {
@@ -2108,91 +3293,91 @@
       ]
     },
     "6:bachelor:tourism-management": {
-      "overview": "Бакалавър по Туризъм и мениджмънт се фокусира върху операциите в туризма, стратегия и маркетинг на дестинации.",
-      "keyFocus": "Операции в туризма, управление на дестинации и дизайн на услуги",
-      "duration": "Дневна форма (3 години)",
+      "overview": "��������� �� ������� � ���������� �� �������� ����� ���������� � �������, ��������� � ��������� �� ����������.",
+      "keyFocus": "�������� � �������, ���������� �� ���������� � ������ �� ������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Партньори от хотелиерството",
-        "Регионални туристически бордове"
+        "��������� �� ��������������",
+        "���������� ������������ �������"
       ],
       "highlights": [
-        "Стажове в индустрията",
-        "Практически семинари и казуси"
+        "������� � �����������",
+        "����������� �������� � ������"
       ],
       "careers": [
-        "Мениджър туризъм",
-        "Маркетинг специалист дестинации",
-        "Координатор операции"
+        "�������� �������",
+        "��������� ���������� ����������",
+        "����������� ��������"
       ],
       "admissionNotes": [
-        "Работният опит и езиковите умения са предимство",
-        "Проверете конкретните изисквания за прием"
+        "��������� ���� � ��������� ������ �� ����������",
+        "��������� ����������� ���������� �� �����"
       ]
     },
     "6:bachelor:hotel-management": {
-      "overview": "Хотелският мениджмънт обучава студенти по операции, обслужване и оптимизация на приходи.",
-      "keyFocus": "Операции в хотелиерството, отлични услуги и управление",
-      "duration": "Дневна форма (3 години)",
+      "overview": "���������� ���������� ������� �������� �� ��������, ���������� � ����������� �� �������.",
+      "keyFocus": "�������� � ��������������, ������� ������ � ����������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Хотелски вериги",
-        "Центрове за обучение в хотелиерството"
+        "�������� ������",
+        "�������� �� �������� � ��������������"
       ],
       "highlights": [
-        "Практическо обучение в хотели",
-        "Стажове при партньори от индустрията"
+        "����������� �������� � ������",
+        "������� ��� ��������� �� �����������"
       ],
       "careers": [
-        "Хотелски мениджър",
-        "Ръководител рецепция",
-        "Мениджър приходи"
+        "�������� ��������",
+        "����������� ��������",
+        "�������� �������"
       ],
       "admissionNotes": [
-        "Практическото обучение е част от програмата",
-        "Проверете езиковите изисквания за международни потоци"
+        "������������� �������� � ���� �� ����������",
+        "��������� ��������� ���������� �� ������������ ������"
       ]
     },
     "6:bachelor:event-management": {
-      "overview": "Мениджмънт на събития осигурява умения за планиране, логистика и промоция на събития и конференции.",
-      "keyFocus": "Планиране на събития, логистика и маркетинг",
-      "duration": "Дневна форма (3 години)",
+      "overview": "���������� �� ������� ��������� ������ �� ���������, ��������� � �������� �� ������� � �����������.",
+      "keyFocus": "��������� �� �������, ��������� � ���������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Агенции за събития",
-        "Организатори на конференции"
+        "������� �� �������",
+        "������������ �� �����������"
       ],
       "highlights": [
-        "Проектно реализиране на събития",
-        "Опит в реални събития"
+        "�������� ����������� �� �������",
+        "���� � ������ �������"
       ],
       "careers": [
-        "Мениджър събития",
-        "Координатор конференции",
-        "Продукционен мениджър"
+        "�������� �������",
+        "����������� �����������",
+        "������������ ��������"
       ],
       "admissionNotes": [
-        "Портфолио от събитийна работа или свързан опит помага",
-        "Проверете изискванията за стаж"
+        "��������� �� ��������� ������ ��� ������� ���� ������",
+        "��������� ������������ �� ����"
       ]
     },
     "6:bachelor:digital-marketing": {
-      "overview": "Дигиталният маркетинг обучава студенти в онлайн маркетинг, аналитика и управление на кампании.",
-      "keyFocus": "Дигитални канали, аналитика и стратегия за съдържание",
-      "duration": "Дневна форма (3 години)",
+      "overview": "����������� ��������� ������� �������� � ������ ���������, ��������� � ���������� �� ��������.",
+      "keyFocus": "��������� ������, ��������� � ��������� �� ����������",
+      "duration": "������ ����� (3 ������)",
       "partners": [
-        "Дигитални агенции",
-        "Партньори по маркетинг технологии"
+        "��������� �������",
+        "��������� �� ��������� ����������"
       ],
       "highlights": [
-        "Практически кампании",
-        "Обучение по аналитични инструменти"
+        "����������� ��������",
+        "�������� �� ���������� �����������"
       ],
       "careers": [
-        "Дигитален маркетолог",
-        "SEO специалист",
-        "Performance маркетолог"
+        "��������� ����������",
+        "SEO ����������",
+        "Performance ����������"
       ],
       "admissionNotes": [
-        "Предишен интерес към маркетинга или портфолио е полезно",
-        "Проверете предпоставките за курса"
+        "�������� ������� ��� ���������� ��� ��������� � �������",
+        "��������� �������������� �� �����"
       ]
     },
     "6:master:tourism-management": {
@@ -2256,843 +3441,843 @@
       ]
     },
     "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "Редактирай този преглед за Hotel and Restaurant Management.",
-      "keyFocus": "Редактирай ключов фокус за Hotel and Restaurant Management.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Hotel and Restaurant Management.",
+      "keyFocus": "���������� ������ ����� �� Hotel and Restaurant Management.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
-    "3:bachelor:tourism-and-entertainemnt-buisness-management": {
-      "overview": "Редактирай този преглед за Tourism and Entertainemnt Buisness Management.",
-      "keyFocus": "Редактирай ключов фокус за Tourism and Entertainemnt Buisness Management.",
-      "duration": "Дневна (3-4 години)",
+    "3:bachelor:tourism-and-entertainment-business-management": {
+      "overview": "���������� ���� ������� �� Tourism and Entertainment Business Management.",
+      "keyFocus": "���������� ������ ����� �� Tourism and Entertainment Business Management.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
-    "3:bachelor:buisness-and-management-in-english": {
-      "overview": "Редактирай този преглед за Buisness and Management - In English.",
-      "keyFocus": "Редактирай ключов фокус за Buisness and Management - In English.",
-      "duration": "Дневна (3-4 години)",
+    "3:bachelor:business-and-management-in-english": {
+      "overview": "���������� ���� ������� �� Business and Management - In English.",
+      "keyFocus": "���������� ������ ����� �� Business and Management - In English.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
-    "3:bachelor:buisness-economics": {
-      "overview": "Редактирай този преглед за Buisness Economics.",
-      "keyFocus": "Редактирай ключов фокус за Buisness Economics.",
-      "duration": "Дневна (3-4 години)",
+    "3:bachelor:business-economics": {
+      "overview": "���������� ���� ������� �� Business Economics.",
+      "keyFocus": "���������� ������ ����� �� Business Economics.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:economics-and-trade": {
-      "overview": "Редактирай този преглед за Economics and Trade.",
-      "keyFocus": "Редактирай ключов фокус за Economics and Trade.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Economics and Trade.",
+      "keyFocus": "���������� ������ ����� �� Economics and Trade.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
-    "3:bachelor:construction-buisness-and-entrepreneurship": {
-      "overview": "Редактирай този преглед за Construction Buisness and Entrepreneurship.",
-      "keyFocus": "Редактирай ключов фокус за Construction Buisness and Entrepreneurship.",
-      "duration": "Дневна (3-4 години)",
+    "3:bachelor:construction-business-and-entrepreneurship": {
+      "overview": "���������� ���� ������� �� Construction Business and Entrepreneurship.",
+      "keyFocus": "���������� ������ ����� �� Construction Business and Entrepreneurship.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:real-estate-and-investments": {
-      "overview": "Редактирай този преглед за Real Estate and Investments.",
-      "keyFocus": "Редактирай ключов фокус за Real Estate and Investments.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Real Estate and Investments.",
+      "keyFocus": "���������� ������ ����� �� Real Estate and Investments.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
-    "3:bachelor:industrial-buisness-and-entrepreneurship": {
-      "overview": "Редактирай този преглед за Industrial Buisness and Entrepreneurship.",
-      "keyFocus": "Редактирай ключов фокус за Industrial Buisness and Entrepreneurship.",
-      "duration": "Дневна (3-4 години)",
+    "3:bachelor:industrial-business-and-entrepreneurship": {
+      "overview": "���������� ���� ������� �� Industrial Business and Entrepreneurship.",
+      "keyFocus": "���������� ������ ����� �� Industrial Business and Entrepreneurship.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:logistics": {
-      "overview": "Редактирай този преглед за Logistics.",
-      "keyFocus": "Редактирай ключов фокус за Logistics.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Logistics.",
+      "keyFocus": "���������� ������ ����� �� Logistics.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
-    "3:bachelor:agricultural-buisnesses": {
-      "overview": "Редактирай този преглед за Agricultural Buisnesses.",
-      "keyFocus": "Редактирай ключов фокус за Agricultural Buisnesses.",
-      "duration": "Дневна (3-4 години)",
+    "3:bachelor:agricultural-businesses": {
+      "overview": "���������� ���� ������� �� Agricultural Businesses.",
+      "keyFocus": "���������� ������ ����� �� Agricultural Businesses.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:commodities-science-and-customs-activity": {
-      "overview": "Редактирай този преглед за Commodities Science and Customs Activity.",
-      "keyFocus": "Редактирай ключов фокус за Commodities Science and Customs Activity.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Commodities Science and Customs Activity.",
+      "keyFocus": "���������� ������ ����� �� Commodities Science and Customs Activity.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:business-digital-technologies": {
-      "overview": "Редактирай този преглед за Business Digital Technologies.",
-      "keyFocus": "Редактирай ключов фокус за Business Digital Technologies.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Business Digital Technologies.",
+      "keyFocus": "���������� ������ ����� �� Business Digital Technologies.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "Редактирай този преглед за Informatics and Computer Sciences.",
-      "keyFocus": "Редактирай ключов фокус за Informatics and Computer Sciences.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Informatics and Computer Sciences.",
+      "keyFocus": "���������� ������ ����� �� Informatics and Computer Sciences.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:mobile-and-web-technologies": {
-      "overview": "Редактирай този преглед за Mobile and Web Technologies.",
-      "keyFocus": "Редактирай ключов фокус за Mobile and Web Technologies.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Mobile and Web Technologies.",
+      "keyFocus": "���������� ������ ����� �� Mobile and Web Technologies.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:data-science": {
-      "overview": "Редактирай този преглед за Data Science.",
-      "keyFocus": "Редактирай ключов фокус за Data Science.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Data Science.",
+      "keyFocus": "���������� ������ ����� �� Data Science.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:international-business-in-english": {
-      "overview": "Редактирай този преглед за International Business - In English.",
-      "keyFocus": "Редактирай ключов фокус за International Business - In English.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� International Business - In English.",
+      "keyFocus": "���������� ������ ����� �� International Business - In English.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:maritime-business-and-international-trade-in-english": {
-      "overview": "Редактирай този преглед за Maritime business and international trade - In English.",
-      "keyFocus": "Редактирай ключов фокус за Maritime business and international trade - In English.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Maritime business and international trade - In English.",
+      "keyFocus": "���������� ������ ����� �� Maritime business and international trade - In English.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:international-tourism-in-russian": {
-      "overview": "Редактирай този преглед за International Tourism - In Russian.",
-      "keyFocus": "Редактирай ключов фокус за International Tourism - In Russian.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� International Tourism - In Russian.",
+      "keyFocus": "���������� ������ ����� �� International Tourism - In Russian.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:international-economic-relations": {
-      "overview": "Редактирай този преглед за International Economic Relations.",
-      "keyFocus": "Редактирай ключов фокус за International Economic Relations.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� International Economic Relations.",
+      "keyFocus": "���������� ������ ����� �� International Economic Relations.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:management": {
-      "overview": "Редактирай този преглед за Management.",
-      "keyFocus": "Редактирай ключов фокус за Management.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Management.",
+      "keyFocus": "���������� ������ ����� �� Management.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:public-administration": {
-      "overview": "Редактирай този преглед за Public Administration.",
-      "keyFocus": "Редактирай ключов фокус за Public Administration.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Public Administration.",
+      "keyFocus": "���������� ������ ����� �� Public Administration.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:tourism": {
-      "overview": "Редактирай този преглед за Tourism.",
-      "keyFocus": "Редактирай ключов фокус за Tourism.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Tourism.",
+      "keyFocus": "���������� ������ ����� �� Tourism.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:judicial-administration": {
-      "overview": "Редактирай този преглед за Judicial Administration.",
-      "keyFocus": "Редактирай ключов фокус за Judicial Administration.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Judicial Administration.",
+      "keyFocus": "���������� ������ ����� �� Judicial Administration.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:digital-media-and-pr": {
-      "overview": "Редактирай този преглед за Digital Media and PR.",
-      "keyFocus": "Редактирай ключов фокус за Digital Media and PR.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Digital Media and PR.",
+      "keyFocus": "���������� ������ ����� �� Digital Media and PR.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:accounting-in-english": {
-      "overview": "Редактирай този преглед за Accounting - In English.",
-      "keyFocus": "Редактирай ключов фокус за Accounting - In English.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Accounting - In English.",
+      "keyFocus": "���������� ������ ����� �� Accounting - In English.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:accounting-and-audit": {
-      "overview": "Редактирай този преглед за Accounting and Audit.",
-      "keyFocus": "Редактирай ключов фокус за Accounting and Audit.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Accounting and Audit.",
+      "keyFocus": "���������� ������ ����� �� Accounting and Audit.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:accounting-and-finance": {
-      "overview": "Редактирай този преглед за Accounting and Finance.",
-      "keyFocus": "Редактирай ключов фокус за Accounting and Finance.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Accounting and Finance.",
+      "keyFocus": "���������� ������ ����� �� Accounting and Finance.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:bachelor:banking-and-insurance": {
-      "overview": "Редактирай този преглед за Banking and Insurance.",
-      "keyFocus": "Редактирай ключов фокус за Banking and Insurance.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Banking and Insurance.",
+      "keyFocus": "���������� ������ ����� �� Banking and Insurance.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:intercultural-business-in-english": {
-      "overview": "Редактирай този преглед за Intercultural Business - In English.",
-      "keyFocus": "Редактирай ключов фокус за Intercultural Business - In English.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Intercultural Business - In English.",
+      "keyFocus": "���������� ������ ����� �� Intercultural Business - In English.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:international-business-and-management-in-english": {
-      "overview": "Редактирай този преглед за International Business and Management - In English.",
-      "keyFocus": "Редактирай ключов фокус за International Business and Management - In English.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� International Business and Management - In English.",
+      "keyFocus": "���������� ������ ����� �� International Business and Management - In English.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:master-of-business-administration-in-english": {
-      "overview": "Редактирай този преглед за Master of business administration - In English.",
-      "keyFocus": "Редактирай ключов фокус за Master of business administration - In English.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Master of business administration - In English.",
+      "keyFocus": "���������� ������ ����� �� Master of business administration - In English.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:computer-science-in-english": {
-      "overview": "Редактирай този преглед за Computer Science - In English.",
-      "keyFocus": "Редактирай ключов фокус за Computer Science - In English.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Computer Science - In English.",
+      "keyFocus": "���������� ������ ����� �� Computer Science - In English.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:accounting-and-auditing-control": {
-      "overview": "Редактирай този преглед за Accounting and Auditing/Control.",
-      "keyFocus": "Редактирай ключов фокус за Accounting and Auditing/Control.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Accounting and Auditing/Control.",
+      "keyFocus": "���������� ������ ����� �� Accounting and Auditing/Control.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:bank-management": {
-      "overview": "Редактирай този преглед за Bank Management.",
-      "keyFocus": "Редактирай ключов фокус за Bank Management.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Bank Management.",
+      "keyFocus": "���������� ������ ����� �� Bank Management.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:finance-and-innovations": {
-      "overview": "Редактирай този преглед за Finance and Innovations.",
-      "keyFocus": "Редактирай ключов фокус за Finance and Innovations.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Finance and Innovations.",
+      "keyFocus": "���������� ������ ����� �� Finance and Innovations.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:corporate-business-and-governance-management": {
-      "overview": "Редактирай този преглед за Corporate Business and Governance/Management.",
-      "keyFocus": "Редактирай ключов фокус за Corporate Business and Governance/Management.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Corporate Business and Governance/Management.",
+      "keyFocus": "���������� ������ ����� �� Corporate Business and Governance/Management.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:logistics-management": {
-      "overview": "Редактирай този преглед за Logistics Management.",
-      "keyFocus": "Редактирай ключов фокус за Logistics Management.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Logistics Management.",
+      "keyFocus": "���������� ������ ����� �� Logistics Management.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:global-commercial-business": {
-      "overview": "Редактирай този преглед за Global Commercial Business.",
-      "keyFocus": "Редактирай ключов фокус за Global Commercial Business.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Global Commercial Business.",
+      "keyFocus": "���������� ������ ����� �� Global Commercial Business.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:civil-engineering-entrepreneurship-and-real-estate": {
-      "overview": "Редактирай този преглед за Civil Engineering Entrepreneurship and Real Estate.",
-      "keyFocus": "Редактирай ключов фокус за Civil Engineering Entrepreneurship and Real Estate.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Civil Engineering Entrepreneurship and Real Estate.",
+      "keyFocus": "���������� ������ ����� �� Civil Engineering Entrepreneurship and Real Estate.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:eco-economics": {
-      "overview": "Редактирай този преглед за Eco-economics.",
-      "keyFocus": "Редактирай ключов фокус за Eco-economics.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Eco-economics.",
+      "keyFocus": "���������� ������ ����� �� Eco-economics.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:agricultural-business": {
-      "overview": "Редактирай този преглед за Agricultural Business.",
-      "keyFocus": "Редактирай ключов фокус за Agricultural Business.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Agricultural Business.",
+      "keyFocus": "���������� ������ ����� �� Agricultural Business.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:quality-and-expert-examination-of-commodities": {
-      "overview": "Редактирай този преглед за Quality and Expert Examination of Commodities.",
-      "keyFocus": "Редактирай ключов фокус за Quality and Expert Examination of Commodities.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Quality and Expert Examination of Commodities.",
+      "keyFocus": "���������� ������ ����� �� Quality and Expert Examination of Commodities.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:sales-management-and-merchandising": {
-      "overview": "Редактирай този преглед за Sales Management and Merchandising.",
-      "keyFocus": "Редактирай ключов фокус за Sales Management and Merchandising.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Sales Management and Merchandising.",
+      "keyFocus": "���������� ������ ����� �� Sales Management and Merchandising.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:advertising-and-media-communications": {
-      "overview": "Редактирай този преглед за Advertising and Media Communications.",
-      "keyFocus": "Редактирай ключов фокус за Advertising and Media Communications.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Advertising and Media Communications.",
+      "keyFocus": "���������� ������ ����� �� Advertising and Media Communications.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:management-of-organizations": {
-      "overview": "Редактирай този преглед за Management of Organizations.",
-      "keyFocus": "Редактирай ключов фокус за Management of Organizations.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Management of Organizations.",
+      "keyFocus": "���������� ������ ����� �� Management of Organizations.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:human-resources-management": {
-      "overview": "Редактирай този преглед за Human Resources Management.",
-      "keyFocus": "Редактирай ключов фокус за Human Resources Management.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Human Resources Management.",
+      "keyFocus": "���������� ������ ����� �� Human Resources Management.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:public-management-and-administrative-power": {
-      "overview": "Редактирай този преглед за Public Management and Administrative Power.",
-      "keyFocus": "Редактирай ключов фокус за Public Management and Administrative Power.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Public Management and Administrative Power.",
+      "keyFocus": "���������� ������ ����� �� Public Management and Administrative Power.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:international-tourist-business": {
-      "overview": "Редактирай този преглед за International Tourist Business.",
-      "keyFocus": "Редактирай ключов фокус за International Tourist Business.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� International Tourist Business.",
+      "keyFocus": "���������� ������ ����� �� International Tourist Business.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:business-consulting": {
-      "overview": "Редактирай този преглед за Business Consulting.",
-      "keyFocus": "Редактирай ключов фокус за Business Consulting.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Business Consulting.",
+      "keyFocus": "���������� ������ ����� �� Business Consulting.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:project-management": {
-      "overview": "Редактирай този преглед за Project Management.",
-      "keyFocus": "Редактирай ключов фокус за Project Management.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Project Management.",
+      "keyFocus": "���������� ������ ����� �� Project Management.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:marketing-and-brand-management": {
-      "overview": "Редактирай този преглед за Marketing And Brand Management.",
-      "keyFocus": "Редактирай ключов фокус за Marketing And Brand Management.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Marketing And Brand Management.",
+      "keyFocus": "���������� ������ ����� �� Marketing And Brand Management.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "3:master:mobile-and-web-technologies": {
-      "overview": "Редактирай този преглед за Mobile and web technologies.",
-      "keyFocus": "Редактирай ключов фокус за Mobile and web technologies.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Mobile and web technologies.",
+      "keyFocus": "���������� ������ ����� �� Mobile and web technologies.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "4:bachelor:navigation-ship-maneuvering": {
-      "overview": "Редактирай този преглед за Navigation (Ship Maneuvering).",
-      "keyFocus": "Редактирай ключов фокус за Navigation (Ship Maneuvering).",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Navigation (Ship Maneuvering).",
+      "keyFocus": "���������� ������ ����� �� Navigation (Ship Maneuvering).",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "5:bachelor:international-business": {
-      "overview": "Редактирай този преглед за International Business.",
-      "keyFocus": "Редактирай ключов фокус за International Business.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� International Business.",
+      "keyFocus": "���������� ������ ����� �� International Business.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "6:bachelor:software-systems-and-technologies": {
-      "overview": "Редактирай този преглед за Software Systems and Technologies.",
-      "keyFocus": "Редактирай ключов фокус за Software Systems and Technologies.",
-      "duration": "Дневна (3-4 години)",
+      "overview": "���������� ���� ������� �� Software Systems and Technologies.",
+      "keyFocus": "���������� ������ ����� �� Software Systems and Technologies.",
+      "duration": "������ (3-4 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     },
     "6:master:master-of-business-administration": {
-      "overview": "Редактирай този преглед за Master of Business Administration.",
-      "keyFocus": "Редактирай ключов фокус за Master of Business Administration.",
-      "duration": "Дневна (1-2 години)",
+      "overview": "���������� ���� ������� �� Master of Business Administration.",
+      "keyFocus": "���������� ������ ����� �� Master of Business Administration.",
+      "duration": "������ (1-2 ������)",
       "partners": [],
       "highlights": [
-        "Редактирайте това акцентиране."
+        "������������ ���� �����������."
       ],
       "careers": [
-        "Редактирайте пътя на кариерата."
+        "������������ ���� �� ���������."
       ],
       "admissionNotes": [
-        "Редактирайте това забележка за прием."
+        "������������ ���� ��������� �� �����."
       ]
     }
   }

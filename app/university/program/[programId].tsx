@@ -126,7 +126,9 @@ export default function ProgramDetailPage() {
               { icon: "business-outline" as const, label: t("programDetail.university"), value: detail.universityName },
               { icon: "book-outline" as const, label: t("programDetail.level"), value: detail.level === "master" ? t("degrees.Master") : t("degrees.Bachelor") },
               { icon: "time-outline" as const, label: t("programDetail.duration"), value: detail.duration },
-              { icon: "layers-outline" as const, label: t("programDetail.studyMode"), value: partnersValue ?? "" },
+              { icon: "cash-outline" as const, label: t("programDetail.tuition"), value: detail.tuition || "See university page" },
+              ...(detail.faculty ? [{ icon: "layers-outline" as const, label: t("programDetail.faculty"), value: detail.faculty }] : []),
+              { icon: "people-outline" as const, label: t("programDetail.studyMode"), value: partnersValue ?? "" },
             ].map((row) => (
               <View
                 key={row.label}

@@ -21,12 +21,14 @@ export type ProgramDetail = {
   highlights: string[];
   careers: string[];
   admissionNotes: string[];
+  tuition?: string;
+  faculty?: string;
 };
 
 type ProgramOverride = Partial<
   Pick<
     ProgramDetail,
-    "title" | "overview" | "keyFocus" | "duration" | "studyMode" | "partners" | "highlights" | "careers" | "admissionNotes"
+    "title" | "overview" | "keyFocus" | "duration" | "studyMode" | "partners" | "highlights" | "careers" | "admissionNotes" | "tuition" | "faculty"
   >
 >;
 
@@ -127,15 +129,15 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
   "3": {
     bachelor: [
       "Hotel and Restaurant Management",
-      "Tourism and Entertainemnt Buisness Management",
-      "Buisness and Management - In English",
-      "Buisness Economics",
+      "Tourism and Entertainment Business Management",
+      "Business and Management - In English",
+      "Business Economics",
       "Economics and Trade",
-      "Construction Buisness and Entrepreneurship",
+      "Construction Business and Entrepreneurship",
       "Real Estate and Investments",
-      "Industrial Buisness and Entrepreneurship",
+      "Industrial Business and Entrepreneurship",
       "Logistics",
-      "Agricultural Buisnesses",
+      "Agricultural Businesses",
       "Commodities Science and Customs Activity",
       "Business Digital Technologies",
       "Informatics and Computer Sciences",
@@ -308,6 +310,29 @@ function getProgramOverride(overrideKey: string): ProgramOverride | null {
   return override;
 }
 
+function getTuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`tu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`tu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -326,7 +351,14 @@ export function getUniversityName(universityId: string | string[] | undefined) {
   return i18n.t(`universities.${normalizedId}.name`, { defaultValue: "University" });
 }
 
-export function getProgramSummaries(universityId: string | string[] | undefined, level: ProgramLevel) {
+export type ProgramSummaryInfo = {
+  title: string;
+  slug: string;
+  tuition?: string;
+  faculty?: string;
+};
+
+export function getProgramSummaries(universityId: string | string[] | undefined, level: ProgramLevel): ProgramSummaryInfo[] {
   const normalizedId = normalizeInput(universityId) as UniversityId | undefined;
 
   if (!normalizedId || !PROGRAMS[normalizedId]) {
@@ -336,11 +368,20 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
   return PROGRAMS[normalizedId][level].map((title) => {
     const slug = slugify(title);
     const localizedTitle = i18n.t(`programTitles.${slug}`, { defaultValue: title });
+    const summary: ProgramSummaryInfo = { title: localizedTitle, slug };
 
-    return {
-      title: localizedTitle,
-      slug,
-    };
+    if (normalizedId === "1") {
+      const tuInfo = getTuProgramInfo(slug);
+      if (tuInfo) {
+        if (tuInfo.tuition) summary.tuition = tuInfo.tuition;
+        if (tuInfo.facultyKey) {
+          const facultyName = getTuFaculty(tuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    }
+
+    return summary;
   });
 }
 
@@ -400,18 +441,30 @@ export function buildProgramDetail(
   const overrideKey = buildProgramOverrideKey(normalizedId, normalizedLevel, title);
   const override = getProgramOverride(overrideKey);
 
-  if (!override) {
-    return baseDetail;
+  const result: ProgramDetail = override
+    ? {
+        ...baseDetail,
+        ...override,
+        partners: override.partners ?? baseDetail.partners,
+        highlights: override.highlights ?? baseDetail.highlights,
+        careers: override.careers ?? baseDetail.careers,
+        admissionNotes: override.admissionNotes ?? baseDetail.admissionNotes,
+      }
+    : baseDetail;
+
+  if (normalizedId === "1" && normalizedSlug) {
+    const tuInfo = getTuProgramInfo(normalizedSlug);
+
+    if (tuInfo) {
+      if (tuInfo.tuition) result.tuition = tuInfo.tuition;
+      if (tuInfo.facultyKey) {
+        const facultyName = getTuFaculty(tuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
   }
 
-  return {
-    ...baseDetail,
-    ...override,
-    partners: override.partners ?? baseDetail.partners,
-    highlights: override.highlights ?? baseDetail.highlights,
-    careers: override.careers ?? baseDetail.careers,
-    admissionNotes: override.admissionNotes ?? baseDetail.admissionNotes,
-  };
+  return result;
 }
 
 export default {};

@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   ScrollView,
   useWindowDimensions,
+  Linking,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -72,6 +73,26 @@ function SectionCard({ children }: { children: React.ReactNode }) {
   );
 }
 
+function StatCard({ value, label, icon }: { value: string; label: string; icon: keyof typeof Ionicons.glyphMap }) {
+  const { colors } = useAppTheme();
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: colors.mutedSurface,
+        borderRadius: 16,
+        padding: 14,
+        alignItems: "center",
+        minWidth: 80,
+      }}
+    >
+      <Ionicons name={icon} size={18} color={colors.text} style={{ marginBottom: 6 }} />
+      <Text style={{ fontSize: 18, fontWeight: "800", color: colors.text }}>{value}</Text>
+      <Text style={{ fontSize: 10, color: colors.textMuted, textAlign: "center", marginTop: 2 }}>{label}</Text>
+    </View>
+  );
+}
+
 function ActionButton({
   icon,
   label,
@@ -105,6 +126,29 @@ function ActionButton({
         {label}
       </Text>
     </TouchableOpacity>
+  );
+}
+
+function ExpandableSection({ title, icon, children, colors }: { title: string; icon: keyof typeof Ionicons.glyphMap; children: React.ReactNode; colors: any }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <SectionCard>
+      <TouchableOpacity onPress={() => setOpen(!open)} style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+        <Ionicons name={icon} size={18} color={colors.text} />
+        <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text, flex: 1 }}>{title}</Text>
+        <Ionicons name={open ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
+      </TouchableOpacity>
+      {open && <View style={{ marginTop: 14 }}>{children}</View>}
+    </SectionCard>
+  );
+}
+
+function InfoRow({ label, colors }: { label: string; colors: any }) {
+  return (
+    <View style={{ flexDirection: "row", gap: 8, marginBottom: 6 }}>
+      <Text style={{ color: colors.text, fontSize: 12 }}>•</Text>
+      <Text style={{ color: colors.textSecondary, fontSize: 12, lineHeight: 18, flex: 1 }}>{label}</Text>
+    </View>
   );
 }
 
@@ -153,6 +197,11 @@ export default function UniversityPage() {
       value: university.scholarship
         ? t("university.available")
         : t("university.notAvailable"),
+    },
+    {
+      icon: "cash-outline" as const,
+      label: t("filters.tuition"),
+      value: university.tuitionRange,
     },
   ];
 
@@ -301,7 +350,50 @@ export default function UniversityPage() {
                 </View>
               </View>
             ))}
+
+            {id && (() => {
+              const tiers = t(`tuitionTiers.${id}`, { returnObjects: true }) as Array<{ range: string; label: string }> | string | undefined;
+              if (!tiers || typeof tiers === "string") return null;
+              return (
+                <View style={{ marginTop: 14, backgroundColor: colors.mutedSurface, borderRadius: 12, padding: 12 }}>
+                  <Text style={{ fontSize: 11, color: colors.textMuted, fontWeight: "600", letterSpacing: 0.5, marginBottom: 8 }}>
+                    {t("tuitionTiersHeader")}
+                  </Text>
+                  <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 4 }}>
+                    {tiers.map((tier) => (
+                      <View key={tier.range} style={{ backgroundColor: colors.background, borderRadius: 8, padding: 8, minWidth: "45%", flex: 1 }}>
+                        <Text style={{ fontSize: 13, fontWeight: "700", color: colors.text }}>{tier.range}</Text>
+                        <Text style={{ fontSize: 10, color: colors.textMuted }}>{tier.label}</Text>
+                      </View>
+                    ))}
+                  </View>
+                </View>
+              );
+            })()}
           </SectionCard>
+
+          {/* Stats / Key Facts */}
+          {id && (() => {
+            const sv = t(`universityStatsValues.${id}`, { returnObjects: true }) as Record<string, string> | string | undefined;
+            if (!sv || typeof sv === "string") return null;
+            return (
+              <SectionCard>
+                <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 14 }}>
+                  {t("universityStats.title")}
+                </Text>
+                <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
+                  <StatCard value={sv.yearsTradition} label={t("universityStats.yearsTradition")} icon="time-outline" />
+                  <StatCard value={sv.bachelorPrograms} label={t("universityStats.bachelorPrograms")} icon="school-outline" />
+                  <StatCard value={sv.masterPrograms} label={t("universityStats.masterPrograms")} icon="book-outline" />
+                  <StatCard value={sv.internationalPartners} label={t("universityStats.internationalPartners")} icon="globe-outline" />
+                  <StatCard value={sv.countries} label={t("universityStats.fromCountries", { count: parseInt(sv.countries) || 0 })} icon="flag-outline" />
+                  <StatCard value={sv.studentsGraduated} label={t("universityStats.studentsGraduated")} icon="people-outline" />
+                  <StatCard value={sv.labs} label={t("universityStats.labs")} icon="flask-outline" />
+                  <StatCard value={sv.tuitionFreeLabel} label={t("universityStats.tuitionFree")} icon="cash-outline" />
+                </View>
+              </SectionCard>
+            );
+          })()}
 
           {/* Programs */}
           <SectionCard>
@@ -321,13 +413,65 @@ export default function UniversityPage() {
             </View>
           </SectionCard>
 
+          {id === "1" && (
+            <>
+              <ExpandableSection title={t("universityExtra.scholarships")} icon="ribbon-outline" colors={colors}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.scholarshipsDesc")}</Text>
+                <InfoRow label={t("universityExtra.evrika")} colors={colors} />
+                <InfoRow label={t("universityExtra.erasmusGrants")} colors={colors} />
+                <InfoRow label={t("universityExtra.youngScientists")} colors={colors} />
+                <InfoRow label={t("universityExtra.smartPHD")} colors={colors} />
+                <InfoRow label={t("universityExtra.stateScholarships")} colors={colors} />
+              </ExpandableSection>
+
+              <ExpandableSection title={t("universityExtra.applicationInfo")} icon="document-text-outline" colors={colors}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.applicationDesc")}</Text>
+                <InfoRow label={t("universityExtra.earlyStages")} colors={colors} />
+                <InfoRow label={t("universityExtra.mainRound")} colors={colors} />
+                <InfoRow label={t("universityExtra.drawingExam")} colors={colors} />
+                <InfoRow label={t("universityExtra.onlineTest")} colors={colors} />
+                <InfoRow label={t("universityExtra.appFees")} colors={colors} />
+                <InfoRow label={t("universityExtra.appDocuments")} colors={colors} />
+                <InfoRow label={t("universityExtra.maritimeMedical")} colors={colors} />
+              </ExpandableSection>
+
+              <ExpandableSection title={t("universityExtra.masterFees")} icon="cash-outline" colors={colors}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.masterFeesDesc")}</Text>
+                <InfoRow label={t("universityExtra.masterSDR")} colors={colors} />
+                <InfoRow label={t("universityExtra.masterNSDO")} colors={colors} />
+                <InfoRow label={t("universityExtra.masterDistance")} colors={colors} />
+                <InfoRow label={t("universityExtra.masterSiemens")} colors={colors} />
+              </ExpandableSection>
+
+              <ExpandableSection title={t("universityExtra.openDoors")} icon="business-outline" colors={colors}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.openDoorsDesc")}</Text>
+                <InfoRow label={t("universityExtra.siemensHub")} colors={colors} />
+                <InfoRow label={t("universityExtra.mtgDelfin")} colors={colors} />
+                <InfoRow label={t("universityExtra.schwarzIT")} colors={colors} />
+                <InfoRow label={t("universityExtra.autodesk")} colors={colors} />
+                <InfoRow label={t("universityExtra.expressbank")} colors={colors} />
+              </ExpandableSection>
+
+              <ExpandableSection title={t("universityExtra.partners")} icon="globe-outline" colors={colors}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.partnersDesc")}</Text>
+                <InfoRow label={t("universityExtra.industryPartners")} colors={colors} />
+                <InfoRow label={t("universityExtra.academicPartners")} colors={colors} />
+                <InfoRow label={t("universityExtra.ceepus")} colors={colors} />
+              </ExpandableSection>
+
+              <ExpandableSection title={t("universityExtra.internationalStudents")} icon="airplane-outline" colors={colors}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20 }}>{t("universityExtra.internationalDesc")}</Text>
+              </ExpandableSection>
+            </>
+          )}
+
           <View style={{ flexDirection: "row", gap: 12, marginTop: 4, marginBottom: 32 }}>
-            <ActionButton icon="globe-outline" label={t("university.website")} primary={false} />
-            <ActionButton icon="paper-plane-outline" label={t("university.applyNow")} primary={true} />
+            <ActionButton icon="globe-outline" label={t("university.website")} primary={false} onPress={() => Linking.openURL(university.website)} />
+            <ActionButton icon="paper-plane-outline" label={t("university.applyNow")} primary={true} onPress={() => Linking.openURL(university.applyUrl)} />
           </View>
 
         </View>
       </ScrollView>
     </View>
   );
-}
+} 
