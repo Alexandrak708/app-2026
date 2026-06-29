@@ -210,6 +210,16 @@
       "studentsGraduated": "60K+",
       "labs": "230+",
       "tuitionFreeLabel": "€0"
+    },
+    "2": {
+      "yearsTradition": "64",
+      "bachelorPrograms": "17+",
+      "masterPrograms": "14+",
+      "internationalPartners": "100+",
+      "countries": "56",
+      "studentsGraduated": "50K+",
+      "labs": "20+",
+      "tuitionFreeLabel": "€0"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -219,6 +229,12 @@
       { "range": "€176-€220", "label": "Most regular programs" },
       { "range": "€332-€358", "label": "Maritime engineering" },
       { "range": "€409.50", "label": "Navigation" }
+    ],
+    "2": [
+      { "range": "€0", "label": "Nursing, Midwifery, Military Medicine" },
+      { "range": "€400-€600", "label": "BG-language programs (per semester)" },
+      { "range": "€3,500", "label": "Pharmacy (English, per semester)" },
+      { "range": "€5,000", "label": "Medicine/Dental Medicine (English, per semester)" }
     ]
   },
   "universityExtra": {
@@ -257,7 +273,46 @@
     "academicPartners": "Academic partners via Erasmus+ with 155 universities in 47 countries including Germany, France, UK, Austria, Poland, Romania, Turkey, Greece, South Korea, China and many more",
     "ceepus": "CEEPUS network: Central European academic exchange with universities in Hungary, Austria, Poland, Romania, Slovakia, Croatia, Serbia, Slovenia",
     "internationalStudents": "International Students",
-    "internationalDesc": "The International Cooperation and Foreign Students Department (office 326 NUK, email: international@tu-varna.bg) handles foreign student admission. EU/EEA applicants follow similar procedures as Bulgarian citizens with recognized diplomas."
+    "internationalDesc": "The International Cooperation and Foreign Students Department (office 326 NUK, email: international@tu-varna.bg) handles foreign student admission. EU/EEA applicants follow similar procedures as Bulgarian citizens with recognized diplomas.",
+    "mu_scholarships": "Scholarships & Funding at MU-Varna",
+    "mu_scholarshipsDesc": "MU-Varna offers various scholarship opportunities for outstanding students:",
+    "mu_excellentScholarships": "Excellence scholarships for high academic achievement (up to €1,000/year)",
+    "mu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship at 100+ partner universities",
+    "mu_socialScholarships": "Social scholarships for students with financial need",
+    "mu_doctoralScholarships": "Doctoral scholarships for PhD candidates in medical sciences",
+    "mu_applicationInfo": "Application Process (2026/2027)",
+    "mu_applicationDesc": "Admission to MU-Varna programs is competitive and requires strong academic performance in science subjects.",
+    "mu_appBiology": "Biology and Chemistry entrance exams for Medicine, Dental Medicine, Pharmacy (BG programs)",
+    "mu_appDocuments": "Required: secondary school diploma, transcript of records, medical certificate, 4 photos",
+    "mu_appOnline": "Online application through the MU-Varna registration system at mu-varna.bg",
+    "mu_appDeadlines": "Main application period: May – September for the academic year starting in October",
+    "mu_appInternational": "International students: submit diplomas with recognition certificate from the Ministry of Education",
+    "mu_appFees": "Application fee: €60 (first exam), €40 (each additional exam); €40 for programs without exam",
+    "mu_masterFees": "Master's Programs at MU-Varna",
+    "mu_masterFeesDesc": "MU-Varna offers integrated Master's programs (Medicine 6 years, Dental Medicine 6 years, Pharmacy 5 years) and postgraduate Master's programs (1-2 years):",
+    "mu_integratedMed": "Medicine (MD): 6-year integrated Master, taught in Bulgarian or English",
+    "mu_integratedDent": "Dental Medicine (DMD): 6-year integrated Master, taught in Bulgarian or English",
+    "mu_integratedPharm": "Pharmacy (MSc): 5-year integrated Master, taught in Bulgarian or English",
+    "mu_mph": "Public Health (MPH): 2-year postgraduate Master for bachelor holders in health/social sciences",
+    "mu_healthMgmt": "Health Care Management: 2-year postgraduate Master for health professionals",
+    "mu_openDoors": "Open Doors & Clinical Training",
+    "mu_openDoorsDesc": "MU-Varna organizes regular Open Doors events and offers extensive clinical training opportunities:",
+    "mu_universityHospital": "University Hospital St. Marina – main clinical base with 1,000+ beds for practical training",
+    "mu_simulationCenter": "Modern Simulation Training Center with high-fidelity mannequins and virtual reality trainers",
+    "mu_researchLabs": "Research laboratories in molecular biology, pharmacology, public health and more",
+    "mu_clinicalRotations": "Clinical rotations in partner hospitals across Bulgaria and abroad",
+    "mu_partners": "International Partners & Networks",
+    "mu_partnersDesc": "MU-Varna has 100+ international cooperation agreements and active memberships in global networks:",
+    "mu_euPartners": "Erasmus+ partners in Germany, France, Italy, Spain, Portugal, Greece, Turkey, Poland, Romania, and many more",
+    "mu_asphr": "Member of ASPHER (Association of Schools of Public Health in the European Region)",
+    "mu_who": "WHO collaborating activities and participation in global health initiatives",
+    "mu_bilateral": "Bilateral agreements with universities in Asia, Africa, and the Americas for student and staff exchange",
+    "mu_internationalStudents": "International Students at MU-Varna",
+    "mu_internationalDesc": "MU-Varna welcomes over 2,000 international students from 56 countries. The International Relations Department provides dedicated support for foreign students:",
+    "mu_visaSupport": "Visa and residence permit assistance for non-EU students",
+    "mu_dormitories": "Student dormitories available for international students at affordable rates",
+    "mu_languagePrep": "Preparatory language courses in Bulgarian and English (9 months, €5,000)",
+    "mu_recognition": "Diploma recognition service through the Ministry of Education and Science"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -287,6 +342,13 @@
     "ef": "Electrical Engineering (EF)",
     "kf": "Shipbuilding (KF)",
     "dk": "Dobrudzha College (DK)"
+  },
+  "mu_faculties": {
+    "medicine": "Faculty of Medicine",
+    "dental": "Faculty of Dental Medicine",
+    "pharmacy": "Faculty of Pharmacy",
+    "public-health": "Faculty of Public Health",
+    "medical-college": "Medical College - Varna"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": { "tuition": "€191.00", "facultyKey": "fita" },
@@ -363,6 +425,39 @@
     "chemical-engineering-ce": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
     "siemens-plc-control-technologies-siemens": { "tuition": "325-1,994 BGN/sem", "facultyKey": "fita" }
   },
+  "mu_programInfo": {
+    "nursing": { "tuition": "FREE (tuition-free)", "facultyKey": "medical-college" },
+    "midwifery": { "tuition": "FREE (tuition-free)", "facultyKey": "medical-college" },
+    "kinesitherapy": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "speech-therapy": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "health-care-management": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "public-health": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "biomedical-engineering-and-technologies": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "optometrist": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "medical-cosmetics": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "rehabilitation-and-wellness": { "tuition": "€400-600", "facultyKey": "public-health" },
+    "medical-laboratory-assistant": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "assistant-pharmacist": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "x-ray-technician": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "dental-technician": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "physiotherapy-assistant": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "public-health-inspector": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "medical-optics": { "tuition": "€400-600", "facultyKey": "medical-college" },
+    "medicine": { "tuition": "€400-600 (BG) / €5,000 (EN)", "facultyKey": "medicine" },
+    "medicine-english": { "tuition": "€5,000", "facultyKey": "medicine" },
+    "dental-medicine": { "tuition": "€400-600 (BG) / €5,000 (EN)", "facultyKey": "dental" },
+    "dental-medicine-english": { "tuition": "€5,000", "facultyKey": "dental" },
+    "pharmacy": { "tuition": "€400-600 (BG) / €3,500 (EN)", "facultyKey": "pharmacy" },
+    "pharmacy-english": { "tuition": "€3,500", "facultyKey": "pharmacy" },
+    "military-medicine": { "tuition": "FREE (tuition-free)", "facultyKey": "medicine" },
+    "public-health-mph": { "tuition": "€600-1,000", "facultyKey": "public-health" },
+    "health-care-management-master": { "tuition": "€600-1,000", "facultyKey": "public-health" },
+    "health-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
+    "clinical-pharmacy": { "tuition": "€600-1,000", "facultyKey": "pharmacy" },
+    "pharmaceutical-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
+    "nursing-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
+    "health-information-technology": { "tuition": "€600-1,000", "facultyKey": "public-health" }
+  },
   "universities": {
     "1": {
       "name": "Technical University",
@@ -376,11 +471,11 @@
     },
     "2": {
       "name": "Medical University",
-      "description": "World-class medical education with top-ranked clinical training programs.",
-      "longDescription": "The Medical University of Varna is a leading institution in Bulgarian medical education, known for its high-quality clinical training and research programs.",
+      "description": "Bulgaria's leading medical university with top-ranked clinical training and research programs.",
+      "longDescription": "Medical University of Varna (Prof. Dr. Paraskev Stoyanov) is a leading Bulgarian medical university founded in 1961. It is accredited with the highest rating by the National Evaluation and Accreditation Agency (NEAA) and holds the EFQM Excellence Model recognition. The university comprises 4 faculties — Medicine, Dental Medicine, Pharmacy, and Public Health — along with the Medical College - Varna and affiliates in Shumen, Veliko Tarnovo, and Burgas.\n\nThe university has over 7,000 students, 2,000 of whom are international students from 56 countries. The campus features modern simulation centers, clinical bases at the University Hospital St. Marina, research laboratories, a library, sports facilities, and student dormitories.\n\nInternational students can study Medicine, Dental Medicine, and Pharmacy in English. Nursing and Midwifery are tuition-free. The university has 100+ international partner institutions and active Erasmus+ exchange programs.\n\nOver 50,000 alumni have graduated since its founding. Rector: Prof. Dr. Valentin Ignatov.",
       "location": "Varna, Bulgaria",
-      "degree": "Master",
-      "tuitionRange": "€2,500 - €7,000 / year",
+      "degree": "Bachelor/Master",
+      "tuitionRange": "€0 - €10,000 / year",
       "website": "https://www.mu-varna.bg",
       "applyUrl": "https://www.mu-varna.bg"
     },
@@ -452,17 +547,25 @@
     },
     "2": {
       "name": "Medical University",
-      "focus": "clinical training, health sciences, and patient-centered practice",
-      "style": "hospital placements, simulation labs, and research-based learning",
+      "focus": "clinical training, health sciences, dentistry, pharmacy, and patient-centered practice",
+      "style": "hospital placements at University Hospital St. Marina, simulation labs, clinical rotations, and research-based learning",
       "careers": [
-        "Clinician",
-        "Health specialist",
-        "Laboratory professional",
-        "Public health coordinator"
+        "Physician / Medical Doctor",
+        "Dentist",
+        "Pharmacist",
+        "Clinical researcher",
+        "Nurse / Midwife",
+        "Public health specialist",
+        "Health care manager",
+        "Laboratory technician"
       ],
       "admissionNotes": [
-        "Expect a strong science background",
-        "Competitive tracks may include entrance exams or interviews"
+        "Strong biology and chemistry background required for Medicine, Dental Medicine, Pharmacy",
+        "English-taught programs have separate application procedures for international students",
+        "Nursing and Midwifery are tuition-free for all students",
+        "Entrance exams in Biology and Chemistry for Bulgarian-language programs",
+        "Application period runs from May to September for the academic year",
+        "International students must submit diploma recognition documents"
       ]
     },
     "3": {
@@ -671,14 +774,37 @@
     "transport-equipment-and-technologies-tet": "Transport Equipment and Technologies (TET)",
 
     "___university_2": "University 2 — Medical University",
-    "medicine": "Medicine",
-    "dental-medicine": "Dental Medicine",
-    "pharmacy": "Pharmacy",
+    "medicine": "Medicine (Master)",
+    "medicine-english": "Medicine in English",
+    "dental-medicine": "Dental Medicine (Master)",
+    "dental-medicine-english": "Dental Medicine in English",
+    "pharmacy": "Pharmacy (Master)",
+    "pharmacy-english": "Pharmacy in English",
+    "military-medicine": "Military Medicine",
     "nursing": "Nursing",
     "midwifery": "Midwifery",
+    "kinesitherapy": "Kinesitherapy",
+    "speech-therapy": "Speech Therapy",
+    "health-care-management": "Health Care Management",
+    "health-care-management-master": "Health Care Management (Master)",
     "public-health": "Public Health",
+    "biomedical-engineering-and-technologies": "Biomedical Engineering and Technologies",
+    "optometrist": "Optometrist",
+    "medical-cosmetics": "Medical Cosmetics",
+    "rehabilitation-and-wellness": "Rehabilitation and Wellness",
+    "medical-laboratory-assistant": "Medical Laboratory Assistant",
+    "assistant-pharmacist": "Assistant Pharmacist",
+    "x-ray-technician": "X-Ray Technician",
+    "dental-technician": "Dental Technician",
+    "physiotherapy-assistant": "Physiotherapy Assistant",
+    "public-health-inspector": "Public Health Inspector",
+    "medical-optics": "Medical Optics",
+    "public-health-mph": "Public Health (MPH)",
     "health-management": "Health Management",
     "clinical-pharmacy": "Clinical Pharmacy",
+    "pharmaceutical-management": "Pharmaceutical Management",
+    "nursing-management": "Nursing Management",
+    "health-information-technology": "Health Information Technology",
 
     "___university_3": "University 3 — Economics University",
     "hotel-and-restaurant-management": "Hotel and Restaurant Management",
@@ -1305,19 +1431,129 @@
         "Analytical skills recommended"
       ]
     },
-    "2:bachelor:medicine": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+    "2:master:medicine": {
+      "overview": "The 6-year MD programme at Medical University of Varna provides comprehensive medical education combining pre-clinical sciences with extensive clinical rotations at University Hospital St. Marina.",
+      "keyFocus": "pre-clinical sciences, clinical medicine, diagnostics, patient care, medical ethics",
+      "duration": "Full-time (6 years)",
+      "partners": [
+        "University Hospital St. Marina",
+        "Military Medical Academy"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Integrated pre-clinical and clinical curriculum",
+        "Clinical rotations starting from year 3",
+        "Modern simulation center with high-fidelity mannequins",
+        "International elective opportunities through Erasmus+"
       ],
       "careers": [
-        "Edit this career path."
+        "Medical Doctor / Physician",
+        "Clinical Researcher",
+        "Public Health Specialist",
+        "Military Doctor"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Strong background in Biology and Chemistry required",
+        "Entrance exams in Biology and Chemistry for BG-language program",
+        "English-taught track requires IELTS/TOEFL and science proficiency"
+      ]
+    },
+    "2:master:medicine-english": {
+      "overview": "The English-taught MD programme at Medical University of Varna offers international students a 6-year medical degree with the same rigorous curriculum as the Bulgarian track.",
+      "keyFocus": "clinical medicine, diagnostics, patient care, international health standards",
+      "duration": "Full-time (6 years)",
+      "partners": [
+        "University Hospital St. Marina"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Integrated clinical training from year 3",
+        "International student community from 56 countries",
+        "Recognized worldwide for medical practice"
+      ],
+      "careers": [
+        "Medical Doctor / Physician",
+        "Clinical Researcher",
+        "International Health Specialist"
+      ],
+      "admissionNotes": [
+        "Secondary school diploma with strong science grades",
+        "IELTS 6.0+ or equivalent English proficiency",
+        "Separate application process for international students"
+      ]
+    },
+    "2:master:dental-medicine": {
+      "overview": "The 6-year DMD programme at Medical University of Varna trains students in oral health, dental surgery, and maxillofacial medicine with extensive clinical practice.",
+      "keyFocus": "oral health, dental surgery, orthodontics, prosthodontics, maxillofacial surgery",
+      "duration": "Full-time (6 years)",
+      "partners": [
+        "University Hospital St. Marina - Dental Clinic"
+      ],
+      "highlights": [
+        "Pre-clinical training in phantom head lab",
+        "Clinical rotations in university dental clinic",
+        "Modern digital dentistry equipment",
+        "Patient-centered treatment planning"
+      ],
+      "careers": [
+        "Dentist / Dental Surgeon",
+        "Orthodontist",
+        "Maxillofacial Specialist",
+        "Dental Public Health Specialist"
+      ],
+      "admissionNotes": [
+        "Biology and Chemistry entrance exams for BG track",
+        "Manual dexterity and spatial awareness important",
+        "English-taught track available for international students"
+      ]
+    },
+    "2:master:pharmacy": {
+      "overview": "The 5-year Pharmacy (MSc) programme at Medical University of Varna prepares students for careers in pharmaceutical sciences, drug development, and community pharmacy.",
+      "keyFocus": "pharmaceutical chemistry, pharmacology, drug formulation, clinical pharmacy, regulatory affairs",
+      "duration": "Full-time (5 years)",
+      "partners": [
+        "University Hospital St. Marina - Pharmacy"
+      ],
+      "highlights": [
+        "State-of-the-art pharmaceutical labs",
+        "Community and hospital pharmacy placements",
+        "Drug analysis and quality control training",
+        "Research opportunities in pharmacology"
+      ],
+      "careers": [
+        "Community Pharmacist",
+        "Hospital Pharmacist",
+        "Pharmaceutical Researcher",
+        "Regulatory Affairs Specialist"
+      ],
+      "admissionNotes": [
+        "Chemistry and Biology background required",
+        "Entrance exams in Chemistry and Biology for BG track",
+        "English-taught track available"
+      ]
+    },
+    "2:master:military-medicine": {
+      "overview": "The Military Medicine programme is a joint specialisation between MU-Varna, the Military Medical Academy, and the Naval Academy, combining medical education with military leadership.",
+      "keyFocus": "military medicine, disaster medicine, tactical medicine, leadership",
+      "duration": "Full-time (6 years)",
+      "partners": [
+        "Military Medical Academy - Sofia",
+        "Nikola Vaptsarov Naval Academy"
+      ],
+      "highlights": [
+        "Dual degree: MD + Military Organisation Management",
+        "Tuition-free for eligible candidates",
+        "Military leadership and tactical medicine training",
+        "Guaranteed career placement in military medical service"
+      ],
+      "careers": [
+        "Military Doctor",
+        "Disaster Medicine Specialist",
+        "Defence Health Manager"
+      ],
+      "admissionNotes": [
+        "Additional physical fitness requirements",
+        "Security clearance may be required",
+        "Service commitment after graduation"
       ]
     },
     "3:bachelor:international-business": {
@@ -2546,79 +2782,76 @@
         "Basic PLC programming knowledge recommended"
       ]
     },
-    "2:bachelor:dental-medicine": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "2:bachelor:pharmacy": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
     "2:bachelor:nursing": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "The 4-year Nursing Bachelor programme at Medical University of Varna trains compassionate, skilled nurses for clinical practice in hospitals, clinics, and community health settings.",
+      "keyFocus": "patient care, clinical nursing, health assessment, pharmacology, community health",
+      "duration": "Full-time (4 years)",
+      "partners": [
+        "University Hospital St. Marina"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Tuition-free programme",
+        "Clinical practice at university hospital",
+        "Simulation-based training",
+        "Community health placements"
       ],
       "careers": [
-        "Edit this career path."
+        "Registered Nurse",
+        "Clinical Nurse Specialist",
+        "Community Health Nurse",
+        "Nurse Educator"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Secondary school diploma required",
+        "No tuition fees for this programme",
+        "Strong biology background recommended"
       ]
     },
     "2:bachelor:midwifery": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "The 4-year Midwifery Bachelor programme at Medical University of Varna prepares students for professional midwifery practice in hospitals, clinics, and community settings.",
+      "keyFocus": "maternal care, neonatal care, reproductive health, women's health",
+      "duration": "Full-time (4 years)",
+      "partners": [
+        "University Hospital St. Marina"
+      ],
       "highlights": [
-        "Edit this highlight."
+        "Tuition-free programme",
+        "Clinical practice in maternity wards",
+        "Simulation-based obstetrics training",
+        "Community health experience"
       ],
       "careers": [
-        "Edit this career path."
+        "Registered Midwife",
+        "Maternal Health Specialist",
+        "Neonatal Care Specialist",
+        "Community Midwife"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Secondary school diploma required",
+        "No tuition fees for this programme",
+        "Biology background recommended"
       ]
     },
-    "2:master:public-health": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+    "2:master:public-health-mph": {
+      "overview": "The MPH programme at Medical University of Varna equips students with skills in epidemiology, biostatistics, health policy, and disease prevention.",
+      "keyFocus": "epidemiology, biostatistics, health policy, disease prevention, global health",
+      "duration": "Full-time (2 years)",
+      "partners": [],
       "highlights": [
-        "Edit this highlight."
+        "Interdisciplinary curriculum",
+        "Research project component",
+        "WHO collaborating activities",
+        "International student cohort"
       ],
       "careers": [
-        "Edit this career path."
+        "Public Health Analyst",
+        "Epidemiologist",
+        "Health Policy Advisor",
+        "Global Health Specialist"
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        "Bachelor degree in health or social sciences required",
+        "English proficiency for international students"
       ]
     },
     "2:master:health-management": {
@@ -2664,6 +2897,71 @@
       ],
       "admissionNotes": [
         "Edit this admission note."
+      ]
+    },
+    "2:master:dental-medicine-english": {
+      "overview": "The English-taught DMD programme at MU-Varna offers international students a 6-year dental medicine degree with comprehensive clinical training.",
+      "keyFocus": "oral health, dental surgery, prosthodontics, orthodontics",
+      "duration": "Full-time (6 years)",
+      "partners": [],
+      "highlights": [
+        "Taught entirely in English",
+        "Pre-clinical phantom head lab training",
+        "Clinical rotations in dental clinic",
+        "International student community"
+      ],
+      "careers": [
+        "Dentist",
+        "Dental Surgeon",
+        "Orthodontist"
+      ],
+      "admissionNotes": [
+        "Strong science background required",
+        "English proficiency test required",
+        "International student application process"
+      ]
+    },
+    "2:master:pharmacy-english": {
+      "overview": "The English-taught Pharmacy MSc programme at MU-Varna provides international students with comprehensive pharmaceutical education over 5 years.",
+      "keyFocus": "pharmaceutical chemistry, pharmacology, drug formulation, clinical pharmacy",
+      "duration": "Full-time (5 years)",
+      "partners": [],
+      "highlights": [
+        "Taught entirely in English",
+        "Modern pharmaceutical labs",
+        "Community and hospital placements",
+        "Research opportunities"
+      ],
+      "careers": [
+        "Community Pharmacist",
+        "Hospital Pharmacist",
+        "Pharmaceutical Researcher"
+      ],
+      "admissionNotes": [
+        "Chemistry and Biology background required",
+        "English proficiency test required"
+      ]
+    },
+    "2:master:health-care-management-master": {
+      "overview": "The Health Care Management Master programme at MU-Varna prepares health professionals for leadership roles in healthcare organizations.",
+      "keyFocus": "healthcare administration, health policy, quality management, health economics",
+      "duration": "Full-time (2 years)",
+      "partners": [],
+      "highlights": [
+        "Designed for healthcare professionals",
+        "Management and leadership focus",
+        "Healthcare policy and economics",
+        "Quality improvement methodologies"
+      ],
+      "careers": [
+        "Healthcare Manager",
+        "Hospital Administrator",
+        "Health Policy Analyst",
+        "Quality Improvement Manager"
+      ],
+      "admissionNotes": [
+        "Bachelor degree in health sciences or management required",
+        "Professional experience in healthcare preferred"
       ]
     },
     "3:bachelor:finance": {

@@ -123,8 +123,41 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
     ],
   },
   "2": {
-    bachelor: ["Medicine", "Dental Medicine", "Pharmacy", "Nursing", "Midwifery"],
-    master: ["Public Health", "Health Management", "Clinical Pharmacy"],
+    bachelor: [
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Speech Therapy",
+      "Health Care Management",
+      "Public Health",
+      "Biomedical Engineering and Technologies",
+      "Optometrist",
+      "Medical Cosmetics",
+      "Rehabilitation and Wellness",
+      "Medical Laboratory Assistant",
+      "Assistant Pharmacist",
+      "X-Ray Technician",
+      "Dental Technician",
+      "Physiotherapy Assistant",
+      "Public Health Inspector",
+      "Medical Optics",
+    ],
+    master: [
+      "Medicine",
+      "Medicine (English)",
+      "Dental Medicine",
+      "Dental Medicine (English)",
+      "Pharmacy",
+      "Pharmacy (English)",
+      "Military Medicine",
+      "Public Health (MPH)",
+      "Health Care Management (Master)",
+      "Health Management",
+      "Clinical Pharmacy",
+      "Pharmaceutical Management",
+      "Nursing Management",
+      "Health Information Technology",
+    ],
   },
   "3": {
     bachelor: [
@@ -323,6 +356,29 @@ function getTuProgramInfo(programSlug: string): { tuition?: string; facultyKey?:
   };
 }
 
+function getMuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`mu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getMuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function getTuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`tu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -376,6 +432,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (tuInfo.tuition) summary.tuition = tuInfo.tuition;
         if (tuInfo.facultyKey) {
           const facultyName = getTuFaculty(tuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "2") {
+      const muInfo = getMuProgramInfo(slug);
+      if (muInfo) {
+        if (muInfo.tuition) summary.tuition = muInfo.tuition;
+        if (muInfo.facultyKey) {
+          const facultyName = getMuFaculty(muInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -459,6 +524,16 @@ export function buildProgramDetail(
       if (tuInfo.tuition) result.tuition = tuInfo.tuition;
       if (tuInfo.facultyKey) {
         const facultyName = getTuFaculty(tuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "2" && normalizedSlug) {
+    const muInfo = getMuProgramInfo(normalizedSlug);
+
+    if (muInfo) {
+      if (muInfo.tuition) result.tuition = muInfo.tuition;
+      if (muInfo.facultyKey) {
+        const facultyName = getMuFaculty(muInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

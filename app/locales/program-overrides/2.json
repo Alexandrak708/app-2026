@@ -1,122 +1,119 @@
 {
-  "bachelor:medicine": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+  "master:medicine": {
+    "overview": "The 6-year MD programme at Medical University of Varna provides comprehensive medical education combining pre-clinical sciences with extensive clinical rotations at University Hospital St. Marina.",
+    "keyFocus": "pre-clinical sciences, clinical medicine, diagnostics, patient care, medical ethics",
+    "duration": "Full-time (6 years)",
+    "partners": ["University Hospital St. Marina", "Military Medical Academy"],
+    "highlights": ["Integrated pre-clinical and clinical curriculum", "Clinical rotations starting from year 3", "Modern simulation center with high-fidelity mannequins", "International elective opportunities through Erasmus+"],
+    "careers": ["Medical Doctor / Physician", "Clinical Researcher", "Public Health Specialist", "Military Doctor"],
+    "admissionNotes": ["Strong background in Biology and Chemistry required", "Entrance exams in Biology and Chemistry for BG-language program", "English-taught track requires IELTS/TOEFL and science proficiency"]
   },
-  "bachelor:dental-medicine": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+  "master:medicine-english": {
+    "overview": "The English-taught MD programme at Medical University of Varna offers international students a 6-year medical degree with the same rigorous curriculum as the Bulgarian track.",
+    "keyFocus": "clinical medicine, diagnostics, patient care, international health standards",
+    "duration": "Full-time (6 years)",
+    "partners": ["University Hospital St. Marina"],
+    "highlights": ["Taught entirely in English", "Integrated clinical training from year 3", "International student community from 56 countries", "Recognized worldwide for medical practice"],
+    "careers": ["Medical Doctor / Physician", "Clinical Researcher", "International Health Specialist"],
+    "admissionNotes": ["Secondary school diploma with strong science grades", "IELTS 6.0+ or equivalent English proficiency", "Separate application process for international students"]
   },
-  "bachelor:pharmacy": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+  "master:dental-medicine": {
+    "overview": "The 6-year DMD programme at Medical University of Varna trains students in oral health, dental surgery, and maxillofacial medicine with extensive clinical practice.",
+    "keyFocus": "oral health, dental surgery, orthodontics, prosthodontics, maxillofacial surgery",
+    "duration": "Full-time (6 years)",
+    "partners": ["University Hospital St. Marina - Dental Clinic"],
+    "highlights": ["Pre-clinical training in phantom head lab", "Clinical rotations in university dental clinic", "Modern digital dentistry equipment", "Patient-centered treatment planning"],
+    "careers": ["Dentist / Dental Surgeon", "Orthodontist", "Maxillofacial Specialist", "Dental Public Health Specialist"],
+    "admissionNotes": ["Biology and Chemistry entrance exams for BG track", "Manual dexterity and spatial awareness important", "English-taught track available for international students"]
+  },
+  "master:dental-medicine-english": {
+    "overview": "The English-taught DMD programme at MU-Varna offers international students a 6-year dental medicine degree with comprehensive clinical training.",
+    "keyFocus": "oral health, dental surgery, prosthodontics, orthodontics",
+    "duration": "Full-time (6 years)",
+    "partners": [],
+    "highlights": ["Taught entirely in English", "Pre-clinical phantom head lab training", "Clinical rotations in dental clinic", "International student community"],
+    "careers": ["Dentist", "Dental Surgeon", "Orthodontist"],
+    "admissionNotes": ["Strong science background required", "English proficiency test required", "International student application process"]
+  },
+  "master:pharmacy": {
+    "overview": "The 5-year Pharmacy (MSc) programme at Medical University of Varna prepares students for careers in pharmaceutical sciences, drug development, and community pharmacy.",
+    "keyFocus": "pharmaceutical chemistry, pharmacology, drug formulation, clinical pharmacy, regulatory affairs",
+    "duration": "Full-time (5 years)",
+    "partners": ["University Hospital St. Marina - Pharmacy"],
+    "highlights": ["State-of-the-art pharmaceutical labs", "Community and hospital pharmacy placements", "Drug analysis and quality control training", "Research opportunities in pharmacology"],
+    "careers": ["Community Pharmacist", "Hospital Pharmacist", "Pharmaceutical Researcher", "Regulatory Affairs Specialist"],
+    "admissionNotes": ["Chemistry and Biology background required", "Entrance exams in Chemistry and Biology for BG track", "English-taught track available"]
+  },
+  "master:pharmacy-english": {
+    "overview": "The English-taught Pharmacy MSc programme at MU-Varna provides international students with comprehensive pharmaceutical education over 5 years.",
+    "keyFocus": "pharmaceutical chemistry, pharmacology, drug formulation, clinical pharmacy",
+    "duration": "Full-time (5 years)",
+    "partners": [],
+    "highlights": ["Taught entirely in English", "Modern pharmaceutical labs", "Community and hospital placements", "Research opportunities"],
+    "careers": ["Community Pharmacist", "Hospital Pharmacist", "Pharmaceutical Researcher"],
+    "admissionNotes": ["Chemistry and Biology background required", "English proficiency test required"]
+  },
+  "master:military-medicine": {
+    "overview": "The Military Medicine programme is a joint specialisation between MU-Varna, the Military Medical Academy, and the Naval Academy, combining medical education with military leadership.",
+    "keyFocus": "military medicine, disaster medicine, tactical medicine, leadership",
+    "duration": "Full-time (6 years)",
+    "partners": ["Military Medical Academy - Sofia", "Nikola Vaptsarov Naval Academy"],
+    "highlights": ["Dual degree: MD + Military Organisation Management", "Tuition-free for eligible candidates", "Military leadership and tactical medicine training", "Guaranteed career placement in military medical service"],
+    "careers": ["Military Doctor", "Disaster Medicine Specialist", "Defence Health Manager"],
+    "admissionNotes": ["Additional physical fitness requirements", "Security clearance may be required", "Service commitment after graduation"]
   },
   "bachelor:nursing": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "The 4-year Nursing Bachelor programme at Medical University of Varna trains compassionate, skilled nurses for clinical practice in hospitals, clinics, and community health settings.",
+    "keyFocus": "patient care, clinical nursing, health assessment, pharmacology, community health",
+    "duration": "Full-time (4 years)",
+    "partners": ["University Hospital St. Marina"],
+    "highlights": ["Tuition-free programme", "Clinical practice at university hospital", "Simulation-based training", "Community health placements"],
+    "careers": ["Registered Nurse", "Clinical Nurse Specialist", "Community Health Nurse", "Nurse Educator"],
+    "admissionNotes": ["Secondary school diploma required", "No tuition fees for this programme", "Strong biology background recommended"]
   },
   "bachelor:midwifery": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "The 4-year Midwifery Bachelor programme at Medical University of Varna prepares students for professional midwifery practice in hospitals, clinics, and community settings.",
+    "keyFocus": "maternal care, neonatal care, reproductive health, women's health",
+    "duration": "Full-time (4 years)",
+    "partners": ["University Hospital St. Marina"],
+    "highlights": ["Tuition-free programme", "Clinical practice in maternity wards", "Simulation-based obstetrics training", "Community health experience"],
+    "careers": ["Registered Midwife", "Maternal Health Specialist", "Neonatal Care Specialist", "Community Midwife"],
+    "admissionNotes": ["Secondary school diploma required", "No tuition fees for this programme", "Biology background recommended"]
   },
-  "master:public-health": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+  "master:public-health-mph": {
+    "overview": "The MPH programme at Medical University of Varna equips students with skills in epidemiology, biostatistics, health policy, and disease prevention.",
+    "keyFocus": "epidemiology, biostatistics, health policy, disease prevention, global health",
+    "duration": "Full-time (2 years)",
+    "partners": [],
+    "highlights": ["Interdisciplinary curriculum", "Research project component", "WHO collaborating activities", "International student cohort"],
+    "careers": ["Public Health Analyst", "Epidemiologist", "Health Policy Advisor", "Global Health Specialist"],
+    "admissionNotes": ["Bachelor degree in health or social sciences required", "English proficiency for international students"]
   },
   "master:health-management": {
     "overview": "Edit this overview.",
     "keyFocus": "Edit this key focus.",
     "duration": "Edit this duration.",
     "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Edit this highlight."],
+    "careers": ["Edit this career path."],
+    "admissionNotes": ["Edit this admission note."]
   },
   "master:clinical-pharmacy": {
     "overview": "Edit this overview.",
     "keyFocus": "Edit this key focus.",
     "duration": "Edit this duration.",
     "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Edit this highlight."],
+    "careers": ["Edit this career path."],
+    "admissionNotes": ["Edit this admission note."]
+  },
+  "master:health-care-management-master": {
+    "overview": "The Health Care Management Master programme at MU-Varna prepares health professionals for leadership roles in healthcare organizations.",
+    "keyFocus": "healthcare administration, health policy, quality management, health economics",
+    "duration": "Full-time (2 years)",
+    "partners": [],
+    "highlights": ["Designed for healthcare professionals", "Management and leadership focus", "Healthcare policy and economics", "Quality improvement methodologies"],
+    "careers": ["Healthcare Manager", "Hospital Administrator", "Health Policy Analyst", "Quality Improvement Manager"],
+    "admissionNotes": ["Bachelor degree in health sciences or management required", "Professional experience in healthcare preferred"]
   }
 }
