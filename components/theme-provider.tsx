@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { Appearance, Text, TextInput, type ColorSchemeName } from 'react-native';
+import { Appearance, type ColorSchemeName } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type ThemeChoice = 'light' | 'dark' | 'system';
@@ -13,6 +13,11 @@ type ThemeContextValue = {
 export const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 const STORAGE_KEY = 'app:theme';
+
+function setDocumentTheme(theme: 'light' | 'dark') {
+  if (typeof document === 'undefined') return;
+  document.documentElement.style.colorScheme = theme;
+}
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<ThemeChoice>('system');
@@ -43,25 +48,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    try {
-      const activeScheme = theme === 'system' ? (resolvedScheme ?? 'light') : theme;
-      const textColor = activeScheme === 'dark' ? '#ECEDEE' : '#11181C';
-      Appearance.setColorScheme(theme === 'system' ? null : theme);
-      (Text as any).defaultProps = {
-        ...(Text as any).defaultProps,
-        style: [{ color: textColor }, (Text as any).defaultProps?.style],
-      };
-      (TextInput as any).defaultProps = {
-        ...(TextInput as any).defaultProps,
-        style: [{ color: textColor }, (TextInput as any).defaultProps?.style],
-      };
-    } catch {}
+    const activeScheme = theme === 'system' ? (resolvedScheme ?? 'light') : theme;
+    setDocumentTheme(activeScheme);
   }, [theme, resolvedScheme]);
 
   const setTheme = (t: ThemeChoice) => {
     setThemeState(t);
     AsyncStorage.setItem(STORAGE_KEY, t).catch(() => {});
-    Appearance.setColorScheme(t === 'system' ? null : t);
+    const active = t === 'system' ? Appearance.getColorScheme() ?? 'light' : t;
+    setDocumentTheme(active);
   };
 
   return (
