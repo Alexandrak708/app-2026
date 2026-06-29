@@ -35,6 +35,16 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+## Firecrawl university research
+
+Run this from the terminal to research universities for a city, country, or region and save the result as a Markdown file:
+
+```bash
+npm run firecrawl:universities
+```
+
+You will be prompted for the location, optional focus, and output file name. The script uses `FIRECRAWL_API_KEY` from your local `.env` file and does not use the Gemini keys.
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
