@@ -30,18 +30,27 @@
     ]
   },
   "bachelor:finance": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Finance at UE-Varna delivers comprehensive training in corporate finance, investment analysis, financial markets, and risk management. Students gain hands-on experience with financial modelling and valuation techniques, preparing them for careers in banking, investment, and financial consulting.",
+    "keyFocus": "Corporate finance, investment analysis, financial markets, risk management, portfolio theory",
+    "duration": "4 years (8 semesters, full-time)",
+    "studyMode": "Full-time",
     "highlights": [
-      "Edit this highlight."
+      "Access to Bloomberg Terminal and financial databases",
+      "Case competitions with corporate partners",
+      "Mandatory internship in a financial institution",
+      "State-subsidised and paid study options available"
     ],
     "careers": [
-      "Edit this career path."
+      "Financial analyst",
+      "Investment banker",
+      "Portfolio manager",
+      "Risk manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Admission based on secondary school diploma GPA",
+      "Mathematics as a profiled subject strongly recommended",
+      "Apply online at priem.ue-varna.bg",
+      "Paid tuition: ~€868/semester (full-time paid mode)"
     ]
   },
   "bachelor:accounting": {
@@ -60,18 +69,27 @@
     ]
   },
   "bachelor:marketing": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
+    "overview": "Marketing at UE-Varna covers modern marketing strategies, consumer behaviour, digital marketing, branding, and market research. The programme integrates theory with practical campaigns and analytics projects, preparing students for the evolving digital marketing landscape.",
+    "keyFocus": "Digital marketing, branding, consumer behaviour, market research, social media strategy, marketing analytics",
+    "duration": "4 years (8 semesters, full-time)",
+    "studyMode": "Full-time",
     "highlights": [
-      "Edit this highlight."
+      "Hands-on campaigns with real businesses",
+      "Digital marketing lab with analytics tools",
+      "Erasmus+ exchange with marketing-focused partner universities",
+      "Open Doors career networking events"
     ],
     "careers": [
-      "Edit this career path."
+      "Marketing manager",
+      "Digital marketing specialist",
+      "Brand manager",
+      "Market research analyst"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Admission based on secondary school diploma GPA",
+      "Apply online at priem.ue-varna.bg",
+      "State-subsidised and paid study options available",
+      "Paid tuition: ~€868/semester (full-time paid mode)"
     ]
   },
   "bachelor:hotel-and-restaurant-management": {
@@ -105,33 +123,51 @@
     ]
   },
   "bachelor:business-and-management-in-english": {
-    "overview": "Edit this overview for Business and Management - In English.",
-    "keyFocus": "Edit this key focus for Business and Management - In English.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
+    "overview": "Business and Management in English at UE-Varna is designed for students seeking an internationally oriented business education. The curriculum covers management principles, marketing, finance, and entrepreneurship, all taught in English. Students develop cross-cultural communication skills and strategic thinking through case studies and team projects.",
+    "keyFocus": "International management, cross-cultural business communication, strategic decision-making, entrepreneurship",
+    "duration": "4 years (8 semesters, full-time)",
+    "studyMode": "Full-time",
     "highlights": [
-      "Edit this highlight."
+      "Fully taught in English — no Bulgarian language requirement",
+      "Mandatory internship semester with partner companies",
+      "Access to Erasmus+ exchange at 120+ partner universities",
+      "Open Doors policy: direct networking with 200+ business partners"
     ],
     "careers": [
-      "Edit this career path."
+      "International business manager",
+      "Export/import specialist",
+      "Management consultant",
+      "Business development manager"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Admission based on secondary school diploma GPA",
+      "B2-level English certificate required (IELTS 5.5+, TOEFL 72+, or equivalent)",
+      "Apply online at priem.ue-varna.bg by July for regular intake",
+      "International students need diploma recognition (nostrification)"
     ]
   },
   "bachelor:business-economics": {
-    "overview": "Edit this overview for Business Economics.",
-    "keyFocus": "Edit this key focus for Business Economics.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
+    "overview": "Business Economics at UE-Varna provides a solid foundation in microeconomics, macroeconomics, statistics, and business analytics. Students learn to analyse markets, evaluate economic policies, and make data-driven business decisions. The programme combines economic theory with practical applications in business strategy.",
+    "keyFocus": "Microeconomics, macroeconomics, econometrics, business analytics, market research",
+    "duration": "4 years (8 semesters, full-time)",
+    "studyMode": "Full-time",
     "highlights": [
-      "Edit this highlight."
+      "State-subsidised seats available (~€230/semester)",
+      "Mandatory internship semester",
+      "Access to Bloomberg Terminal and economic databases",
+      "Erasmus+ exchange opportunities"
     ],
     "careers": [
-      "Edit this career path."
+      "Economic analyst",
+      "Business consultant",
+      "Market researcher",
+      "Policy advisor"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Admission based on secondary school diploma GPA",
+      "Mathematics or economics as a profiled subject recommended",
+      "Apply online at priem.ue-varna.bg",
+      "International students need diploma recognition"
     ]
   },
   "bachelor:economics-and-trade": {
@@ -255,18 +291,27 @@
     ]
   },
   "bachelor:informatics-and-computer-sciences": {
-    "overview": "Edit this overview for Informatics and Computer Sciences.",
-    "keyFocus": "Edit this key focus for Informatics and Computer Sciences.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
+    "overview": "Informatics and Computer Sciences at UE-Varna equips students with theoretical and practical knowledge in programming, algorithms, database systems, and software engineering. The programme emphasises the application of IT in business contexts, preparing graduates for roles in software development, IT consulting, and digital transformation.",
+    "keyFocus": "Programming, algorithms, databases, web technologies, business intelligence, cybersecurity fundamentals",
+    "duration": "4 years (8 semesters, full-time)",
+    "studyMode": "Full-time",
     "highlights": [
-      "Edit this highlight."
+      "Modern computer labs with industry-standard software",
+      "Projects with real business clients",
+      "State-subsidised and paid study options",
+      "Erasmus+ exchange with European IT universities"
     ],
     "careers": [
-      "Edit this career path."
+      "Software developer",
+      "IT consultant",
+      "Database administrator",
+      "Business intelligence analyst"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Admission based on secondary school diploma GPA",
+      "Strong mathematics background recommended",
+      "Apply online at priem.ue-varna.bg",
+      "Paid tuition: ~€1,045/semester (full-time)"
     ]
   },
   "bachelor:mobile-and-web-technologies": {
@@ -525,18 +570,27 @@
     ]
   },
   "master:master-of-business-administration-in-english": {
-    "overview": "Edit this overview for Master of business administration - In English.",
-    "keyFocus": "Edit this key focus for Master of business administration - In English.",
-    "duration": "Full-time (1-2 years)",
-    "partners": [],
+    "overview": "The MBA in English at UE-Varna is designed for professionals seeking to advance their managerial and strategic skills. The curriculum covers advanced management, financial strategy, marketing leadership, and organisational behaviour, with a strong emphasis on practical business problem-solving.",
+    "keyFocus": "Strategic management, financial leadership, marketing strategy, organisational behaviour, business ethics",
+    "duration": "2 years (4 semesters, part-time friendly)",
+    "studyMode": "Full-time / Part-time",
     "highlights": [
-      "Edit this highlight."
+      "Fully taught in English",
+      "€598/semester — competitive for an MBA programme",
+      "Lecturers with industry experience and international academic backgrounds",
+      "Access to UE Business Network of 200+ companies"
     ],
     "careers": [
-      "Edit this career path."
+      "Senior manager / Director",
+      "Business consultant",
+      "Entrepreneur / Founder",
+      "C-level executive"
     ],
     "admissionNotes": [
-      "Edit this admission note."
+      "Bachelor's degree required",
+      "Professional work experience preferred",
+      "B2-level English certificate required",
+      "Apply online with CV, motivation letter, and diploma"
     ]
   },
   "master:computer-science-in-english": {

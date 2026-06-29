@@ -220,6 +220,16 @@
       "studentsGraduated": "50K+",
       "labs": "20+",
       "tuitionFreeLabel": "€0"
+    },
+    "3": {
+      "yearsTradition": "105+",
+      "bachelorPrograms": "28+",
+      "masterPrograms": "29+",
+      "internationalPartners": "120+",
+      "countries": "60+",
+      "studentsGraduated": "85K+",
+      "labs": "15+",
+      "tuitionFreeLabel": "€230/ sem"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -235,6 +245,14 @@
       { "range": "€400-€600", "label": "BG-language programs (per semester)" },
       { "range": "€3,500", "label": "Pharmacy (English, per semester)" },
       { "range": "€5,000", "label": "Medicine/Dental Medicine (English, per semester)" }
+    ],
+    "3": [
+      { "range": "€230", "label": "State-subsidized (per semester)" },
+      { "range": "€555", "label": "Management, Public Admin (paid, per semester)" },
+      { "range": "€603", "label": "Tourism programs (paid, per semester)" },
+      { "range": "€868", "label": "Business, Finance, Accounting (paid, per semester)" },
+      { "range": "€893", "label": "English-language bachelor (per semester)" },
+      { "range": "€1,045", "label": "IT programs (paid, per semester)" }
     ]
   },
   "universityExtra": {
@@ -312,7 +330,44 @@
     "mu_visaSupport": "Visa and residence permit assistance for non-EU students",
     "mu_dormitories": "Student dormitories available for international students at affordable rates",
     "mu_languagePrep": "Preparatory language courses in Bulgarian and English (9 months, €5,000)",
-    "mu_recognition": "Diploma recognition service through the Ministry of Education and Science"
+    "mu_recognition": "Diploma recognition service through the Ministry of Education and Science",
+    "ue_scholarships": "Scholarships & Funding",
+    "ue_scholarshipsDesc": "UE-Varna offers merit-based scholarships, Erasmus+ mobility grants, social scholarships for disadvantaged students, and doctoral fellowship programmes.",
+    "ue_meritScholarships": "Merit-based scholarships for high academic achievement",
+    "ue_erasmusGrants": "Erasmus+ grants for study/traineeship abroad at 120+ partner universities in 60+ countries",
+    "ue_socialScholarships": "Social scholarships for students with low income or special needs",
+    "ue_doctoralScholarships": "Doctoral fellowship programmes and research funding",
+    "ue_applicationInfo": "Application Process",
+    "ue_applicationDesc": "Admission to UE-Varna is based on a competitive document evaluation (no entrance exams). Applications are submitted online via the university's e-admission system.",
+    "ue_appDocuments": "Required: secondary diploma, transcript, ID, medical certificate, passport photo (upload to e-admission)",
+    "ue_appOnline": "Online application system at priem.ue-varna.bg — no paper forms needed",
+    "ue_appDeadlines": "Deadlines: June–July for regular admission, September for late round",
+    "ue_appInternational": "International students: additional document verification and visa support",
+    "ue_appFees": "Application fee: ~BGN 30 (€15)",
+    "ue_masterFees": "Master's Program Fees",
+    "ue_masterFeesDesc": "UE-Varna offers a wide range of master's programmes with competitive per-semester tuition fees.",
+    "ue_mba": "MBA in English: €598/semester (4 semesters)",
+    "ue_intBusiness": "International Business & Management (English): €911/semester",
+    "ue_csMaster": "Computer Science (English): €1,058/semester",
+    "ue_tourismMaster": "International Tourist Business: €603/semester",
+    "ue_openDoors": "Open Doors & Careers",
+    "ue_openDoorsDesc": "UE-Varna is the first Bulgarian university with an Open Doors policy. Its Career Centre connects students with over 200 partner companies for internships and jobs.",
+    "ue_businessNetwork": "Open Doors: direct access to the university's extensive business network",
+    "ue_careerCenter": "Career Centre organises annual job fairs, CV workshops, and company presentations",
+    "ue_internships": "Mandatory internships integrated into every degree programme",
+    "ue_uebn": "UE Business Network: 200+ partner companies for graduate recruitment",
+    "ue_partners": "International Partners",
+    "ue_partnersDesc": "Through its UEBN and CEEPUS networks, Erasmus+ exchanges, and bilateral agreements, UE-Varna maintains partnerships with over 120 institutions in more than 60 countries.",
+    "ue_euPartners": "Erasmus+ exchanges with 120+ partner universities across Europe",
+    "ue_ceepus": "CEEPUS network: Central European academic mobility programme",
+    "ue_dukenet": "DUKEnet: project-based collaboration with universities in Germany, Austria, and Poland",
+    "ue_businet": "BUSINET: Business Network for International Education — joint programmes and staff mobility",
+    "ue_internationalStudents": "International Students",
+    "ue_internationalDesc": "UE-Varna welcomes international students from 60+ countries with dedicated support services including visa assistance, housing, and language courses.",
+    "ue_visaSupport": "Visa and residence permit support for non-EU students",
+    "ue_housing": "Student dormitories in the university campus — affordable rates with good conditions",
+    "ue_languageCourses": "Bulgarian language preparatory courses for international applicants",
+    "ue_recognition": "Diploma recognition (nostrification) assistance through the Ministry of Education"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -349,6 +404,13 @@
     "pharmacy": "Faculty of Pharmacy",
     "public-health": "Faculty of Public Health",
     "medical-college": "Medical College - Varna"
+  },
+  "ue_faculties": {
+    "finance-accounting": "Faculty of Finance and Accounting",
+    "economics": "Faculty of Economics",
+    "informatics": "Faculty of Information Technologies",
+    "management": "Faculty of Management",
+    "tourism-college": "College of Tourism - Varna"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": { "tuition": "€191.00", "facultyKey": "fita" },
@@ -458,6 +520,61 @@
     "nursing-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
     "health-information-technology": { "tuition": "€600-1,000", "facultyKey": "public-health" }
   },
+  "ue_programInfo": {
+    "hotel-and-restaurant-management": { "tuition": "€603-€868/sem", "facultyKey": "management" },
+    "tourism-and-entertainment-business-management": { "tuition": "€603-€868/sem", "facultyKey": "management" },
+    "business-and-management-in-english": { "tuition": "€893/sem", "facultyKey": "management" },
+    "business-economics": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "economics-and-trade": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "construction-business-and-entrepreneurship": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "real-estate-and-investments": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "industrial-business-and-entrepreneurship": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "logistics": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "agricultural-businesses": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "commodities-science-and-customs-activity": { "tuition": "€230-€868/sem", "facultyKey": "economics" },
+    "business-digital-technologies": { "tuition": "€297-€1,045/sem", "facultyKey": "informatics" },
+    "informatics-and-computer-sciences": { "tuition": "€297-€1,045/sem", "facultyKey": "informatics" },
+    "mobile-and-web-technologies": { "tuition": "€297-€1,045/sem", "facultyKey": "informatics" },
+    "data-science": { "tuition": "€297-€1,045/sem", "facultyKey": "informatics" },
+    "international-business-in-english": { "tuition": "€893/sem", "facultyKey": "management" },
+    "maritime-business-and-international-trade-in-english": { "tuition": "€893/sem", "facultyKey": "management" },
+    "international-tourism-in-russian": { "tuition": "€628/sem", "facultyKey": "management" },
+    "marketing": { "tuition": "€230-€868/sem", "facultyKey": "management" },
+    "international-economic-relations": { "tuition": "€230-€868/sem", "facultyKey": "management" },
+    "management": { "tuition": "€230-€555/sem", "facultyKey": "management" },
+    "tourism": { "tuition": "€230-€603/sem", "facultyKey": "management" },
+    "judicial-administration": { "tuition": "€230-€555/sem", "facultyKey": "management" },
+    "digital-media-and-pr": { "tuition": "€230-€868/sem", "facultyKey": "management" },
+    "accounting-in-english": { "tuition": "€893/sem", "facultyKey": "finance-accounting" },
+    "accounting-and-audit": { "tuition": "€230-€868/sem", "facultyKey": "finance-accounting" },
+    "finance": { "tuition": "€230-€868/sem", "facultyKey": "finance-accounting" },
+    "accounting-and-finance": { "tuition": "€230-€868/sem", "facultyKey": "finance-accounting" },
+    "banking-and-insurance": { "tuition": "€230-€868/sem", "facultyKey": "finance-accounting" },
+    "intercultural-business-in-english": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "international-business-and-management-in-english": { "tuition": "€911/sem", "facultyKey": "management" },
+    "master-of-business-administration-in-english": { "tuition": "€598/sem", "facultyKey": "management" },
+    "computer-science-in-english": { "tuition": "€1,058/sem", "facultyKey": "informatics" },
+    "accounting-and-auditing-control": { "tuition": "€600-€1,000/sem", "facultyKey": "finance-accounting" },
+    "bank-management": { "tuition": "€600-€1,000/sem", "facultyKey": "finance-accounting" },
+    "finance-and-innovations": { "tuition": "€600-€1,000/sem", "facultyKey": "finance-accounting" },
+    "corporate-business-and-governance-management": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "logistics-management": { "tuition": "€600-€1,000/sem", "facultyKey": "economics" },
+    "global-commercial-business": { "tuition": "€600-€1,000/sem", "facultyKey": "economics" },
+    "civil-engineering-entrepreneurship-and-real-estate": { "tuition": "€600-€1,000/sem", "facultyKey": "economics" },
+    "eco-economics": { "tuition": "€600-€1,000/sem", "facultyKey": "economics" },
+    "agricultural-business": { "tuition": "€568/sem", "facultyKey": "economics" },
+    "quality-and-expert-examination-of-commodities": { "tuition": "€600-€1,000/sem", "facultyKey": "economics" },
+    "sales-management-and-merchandising": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "advertising-and-media-communications": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "management-of-organizations": { "tuition": "€555/sem", "facultyKey": "management" },
+    "human-resources-management": { "tuition": "€555/sem", "facultyKey": "management" },
+    "public-management-and-administrative-power": { "tuition": "€555/sem", "facultyKey": "management" },
+    "international-tourist-business": { "tuition": "€603/sem", "facultyKey": "management" },
+    "business-consulting": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "project-management": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "marketing-and-brand-management": { "tuition": "€600-€1,000/sem", "facultyKey": "management" },
+    "mobile-and-web-technologies": { "tuition": "€713/sem", "facultyKey": "informatics" }
+  },
   "universities": {
     "1": {
       "name": "Technical University",
@@ -480,12 +597,12 @@
       "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
-      "name": "Economics University",
-      "description": "Premier business and economics programs shaping future leaders.",
-      "longDescription": "The Economics University of Varna is a leading institution in Bulgarian economic education, known for its comprehensive programs and research initiatives.",
+      "name": "University of Economics – Varna",
+      "description": "Bulgaria's premier economics and business university with over 105 years of tradition and a global network of 120+ partner institutions.",
+      "longDescription": "The University of Economics – Varna (UE-Varna) is the oldest business university in Bulgaria, founded in 1920 as the Higher School of Commerce. It is the first Bulgarian university to adopt an Open Doors policy, actively connecting students with industry. UE-Varna is the first university in Bulgaria to receive ISO 9001 certification and is a full member of the European University Association (EUA).\n\nThe university comprises 4 faculties — Finance and Accounting, Economics, Information Technologies, and Management — along with the College of Tourism – Varna. The campus in the Varna city centre includes modern lecture halls, computer labs, a library with over 200K volumes, sports facilities, student dormitories, and the University Business Incubator.\n\nOver 85,000 students have graduated since its founding. Programmes cover Economics, Finance, Accounting, IT, Management, Marketing, Tourism, and International Business at bachelor, master, and doctoral levels. The university is a partner of 120+ institutions in 60+ countries through Erasmus+, CEEPUS, BUSINET, and bilateral agreements.\n\nTuition-Free: state-subsidized seats cost approx. €230/semester. Paid programmes range from €555-€1,045/semester for Bulgarian-taught and €893-€1,058/semester for English-taught programmes. Rector: Prof. Dr. Evgeni Stanimirov.",
       "location": "Varna, Bulgaria",
       "degree": "Bachelor/Masters",
-      "tuitionRange": "230.08 € - 1 600 € (3 300 € for PhDs)/ year",
+      "tuitionRange": "€230 – €1,058/semester",
       "website": "https://www.ue-varna.bg",
       "applyUrl": "https://www.ue-varna.bg"
     },
@@ -569,18 +686,22 @@
       ]
     },
     "3": {
-      "name": "Economics University",
-      "focus": "business strategy, finance, accounting, economics, and market analysis",
-      "style": "case studies, analytics, and practical business projects",
+      "name": "University of Economics – Varna",
+      "focus": "business strategy, finance, accounting, economics, IT, management, tourism, and international trade",
+      "style": "case studies, analytics, practical business projects, and mandatory internships",
       "careers": [
-        "Analyst",
+        "Financial analyst",
         "Accountant",
-        "Finance specialist",
-        "Marketing consultant"
+        "IT specialist",
+        "Marketing manager",
+        "Tourism manager",
+        "Business consultant"
       ],
       "admissionNotes": [
-        "Useful for students with interest in math and business",
-        "Internships are valuable for employability"
+        "No entrance exams — admission based on secondary school diploma (GPA + electives)",
+        "Apply online at priem.ue-varna.bg",
+        "International students need diploma recognition (nostrification)",
+        "English-language programmes require B2 level English certificate"
       ]
     },
     "4": {
@@ -806,7 +927,7 @@
     "nursing-management": "Nursing Management",
     "health-information-technology": "Health Information Technology",
 
-    "___university_3": "University 3 — Economics University",
+    "___university_3": "University 3 — University of Economics – Varna",
     "hotel-and-restaurant-management": "Hotel and Restaurant Management",
     "tourism-and-entertainment-business-management": "Tourism and Entertainment Business Management",
     "business-and-management-in-english": "Business and Management - In English",

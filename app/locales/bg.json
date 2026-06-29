@@ -221,6 +221,16 @@
       "studentsGraduated": "50K+",
       "labs": "20+",
       "tuitionFreeLabel": "€0"
+    },
+    "3": {
+      "yearsTradition": "105+",
+      "bachelorPrograms": "28+",
+      "masterPrograms": "29+",
+      "internationalPartners": "120+",
+      "countries": "60+",
+      "studentsGraduated": "85K+",
+      "labs": "15+",
+      "tuitionFreeLabel": "€230/ сем"
     }
   },
   "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
@@ -236,6 +246,14 @@
       { "range": "€400-€600", "label": "Българоезични програми (на семестър)" },
       { "range": "€3,500", "label": "Фармация (англ., на семестър)" },
       { "range": "€5,000", "label": "Медицина/Дентална медицина (англ., на семестър)" }
+    ],
+    "3": [
+      { "range": "€230", "label": "Държавна поръчка (на семестър)" },
+      { "range": "€555", "label": "Управление, Публ. админ. (платено, на сем.)" },
+      { "range": "€603", "label": "Туризъм (платено, на семестър)" },
+      { "range": "€868", "label": "Бизнес, Финанси, Счетоводство (платено, на сем.)" },
+      { "range": "€893", "label": "Англоезични бакалавърски програми (на сем.)" },
+      { "range": "€1,045", "label": "ИТ програми (платено, на семестър)" }
     ]
   },
   "universityExtra": {
@@ -313,7 +331,44 @@
     "mu_visaSupport": "Помощ за визи и разрешителни за пребиваване за студенти извън ЕС",
     "mu_dormitories": "Студентски общежития на достъпни цени за чуждестранни студенти",
     "mu_languagePrep": "Подготвителни езикови курсове по български и английски (9 месеца, €5,000)",
-    "mu_recognition": "Услуга за признаване на дипломи чрез Министерството на образованието и науката"
+    "mu_recognition": "Услуга за признаване на дипломи чрез Министерството на образованието и науката",
+    "ue_scholarships": "Стипендии и финансиране",
+    "ue_scholarshipsDesc": "ИУ-Варна предлага стипендии за висок успех, Еразъм+ мобилност, социални стипендии и докторантски програми.",
+    "ue_meritScholarships": "Стипендии за висок академичен успех",
+    "ue_erasmusGrants": "Еразъм+ стипендии за обучение/стаж в 120+ партньорски университета в 60+ държави",
+    "ue_socialScholarships": "Социални стипендии за студенти с нисък доход или специални нужди",
+    "ue_doctoralScholarships": "Докторантски програми и изследователско финансиране",
+    "ue_applicationInfo": "Процедура за кандидатстване",
+    "ue_applicationDesc": "Кандидатстването в ИУ-Варна става чрез конкурс на документи (без приемни изпити). Заявленията се подават онлайн чрез е-приемната на университета.",
+    "ue_appDocuments": "Необходими: диплома за средно образование, свидетелство, лична карта, медицинско, снимка (качват се в е-приемната)",
+    "ue_appOnline": "Онлайн система за кандидатстване на priem.ue-varna.bg — без хартиени формуляри",
+    "ue_appDeadlines": "Крайни срокове: юни–юли за редовен прием, септември за допълнителен",
+    "ue_appInternational": "Чуждестранни студенти: допълнителна проверка на документи и визова подкрепа",
+    "ue_appFees": "Такса за кандидатстване: ~30 лв.",
+    "ue_masterFees": "Магистърски такси",
+    "ue_masterFeesDesc": "ИУ-Варна предлага разнообразни магистърски програми с конкурентни семестриални такси.",
+    "ue_mba": "MBA на английски: €598/семестър (4 семестъра)",
+    "ue_intBusiness": "Международен бизнес и мениджмънт (англ.): €911/семестър",
+    "ue_csMaster": "Компютърни науки (англ.): €1,058/семестър",
+    "ue_tourismMaster": "Международен туристически бизнес: €603/семестър",
+    "ue_openDoors": "Отворени врати и кариери",
+    "ue_openDoorsDesc": "ИУ-Варна е първият български университет с Политика на отворените врати. Кариерният център свързва студентите с над 200 партньорски компании за стажове и работа.",
+    "ue_businessNetwork": "Отворени врати: пряк достъп до обширната бизнес мрежа на университета",
+    "ue_careerCenter": "Кариерен център: ежегодни панаири на труда, CV работилници и презентации на компании",
+    "ue_internships": "Задължителни стажове, интегрирани във всяка програма",
+    "ue_uebn": "UE Business Network: 200+ партньорски компании за наемане на завършили",
+    "ue_partners": "Международни партньори",
+    "ue_partnersDesc": "Чрез мрежите UEBN и CEEPUS, Еразъм+ обмен и двустранни споразумения, ИУ-Варна поддържа партньорства с над 120 институции в повече от 60 държави.",
+    "ue_euPartners": "Еразъм+ обмен със 120+ партньорски университета в Европа",
+    "ue_ceepus": "CEEPUS мрежа: централноевропейска академична мобилност",
+    "ue_dukenet": "DUKEnet: проектно базирано сътрудничество с университети от Германия, Австрия и Полша",
+    "ue_businet": "BUSINET: бизнес мрежа за международно образование — съвместни програми и мобилност",
+    "ue_internationalStudents": "Чуждестранни студенти",
+    "ue_internationalDesc": "ИУ-Варна приема студенти от над 60 държави с осигурена подкрепа за визи, настаняване и езикови курсове.",
+    "ue_visaSupport": "Помощ за визи и разрешителни за пребиваване за студенти извън ЕС",
+    "ue_housing": "Студентски общежития в кампуса на достъпни цени",
+    "ue_languageCourses": "Подготвителни курсове по български език за чуждестранни кандидати",
+    "ue_recognition": "Помощ за признаване на дипломи (нострификация) чрез Министерството на образованието"
   },
   "programDetail": {
     "notFound": "Програмата не е намерена",
@@ -350,6 +405,13 @@
     "pharmacy": "Факултет по фармация",
     "public-health": "Факултет по обществено здравеопазване",
     "medical-college": "Медицински колеж - Варна"
+  },
+  "ue_faculties": {
+    "finance-accounting": "Факултет по финанси и счетоводство",
+    "economics": "Факултет по икономика",
+    "informatics": "Факултет по информационни технологии",
+    "management": "Факултет по управление",
+    "tourism-college": "Колеж по туризъм - Варна"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -626,6 +688,61 @@
     "nursing-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
     "health-information-technology": { "tuition": "€600-1,000", "facultyKey": "public-health" }
   },
+  "ue_programInfo": {
+    "hotel-and-restaurant-management": { "tuition": "€603-€868/сем", "facultyKey": "management" },
+    "tourism-and-entertainment-business-management": { "tuition": "€603-€868/сем", "facultyKey": "management" },
+    "business-and-management-in-english": { "tuition": "€893/сем", "facultyKey": "management" },
+    "business-economics": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "economics-and-trade": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "construction-business-and-entrepreneurship": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "real-estate-and-investments": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "industrial-business-and-entrepreneurship": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "logistics": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "agricultural-businesses": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "commodities-science-and-customs-activity": { "tuition": "€230-€868/сем", "facultyKey": "economics" },
+    "business-digital-technologies": { "tuition": "€297-€1,045/сем", "facultyKey": "informatics" },
+    "informatics-and-computer-sciences": { "tuition": "€297-€1,045/сем", "facultyKey": "informatics" },
+    "mobile-and-web-technologies": { "tuition": "€297-€1,045/сем", "facultyKey": "informatics" },
+    "data-science": { "tuition": "€297-€1,045/сем", "facultyKey": "informatics" },
+    "international-business-in-english": { "tuition": "€893/сем", "facultyKey": "management" },
+    "maritime-business-and-international-trade-in-english": { "tuition": "€893/сем", "facultyKey": "management" },
+    "international-tourism-in-russian": { "tuition": "€628/сем", "facultyKey": "management" },
+    "marketing": { "tuition": "€230-€868/сем", "facultyKey": "management" },
+    "international-economic-relations": { "tuition": "€230-€868/сем", "facultyKey": "management" },
+    "management": { "tuition": "€230-€555/сем", "facultyKey": "management" },
+    "tourism": { "tuition": "€230-€603/сем", "facultyKey": "management" },
+    "judicial-administration": { "tuition": "€230-€555/сем", "facultyKey": "management" },
+    "digital-media-and-pr": { "tuition": "€230-€868/сем", "facultyKey": "management" },
+    "accounting-in-english": { "tuition": "€893/сем", "facultyKey": "finance-accounting" },
+    "accounting-and-audit": { "tuition": "€230-€868/сем", "facultyKey": "finance-accounting" },
+    "finance": { "tuition": "€230-€868/сем", "facultyKey": "finance-accounting" },
+    "accounting-and-finance": { "tuition": "€230-€868/сем", "facultyKey": "finance-accounting" },
+    "banking-and-insurance": { "tuition": "€230-€868/сем", "facultyKey": "finance-accounting" },
+    "intercultural-business-in-english": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "international-business-and-management-in-english": { "tuition": "€911/сем", "facultyKey": "management" },
+    "master-of-business-administration-in-english": { "tuition": "€598/сем", "facultyKey": "management" },
+    "computer-science-in-english": { "tuition": "€1,058/сем", "facultyKey": "informatics" },
+    "accounting-and-auditing-control": { "tuition": "€600-€1,000/сем", "facultyKey": "finance-accounting" },
+    "bank-management": { "tuition": "€600-€1,000/сем", "facultyKey": "finance-accounting" },
+    "finance-and-innovations": { "tuition": "€600-€1,000/сем", "facultyKey": "finance-accounting" },
+    "corporate-business-and-governance-management": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "logistics-management": { "tuition": "€600-€1,000/сем", "facultyKey": "economics" },
+    "global-commercial-business": { "tuition": "€600-€1,000/сем", "facultyKey": "economics" },
+    "civil-engineering-entrepreneurship-and-real-estate": { "tuition": "€600-€1,000/сем", "facultyKey": "economics" },
+    "eco-economics": { "tuition": "€600-€1,000/сем", "facultyKey": "economics" },
+    "agricultural-business": { "tuition": "€568/сем", "facultyKey": "economics" },
+    "quality-and-expert-examination-of-commodities": { "tuition": "€600-€1,000/сем", "facultyKey": "economics" },
+    "sales-management-and-merchandising": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "advertising-and-media-communications": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "management-of-organizations": { "tuition": "€555/сем", "facultyKey": "management" },
+    "human-resources-management": { "tuition": "€555/сем", "facultyKey": "management" },
+    "public-management-and-administrative-power": { "tuition": "€555/сем", "facultyKey": "management" },
+    "international-tourist-business": { "tuition": "€603/сем", "facultyKey": "management" },
+    "business-consulting": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "project-management": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "marketing-and-brand-management": { "tuition": "€600-€1,000/сем", "facultyKey": "management" },
+    "mobile-and-web-technologies": { "tuition": "€713/сем", "facultyKey": "informatics" }
+  },
   "universities": {
     "1": {
       "name": "Технически университет",
@@ -648,12 +765,12 @@
       "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
-      "name": "Икономически университет",
-      "description": "Водещи бизнес и икономически програми, които формират бъдещите лидери.",
-      "longDescription": "Икономическият университет във Варна е водеща институция в българското икономическо образование, известна със своите комплексни програми и изследователски инициативи.",
+      "name": "Икономически университет – Варна",
+      "description": "Най-старият бизнес университет в България с над 105 години традиция и глобална мрежа от 120+ партньорски институции.",
+      "longDescription": "Икономическият университет – Варна (ИУ-Варна) е най-старият бизнес университет в България, основан през 1920 г. като Висше търговско училище. Той е първият български университет с Политика на отворените врати, активно свързващ студентите с индустрията. ИУ-Варна е първият университет в България, получил ISO 9001 сертификат, и е пълноправен член на Европейската университетска асоциация (EUA).\n\nУниверситетът включва 4 факултета — Финанси и счетоводство, Икономика, Информационни технологии и Управление — заедно с Колежа по туризъм – Варна. Кампусът в центъра на Варна разполага с модерни лекционни зали, компютърни лаборатории, библиотека с над 200 000 тома, спортни съоръжения, студентски общежития и Университетски бизнес инкубатор.\n\nНад 85 000 студенти са завършили от основаването му. Програмите обхващат Икономика, Финанси, Счетоводство, ИТ, Управление, Маркетинг, Туризъм и Международен бизнес на бакалавърско, магистърско и докторско ниво. Партньор е на 120+ институции от 60+ държави чрез Еразъм+, CEEPUS, BUSINET и двустранни споразумения.\n\nБезплатно обучение: държавна поръчка — около €230/семестър. Платените програми варират от €555 до €1,045/семестър за българоезични и от €893 до €1,058/семестър за англоезични програми. Ректор: проф. д-р Евгени Станимиров.",
       "location": "Варна, България",
       "degree": "Бакалавър/Магистър",
-      "tuitionRange": "230.08 € - 1 600 € (до 3 300 € за доктуранти)/ година",
+      "tuitionRange": "€230 – €1,058/семестър",
       "website": "https://www.ue-varna.bg",
       "applyUrl": "https://www.ue-varna.bg"
     },
@@ -737,18 +854,22 @@
       ]
     },
     "3": {
-      "name": "Икономически университет",
-      "focus": "бизнес стратегия, финанси, счетоводство, икономика и анализ на пазара",
-      "style": "казус проучвания, аналитика и практически бизнес проекти",
+      "name": "Икономически университет – Варна",
+      "focus": "бизнес стратегия, финанси, счетоводство, икономика, ИТ, управление, туризъм и международна търговия",
+      "style": "казуси, анализи, практически бизнес проекти и задължителни стажове",
       "careers": [
-        "Анализатор",
+        "Финансов анализатор",
         "Счетоводител",
-        "Финансов специалист",
-        "Консултант по маркетинг"
+        "ИТ специалист",
+        "Маркетинг мениджър",
+        "Мениджър в туризма",
+        "Бизнес консултант"
       ],
       "admissionNotes": [
-        "Полезно за студенти с интерес към математика и бизнес",
-        "Стажантурите са ценни за развитие на професионални умения"
+        "Без приемни изпити — прием по диплома за средно образование (успех + профилиращи предмети)",
+        "Кандидатстване онлайн на priem.ue-varna.bg",
+        "Чуждестранни студенти: необходимо е признаване на диплома (нострификация)",
+        "Англоезичните програми изискват сертификат за английски език минимум B2"
       ]
     },
     "4": {
@@ -972,7 +1093,7 @@
     "pharmaceutical-management": "Фармацевтичен мениджмънт",
     "nursing-management": "Управление на сестринските грижи",
     "health-information-technology": "Здравни информационни технологии",
-    "___university_3": "Университет 3 — Икономически университет",
+    "___university_3": "Университет 3 — Икономически университет – Варна",
     "hotel-and-restaurant-management": "Управление на хотели и ресторанти",
     "tourism-and-entertainment-business-management": "Управление на туризма и развлекателния бизнес",
     "business-and-management-in-english": "Бизнес и мениджмънт - на английски",
