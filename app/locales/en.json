@@ -220,6 +220,16 @@
       "studentsGraduated": "50K+",
       "labs": "20+",
       "tuitionFreeLabel": "€0"
+    },
+    "3": {
+      "yearsTradition": "115+",
+      "bachelorPrograms": "28",
+      "masterPrograms": "29",
+      "internationalPartners": "300+",
+      "countries": "60+",
+      "studentsGraduated": "160K+",
+      "labs": "10+",
+      "tuitionFreeLabel": "€245"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -235,6 +245,12 @@
       { "range": "€400-€600", "label": "BG-language programs (per semester)" },
       { "range": "€3,500", "label": "Pharmacy (English, per semester)" },
       { "range": "€5,000", "label": "Medicine/Dental Medicine (English, per semester)" }
+    ],
+    "3": [
+      { "range": "€245", "label": "State-subsidized programs (per semester)" },
+      { "range": "€555-€1,045", "label": "Paid full-time programs (per semester)" },
+      { "range": "€450-€570", "label": "Distance learning programs (per semester)" },
+      { "range": "€1,350", "label": "International students (per semester)" }
     ]
   },
   "universityExtra": {
@@ -314,6 +330,47 @@
     "mu_languagePrep": "Preparatory language courses in Bulgarian and English (9 months, €5,000)",
     "mu_recognition": "Diploma recognition service through the Ministry of Education and Science"
   },
+    "ue_scholarships": "Scholarships & Funding at UE-Varna",
+    "ue_scholarshipsDesc": "UE-Varna offers various scholarship opportunities for academic excellence and social support:",
+    "ue_excellentScholarships": "Excellence scholarships for students with GPA above 4.00 (Bulgarian and EU/EEA citizens)",
+    "ue_erasmusGrants": "Erasmus+ mobility grants for study or traineeship at 300+ partner universities in 50+ countries",
+    "ue_socialScholarships": "Social scholarships for students with financial need",
+    "ue_doctoralScholarships": "State-funded doctoral scholarships for PhD candidates",
+    "ue_applicationInfo": "Application Process (Bachelor 2026/2027)",
+    "ue_applicationDesc": "Admission to UE-Varna bachelor programmes is based on secondary school diploma grades, electronic tests, or school-leaving exam results. Applications are submitted online through the Candidate-Student system.",
+    "ue_appEarly": "Early admission stages run from February to June",
+    "ue_appDocuments": "Required: secondary school diploma (or certificate of completed 1st gymnasium stage), academic transcript, 4 photos",
+    "ue_appOnline": "Online application through the Candidate-Student system",
+    "ue_appMainRound": "Main application round: June – September for the academic year starting in October",
+    "ue_appFees": "Application fee: €9; electronic test fee: €30",
+    "ue_appExams": "Electronic entrance tests held regularly – candidates can choose their preferred date",
+    "ue_appInternational": "International students: submit secondary school diploma with recognition certificate from the Ministry of Education; tuition €1,350/semester",
+    "ue_masterFees": "Master's Tuition (2026/2027)",
+    "ue_masterFeesDesc": "Master's semester fees vary by programme and delivery mode:",
+    "ue_masterRegular": "Regular Master's: state-subsidized and paid options available",
+    "ue_masterEnglish": "English-taught Master's: Intercultural Business, International Business & Management, MBA, Computer Science – separate fee structure",
+    "ue_masterDistance": "Distance learning Master's: flexible format for working professionals",
+    "ue_openDoors": "Open Doors & Career Development",
+    "ue_openDoorsDesc": "UE-Varna runs a dedicated Career Centre and the UEBN (University Business Network) platform with 22,000+ registered users:",
+    "ue_businessAccelerator": "UEVA Business Accelerator – supports student startups and entrepreneurial ventures",
+    "ue_careerCentre": "Career Centre with job listings, internship opportunities, and employer meetups",
+    "ue_uebn": "UEBN platform – connects students with 22,000+ businesses for internships and jobs",
+    "ue_alumni": "Alumni network with 160,000+ graduates supporting career development",
+    "ue_partners": "International Partners & Networks",
+    "ue_partnersDesc": "UE-Varna has 300+ international cooperation agreements and active memberships in global networks:",
+    "ue_erasmusPartners": "Erasmus+ partners in 50+ countries including Germany, France, Italy, Spain, Finland, Poland, Hungary, Romania, Greece, Turkey and many more",
+    "ue_dukenet": "Member of Dukenet – prestigious international network uniting HEIs from 15+ European countries",
+    "ue_businet": "Member of Businet – global network of 145 HEIs from 35 countries focused on international business programmes",
+    "ue_ceepus": "CEEPUS network: Central European academic exchange with universities in Austria, Hungary, Poland, Romania, Slovakia, and others",
+    "ue_doubleDegrees": "Dual-degree programmes with Seinäjoki UAS (Finland), Worms UAS (Germany), and Plekhanov REU (Russia)",
+    "ue_magellan": "Magellan quadruple Master's degree with universities in Poland, Hungary and Spain",
+    "ue_internationalStudents": "International Students at UE-Varna",
+    "ue_internationalDesc": "UE-Varna welcomes over 300 international students from 60+ countries. The International Relations Department provides dedicated support:",
+    "ue_visaSupport": "Visa and residence permit assistance for non-EU students",
+    "ue_dormitories": "Student dormitories available at affordable rates",
+    "ue_languageCourses": "Bulgarian language preparatory courses for international students",
+    "ue_recognition": "Diploma recognition service through the Ministry of Education and Science",
+    "ue_internationalOffice": "International Cooperation Department handles foreign student admissions and support",
   "programDetail": {
     "notFound": "Program not found",
     "notFoundDesc": "The university or program link did not match any saved data.",
@@ -349,6 +406,13 @@
     "pharmacy": "Faculty of Pharmacy",
     "public-health": "Faculty of Public Health",
     "medical-college": "Medical College - Varna"
+  },
+  "ue_faculties": {
+    "finance-accounting": "Finance and Accounting Faculty",
+    "business": "Business Faculty",
+    "informatics": "Informatics Faculty",
+    "management": "Management Faculty",
+    "tourism-college": "College of Tourism"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": { "tuition": "€191.00", "facultyKey": "fita" },
@@ -458,6 +522,37 @@
     "nursing-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
     "health-information-technology": { "tuition": "€600-1,000", "facultyKey": "public-health" }
   },
+  "ue_programInfo": {
+    "hotel-and-restaurant-management": { "tuition": "€245 (state) / €605 (paid)", "facultyKey": "tourism-college" },
+    "tourism-and-entertainment-business-management": { "tuition": "€245 (state) / €605 (paid)", "facultyKey": "tourism-college" },
+    "business-and-management-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "business" },
+    "business-economics": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "economics-and-trade": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "construction-business-and-entrepreneurship": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "real-estate-and-investments": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "industrial-business-and-entrepreneurship": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "logistics": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "agricultural-businesses": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "commodities-science-and-customs-activity": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
+    "business-digital-technologies": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "informatics" },
+    "informatics-and-computer-sciences": { "tuition": "€300 (state) / €1,045 (paid)", "facultyKey": "informatics" },
+    "mobile-and-web-technologies": { "tuition": "€300 (state) / €1,045 (paid)", "facultyKey": "informatics" },
+    "data-science": { "tuition": "€300 (state) / €1,045 (paid)", "facultyKey": "informatics" },
+    "international-business-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "management" },
+    "maritime-business-and-international-trade-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "management" },
+    "international-tourism-in-russian": { "tuition": "€280 (state) / €630 (paid)", "facultyKey": "management" },
+    "marketing": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "management" },
+    "international-economic-relations": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "management" },
+    "management": { "tuition": "€245 (state) / €555 (paid)", "facultyKey": "management" },
+    "public-administration": { "tuition": "€245 (state) / €555 (paid)", "facultyKey": "management" },
+    "tourism": { "tuition": "€245 (state) / €605 (paid)", "facultyKey": "management" },
+    "judicial-administration": { "tuition": "€245 (state) / €555 (paid)", "facultyKey": "management" },
+    "digital-media-and-pr": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "management" },
+    "accounting-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "finance-accounting" },
+    "accounting-and-audit": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "finance-accounting" },
+    "accounting-and-finance": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "finance-accounting" },
+    "banking-and-insurance": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "finance-accounting" }
+  },
   "universities": {
     "1": {
       "name": "Technical University",
@@ -481,13 +576,13 @@
     },
     "3": {
       "name": "Economics University",
-      "description": "Premier business and economics programs shaping future leaders.",
-      "longDescription": "The Economics University of Varna is a leading institution in Bulgarian economic education, known for its comprehensive programs and research initiatives.",
+      "description": "Bulgaria's top-ranked economics university with 115+ years of tradition, modern business education and strong international partnerships.",
+      "longDescription": "The University of Economics – Varna (UE–Varna) is the oldest business university in Bulgaria, founded in 1911. It holds institutional accreditation with a rating of 9.49 out of 10 from the National Evaluation and Accreditation Agency (NEAA) and is ISO 9001:2015 certified. It is the only Bulgarian university in the Dukenet international network and a member of the prestigious Businet global network of higher education institutions. UE–Varna is ranked in the Top 10 of Bulgarian universities by UniRank and has been included in the Times Higher Education Impact Rankings.\n\nThe university comprises 4 faculties — Finance and Accounting, Business, Informatics, and Management — along with the College of Tourism and a Research Institute with 6 research centres. The main building is a cultural heritage landmark and a Varna symbol. The campus features 3 academic buildings with over 7,000 seats in lecture halls, 640+ computer workstations, a modern library with 350,000+ books (winner of Library of the Year 2011), a sports complex, student dormitories, a business accelerator (UEVA), and the University Business Network (UEBN) platform with 22,000+ registered users.\n\nOver 160,000 students have graduated from UE–Varna — including many internationals from 60+ countries — across 28 bachelor's, 29 master's and 16 doctoral programmes in Economics, Administration and Management, Tourism, and Informatics and Computer Sciences. The university has 300+ international partner institutions in 50+ countries through Erasmus+, CEEPUS, Dukenet and Businet networks.\n\nThe university offers dual-degree programmes with universities in Finland, Germany, and joint multi-lateral master's programmes (Magellan quadruple degree with Poland, Hungary and Spain). Bachelor fees range from €245/semester (state-subsidized) to €1,350/semester (international students). Rector: Prof. Dr. Evgeni Stanimirov.",
       "location": "Varna, Bulgaria",
-      "degree": "Bachelor/Masters",
-      "tuitionRange": "230.08 € - 1 600 € (3 300 € for PhDs)/ year",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€245 - €1,350 / semester (state-subsidized and paid options)",
       "website": "https://www.ue-varna.bg",
-      "applyUrl": "https://www.ue-varna.bg"
+      "applyUrl": "https://ksp.ue-varna.bg/login"
     },
     "4": {
       "name": "Naval University",
@@ -570,17 +665,26 @@
     },
     "3": {
       "name": "Economics University",
-      "focus": "business strategy, finance, accounting, economics, and market analysis",
-      "style": "case studies, analytics, and practical business projects",
+      "focus": "business strategy, finance, accounting, economics, marketing, management, IT, tourism, and international business",
+      "style": "case studies, business simulations, digital learning platforms, applied research, entrepreneurial projects through UEVA accelerator, and strong industry connections via the UEBN business network",
       "careers": [
-        "Analyst",
-        "Accountant",
-        "Finance specialist",
-        "Marketing consultant"
+        "Economist / Financial Analyst",
+        "Accountant / Auditor",
+        "Marketing and PR Specialist",
+        "Management Consultant",
+        "IT and Data Analyst",
+        "Tourism and Hospitality Manager",
+        "International Trade Specialist",
+        "Banking and Insurance Professional",
+        "Entrepreneur / Business Owner"
       ],
       "admissionNotes": [
-        "Useful for students with interest in math and business",
-        "Internships are valuable for employability"
+        "Selection based on secondary school diploma grades, electronic tests, or school-leaving exam results",
+        "English-taught programmes in Business, International Business, Accounting, and Maritime Business available",
+        "Russian-taught programme in International Tourism available",
+        "Early admission stages run from February; main round June–September",
+        "Application fee: €9; electronic test fee: €30",
+        "Online application at ksp.ue-varna.bg"
       ]
     },
     "4": {
@@ -1556,20 +1660,22 @@
         "Service commitment after graduation"
       ]
     },
-    "3:bachelor:international-business": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
+    "3:bachelor:hotel-and-restaurant-management": {
+      "overview": "Provides comprehensive training in hotel and restaurant operations, hospitality management, food and beverage service, and tourism business management.",
+      "keyFocus": "hospitality management, hotel operations, restaurant management, food service, event management",
+      "duration": "Full-time (4 years)",
+      "partners": ["College of Tourism", "Leading hotels and restaurant chains in Varna and Bulgaria"],
+      "highlights": ["Practical training in hotel and restaurant environments", "Internships at partner hospitality establishments", "Foreign language training in English and other languages"],
+      "careers": ["Hotel Manager", "Restaurant Manager", "Event Coordinator", "Hospitality Entrepreneur"],
+      "admissionNotes": ["Secondary school diploma required", "Interest in hospitality and service industry recommended"]
+    },
+    "3:bachelor:informatics-and-computer-sciences": {
+      "overview": "Comprehensive computer science programme covering programming, algorithms, databases, software engineering, and information systems.",
+      "keyFocus": "programming, algorithms, databases, software engineering, information systems",
+      "duration": "Full-time (4 years)",
+      "highlights": ["Modern programming labs", "Software development projects", "Database management systems", "Web and mobile development"],
+      "careers": ["Software Developer", "Database Administrator", "IT Consultant", "Systems Analyst"],
+      "admissionNotes": ["Strong mathematics background required", "Programming experience recommended"]
     },
     "4:bachelor:navigation-ship-maneuvering": {
       "overview": "Navigation (Ship Maneuvering) at TU–Varna combines theoretical navigation with mandatory simulator training and sea practice complying with STCW conventions.",

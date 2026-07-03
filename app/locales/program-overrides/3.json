@@ -1,857 +1,433 @@
 {
-  "bachelor:international-business": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
-  },
-  "bachelor:economics": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
-  },
-  "bachelor:finance": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
-  },
-  "bachelor:accounting": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
-  },
-  "bachelor:marketing": {
-    "overview": "Edit this overview.",
-    "keyFocus": "Edit this key focus.",
-    "duration": "Edit this duration.",
-    "studyMode": "Edit these partners.",
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
-  },
   "bachelor:hotel-and-restaurant-management": {
-    "overview": "Edit this overview for Hotel and Restaurant Management.",
-    "keyFocus": "Edit this key focus for Hotel and Restaurant Management.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Provides comprehensive training in hotel and restaurant operations, hospitality management, food and beverage service, and tourism business management.",
+    "keyFocus": "hospitality management, hotel operations, restaurant management, food service, event management",
+    "duration": "Full-time (4 years)",
+    "partners": ["College of Tourism", "Leading hotels and restaurant chains in Varna and Bulgaria"],
+    "highlights": ["Practical training in hotel and restaurant environments", "Internships at partner hospitality establishments", "Foreign language training in English and other languages", "College of Tourism affiliation"],
+    "careers": ["Hotel Manager", "Restaurant Manager", "Event Coordinator", "Hospitality Entrepreneur"],
+    "admissionNotes": ["Secondary school diploma required", "Interest in hospitality and service industry recommended"]
   },
   "bachelor:tourism-and-entertainment-business-management": {
-    "overview": "Edit this overview for Tourism and Entertainment Business Management.",
-    "keyFocus": "Edit this key focus for Tourism and Entertainment Business Management.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers tourism management, entertainment business operations, event planning, and leisure industry management.",
+    "keyFocus": "tourism management, entertainment business, event planning, leisure industry",
+    "duration": "Full-time (4 years)",
+    "partners": ["College of Tourism", "Tourism agencies and entertainment venues"],
+    "highlights": ["Practical internships in tourism and entertainment", "Event planning and management projects", "Strong focus on foreign language skills", "Industry guest lectures and workshops"],
+    "careers": ["Tourism Manager", "Event Planner", "Entertainment Business Manager", "Leisure Industry Specialist"],
+    "admissionNotes": ["Secondary school diploma required", "Communication and organisational skills valued"]
   },
   "bachelor:business-and-management-in-english": {
-    "overview": "Edit this overview for Business and Management - In English.",
-    "keyFocus": "Edit this key focus for Business and Management - In English.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "A fully English-taught programme covering modern business management, organisational behaviour, strategic planning, and international business practices.",
+    "keyFocus": "international business, strategic management, organisational behaviour, global markets",
+    "duration": "Full-time (4 years)",
+    "partners": ["International partner universities via Erasmus+", "UEBN business network"],
+    "highlights": ["Taught entirely in English", "International student cohort", "Business simulation exercises", "Access to UEBN platform with 22,000+ businesses"],
+    "careers": ["International Business Manager", "Management Consultant", "Business Development Specialist", "Global Operations Coordinator"],
+    "admissionNotes": ["English proficiency required (IELTS 6.0+ or equivalent)", "Secondary school diploma with good grades"]
   },
   "bachelor:business-economics": {
-    "overview": "Edit this overview for Business Economics.",
-    "keyFocus": "Edit this key focus for Business Economics.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Focuses on micro and macroeconomics, business statistics, economic policy, and quantitative methods for business decision-making.",
+    "keyFocus": "microeconomics, macroeconomics, business statistics, economic policy, quantitative analysis",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "partners": ["UEBN business network"],
+    "highlights": ["Strong foundation in economic theory", "Applied data analysis and forecasting", "Business case studies", "Computer-based economic modelling"],
+    "careers": ["Business Economist", "Economic Analyst", "Policy Advisor", "Market Research Specialist"],
+    "admissionNotes": ["Mathematics background recommended", "Analytical thinking skills valued"]
   },
   "bachelor:economics-and-trade": {
-    "overview": "Edit this overview for Economics and Trade.",
-    "keyFocus": "Edit this key focus for Economics and Trade.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers trade economics, commercial operations, supply chain management, domestic and international trade practices.",
+    "keyFocus": "trade economics, commercial operations, supply chain management, international trade",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Trade simulation exercises", "Industry partnerships with commercial enterprises", "International trade case studies", "E-commerce and digital trade modules"],
+    "careers": ["Trade Specialist", "Supply Chain Coordinator", "Commercial Manager", "Import/Export Specialist"],
+    "admissionNotes": ["Interest in commerce and trade", "Mathematics background helpful"]
   },
   "bachelor:construction-business-and-entrepreneurship": {
-    "overview": "Edit this overview for Construction Business and Entrepreneurship.",
-    "keyFocus": "Edit this key focus for Construction Business and Entrepreneurship.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Combines construction industry knowledge with business management, real estate development, and entrepreneurial skills.",
+    "keyFocus": "construction management, real estate development, entrepreneurship, project management",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Construction project case studies", "Real estate market analysis", "Entrepreneurial business planning", "Industry guest speakers"],
+    "careers": ["Construction Business Manager", "Real Estate Developer", "Entrepreneur in Construction", "Project Manager"],
+    "admissionNotes": ["Interest in construction and business", "Mathematics background recommended"]
   },
   "bachelor:real-estate-and-investments": {
-    "overview": "Edit this overview for Real Estate and Investments.",
-    "keyFocus": "Edit this key focus for Real Estate and Investments.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Focuses on real estate markets, property valuation, investment analysis, portfolio management, and real estate law.",
+    "keyFocus": "real estate markets, property valuation, investment analysis, portfolio management",
+    "duration": "Full-time (4 years) / Distance learning",
+    "highlights": ["Real estate market analysis tools", "Property valuation techniques", "Investment portfolio simulation", "Real estate law and regulations"],
+    "careers": ["Real Estate Agent", "Property Valuer", "Investment Analyst", "Real Estate Portfolio Manager"],
+    "admissionNotes": ["Interest in property markets", "Mathematics and analytical skills valued"]
   },
   "bachelor:industrial-business-and-entrepreneurship": {
-    "overview": "Edit this overview for Industrial Business and Entrepreneurship.",
-    "keyFocus": "Edit this key focus for Industrial Business and Entrepreneurship.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers industrial economics, production management, business development, and entrepreneurial strategy in industrial sectors.",
+    "keyFocus": "industrial economics, production management, business development, entrepreneurship",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Industry-specific business cases", "Entrepreneurial project development", "Production and operations management", "Industrial market analysis"],
+    "careers": ["Industrial Business Manager", "Production Planner", "Business Development Manager", "Industrial Entrepreneur"],
+    "admissionNotes": ["Interest in industry and manufacturing", "Analytical and problem-solving skills"]
   },
   "bachelor:logistics": {
-    "overview": "Edit this overview for Logistics.",
-    "keyFocus": "Edit this key focus for Logistics.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Comprehensive coverage of logistics and supply chain management, transportation, warehousing, inventory control, and distribution.",
+    "keyFocus": "supply chain management, transportation, warehousing, inventory control, distribution",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Logistics simulation software", "Supply chain optimisation projects", "Industry partnerships with logistics companies", "Port of Varna case studies"],
+    "careers": ["Logistics Manager", "Supply Chain Analyst", "Warehouse Operations Manager", "Transportation Coordinator"],
+    "admissionNotes": ["Interest in logistics and operations", "Analytical skills recommended"]
   },
   "bachelor:agricultural-businesses": {
-    "overview": "Edit this overview for Agricultural Businesses.",
-    "keyFocus": "Edit this key focus for Agricultural Businesses.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Combines agricultural economics with business management, covering farm management, agri-marketing, and rural enterprise development.",
+    "keyFocus": "agricultural economics, farm management, agri-marketing, rural enterprise",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Agricultural market analysis", "Farm business planning", "Rural development projects", "Agri-business case studies"],
+    "careers": ["Agricultural Business Manager", "Farm Consultant", "Agri-Marketing Specialist", "Rural Development Officer"],
+    "admissionNotes": ["Interest in agriculture and business", "Environmental awareness valued"]
   },
   "bachelor:commodities-science-and-customs-activity": {
-    "overview": "Edit this overview for Commodities Science and Customs Activity.",
-    "keyFocus": "Edit this key focus for Commodities Science and Customs Activity.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers commodity science, quality control, customs regulations, international trade documentation, and border procedures.",
+    "keyFocus": "commodity science, quality control, customs regulations, trade documentation",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Customs procedure training", "Commodity quality assessment labs", "International trade documentation", "Customs authority partnerships"],
+    "careers": ["Customs Officer", "Commodity Expert", "Trade Compliance Specialist", "Quality Control Inspector"],
+    "admissionNotes": ["Attention to detail important", "Interest in trade regulations"]
   },
   "bachelor:business-digital-technologies": {
-    "overview": "Edit this overview for Business Digital Technologies.",
-    "keyFocus": "Edit this key focus for Business Digital Technologies.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Focuses on digital transformation in business, covering ERP systems, e-commerce, digital marketing, and business process automation.",
+    "keyFocus": "digital transformation, ERP systems, e-commerce, business process automation",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["ERP system training", "E-commerce platform projects", "Digital marketing tools and analytics", "Business process modelling"],
+    "careers": ["Digital Business Analyst", "ERP Consultant", "E-commerce Manager", "Digital Transformation Specialist"],
+    "admissionNotes": ["IT affinity and basic computer skills required", "Interest in business-technology intersection"]
   },
   "bachelor:informatics-and-computer-sciences": {
-    "overview": "Edit this overview for Informatics and Computer Sciences.",
-    "keyFocus": "Edit this key focus for Informatics and Computer Sciences.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Comprehensive computer science programme covering programming, algorithms, databases, software engineering, and information systems.",
+    "keyFocus": "programming, algorithms, databases, software engineering, information systems",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Modern programming labs", "Software development projects", "Database management systems", "Web and mobile development"],
+    "careers": ["Software Developer", "Database Administrator", "IT Consultant", "Systems Analyst"],
+    "admissionNotes": ["Strong mathematics background required", "Programming experience recommended"]
   },
   "bachelor:mobile-and-web-technologies": {
-    "overview": "Edit this overview for Mobile and Web Technologies.",
-    "keyFocus": "Edit this key focus for Mobile and Web Technologies.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Specialised programme focused on mobile app development, web technologies, UI/UX design, and cloud-based solutions.",
+    "keyFocus": "mobile development, web technologies, UI/UX design, cloud computing",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Mobile app development labs", "Web technology stack training", "UI/UX design projects", "Cloud platform deployment"],
+    "careers": ["Mobile Developer", "Web Developer", "Frontend/Backend Engineer", "UI/UX Designer"],
+    "admissionNotes": ["Programming background expected", "Interest in modern web and mobile technologies"]
   },
   "bachelor:data-science": {
-    "overview": "Edit this overview for Data Science.",
-    "keyFocus": "Edit this key focus for Data Science.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers data analytics, machine learning, statistical modelling, big data technologies, and data visualisation for business insights.",
+    "keyFocus": "data analytics, machine learning, statistical modelling, big data, data visualisation",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Data science lab with modern tools", "Machine learning projects", "Big data processing platforms", "Real-world business datasets"],
+    "careers": ["Data Scientist", "Data Analyst", "Machine Learning Engineer", "Business Intelligence Specialist"],
+    "admissionNotes": ["Strong mathematics and statistics background required", "Programming experience in Python or R recommended"]
   },
   "bachelor:international-business-in-english": {
-    "overview": "Edit this overview for International Business - In English.",
-    "keyFocus": "Edit this key focus for International Business - In English.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "English-taught programme covering international business strategy, cross-cultural management, global marketing, and international trade law.",
+    "keyFocus": "international business, cross-cultural management, global marketing, international trade law",
+    "duration": "Full-time (4 years)",
+    "partners": ["Erasmus+ partner universities", "International business network"],
+    "highlights": ["Taught entirely in English", "International student environment", "Cross-cultural business simulations", "Study abroad opportunities through Erasmus+"],
+    "careers": ["International Business Manager", "Export Manager", "Global Marketing Specialist", "Cross-Cultural Consultant"],
+    "admissionNotes": ["English proficiency required (IELTS 6.0+ or equivalent)", "Interest in global business"]
   },
   "bachelor:maritime-business-and-international-trade-in-english": {
-    "overview": "Edit this overview for Maritime business and international trade - In English.",
-    "keyFocus": "Edit this key focus for Maritime business and international trade - In English.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "English-taught programme combining maritime business, shipping logistics, port management, and international trade with a focus on Varna's port economy.",
+    "keyFocus": "maritime business, shipping logistics, port management, international trade",
+    "duration": "Full-time (4 years)",
+    "partners": ["Port of Varna", "Shipping companies", "International trade organisations"],
+    "highlights": ["Taught entirely in English", "Port of Varna case studies and visits", "Maritime law and insurance", "International trade documentation"],
+    "careers": ["Maritime Business Manager", "Shipping Coordinator", "Port Operations Specialist", "International Trade Analyst"],
+    "admissionNotes": ["English proficiency required", "Interest in maritime and trade sectors"]
   },
   "bachelor:international-tourism-in-russian": {
-    "overview": "Edit this overview for International Tourism - In Russian.",
-    "keyFocus": "Edit this key focus for International Tourism - In Russian.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Russian-taught programme focusing on international tourism management, tour operations, destination marketing, and cross-cultural tourism services.",
+    "keyFocus": "international tourism, tour operations, destination marketing, Russian-speaking markets",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Taught entirely in Russian", "Tourism market analysis for CIS countries", "Tour operation simulations", "Foreign language training in English"],
+    "careers": ["Tourism Manager", "Tour Operator", "Destination Marketing Specialist", "Russian-speaking Tourism Consultant"],
+    "admissionNotes": ["Russian language proficiency required", "Interest in tourism and cultural exchange"]
+  },
+  "bachelor:marketing": {
+    "overview": "Covers marketing strategy, consumer behaviour, digital marketing, brand management, market research, and advertising.",
+    "keyFocus": "marketing strategy, consumer behaviour, digital marketing, brand management, market research",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Digital marketing tools and analytics", "Market research projects", "Brand management case studies", "Advertising campaign simulations"],
+    "careers": ["Marketing Manager", "Digital Marketing Specialist", "Brand Manager", "Market Research Analyst"],
+    "admissionNotes": ["Creative and analytical thinking valued", "Interest in consumer behaviour"]
   },
   "bachelor:international-economic-relations": {
-    "overview": "Edit this overview for International Economic Relations.",
-    "keyFocus": "Edit this key focus for International Economic Relations.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Focuses on international economics, global trade policy, foreign investment, diplomatic relations, and multinational business strategy.",
+    "keyFocus": "international economics, trade policy, foreign investment, diplomacy, multinational business",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["International trade simulations", "Foreign policy analysis", "Multinational business case studies", "Model UN and diplomatic exercises"],
+    "careers": ["International Relations Officer", "Trade Policy Analyst", "Foreign Investment Consultant", "Diplomatic Service Professional"],
+    "admissionNotes": ["Interest in global affairs and economics", "Foreign language aptitude valued"]
   },
   "bachelor:management": {
-    "overview": "Edit this overview for Management.",
-    "keyFocus": "Edit this key focus for Management.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Comprehensive management education covering organisational behaviour, strategic management, human resources, operations, and leadership.",
+    "keyFocus": "organisational behaviour, strategic management, human resources, operations, leadership",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Management case studies", "Leadership workshops", "HR management simulations", "Strategic planning projects"],
+    "careers": ["Manager", "HR Specialist", "Operations Manager", "Team Leader"],
+    "admissionNotes": ["Leadership potential and communication skills valued", "Interest in working with people"]
   },
   "bachelor:public-administration": {
-    "overview": "Edit this overview for Public Administration.",
-    "keyFocus": "Edit this key focus for Public Administration.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers public policy, government administration, public finance, administrative law, and EU institutional frameworks.",
+    "keyFocus": "public policy, government administration, public finance, administrative law, EU institutions",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Public policy analysis", "EU institutional framework study", "Public finance simulations", "Administrative law case studies"],
+    "careers": ["Public Administrator", "Policy Analyst", "Government Official", "EU Affairs Specialist"],
+    "admissionNotes": ["Interest in public service and governance", "Analytical and writing skills valued"]
   },
   "bachelor:tourism": {
-    "overview": "Edit this overview for Tourism.",
-    "keyFocus": "Edit this key focus for Tourism.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Comprehensive tourism programme covering travel agency management, tour operations, destination management, sustainable tourism, and hospitality.",
+    "keyFocus": "travel agency management, tour operations, destination management, sustainable tourism",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Tourism destination marketing projects", "Travel agency simulation", "Sustainable tourism case studies", "Industry internships at Varna tourism enterprises"],
+    "careers": ["Tourism Manager", "Travel Agency Owner", "Destination Manager", "Tour Guide Coordinator"],
+    "admissionNotes": ["Interest in travel and tourism", "Foreign language skills recommended"]
   },
   "bachelor:judicial-administration": {
-    "overview": "Edit this overview for Judicial Administration.",
-    "keyFocus": "Edit this key focus for Judicial Administration.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Focuses on judicial systems, court administration, legal procedures, and the intersection of law and public administration.",
+    "keyFocus": "judicial systems, court administration, legal procedures, law and public administration",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Court administration simulations", "Legal procedure training", "Judicial system case studies", "Partnerships with local courts"],
+    "careers": ["Court Administrator", "Judicial Assistant", "Legal Office Manager", "Public Administration Specialist"],
+    "admissionNotes": ["Attention to detail and organisational skills essential", "Interest in legal systems"]
   },
   "bachelor:digital-media-and-pr": {
-    "overview": "Edit this overview for Digital Media and PR.",
-    "keyFocus": "Edit this key focus for Digital Media and PR.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Covers digital media strategy, public relations, social media management, content creation, corporate communications, and crisis management.",
+    "keyFocus": "digital media strategy, public relations, social media, content creation, corporate communications",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Social media management tools", "PR campaign simulations", "Content creation workshops", "Media monitoring and analytics"],
+    "careers": ["PR Specialist", "Digital Media Manager", "Content Creator", "Corporate Communications Officer"],
+    "admissionNotes": ["Strong written and verbal communication skills required", "Creative thinking valued"]
   },
   "bachelor:accounting-in-english": {
-    "overview": "Edit this overview for Accounting - In English.",
-    "keyFocus": "Edit this key focus for Accounting - In English.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "English-taught programme covering financial accounting, management accounting, auditing, taxation, and international accounting standards.",
+    "keyFocus": "financial accounting, management accounting, auditing, taxation, IFRS",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Taught entirely in English", "IFRS and international accounting standards", "Accounting software training", "Auditing case studies"],
+    "careers": ["Accountant", "Auditor", "Tax Consultant", "Financial Controller"],
+    "admissionNotes": ["English proficiency required", "Strong numerical and analytical skills"]
   },
   "bachelor:accounting-and-audit": {
-    "overview": "Edit this overview for Accounting and Audit.",
-    "keyFocus": "Edit this key focus for Accounting and Audit.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Comprehensive accounting programme with focus on financial reporting, auditing practices, internal control, and assurance services.",
+    "keyFocus": "financial reporting, auditing, internal control, assurance services, accounting standards",
+    "duration": "Full-time (4 years) / Part-time (5 years)",
+    "highlights": ["Audit simulation exercises", "Accounting software proficiency", "Financial statement analysis", "Professional ethics training"],
+    "careers": ["Accountant", "Internal Auditor", "External Auditor", "Financial Analyst"],
+    "admissionNotes": ["Strong mathematics background required", "Attention to detail essential"]
   },
   "bachelor:accounting-and-finance": {
-    "overview": "Edit this overview for Accounting and Finance.",
-    "keyFocus": "Edit this key focus for Accounting and Finance.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Combines accounting and finance disciplines covering financial management, investment analysis, corporate finance, and financial reporting.",
+    "keyFocus": "financial management, investment analysis, corporate finance, financial reporting",
+    "duration": "Full-time (4 years) / Distance learning",
+    "highlights": ["Financial modelling labs", "Investment portfolio simulations", "Corporate finance case studies", "Financial analysis software"],
+    "careers": ["Financial Analyst", "Accountant", "Investment Analyst", "Corporate Finance Associate"],
+    "admissionNotes": ["Strong quantitative skills required", "Interest in financial markets"]
   },
   "bachelor:banking-and-insurance": {
-    "overview": "Edit this overview for Banking and Insurance.",
-    "keyFocus": "Edit this key focus for Banking and Insurance.",
-    "duration": "Full-time (3-4 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "Focuses on banking operations, insurance products, risk management, financial regulations, and customer relationship management.",
+    "keyFocus": "banking operations, insurance, risk management, financial regulations, customer relations",
+    "duration": "Full-time (4 years)",
+    "highlights": ["Banking simulation exercises", "Insurance product analysis", "Risk management case studies", "Partnerships with local banks and insurers"],
+    "careers": ["Banking Officer", "Insurance Agent", "Risk Analyst", "Financial Services Manager"],
+    "admissionNotes": ["Interest in financial services", "Customer service orientation valued"]
   },
   "master:intercultural-business-in-english": {
-    "overview": "Edit this overview for Intercultural Business - In English.",
-    "keyFocus": "Edit this key focus for Intercultural Business - In English.",
-    "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "overview": "English-taught Master's programme focusing on cross-cultural business management, international negotiation, and global strategy. Part of the Magellan quadruple degree programme.",
+    "keyFocus": "cross-cultural management, international negotiation, global strategy, intercultural communication",
+    "duration": "Full-time (2 years)",
+    "partners": ["University of Economics Katowice (Poland)", "University of Debrecen (Hungary)", "Cardinal Herrera University (Spain)"],
+    "highlights": ["Quadruple degree from 4 European universities", "Taught entirely in English", "International study semesters at partner universities", "Cross-cultural business projects"],
+    "careers": ["International Business Consultant", "Global Strategy Manager", "Cross-Cultural Negotiator", "International Project Manager"],
+    "admissionNotes": ["Bachelor degree in business, economics or related field required", "English proficiency required"]
   },
   "master:international-business-and-management-in-english": {
-    "overview": "Edit this overview for International Business and Management - In English.",
-    "keyFocus": "Edit this key focus for International Business and Management - In English.",
+    "overview": "Advanced programme in international business and management with focus on global markets, international strategy, and multinational operations.",
+    "keyFocus": "international business strategy, global markets, multinational operations, international marketing",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Global business strategy cases", "International market entry projects", "Multinational management simulations", "Erasmus+ mobility opportunities"],
+    "careers": ["International Business Director", "Global Marketing Manager", "Strategy Consultant", "Multinational Operations Manager"],
+    "admissionNotes": ["Bachelor degree in business or related field", "English proficiency required"]
   },
   "master:master-of-business-administration-in-english": {
-    "overview": "Edit this overview for Master of business administration - In English.",
-    "keyFocus": "Edit this key focus for Master of business administration - In English.",
+    "overview": "MBA programme developing strategic leadership, advanced management skills, and business acumen for experienced professionals.",
+    "keyFocus": "strategic leadership, advanced management, business acumen, organisational strategy",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Executive-level business cases", "Leadership development workshops", "Strategic management simulations", "Networking with business leaders"],
+    "careers": ["Senior Manager", "Executive Director", "Business Consultant", "Entrepreneur"],
+    "admissionNotes": ["Bachelor degree required", "Professional work experience preferred"]
   },
   "master:computer-science-in-english": {
-    "overview": "Edit this overview for Computer Science - In English.",
-    "keyFocus": "Edit this key focus for Computer Science - In English.",
+    "overview": "English-taught Master's in computer science covering advanced programming, software architecture, data science, AI, and research methods.",
+    "keyFocus": "advanced programming, software architecture, data science, artificial intelligence, research methods",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Taught entirely in English", "Advanced computing labs", "Research project component", "Industry partnership projects"],
+    "careers": ["Senior Software Engineer", "Data Scientist", "IT Project Manager", "Research and Development Lead"],
+    "admissionNotes": ["Bachelor degree in computer science or related field required", "Programming experience essential"]
   },
   "master:accounting-and-auditing-control": {
-    "overview": "Edit this overview for Accounting and Auditing/Control.",
-    "keyFocus": "Edit this key focus for Accounting and Auditing/Control.",
+    "overview": "Advanced programme in accounting, auditing, and financial control covering international accounting standards, forensic accounting, and corporate governance.",
+    "keyFocus": "international accounting, auditing, financial control, forensic accounting, corporate governance",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Advanced IFRS training", "Forensic accounting case studies", "Corporate governance analysis", "Auditing software tools"],
+    "careers": ["Senior Accountant", "Audit Manager", "Financial Controller", "Forensic Accountant"],
+    "admissionNotes": ["Bachelor degree in accounting or finance required", "Professional certification pathway available"]
   },
   "master:bank-management": {
-    "overview": "Edit this overview for Bank Management.",
-    "keyFocus": "Edit this key focus for Bank Management.",
+    "overview": "Specialised programme in banking management covering bank operations, credit risk, financial markets, regulatory compliance, and fintech innovations.",
+    "keyFocus": "banking operations, credit risk, financial markets, regulatory compliance, fintech",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Banking simulation platforms", "Credit risk analysis tools", "Fintech innovation case studies", "Partnerships with Bulgarian banks"],
+    "careers": ["Bank Manager", "Credit Analyst", "Risk Manager", "Fintech Product Manager"],
+    "admissionNotes": ["Bachelor degree in finance, economics or related field", "Banking experience beneficial"]
   },
   "master:finance-and-innovations": {
-    "overview": "Edit this overview for Finance and Innovations.",
-    "keyFocus": "Edit this key focus for Finance and Innovations.",
+    "overview": "Advanced programme linking finance with innovation management, venture capital, financial technology, and entrepreneurial finance.",
+    "keyFocus": "innovation finance, venture capital, financial technology, entrepreneurial finance",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Venture capital analysis", "Fintech innovation projects", "Startup valuation models", "Innovation ecosystem case studies"],
+    "careers": ["Finance and Innovation Manager", "Venture Capital Analyst", "Fintech Specialist", "Innovation Finance Consultant"],
+    "admissionNotes": ["Bachelor degree in finance, economics or business required", "Interest in innovation and technology"]
   },
   "master:corporate-business-and-governance-management": {
-    "overview": "Edit this overview for Corporate Business and Governance/Management.",
-    "keyFocus": "Edit this key focus for Corporate Business and Governance/Management.",
+    "overview": "Covers corporate governance, board management, shareholder relations, corporate social responsibility, and ethical business leadership.",
+    "keyFocus": "corporate governance, board management, CSR, ethical leadership, stakeholder relations",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Corporate governance case studies", "Board simulation exercises", "CSR strategy development", "Ethical decision-making frameworks"],
+    "careers": ["Corporate Governance Officer", "Board Secretary", "CSR Manager", "Compliance Officer"],
+    "admissionNotes": ["Bachelor degree in business, law or related field", "Interest in corporate ethics and governance"]
   },
   "master:logistics-management": {
-    "overview": "Edit this overview for Logistics Management.",
-    "keyFocus": "Edit this key focus for Logistics Management.",
+    "overview": "Advanced logistics and supply chain management covering global logistics, strategic sourcing, distribution networks, and supply chain analytics.",
+    "keyFocus": "global logistics, strategic sourcing, distribution networks, supply chain analytics",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Supply chain simulation software", "Logistics network optimisation", "Global trade logistics case studies", "Industry partnerships"],
+    "careers": ["Logistics Director", "Supply Chain Manager", "Operations Strategy Consultant", "Distribution Network Planner"],
+    "admissionNotes": ["Bachelor degree in logistics, business or engineering", "Professional experience beneficial"]
   },
   "master:global-commercial-business": {
-    "overview": "Edit this overview for Global Commercial Business.",
-    "keyFocus": "Edit this key focus for Global Commercial Business.",
+    "overview": "Focuses on global commerce, international sales, trade finance, cross-border transactions, and global market entry strategies.",
+    "keyFocus": "global commerce, international sales, trade finance, cross-border transactions, market entry",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["International trade simulations", "Market entry strategy projects", "Trade finance case studies", "Global e-commerce platforms"],
+    "careers": ["Global Commercial Manager", "International Sales Director", "Trade Finance Specialist", "Market Entry Strategist"],
+    "admissionNotes": ["Bachelor degree in business, economics or international trade", "Interest in global markets"]
   },
   "master:civil-engineering-entrepreneurship-and-real-estate": {
-    "overview": "Edit this overview for Civil Engineering Entrepreneurship and Real Estate.",
-    "keyFocus": "Edit this key focus for Civil Engineering Entrepreneurship and Real Estate.",
+    "overview": "Combines civil engineering knowledge with entrepreneurship, real estate development, construction project management, and property investment.",
+    "keyFocus": "construction entrepreneurship, real estate development, project management, property investment",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Construction project case studies", "Real estate market analysis", "Property investment modelling", "Entrepreneurial business planning"],
+    "careers": ["Construction Entrepreneur", "Real Estate Developer", "Property Investment Manager", "Construction Project Director"],
+    "admissionNotes": ["Bachelor degree in engineering, business or related field", "Interest in construction and property sectors"]
   },
   "master:eco-economics": {
-    "overview": "Edit this overview for Eco-economics.",
-    "keyFocus": "Edit this key focus for Eco-economics.",
+    "overview": "Focuses on environmental economics, sustainable development, green business practices, circular economy, and environmental policy.",
+    "keyFocus": "environmental economics, sustainable development, green business, circular economy, environmental policy",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Environmental impact assessment", "Circular economy business models", "Green finance and investment", "Sustainability reporting"],
+    "careers": ["Environmental Economist", "Sustainability Consultant", "Green Business Manager", "Environmental Policy Analyst"],
+    "admissionNotes": ["Bachelor degree in economics, environmental science or related field", "Interest in sustainability"]
   },
   "master:agricultural-business": {
-    "overview": "Edit this overview for Agricultural Business.",
-    "keyFocus": "Edit this key focus for Agricultural Business.",
+    "overview": "Advanced agribusiness management covering agricultural value chains, food industry economics, rural development, and agri-food marketing.",
+    "keyFocus": "agricultural value chains, food industry economics, rural development, agri-food marketing",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Agricultural value chain analysis", "Food industry case studies", "Rural development projects", "Agri-food marketing strategies"],
+    "careers": ["Agribusiness Manager", "Food Industry Analyst", "Rural Development Consultant", "Agricultural Policy Advisor"],
+    "admissionNotes": ["Bachelor degree in agricultural economics, business or related field", "Interest in agri-food sector"]
   },
   "master:quality-and-expert-examination-of-commodities": {
-    "overview": "Edit this overview for Quality and Expert Examination of Commodities.",
-    "keyFocus": "Edit this key focus for Quality and Expert Examination of Commodities.",
+    "overview": "Advanced programme in commodity quality assessment, expert examination methods, certification standards, and consumer protection.",
+    "keyFocus": "commodity quality, expert examination, certification standards, consumer protection, metrology",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Quality testing laboratories", "Expert examination methodologies", "Certification and standardisation", "Consumer protection regulations"],
+    "careers": ["Quality Manager", "Commodity Expert", "Certification Specialist", "Consumer Protection Officer"],
+    "admissionNotes": ["Bachelor degree in commodity science, chemistry or related field", "Analytical skills essential"]
   },
   "master:sales-management-and-merchandising": {
-    "overview": "Edit this overview for Sales Management and Merchandising.",
-    "keyFocus": "Edit this key focus for Sales Management and Merchandising.",
+    "overview": "Focuses on sales strategy, team management, merchandising techniques, retail operations, and customer relationship management.",
+    "keyFocus": "sales strategy, team management, merchandising, retail operations, CRM",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Sales management simulations", "Merchandising planning projects", "Retail operations case studies", "CRM software training"],
+    "careers": ["Sales Director", "Merchandising Manager", "Retail Operations Manager", "CRM Specialist"],
+    "admissionNotes": ["Bachelor degree in business, marketing or related field", "Sales experience beneficial"]
   },
   "master:advertising-and-media-communications": {
-    "overview": "Edit this overview for Advertising and Media Communications.",
-    "keyFocus": "Edit this key focus for Advertising and Media Communications.",
+    "overview": "Advanced programme in advertising strategy, media planning, digital advertising, brand communication, and campaign analytics.",
+    "keyFocus": "advertising strategy, media planning, digital advertising, brand communication, campaign analytics",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Advertising campaign projects", "Media planning simulations", "Digital advertising tools", "Campaign analytics and ROI measurement"],
+    "careers": ["Advertising Director", "Media Planner", "Brand Communications Manager", "Digital Advertising Strategist"],
+    "admissionNotes": ["Bachelor degree in marketing, communications or related field", "Creative and analytical skills"]
   },
   "master:management-of-organizations": {
-    "overview": "Edit this overview for Management of Organizations.",
-    "keyFocus": "Edit this key focus for Management of Organizations.",
+    "overview": "Advanced organisational management covering organisational design, change management, corporate culture, and strategic HR management.",
+    "keyFocus": "organisational design, change management, corporate culture, strategic HR, organisational behaviour",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Organisational design projects", "Change management simulations", "Corporate culture assessment", "Strategic HR planning"],
+    "careers": ["Organisational Development Manager", "HR Director", "Change Management Consultant", "Corporate Strategy Advisor"],
+    "admissionNotes": ["Bachelor degree in management, business or related field", "Leadership experience valued"]
   },
   "master:human-resources-management": {
-    "overview": "Edit this overview for Human Resources Management.",
-    "keyFocus": "Edit this key focus for Human Resources Management.",
+    "overview": "Specialised HR management covering talent acquisition, performance management, compensation, labour law, and strategic workforce planning.",
+    "keyFocus": "talent acquisition, performance management, compensation, labour law, workforce planning",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["HR analytics projects", "Recruitment simulations", "Performance management case studies", "Labour law workshops"],
+    "careers": ["HR Manager", "Talent Acquisition Specialist", "Compensation and Benefits Manager", "HR Business Partner"],
+    "admissionNotes": ["Bachelor degree in management, psychology or related field", "Interpersonal skills essential"]
   },
   "master:public-management-and-administrative-power": {
-    "overview": "Edit this overview for Public Management and Administrative Power.",
-    "keyFocus": "Edit this key focus for Public Management and Administrative Power.",
+    "overview": "Advanced public management covering public sector governance, administrative reform, EU policy implementation, and public financial management.",
+    "keyFocus": "public sector governance, administrative reform, EU policy, public financial management",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Public policy analysis", "EU policy implementation case studies", "Public financial management simulations", "Administrative reform projects"],
+    "careers": ["Public Sector Manager", "Policy Advisor", "EU Affairs Manager", "Government Administrator"],
+    "admissionNotes": ["Bachelor degree in public administration, law or related field", "Interest in public service"]
   },
   "master:international-tourist-business": {
-    "overview": "Edit this overview for International Tourist Business.",
-    "keyFocus": "Edit this key focus for International Tourist Business.",
+    "overview": "Advanced tourism management covering international tourism policy, destination marketing, sustainable tourism, and global hospitality trends.",
+    "keyFocus": "international tourism policy, destination marketing, sustainable tourism, global hospitality",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Tourism policy case studies", "Destination marketing campaigns", "Sustainable tourism projects", "Global hospitality trends analysis"],
+    "careers": ["Tourism Director", "Destination Marketing Manager", "Sustainable Tourism Consultant", "International Hospitality Executive"],
+    "admissionNotes": ["Bachelor degree in tourism, business or related field", "International travel experience beneficial"]
   },
   "master:business-consulting": {
-    "overview": "Edit this overview for Business Consulting.",
-    "keyFocus": "Edit this key focus for Business Consulting.",
+    "overview": "Develops consulting skills covering diagnostic methodologies, strategic analysis, change management, client management, and consulting practice.",
+    "keyFocus": "management consulting, strategic analysis, diagnostic methodologies, client management, change management",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Real consulting projects with businesses", "Strategic analysis frameworks", "Client presentation skills", "Consulting methodology training"],
+    "careers": ["Management Consultant", "Business Analyst", "Strategy Advisor", "Independent Consultant"],
+    "admissionNotes": ["Bachelor degree in business, economics or related field", "Analytical and communication skills essential"]
   },
   "master:project-management": {
-    "overview": "Edit this overview for Project Management.",
-    "keyFocus": "Edit this key focus for Project Management.",
+    "overview": "Comprehensive project management covering planning, execution, monitoring, risk management, agile methodologies, and project leadership.",
+    "keyFocus": "project planning, execution, monitoring, risk management, agile methodologies, project leadership",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Project management software training", "Agile and Scrum methodologies", "Risk management simulations", "Real project case studies"],
+    "careers": ["Project Manager", "Program Manager", "Agile Coach", "PMO Specialist"],
+    "admissionNotes": ["Bachelor degree in any field", "Organisational and leadership skills valued"]
   },
   "master:marketing-and-brand-management": {
-    "overview": "Edit this overview for Marketing And Brand Management.",
-    "keyFocus": "Edit this key focus for Marketing And Brand Management.",
+    "overview": "Advanced marketing covering brand strategy, brand equity management, integrated marketing communications, and digital brand building.",
+    "keyFocus": "brand strategy, brand equity, integrated marketing communications, digital brand building",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Brand strategy projects", "Brand equity measurement", "Integrated marketing campaigns", "Digital brand management tools"],
+    "careers": ["Brand Manager", "Marketing Director", "Brand Strategy Consultant", "Digital Marketing Manager"],
+    "admissionNotes": ["Bachelor degree in marketing, business or related field", "Creative thinking and analytical skills"]
   },
   "master:mobile-and-web-technologies": {
-    "overview": "Edit this overview for Mobile and web technologies.",
-    "keyFocus": "Edit this key focus for Mobile and web technologies.",
+    "overview": "Advanced programme in mobile and web development covering full-stack development, progressive web apps, mobile frameworks, and cloud deployment.",
+    "keyFocus": "full-stack development, progressive web apps, mobile frameworks, cloud deployment, DevOps",
     "duration": "Full-time (1-2 years)",
-    "partners": [],
-    "highlights": [
-      "Edit this highlight."
-    ],
-    "careers": [
-      "Edit this career path."
-    ],
-    "admissionNotes": [
-      "Edit this admission note."
-    ]
+    "highlights": ["Full-stack development projects", "Mobile app frameworks", "Cloud platform deployment", "DevOps and CI/CD pipelines"],
+    "careers": ["Full-Stack Developer", "Mobile App Developer", "Cloud Engineer", "Tech Lead"],
+    "admissionNotes": ["Bachelor degree in computer science or related field", "Strong programming portfolio expected"]
   }
 }

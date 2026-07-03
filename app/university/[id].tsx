@@ -413,7 +413,7 @@ export default function UniversityPage() {
             </View>
           </SectionCard>
 
-          {(id === "1" || id === "2") && (
+          {(id === "1" || id === "2" || id === "3") && (
             <>
               {id === "1" && (
                 <>
@@ -517,6 +517,62 @@ export default function UniversityPage() {
                     <InfoRow label={t("universityExtra.mu_dormitories")} colors={colors} />
                     <InfoRow label={t("universityExtra.mu_languagePrep")} colors={colors} />
                     <InfoRow label={t("universityExtra.mu_recognition")} colors={colors} />
+                  </ExpandableSection>
+                </>
+              )}
+              {id === "3" && (
+                <>
+                  <ExpandableSection title={t("universityExtra.scholarships")} icon="ribbon-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.ue_scholarshipsDesc")}</Text>
+                    <InfoRow label={t("universityExtra.ue_excellentScholarships")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_erasmusGrants")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_socialScholarships")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_doctoralScholarships")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.applicationInfo")} icon="document-text-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.ue_applicationDesc")}</Text>
+                    <InfoRow label={t("universityExtra.ue_appEarly")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_appDocuments")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_appOnline")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_appMainRound")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_appFees")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_appExams")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_appInternational")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.masterFees")} icon="cash-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.ue_masterFeesDesc")}</Text>
+                    <InfoRow label={t("universityExtra.ue_masterRegular")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_masterEnglish")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_masterDistance")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.openDoors")} icon="business-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.ue_openDoorsDesc")}</Text>
+                    <InfoRow label={t("universityExtra.ue_businessAccelerator")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_careerCentre")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_uebn")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_alumni")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.partners")} icon="globe-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.ue_partnersDesc")}</Text>
+                    <InfoRow label={t("universityExtra.ue_erasmusPartners")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_dukenet")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_businet")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_ceepus")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_doubleDegrees")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_magellan")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.internationalStudents")} icon="airplane-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.ue_internationalDesc")}</Text>
+                    <InfoRow label={t("universityExtra.ue_visaSupport")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_dormitories")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_languageCourses")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_recognition")} colors={colors} />
+                    <InfoRow label={t("universityExtra.ue_internationalOffice")} colors={colors} />
                   </ExpandableSection>
                 </>
               )}

@@ -369,8 +369,31 @@ function getMuProgramInfo(programSlug: string): { tuition?: string; facultyKey?:
   };
 }
 
+function getUeProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`ue_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUeFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`ue_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -441,6 +464,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (muInfo.tuition) summary.tuition = muInfo.tuition;
         if (muInfo.facultyKey) {
           const facultyName = getMuFaculty(muInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "3") {
+      const ueInfo = getUeProgramInfo(slug);
+      if (ueInfo) {
+        if (ueInfo.tuition) summary.tuition = ueInfo.tuition;
+        if (ueInfo.facultyKey) {
+          const facultyName = getUeFaculty(ueInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -534,6 +566,16 @@ export function buildProgramDetail(
       if (muInfo.tuition) result.tuition = muInfo.tuition;
       if (muInfo.facultyKey) {
         const facultyName = getMuFaculty(muInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "3" && normalizedSlug) {
+    const ueInfo = getUeProgramInfo(normalizedSlug);
+
+    if (ueInfo) {
+      if (ueInfo.tuition) result.tuition = ueInfo.tuition;
+      if (ueInfo.facultyKey) {
+        const facultyName = getUeFaculty(ueInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

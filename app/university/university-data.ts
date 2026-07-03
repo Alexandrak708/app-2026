@@ -52,8 +52,8 @@ const UNIVERSITY_META: UniversityMeta[] = [
     color: "#3a1a4a",
     image: require("../../assets/images/v4ZW_infe-uev.jpg.jpg"),
     category: "Economics",
-    scholarship: false,
-    degreeLevels: ["Bachelor"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
   {
