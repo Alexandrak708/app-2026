@@ -16,7 +16,8 @@
     "errorEmail": "Please enter email and password.",
     "errorRequiredFields": "Please fill all fields.",
     "errorPasswordMismatch": "Passwords do not match.",
-    "errorPasswordLength": "Password must be at least 6 characters.",
+    "errorPasswordLength": "Password must be at least 8 characters.",
+    "errorPasswordWeak": "Password must be at least 8 characters and include both letters and numbers.",
     "successRegistration": "Successful Registration",
     "successMessage": "Please check your email for account confirmation.",
     "errorUnexpected": "An unexpected error occurred. Please try again."
@@ -69,7 +70,13 @@
     "logoutConfirmMessage": "Are you sure you want to log out?",
     "yourNamePlaceholder": "Your name",
     "addYourName": "Add your name",
-    "appVersion": "Version 1.0.0",
+    "appVersion": "Version {{version}}",
+    "deleteAccount": "Delete Account",
+    "deleteAccountConfirmTitle": "Delete account?",
+    "deleteAccountConfirmMessage": "This permanently deletes your account and all associated data. This action cannot be undone.",
+    "deleteAccountConfirm": "Delete",
+    "deleteAccountSuccess": "Your account has been deleted.",
+    "deleteAccountError": "Failed to delete your account. Please try again or contact support.",
     "sections": {
       "account": "ACCOUNT",
       "preferences": "PREFERENCES",
@@ -77,13 +84,13 @@
     },
     "items": {
       "profile": "Profile",
-      "security": "Security",
       "emailNotifications": "Email Notifications",
       "appearance": "Appearance",
       "accessibility": "Accessibility",
       "helpCenter": "Help Center",
       "about": "About",
-      "termsOfService": "Terms of Service"
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy"
     }
   },
   "appearance": {
@@ -103,10 +110,6 @@
     "errorTitle": "Error",
     "nameRequired": "Name required.",
     "failedToSave": "Failed to save."
-  },
-  "security": {
-    "title": "Security",
-    "usePasscode": "Use Passcode"
   },
   "emailNotifications": {
     "title": "Email Notifications",
@@ -135,6 +138,21 @@
   "terms": {
     "title": "Terms of Service",
     "description": "These are placeholder terms. Replace with your actual terms of service text."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy explains what data we collect, how we use it, and the choices you have. By using this app you agree to this policy.",
+    "dataWeCollectTitle": "Data we collect",
+    "dataWeCollect": "Account information you provide: your email address, your name, and an optional profile photo. We also store the universities and programs you save as favourites.",
+    "howWeUseTitle": "How we use your data",
+    "howWeUse": "We use your data to create and secure your account, show your profile, and save your preferences. We do not sell your personal data.",
+    "storageTitle": "Storage and security",
+    "storage": "Your data is stored securely with our backend provider (Supabase) and transmitted over encrypted (HTTPS) connections.",
+    "deletionTitle": "Deleting your data",
+    "deletion": "You can permanently delete your account and all associated data at any time from Settings, or by contacting us at the email below.",
+    "contactTitle": "Contact",
+    "contact": "For any privacy questions or data requests, contact us at support@example.com.",
+    "updated": "Last updated: 2026"
   },
   "languages": {
     "en": "English",

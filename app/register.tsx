@@ -42,8 +42,12 @@ export default function Register() {
       Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordMismatch"));
       return;
     }
-    if (password.length < 6) {
+    if (password.length < 8) {
       Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordLength"));
+      return;
+    }
+    if (!/[a-zA-Z]/.test(password) || !/[0-9]/.test(password)) {
+      Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordWeak"));
       return;
     }
 
