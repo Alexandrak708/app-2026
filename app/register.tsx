@@ -79,17 +79,41 @@ export default function Register() {
         return;
       }
 
-      if (data.session) {
-        await ensureProfileRecord(data.session.user.id);
+      const session = data.session;
+
+      if (session?.user.id) {
+        await ensureProfileRecord(session.user.id);
         router.replace("/(tabs)");
         return;
       }
 
-      Alert.alert(
-        t("auth.successRegistration"),
-        t("auth.successMessage"),
-        [{ text: t("common.ok"), onPress: () => router.replace("/login") }]
-      );
+      const { data: signInData, error: signInError } = await supabase.auth.signInWithPassword({
+        email: normalizedEmail,
+        password,
+      });
+
+      if (signInError) {
+        setAuthError(
+          getAuthErrorMessage(signInError, {
+            invalidCredentials: t("auth.errorInvalidCredentials"),
+            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
+            accountExists: t("auth.errorAccountAlreadyExists"),
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
+        );
+        return;
+      }
+
+      const userId = signInData.session?.user.id ?? signInData.user?.id;
+
+      if (!userId) {
+        setAuthError(t("auth.errorAuthUnavailable"));
+        return;
+      }
+
+      await ensureProfileRecord(userId);
+      router.replace("/(tabs)");
     } catch (err) {
       console.error("Register error:", err);
       setAuthError(t("auth.errorUnexpected"));
