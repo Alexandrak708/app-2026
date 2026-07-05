@@ -3,9 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityI
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
-import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
-import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
 import { getAuthErrorMessage } from "../lib/auth";
 
@@ -21,36 +19,26 @@ const STARS = Array.from({ length: 72 }, (_, i) => {
   };
 });
 
-export default function Register() {
+export default function ResetPassword() {
   const { width: screenWidth, height: screenHeight } = useWindowDimensions();
   const isDesktop = screenWidth >= 980;
   const router = useRouter();
   const { t } = useTranslation();
-  const [currentLang, setCurrentLang] = useState(i18n.language);
 
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
-  const [pendingEmail, setPendingEmail] = useState<string | null>(null);
 
-  const passwordRef = useRef<TextInput>(null);
   const confirmPasswordRef = useRef<TextInput>(null);
 
-  const handleRegister = async () => {
+  const handleReset = async () => {
     setAuthError("");
 
-    const normalizedEmail = email.trim().toLowerCase();
-
-    if (!normalizedEmail || !password || !confirmPassword) {
+    if (!password || !confirmPassword) {
       setAuthError(t("auth.errorRequiredFields"));
-      return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
-      setAuthError(t("auth.invalidEmail"));
       return;
     }
     if (password !== confirmPassword) {
@@ -69,11 +57,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signUp({
-        email: normalizedEmail,
-        password,
-        options: { emailRedirectTo: Linking.createURL("/") },
-      });
+      const { data, error } = await supabase.auth.updateUser({ password });
 
       if (error) {
         setAuthError(
@@ -88,147 +72,33 @@ export default function Register() {
         return;
       }
 
-      // With email confirmation on, Supabase obfuscates existing accounts:
-      // it returns a user with an empty identities array and no session.
-      const identities = data.user?.identities;
-      if (Array.isArray(identities) && identities.length === 0) {
-        setAuthError(t("auth.errorAccountAlreadyExists"));
-        return;
-      }
-
-      // No session means a confirmation email was sent — show the inbox screen.
-      // (If confirmation were ever disabled, a session comes back and the
-      // root layout redirects into the app.)
-      if (!data.session) {
-        setPendingEmail(normalizedEmail);
+      if (!data.user) {
+        setAuthError(t("auth.errorAuthUnavailable"));
         return;
       }
 
       router.replace("/(tabs)");
     } catch (err) {
-      console.error("Register error:", err);
+      console.error("Reset password error:", err);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
     }
   };
 
-  const handleLanguageChange = async (lang: "en" | "bg") => {
-    await changeLanguage(lang);
-    setCurrentLang(lang);
-  };
-
   const formWidth = isDesktop ? 440 : "100%";
   const mobileGlobeSize = screenWidth * 0.85;
   const desktopGlobeSize = Math.max(screenHeight * 1.9, screenWidth * 1.05);
 
-  const LanguageSwitcher = (
-    <View
-      style={{
-        position: "absolute",
-        top: 58,
-        right: 18,
-        zIndex: 30,
-        flexDirection: "row",
-        gap: 8,
-        padding: 6,
-        borderRadius: 999,
-        backgroundColor: "rgba(15, 23, 42, 0.35)",
-        borderWidth: 1,
-        borderColor: "rgba(255, 255, 255, 0.18)",
-      }}
-    >
-      <TouchableOpacity
-        onPress={() => handleLanguageChange("en")}
-        activeOpacity={0.8}
-        style={{
-          width: 32,
-          height: 32,
-          borderRadius: 16,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: currentLang === "en" ? "#ffffff" : "rgba(255,255,255,0.18)",
-          borderWidth: 1,
-          borderColor: currentLang === "en" ? "#ffffff" : "rgba(255,255,255,0.12)",
-        }}
-      >
-        <Text style={{ fontSize: 16 }}>🇬🇧</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => handleLanguageChange("bg")}
-        activeOpacity={0.8}
-        style={{
-          width: 32,
-          height: 32,
-          borderRadius: 16,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: currentLang === "bg" ? "#ffffff" : "rgba(255,255,255,0.18)",
-          borderWidth: 1,
-          borderColor: currentLang === "bg" ? "#ffffff" : "rgba(255,255,255,0.12)",
-        }}
-      >
-        <Text style={{ fontSize: 16 }}>🇧🇬</Text>
-      </TouchableOpacity>
-    </View>
-  );
-
-  const CheckEmailContent = (
-    <View style={{ alignItems: "center" }}>
-      <View
-        style={{
-          width: 64,
-          height: 64,
-          borderRadius: 32,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#dcfce7",
-          marginBottom: 16,
-        }}
-      >
-        <MaterialCommunityIcons name="email-check-outline" size={34} color="#16a34a" />
-      </View>
-      <Text className="text-2xl font-bold text-slate-900 text-center">{t("auth.checkEmailTitle")}</Text>
-      <Text className="text-slate-500 mt-3 mb-7 text-center">
-        {t("auth.checkEmailMessage", { email: pendingEmail })}
-      </Text>
-      <TouchableOpacity
-        onPress={() => router.replace("/login")}
-        activeOpacity={0.85}
-        className="bg-slate-900 rounded-full py-4 items-center w-full"
-      >
-        <Text className="text-white text-base font-semibold">{t("auth.backToSignIn")}</Text>
-      </TouchableOpacity>
-    </View>
-  );
-
   const FormContent = (
     <>
-      <Text className="text-3xl font-bold text-slate-900">{t("auth.signUp")}</Text>
+      <Text className="text-3xl font-bold text-slate-900">{t("auth.resetPasswordTitle")}</Text>
       <Text className="text-slate-500 mt-2 mb-7">
-        {t("auth.signUpSubtitle")}
+        {t("auth.resetPasswordSubtitle")}
       </Text>
-      <TextInput
-        placeholder={t("auth.email")}
-        placeholderTextColor="#94a3b8"
-        keyboardType="email-address"
-        autoCapitalize="none"
-        autoComplete="email"
-        textContentType="emailAddress"
-        returnKeyType="next"
-        onSubmitEditing={() => passwordRef.current?.focus()}
-        submitBehavior="submit"
-        value={email}
-        onChangeText={(text) => {
-          setEmail(text);
-          setAuthError("");
-        }}
-        className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
-      />
       <View style={{ position: "relative", marginBottom: 16 }}>
         <TextInput
-          ref={passwordRef}
-          placeholder={t("auth.password")}
+          placeholder={t("auth.newPassword")}
           placeholderTextColor="#94a3b8"
           secureTextEntry={!showPassword}
           value={password}
@@ -273,7 +143,7 @@ export default function Register() {
           autoComplete="password-new"
           textContentType="newPassword"
           returnKeyType="go"
-          onSubmitEditing={handleRegister}
+          onSubmitEditing={handleReset}
           className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
         />
         <TouchableOpacity
@@ -296,28 +166,22 @@ export default function Register() {
         </Text>
       ) : null}
       <TouchableOpacity
-        onPress={handleRegister}
+        onPress={handleReset}
         disabled={loading}
         activeOpacity={0.85}
         style={{ opacity: loading ? 0.7 : 1 }}
-        className="bg-slate-900 rounded-full py-4 items-center mb-4"
+        className="bg-slate-900 rounded-full py-4 items-center"
       >
         {loading
           ? <ActivityIndicator color="#ffffff" />
-          : <Text className="text-white text-base font-semibold">{t("auth.signUpButton")}</Text>
+          : <Text className="text-white text-base font-semibold">{t("auth.updatePasswordButton")}</Text>
         }
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => router.replace("/login")}>
-        <Text className="text-slate-500 text-center text-sm underline">{t("auth.registerQuestion")}</Text>
       </TouchableOpacity>
     </>
   );
 
-  const CardContent = pendingEmail ? CheckEmailContent : FormContent;
-
   return (
     <View style={{ flex: 1, backgroundColor: "#02050a" }}>
-      {LanguageSwitcher}
       <View style={{ position: "absolute", top: 0, right: 0, bottom: 0, left: 0 }} pointerEvents="none">
         {STARS.map((star) => (
           <View
@@ -353,7 +217,7 @@ export default function Register() {
               borderWidth: 1, borderColor: "rgba(148,163,184,0.28)",
               shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 18, shadowOffset: { width: 0, height: 8 },
             }}>
-              {CardContent}
+              {FormContent}
             </View>
           </View>
         </View>
@@ -365,7 +229,7 @@ export default function Register() {
               borderRadius: 26, paddingHorizontal: 22, paddingVertical: 24,
               borderWidth: 1, borderColor: "rgba(148,163,184,0.28)",
             }}>
-              {CardContent}
+              {FormContent}
             </View>
           </View>
           <LottieView

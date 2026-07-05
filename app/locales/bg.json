@@ -25,6 +25,16 @@
     "errorAuthUnavailable": "В момента входът не е достъпен. Моля опитай отново.",
     "successRegistration": "Успешна регистрация",
     "successMessage": "Моля провери имейла си за потвърждение на акаунта.",
+    "checkEmailTitle": "Провери имейла си",
+    "checkEmailMessage": "Изпратихме връзка за потвърждение до {{email}}. Отвори я, за да активираш акаунта си, след което влез.",
+    "backToSignIn": "Обратно към вход",
+    "forgotPassword": "Забравена парола?",
+    "errorEnterEmailFirst": "Първо въведи имейл адреса си.",
+    "resetEmailSent": "Изпратихме връзка за смяна на паролата до {{email}}.",
+    "resetPasswordTitle": "Задай нова парола",
+    "resetPasswordSubtitle": "Избери нова парола за акаунта си.",
+    "newPassword": "Нова парола",
+    "updatePasswordButton": "Обнови паролата",
     "errorUnexpected": "Възникна неочаквана грешка. Моля опитай отново."
   },
   "search": {

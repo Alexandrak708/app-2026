@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityIndicator } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
+import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
-import { ensureProfileRecord, getAuthErrorMessage } from "../lib/auth";
+import { getAuthErrorMessage } from "../lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -32,9 +33,17 @@ export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
+  const [infoMessage, setInfoMessage] = useState("");
+
+  const passwordRef = useRef<TextInput>(null);
+
+  const clearMessages = () => {
+    setAuthError("");
+    setInfoMessage("");
+  };
 
   const handleSignIn = async () => {
-    setAuthError("");
+    clearMessages();
 
     const normalizedEmail = email.trim().toLowerCase();
 
@@ -76,10 +85,50 @@ export default function SignIn() {
         return;
       }
 
-      await ensureProfileRecord(userId);
+      // The profile row is bootstrapped by the root layout on session change,
+      // so a transient profile write failure must not block a valid login.
       router.replace("/(tabs)");
     } catch (error) {
       console.error("Sign in error:", error);
+      setAuthError(t("auth.errorUnexpected"));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleForgotPassword = async () => {
+    clearMessages();
+
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
+      setAuthError(t("auth.errorEnterEmailFirst"));
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const { error } = await supabase.auth.resetPasswordForEmail(normalizedEmail, {
+        redirectTo: Linking.createURL("/"),
+      });
+
+      if (error) {
+        setAuthError(
+          getAuthErrorMessage(error, {
+            invalidCredentials: t("auth.errorInvalidCredentials"),
+            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
+            accountExists: t("auth.errorAccountAlreadyExists"),
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
+        );
+        return;
+      }
+
+      setInfoMessage(t("auth.resetEmailSent", { email: normalizedEmail }));
+    } catch (error) {
+      console.error("Reset password error:", error);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
@@ -125,7 +174,7 @@ export default function SignIn() {
           borderColor: currentLang === "en" ? "#ffffff" : "rgba(255,255,255,0.12)",
         }}
       >
-        <Text style={{ fontSize: 16 }}>{t("languages.en") === "English" ? "🇬🇧" : "🇬🇧"}</Text>
+        <Text style={{ fontSize: 16 }}>🇬🇧</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => handleLanguageChange("bg")}
@@ -157,24 +206,34 @@ export default function SignIn() {
         placeholderTextColor="#94a3b8"
         keyboardType="email-address"
         autoCapitalize="none"
+        autoComplete="email"
+        textContentType="emailAddress"
+        returnKeyType="next"
+        onSubmitEditing={() => passwordRef.current?.focus()}
+        submitBehavior="submit"
         value={email}
         onChangeText={(text) => {
           setEmail(text);
-          setAuthError("");
+          clearMessages();
         }}
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
-      <View style={{ position: "relative", marginBottom: 24 }}>
+      <View style={{ position: "relative", marginBottom: 12 }}>
         <TextInput
+          ref={passwordRef}
           placeholder={t("auth.password")}
           placeholderTextColor="#94a3b8"
           secureTextEntry={!showPassword}
           value={password}
           onChangeText={(text) => {
             setPassword(text);
-            setAuthError("");
+            clearMessages();
           }}
           autoCapitalize="none"
+          autoComplete="password"
+          textContentType="password"
+          returnKeyType="go"
+          onSubmitEditing={handleSignIn}
           className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
         />
         <TouchableOpacity
@@ -191,14 +250,24 @@ export default function SignIn() {
           />
         </TouchableOpacity>
       </View>
+      <TouchableOpacity onPress={handleForgotPassword} disabled={loading} style={{ alignSelf: "flex-end", marginBottom: 18 }}>
+        <Text className="text-slate-500 text-sm underline">{t("auth.forgotPassword")}</Text>
+      </TouchableOpacity>
       {authError ? (
         <Text className="text-red-500 text-sm font-medium mb-3 text-center">
           {authError}
         </Text>
       ) : null}
+      {infoMessage ? (
+        <Text className="text-green-600 text-sm font-medium mb-3 text-center">
+          {infoMessage}
+        </Text>
+      ) : null}
       <TouchableOpacity
         onPress={handleSignIn}
         disabled={loading}
+        activeOpacity={0.85}
+        style={{ opacity: loading ? 0.7 : 1 }}
         className="bg-slate-900 rounded-full py-4 items-center"
       >
         {loading
