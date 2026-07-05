@@ -12,11 +12,12 @@ import { ThemedText } from '@/components/themed-text';
 import { supabase } from '../lib/supabase';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
+import { ensureProfileRecord } from '../lib/auth';
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
   const [authUser, setAuthUser] = useState<any>(null);
-  const [user, setUser] = useState<any>(null);
+  const [, setUser] = useState<any>(null);
   const [editedName, setEditedName] = useState('');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -29,11 +30,7 @@ export default function ProfileScreen() {
         } = await supabase.auth.getUser();
         setAuthUser(au);
         if (au) {
-          const { data } = await supabase
-            .from('profiles')
-            .select('*')
-            .eq('id', au.id)
-            .single();
+          const data = await ensureProfileRecord(au.id);
           setUser(data);
           setEditedName(data?.full_name || '');
         }
@@ -46,6 +43,10 @@ export default function ProfileScreen() {
   }, []);
 
   const save = async () => {
+    if (!authUser?.id) {
+      Alert.alert(t('profile.errorTitle'), t('auth.errorAuthUnavailable'));
+      return;
+    }
     if (!editedName.trim()) return Alert.alert(t('profile.errorTitle'), t('profile.nameRequired'));
     setSaving(true);
     try {

@@ -40,3 +40,5 @@ Thumbs.db
 .cache/
 .turbo/
 .sixth/
+.vercel
+.env*
