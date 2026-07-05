@@ -4,8 +4,11 @@
 // Deploy with:  supabase functions deploy delete-account
 //
 // Required function secrets (set in the Supabase dashboard or via CLI):
-//   SUPABASE_URL                – your project URL (auto-provided at runtime)
-//   SUPABASE_SERVICE_ROLE_KEY   – service role key (auto-provided at runtime)
+//   SUPABASE_URL       – your project URL (auto-provided at runtime)
+//   SERVICE_ROLE_KEY   – service role key (manually set via `supabase secrets set`)
+//
+// NOTE: Secrets prefixed with SUPABASE_ are reserved/auto-injected by the
+// Supabase runtime, so we use SERVICE_ROLE_KEY instead.
 //
 // The service role key NEVER leaves the server. The client only sends its
 // own auth JWT; this function verifies it, then deletes that user only.
@@ -33,7 +36,7 @@ Deno.serve(async (req: Request) => {
     }
 
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
-    const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+    const serviceRoleKey = Deno.env.get('SERVICE_ROLE_KEY')!;
 
     // Client scoped to the caller's JWT — used only to identify who is calling.
     const userClient = createClient(supabaseUrl, Deno.env.get('SUPABASE_ANON_KEY')!, {
