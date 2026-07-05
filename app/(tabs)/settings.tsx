@@ -23,6 +23,7 @@ import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
+import { ensureProfileRecord } from "../../lib/auth";
 
 // ── Reusable row ──────────────────────────────────────────────────────────────
 type SettingsRowProps = {
@@ -139,11 +140,7 @@ export default function Settings() {
 
       if (au) {
         setAuthUser(au);
-        const { data } = await supabase
-          .from("profiles")
-          .select("*")
-          .eq("id", au.id)
-          .single();
+        const data = await ensureProfileRecord(au.id);
 
         if (data) {
           setUser(data);
@@ -217,6 +214,10 @@ export default function Settings() {
   };
 
   const handleSaveName = async () => {
+    if (!authUser?.id) {
+      Alert.alert(t("settings.errorTitle"), t("auth.errorAuthUnavailable"));
+      return;
+    }
     if (!editedName.trim()) {
       Alert.alert(t("settings.errorTitle"), t("settings.nameCannotBeEmpty"));
       return;
