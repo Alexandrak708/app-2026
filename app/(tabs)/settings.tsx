@@ -16,11 +16,14 @@ import {
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
 import { supabase } from "../../lib/supabase";
+import { deleteAccount } from "../../lib/account";
+import Constants from "expo-constants";
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
+import { ensureProfileRecord } from "../../lib/auth";
 
 // ── Reusable row ──────────────────────────────────────────────────────────────
 type SettingsRowProps = {
@@ -76,6 +79,7 @@ export default function Settings() {
   const [loadingName, setLoadingName] = useState(false);
   const [loadingAvatar, setLoadingAvatar] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
+  const [deleting, setDeleting] = useState(false);
 
   const pulseAnim = useRef(new Animated.Value(1)).current;
 
@@ -136,11 +140,7 @@ export default function Settings() {
 
       if (au) {
         setAuthUser(au);
-        const { data } = await supabase
-          .from("profiles")
-          .select("*")
-          .eq("id", au.id)
-          .single();
+        const data = await ensureProfileRecord(au.id);
 
         if (data) {
           setUser(data);
@@ -214,6 +214,10 @@ export default function Settings() {
   };
 
   const handleSaveName = async () => {
+    if (!authUser?.id) {
+      Alert.alert(t("settings.errorTitle"), t("auth.errorAuthUnavailable"));
+      return;
+    }
     if (!editedName.trim()) {
       Alert.alert(t("settings.errorTitle"), t("settings.nameCannotBeEmpty"));
       return;
@@ -259,6 +263,35 @@ export default function Settings() {
     } finally {
       router.replace("/login");
     }
+  };
+
+  const performDeleteAccount = async () => {
+    setDeleting(true);
+    try {
+      await deleteAccount();
+      Alert.alert(t("settings.deleteAccountSuccess"));
+      router.replace("/login");
+    } catch (error) {
+      console.error("Delete account error:", error);
+      Alert.alert(t("settings.errorTitle"), t("settings.deleteAccountError"));
+    } finally {
+      setDeleting(false);
+    }
+  };
+
+  const handleDeleteAccount = () => {
+    Alert.alert(
+      t("settings.deleteAccountConfirmTitle"),
+      t("settings.deleteAccountConfirmMessage"),
+      [
+        { text: t("settings.cancel"), style: "cancel" },
+        {
+          text: t("settings.deleteAccountConfirm"),
+          style: "destructive",
+          onPress: performDeleteAccount,
+        },
+      ]
+    );
   };
 
   if (initialLoading) {
@@ -380,13 +413,6 @@ export default function Settings() {
           />
           <View style={[styles.separator, { backgroundColor: palette.border }]} />
           <SettingsRow
-            label={t("settings.items.security")}
-            onPress={() => router.push('/security')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
             label={t("settings.items.emailNotifications")}
             onPress={() => router.push('/email-notifications')}
             labelColor={palette.text}
@@ -448,6 +474,13 @@ export default function Settings() {
             labelColor={palette.text}
             chevronColor={palette.tint}
           />
+          <View style={[styles.separator, { backgroundColor: palette.border }]} />
+          <SettingsRow
+            label={t("settings.items.privacyPolicy")}
+            onPress={() => router.push('/privacy')}
+            labelColor={palette.text}
+            chevronColor={palette.tint}
+          />
         </Section>
 
         {/* ── Log Out — logic unchanged ── */}
@@ -465,7 +498,22 @@ export default function Settings() {
           <Text style={[styles.logoutText, { color: isDark ? "#fca5a5" : "#dc2626" }]}>{t("settings.logout") || "Log Out"}</Text>
         </TouchableOpacity>
 
-        <Text style={[styles.versionText, { color: palette.tint }]}>{t("settings.appVersion")}</Text>
+        <TouchableOpacity
+          style={styles.deleteAccountBtn}
+          onPress={handleDeleteAccount}
+          activeOpacity={0.7}
+          disabled={deleting}
+        >
+          {deleting ? (
+            <ActivityIndicator color={isDark ? "#fca5a5" : "#dc2626"} size="small" />
+          ) : (
+            <Text style={[styles.deleteAccountText, { color: isDark ? "#fca5a5" : "#dc2626" }]}>
+              {t("settings.deleteAccount")}
+            </Text>
+          )}
+        </TouchableOpacity>
+
+        <Text style={[styles.versionText, { color: palette.tint }]}>{t("settings.appVersion", { version: Constants.expoConfig?.version ?? "1.0.0" })}</Text>
       </View>
     </ScrollView>
   );
@@ -638,6 +686,19 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   logoutText: { fontSize: 15, fontWeight: "700", color: "#dc2626", letterSpacing: 0.2 },
+
+  deleteAccountBtn: {
+    padding: 12,
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  deleteAccountText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#dc2626",
+    textDecorationLine: "underline",
+    letterSpacing: 0.2,
+  },
 
   versionText: {
     textAlign: "center",

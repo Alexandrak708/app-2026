@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Platform, useWindowDimensions, ActivityIndicator } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityIndicator } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
+import { ensureProfileRecord, getAuthErrorMessage } from "../lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -20,7 +21,6 @@ const STARS = Array.from({ length: 72 }, (_, i) => {
 });
 
 export default function SignIn() {
-  const isWeb = Platform.OS === "web";
   const { width: screenWidth, height: screenHeight } = useWindowDimensions();
   const isDesktop = screenWidth >= 980;
   const router = useRouter();
@@ -36,21 +36,54 @@ export default function SignIn() {
   const handleSignIn = async () => {
     setAuthError("");
 
-    if (!email || !password) {
-      setAuthError("Please enter a valid email and password.");
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail || !password) {
+      setAuthError(t("auth.errorEmail"));
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
+      setAuthError(t("auth.invalidEmail"));
       return;
     }
 
     setLoading(true);
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    setLoading(false);
 
-    if (error) {
-      setAuthError("Invalid email or password.");
-      return;
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: normalizedEmail,
+        password,
+      });
+
+      if (error) {
+        setAuthError(
+          getAuthErrorMessage(error, {
+            invalidCredentials: t("auth.errorInvalidCredentials"),
+            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
+            accountExists: t("auth.errorAccountAlreadyExists"),
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
+        );
+        return;
+      }
+
+      const userId = data.session?.user.id ?? data.user?.id;
+
+      if (!userId) {
+        setAuthError(t("auth.errorAuthUnavailable"));
+        return;
+      }
+
+      await ensureProfileRecord(userId);
+      router.replace("/(tabs)");
+    } catch (error) {
+      console.error("Sign in error:", error);
+      setAuthError(t("auth.errorUnexpected"));
+    } finally {
+      setLoading(false);
     }
-
-    router.replace("/(tabs)");
   };
 
   const handleLanguageChange = async (lang: "en" | "bg") => {

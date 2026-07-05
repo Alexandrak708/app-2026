@@ -1,17 +1,18 @@
 {
   "expo": {
-    "name": "app-2026",
+    "name": "UniApp",
     "slug": "app-2026",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "app2026",
     "userInterfaceStyle": "automatic",
-    
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.yourcompany.app2026",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -19,7 +20,10 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "output": "static",
@@ -38,10 +42,22 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "This app needs access to your photos so you can set a profile picture."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "476665da-6ed8-4dd0-a491-cc1ff2efc3b3"
+      }
     }
   }
 }

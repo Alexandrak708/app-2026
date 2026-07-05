@@ -6,6 +6,7 @@ import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
+import { ensureProfileRecord, getAuthErrorMessage } from "../lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -32,63 +33,68 @@ export default function Register() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [authError, setAuthError] = useState("");
 
   const handleRegister = async () => {
-    if (!email || !password || !confirmPassword) {
-      Alert.alert(t("auth.errorTitle"), t("auth.errorRequiredFields"));
+    setAuthError("");
+
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail || !password || !confirmPassword) {
+      setAuthError(t("auth.errorRequiredFields"));
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
+      setAuthError(t("auth.invalidEmail"));
       return;
     }
     if (password !== confirmPassword) {
-      Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordMismatch"));
+      setAuthError(t("auth.errorPasswordMismatch"));
       return;
     }
-    if (password.length < 6) {
-      Alert.alert(t("auth.errorTitle"), t("auth.errorPasswordLength"));
+    if (password.length < 8) {
+      setAuthError(t("auth.errorPasswordLength"));
+      return;
+    }
+    if (!/[a-zA-Z]/.test(password) || !/[0-9]/.test(password)) {
+      setAuthError(t("auth.errorPasswordWeak"));
       return;
     }
 
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signUp({ email, password });
+      const { data, error } = await supabase.auth.signUp({ email: normalizedEmail, password });
 
       if (error) {
-        setLoading(false);
-        Alert.alert(t("auth.errorTitle"), error.message);
-        return;
-      }
-
-      // If session exists, navigation will be handled by auth listener
-      if (data.session) {
-        setLoading(false);
-        router.replace("/(tabs)");
-        return;
-      }
-
-      // If no session (email confirmation required), try to sign in directly
-      // This works if email confirmation is disabled in Supabase
-      const { error: signInError } = await supabase.auth.signInWithPassword({
-        email,
-        password
-      });
-
-      setLoading(false);
-
-      if (signInError) {
-        // If sign in fails, it means email confirmation is required
-        Alert.alert(
-          t("auth.successRegistration"),
-          t("auth.successMessage"),
-          [{ text: t("common.ok"), onPress: () => router.replace("/") }]
+        setAuthError(
+          getAuthErrorMessage(error, {
+            invalidCredentials: t("auth.errorInvalidCredentials"),
+            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
+            accountExists: t("auth.errorAccountAlreadyExists"),
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
         );
         return;
       }
 
-      // Sign in successful, navigate to home
-      router.replace("/(tabs)");
+      if (data.session) {
+        await ensureProfileRecord(data.session.user.id);
+        router.replace("/(tabs)");
+        return;
+      }
+
+      Alert.alert(
+        t("auth.successRegistration"),
+        t("auth.successMessage"),
+        [{ text: t("common.ok"), onPress: () => router.replace("/login") }]
+      );
     } catch (err) {
+      console.error("Register error:", err);
+      setAuthError(t("auth.errorUnexpected"));
+    } finally {
       setLoading(false);
-      Alert.alert(t("auth.errorTitle"), t("auth.errorUnexpected"));
     }
   };
 
@@ -164,7 +170,10 @@ export default function Register() {
         keyboardType="email-address"
         autoCapitalize="none"
         value={email}
-        onChangeText={setEmail}
+        onChangeText={(text) => {
+          setEmail(text);
+          setAuthError("");
+        }}
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
       <View style={{ position: "relative", marginBottom: 16 }}>
@@ -173,7 +182,10 @@ export default function Register() {
           placeholderTextColor="#94a3b8"
           secureTextEntry={!showPassword}
           value={password}
-          onChangeText={setPassword}
+          onChangeText={(text) => {
+            setPassword(text);
+            setAuthError("");
+          }}
           autoCapitalize="none"
           className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
         />
@@ -197,7 +209,10 @@ export default function Register() {
           placeholderTextColor="#94a3b8"
           secureTextEntry={!showConfirmPassword}
           value={confirmPassword}
-          onChangeText={setConfirmPassword}
+          onChangeText={(text) => {
+            setConfirmPassword(text);
+            setAuthError("");
+          }}
           autoCapitalize="none"
           className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
         />
@@ -215,6 +230,11 @@ export default function Register() {
           />
         </TouchableOpacity>
       </View>
+      {authError ? (
+        <Text className="text-red-500 text-sm font-medium mb-3 text-center">
+          {authError}
+        </Text>
+      ) : null}
       <TouchableOpacity
         onPress={handleRegister}
         disabled={loading}

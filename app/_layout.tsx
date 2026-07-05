@@ -5,8 +5,9 @@ import { Stack, useRouter, useSegments } from "expo-router";
 import { supabase } from "../lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { View, ActivityIndicator } from "react-native";
-import ThemeProvider from '@/components/theme-provider';
+import AppThemeProvider from '@/components/theme-provider';
 import { FavouritesProvider } from '@/contexts/FavouritesContext';
+import { ensureProfileRecord } from "../lib/auth";
 
 export default function RootLayout() {
   const [session, setSession] = useState<Session | null>(null);
@@ -34,6 +35,16 @@ export default function RootLayout() {
   }, []);
 
   useEffect(() => {
+    if (!session?.user.id) {
+      return;
+    }
+
+    ensureProfileRecord(session.user.id).catch((error) => {
+      console.error("Profile bootstrap error:", error);
+    });
+  }, [session]);
+
+  useEffect(() => {
     if (loading) return;
 
     const inTabsGroup = segments[0] === "(tabs)";
@@ -44,7 +55,7 @@ export default function RootLayout() {
     } else if (!session && inTabsGroup) {
       router.replace("/login");
     }
-  }, [session, loading, segments]);
+  }, [session, loading, segments, router]);
 
   // 👇 updated - wait for BOTH loading AND i18n to be ready
   if (loading || !i18nReady) {
@@ -56,7 +67,7 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider>
+    <AppThemeProvider>
       <FavouritesProvider>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="login" />
@@ -64,6 +75,6 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" />
       </Stack>
       </FavouritesProvider>
-    </ThemeProvider>
+    </AppThemeProvider>
   );
 }
