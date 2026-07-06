@@ -7,7 +7,7 @@ import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
-import { getAuthErrorMessage } from "../lib/auth";
+import { getAuthErrorMessage, validatePassword } from "../lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -34,12 +34,14 @@ export default function SignIn() {
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
   const [infoMessage, setInfoMessage] = useState("");
+  const [warning, setWarning] = useState("");
 
   const passwordRef = useRef<TextInput>(null);
 
   const clearMessages = () => {
     setAuthError("");
     setInfoMessage("");
+    setWarning("");
   };
 
   const handleSignIn = async () => {
@@ -47,13 +49,19 @@ export default function SignIn() {
 
     const normalizedEmail = email.trim().toLowerCase();
 
-    if (!normalizedEmail || !password) {
-      setAuthError(t("auth.errorEmail"));
+    if (!normalizedEmail) {
+      setWarning(t("auth.warnRequiredFields"));
       return;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
-      setAuthError(t("auth.invalidEmail"));
+      setWarning(t("auth.warnInvalidEmail"));
+      return;
+    }
+
+    const passwordValidation = validatePassword(password);
+    if (!passwordValidation.valid && passwordValidation.warningKey) {
+      setWarning(t(`auth.${passwordValidation.warningKey}`));
       return;
     }
 
@@ -85,11 +93,9 @@ export default function SignIn() {
         return;
       }
 
-      // The profile row is bootstrapped by the root layout on session change,
-      // so a transient profile write failure must not block a valid login.
       router.replace("/(tabs)");
     } catch (error) {
-      console.error("Sign in error:", error);
+      if (__DEV__) console.error("Sign in error:", error);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
@@ -116,9 +122,6 @@ export default function SignIn() {
       if (error) {
         setAuthError(
           getAuthErrorMessage(error, {
-            invalidCredentials: t("auth.errorInvalidCredentials"),
-            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
-            accountExists: t("auth.errorAccountAlreadyExists"),
             authUnavailable: t("auth.errorAuthUnavailable"),
             fallback: t("auth.errorUnexpected"),
           })
@@ -128,7 +131,7 @@ export default function SignIn() {
 
       setInfoMessage(t("auth.resetEmailSent", { email: normalizedEmail }));
     } catch (error) {
-      console.error("Reset password error:", error);
+      if (__DEV__) console.error("Reset password error:", error);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
@@ -224,11 +227,11 @@ export default function SignIn() {
           placeholder={t("auth.password")}
           placeholderTextColor="#94a3b8"
           secureTextEntry={!showPassword}
-          value={password}
-          onChangeText={(text) => {
-            setPassword(text);
-            clearMessages();
-          }}
+        value={password}
+        onChangeText={(text) => {
+          setPassword(text);
+          clearMessages();
+        }}
           autoCapitalize="none"
           autoComplete="password"
           textContentType="password"
@@ -256,6 +259,11 @@ export default function SignIn() {
       {authError ? (
         <Text className="text-red-500 text-sm font-medium mb-3 text-center">
           {authError}
+        </Text>
+      ) : null}
+      {warning ? (
+        <Text className="text-amber-600 text-sm font-medium mb-3 text-center">
+          {warning}
         </Text>
       ) : null}
       {infoMessage ? (

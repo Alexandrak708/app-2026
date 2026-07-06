@@ -5,10 +5,10 @@ type SupabaseLikeError = {
 };
 
 type AuthErrorMessages = {
-  invalidCredentials: string;
-  emailNotConfirmed: string;
-  accountExists: string;
-  authUnavailable: string;
+  invalidCredentials?: string;
+  emailNotConfirmed?: string;
+  accountExists?: string;
+  authUnavailable?: string;
   fallback: string;
 };
 
@@ -26,20 +26,20 @@ export async function ensureProfileRecord(userId: string) {
   return data;
 }
 
-export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined, messages: AuthErrorMessages) {
+export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined, messages: AuthErrorMessages): string {
   const rawMessage = error?.message?.trim() || "";
   const normalizedMessage = rawMessage.toLowerCase();
 
   if (normalizedMessage.includes("invalid login credentials")) {
-    return messages.invalidCredentials;
+    return messages.invalidCredentials ?? messages.fallback;
   }
 
   if (normalizedMessage.includes("email not confirmed")) {
-    return messages.emailNotConfirmed;
+    return messages.emailNotConfirmed ?? messages.fallback;
   }
 
   if (normalizedMessage.includes("user already registered")) {
-    return messages.accountExists;
+    return messages.accountExists ?? messages.fallback;
   }
 
   if (
@@ -49,11 +49,31 @@ export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined,
     normalizedMessage.includes("network") ||
     normalizedMessage.includes("timeout")
   ) {
-    return messages.authUnavailable;
+    return messages.authUnavailable ?? messages.fallback;
   }
 
-  // Never surface raw, untranslated Supabase strings to the user.
   return messages.fallback;
+}
+
+export interface PasswordValidationResult {
+  valid: boolean;
+  warningKey?: string;
+}
+
+export function validatePassword(password: string, confirmPassword?: string): PasswordValidationResult {
+  if (!password) {
+    return { valid: false, warningKey: "warnRequiredFields" };
+  }
+  if (confirmPassword !== undefined && password !== confirmPassword) {
+    return { valid: false, warningKey: "warnPasswordMismatch" };
+  }
+  if (password.length < 8) {
+    return { valid: false, warningKey: "warnPasswordLength" };
+  }
+  if (!/[a-zA-Z]/.test(password) || !/[0-9]/.test(password)) {
+    return { valid: false, warningKey: "warnPasswordWeak" };
+  }
+  return { valid: true };
 }
 
 type ParsedAuthLink = {

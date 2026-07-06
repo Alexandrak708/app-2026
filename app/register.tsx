@@ -7,7 +7,7 @@ import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
-import { getAuthErrorMessage } from "../lib/auth";
+import { getAuthErrorMessage, validatePassword } from "../lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -36,33 +36,30 @@ export default function Register() {
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
   const [pendingEmail, setPendingEmail] = useState<string | null>(null);
+  const [warning, setWarning] = useState("");
 
   const passwordRef = useRef<TextInput>(null);
   const confirmPasswordRef = useRef<TextInput>(null);
 
   const handleRegister = async () => {
     setAuthError("");
+    setWarning("");
 
     const normalizedEmail = email.trim().toLowerCase();
 
-    if (!normalizedEmail || !password || !confirmPassword) {
-      setAuthError(t("auth.errorRequiredFields"));
+    if (!normalizedEmail) {
+      setWarning(t("auth.warnRequiredFields"));
       return;
     }
+
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
-      setAuthError(t("auth.invalidEmail"));
+      setWarning(t("auth.warnInvalidEmail"));
       return;
     }
-    if (password !== confirmPassword) {
-      setAuthError(t("auth.errorPasswordMismatch"));
-      return;
-    }
-    if (password.length < 8) {
-      setAuthError(t("auth.errorPasswordLength"));
-      return;
-    }
-    if (!/[a-zA-Z]/.test(password) || !/[0-9]/.test(password)) {
-      setAuthError(t("auth.errorPasswordWeak"));
+
+    const passwordValidation = validatePassword(password, confirmPassword);
+    if (!passwordValidation.valid && passwordValidation.warningKey) {
+      setWarning(t(`auth.${passwordValidation.warningKey}`));
       return;
     }
 
@@ -88,17 +85,15 @@ export default function Register() {
         return;
       }
 
-      // With email confirmation on, Supabase obfuscates existing accounts:
-      // it returns a user with an empty identities array and no session.
-      const identities = data.user?.identities;
-      if (Array.isArray(identities) && identities.length === 0) {
+      const identities = data.user?.identities as string[] | undefined;
+      const isNewUser = Array.isArray(identities) && identities.length > 0;
+      const duplicateSignup = !data.session && !isNewUser;
+
+      if (duplicateSignup || error?.message?.toLowerCase().includes("user already registered")) {
         setAuthError(t("auth.errorAccountAlreadyExists"));
         return;
       }
 
-      // No session means a confirmation email was sent — show the inbox screen.
-      // (If confirmation were ever disabled, a session comes back and the
-      // root layout redirects into the app.)
       if (!data.session) {
         setPendingEmail(normalizedEmail);
         return;
@@ -106,7 +101,7 @@ export default function Register() {
 
       router.replace("/(tabs)");
     } catch (err) {
-      console.error("Register error:", err);
+      if (__DEV__) console.error("Register error:", err);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
@@ -222,6 +217,7 @@ export default function Register() {
         onChangeText={(text) => {
           setEmail(text);
           setAuthError("");
+          setWarning("");
         }}
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
@@ -235,6 +231,7 @@ export default function Register() {
           onChangeText={(text) => {
             setPassword(text);
             setAuthError("");
+            setWarning("");
           }}
           autoCapitalize="none"
           autoComplete="password-new"
@@ -268,6 +265,7 @@ export default function Register() {
           onChangeText={(text) => {
             setConfirmPassword(text);
             setAuthError("");
+            setWarning("");
           }}
           autoCapitalize="none"
           autoComplete="password-new"
@@ -293,6 +291,11 @@ export default function Register() {
       {authError ? (
         <Text className="text-red-500 text-sm font-medium mb-3 text-center">
           {authError}
+        </Text>
+      ) : null}
+      {warning ? (
+        <Text className="text-amber-600 text-sm font-medium mb-3 text-center">
+          {warning}
         </Text>
       ) : null}
       <TouchableOpacity

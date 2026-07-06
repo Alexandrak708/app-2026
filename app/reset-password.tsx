@@ -5,7 +5,7 @@ import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { supabase } from "../lib/supabase";
-import { getAuthErrorMessage } from "../lib/auth";
+import { getAuthErrorMessage, validatePassword } from "../lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -31,26 +31,17 @@ export default function ResetPassword() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
+  const [warning, setWarning] = useState("");
 
   const confirmPasswordRef = useRef<TextInput>(null);
 
   const handleReset = async () => {
     setAuthError("");
+    setWarning("");
 
-    if (!password || !confirmPassword) {
-      setAuthError(t("auth.errorRequiredFields"));
-      return;
-    }
-    if (password !== confirmPassword) {
-      setAuthError(t("auth.errorPasswordMismatch"));
-      return;
-    }
-    if (password.length < 8) {
-      setAuthError(t("auth.errorPasswordLength"));
-      return;
-    }
-    if (!/[a-zA-Z]/.test(password) || !/[0-9]/.test(password)) {
-      setAuthError(t("auth.errorPasswordWeak"));
+    const passwordValidation = validatePassword(password, confirmPassword);
+    if (!passwordValidation.valid && passwordValidation.warningKey) {
+      setWarning(t(`auth.${passwordValidation.warningKey}`));
       return;
     }
 
@@ -63,7 +54,6 @@ export default function ResetPassword() {
         setAuthError(
           getAuthErrorMessage(error, {
             invalidCredentials: t("auth.errorInvalidCredentials"),
-            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
             accountExists: t("auth.errorAccountAlreadyExists"),
             authUnavailable: t("auth.errorAuthUnavailable"),
             fallback: t("auth.errorUnexpected"),
@@ -79,7 +69,7 @@ export default function ResetPassword() {
 
       router.replace("/(tabs)");
     } catch (err) {
-      console.error("Reset password error:", err);
+      if (__DEV__) console.error("Reset password error:", err);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
@@ -105,6 +95,7 @@ export default function ResetPassword() {
           onChangeText={(text) => {
             setPassword(text);
             setAuthError("");
+            setWarning("");
           }}
           autoCapitalize="none"
           autoComplete="password-new"
@@ -138,6 +129,7 @@ export default function ResetPassword() {
           onChangeText={(text) => {
             setConfirmPassword(text);
             setAuthError("");
+            setWarning("");
           }}
           autoCapitalize="none"
           autoComplete="password-new"
@@ -163,6 +155,11 @@ export default function ResetPassword() {
       {authError ? (
         <Text className="text-red-500 text-sm font-medium mb-3 text-center">
           {authError}
+        </Text>
+      ) : null}
+      {warning ? (
+        <Text className="text-amber-600 text-sm font-medium mb-3 text-center">
+          {warning}
         </Text>
       ) : null}
       <TouchableOpacity
