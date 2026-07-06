@@ -47,9 +47,7 @@ export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined,
     normalizedMessage.includes("signups disabled") ||
     normalizedMessage.includes("failed to fetch") ||
     normalizedMessage.includes("network") ||
-    normalizedMessage.includes("timeout") ||
-    normalizedMessage.includes("rate limit") ||
-    normalizedMessage.includes("too many requests")
+    normalizedMessage.includes("timeout")
   ) {
     return messages.authUnavailable;
   }
