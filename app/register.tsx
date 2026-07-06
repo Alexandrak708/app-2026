@@ -3,7 +3,6 @@ import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityI
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
-import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "./i18n";
 import { supabase } from "../lib/supabase";
@@ -35,7 +34,6 @@ export default function Register() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
-  const [pendingEmail, setPendingEmail] = useState<string | null>(null);
   const [warning, setWarning] = useState("");
 
   const passwordRef = useRef<TextInput>(null);
@@ -69,7 +67,6 @@ export default function Register() {
       const { data, error } = await supabase.auth.signUp({
         email: normalizedEmail,
         password,
-        options: { emailRedirectTo: Linking.createURL("/") },
       });
 
       if (error) {
@@ -81,20 +78,6 @@ export default function Register() {
             fallback: t("auth.errorUnexpected"),
           })
         );
-        return;
-      }
-
-      const identities = data.user?.identities as string[] | undefined;
-      const isNewUser = Array.isArray(identities) && identities.length > 0;
-      const duplicateSignup = !data.session && !isNewUser;
-
-      if (duplicateSignup || error?.message?.toLowerCase().includes("user already registered")) {
-        setAuthError(t("auth.errorAccountAlreadyExists"));
-        return;
-      }
-
-      if (!data.session) {
-        setPendingEmail(normalizedEmail);
         return;
       }
 
@@ -163,35 +146,6 @@ export default function Register() {
         }}
       >
         <Text style={{ fontSize: 16 }}>🇧🇬</Text>
-      </TouchableOpacity>
-    </View>
-  );
-
-  const CheckEmailContent = (
-    <View style={{ alignItems: "center" }}>
-      <View
-        style={{
-          width: 64,
-          height: 64,
-          borderRadius: 32,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#dcfce7",
-          marginBottom: 16,
-        }}
-      >
-        <MaterialCommunityIcons name="email-check-outline" size={34} color="#16a34a" />
-      </View>
-      <Text className="text-2xl font-bold text-slate-900 text-center">{t("auth.checkEmailTitle")}</Text>
-      <Text className="text-slate-500 mt-3 mb-7 text-center">
-        {t("auth.checkEmailMessage", { email: pendingEmail })}
-      </Text>
-      <TouchableOpacity
-        onPress={() => router.replace("/login")}
-        activeOpacity={0.85}
-        className="bg-slate-900 rounded-full py-4 items-center w-full"
-      >
-        <Text className="text-white text-base font-semibold">{t("auth.backToSignIn")}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -315,8 +269,6 @@ export default function Register() {
     </>
   );
 
-  const CardContent = pendingEmail ? CheckEmailContent : FormContent;
-
   return (
     <View style={{ flex: 1, backgroundColor: "#02050a" }}>
       {LanguageSwitcher}
@@ -355,7 +307,7 @@ export default function Register() {
               borderWidth: 1, borderColor: "rgba(148,163,184,0.28)",
               shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 18, shadowOffset: { width: 0, height: 8 },
             }}>
-              {CardContent}
+              {FormContent}
             </View>
           </View>
         </View>
@@ -367,7 +319,7 @@ export default function Register() {
               borderRadius: 26, paddingHorizontal: 22, paddingVertical: 24,
               borderWidth: 1, borderColor: "rgba(148,163,184,0.28)",
             }}>
-              {CardContent}
+              {FormContent}
             </View>
           </View>
           <LottieView
