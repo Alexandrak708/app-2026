@@ -6,7 +6,6 @@ type SupabaseLikeError = {
 
 type AuthErrorMessages = {
   invalidCredentials?: string;
-  emailNotConfirmed?: string;
   accountExists?: string;
   authUnavailable?: string;
   fallback: string;
@@ -32,10 +31,6 @@ export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined,
 
   if (normalizedMessage.includes("invalid login credentials")) {
     return messages.invalidCredentials ?? messages.fallback;
-  }
-
-  if (normalizedMessage.includes("email not confirmed")) {
-    return messages.emailNotConfirmed ?? messages.fallback;
   }
 
   if (normalizedMessage.includes("user already registered")) {

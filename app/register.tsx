@@ -76,7 +76,6 @@ export default function Register() {
         setAuthError(
           getAuthErrorMessage(error, {
             invalidCredentials: t("auth.errorInvalidCredentials"),
-            emailNotConfirmed: t("auth.errorEmailNotConfirmed"),
             accountExists: t("auth.errorAccountAlreadyExists"),
             authUnavailable: t("auth.errorAuthUnavailable"),
             fallback: t("auth.errorUnexpected"),
