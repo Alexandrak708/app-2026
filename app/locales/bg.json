@@ -261,35 +261,71 @@
       "tuitionFreeLabel": "€0"
     },
     "3": {
-      "yearsTradition": "115+",
-      "bachelorPrograms": "28",
-      "masterPrograms": "29",
-      "internationalPartners": "300+",
-      "countries": "60+",
-      "studentsGraduated": "160K+",
-      "labs": "10+",
-      "tuitionFreeLabel": "€245"
+      "yearsTradition": "",
+      "bachelorPrograms": "",
+      "masterPrograms": "",
+      "internationalPartners": "",
+      "countries": "",
+      "studentsGraduated": "",
+      "labs": "",
+      "tuitionFreeLabel": ""
     }
   },
   "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
   "tuitionTiers": {
     "1": [
-      { "range": "€0", "label": "4 безплатни специалности" },
-      { "range": "€176-€220", "label": "Повечето редовни специалности" },
-      { "range": "€332-€358", "label": "Морско инженерство" },
-      { "range": "€409.50", "label": "Корабоводене" }
+      {
+        "range": "€0",
+        "label": "4 безплатни специалности"
+      },
+      {
+        "range": "€176-€220",
+        "label": "Повечето редовни специалности"
+      },
+      {
+        "range": "€332-€358",
+        "label": "Морско инженерство"
+      },
+      {
+        "range": "€409.50",
+        "label": "Корабоводене"
+      }
     ],
     "2": [
-      { "range": "€0", "label": "Медицинска сестра, Акушерка, Военен лекар" },
-      { "range": "€400-€600", "label": "Българоезични програми (на семестър)" },
-      { "range": "€3,500", "label": "Фармация (англ., на семестър)" },
-      { "range": "€5,000", "label": "Медицина/Дентална медицина (англ., на семестър)" }
+      {
+        "range": "€0",
+        "label": "Медицинска сестра, Акушерка, Военен лекар"
+      },
+      {
+        "range": "€400-€600",
+        "label": "Българоезични програми (на семестър)"
+      },
+      {
+        "range": "€3,500",
+        "label": "Фармация (англ., на семестър)"
+      },
+      {
+        "range": "€5,000",
+        "label": "Медицина/Дентална медицина (англ., на семестър)"
+      }
     ],
     "3": [
-      { "range": "€245", "label": "Държавна поръчка (на семестър)" },
-      { "range": "€555-€1,045", "label": "Платено редовно обучение (на семестър)" },
-      { "range": "€450-€570", "label": "Дистанционно обучение (на семестър)" },
-      { "range": "€1,350", "label": "Чуждестранни студенти (на семестър)" }
+      {
+        "range": "",
+        "label": ""
+      },
+      {
+        "range": "",
+        "label": ""
+      },
+      {
+        "range": "",
+        "label": ""
+      },
+      {
+        "range": "",
+        "label": ""
+      }
     ]
   },
   "universityExtra": {
@@ -367,49 +403,49 @@
     "mu_visaSupport": "Помощ за визи и разрешителни за пребиваване за студенти извън ЕС",
     "mu_dormitories": "Студентски общежития на достъпни цени за чуждестранни студенти",
     "mu_languagePrep": "Подготвителни езикови курсове по български и английски (9 месеца, €5,000)",
-    "mu_recognition": "Услуга за признаване на дипломи чрез Министерството на образованието и науката"
+    "mu_recognition": "Услуга за признаване на дипломи чрез Министерството на образованието и науката",
+    "ue_scholarships": "",
+    "ue_scholarshipsDesc": "",
+    "ue_excellentScholarships": "",
+    "ue_erasmusGrants": "",
+    "ue_socialScholarships": "",
+    "ue_doctoralScholarships": "",
+    "ue_applicationInfo": "",
+    "ue_applicationDesc": "",
+    "ue_appEarly": "",
+    "ue_appDocuments": "",
+    "ue_appOnline": "",
+    "ue_appMainRound": "",
+    "ue_appFees": "",
+    "ue_appExams": "",
+    "ue_appInternational": "",
+    "ue_masterFees": "",
+    "ue_masterFeesDesc": "",
+    "ue_masterRegular": "",
+    "ue_masterEnglish": "",
+    "ue_masterDistance": "",
+    "ue_openDoors": "",
+    "ue_openDoorsDesc": "",
+    "ue_businessAccelerator": "",
+    "ue_careerCentre": "",
+    "ue_uebn": "",
+    "ue_alumni": "",
+    "ue_partners": "",
+    "ue_partnersDesc": "",
+    "ue_erasmusPartners": "",
+    "ue_dukenet": "",
+    "ue_businet": "",
+    "ue_ceepus": "",
+    "ue_doubleDegrees": "",
+    "ue_magellan": "",
+    "ue_internationalStudents": "",
+    "ue_internationalDesc": "",
+    "ue_visaSupport": "",
+    "ue_dormitories": "",
+    "ue_languageCourses": "",
+    "ue_recognition": "",
+    "ue_internationalOffice": ""
   },
-    "ue_scholarships": "Стипендии и финансиране в ИУ-Варна",
-    "ue_scholarshipsDesc": "ИУ-Варна предлага различни стипендии за академични постижения и социална подкрепа:",
-    "ue_excellentScholarships": "Стипендии за успех за студенти със среден успех над 4.00 (български граждани и граждани на ЕС/ЕИП)",
-    "ue_erasmusGrants": "Стипендии по Еразъм+ за обучение или стаж в 300+ партньорски университета в 50+ държави",
-    "ue_socialScholarships": "Социални стипендии за студенти в нужда",
-    "ue_doctoralScholarships": "Държавни стипендии за докторанти",
-    "ue_applicationInfo": "Кандидатстване (Бакалавър 2026/2027)",
-    "ue_applicationDesc": "Приемът в бакалавърските програми на ИУ-Варна се основава на оценки от диплома за средно образование, електронни тестове или ДЗИ. Кандидатстването е онлайн чрез системата за КСП.",
-    "ue_appEarly": "Ранни кандидатствания от февруари до юни",
-    "ue_appDocuments": "Необходими документи: диплома за средно образование (или удостоверение), академична справка, 4 снимки",
-    "ue_appOnline": "Онлайн кандидатстване чрез системата за КСП",
-    "ue_appMainRound": "Основен прием: юни – септември за учебната година, започваща през октомври",
-    "ue_appFees": "Такса за кандидатстване: 9 €; електронен тест: 30 €",
-    "ue_appExams": "Електронни тестове се провеждат редовно – кандидатите избират удобна дата",
-    "ue_appInternational": "Чуждестранни студенти: представят диплома с признаване от МОН; такса €1,350/семестър",
-    "ue_masterFees": "Магистърски такси (2026/2027)",
-    "ue_masterFeesDesc": "Семестриалните такси за магистри варират според програмата и формата на обучение:",
-    "ue_masterRegular": "Редовен магистър: държавна поръчка и платен прием",
-    "ue_masterEnglish": "Англоезични магистри: Междукултурен бизнес, Международен бизнес, MBA, Компютърни науки",
-    "ue_masterDistance": "Дистанционен магистър: гъвкав формат за работещи специалисти",
-    "ue_openDoors": "Кариерно развитие и връзки с бизнеса",
-    "ue_openDoorsDesc": "ИУ-Варна разполага с Кариерен център и платформата UEBN (22 000+ регистрирани потребители):",
-    "ue_businessAccelerator": "UEVA Бизнес акселератор – подкрепя студентски стартъпи и предприемачески проекти",
-    "ue_careerCentre": "Кариерен център с обяви за работа, стажове и срещи с работодатели",
-    "ue_uebn": "UEBN платформа – свързва студентите с 22 000+ бизнеса за стажове и работа",
-    "ue_alumni": "Алумни мрежа със 160 000+ възпитаници",
-    "ue_partners": "Международни партньори и мрежи",
-    "ue_partnersDesc": "ИУ-Варна има 300+ международни споразумения и активно членство в глобални мрежи:",
-    "ue_erasmusPartners": "Партньори по Еразъм+ в 50+ държави – Германия, Франция, Италия, Испания, Финландия, Полша, Унгария, Румъния, Гърция, Турция и др.",
-    "ue_dukenet": "Член на Dukenet – престижна международна мрежа от 15+ европейски държави",
-    "ue_businet": "Член на Businet – глобална мрежа от 145 висши училища от 35 държави",
-    "ue_ceepus": "CEEPUS мрежа: централноевропейски академичен обмен",
-    "ue_doubleDegrees": "Двойни дипломи с университети във Финландия (Seinäjoki), Германия (Worms) и Русия (Plekhanov)",
-    "ue_magellan": "Четворна магистърска програма Magellan с Полша, Унгария и Испания",
-    "ue_internationalStudents": "Чуждестранни студенти в ИУ-Варна",
-    "ue_internationalDesc": "ИУ-Варна приема над 300 чуждестранни студенти от 60+ държави. Отделът за международно сътрудничество осигурява подкрепа:",
-    "ue_visaSupport": "Помощ за визи и разрешителни за пребиваване за студенти извън ЕС",
-    "ue_dormitories": "Студентски общежития на достъпни цени",
-    "ue_languageCourses": "Подготвителни курсове по български език",
-    "ue_recognition": "Признаване на дипломи чрез Министерството на образованието и науката",
-    "ue_internationalOffice": "Отдел Международно сътрудничество обработва приема на чуждестранни студенти",
   "programDetail": {
     "notFound": "Програмата не е намерена",
     "notFoundDesc": "Университетът или програмата не съвпадат със запазените данни.",
@@ -447,11 +483,11 @@
     "medical-college": "Медицински колеж - Варна"
   },
   "ue_faculties": {
-    "finance-accounting": "Финансово-счетоводен факултет",
-    "business": "Стопански факултет",
-    "informatics": "Факултет Информатика",
-    "management": "Факултет Управление",
-    "tourism-college": "Колеж по туризъм"
+    "finance-accounting": "",
+    "business": "",
+    "informatics": "",
+    "management": "",
+    "tourism-college": ""
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -696,68 +732,248 @@
     }
   },
   "mu_programInfo": {
-    "nursing": { "tuition": "БЕЗПЛАТНО", "facultyKey": "medical-college" },
-    "midwifery": { "tuition": "БЕЗПЛАТНО", "facultyKey": "medical-college" },
-    "kinesitherapy": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "speech-therapy": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "health-care-management": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "public-health": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "biomedical-engineering-and-technologies": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "optometrist": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "medical-cosmetics": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "rehabilitation-and-wellness": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "medical-laboratory-assistant": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "assistant-pharmacist": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "x-ray-technician": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "dental-technician": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "physiotherapy-assistant": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "public-health-inspector": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "medical-optics": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "medicine": { "tuition": "€400-600 (БГ) / €5,000 (АНГ)", "facultyKey": "medicine" },
-    "medicine-english": { "tuition": "€5,000", "facultyKey": "medicine" },
-    "dental-medicine": { "tuition": "€400-600 (БГ) / €5,000 (АНГ)", "facultyKey": "dental" },
-    "dental-medicine-english": { "tuition": "€5,000", "facultyKey": "dental" },
-    "pharmacy": { "tuition": "€400-600 (БГ) / €3,500 (АНГ)", "facultyKey": "pharmacy" },
-    "pharmacy-english": { "tuition": "€3,500", "facultyKey": "pharmacy" },
-    "military-medicine": { "tuition": "БЕЗПЛАТНО", "facultyKey": "medicine" },
-    "public-health-mph": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "health-care-management-master": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "health-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "clinical-pharmacy": { "tuition": "€600-1,000", "facultyKey": "pharmacy" },
-    "pharmaceutical-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "nursing-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "health-information-technology": { "tuition": "€600-1,000", "facultyKey": "public-health" }
+    "nursing": {
+      "tuition": "БЕЗПЛАТНО",
+      "facultyKey": "medical-college"
+    },
+    "midwifery": {
+      "tuition": "БЕЗПЛАТНО",
+      "facultyKey": "medical-college"
+    },
+    "kinesitherapy": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "speech-therapy": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "health-care-management": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "public-health": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "biomedical-engineering-and-technologies": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "optometrist": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "medical-cosmetics": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "rehabilitation-and-wellness": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "medical-laboratory-assistant": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "assistant-pharmacist": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "x-ray-technician": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "dental-technician": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "physiotherapy-assistant": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "public-health-inspector": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "medical-optics": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "medicine": {
+      "tuition": "€400-600 (БГ) / €5,000 (АНГ)",
+      "facultyKey": "medicine"
+    },
+    "medicine-english": {
+      "tuition": "€5,000",
+      "facultyKey": "medicine"
+    },
+    "dental-medicine": {
+      "tuition": "€400-600 (БГ) / €5,000 (АНГ)",
+      "facultyKey": "dental"
+    },
+    "dental-medicine-english": {
+      "tuition": "€5,000",
+      "facultyKey": "dental"
+    },
+    "pharmacy": {
+      "tuition": "€400-600 (БГ) / €3,500 (АНГ)",
+      "facultyKey": "pharmacy"
+    },
+    "pharmacy-english": {
+      "tuition": "€3,500",
+      "facultyKey": "pharmacy"
+    },
+    "military-medicine": {
+      "tuition": "БЕЗПЛАТНО",
+      "facultyKey": "medicine"
+    },
+    "public-health-mph": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "health-care-management-master": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "health-management": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "clinical-pharmacy": {
+      "tuition": "€600-1,000",
+      "facultyKey": "pharmacy"
+    },
+    "pharmaceutical-management": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "nursing-management": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "health-information-technology": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    }
   },
   "ue_programInfo": {
-    "hotel-and-restaurant-management": { "tuition": "€245 (ДП) / €605 (платено)", "facultyKey": "tourism-college" },
-    "tourism-and-entertainment-business-management": { "tuition": "€245 (ДП) / €605 (платено)", "facultyKey": "tourism-college" },
-    "business-and-management-in-english": { "tuition": "€280 (ДП) / €895 (платено)", "facultyKey": "business" },
-    "business-economics": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "economics-and-trade": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "construction-business-and-entrepreneurship": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "real-estate-and-investments": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "industrial-business-and-entrepreneurship": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "logistics": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "agricultural-businesses": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "commodities-science-and-customs-activity": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "business" },
-    "business-digital-technologies": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "informatics" },
-    "informatics-and-computer-sciences": { "tuition": "€300 (ДП) / €1,045 (платено)", "facultyKey": "informatics" },
-    "mobile-and-web-technologies": { "tuition": "€300 (ДП) / €1,045 (платено)", "facultyKey": "informatics" },
-    "data-science": { "tuition": "€300 (ДП) / €1,045 (платено)", "facultyKey": "informatics" },
-    "international-business-in-english": { "tuition": "€280 (ДП) / €895 (платено)", "facultyKey": "management" },
-    "maritime-business-and-international-trade-in-english": { "tuition": "€280 (ДП) / €895 (платено)", "facultyKey": "management" },
-    "international-tourism-in-russian": { "tuition": "€280 (ДП) / €630 (платено)", "facultyKey": "management" },
-    "marketing": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "management" },
-    "international-economic-relations": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "management" },
-    "management": { "tuition": "€245 (ДП) / €555 (платено)", "facultyKey": "management" },
-    "public-administration": { "tuition": "€245 (ДП) / €555 (платено)", "facultyKey": "management" },
-    "tourism": { "tuition": "€245 (ДП) / €605 (платено)", "facultyKey": "management" },
-    "judicial-administration": { "tuition": "€245 (ДП) / €555 (платено)", "facultyKey": "management" },
-    "digital-media-and-pr": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "management" },
-    "accounting-in-english": { "tuition": "€280 (ДП) / €895 (платено)", "facultyKey": "finance-accounting" },
-    "accounting-and-audit": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "finance-accounting" },
-    "accounting-and-finance": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "finance-accounting" },
-    "banking-and-insurance": { "tuition": "€245 (ДП) / €870 (платено)", "facultyKey": "finance-accounting" }
+    "hotel-and-restaurant-management": {
+      "tuition": "",
+      "facultyKey": "tourism-college"
+    },
+    "tourism-and-entertainment-business-management": {
+      "tuition": "",
+      "facultyKey": "tourism-college"
+    },
+    "business-and-management-in-english": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "business-economics": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "economics-and-trade": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "construction-business-and-entrepreneurship": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "real-estate-and-investments": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "industrial-business-and-entrepreneurship": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "logistics": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "agricultural-businesses": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "commodities-science-and-customs-activity": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "business-digital-technologies": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "informatics-and-computer-sciences": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "mobile-and-web-technologies": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "data-science": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "international-business-in-english": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "maritime-business-and-international-trade-in-english": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "international-tourism-in-russian": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "marketing": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "international-economic-relations": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "management": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "public-administration": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "tourism": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "judicial-administration": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "digital-media-and-pr": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "accounting-in-english": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    },
+    "accounting-and-audit": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    },
+    "accounting-and-finance": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    },
+    "banking-and-insurance": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    }
   },
   "universities": {
     "1": {
@@ -781,14 +997,14 @@
       "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
-      "name": "Икономически университет",
-      "description": "Най-старото бизнес училище в България със 115+ години традиция, модерно бизнес образование и силни международни партньорства.",
-      "longDescription": "Икономическият университет – Варна (ИУ–Варна) е най-старото бизнес училище в България, основано през 1911 г. Притежава институционална акредитация с оценка 9,49 от Националната агенция за оценяване и акредитация (НАОА) и е сертифициран по ISO 9001:2015. Той е единственият български университет в престижната международна мрежа Dukenet и член на глобалната мрежа Businet. ИУ – Варна е класиран в Топ 10 на българските университети според UniRank и е включен в Times Higher Education Impact Rankings.\n\nУниверситетът включва 4 факултета — Финансово-счетоводен, Стопански, Информатика и Управление — заедно с Колеж по туризъм и Научноизследователски институт с 6 центъра. Основната сграда е паметник на културата и символ на Варна. Кампусът разполага с 3 учебни корпуса с над 7 000 места в аудитории, 640+ компютърни работни места, модерна библиотека с 350 000+ тома (носител на наградата Библиотека на годината 2011), спортен комплекс, студентски общежития, бизнес акселератор (UEVA) и платформата UEBN с 22 000+ регистрирани потребители.\n\nНад 160 000 студенти са завършили от ИУ – Варна — включително много чуждестранни граждани от 60+ държави — в 28 бакалавърски, 29 магистърски и 16 докторски програми по Икономика, Администрация и управление, Туризъм и Информатика и компютърни науки. Университетът има 300+ международни партньори в 50+ държави чрез Еразъм+, CEEPUS, Dukenet и Businet.\n\nИУ – Варна предлага програми с двойни дипломи с университети във Финландия и Германия и съвместни мултилатерални магистърски програми (четворна диплома Magellan с Полша, Унгария и Испания). Бакалавърските такси варират от €245/семестър (държавна поръчка) до €1,350/семестър (чуждестранни студенти). Ректор: проф. д-р Евгени Станимиров.",
-      "location": "Варна, България",
-      "degree": "Бакалавър и Магистър",
-      "tuitionRange": "€245 - €1,350 / семестър (държавна поръчка и платен прием)",
-      "website": "https://www.ue-varna.bg",
-      "applyUrl": "https://ksp.ue-varna.bg/login"
+      "name": "",
+      "description": "",
+      "longDescription": "",
+      "location": "",
+      "degree": "",
+      "tuitionRange": "",
+      "website": "",
+      "applyUrl": ""
     },
     "4": {
       "name": "Военноморски университет",
@@ -870,27 +1086,28 @@
       ]
     },
     "3": {
-      "name": "Икономически университет",
-      "focus": "бизнес стратегия, финанси, счетоводство, икономика, маркетинг, мениджмънт, ИТ, туризъм и международен бизнес",
-      "style": "казус проучвания, бизнес симулации, дигитални платформи за обучение, приложни изследвания, предприемачески проекти чрез UEVA акселератора и силни връзки с бизнеса чрез UEBN мрежата",
+      "name": "",
+      "focus": "",
+      "style": "",
       "careers": [
-        "Икономист / Финансов анализатор",
-        "Счетоводител / Одитор",
-        "Маркетинг и PR специалист",
-        "Консултант по управление",
-        "ИТ и数据分析 специалист",
-        "Мениджър в туризма и хотелиерството",
-        "Специалист по международна търговия",
-        "Банков и застрахователен специалист",
-        "Предприемач / Собственик на бизнес"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ],
       "admissionNotes": [
-        "Подбор по оценки от диплома за средно образование, електронни тестове или ДЗИ",
-        "Англоезични програми по Бизнес, Международен бизнес, Счетоводство и Морски бизнес",
-        "Рускоезична програма по Международен туризъм",
-        "Ранни кандидатствания от февруари; основен прием юни–септември",
-        "Такса за кандидатстване: 9 €; електронен тест: 30 €",
-        "Онлайн кандидатстване на ksp.ue-varna.bg"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     },
     "4": {
@@ -1114,58 +1331,58 @@
     "pharmaceutical-management": "Фармацевтичен мениджмънт",
     "nursing-management": "Управление на сестринските грижи",
     "health-information-technology": "Здравни информационни технологии",
-    "___university_3": "Университет 3 — Икономически университет",
-    "hotel-and-restaurant-management": "Управление на хотели и ресторанти",
-    "tourism-and-entertainment-business-management": "Управление на туризма и развлекателния бизнес",
-    "business-and-management-in-english": "Бизнес и мениджмънт - на английски",
-    "business-economics": "Бизнес икономика",
-    "economics-and-trade": "Икономика и търговия",
-    "construction-business-and-entrepreneurship": "Строителен бизнес и предприемачество",
-    "real-estate-and-investments": "Недвижими имоти и инвестиции",
-    "industrial-business-and-entrepreneurship": "Индустриален бизнес и предприемачество",
-    "logistics": "Логистика",
-    "agricultural-businesses": "Земеделски бизнес",
-    "commodities-science-and-customs-activity": "Стокознание и митническа дейност",
-    "business-digital-technologies": "Бизнес дигитални технологии",
-    "informatics-and-computer-sciences": "Информатика и компютърни науки",
-    "mobile-and-web-technologies": "Мобилни и уеб технологии",
-    "data-science": "Наука за данните",
-    "international-business-in-english": "Международен бизнес - на английски",
-    "maritime-business-and-international-trade-in-english": "Морски бизнес и международна търговия - на английски",
-    "international-tourism-in-russian": "Международен туризъм - на руски",
-    "marketing": "Маркетинг",
-    "international-economic-relations": "Международни икономически отношения",
-    "management": "Мениджмънт",
-    "tourism": "Туризъм",
-    "judicial-administration": "Съдебна администрация",
-    "digital-media-and-pr": "Дигитални медии и PR",
-    "accounting-in-english": "Счетоводство - на английски",
-    "accounting-and-audit": "Счетоводство и одит",
-    "accounting-and-finance": "Счетоводство и финанси",
-    "banking-and-insurance": "Банкиране и застраховане",
-    "intercultural-business-in-english": "Междукултурен бизнес - на английски",
-    "international-business-and-management-in-english": "Международен бизнес и мениджмънт - на английски",
-    "master-of-business-administration-in-english": "Магистър по бизнес администрация - на английски",
-    "computer-science-in-english": "Компютърни науки - на английски",
-    "accounting-and-auditing-control": "Счетоводство и одит / контрол",
-    "bank-management": "Банков мениджмънт",
-    "finance-and-innovations": "Финанси и иновации",
-    "corporate-business-and-governance-management": "Корпоративен бизнес и управление",
-    "logistics-management": "Мениджмънт на логистиката",
-    "global-commercial-business": "Глобален търговски бизнес",
-    "civil-engineering-entrepreneurship-and-real-estate": "Предприемачество в строителството и недвижими имоти",
-    "eco-economics": "Екоикономика",
-    "agricultural-business": "Земеделски бизнес",
-    "quality-and-expert-examination-of-commodities": "Качество и експертна оценка на стоките",
-    "sales-management-and-merchandising": "Управление на продажбите и мърчандайзинг",
-    "advertising-and-media-communications": "Реклама и медийни комуникации",
-    "management-of-organizations": "Управление на организации",
-    "human-resources-management": "Управление на човешките ресурси",
-    "public-management-and-administrative-power": "Публичен мениджмънт и административна власт",
-    "international-tourist-business": "Международен туристически бизнес",
-    "business-consulting": "Бизнес консултиране",
-    "project-management": "Управление на проекти",
-    "marketing-and-brand-management": "Маркетинг и управление на бранд",
+    "___university_3": "",
+    "hotel-and-restaurant-management": "",
+    "tourism-and-entertainment-business-management": "",
+    "business-and-management-in-english": "",
+    "business-economics": "",
+    "economics-and-trade": "",
+    "construction-business-and-entrepreneurship": "",
+    "real-estate-and-investments": "",
+    "industrial-business-and-entrepreneurship": "",
+    "logistics": "",
+    "agricultural-businesses": "",
+    "commodities-science-and-customs-activity": "",
+    "business-digital-technologies": "",
+    "informatics-and-computer-sciences": "",
+    "mobile-and-web-technologies": "",
+    "data-science": "",
+    "international-business-in-english": "",
+    "maritime-business-and-international-trade-in-english": "",
+    "international-tourism-in-russian": "",
+    "marketing": "",
+    "international-economic-relations": "",
+    "management": "",
+    "tourism": "",
+    "judicial-administration": "",
+    "digital-media-and-pr": "",
+    "accounting-in-english": "",
+    "accounting-and-audit": "",
+    "accounting-and-finance": "",
+    "banking-and-insurance": "",
+    "intercultural-business-in-english": "",
+    "international-business-and-management-in-english": "",
+    "master-of-business-administration-in-english": "",
+    "computer-science-in-english": "",
+    "accounting-and-auditing-control": "",
+    "bank-management": "",
+    "finance-and-innovations": "",
+    "corporate-business-and-governance-management": "",
+    "logistics-management": "",
+    "global-commercial-business": "",
+    "civil-engineering-entrepreneurship-and-real-estate": "",
+    "eco-economics": "",
+    "agricultural-business": "",
+    "quality-and-expert-examination-of-commodities": "",
+    "sales-management-and-merchandising": "",
+    "advertising-and-media-communications": "",
+    "management-of-organizations": "",
+    "human-resources-management": "",
+    "public-management-and-administrative-power": "",
+    "international-tourist-business": "",
+    "business-consulting": "",
+    "project-management": "",
+    "marketing-and-brand-management": "",
     "___university_4": "Университет 4 — Военноморски / Морски университет",
     "cybersecurity": "Киберсигурност",
     "information-and-communication-technologies": "Информационни и комуникационни технологии",
@@ -1182,7 +1399,7 @@
     "international-business": "Международен бизнес",
     "business-administration": "Бизнес администрация",
     "international-relations": "Международни отношения",
-    "public-administration": "Публична администрация",
+    "public-administration": "",
     "european-studies": "Европейски изследвания",
     "___university_6": "Университет 6 — Университет по мениджмънт (VUM)",
     "software-engineering": "Софтуерно инженерство",
@@ -3458,81 +3675,94 @@
       ]
     },
     "3:bachelor:economics": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:finance": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:accounting": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:marketing": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "Осигурява цялостно обучение по управление на хотели и ресторанти, хотелиерство, ресторантьорство и туристически бизнес.",
-      "keyFocus": "хотелиерство, управление на хотели, ресторантьорство, кетъринг, управление на събития",
-      "duration": "Редовна (4 години)",
-      "partners": ["Колеж по туризъм", "Водещи хотели и ресторанти във Варна и България"],
-      "highlights": ["Практическо обучение в хотели и ресторанти", "Стажове в партньорски обекти", "Чуждоезиково обучение"],
-      "careers": ["Мениджър хотел", "Мениджър ресторант", "Организатор на събития", "Предприемач в хотелиерството"],
-      "admissionNotes": ["Изисква се диплома за средно образование", "Препоръчва се интерес към услугите"]
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "partners": [],
+      "highlights": [
+        ""
+      ],
+      "careers": [
+        ""
+      ],
+      "admissionNotes": [
+        ""
+      ]
     },
     "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "Цялостна програма по компютърни науки, обхващаща програмиране, алгоритми, бази данни, софтуерно инженерство и информационни системи.",
-      "keyFocus": "програмиране, алгоритми, бази данни, софтуерно инженерство, информационни системи",
-      "duration": "Редовна (4 години)",
-      "highlights": ["Модерни лаборатории по програмиране", "Софтуерни проекти", "Системи за управление на бази данни", "Уеб и мобилни технологии"],
-      "careers": ["Софтуерен разработчик", "Администратор на бази данни", "ИТ консултант", "Системен анализатор"],
-      "admissionNotes": ["Изисква се солидна подготовка по математика", "Препоръчва се опит в програмирането"]
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "partners": [],
+      "highlights": [
+        ""
+      ],
+      "careers": [
+        ""
+      ],
+      "admissionNotes": [
+        ""
+      ]
     },
     "4:bachelor:navigation": {
       "overview": "Edit this overview.",
@@ -3892,784 +4122,754 @@
         "Edit this admission note."
       ]
     },
-    "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "���������� ���� ������� �� Hotel and Restaurant Management.",
-      "keyFocus": "���������� ������ ����� �� Hotel and Restaurant Management.",
-      "duration": "������ (3-4 ������)",
-      "partners": [],
-      "highlights": [
-        "������������ ���� �����������."
-      ],
-      "careers": [
-        "������������ ���� �� ���������."
-      ],
-      "admissionNotes": [
-        "������������ ���� ��������� �� �����."
-      ]
-    },
     "3:bachelor:tourism-and-entertainment-business-management": {
-      "overview": "���������� ���� ������� �� Tourism and Entertainment Business Management.",
-      "keyFocus": "���������� ������ ����� �� Tourism and Entertainment Business Management.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:business-and-management-in-english": {
-      "overview": "���������� ���� ������� �� Business and Management - In English.",
-      "keyFocus": "���������� ������ ����� �� Business and Management - In English.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:business-economics": {
-      "overview": "���������� ���� ������� �� Business Economics.",
-      "keyFocus": "���������� ������ ����� �� Business Economics.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:economics-and-trade": {
-      "overview": "���������� ���� ������� �� Economics and Trade.",
-      "keyFocus": "���������� ������ ����� �� Economics and Trade.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:construction-business-and-entrepreneurship": {
-      "overview": "���������� ���� ������� �� Construction Business and Entrepreneurship.",
-      "keyFocus": "���������� ������ ����� �� Construction Business and Entrepreneurship.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:real-estate-and-investments": {
-      "overview": "���������� ���� ������� �� Real Estate and Investments.",
-      "keyFocus": "���������� ������ ����� �� Real Estate and Investments.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:industrial-business-and-entrepreneurship": {
-      "overview": "���������� ���� ������� �� Industrial Business and Entrepreneurship.",
-      "keyFocus": "���������� ������ ����� �� Industrial Business and Entrepreneurship.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:logistics": {
-      "overview": "���������� ���� ������� �� Logistics.",
-      "keyFocus": "���������� ������ ����� �� Logistics.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:agricultural-businesses": {
-      "overview": "���������� ���� ������� �� Agricultural Businesses.",
-      "keyFocus": "���������� ������ ����� �� Agricultural Businesses.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:commodities-science-and-customs-activity": {
-      "overview": "���������� ���� ������� �� Commodities Science and Customs Activity.",
-      "keyFocus": "���������� ������ ����� �� Commodities Science and Customs Activity.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:business-digital-technologies": {
-      "overview": "���������� ���� ������� �� Business Digital Technologies.",
-      "keyFocus": "���������� ������ ����� �� Business Digital Technologies.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
-      ]
-    },
-    "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "���������� ���� ������� �� Informatics and Computer Sciences.",
-      "keyFocus": "���������� ������ ����� �� Informatics and Computer Sciences.",
-      "duration": "������ (3-4 ������)",
-      "partners": [],
-      "highlights": [
-        "������������ ���� �����������."
-      ],
-      "careers": [
-        "������������ ���� �� ���������."
-      ],
-      "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:mobile-and-web-technologies": {
-      "overview": "���������� ���� ������� �� Mobile and Web Technologies.",
-      "keyFocus": "���������� ������ ����� �� Mobile and Web Technologies.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:data-science": {
-      "overview": "���������� ���� ������� �� Data Science.",
-      "keyFocus": "���������� ������ ����� �� Data Science.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:international-business-in-english": {
-      "overview": "���������� ���� ������� �� International Business - In English.",
-      "keyFocus": "���������� ������ ����� �� International Business - In English.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:maritime-business-and-international-trade-in-english": {
-      "overview": "���������� ���� ������� �� Maritime business and international trade - In English.",
-      "keyFocus": "���������� ������ ����� �� Maritime business and international trade - In English.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:international-tourism-in-russian": {
-      "overview": "���������� ���� ������� �� International Tourism - In Russian.",
-      "keyFocus": "���������� ������ ����� �� International Tourism - In Russian.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:international-economic-relations": {
-      "overview": "���������� ���� ������� �� International Economic Relations.",
-      "keyFocus": "���������� ������ ����� �� International Economic Relations.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:management": {
-      "overview": "���������� ���� ������� �� Management.",
-      "keyFocus": "���������� ������ ����� �� Management.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:public-administration": {
-      "overview": "���������� ���� ������� �� Public Administration.",
-      "keyFocus": "���������� ������ ����� �� Public Administration.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:tourism": {
-      "overview": "���������� ���� ������� �� Tourism.",
-      "keyFocus": "���������� ������ ����� �� Tourism.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:judicial-administration": {
-      "overview": "���������� ���� ������� �� Judicial Administration.",
-      "keyFocus": "���������� ������ ����� �� Judicial Administration.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:digital-media-and-pr": {
-      "overview": "���������� ���� ������� �� Digital Media and PR.",
-      "keyFocus": "���������� ������ ����� �� Digital Media and PR.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:accounting-in-english": {
-      "overview": "���������� ���� ������� �� Accounting - In English.",
-      "keyFocus": "���������� ������ ����� �� Accounting - In English.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:accounting-and-audit": {
-      "overview": "���������� ���� ������� �� Accounting and Audit.",
-      "keyFocus": "���������� ������ ����� �� Accounting and Audit.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:accounting-and-finance": {
-      "overview": "���������� ���� ������� �� Accounting and Finance.",
-      "keyFocus": "���������� ������ ����� �� Accounting and Finance.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:bachelor:banking-and-insurance": {
-      "overview": "���������� ���� ������� �� Banking and Insurance.",
-      "keyFocus": "���������� ������ ����� �� Banking and Insurance.",
-      "duration": "������ (3-4 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:intercultural-business-in-english": {
-      "overview": "���������� ���� ������� �� Intercultural Business - In English.",
-      "keyFocus": "���������� ������ ����� �� Intercultural Business - In English.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:international-business-and-management-in-english": {
-      "overview": "���������� ���� ������� �� International Business and Management - In English.",
-      "keyFocus": "���������� ������ ����� �� International Business and Management - In English.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:master-of-business-administration-in-english": {
-      "overview": "���������� ���� ������� �� Master of business administration - In English.",
-      "keyFocus": "���������� ������ ����� �� Master of business administration - In English.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:computer-science-in-english": {
-      "overview": "���������� ���� ������� �� Computer Science - In English.",
-      "keyFocus": "���������� ������ ����� �� Computer Science - In English.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:accounting-and-auditing-control": {
-      "overview": "���������� ���� ������� �� Accounting and Auditing/Control.",
-      "keyFocus": "���������� ������ ����� �� Accounting and Auditing/Control.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:bank-management": {
-      "overview": "���������� ���� ������� �� Bank Management.",
-      "keyFocus": "���������� ������ ����� �� Bank Management.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:finance-and-innovations": {
-      "overview": "���������� ���� ������� �� Finance and Innovations.",
-      "keyFocus": "���������� ������ ����� �� Finance and Innovations.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:corporate-business-and-governance-management": {
-      "overview": "���������� ���� ������� �� Corporate Business and Governance/Management.",
-      "keyFocus": "���������� ������ ����� �� Corporate Business and Governance/Management.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:logistics-management": {
-      "overview": "���������� ���� ������� �� Logistics Management.",
-      "keyFocus": "���������� ������ ����� �� Logistics Management.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:global-commercial-business": {
-      "overview": "���������� ���� ������� �� Global Commercial Business.",
-      "keyFocus": "���������� ������ ����� �� Global Commercial Business.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:civil-engineering-entrepreneurship-and-real-estate": {
-      "overview": "���������� ���� ������� �� Civil Engineering Entrepreneurship and Real Estate.",
-      "keyFocus": "���������� ������ ����� �� Civil Engineering Entrepreneurship and Real Estate.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:eco-economics": {
-      "overview": "���������� ���� ������� �� Eco-economics.",
-      "keyFocus": "���������� ������ ����� �� Eco-economics.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:agricultural-business": {
-      "overview": "���������� ���� ������� �� Agricultural Business.",
-      "keyFocus": "���������� ������ ����� �� Agricultural Business.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:quality-and-expert-examination-of-commodities": {
-      "overview": "���������� ���� ������� �� Quality and Expert Examination of Commodities.",
-      "keyFocus": "���������� ������ ����� �� Quality and Expert Examination of Commodities.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:sales-management-and-merchandising": {
-      "overview": "���������� ���� ������� �� Sales Management and Merchandising.",
-      "keyFocus": "���������� ������ ����� �� Sales Management and Merchandising.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:advertising-and-media-communications": {
-      "overview": "���������� ���� ������� �� Advertising and Media Communications.",
-      "keyFocus": "���������� ������ ����� �� Advertising and Media Communications.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:management-of-organizations": {
-      "overview": "���������� ���� ������� �� Management of Organizations.",
-      "keyFocus": "���������� ������ ����� �� Management of Organizations.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:human-resources-management": {
-      "overview": "���������� ���� ������� �� Human Resources Management.",
-      "keyFocus": "���������� ������ ����� �� Human Resources Management.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:public-management-and-administrative-power": {
-      "overview": "���������� ���� ������� �� Public Management and Administrative Power.",
-      "keyFocus": "���������� ������ ����� �� Public Management and Administrative Power.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:international-tourist-business": {
-      "overview": "���������� ���� ������� �� International Tourist Business.",
-      "keyFocus": "���������� ������ ����� �� International Tourist Business.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:business-consulting": {
-      "overview": "���������� ���� ������� �� Business Consulting.",
-      "keyFocus": "���������� ������ ����� �� Business Consulting.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:project-management": {
-      "overview": "���������� ���� ������� �� Project Management.",
-      "keyFocus": "���������� ������ ����� �� Project Management.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:marketing-and-brand-management": {
-      "overview": "���������� ���� ������� �� Marketing And Brand Management.",
-      "keyFocus": "���������� ������ ����� �� Marketing And Brand Management.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "3:master:mobile-and-web-technologies": {
-      "overview": "���������� ���� ������� �� Mobile and web technologies.",
-      "keyFocus": "���������� ������ ����� �� Mobile and web technologies.",
-      "duration": "������ (1-2 ������)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "������������ ���� �����������."
+        ""
       ],
       "careers": [
-        "������������ ���� �� ���������."
+        ""
       ],
       "admissionNotes": [
-        "������������ ���� ��������� �� �����."
+        ""
       ]
     },
     "4:bachelor:navigation-ship-maneuvering": {

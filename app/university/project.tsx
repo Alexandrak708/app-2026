@@ -20,34 +20,35 @@ function ProgramRow({
   faculty,
   index,
   onPress,
+  textOnly = false,
 }: {
   name: string;
   tuition?: string;
   faculty?: string;
   index: number;
-  onPress: () => void;
+  onPress?: () => void;
+  textOnly?: boolean;
 }) {
   const { colors } = useAppTheme();
 
-  return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        paddingVertical: 14,
-        paddingHorizontal: 16,
-        backgroundColor: colors.surface,
-        borderRadius: 14,
-        marginBottom: 10,
-        shadowColor: colors.cardShadow,
-        shadowOffset: { width: 0, height: 1 },
-        shadowOpacity: 0.05,
-        shadowRadius: 4,
-        elevation: 2,
-        gap: 14,
-      }}
-    >
+  const rowStyle = {
+    flexDirection: "row" as const,
+    alignItems: "center" as const,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    backgroundColor: colors.surface,
+    borderRadius: 14,
+    marginBottom: 10,
+    shadowColor: colors.cardShadow,
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+    gap: 14,
+  };
+
+  const content = (
+    <>
       <View
         style={{
           width: 32,
@@ -93,7 +94,17 @@ function ProgramRow({
           </Text>
         )}
       </View>
-      <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
+      {!textOnly && <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />}
+    </>
+  );
+
+  if (textOnly) {
+    return <View style={rowStyle}>{content}</View>;
+  }
+
+  return (
+    <TouchableOpacity onPress={onPress} style={rowStyle}>
+      {content}
     </TouchableOpacity>
   );
 }
@@ -227,7 +238,8 @@ export default function ProgramsPage() {
             tuition={program.tuition}
             faculty={program.faculty}
             index={index}
-            onPress={() => openProgram(program.slug)}
+            textOnly={activeUniversityId === "3"}
+            onPress={activeUniversityId === "3" ? undefined : () => openProgram(program.slug)}
           />
         ))}
 

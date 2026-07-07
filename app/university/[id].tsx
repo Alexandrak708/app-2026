@@ -579,10 +579,14 @@ export default function UniversityPage() {
             </>
           )}
 
-          <View style={{ flexDirection: "row", gap: 12, marginTop: 4, marginBottom: 32 }}>
-            <ActionButton icon="globe-outline" label={t("university.website")} primary={false} onPress={() => Linking.openURL(university.website)} />
-            <ActionButton icon="paper-plane-outline" label={t("university.applyNow")} primary={true} onPress={() => Linking.openURL(university.applyUrl)} />
-          </View>
+          {id !== "3" ? (
+            <View style={{ flexDirection: "row", gap: 12, marginTop: 4, marginBottom: 32 }}>
+              <ActionButton icon="globe-outline" label={t("university.website")} primary={false} onPress={() => Linking.openURL(university.website)} />
+              <ActionButton icon="paper-plane-outline" label={t("university.applyNow")} primary={true} onPress={() => Linking.openURL(university.applyUrl)} />
+            </View>
+          ) : (
+            <View style={{ marginBottom: 32 }} />
+          )}
 
         </View>
       </ScrollView>

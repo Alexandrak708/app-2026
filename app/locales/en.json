@@ -260,35 +260,71 @@
       "tuitionFreeLabel": "€0"
     },
     "3": {
-      "yearsTradition": "115+",
-      "bachelorPrograms": "28",
-      "masterPrograms": "29",
-      "internationalPartners": "300+",
-      "countries": "60+",
-      "studentsGraduated": "160K+",
-      "labs": "10+",
-      "tuitionFreeLabel": "€245"
+      "yearsTradition": "",
+      "bachelorPrograms": "",
+      "masterPrograms": "",
+      "internationalPartners": "",
+      "countries": "",
+      "studentsGraduated": "",
+      "labs": "",
+      "tuitionFreeLabel": ""
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
     "1": [
-      { "range": "€0", "label": "4 tuition-free programs" },
-      { "range": "€176-€220", "label": "Most regular programs" },
-      { "range": "€332-€358", "label": "Maritime engineering" },
-      { "range": "€409.50", "label": "Navigation" }
+      {
+        "range": "€0",
+        "label": "4 tuition-free programs"
+      },
+      {
+        "range": "€176-€220",
+        "label": "Most regular programs"
+      },
+      {
+        "range": "€332-€358",
+        "label": "Maritime engineering"
+      },
+      {
+        "range": "€409.50",
+        "label": "Navigation"
+      }
     ],
     "2": [
-      { "range": "€0", "label": "Nursing, Midwifery, Military Medicine" },
-      { "range": "€400-€600", "label": "BG-language programs (per semester)" },
-      { "range": "€3,500", "label": "Pharmacy (English, per semester)" },
-      { "range": "€5,000", "label": "Medicine/Dental Medicine (English, per semester)" }
+      {
+        "range": "€0",
+        "label": "Nursing, Midwifery, Military Medicine"
+      },
+      {
+        "range": "€400-€600",
+        "label": "BG-language programs (per semester)"
+      },
+      {
+        "range": "€3,500",
+        "label": "Pharmacy (English, per semester)"
+      },
+      {
+        "range": "€5,000",
+        "label": "Medicine/Dental Medicine (English, per semester)"
+      }
     ],
     "3": [
-      { "range": "€245", "label": "State-subsidized programs (per semester)" },
-      { "range": "€555-€1,045", "label": "Paid full-time programs (per semester)" },
-      { "range": "€450-€570", "label": "Distance learning programs (per semester)" },
-      { "range": "€1,350", "label": "International students (per semester)" }
+      {
+        "range": "",
+        "label": ""
+      },
+      {
+        "range": "",
+        "label": ""
+      },
+      {
+        "range": "",
+        "label": ""
+      },
+      {
+        "range": "",
+        "label": ""
+      }
     ]
   },
   "universityExtra": {
@@ -366,49 +402,49 @@
     "mu_visaSupport": "Visa and residence permit assistance for non-EU students",
     "mu_dormitories": "Student dormitories available for international students at affordable rates",
     "mu_languagePrep": "Preparatory language courses in Bulgarian and English (9 months, €5,000)",
-    "mu_recognition": "Diploma recognition service through the Ministry of Education and Science"
+    "mu_recognition": "Diploma recognition service through the Ministry of Education and Science",
+    "ue_scholarships": "",
+    "ue_scholarshipsDesc": "",
+    "ue_excellentScholarships": "",
+    "ue_erasmusGrants": "",
+    "ue_socialScholarships": "",
+    "ue_doctoralScholarships": "",
+    "ue_applicationInfo": "",
+    "ue_applicationDesc": "",
+    "ue_appEarly": "",
+    "ue_appDocuments": "",
+    "ue_appOnline": "",
+    "ue_appMainRound": "",
+    "ue_appFees": "",
+    "ue_appExams": "",
+    "ue_appInternational": "",
+    "ue_masterFees": "",
+    "ue_masterFeesDesc": "",
+    "ue_masterRegular": "",
+    "ue_masterEnglish": "",
+    "ue_masterDistance": "",
+    "ue_openDoors": "",
+    "ue_openDoorsDesc": "",
+    "ue_businessAccelerator": "",
+    "ue_careerCentre": "",
+    "ue_uebn": "",
+    "ue_alumni": "",
+    "ue_partners": "",
+    "ue_partnersDesc": "",
+    "ue_erasmusPartners": "",
+    "ue_dukenet": "",
+    "ue_businet": "",
+    "ue_ceepus": "",
+    "ue_doubleDegrees": "",
+    "ue_magellan": "",
+    "ue_internationalStudents": "",
+    "ue_internationalDesc": "",
+    "ue_visaSupport": "",
+    "ue_dormitories": "",
+    "ue_languageCourses": "",
+    "ue_recognition": "",
+    "ue_internationalOffice": ""
   },
-    "ue_scholarships": "Scholarships & Funding at UE-Varna",
-    "ue_scholarshipsDesc": "UE-Varna offers various scholarship opportunities for academic excellence and social support:",
-    "ue_excellentScholarships": "Excellence scholarships for students with GPA above 4.00 (Bulgarian and EU/EEA citizens)",
-    "ue_erasmusGrants": "Erasmus+ mobility grants for study or traineeship at 300+ partner universities in 50+ countries",
-    "ue_socialScholarships": "Social scholarships for students with financial need",
-    "ue_doctoralScholarships": "State-funded doctoral scholarships for PhD candidates",
-    "ue_applicationInfo": "Application Process (Bachelor 2026/2027)",
-    "ue_applicationDesc": "Admission to UE-Varna bachelor programmes is based on secondary school diploma grades, electronic tests, or school-leaving exam results. Applications are submitted online through the Candidate-Student system.",
-    "ue_appEarly": "Early admission stages run from February to June",
-    "ue_appDocuments": "Required: secondary school diploma (or certificate of completed 1st gymnasium stage), academic transcript, 4 photos",
-    "ue_appOnline": "Online application through the Candidate-Student system",
-    "ue_appMainRound": "Main application round: June – September for the academic year starting in October",
-    "ue_appFees": "Application fee: €9; electronic test fee: €30",
-    "ue_appExams": "Electronic entrance tests held regularly – candidates can choose their preferred date",
-    "ue_appInternational": "International students: submit secondary school diploma with recognition certificate from the Ministry of Education; tuition €1,350/semester",
-    "ue_masterFees": "Master's Tuition (2026/2027)",
-    "ue_masterFeesDesc": "Master's semester fees vary by programme and delivery mode:",
-    "ue_masterRegular": "Regular Master's: state-subsidized and paid options available",
-    "ue_masterEnglish": "English-taught Master's: Intercultural Business, International Business & Management, MBA, Computer Science – separate fee structure",
-    "ue_masterDistance": "Distance learning Master's: flexible format for working professionals",
-    "ue_openDoors": "Open Doors & Career Development",
-    "ue_openDoorsDesc": "UE-Varna runs a dedicated Career Centre and the UEBN (University Business Network) platform with 22,000+ registered users:",
-    "ue_businessAccelerator": "UEVA Business Accelerator – supports student startups and entrepreneurial ventures",
-    "ue_careerCentre": "Career Centre with job listings, internship opportunities, and employer meetups",
-    "ue_uebn": "UEBN platform – connects students with 22,000+ businesses for internships and jobs",
-    "ue_alumni": "Alumni network with 160,000+ graduates supporting career development",
-    "ue_partners": "International Partners & Networks",
-    "ue_partnersDesc": "UE-Varna has 300+ international cooperation agreements and active memberships in global networks:",
-    "ue_erasmusPartners": "Erasmus+ partners in 50+ countries including Germany, France, Italy, Spain, Finland, Poland, Hungary, Romania, Greece, Turkey and many more",
-    "ue_dukenet": "Member of Dukenet – prestigious international network uniting HEIs from 15+ European countries",
-    "ue_businet": "Member of Businet – global network of 145 HEIs from 35 countries focused on international business programmes",
-    "ue_ceepus": "CEEPUS network: Central European academic exchange with universities in Austria, Hungary, Poland, Romania, Slovakia, and others",
-    "ue_doubleDegrees": "Dual-degree programmes with Seinäjoki UAS (Finland), Worms UAS (Germany), and Plekhanov REU (Russia)",
-    "ue_magellan": "Magellan quadruple Master's degree with universities in Poland, Hungary and Spain",
-    "ue_internationalStudents": "International Students at UE-Varna",
-    "ue_internationalDesc": "UE-Varna welcomes over 300 international students from 60+ countries. The International Relations Department provides dedicated support:",
-    "ue_visaSupport": "Visa and residence permit assistance for non-EU students",
-    "ue_dormitories": "Student dormitories available at affordable rates",
-    "ue_languageCourses": "Bulgarian language preparatory courses for international students",
-    "ue_recognition": "Diploma recognition service through the Ministry of Education and Science",
-    "ue_internationalOffice": "International Cooperation Department handles foreign student admissions and support",
   "programDetail": {
     "notFound": "Program not found",
     "notFoundDesc": "The university or program link did not match any saved data.",
@@ -446,150 +482,497 @@
     "medical-college": "Medical College - Varna"
   },
   "ue_faculties": {
-    "finance-accounting": "Finance and Accounting Faculty",
-    "business": "Business Faculty",
-    "informatics": "Informatics Faculty",
-    "management": "Management Faculty",
-    "tourism-college": "College of Tourism"
+    "finance-accounting": "",
+    "business": "",
+    "informatics": "",
+    "management": "",
+    "tourism-college": ""
   },
   "tu_programInfo": {
-    "automation-information-and-control-computer-systems-aiccs": { "tuition": "€191.00", "facultyKey": "fita" },
-    "automotive-engineering-ae": { "tuition": "€191.00", "facultyKey": "mtf" },
-    "agronomy-a": { "tuition": "€220.50", "facultyKey": "dk" },
-    "renewable-energy-sources-res": { "tuition": "€191.00", "facultyKey": "ef" },
-    "electric-power-engineering-epe": { "tuition": "FREE (tuition-free)", "facultyKey": "ef" },
-    "electronics-e": { "tuition": "€191.00", "facultyKey": "ef" },
-    "ship-electrical-equipment-see": { "tuition": "€358.00", "facultyKey": "kf" },
-    "electric-power-supply-and-electrical-equipment-epsee": { "tuition": "FREE (tuition-free)", "facultyKey": "ef" },
-    "electrical-engineering-and-electrical-technologies-eeet": { "tuition": "€191.00", "facultyKey": "ef" },
-    "civil-protection-in-disasters-and-emergencies-cpde": { "tuition": "€220.50", "facultyKey": "ef" },
-    "artificial-intelligence-ai": { "tuition": "€220.50", "facultyKey": "fita" },
-    "industrial-design-id": { "tuition": "€220.50", "facultyKey": "mtf" },
-    "industrial-management-im": { "tuition": "€220.50", "facultyKey": "mtf" },
-    "environmental-ecological-engineering-ee": { "tuition": "€191.00", "facultyKey": "ef" },
-    "intelligent-transport-systems-its": { "tuition": "€191.00", "facultyKey": "fita" },
-    "information-and-communication-technologies-ict": { "tuition": "€220.50", "facultyKey": "fita" },
-    "cybersecurity-cs": { "tuition": "€220.50", "facultyKey": "fita" },
-    "computerized-technologies-in-mechanical-engineering-ctme": { "tuition": "€191.00", "facultyKey": "mtf" },
-    "computer-systems-and-technologies-cst": { "tuition": "€220.50", "facultyKey": "fita" },
-    "marine-engineering-ship-machines-and-mechanisms": { "tuition": "€332.50", "facultyKey": "kf" },
-    "navigation-ship-maneuvering": { "tuition": "€409.50", "facultyKey": "kf" },
-    "naval-architecture-and-marine-technology-namt": { "tuition": "FREE (tuition-free)", "facultyKey": "kf" },
-    "water-transport-logistics-wtl": { "tuition": "€191.00", "facultyKey": "kf" },
-    "mechanical-engineering-and-technologies-met": { "tuition": "€191.00", "facultyKey": "mtf" },
-    "robotics-and-mechatronics-rm": { "tuition": "€191.00", "facultyKey": "fita" },
-    "software-and-internet-technologies-sit": { "tuition": "€220.50", "facultyKey": "fita" },
-    "social-management-sm": { "tuition": "€176.50", "facultyKey": "mtf" },
-    "construction-management-cm": { "tuition": "€220.50", "facultyKey": "mtf" },
-    "technological-entrepreneurship-and-innovation-tei": { "tuition": "€220.50", "facultyKey": "mtf" },
-    "heat-power-engineering-and-investment-design-hpeid": { "tuition": "FREE (tuition-free)", "facultyKey": "ef" },
-    "transport-equipment-and-technologies-tet": { "tuition": "€191.00", "facultyKey": "mtf" },
-    "data-analysis-and-network-technologies-dant": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "health-and-safety-at-work-hsw": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "renewable-energy-sources-res": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "operation-of-fleet-and-ports-ofp": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "kf" },
-    "electric-power-systems-eps": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "electronics-e": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "ship-electrical-equipment-see": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "kf" },
-    "electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "electric-power-supply-and-electrical-equipment-in-industry-epseei": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "electrical-engineering-ee": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "industrial-design-id": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "industrial-management-im": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "environmental-engineering-ee": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "smart-cities": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "cybersecurity-cs": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "computerized-technologies-in-mechanical-engineering-ctme": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "computer-networks-and-communications-cnc": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "marine-engineering-ship-machines-and-mechanisms": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "kf" },
-    "navigation": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "kf" },
-    "naval-architecture-and-marine-technology-namt": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "kf" },
-    "corporate-management-cm": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "water-transport-logistics-wtl": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "kf" },
-    "mechanical-engineering-and-technologies-met": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "design-of-renewable-energy-facilities-dref": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "seed-production-and-plant-protection-sppp": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "dk" },
-    "building-automation-systems-bas": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "artificial-intelligence-systems-ais": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "software-engineering-se": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "social-management-sm": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "social-work-with-individuals-with-deviant-behavior-swidb": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "social-work-with-children-swc": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "social-entrepreneurship-se": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "modern-systems-in-agriculture-msa": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "dk" },
-    "modern-technologies-in-agriculture-mta": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "dk" },
-    "telecommunications-and-mobile-technologies-tmt": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "fita" },
-    "materials-processing-equipment-and-technologies-mpet": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "technical-and-insurance-expertise-in-transport-tiet": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "heat-engineering-and-renewable-energy-sources-heres": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "ef" },
-    "transport-equipment-and-technologies-tet": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "chemical-engineering-ce": { "tuition": "325-375 BGN/sem (SDR)", "facultyKey": "mtf" },
-    "siemens-plc-control-technologies-siemens": { "tuition": "325-1,994 BGN/sem", "facultyKey": "fita" }
+    "automation-information-and-control-computer-systems-aiccs": {
+      "tuition": "€191.00",
+      "facultyKey": "fita"
+    },
+    "automotive-engineering-ae": {
+      "tuition": "€191.00",
+      "facultyKey": "mtf"
+    },
+    "agronomy-a": {
+      "tuition": "€220.50",
+      "facultyKey": "dk"
+    },
+    "renewable-energy-sources-res": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "electric-power-engineering-epe": {
+      "tuition": "FREE (tuition-free)",
+      "facultyKey": "ef"
+    },
+    "electronics-e": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "ship-electrical-equipment-see": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "kf"
+    },
+    "electric-power-supply-and-electrical-equipment-epsee": {
+      "tuition": "FREE (tuition-free)",
+      "facultyKey": "ef"
+    },
+    "electrical-engineering-and-electrical-technologies-eeet": {
+      "tuition": "€191.00",
+      "facultyKey": "ef"
+    },
+    "civil-protection-in-disasters-and-emergencies-cpde": {
+      "tuition": "€220.50",
+      "facultyKey": "ef"
+    },
+    "artificial-intelligence-ai": {
+      "tuition": "€220.50",
+      "facultyKey": "fita"
+    },
+    "industrial-design-id": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "industrial-management-im": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "environmental-ecological-engineering-ee": {
+      "tuition": "€191.00",
+      "facultyKey": "ef"
+    },
+    "intelligent-transport-systems-its": {
+      "tuition": "€191.00",
+      "facultyKey": "fita"
+    },
+    "information-and-communication-technologies-ict": {
+      "tuition": "€220.50",
+      "facultyKey": "fita"
+    },
+    "cybersecurity-cs": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "computerized-technologies-in-mechanical-engineering-ctme": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "computer-systems-and-technologies-cst": {
+      "tuition": "€220.50",
+      "facultyKey": "fita"
+    },
+    "marine-engineering-ship-machines-and-mechanisms": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "kf"
+    },
+    "navigation-ship-maneuvering": {
+      "tuition": "€409.50",
+      "facultyKey": "kf"
+    },
+    "naval-architecture-and-marine-technology-namt": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "kf"
+    },
+    "water-transport-logistics-wtl": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "kf"
+    },
+    "mechanical-engineering-and-technologies-met": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "robotics-and-mechatronics-rm": {
+      "tuition": "€191.00",
+      "facultyKey": "fita"
+    },
+    "software-and-internet-technologies-sit": {
+      "tuition": "€220.50",
+      "facultyKey": "fita"
+    },
+    "social-management-sm": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "construction-management-cm": {
+      "tuition": "€220.50",
+      "facultyKey": "mtf"
+    },
+    "technological-entrepreneurship-and-innovation-tei": {
+      "tuition": "€220.50",
+      "facultyKey": "mtf"
+    },
+    "heat-power-engineering-and-investment-design-hpeid": {
+      "tuition": "FREE (tuition-free)",
+      "facultyKey": "ef"
+    },
+    "transport-equipment-and-technologies-tet": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "data-analysis-and-network-technologies-dant": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "health-and-safety-at-work-hsw": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "internal-combustion-engines-and-automotive-engineering-iceae-post-professional-bachelor-track": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "operation-of-fleet-and-ports-ofp": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "kf"
+    },
+    "electric-power-systems-eps": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "electric-power-supply-and-electrical-equipment-in-water-transport-epseewt": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "electric-power-supply-and-electrical-equipment-in-industry-epseei": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "electrical-engineering-ee": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "environmental-engineering-ee": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "smart-cities": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "computer-networks-and-communications-cnc": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "navigation": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "kf"
+    },
+    "corporate-management-cm": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "design-of-renewable-energy-facilities-dref": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "seed-production-and-plant-protection-sppp": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "dk"
+    },
+    "building-automation-systems-bas": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "artificial-intelligence-systems-ais": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "software-engineering-se": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "social-work-with-individuals-with-deviant-behavior-swidb": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "social-work-with-children-swc": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "social-entrepreneurship-se": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "modern-systems-in-agriculture-msa": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "dk"
+    },
+    "modern-technologies-in-agriculture-mta": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "dk"
+    },
+    "telecommunications-and-mobile-technologies-tmt": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "fita"
+    },
+    "materials-processing-equipment-and-technologies-mpet": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "technical-and-insurance-expertise-in-transport-tiet": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "heat-engineering-and-renewable-energy-sources-heres": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "ef"
+    },
+    "chemical-engineering-ce": {
+      "tuition": "325-375 BGN/sem (SDR)",
+      "facultyKey": "mtf"
+    },
+    "siemens-plc-control-technologies-siemens": {
+      "tuition": "325-1,994 BGN/sem",
+      "facultyKey": "fita"
+    }
   },
   "mu_programInfo": {
-    "nursing": { "tuition": "FREE (tuition-free)", "facultyKey": "medical-college" },
-    "midwifery": { "tuition": "FREE (tuition-free)", "facultyKey": "medical-college" },
-    "kinesitherapy": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "speech-therapy": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "health-care-management": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "public-health": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "biomedical-engineering-and-technologies": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "optometrist": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "medical-cosmetics": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "rehabilitation-and-wellness": { "tuition": "€400-600", "facultyKey": "public-health" },
-    "medical-laboratory-assistant": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "assistant-pharmacist": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "x-ray-technician": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "dental-technician": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "physiotherapy-assistant": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "public-health-inspector": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "medical-optics": { "tuition": "€400-600", "facultyKey": "medical-college" },
-    "medicine": { "tuition": "€400-600 (BG) / €5,000 (EN)", "facultyKey": "medicine" },
-    "medicine-english": { "tuition": "€5,000", "facultyKey": "medicine" },
-    "dental-medicine": { "tuition": "€400-600 (BG) / €5,000 (EN)", "facultyKey": "dental" },
-    "dental-medicine-english": { "tuition": "€5,000", "facultyKey": "dental" },
-    "pharmacy": { "tuition": "€400-600 (BG) / €3,500 (EN)", "facultyKey": "pharmacy" },
-    "pharmacy-english": { "tuition": "€3,500", "facultyKey": "pharmacy" },
-    "military-medicine": { "tuition": "FREE (tuition-free)", "facultyKey": "medicine" },
-    "public-health-mph": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "health-care-management-master": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "health-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "clinical-pharmacy": { "tuition": "€600-1,000", "facultyKey": "pharmacy" },
-    "pharmaceutical-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "nursing-management": { "tuition": "€600-1,000", "facultyKey": "public-health" },
-    "health-information-technology": { "tuition": "€600-1,000", "facultyKey": "public-health" }
+    "nursing": {
+      "tuition": "FREE (tuition-free)",
+      "facultyKey": "medical-college"
+    },
+    "midwifery": {
+      "tuition": "FREE (tuition-free)",
+      "facultyKey": "medical-college"
+    },
+    "kinesitherapy": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "speech-therapy": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "health-care-management": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "public-health": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "biomedical-engineering-and-technologies": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "optometrist": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "medical-cosmetics": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "rehabilitation-and-wellness": {
+      "tuition": "€400-600",
+      "facultyKey": "public-health"
+    },
+    "medical-laboratory-assistant": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "assistant-pharmacist": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "x-ray-technician": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "dental-technician": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "physiotherapy-assistant": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "public-health-inspector": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "medical-optics": {
+      "tuition": "€400-600",
+      "facultyKey": "medical-college"
+    },
+    "medicine": {
+      "tuition": "€400-600 (BG) / €5,000 (EN)",
+      "facultyKey": "medicine"
+    },
+    "medicine-english": {
+      "tuition": "€5,000",
+      "facultyKey": "medicine"
+    },
+    "dental-medicine": {
+      "tuition": "€400-600 (BG) / €5,000 (EN)",
+      "facultyKey": "dental"
+    },
+    "dental-medicine-english": {
+      "tuition": "€5,000",
+      "facultyKey": "dental"
+    },
+    "pharmacy": {
+      "tuition": "€400-600 (BG) / €3,500 (EN)",
+      "facultyKey": "pharmacy"
+    },
+    "pharmacy-english": {
+      "tuition": "€3,500",
+      "facultyKey": "pharmacy"
+    },
+    "military-medicine": {
+      "tuition": "FREE (tuition-free)",
+      "facultyKey": "medicine"
+    },
+    "public-health-mph": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "health-care-management-master": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "health-management": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "clinical-pharmacy": {
+      "tuition": "€600-1,000",
+      "facultyKey": "pharmacy"
+    },
+    "pharmaceutical-management": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "nursing-management": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    },
+    "health-information-technology": {
+      "tuition": "€600-1,000",
+      "facultyKey": "public-health"
+    }
   },
   "ue_programInfo": {
-    "hotel-and-restaurant-management": { "tuition": "€245 (state) / €605 (paid)", "facultyKey": "tourism-college" },
-    "tourism-and-entertainment-business-management": { "tuition": "€245 (state) / €605 (paid)", "facultyKey": "tourism-college" },
-    "business-and-management-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "business" },
-    "business-economics": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "economics-and-trade": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "construction-business-and-entrepreneurship": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "real-estate-and-investments": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "industrial-business-and-entrepreneurship": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "logistics": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "agricultural-businesses": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "commodities-science-and-customs-activity": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "business" },
-    "business-digital-technologies": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "informatics" },
-    "informatics-and-computer-sciences": { "tuition": "€300 (state) / €1,045 (paid)", "facultyKey": "informatics" },
-    "mobile-and-web-technologies": { "tuition": "€300 (state) / €1,045 (paid)", "facultyKey": "informatics" },
-    "data-science": { "tuition": "€300 (state) / €1,045 (paid)", "facultyKey": "informatics" },
-    "international-business-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "management" },
-    "maritime-business-and-international-trade-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "management" },
-    "international-tourism-in-russian": { "tuition": "€280 (state) / €630 (paid)", "facultyKey": "management" },
-    "marketing": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "management" },
-    "international-economic-relations": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "management" },
-    "management": { "tuition": "€245 (state) / €555 (paid)", "facultyKey": "management" },
-    "public-administration": { "tuition": "€245 (state) / €555 (paid)", "facultyKey": "management" },
-    "tourism": { "tuition": "€245 (state) / €605 (paid)", "facultyKey": "management" },
-    "judicial-administration": { "tuition": "€245 (state) / €555 (paid)", "facultyKey": "management" },
-    "digital-media-and-pr": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "management" },
-    "accounting-in-english": { "tuition": "€280 (state) / €895 (paid)", "facultyKey": "finance-accounting" },
-    "accounting-and-audit": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "finance-accounting" },
-    "accounting-and-finance": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "finance-accounting" },
-    "banking-and-insurance": { "tuition": "€245 (state) / €870 (paid)", "facultyKey": "finance-accounting" }
+    "hotel-and-restaurant-management": {
+      "tuition": "",
+      "facultyKey": "tourism-college"
+    },
+    "tourism-and-entertainment-business-management": {
+      "tuition": "",
+      "facultyKey": "tourism-college"
+    },
+    "business-and-management-in-english": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "business-economics": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "economics-and-trade": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "construction-business-and-entrepreneurship": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "real-estate-and-investments": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "industrial-business-and-entrepreneurship": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "logistics": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "agricultural-businesses": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "commodities-science-and-customs-activity": {
+      "tuition": "",
+      "facultyKey": "business"
+    },
+    "business-digital-technologies": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "informatics-and-computer-sciences": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "mobile-and-web-technologies": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "data-science": {
+      "tuition": "",
+      "facultyKey": "informatics"
+    },
+    "international-business-in-english": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "maritime-business-and-international-trade-in-english": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "international-tourism-in-russian": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "marketing": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "international-economic-relations": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "management": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "public-administration": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "tourism": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "judicial-administration": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "digital-media-and-pr": {
+      "tuition": "",
+      "facultyKey": "management"
+    },
+    "accounting-in-english": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    },
+    "accounting-and-audit": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    },
+    "accounting-and-finance": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    },
+    "banking-and-insurance": {
+      "tuition": "",
+      "facultyKey": "finance-accounting"
+    }
   },
   "universities": {
     "1": {
@@ -613,14 +996,14 @@
       "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
-      "name": "Economics University",
-      "description": "Bulgaria's top-ranked economics university with 115+ years of tradition, modern business education and strong international partnerships.",
-      "longDescription": "The University of Economics – Varna (UE–Varna) is the oldest business university in Bulgaria, founded in 1911. It holds institutional accreditation with a rating of 9.49 out of 10 from the National Evaluation and Accreditation Agency (NEAA) and is ISO 9001:2015 certified. It is the only Bulgarian university in the Dukenet international network and a member of the prestigious Businet global network of higher education institutions. UE–Varna is ranked in the Top 10 of Bulgarian universities by UniRank and has been included in the Times Higher Education Impact Rankings.\n\nThe university comprises 4 faculties — Finance and Accounting, Business, Informatics, and Management — along with the College of Tourism and a Research Institute with 6 research centres. The main building is a cultural heritage landmark and a Varna symbol. The campus features 3 academic buildings with over 7,000 seats in lecture halls, 640+ computer workstations, a modern library with 350,000+ books (winner of Library of the Year 2011), a sports complex, student dormitories, a business accelerator (UEVA), and the University Business Network (UEBN) platform with 22,000+ registered users.\n\nOver 160,000 students have graduated from UE–Varna — including many internationals from 60+ countries — across 28 bachelor's, 29 master's and 16 doctoral programmes in Economics, Administration and Management, Tourism, and Informatics and Computer Sciences. The university has 300+ international partner institutions in 50+ countries through Erasmus+, CEEPUS, Dukenet and Businet networks.\n\nThe university offers dual-degree programmes with universities in Finland, Germany, and joint multi-lateral master's programmes (Magellan quadruple degree with Poland, Hungary and Spain). Bachelor fees range from €245/semester (state-subsidized) to €1,350/semester (international students). Rector: Prof. Dr. Evgeni Stanimirov.",
-      "location": "Varna, Bulgaria",
-      "degree": "Bachelor and Master",
-      "tuitionRange": "€245 - €1,350 / semester (state-subsidized and paid options)",
-      "website": "https://www.ue-varna.bg",
-      "applyUrl": "https://ksp.ue-varna.bg/login"
+      "name": "",
+      "description": "",
+      "longDescription": "",
+      "location": "",
+      "degree": "",
+      "tuitionRange": "",
+      "website": "",
+      "applyUrl": ""
     },
     "4": {
       "name": "Naval University",
@@ -702,27 +1085,28 @@
       ]
     },
     "3": {
-      "name": "Economics University",
-      "focus": "business strategy, finance, accounting, economics, marketing, management, IT, tourism, and international business",
-      "style": "case studies, business simulations, digital learning platforms, applied research, entrepreneurial projects through UEVA accelerator, and strong industry connections via the UEBN business network",
+      "name": "",
+      "focus": "",
+      "style": "",
       "careers": [
-        "Economist / Financial Analyst",
-        "Accountant / Auditor",
-        "Marketing and PR Specialist",
-        "Management Consultant",
-        "IT and Data Analyst",
-        "Tourism and Hospitality Manager",
-        "International Trade Specialist",
-        "Banking and Insurance Professional",
-        "Entrepreneur / Business Owner"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ],
       "admissionNotes": [
-        "Selection based on secondary school diploma grades, electronic tests, or school-leaving exam results",
-        "English-taught programmes in Business, International Business, Accounting, and Maritime Business available",
-        "Russian-taught programme in International Tourism available",
-        "Early admission stages run from February; main round June–September",
-        "Application fee: €9; electronic test fee: €30",
-        "Online application at ksp.ue-varna.bg"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     },
     "4": {
@@ -914,7 +1298,6 @@
     "technological-entrepreneurship-and-innovation-tei": "Technological Entrepreneurship and Innovation (TEI)",
     "heat-power-engineering-and-investment-design-hpeid": "Heat Power Engineering and Investment Design (HPEID)",
     "transport-equipment-and-technologies-tet": "Transport Equipment and Technologies (TET)",
-
     "___university_2": "University 2 — Medical University",
     "medicine": "Medicine (Master)",
     "medicine-english": "Medicine in English",
@@ -947,60 +1330,58 @@
     "pharmaceutical-management": "Pharmaceutical Management",
     "nursing-management": "Nursing Management",
     "health-information-technology": "Health Information Technology",
-
-    "___university_3": "University 3 — Economics University",
-    "hotel-and-restaurant-management": "Hotel and Restaurant Management",
-    "tourism-and-entertainment-business-management": "Tourism and Entertainment Business Management",
-    "business-and-management-in-english": "Business and Management - In English",
-    "business-economics": "Business Economics",
-    "economics-and-trade": "Economics and Trade",
-    "construction-business-and-entrepreneurship": "Construction Business and Entrepreneurship",
-    "real-estate-and-investments": "Real Estate and Investments",
-    "industrial-business-and-entrepreneurship": "Industrial Business and Entrepreneurship",
-    "logistics": "Logistics",
-    "agricultural-businesses": "Agricultural Businesses",
-    "commodities-science-and-customs-activity": "Commodities Science and Customs Activity",
-    "business-digital-technologies": "Business Digital Technologies",
-    "informatics-and-computer-sciences": "Informatics and Computer Sciences",
-    "mobile-and-web-technologies": "Mobile and Web Technologies",
-    "data-science": "Data Science",
-    "international-business-in-english": "International Business - In English",
-    "maritime-business-and-international-trade-in-english": "Maritime business and international trade - In English",
-    "international-tourism-in-russian": "International Tourism - In Russian",
-    "marketing": "Marketing",
-    "international-economic-relations": "International Economic Relations",
-    "management": "Management",
-    "tourism": "Tourism",
-    "judicial-administration": "Judicial Administration",
-    "digital-media-and-pr": "Digital Media and PR",
-    "accounting-in-english": "Accounting - In English",
-    "accounting-and-audit": "Accounting and Audit",
-    "accounting-and-finance": "Accounting and Finance",
-    "banking-and-insurance": "Banking and Insurance",
-    "intercultural-business-in-english": "Intercultural Business - In English",
-    "international-business-and-management-in-english": "International Business and Management - In English",
-    "master-of-business-administration-in-english": "Master of business administration - In English",
-    "computer-science-in-english": "Computer Science - In English",
-    "accounting-and-auditing-control": "Accounting and Auditing/Control",
-    "bank-management": "Bank Management",
-    "finance-and-innovations": "Finance and Innovations",
-    "corporate-business-and-governance-management": "Corporate Business and Governance/Management",
-    "logistics-management": "Logistics Management",
-    "global-commercial-business": "Global Commercial Business",
-    "civil-engineering-entrepreneurship-and-real-estate": "Civil Engineering Entrepreneurship and Real Estate",
-    "eco-economics": "Eco-economics",
-    "agricultural-business": "Agricultural Business",
-    "quality-and-expert-examination-of-commodities": "Quality and Expert Examination of Commodities",
-    "sales-management-and-merchandising": "Sales Management and Merchandising",
-    "advertising-and-media-communications": "Advertising and Media Communications",
-    "management-of-organizations": "Management of Organizations",
-    "human-resources-management": "Human Resources Management",
-    "public-management-and-administrative-power": "Public Management and Administrative Power",
-    "international-tourist-business": "International Tourist Business",
-    "business-consulting": "Business Consulting",
-    "project-management": "Project Management",
-    "marketing-and-brand-management": "Marketing And Brand Management",
-
+    "___university_3": "",
+    "hotel-and-restaurant-management": "",
+    "tourism-and-entertainment-business-management": "",
+    "business-and-management-in-english": "",
+    "business-economics": "",
+    "economics-and-trade": "",
+    "construction-business-and-entrepreneurship": "",
+    "real-estate-and-investments": "",
+    "industrial-business-and-entrepreneurship": "",
+    "logistics": "",
+    "agricultural-businesses": "",
+    "commodities-science-and-customs-activity": "",
+    "business-digital-technologies": "",
+    "informatics-and-computer-sciences": "",
+    "mobile-and-web-technologies": "",
+    "data-science": "",
+    "international-business-in-english": "",
+    "maritime-business-and-international-trade-in-english": "",
+    "international-tourism-in-russian": "",
+    "marketing": "",
+    "international-economic-relations": "",
+    "management": "",
+    "tourism": "",
+    "judicial-administration": "",
+    "digital-media-and-pr": "",
+    "accounting-in-english": "",
+    "accounting-and-audit": "",
+    "accounting-and-finance": "",
+    "banking-and-insurance": "",
+    "intercultural-business-in-english": "",
+    "international-business-and-management-in-english": "",
+    "master-of-business-administration-in-english": "",
+    "computer-science-in-english": "",
+    "accounting-and-auditing-control": "",
+    "bank-management": "",
+    "finance-and-innovations": "",
+    "corporate-business-and-governance-management": "",
+    "logistics-management": "",
+    "global-commercial-business": "",
+    "civil-engineering-entrepreneurship-and-real-estate": "",
+    "eco-economics": "",
+    "agricultural-business": "",
+    "quality-and-expert-examination-of-commodities": "",
+    "sales-management-and-merchandising": "",
+    "advertising-and-media-communications": "",
+    "management-of-organizations": "",
+    "human-resources-management": "",
+    "public-management-and-administrative-power": "",
+    "international-tourist-business": "",
+    "business-consulting": "",
+    "project-management": "",
+    "marketing-and-brand-management": "",
     "___university_4": "University 4 — Naval / Maritime University",
     "cybersecurity": "Cybersecurity",
     "information-and-communication-technologies": "Information and Communication Technologies",
@@ -1010,18 +1391,15 @@
     "integrated-maritime-policy": "Integrated Maritime Policy",
     "port-and-ship-operations": "Port and Ship Operations",
     "port-management-and-logistics": "Port Management and Logistics",
-    "navigation": "Navigation",
     "artificial-intelligence": "Artificial Intelligence",
     "digital-business-transformation": "Digital Business Transformation",
     "space-engineering-and-technologies": "Space Engineering and Technologies",
-
     "___university_5": "University 5 — Free University",
     "international-business": "International Business",
     "business-administration": "Business Administration",
     "international-relations": "International Relations",
-    "public-administration": "Public Administration",
+    "public-administration": "",
     "european-studies": "European Studies",
-
     "___university_6": "University 6 — University of Management (VUM)",
     "software-engineering": "Software Engineering",
     "digital-marketing": "Digital Marketing",
@@ -1699,21 +2077,34 @@
       ]
     },
     "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "Provides comprehensive training in hotel and restaurant operations, hospitality management, food and beverage service, and tourism business management.",
-      "keyFocus": "hospitality management, hotel operations, restaurant management, food service, event management",
-      "duration": "Full-time (4 years)",
-      "partners": ["College of Tourism", "Leading hotels and restaurant chains in Varna and Bulgaria"],
-      "highlights": ["Practical training in hotel and restaurant environments", "Internships at partner hospitality establishments", "Foreign language training in English and other languages"],
-      "careers": ["Hotel Manager", "Restaurant Manager", "Event Coordinator", "Hospitality Entrepreneur"],
-      "admissionNotes": ["Secondary school diploma required", "Interest in hospitality and service industry recommended"]
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "partners": [],
+      "highlights": [
+        ""
+      ],
+      "careers": [
+        ""
+      ],
+      "admissionNotes": [
+        ""
+      ]
     },
     "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "Comprehensive computer science programme covering programming, algorithms, databases, software engineering, and information systems.",
-      "keyFocus": "programming, algorithms, databases, software engineering, information systems",
-      "duration": "Full-time (4 years)",
-      "highlights": ["Modern programming labs", "Software development projects", "Database management systems", "Web and mobile development"],
-      "careers": ["Software Developer", "Database Administrator", "IT Consultant", "Systems Analyst"],
-      "admissionNotes": ["Strong mathematics background required", "Programming experience recommended"]
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "partners": [],
+      "highlights": [
+        ""
+      ],
+      "careers": [
+        ""
+      ],
+      "admissionNotes": [
+        ""
+      ]
     },
     "4:bachelor:navigation-ship-maneuvering": {
       "overview": "Navigation (Ship Maneuvering) at TU–Varna combines theoretical navigation with mandatory simulator training and sea practice complying with STCW conventions.",
@@ -3029,18 +3420,18 @@
       ]
     },
     "3:bachelor:economics": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "2:master:dental-medicine-english": {
@@ -3109,48 +3500,48 @@
       ]
     },
     "3:bachelor:finance": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:accounting": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:marketing": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
+      "studyMode": "",
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "4:bachelor:navigation": {
@@ -3511,784 +3902,754 @@
         "Edit this admission note."
       ]
     },
-    "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "Edit this overview for Hotel and Restaurant Management.",
-      "keyFocus": "Edit this key focus for Hotel and Restaurant Management.",
-      "duration": "Full-time (3-4 years)",
-      "partners": [],
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
     "3:bachelor:tourism-and-entertainment-business-management": {
-      "overview": "Edit this overview for Tourism and Entertainment Business Management.",
-      "keyFocus": "Edit this key focus for Tourism and Entertainment Business Management.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:business-and-management-in-english": {
-      "overview": "Edit this overview for Business and Management - In English.",
-      "keyFocus": "Edit this key focus for Business and Management - In English.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:business-economics": {
-      "overview": "Edit this overview for Business Economics.",
-      "keyFocus": "Edit this key focus for Business Economics.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:economics-and-trade": {
-      "overview": "Edit this overview for Economics and Trade.",
-      "keyFocus": "Edit this key focus for Economics and Trade.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:construction-business-and-entrepreneurship": {
-      "overview": "Edit this overview for Construction Business and Entrepreneurship.",
-      "keyFocus": "Edit this key focus for Construction Business and Entrepreneurship.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:real-estate-and-investments": {
-      "overview": "Edit this overview for Real Estate and Investments.",
-      "keyFocus": "Edit this key focus for Real Estate and Investments.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:industrial-business-and-entrepreneurship": {
-      "overview": "Edit this overview for Industrial Business and Entrepreneurship.",
-      "keyFocus": "Edit this key focus for Industrial Business and Entrepreneurship.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:logistics": {
-      "overview": "Edit this overview for Logistics.",
-      "keyFocus": "Edit this key focus for Logistics.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:agricultural-businesses": {
-      "overview": "Edit this overview for Agricultural Businesses.",
-      "keyFocus": "Edit this key focus for Agricultural Businesses.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:commodities-science-and-customs-activity": {
-      "overview": "Edit this overview for Commodities Science and Customs Activity.",
-      "keyFocus": "Edit this key focus for Commodities Science and Customs Activity.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:business-digital-technologies": {
-      "overview": "Edit this overview for Business Digital Technologies.",
-      "keyFocus": "Edit this key focus for Business Digital Technologies.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "Edit this overview for Informatics and Computer Sciences.",
-      "keyFocus": "Edit this key focus for Informatics and Computer Sciences.",
-      "duration": "Full-time (3-4 years)",
-      "partners": [],
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:mobile-and-web-technologies": {
-      "overview": "Edit this overview for Mobile and Web Technologies.",
-      "keyFocus": "Edit this key focus for Mobile and Web Technologies.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:data-science": {
-      "overview": "Edit this overview for Data Science.",
-      "keyFocus": "Edit this key focus for Data Science.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:international-business-in-english": {
-      "overview": "Edit this overview for International Business - In English.",
-      "keyFocus": "Edit this key focus for International Business - In English.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:maritime-business-and-international-trade-in-english": {
-      "overview": "Edit this overview for Maritime business and international trade - In English.",
-      "keyFocus": "Edit this key focus for Maritime business and international trade - In English.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:international-tourism-in-russian": {
-      "overview": "Edit this overview for International Tourism - In Russian.",
-      "keyFocus": "Edit this key focus for International Tourism - In Russian.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:international-economic-relations": {
-      "overview": "Edit this overview for International Economic Relations.",
-      "keyFocus": "Edit this key focus for International Economic Relations.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:management": {
-      "overview": "Edit this overview for Management.",
-      "keyFocus": "Edit this key focus for Management.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:public-administration": {
-      "overview": "Edit this overview for Public Administration.",
-      "keyFocus": "Edit this key focus for Public Administration.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:tourism": {
-      "overview": "Edit this overview for Tourism.",
-      "keyFocus": "Edit this key focus for Tourism.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:judicial-administration": {
-      "overview": "Edit this overview for Judicial Administration.",
-      "keyFocus": "Edit this key focus for Judicial Administration.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:digital-media-and-pr": {
-      "overview": "Edit this overview for Digital Media and PR.",
-      "keyFocus": "Edit this key focus for Digital Media and PR.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:accounting-in-english": {
-      "overview": "Edit this overview for Accounting - In English.",
-      "keyFocus": "Edit this key focus for Accounting - In English.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:accounting-and-audit": {
-      "overview": "Edit this overview for Accounting and Audit.",
-      "keyFocus": "Edit this key focus for Accounting and Audit.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:accounting-and-finance": {
-      "overview": "Edit this overview for Accounting and Finance.",
-      "keyFocus": "Edit this key focus for Accounting and Finance.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:bachelor:banking-and-insurance": {
-      "overview": "Edit this overview for Banking and Insurance.",
-      "keyFocus": "Edit this key focus for Banking and Insurance.",
-      "duration": "Full-time (3-4 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:intercultural-business-in-english": {
-      "overview": "Edit this overview for Intercultural Business - In English.",
-      "keyFocus": "Edit this key focus for Intercultural Business - In English.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:international-business-and-management-in-english": {
-      "overview": "Edit this overview for International Business and Management - In English.",
-      "keyFocus": "Edit this key focus for International Business and Management - In English.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:master-of-business-administration-in-english": {
-      "overview": "Edit this overview for Master of business administration - In English.",
-      "keyFocus": "Edit this key focus for Master of business administration - In English.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:computer-science-in-english": {
-      "overview": "Edit this overview for Computer Science - In English.",
-      "keyFocus": "Edit this key focus for Computer Science - In English.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:accounting-and-auditing-control": {
-      "overview": "Edit this overview for Accounting and Auditing/Control.",
-      "keyFocus": "Edit this key focus for Accounting and Auditing/Control.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:bank-management": {
-      "overview": "Edit this overview for Bank Management.",
-      "keyFocus": "Edit this key focus for Bank Management.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:finance-and-innovations": {
-      "overview": "Edit this overview for Finance and Innovations.",
-      "keyFocus": "Edit this key focus for Finance and Innovations.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:corporate-business-and-governance-management": {
-      "overview": "Edit this overview for Corporate Business and Governance/Management.",
-      "keyFocus": "Edit this key focus for Corporate Business and Governance/Management.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:logistics-management": {
-      "overview": "Edit this overview for Logistics Management.",
-      "keyFocus": "Edit this key focus for Logistics Management.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:global-commercial-business": {
-      "overview": "Edit this overview for Global Commercial Business.",
-      "keyFocus": "Edit this key focus for Global Commercial Business.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:civil-engineering-entrepreneurship-and-real-estate": {
-      "overview": "Edit this overview for Civil Engineering Entrepreneurship and Real Estate.",
-      "keyFocus": "Edit this key focus for Civil Engineering Entrepreneurship and Real Estate.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:eco-economics": {
-      "overview": "Edit this overview for Eco-economics.",
-      "keyFocus": "Edit this key focus for Eco-economics.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:agricultural-business": {
-      "overview": "Edit this overview for Agricultural Business.",
-      "keyFocus": "Edit this key focus for Agricultural Business.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:quality-and-expert-examination-of-commodities": {
-      "overview": "Edit this overview for Quality and Expert Examination of Commodities.",
-      "keyFocus": "Edit this key focus for Quality and Expert Examination of Commodities.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:sales-management-and-merchandising": {
-      "overview": "Edit this overview for Sales Management and Merchandising.",
-      "keyFocus": "Edit this key focus for Sales Management and Merchandising.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:advertising-and-media-communications": {
-      "overview": "Edit this overview for Advertising and Media Communications.",
-      "keyFocus": "Edit this key focus for Advertising and Media Communications.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:management-of-organizations": {
-      "overview": "Edit this overview for Management of Organizations.",
-      "keyFocus": "Edit this key focus for Management of Organizations.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:human-resources-management": {
-      "overview": "Edit this overview for Human Resources Management.",
-      "keyFocus": "Edit this key focus for Human Resources Management.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:public-management-and-administrative-power": {
-      "overview": "Edit this overview for Public Management and Administrative Power.",
-      "keyFocus": "Edit this key focus for Public Management and Administrative Power.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:international-tourist-business": {
-      "overview": "Edit this overview for International Tourist Business.",
-      "keyFocus": "Edit this key focus for International Tourist Business.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:business-consulting": {
-      "overview": "Edit this overview for Business Consulting.",
-      "keyFocus": "Edit this key focus for Business Consulting.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:project-management": {
-      "overview": "Edit this overview for Project Management.",
-      "keyFocus": "Edit this key focus for Project Management.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:marketing-and-brand-management": {
-      "overview": "Edit this overview for Marketing And Brand Management.",
-      "keyFocus": "Edit this key focus for Marketing And Brand Management.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "3:master:mobile-and-web-technologies": {
-      "overview": "Edit this overview for Mobile and web technologies.",
-      "keyFocus": "Edit this key focus for Mobile and web technologies.",
-      "duration": "Full-time (1-2 years)",
+      "overview": "",
+      "keyFocus": "",
+      "duration": "",
       "partners": [],
       "highlights": [
-        "Edit this highlight."
+        ""
       ],
       "careers": [
-        "Edit this career path."
+        ""
       ],
       "admissionNotes": [
-        "Edit this admission note."
+        ""
       ]
     },
     "5:bachelor:international-business": {
