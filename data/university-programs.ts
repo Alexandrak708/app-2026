@@ -1,4 +1,4 @@
-import i18n from "@/app/i18n";
+import i18n from "@/lib/i18n";
 import type {
   ProgramDetail,
   ProgramLevel,

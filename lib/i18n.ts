@@ -2,8 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import en from "./locales/en.json";
-import bg from "./locales/bg.json";
+import en from "@/locales/en.json";
+import bg from "@/locales/bg.json";
 
 const LANGUAGE_KEY = "app_language";
 

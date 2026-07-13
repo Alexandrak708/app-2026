@@ -1,6 +1,6 @@
 import "../global.css";
 import { useEffect, useRef, useState } from "react";
-import { initI18n } from "./i18n";
+import { initI18n } from "@/lib/i18n";
 import { Stack, useRouter, useSegments } from "expo-router";
 import * as Linking from "expo-linking";
 import { supabase } from "../lib/supabase";

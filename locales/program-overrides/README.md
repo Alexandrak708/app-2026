@@ -11,7 +11,7 @@ Workflow:
 node scripts/split-and-merge-program-overrides.js merge
 ```
 
-This will merge all per-university files back into `app/locales/en.json` (a backup `en.json.bak` is created).
+This will merge all per-university files back into `locales/en.json` (a backup `en.json.bak` is created).
 
 If you need to regenerate the per-university files from `en.json`, run:
 

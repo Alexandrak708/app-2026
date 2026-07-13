@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 
-import i18n, { changeLanguage } from "./i18n";
+import i18n, { changeLanguage } from "@/lib/i18n";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 type LanguageCode = "en" | "bg";
