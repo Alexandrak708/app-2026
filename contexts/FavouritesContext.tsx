@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { loadFavouriteUniversityIds, saveFavouriteUniversityIds } from "@/lib/favourites";
-import type { UniversityId } from "@/app/university/university-data";
+import type { UniversityId } from "@/types/university";
 
 type FavouritesContextType = {
   favouriteIds: UniversityId[];

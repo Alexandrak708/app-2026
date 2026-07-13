@@ -1,29 +1,8 @@
 import type { TFunction } from "i18next";
 
-export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6";
+import type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
 
-export type UniversityMeta = {
-  id: UniversityId;
-  rating: number;
-  color: string;
-  image: any;
-  category: "Engineering" | "Medical" | "Economics" | "Business";
-  scholarship: boolean;
-  degreeLevels: Array<"Bachelor" | "Master">;
-  countryKey: "Bulgaria";
-};
-
-export type UniversityDisplay = UniversityMeta & {
-  name: string;
-  description: string;
-  longDescription: string;
-  location: string;
-  degreeLabel: string;
-  tuitionRange: string;
-  countryLabel: string;
-  website: string;
-  applyUrl: string;
-};
+export type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
 
 const UNIVERSITY_META: UniversityMeta[] = [
   {

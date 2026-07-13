@@ -1,6 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import type { UniversityId } from "@/app/university/university-data";
+import type { UniversityId } from "@/types/university";
 
 const FAVOURITES_STORAGE_KEY = "app:favourites:universities";
 
