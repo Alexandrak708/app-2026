@@ -1,8 +1,51 @@
+import * as Linking from "expo-linking";
+
 import { supabase } from "./supabase";
+
+type EmailPasswordCredentials = {
+  email: string;
+  password: string;
+};
 
 type SupabaseLikeError = {
   message?: string;
 };
+
+/** Sign in with email + password. Returns Supabase's raw `{ data, error }`. */
+export function signIn(credentials: EmailPasswordCredentials) {
+  return supabase.auth.signInWithPassword(credentials);
+}
+
+/** Register a new account with email + password. */
+export function signUp(credentials: EmailPasswordCredentials) {
+  return supabase.auth.signUp(credentials);
+}
+
+/** Send a password-reset email that deep-links back into the app. */
+export function requestPasswordReset(email: string) {
+  return supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: Linking.createURL("/"),
+  });
+}
+
+/** Set a new password for the currently authenticated (recovery) user. */
+export function updatePassword(password: string) {
+  return supabase.auth.updateUser({ password });
+}
+
+/** Resolve the currently authenticated user, or null when signed out. */
+export async function getCurrentUser() {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  return user;
+}
+
+/** Sign out on this device only (keeps other sessions active). */
+export function signOutLocal() {
+  return supabase.auth.signOut({ scope: "local" });
+}
 
 type AuthErrorMessages = {
   invalidCredentials?: string;

@@ -5,8 +5,7 @@ import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "@/lib/i18n";
-import { supabase } from "../lib/supabase";
-import { getAuthErrorMessage, validatePassword } from "../lib/auth";
+import { getAuthErrorMessage, signUp, validatePassword } from "@/lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -64,10 +63,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signUp({
-        email: normalizedEmail,
-        password,
-      });
+      const { error } = await signUp({ email: normalizedEmail, password });
 
       if (error) {
         setAuthError(

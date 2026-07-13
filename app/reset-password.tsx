@@ -4,8 +4,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { supabase } from "../lib/supabase";
-import { getAuthErrorMessage, validatePassword } from "../lib/auth";
+import { getAuthErrorMessage, updatePassword, validatePassword } from "@/lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -48,7 +47,7 @@ export default function ResetPassword() {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.updateUser({ password });
+      const { data, error } = await updatePassword(password);
 
       if (error) {
         setAuthError(

@@ -15,15 +15,17 @@ import {
 } from "react-native";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
-import { supabase } from "../../lib/supabase";
-import { deleteAccount } from "../../lib/account";
+import type { User } from "@supabase/supabase-js";
+import { deleteAccount } from "@/lib/account";
 import Constants from "expo-constants";
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
-import { ensureProfileRecord } from "../../lib/auth";
+import { ensureProfileRecord, getCurrentUser, signOutLocal } from "@/lib/auth";
+import { updateProfileAvatarUrl, updateProfileFullName, uploadAvatar } from "@/lib/profile";
+import type { Profile } from "@/types/profile";
 
 // ── Reusable row ──────────────────────────────────────────────────────────────
 type SettingsRowProps = {
@@ -72,8 +74,8 @@ export default function Settings() {
     surfaceMuted: isDark ? "#222733" : "#f1f5f9",
   };
   const scrollRef = useRef<ScrollView>(null);
-  const [user, setUser] = useState<any>(null);
-  const [authUser, setAuthUser] = useState<any>(null);
+  const [user, setUser] = useState<Profile | null>(null);
+  const [authUser, setAuthUser] = useState<User | null>(null);
   const [isEditingName, setIsEditingName] = useState(false);
   const [editedName, setEditedName] = useState("");
   const [loadingName, setLoadingName] = useState(false);
@@ -134,9 +136,7 @@ export default function Settings() {
 
   const fetchUserProfile = async () => {
     try {
-      const {
-        data: { user: au },
-      } = await supabase.auth.getUser();
+      const au = await getCurrentUser();
 
       if (au) {
         setAuthUser(au);
@@ -184,30 +184,17 @@ export default function Settings() {
         asset.mimeType?.split("/").pop()?.toLowerCase() ??
         asset.uri.split(".").pop()?.toLowerCase() ??
         "jpeg";
-      const filePath = `${authUser.id}/avatar.${fileExt}`;
       const contentType = asset.mimeType ?? `image/${fileExt === "jpg" ? "jpeg" : fileExt}`;
       const byteArray = await assetToBytes(asset);
 
-      const { error: uploadError } = await supabase.storage
-        .from("avatars")
-        .upload(filePath, byteArray, { upsert: true, contentType });
+      const publicUrl = await uploadAvatar(authUser.id, byteArray, contentType, fileExt);
+      await updateProfileAvatarUrl(authUser.id, publicUrl);
 
-      if (uploadError) throw uploadError;
-
-      const { data: urlData } = supabase.storage.from("avatars").getPublicUrl(filePath);
-      const publicUrl = `${urlData.publicUrl}?t=${Date.now()}`;
-
-      const { error: updateError } = await supabase
-        .from("profiles")
-        .update({ avatar_url: publicUrl })
-        .eq("id", authUser.id);
-
-      if (updateError) throw updateError;
-
-      setUser((prev: any) => ({ ...prev, avatar_url: publicUrl }));
-    } catch (err: any) {
+      setUser((prev) => (prev ? { ...prev, avatar_url: publicUrl } : prev));
+    } catch (err) {
       console.error("Avatar upload error:", err);
-      Alert.alert(t("settings.errorTitle"), err.message || t("settings.failedToUploadPhoto"));
+      const message = err instanceof Error ? err.message : t("settings.failedToUploadPhoto");
+      Alert.alert(t("settings.errorTitle"), message);
     } finally {
       setLoadingAvatar(false);
     }
@@ -224,14 +211,9 @@ export default function Settings() {
     }
     setLoadingName(true);
     try {
-      const { error } = await supabase
-        .from("profiles")
-        .update({ full_name: editedName.trim() })
-        .eq("id", authUser?.id);
+      await updateProfileFullName(authUser.id, editedName.trim());
 
-      if (error) throw error;
-
-      setUser((prev: any) => ({ ...prev, full_name: editedName.trim() }));
+      setUser((prev) => (prev ? { ...prev, full_name: editedName.trim() } : prev));
       setIsEditingName(false);
     } catch (error) {
       Alert.alert(t("settings.errorTitle"), t("settings.failedToUpdateName"));
@@ -257,7 +239,7 @@ export default function Settings() {
 
   const handleLogout = async () => {
     try {
-      await supabase.auth.signOut({ scope: "local" });
+      await signOutLocal();
     } catch (error) {
       console.error("Logout error:", error);
     } finally {

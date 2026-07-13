@@ -3,7 +3,7 @@ import { View, Text, ImageBackground, TouchableOpacity, Pressable, useWindowDime
 import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/FavouritesContext";
-import type { UniversityDisplay, UniversityId } from "@/types/university";
+import type { UniversityDisplay } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 const CARD_GAP = 16;

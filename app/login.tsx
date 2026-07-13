@@ -3,11 +3,9 @@ import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityI
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
-import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "@/lib/i18n";
-import { supabase } from "../lib/supabase";
-import { getAuthErrorMessage, validatePassword } from "../lib/auth";
+import { getAuthErrorMessage, requestPasswordReset, signIn, validatePassword } from "@/lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -68,10 +66,7 @@ export default function SignIn() {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email: normalizedEmail,
-        password,
-      });
+      const { data, error } = await signIn({ email: normalizedEmail, password });
 
       if (error) {
         setAuthError(
@@ -114,9 +109,7 @@ export default function SignIn() {
     setLoading(true);
 
     try {
-      const { error } = await supabase.auth.resetPasswordForEmail(normalizedEmail, {
-        redirectTo: Linking.createURL("/"),
-      });
+      const { error } = await requestPasswordReset(normalizedEmail);
 
       if (error) {
         setAuthError(
