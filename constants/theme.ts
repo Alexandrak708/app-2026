@@ -27,6 +27,33 @@ export const Colors = {
   },
 };
 
+/** App brand accent, used for highlights, chevrons and the tab bar. */
+export const Brand = {
+  primary: '#810B38',
+  primaryDark: '#6A2E36',
+};
+
+/**
+ * The extended runtime palette layered on top of {@link Colors}. This is the
+ * single source of truth for surface/border/text-secondary/overlay tokens;
+ * `useAppTheme` returns the result of this builder.
+ */
+export function getAppPalette(isDark: boolean) {
+  const base = Colors[isDark ? 'dark' : 'light'];
+
+  return {
+    ...base,
+    surface: isDark ? '#171a21' : '#ffffff',
+    mutedSurface: isDark ? '#222733' : '#f1f5f9',
+    border: isDark ? '#2a303c' : '#e6e9ee',
+    softBorder: isDark ? '#394150' : '#f1f5f9',
+    textSecondary: isDark ? '#cbd5e1' : '#64748b',
+    textMuted: '#94a3b8',
+    heroOverlay: isDark ? 'rgba(0,0,0,0.58)' : 'rgba(0,0,0,0.45)',
+    cardShadow: '#000',
+  };
+}
+
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */

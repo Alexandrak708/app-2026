@@ -20,6 +20,7 @@ import Svg, { Path } from "react-native-svg";
 import * as Haptics from "expo-haptics";
 import { useTranslation } from "react-i18next";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { Brand } from "@/constants/theme";
 
 const TAB_BAR_HEIGHT = 65;
 const DOME_WIDTH = 80;
@@ -196,7 +197,7 @@ export function AnimatedTabBar({
   return (
     <View style={styles.container}>
       {/* Background bar */}
-      <View style={[styles.barBackground, { backgroundColor: isDark ? "#6A2E36" : "#810B38" }]} />
+      <View style={[styles.barBackground, { backgroundColor: isDark ? Brand.primaryDark : Brand.primary }]} />
 
       {/* Animated dome bump */}
       <Animated.View style={[styles.domeContainer, animatedDomeStyle]}>
@@ -206,7 +207,7 @@ export function AnimatedTabBar({
           style={styles.domeSvg}
           viewBox={`${-DOME_WIDTH / 2} ${-DOME_WIDTH / 2} ${DOME_WIDTH} ${DOME_WIDTH / 2 + 5}`}
         >
-          <Path d={domePath} fill={isDark ? "#6A2E36" : "#810B38"} />
+          <Path d={domePath} fill={isDark ? Brand.primaryDark : Brand.primary} />
         </Svg>
       </Animated.View>
 
@@ -258,7 +259,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: TAB_BAR_HEIGHT,
-    backgroundColor: "#810B38",
+    backgroundColor: Brand.primary,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,

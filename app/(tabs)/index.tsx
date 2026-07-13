@@ -16,6 +16,7 @@ import { useIsFocused } from "@react-navigation/native";
 import UniversityCard from "@/components/university-card";
 import CompactUniversityCard from "@/components/compact-university-card";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { Brand } from "@/constants/theme";
 
 const CARD_GAP = 16;
 const CARD_HORIZONTAL_PADDING = 48;
@@ -199,7 +200,7 @@ export default function Index() {
           <View
             style={{
               flexDirection: "row", alignItems: "center",
-              backgroundColor: isDark ? "#6A2E36" : "#810B38",
+              backgroundColor: isDark ? Brand.primaryDark : Brand.primary,
               borderRadius: 16,
               borderBottomLeftRadius: showFilters ? 0 : 16,
               borderBottomRightRadius: showFilters ? 0 : 16,
