@@ -93,7 +93,7 @@ export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined,
   return messages.fallback;
 }
 
-export interface PasswordValidationResult {
+interface PasswordValidationResult {
   valid: boolean;
   warningKey?: string;
 }
@@ -148,7 +148,7 @@ function parseAuthLink(url: string): ParsedAuthLink {
   return { params, type: params.type ?? null };
 }
 
-export type AuthLinkResult = {
+type AuthLinkResult = {
   type: string | null;
   recovery: boolean;
 };

@@ -19,7 +19,7 @@ export function FavouritesProvider({ children }: { children: React.ReactNode }) 
       try {
         const ids = await loadFavouriteUniversityIds();
         if (mounted) setFavouriteIds(ids as UniversityId[]);
-      } catch (e) {
+      } catch {
         // ignore
       }
     })();
@@ -35,7 +35,7 @@ export function FavouritesProvider({ children }: { children: React.ReactNode }) 
         saveFavouriteUniversityIds(next as any).catch(() => {});
         return next;
       });
-    } catch (e) {
+    } catch {
       // ignore
     }
   }

@@ -147,7 +147,7 @@ export function AnimatedTabBar({
   navigation,
 }: BottomTabBarProps) {
   const { t } = useTranslation();
-  const { colors, isDark } = useAppTheme();
+  const { isDark } = useAppTheme();
   const visibleRoutes = state.routes;
   const { width: screenWidth } = useWindowDimensions();
 
@@ -214,7 +214,6 @@ export function AnimatedTabBar({
       {/* Tab items */}
       <View style={styles.tabsContainer}>
         {visibleRoutes.map((route, index) => {
-          const { options } = descriptors[route.key];
           const actualIndex = state.routes.findIndex(
             (r) => r.key === route.key
           );

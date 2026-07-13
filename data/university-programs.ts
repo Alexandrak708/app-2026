@@ -258,7 +258,7 @@ function normalizeInput(value: string | string[] | undefined) {
   return value;
 }
 
-export function slugify(value: string) {
+function slugify(value: string) {
   return value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")

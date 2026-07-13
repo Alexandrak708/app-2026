@@ -12,7 +12,6 @@ import Animated, {
   interpolate, Extrapolation, SharedValue, withTiming, Easing,
 } from "react-native-reanimated";
 import { useRouter } from "expo-router";
-import { useIsFocused } from "@react-navigation/native";
 import UniversityCard from "@/components/university-card";
 import CompactUniversityCard from "@/components/compact-university-card";
 import { useAppTheme } from "@/hooks/use-theme-color";
@@ -21,7 +20,6 @@ import { Brand } from "@/constants/theme";
 const CARD_GAP = 16;
 const CARD_HORIZONTAL_PADDING = 48;
 const MAX_CARD_WIDTH = 560;
-const CARD_HEIGHT = 220;
 const FILTER_PANEL_HEIGHT = 340;
 
 function getCardWidth(screenWidth: number) {
@@ -105,7 +103,6 @@ export default function Index() {
   const { width: screenWidth } = useWindowDimensions();
   const cardWidth = getCardWidth(screenWidth);
   const universities = useMemo(() => buildUniversities(t), [t]);
-  const isFocused = useIsFocused();
   const { colors, isDark } = useAppTheme();
 
   const [searchText, setSearchText] = useState("");

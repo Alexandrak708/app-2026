@@ -1,6 +1,6 @@
 import type { TFunction } from "i18next";
 
-import type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
+import type { UniversityDisplay, UniversityMeta } from "@/types/university";
 
 export type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
 

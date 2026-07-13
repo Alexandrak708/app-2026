@@ -11,7 +11,7 @@ const CARD_HORIZONTAL_PADDING = 48;
 const MAX_CARD_WIDTH = 560;
 const CARD_HEIGHT = 220;
 
-export function getUniversityCardWidth(screenWidth: number) {
+function getUniversityCardWidth(screenWidth: number) {
   return Math.min(screenWidth - CARD_HORIZONTAL_PADDING, MAX_CARD_WIDTH);
 }
 
@@ -34,7 +34,7 @@ export default function UniversityCard({
 }) {
   const { width: screenWidth } = useWindowDimensions();
   const cardWidth = getUniversityCardWidth(screenWidth);
-  const { favouriteIds, toggleFavourite, isFavourite: checkFavourite } = useFavourites();
+  const { toggleFavourite, isFavourite: checkFavourite } = useFavourites();
   const isFavourite = checkFavourite(item.id as any);
   const { colors } = useAppTheme();
 

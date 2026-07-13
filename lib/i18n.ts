@@ -13,7 +13,7 @@ export async function initI18n() {
   try {
     const stored = await AsyncStorage.getItem(LANGUAGE_KEY);
     if (stored) savedLanguage = stored;
-  } catch (_) {}
+  } catch {}
 
   await i18n.use(initReactI18next).init({
     resources: {

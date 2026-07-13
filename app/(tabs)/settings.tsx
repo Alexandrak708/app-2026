@@ -228,15 +228,6 @@ export default function Settings() {
     setIsEditingName(false);
   };
 
-  const handleComingSoon = (featureName: string) => {
-    Alert.alert(featureName, `${featureName} is not connected yet.`);
-  };
-
-  const handleProfilePress = () => {
-    scrollRef.current?.scrollTo({ y: 0, animated: true });
-    setIsEditingName(true);
-  };
-
   const handleLogout = async () => {
     try {
       await signOutLocal();

@@ -5,7 +5,7 @@ import { Alert, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useRouter } from "expo-router";
 
 import { buildUniversities } from "@/data/university-data";
-import type { UniversityDisplay, UniversityId } from "@/types/university";
+import type { UniversityId } from "@/types/university";
 import UniversityCard from "@/components/university-card";
 import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
@@ -14,7 +14,7 @@ export default function Favourites() {
   const { t } = useTranslation();
   const router = useRouter();
   const universities = buildUniversities(t);
-  const { favouriteIds, toggleFavourite } = useFavourites();
+  const { favouriteIds } = useFavourites();
   const [compareIds, setCompareIds] = useState<UniversityId[]>([]);
   const { colors, isDark } = useAppTheme();
 
