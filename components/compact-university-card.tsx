@@ -1,6 +1,6 @@
 import { Text, TouchableOpacity, View, ImageBackground } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useFavourites } from "@/contexts/FavouritesContext";
+import { useFavourites } from "@/contexts/favourites-context";
 import type { UniversityDisplay } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
 

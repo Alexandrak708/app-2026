@@ -6,8 +6,8 @@ import * as Linking from "expo-linking";
 import { supabase } from "../lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { View, ActivityIndicator } from "react-native";
-import AppThemeProvider from '@/components/theme-provider';
-import { FavouritesProvider } from '@/contexts/FavouritesContext';
+import AppThemeProvider from '@/contexts/theme-context';
+import { FavouritesProvider } from '@/contexts/favourites-context';
 import { ensureProfileRecord, createSessionFromUrl } from "../lib/auth";
 
 export default function RootLayout() {

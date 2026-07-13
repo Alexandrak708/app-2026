@@ -7,7 +7,7 @@ import { useRouter } from "expo-router";
 import { buildUniversities } from "@/data/university-data";
 import type { UniversityDisplay, UniversityId } from "@/types/university";
 import UniversityCard from "@/components/university-card";
-import { useFavourites } from "@/contexts/FavouritesContext";
+import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 export default function Favourites() {

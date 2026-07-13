@@ -12,7 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { buildUniversities } from "@/data/university-data";
-import { useFavourites } from "@/contexts/FavouritesContext";
+import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 function StarRating({ rating }: { rating: number }) {

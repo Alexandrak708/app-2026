@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, ImageBackground, TouchableOpacity, Pressable, useWindowDimensions } from "react-native";
 import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
-import { useFavourites } from "@/contexts/FavouritesContext";
+import { useFavourites } from "@/contexts/favourites-context";
 import type { UniversityDisplay } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
