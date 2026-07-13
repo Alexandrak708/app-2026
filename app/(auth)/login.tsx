@@ -5,7 +5,7 @@ import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "@/lib/i18n";
-import { getAuthErrorMessage, signUp, validatePassword } from "@/lib/auth";
+import { getAuthErrorMessage, requestPasswordReset, signIn, validatePassword } from "@/lib/auth";
 
 const STARS = Array.from({ length: 72 }, (_, i) => {
   const left = (i * 37) % 100;
@@ -19,7 +19,7 @@ const STARS = Array.from({ length: 72 }, (_, i) => {
   };
 });
 
-export default function Register() {
+export default function SignIn() {
   const { width: screenWidth, height: screenHeight } = useWindowDimensions();
   const isDesktop = screenWidth >= 980;
   const router = useRouter();
@@ -28,19 +28,22 @@ export default function Register() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState("");
+  const [infoMessage, setInfoMessage] = useState("");
   const [warning, setWarning] = useState("");
 
   const passwordRef = useRef<TextInput>(null);
-  const confirmPasswordRef = useRef<TextInput>(null);
 
-  const handleRegister = async () => {
+  const clearMessages = () => {
     setAuthError("");
+    setInfoMessage("");
     setWarning("");
+  };
+
+  const handleSignIn = async () => {
+    clearMessages();
 
     const normalizedEmail = email.trim().toLowerCase();
 
@@ -54,7 +57,7 @@ export default function Register() {
       return;
     }
 
-    const passwordValidation = validatePassword(password, confirmPassword);
+    const passwordValidation = validatePassword(password);
     if (!passwordValidation.valid && passwordValidation.warningKey) {
       setWarning(t(`auth.${passwordValidation.warningKey}`));
       return;
@@ -63,7 +66,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      const { error } = await signUp({ email: normalizedEmail, password });
+      const { data, error } = await signIn({ email: normalizedEmail, password });
 
       if (error) {
         setAuthError(
@@ -77,9 +80,50 @@ export default function Register() {
         return;
       }
 
+      const userId = data.session?.user.id ?? data.user?.id;
+
+      if (!userId) {
+        setAuthError(t("auth.errorAuthUnavailable"));
+        return;
+      }
+
       router.replace("/(tabs)");
-    } catch (err) {
-      if (__DEV__) console.error("Register error:", err);
+    } catch (error) {
+      if (__DEV__) console.error("Sign in error:", error);
+      setAuthError(t("auth.errorUnexpected"));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleForgotPassword = async () => {
+    clearMessages();
+
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
+      setAuthError(t("auth.errorEnterEmailFirst"));
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const { error } = await requestPasswordReset(normalizedEmail);
+
+      if (error) {
+        setAuthError(
+          getAuthErrorMessage(error, {
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
+        );
+        return;
+      }
+
+      setInfoMessage(t("auth.resetEmailSent", { email: normalizedEmail }));
+    } catch (error) {
+      if (__DEV__) console.error("Reset password error:", error);
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
@@ -148,9 +192,9 @@ export default function Register() {
 
   const FormContent = (
     <>
-      <Text className="text-3xl font-bold text-slate-900">{t("auth.signUp")}</Text>
+      <Text className="text-3xl font-bold text-slate-900">{t("auth.signIn")}</Text>
       <Text className="text-slate-500 mt-2 mb-7">
-        {t("auth.signUpSubtitle")}
+        {t("auth.signInSubtitle")}
       </Text>
       <TextInput
         placeholder={t("auth.email")}
@@ -165,29 +209,26 @@ export default function Register() {
         value={email}
         onChangeText={(text) => {
           setEmail(text);
-          setAuthError("");
-          setWarning("");
+          clearMessages();
         }}
         className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
-      <View style={{ position: "relative", marginBottom: 16 }}>
+      <View style={{ position: "relative", marginBottom: 12 }}>
         <TextInput
           ref={passwordRef}
           placeholder={t("auth.password")}
           placeholderTextColor="#94a3b8"
           secureTextEntry={!showPassword}
-          value={password}
-          onChangeText={(text) => {
-            setPassword(text);
-            setAuthError("");
-            setWarning("");
-          }}
+        value={password}
+        onChangeText={(text) => {
+          setPassword(text);
+          clearMessages();
+        }}
           autoCapitalize="none"
-          autoComplete="password-new"
-          textContentType="newPassword"
-          returnKeyType="next"
-          onSubmitEditing={() => confirmPasswordRef.current?.focus()}
-          submitBehavior="submit"
+          autoComplete="password"
+          textContentType="password"
+          returnKeyType="go"
+          onSubmitEditing={handleSignIn}
           className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
         />
         <TouchableOpacity
@@ -204,39 +245,9 @@ export default function Register() {
           />
         </TouchableOpacity>
       </View>
-      <View style={{ position: "relative", marginBottom: 24 }}>
-        <TextInput
-          ref={confirmPasswordRef}
-          placeholder={t("auth.confirmPassword")}
-          placeholderTextColor="#94a3b8"
-          secureTextEntry={!showConfirmPassword}
-          value={confirmPassword}
-          onChangeText={(text) => {
-            setConfirmPassword(text);
-            setAuthError("");
-            setWarning("");
-          }}
-          autoCapitalize="none"
-          autoComplete="password-new"
-          textContentType="newPassword"
-          returnKeyType="go"
-          onSubmitEditing={handleRegister}
-          className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
-        />
-        <TouchableOpacity
-          onPress={() => setShowConfirmPassword((value) => !value)}
-          activeOpacity={0.7}
-          style={{ position: "absolute", right: 14, top: 0, bottom: 0, justifyContent: "center" }}
-          accessibilityRole="button"
-          accessibilityLabel={showConfirmPassword ? "Hide password" : "Show password"}
-        >
-          <MaterialCommunityIcons
-            name={showConfirmPassword ? "eye-outline" : "eye-off-outline"}
-            size={20}
-            color="#64748b"
-          />
-        </TouchableOpacity>
-      </View>
+      <TouchableOpacity onPress={handleForgotPassword} disabled={loading} style={{ alignSelf: "flex-end", marginBottom: 18 }}>
+        <Text className="text-slate-500 text-sm underline">{t("auth.forgotPassword")}</Text>
+      </TouchableOpacity>
       {authError ? (
         <Text className="text-red-500 text-sm font-medium mb-3 text-center">
           {authError}
@@ -247,20 +258,27 @@ export default function Register() {
           {warning}
         </Text>
       ) : null}
+      {infoMessage ? (
+        <Text className="text-green-600 text-sm font-medium mb-3 text-center">
+          {infoMessage}
+        </Text>
+      ) : null}
       <TouchableOpacity
-        onPress={handleRegister}
+        onPress={handleSignIn}
         disabled={loading}
         activeOpacity={0.85}
         style={{ opacity: loading ? 0.7 : 1 }}
-        className="bg-slate-900 rounded-full py-4 items-center mb-4"
+        className="bg-slate-900 rounded-full py-4 items-center"
       >
         {loading
           ? <ActivityIndicator color="#ffffff" />
-          : <Text className="text-white text-base font-semibold">{t("auth.signUpButton")}</Text>
+          : <Text className="text-white text-base font-semibold">{t("auth.login")}</Text>
         }
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => router.replace("/login")}>
-        <Text className="text-slate-500 text-center text-sm underline">{t("auth.registerQuestion")}</Text>
+      <TouchableOpacity onPress={() => router.push("/register")} style={{ marginTop: 16 }}>
+        <Text className="text-slate-500 text-center text-sm underline">
+          {t("auth.loginQuestion")}
+        </Text>
       </TouchableOpacity>
     </>
   );
@@ -290,8 +308,9 @@ export default function Register() {
         <View style={{ flex: 1, flexDirection: "row", alignItems: "stretch" }}>
           <View style={{ width: "50%", height: "100%", overflow: "hidden", justifyContent: "center", alignItems: "flex-start" }}>
             <LottieView
-              source={require("../assets/images/Globe.json")}
-              autoPlay loop
+              source={require("../../assets/images/Globe.json")}
+              autoPlay
+              loop
               style={{ width: desktopGlobeSize, height: desktopGlobeSize, marginLeft: -desktopGlobeSize * 0.36 }}
             />
           </View>
@@ -319,7 +338,7 @@ export default function Register() {
             </View>
           </View>
           <LottieView
-            source={require("../assets/images/Globe.json")}
+            source={require("../../assets/images/Globe.json")}
             autoPlay loop
             style={{
               width: mobileGlobeSize, height: mobileGlobeSize,
