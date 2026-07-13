@@ -3,12 +3,12 @@ import { useEffect, useRef, useState } from "react";
 import { initI18n } from "@/lib/i18n";
 import { Stack, useRouter, useSegments } from "expo-router";
 import * as Linking from "expo-linking";
-import { supabase } from "../lib/supabase";
+import { supabase } from "@/lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { View, ActivityIndicator } from "react-native";
 import AppThemeProvider from '@/contexts/theme-context';
 import { FavouritesProvider } from '@/contexts/favourites-context';
-import { ensureProfileRecord, createSessionFromUrl } from "../lib/auth";
+import { ensureProfileRecord, createSessionFromUrl } from "@/lib/auth";
 
 export default function RootLayout() {
   const [session, setSession] = useState<Session | null>(null);
