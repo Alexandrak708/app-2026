@@ -1,29 +1,18 @@
-import i18n from "../i18n";
-export type ProgramLevel = "bachelor" | "master";
+import i18n from "@/lib/i18n";
+import type {
+  ProgramDetail,
+  ProgramLevel,
+  ProgramSummaryInfo,
+  UniversityId,
+} from "@/types/university";
 
-export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6";
-
-export type ProgramSummary = {
-  title: string;
-  slug: string;
-};
-
-export type ProgramDetail = {
-  universityId: UniversityId;
-  universityName: string;
-  level: ProgramLevel;
-  title: string;
-  overview: string;
-  keyFocus: string;
-  duration: string;
-  studyMode: string;
-  partners?: string[];
-  highlights: string[];
-  careers: string[];
-  admissionNotes: string[];
-  tuition?: string;
-  faculty?: string;
-};
+export type {
+  ProgramDetail,
+  ProgramLevel,
+  ProgramSummary,
+  ProgramSummaryInfo,
+  UniversityId,
+} from "@/types/university";
 
 type ProgramOverride = Partial<
   Pick<
@@ -269,7 +258,7 @@ function normalizeInput(value: string | string[] | undefined) {
   return value;
 }
 
-export function slugify(value: string) {
+function slugify(value: string) {
   return value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
@@ -429,13 +418,6 @@ export function getUniversityName(universityId: string | string[] | undefined) {
 
   return i18n.t(`universities.${normalizedId}.name`, { defaultValue: "University" });
 }
-
-export type ProgramSummaryInfo = {
-  title: string;
-  slug: string;
-  tuition?: string;
-  faculty?: string;
-};
 
 export function getProgramSummaries(universityId: string | string[] | undefined, level: ProgramLevel): ProgramSummaryInfo[] {
   const normalizedId = normalizeInput(universityId) as UniversityId | undefined;

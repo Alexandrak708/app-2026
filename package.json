@@ -6,8 +6,6 @@
     "start": "expo start",
     "build": "node ./node_modules/expo/bin/cli export --platform web",
     "vercel-build": "node ./node_modules/expo/bin/cli export --platform web",
-    "reset-project": "node ./scripts/reset-project.js",
-    "firecrawl:universities": "node ./scripts/firecrawl-universities-cli.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",

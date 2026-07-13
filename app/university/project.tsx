@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next"; // 👈 ADDED
 import {
   getProgramSummaries,
   getUniversityName,
-} from "./university-programs";
+} from "@/data/university-programs";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 function ProgramRow({

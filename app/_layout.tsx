@@ -1,14 +1,14 @@
 import "../global.css";
 import { useEffect, useRef, useState } from "react";
-import { initI18n } from "./i18n";
+import { initI18n } from "@/lib/i18n";
 import { Stack, useRouter, useSegments } from "expo-router";
 import * as Linking from "expo-linking";
-import { supabase } from "../lib/supabase";
+import { supabase } from "@/lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { View, ActivityIndicator } from "react-native";
-import AppThemeProvider from '@/components/theme-provider';
-import { FavouritesProvider } from '@/contexts/FavouritesContext';
-import { ensureProfileRecord, createSessionFromUrl } from "../lib/auth";
+import AppThemeProvider from '@/contexts/theme-context';
+import { FavouritesProvider } from '@/contexts/favourites-context';
+import { ensureProfileRecord, createSessionFromUrl } from "@/lib/auth";
 
 export default function RootLayout() {
   const [session, setSession] = useState<Session | null>(null);
@@ -84,8 +84,10 @@ export default function RootLayout() {
 
     const seg = segments[0];
     const inTabsGroup = seg === "(tabs)";
-    const inResetScreen = seg === "reset-password";
-    const inAuthScreen = seg === undefined || seg === "register" || seg === "login";
+    // Auth screens now live in the (auth) route group, so the first segment
+    // is "(auth)" and the individual screen is segments[1]. URLs are unchanged.
+    const inResetScreen = segments[1] === "reset-password";
+    const inAuthScreen = seg === undefined || seg === "(auth)";
 
     // Once the user reaches the app normally, recovery handling is done.
     if (inTabsGroup && recoveryMode) {
@@ -127,9 +129,7 @@ export default function RootLayout() {
     <AppThemeProvider>
       <FavouritesProvider>
       <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="login" />
-        <Stack.Screen name="register" />
-        <Stack.Screen name="reset-password" />
+        <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
       </Stack>
       </FavouritesProvider>
