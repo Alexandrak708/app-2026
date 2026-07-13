@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useMemo, useRef, useState } from "react";
-import { buildUniversities, type UniversityDisplay } from "../university/university-data";
+import { buildUniversities } from "@/data/university-data";
+import type { UniversityDisplay } from "@/types/university";
 import {
   View, Text, ScrollView, TextInput, KeyboardAvoidingView,
   Platform, TouchableOpacity, useWindowDimensions,

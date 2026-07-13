@@ -2,7 +2,8 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useTranslation } from "react-i18next"; // 👈 ADDED
-import { buildProgramDetail, ProgramLevel } from "../university-programs";
+import { buildProgramDetail } from "@/data/university-programs";
+import type { ProgramLevel } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 function SectionCard({ children }: { children: React.ReactNode }) {

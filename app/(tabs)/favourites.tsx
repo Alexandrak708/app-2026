@@ -4,7 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { Alert, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useRouter } from "expo-router";
 
-import { buildUniversities, type UniversityDisplay, type UniversityId } from "../university/university-data";
+import { buildUniversities } from "@/data/university-data";
+import type { UniversityDisplay, UniversityId } from "@/types/university";
 import UniversityCard from "@/components/university-card";
 import { useFavourites } from "@/contexts/FavouritesContext";
 import { useAppTheme } from "@/hooks/use-theme-color";
