@@ -30,7 +30,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         if (raw === 'light' || raw === 'dark' || raw === 'system') {
           setThemeState(raw);
         }
-      } catch (e) {
+      } catch {
         // ignore
       }
     })();

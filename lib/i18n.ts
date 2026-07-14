@@ -2,8 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import en from "./locales/en.json";
-import bg from "./locales/bg.json";
+import en from "@/locales/en.json";
+import bg from "@/locales/bg.json";
 
 const LANGUAGE_KEY = "app_language";
 
@@ -13,7 +13,7 @@ export async function initI18n() {
   try {
     const stored = await AsyncStorage.getItem(LANGUAGE_KEY);
     if (stored) savedLanguage = stored;
-  } catch (_) {}
+  } catch {}
 
   await i18n.use(initReactI18next).init({
     resources: {

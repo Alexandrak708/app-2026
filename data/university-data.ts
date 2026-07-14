@@ -1,36 +1,15 @@
 import type { TFunction } from "i18next";
 
-export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6";
+import type { UniversityDisplay, UniversityMeta } from "@/types/university";
 
-export type UniversityMeta = {
-  id: UniversityId;
-  rating: number;
-  color: string;
-  image: any;
-  category: "Engineering" | "Medical" | "Economics" | "Business";
-  scholarship: boolean;
-  degreeLevels: Array<"Bachelor" | "Master">;
-  countryKey: "Bulgaria";
-};
-
-export type UniversityDisplay = UniversityMeta & {
-  name: string;
-  description: string;
-  longDescription: string;
-  location: string;
-  degreeLabel: string;
-  tuitionRange: string;
-  countryLabel: string;
-  website: string;
-  applyUrl: string;
-};
+export type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
 
 const UNIVERSITY_META: UniversityMeta[] = [
   {
     id: "1",
     rating: 5,
     color: "#1a3a5c",
-    image: require("../../assets/images/TU_Picture_01.jpg.jpg"),
+    image: require("../assets/images/TU_Picture_01.jpg.jpg"),
     category: "Engineering",
     scholarship: true,
     degreeLevels: ["Bachelor", "Master"],
@@ -40,7 +19,7 @@ const UNIVERSITY_META: UniversityMeta[] = [
     id: "2",
     rating: 5,
     color: "#1a4a3a",
-    image: require("../../assets/images/mediczinski-universitet-varna-1.jpg.jpg"),
+    image: require("../assets/images/mediczinski-universitet-varna-1.jpg.jpg"),
     category: "Medical",
     scholarship: true,
     degreeLevels: ["Master"],
@@ -50,7 +29,7 @@ const UNIVERSITY_META: UniversityMeta[] = [
     id: "3",
     rating: 4,
     color: "#3a1a4a",
-    image: require("../../assets/images/v4ZW_infe-uev.jpg.jpg"),
+    image: require("../assets/images/v4ZW_infe-uev.jpg.jpg"),
     category: "Economics",
     scholarship: true,
     degreeLevels: ["Bachelor", "Master"],
@@ -60,7 +39,7 @@ const UNIVERSITY_META: UniversityMeta[] = [
     id: "4",
     rating: 3,
     color: "#4a2a1a",
-    image: require("../../assets/images/DJI_0181.webp.webp"),
+    image: require("../assets/images/DJI_0181.webp.webp"),
     category: "Engineering",
     scholarship: false,
     degreeLevels: ["Bachelor"],
@@ -70,7 +49,7 @@ const UNIVERSITY_META: UniversityMeta[] = [
     id: "5",
     rating: 4,
     color: "#4a2a1a",
-    image: require("../../assets/images/svoboden.jpg.jpg"),
+    image: require("../assets/images/svoboden.jpg.jpg"),
     category: "Economics",
     scholarship: true,
     degreeLevels: ["Master"],
@@ -80,7 +59,7 @@ const UNIVERSITY_META: UniversityMeta[] = [
     id: "6",
     rating: 3,
     color: "#4a2a1a",
-    image: require("../../assets/images/vum.jpg.jpg"),
+    image: require("../assets/images/vum.jpg.jpg"),
     category: "Business",
     scholarship: false,
     degreeLevels: ["Master"],

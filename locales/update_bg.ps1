@@ -1,5 +1,5 @@
 # Read the original bg.json
-$content = Get-Content -LiteralPath "C:\Users\User\Desktop\app-2026\app\locales\bg.json" -Raw -Encoding UTF8
+$content = Get-Content -LiteralPath "C:\Users\User\Desktop\app-2026\locales\bg.json" -Raw -Encoding UTF8
 
 $lines = $content -split "`r`n|`n"
 
@@ -1972,6 +1972,6 @@ $newEntries = @"
 $result = $prefix + "`r`n" + $newEntries + "`r`n" + $suffix
 
 # Write the result
-[System.IO.File]::WriteAllText("C:\Users\User\Desktop\app-2026\app\locales\bg.json", $result, [System.Text.UTF8Encoding]::new($false))
+[System.IO.File]::WriteAllText("C:\Users\User\Desktop\app-2026\locales\bg.json", $result, [System.Text.UTF8Encoding]::new($false))
 
 Write-Host "bg.json updated successfully"

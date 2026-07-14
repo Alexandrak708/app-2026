@@ -260,14 +260,16 @@
       "tuitionFreeLabel": "€0"
     },
     "3": {
-      "yearsTradition": "",
-      "bachelorPrograms": "",
-      "masterPrograms": "",
-      "internationalPartners": "",
-      "countries": "",
-      "studentsGraduated": "",
-      "labs": "",
-      "tuitionFreeLabel": ""
+      "yearsTradition": "105+",
+      "bachelorPrograms": "28",
+      "masterPrograms": "29",
+      "internationalPartners": "190+",
+      "countries": "45",
+      "studentsGraduated": "155K+",
+      "labs": "110+",
+      "labsText": "Lecture & study halls",
+      "tuitionFreeLabel": "€245",
+      "tuitionFreeText": "Lowest semester fee"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -310,20 +312,20 @@
     ],
     "3": [
       {
-        "range": "",
-        "label": ""
+        "range": "€245",
+        "label": "State-subsidised (EU)"
       },
       {
-        "range": "",
-        "label": ""
+        "range": "€553–€1,045",
+        "label": "Paid full-time (EU)"
       },
       {
-        "range": "",
-        "label": ""
+        "range": "€440–€568",
+        "label": "Distance learning"
       },
       {
-        "range": "",
-        "label": ""
+        "range": "€1,350–€1,500",
+        "label": "International (non-EU)"
       }
     ]
   },
@@ -403,47 +405,47 @@
     "mu_dormitories": "Student dormitories available for international students at affordable rates",
     "mu_languagePrep": "Preparatory language courses in Bulgarian and English (9 months, €5,000)",
     "mu_recognition": "Diploma recognition service through the Ministry of Education and Science",
-    "ue_scholarships": "",
-    "ue_scholarshipsDesc": "",
-    "ue_excellentScholarships": "",
-    "ue_erasmusGrants": "",
-    "ue_socialScholarships": "",
-    "ue_doctoralScholarships": "",
-    "ue_applicationInfo": "",
-    "ue_applicationDesc": "",
-    "ue_appEarly": "",
-    "ue_appDocuments": "",
-    "ue_appOnline": "",
-    "ue_appMainRound": "",
-    "ue_appFees": "",
-    "ue_appExams": "",
-    "ue_appInternational": "",
-    "ue_masterFees": "",
-    "ue_masterFeesDesc": "",
-    "ue_masterRegular": "",
-    "ue_masterEnglish": "",
-    "ue_masterDistance": "",
-    "ue_openDoors": "",
-    "ue_openDoorsDesc": "",
-    "ue_businessAccelerator": "",
-    "ue_careerCentre": "",
-    "ue_uebn": "",
-    "ue_alumni": "",
-    "ue_partners": "",
-    "ue_partnersDesc": "",
-    "ue_erasmusPartners": "",
-    "ue_dukenet": "",
-    "ue_businet": "",
-    "ue_ceepus": "",
-    "ue_doubleDegrees": "",
-    "ue_magellan": "",
-    "ue_internationalStudents": "",
-    "ue_internationalDesc": "",
-    "ue_visaSupport": "",
-    "ue_dormitories": "",
-    "ue_languageCourses": "",
-    "ue_recognition": "",
-    "ue_internationalOffice": ""
+    "ue_scholarships": "Scholarships & Funding at UE-Varna",
+    "ue_scholarshipsDesc": "UE-Varna students can access merit-based state scholarships, mobility grants and need-based support:",
+    "ue_excellentScholarships": "Merit scholarships from the state budget for full-time students with strong academic results (very good grades and above)",
+    "ue_erasmusGrants": "Erasmus+ mobility grants for study (min. 3 months) or traineeship (min. 2 months) at partner universities, with no tuition abroad plus a monthly living and travel allowance",
+    "ue_socialScholarships": "Social scholarships for students from low-income families and special categories",
+    "ue_doctoralScholarships": "State scholarships for full-time doctoral candidates in economics, management and informatics",
+    "ue_applicationInfo": "Application Process (Bachelor 2026/2027)",
+    "ue_applicationDesc": "Admission for Bulgarian and EU/EEA applicants is competition-based on secondary-school results; application documents are accepted from 1 May to 30 September.",
+    "ue_appEarly": "State-subsidised selection closes at the end of June, with ranking results published in late July",
+    "ue_appDocuments": "Required: secondary-school diploma and supplement, ID/passport copy, application form, motivation letter and photos",
+    "ue_appOnline": "Apply online through the UE-Varna admission platform or in person at the Information Centre (77 Knyaz Boris I Blvd, Varna)",
+    "ue_appMainRound": "Ranking score is formed from the diploma average grade, Bulgarian language and mathematics grades, plus one optional matriculation exam (or doubled mathematics)",
+    "ue_appFees": "Non-EU applicants apply via the Foreign Students Division with legalised, translated diplomas and a NACID recognition certificate",
+    "ue_appExams": "Programmes taught in English or Russian require a B2-level language certificate; some programmes may include an interview",
+    "ue_appInternational": "International (non-EU) applicants: submit documents by 30 September and study on a paid basis (€1,350–€1,500 per semester)",
+    "ue_masterFees": "Master's Tuition (2025/2026)",
+    "ue_masterFeesDesc": "Master's semester fees at UE-Varna vary by field and mode of study:",
+    "ue_masterRegular": "State-subsidised programmes: from €416 to €598 per semester depending on the professional field",
+    "ue_masterEnglish": "English-taught programmes (e.g. Digital Innovation and Intercultural Business): €1,000 per semester",
+    "ue_masterDistance": "Part-time / distance learning: €440–€713 per semester; international (non-EU) students €1,600/year (€800 for dual Bulgarian citizens)",
+    "ue_openDoors": "Career, Business & Practice",
+    "ue_openDoorsDesc": "UE-Varna links study with practice through its career services, business partnerships and student initiatives:",
+    "ue_businessAccelerator": "Business incubator and entrepreneurship support helping students develop and launch startup projects",
+    "ue_careerCentre": "Career Centre organising job fairs, employer meetings and internships with leading companies",
+    "ue_uebn": "University–business cooperation with 1,800+ corporate and public-administration partners across finance, IT, trade and tourism",
+    "ue_alumni": "Active alumni community of 155,000+ graduates in Bulgaria and abroad",
+    "ue_partners": "International Partners & Networks",
+    "ue_partnersDesc": "UE-Varna cooperates with almost 190 universities and 258 institutions from 45 countries:",
+    "ue_erasmusPartners": "Erasmus+ partner universities across the EU, Turkey and North Macedonia for student and staff exchange",
+    "ue_dukenet": "Member of DukeNET – an international network of business and economics universities",
+    "ue_businet": "Member of BusiNET – a European network for business education and applied research",
+    "ue_ceepus": "Participation in CEEPUS – the Central European Exchange Programme for University Studies",
+    "ue_doubleDegrees": "Double-degree and joint programmes with selected European partner universities",
+    "ue_magellan": "Member of the Magellan Exchange network for international business-student mobility",
+    "ue_internationalStudents": "International Students at UE-Varna",
+    "ue_internationalDesc": "UE-Varna welcomes 300+ international students from over 50 countries, supported by a dedicated Foreign Students Division:",
+    "ue_visaSupport": "Visa and residence-permit assistance for non-EU students (foreign_students@ue-varna.bg)",
+    "ue_dormitories": "Student dormitories and a campus by the Sea Garden at affordable rates",
+    "ue_languageCourses": "Preparatory Bulgarian-language course for applicants entering Bulgarian-taught degrees",
+    "ue_recognition": "Diploma recognition through NACID for applicants with foreign secondary-school diplomas",
+    "ue_internationalOffice": "International Relations Office coordinating Erasmus+, exchanges and incoming students (int_relations@ue-varna.bg)"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -482,11 +484,11 @@
     "medical-college": "Medical College - Varna"
   },
   "ue_faculties": {
-    "finance-accounting": "",
-    "business": "",
-    "informatics": "",
-    "management": "",
-    "tourism-college": ""
+    "finance-accounting": "Faculty of Finance and Accounting",
+    "business": "Faculty of Economics",
+    "informatics": "Faculty of Information Technologies",
+    "management": "Faculty of Management",
+    "tourism-college": "College of Tourism – Varna"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -858,120 +860,216 @@
   },
   "ue_programInfo": {
     "hotel-and-restaurant-management": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "tourism-college"
     },
     "tourism-and-entertainment-business-management": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "tourism-college"
     },
     "business-and-management-in-english": {
-      "tuition": "",
+      "tuition": "€280.00",
       "facultyKey": "business"
     },
     "business-economics": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "economics-and-trade": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "construction-business-and-entrepreneurship": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "real-estate-and-investments": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "industrial-business-and-entrepreneurship": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "logistics": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "agricultural-businesses": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "commodities-science-and-customs-activity": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "business"
     },
     "business-digital-technologies": {
-      "tuition": "",
+      "tuition": "€300.00",
       "facultyKey": "informatics"
     },
     "informatics-and-computer-sciences": {
-      "tuition": "",
+      "tuition": "€300.00",
       "facultyKey": "informatics"
     },
     "mobile-and-web-technologies": {
-      "tuition": "",
+      "tuition": "€300.00",
       "facultyKey": "informatics"
     },
     "data-science": {
-      "tuition": "",
+      "tuition": "€300.00",
       "facultyKey": "informatics"
     },
     "international-business-in-english": {
-      "tuition": "",
+      "tuition": "€280.00",
       "facultyKey": "management"
     },
     "maritime-business-and-international-trade-in-english": {
-      "tuition": "",
+      "tuition": "€280.00",
       "facultyKey": "management"
     },
     "international-tourism-in-russian": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "marketing": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "international-economic-relations": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "management": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "public-administration": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "tourism": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "judicial-administration": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "digital-media-and-pr": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "management"
     },
     "accounting-in-english": {
-      "tuition": "",
+      "tuition": "€280.00",
       "facultyKey": "finance-accounting"
     },
     "accounting-and-audit": {
-      "tuition": "",
+      "tuition": "€245.00",
+      "facultyKey": "finance-accounting"
+    },
+    "finance": {
+      "tuition": "€245.00",
       "facultyKey": "finance-accounting"
     },
     "accounting-and-finance": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "finance-accounting"
     },
     "banking-and-insurance": {
-      "tuition": "",
+      "tuition": "€245.00",
       "facultyKey": "finance-accounting"
+    },
+    "intercultural-business-in-english": {
+      "tuition": "€1,000.00",
+      "facultyKey": "management"
+    },
+    "international-business-and-management-in-english": {
+      "tuition": "€1,000.00",
+      "facultyKey": "management"
+    },
+    "master-of-business-administration-in-english": {
+      "tuition": "€1,000.00",
+      "facultyKey": "management"
+    },
+    "computer-science-in-english": {
+      "tuition": "€1,000.00",
+      "facultyKey": "informatics"
+    },
+    "accounting-and-auditing-control": {
+      "tuition": "€568.00",
+      "facultyKey": "finance-accounting"
+    },
+    "bank-management": {
+      "tuition": "€568.00",
+      "facultyKey": "finance-accounting"
+    },
+    "finance-and-innovations": {
+      "tuition": "€568.00",
+      "facultyKey": "finance-accounting"
+    },
+    "corporate-business-and-governance-management": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "logistics-management": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "global-commercial-business": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "civil-engineering-entrepreneurship-and-real-estate": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "eco-economics": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "agricultural-business": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "quality-and-expert-examination-of-commodities": {
+      "tuition": "€568.00",
+      "facultyKey": "business"
+    },
+    "sales-management-and-merchandising": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "advertising-and-media-communications": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "management-of-organizations": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "human-resources-management": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "public-management-and-administrative-power": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "business-consulting": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "project-management": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "marketing-and-brand-management": {
+      "tuition": "€555.00",
+      "facultyKey": "management"
+    },
+    "international-tourist-business": {
+      "tuition": "€603.00",
+      "facultyKey": "management"
     }
   },
   "universities": {
@@ -996,14 +1094,14 @@
       "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
-      "name": "",
-      "description": "",
-      "longDescription": "",
-      "location": "",
-      "degree": "",
-      "tuitionRange": "",
-      "website": "",
-      "applyUrl": ""
+      "name": "University of Economics – Varna",
+      "description": "Bulgaria's oldest specialised economics university, offering business, finance, IT, management and tourism programs by the Black Sea.",
+      "longDescription": "The University of Economics – Varna (UE-Varna) is one of Bulgaria's oldest and most prestigious higher schools of economics, founded on 14 May 1920 as the Higher School of Commerce. It is the second economics-focused university established in Bulgaria and a landmark of the city of Varna — its central building is a cultural-heritage site next to the Sea Garden and was awarded the Building of the Year prize in 2015. The university is accredited by the National Evaluation and Accreditation Agency (NEAA) and is the only Bulgarian higher-education institution certified with the European Solidarity Corps Programme Quality Label. It is featured in the Times Higher Education World University Impact Rankings.\n\nThe university is organised into 4 faculties — Finance and Accounting, Economics, Information Technologies (Informatics) and Management — together with the College of Tourism – Varna and a Department of Language Learning. It offers 28 bachelor's programmes (23 in Bulgarian, 3 in English and 1 in Russian), 29 master's programmes (25 in Bulgarian, 4 in English), 16 doctoral programmes and 20+ post-graduate qualification programmes.\n\nToday UE-Varna has over 7,500 Bulgarian and international students taught by more than 230 full-time lecturers, including 100+ professors and associate professors. The campus offers 110+ lecture and study halls, a 600-seat Aula auditorium and a library of over 350,000 volumes. More than 155,000 economists and professionals have graduated from the university over its century of history.\n\nThe university maintains an extensive international network of almost 190 partner universities and cooperation with 258 institutions from 45 countries through Erasmus+, CEEPUS, DukeNET, BusiNET, the Magellan Exchange and EEA/Norway grants, and works with over 1,800 corporate and public-administration partners. Rector: Prof. Dr. Evgeni Stanimirov.",
+      "location": "Varna, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€245 - €1,500 / semester",
+      "website": "https://www.ue-varna.bg",
+      "applyUrl": "https://ue-varna.bg/en/p/7742/admission"
     },
     "4": {
       "name": "Naval University",
@@ -1085,28 +1183,28 @@
       ]
     },
     "3": {
-      "name": "",
-      "focus": "",
-      "style": "",
+      "name": "University of Economics – Varna",
+      "focus": "economics, finance, accounting, management, marketing, business, informatics, data science and tourism",
+      "style": "applied business training, real company case studies, internships with corporate partners, international exchange through Erasmus+ and the Magellan network, and a career centre with strong employer links",
       "careers": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Economist / Financial analyst",
+        "Accountant / Auditor",
+        "Manager / Business administrator",
+        "Marketing and brand specialist",
+        "Banking and insurance professional",
+        "IT, software and data specialist",
+        "Tourism and hospitality manager",
+        "Logistics and supply-chain specialist",
+        "Entrepreneur / Business consultant"
       ],
       "admissionNotes": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Admission for Bulgarian and EU/EEA applicants is by a composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics grades, plus one optional matriculation exam)",
+        "Programmes taught in English or Russian require a B2-level language certificate",
+        "Application documents are accepted from 1 May to 30 September; state-subsidised selection closes at the end of June with results in late July",
+        "Required documents: secondary-school diploma and supplement, ID/passport, application form, motivation letter and photos (NACID recognition certificate for foreign diplomas)",
+        "Non-EU applicants apply through the Foreign Students Division (foreign_students@ue-varna.bg) with legalised, translated diplomas",
+        "Online and on-site application via the university admission platform",
+        "Some specialised or English-taught programmes may include an interview or entrance test"
       ]
     },
     "4": {
@@ -1331,57 +1429,57 @@
     "nursing-management": "Nursing Management",
     "health-information-technology": "Health Information Technology",
     "___university_3": "",
-    "hotel-and-restaurant-management": "",
-    "tourism-and-entertainment-business-management": "",
-    "business-and-management-in-english": "",
-    "business-economics": "",
-    "economics-and-trade": "",
-    "construction-business-and-entrepreneurship": "",
-    "real-estate-and-investments": "",
-    "industrial-business-and-entrepreneurship": "",
-    "logistics": "",
-    "agricultural-businesses": "",
-    "commodities-science-and-customs-activity": "",
-    "business-digital-technologies": "",
-    "informatics-and-computer-sciences": "",
-    "mobile-and-web-technologies": "",
-    "data-science": "",
-    "international-business-in-english": "",
-    "maritime-business-and-international-trade-in-english": "",
-    "international-tourism-in-russian": "",
-    "marketing": "",
-    "international-economic-relations": "",
-    "management": "",
-    "tourism": "",
-    "judicial-administration": "",
-    "digital-media-and-pr": "",
-    "accounting-in-english": "",
-    "accounting-and-audit": "",
-    "accounting-and-finance": "",
-    "banking-and-insurance": "",
-    "intercultural-business-in-english": "",
-    "international-business-and-management-in-english": "",
-    "master-of-business-administration-in-english": "",
-    "computer-science-in-english": "",
-    "accounting-and-auditing-control": "",
-    "bank-management": "",
-    "finance-and-innovations": "",
-    "corporate-business-and-governance-management": "",
-    "logistics-management": "",
-    "global-commercial-business": "",
-    "civil-engineering-entrepreneurship-and-real-estate": "",
-    "eco-economics": "",
-    "agricultural-business": "",
-    "quality-and-expert-examination-of-commodities": "",
-    "sales-management-and-merchandising": "",
-    "advertising-and-media-communications": "",
-    "management-of-organizations": "",
-    "human-resources-management": "",
-    "public-management-and-administrative-power": "",
-    "international-tourist-business": "",
-    "business-consulting": "",
-    "project-management": "",
-    "marketing-and-brand-management": "",
+    "hotel-and-restaurant-management": "Hotel and Restaurant Management",
+    "tourism-and-entertainment-business-management": "Tourism and Entertainment Business Management",
+    "business-and-management-in-english": "Business and Management (in English)",
+    "business-economics": "Business Economics",
+    "economics-and-trade": "Economics and Trade",
+    "construction-business-and-entrepreneurship": "Construction Business and Entrepreneurship",
+    "real-estate-and-investments": "Real Estate and Investments",
+    "industrial-business-and-entrepreneurship": "Industrial Business and Entrepreneurship",
+    "logistics": "Logistics",
+    "agricultural-businesses": "Agricultural Businesses",
+    "commodities-science-and-customs-activity": "Commodities Science and Customs Activity",
+    "business-digital-technologies": "Business Digital Technologies",
+    "informatics-and-computer-sciences": "Informatics and Computer Sciences",
+    "mobile-and-web-technologies": "Mobile and web technologies",
+    "data-science": "Data Science",
+    "international-business-in-english": "International Business (in English)",
+    "maritime-business-and-international-trade-in-english": "Maritime business and international trade (in English)",
+    "international-tourism-in-russian": "International Tourism (in Russian)",
+    "marketing": "Marketing",
+    "international-economic-relations": "International Economic Relations",
+    "management": "Management",
+    "tourism": "Tourism",
+    "judicial-administration": "Judicial Administration",
+    "digital-media-and-pr": "Digital Media and PR",
+    "accounting-in-english": "Accounting (in English)",
+    "accounting-and-audit": "Accounting and Audit",
+    "accounting-and-finance": "Accounting and Finance",
+    "banking-and-insurance": "Banking and Insurance",
+    "intercultural-business-in-english": "Intercultural Business (in English)",
+    "international-business-and-management-in-english": "International Business and Management (in English)",
+    "master-of-business-administration-in-english": "Master of business administration (in English)",
+    "computer-science-in-english": "Computer Science (in English)",
+    "accounting-and-auditing-control": "Accounting and Auditing / Control",
+    "bank-management": "Bank Management",
+    "finance-and-innovations": "Finance and Innovations",
+    "corporate-business-and-governance-management": "Corporate Business and Governance / Management",
+    "logistics-management": "Logistics Management",
+    "global-commercial-business": "Global Commercial Business",
+    "civil-engineering-entrepreneurship-and-real-estate": "Civil Engineering Entrepreneurship and Real Estate",
+    "eco-economics": "Eco-economics",
+    "agricultural-business": "Agricultural Business",
+    "quality-and-expert-examination-of-commodities": "Quality and Expert Examination of Commodities",
+    "sales-management-and-merchandising": "Sales Management and Merchandising",
+    "advertising-and-media-communications": "Advertising and Media Communications",
+    "management-of-organizations": "Management of Organizations",
+    "human-resources-management": "Human Resources Management",
+    "public-management-and-administrative-power": "Public Management and Administrative Power",
+    "international-tourist-business": "International Tourist Business",
+    "business-consulting": "Business Consulting",
+    "project-management": "Project Management",
+    "marketing-and-brand-management": "Marketing And Brand Management",
     "___university_4": "University 4 — Naval / Maritime University",
     "cybersecurity": "Cybersecurity",
     "information-and-communication-technologies": "Information and Communication Technologies",
@@ -1398,7 +1496,7 @@
     "international-business": "International Business",
     "business-administration": "Business Administration",
     "international-relations": "International Relations",
-    "public-administration": "",
+    "public-administration": "Public Administration",
     "european-studies": "European Studies",
     "___university_6": "University 6 — University of Management (VUM)",
     "software-engineering": "Software Engineering",
@@ -1413,7 +1511,8 @@
     "pedagogy-of-teaching-in-economics-and-management": "Pedagogy of Teaching in Economics and Management",
     "master-in-international-tourism": "Master in International Tourism",
     "master-in-international-tourism-distance-learning-program": "Master in International Tourism - Distance Learning Program",
-    "master-of-business-administration": "Master of Business Administration"
+    "master-of-business-administration": "Master of Business Administration",
+    "finance": "Finance"
   },
   "programOverrides": {
     "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
@@ -2074,36 +2173,6 @@
         "Additional physical fitness requirements",
         "Security clearance may be required",
         "Service commitment after graduation"
-      ]
-    },
-    "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
       ]
     },
     "4:bachelor:navigation-ship-maneuvering": {
@@ -3419,21 +3488,6 @@
         "Edit this admission note."
       ]
     },
-    "3:bachelor:economics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
     "2:master:dental-medicine-english": {
       "overview": "The English-taught DMD programme at MU-Varna offers international students a 6-year dental medicine degree with comprehensive clinical training.",
       "keyFocus": "oral health, dental surgery, prosthodontics, orthodontics",
@@ -3497,51 +3551,6 @@
       "admissionNotes": [
         "Bachelor degree in health sciences or management required",
         "Professional experience in healthcare preferred"
-      ]
-    },
-    "3:bachelor:finance": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:marketing": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
       ]
     },
     "4:bachelor:navigation": {
@@ -3902,756 +3911,6 @@
         "Edit this admission note."
       ]
     },
-    "3:bachelor:tourism-and-entertainment-business-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:business-and-management-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:business-economics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:economics-and-trade": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:construction-business-and-entrepreneurship": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:real-estate-and-investments": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:industrial-business-and-entrepreneurship": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:logistics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:agricultural-businesses": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:commodities-science-and-customs-activity": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:business-digital-technologies": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:mobile-and-web-technologies": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:data-science": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:international-business-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:maritime-business-and-international-trade-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:international-tourism-in-russian": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:international-economic-relations": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:public-administration": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:tourism": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:judicial-administration": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:digital-media-and-pr": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting-and-audit": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting-and-finance": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:banking-and-insurance": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:intercultural-business-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:international-business-and-management-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:master-of-business-administration-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:computer-science-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:accounting-and-auditing-control": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:bank-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:finance-and-innovations": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:corporate-business-and-governance-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:logistics-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:global-commercial-business": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:civil-engineering-entrepreneurship-and-real-estate": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:eco-economics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:agricultural-business": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:quality-and-expert-examination-of-commodities": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:sales-management-and-merchandising": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:advertising-and-media-communications": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:management-of-organizations": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:human-resources-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:public-management-and-administrative-power": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:international-tourist-business": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:business-consulting": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:project-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:marketing-and-brand-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:mobile-and-web-technologies": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
     "5:bachelor:international-business": {
       "overview": "Edit this overview for International Business.",
       "keyFocus": "Edit this key focus for International Business.",
@@ -4665,6 +3924,1348 @@
       ],
       "admissionNotes": [
         "Edit this admission note."
+      ]
+    },
+    "3:bachelor:hotel-and-restaurant-management": {
+      "overview": "A professional bachelor's degree at the College of Tourism giving theoretical and practical training in tourism, hospitality management, tourism marketing and human-resource management, preparing students to lead hotel, restaurant and food-service teams.",
+      "keyFocus": "hotel and restaurant service technology, bar service, tourism marketing, human resources in tourism, hospitality accounting",
+      "duration": "Professional Bachelor, full-time (3 years / 6 semesters)",
+      "partners": [
+        "College of Tourism – Varna",
+        "Erasmus+ and CEEPUS exchange"
+      ],
+      "highlights": [
+        "Supervised on-the-job training in restaurants, hotels and bars plus summer placements",
+        "Multilingual training (first and second foreign language — English, German, French, Russian)",
+        "Courses in digital technologies and customer care in hospitality"
+      ],
+      "careers": [
+        "Hotel Manager",
+        "Restaurant Manager",
+        "Front-office Manager",
+        "Kitchen Manager",
+        "Hospitality Entrepreneur"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma"
+      ]
+    },
+    "3:bachelor:tourism-and-entertainment-business-management": {
+      "overview": "A professional bachelor's degree at the College of Tourism covering tourism management, the entertainment and leisure industry, travel-agency and transport operations and event management.",
+      "keyFocus": "tourism management, entertainment and leisure industry, travel agencies and transport operations, tourism marketing, event management",
+      "duration": "Professional Bachelor, full-time (3 years / 6 semesters)",
+      "partners": [
+        "College of Tourism – Varna",
+        "Travel agencies and entertainment venues"
+      ],
+      "highlights": [
+        "Practical training in tour guiding, entertainment business and travel agencies",
+        "Summer work-experience placements",
+        "Skills in digital technologies, intercultural communication and event management"
+      ],
+      "careers": [
+        "Tourism Manager",
+        "Event & Entertainment Manager",
+        "Travel Agency Specialist",
+        "Leisure Industry Coordinator",
+        "Tourism Entrepreneur"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian (with English and German or Russian)",
+        "Admission by composite score from the secondary-school diploma"
+      ]
+    },
+    "3:bachelor:business-and-management-in-english": {
+      "overview": "A fully English-taught bachelor's degree with a broad business curriculum linking theory to practice through real-world case studies and collaborative projects.",
+      "keyFocus": "fundamentals of business, start-ups and innovation, operations management, marketing strategies, financial and investment management, business intelligence and analytics",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "250+ Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Study one or two semesters abroad with Erasmus+ support",
+        "Practical training component in semester 6",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Business Analyst",
+        "Management Consultant",
+        "Entrepreneur / Small-business Owner",
+        "HR Specialist",
+        "Marketing Manager",
+        "Financial Analyst",
+        "Operations Manager"
+      ],
+      "admissionNotes": [
+        "Taught in English (B2-level certificate required)",
+        "Diploma-based admission for EU and international applicants"
+      ]
+    },
+    "3:bachelor:construction-business-and-entrepreneurship": {
+      "overview": "Offered by the Department of Business, Investment and Real Estate, this degree combines construction-sector economics with entrepreneurship, investment management and real-estate development.",
+      "keyFocus": "principles of construction business, management of investments in real assets, pricing in the investment process, logistics in construction, innovations in construction, entrepreneurship",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Construction, investment and real-estate companies"
+      ],
+      "highlights": [
+        "Practical training component in semester 6",
+        "Electives in sustainable construction and investment-project management software",
+        "Foreign-language training (English, German, French, Russian, Portuguese)",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Construction Business Manager",
+        "Real Estate Developer",
+        "Investment Project Manager",
+        "Entrepreneur in Construction",
+        "Property Investment Specialist"
+      ],
+      "admissionNotes": [
+        "Offered in Bulgarian (English track available for international students)",
+        "Admission by composite score from the secondary-school diploma"
+      ]
+    },
+    "3:bachelor:international-business-in-english": {
+      "overview": "A full-time English-taught bachelor's degree in international business, building theoretical foundations and practical skills for the global business environment, with a third-year work placement in international companies.",
+      "keyFocus": "international economics and transnational corporations, international marketing management, international HR and quality management, international trade policy, EU and international law",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Erasmus+, CEEPUS, DukeNet and BusiNet networks"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Third-year work placement in international companies",
+        "Participation in Erasmus+, CEEPUS, DukeNet and BusiNet networks",
+        "Finish with a diploma project or comprehensive final examination"
+      ],
+      "careers": [
+        "International Business Manager",
+        "International Marketing Specialist",
+        "Analytical Specialist in International Trade",
+        "Corporate / Government Consultant",
+        "Entrepreneur"
+      ],
+      "admissionNotes": [
+        "Taught in English (B2-level certificate required)",
+        "Diploma-based admission for EU and international applicants"
+      ]
+    },
+    "3:bachelor:maritime-business-and-international-trade-in-english": {
+      "overview": "A comprehensive English-taught bachelor's degree preparing students for the global maritime industry, combining economics and management with maritime trade, maritime law and blue entrepreneurship.",
+      "keyFocus": "maritime economics, maritime trade, maritime law, blue entrepreneurship, supply-chain management, international business",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "University of Plymouth",
+        "Solent University",
+        "Old Dominion University",
+        "Erasmus University Rotterdam",
+        "World Maritime University"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Experts from the maritime business take part in teaching",
+        "Practical training component in semester 6",
+        "Learning through case studies, business simulations and e-learning"
+      ],
+      "careers": [
+        "Shipping / Logistics Manager",
+        "Port Operations Manager",
+        "Export / Import Specialist",
+        "Maritime Analyst",
+        "Freight Forwarding Specialist",
+        "Trade Compliance Officer",
+        "Maritime Business Consultant"
+      ],
+      "admissionNotes": [
+        "Taught in English (B2-level certificate required)",
+        "Diploma-based admission for EU and international applicants"
+      ]
+    },
+    "3:bachelor:accounting-in-english": {
+      "overview": "A full-time English-taught bachelor's degree in accounting, analysis and auditing delivered to international standards — the first programme in Bulgaria accredited by both ACCA and CIMA.",
+      "keyFocus": "financial accounting, management accounting, audit and assurance, company taxation, international accounting standards, financial analysis",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "ACCA",
+        "CIMA"
+      ],
+      "highlights": [
+        "First programme in Bulgaria accredited by ACCA and by CIMA",
+        "Up to six ACCA paper exemptions towards professional membership",
+        "Taught entirely in English in a multicultural environment",
+        "67 courses (25 mandatory, 42 electives)"
+      ],
+      "careers": [
+        "Accountant",
+        "Management Accountant",
+        "Financial Controller",
+        "Auditor",
+        "Tax Specialist",
+        "Financial Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in English (B2-level certificate required)",
+        "First cohort began September 2025"
+      ]
+    },
+    "3:bachelor:banking-and-insurance": {
+      "overview": "A bachelor's degree in the Faculty of Finance and Accounting covering banking, insurance, financial markets and financial management, with a strong grounding in finance and risk.",
+      "keyFocus": "finance, financial markets and institutions, insurance, public pension insurance, financial management, risk management",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Banks, insurers and pension funds"
+      ],
+      "highlights": [
+        "Specialised courses in financial markets, insurance and pension insurance",
+        "Electives in digital finance, risk management and bank accounting",
+        "Foreign-language training (English, German, French, Russian, Portuguese)",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Banking Officer",
+        "Insurance Specialist",
+        "Risk Analyst",
+        "Financial Manager",
+        "Financial Services Advisor"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma"
+      ]
+    },
+    "3:master:international-business-and-management-in-english": {
+      "overview": "An English-taught master's degree for future managers building international awareness, with a curriculum adopted from Nottingham Trent University and regularly updated with input from students, employers and alumni.",
+      "keyFocus": "managerial economics, international economics, global business environment, international entrepreneurship, international marketing strategies, international finance and strategic management",
+      "duration": "Full-time (1.5 years / 3 semesters), January intake",
+      "partners": [
+        "Nottingham Trent University (curriculum)"
+      ],
+      "highlights": [
+        "Curriculum adopted from Nottingham Trent University",
+        "Interactive workshops with case studies, problem-based learning and business simulations",
+        "Business projects with real companies that can lead to job offers",
+        "Taught entirely in English"
+      ],
+      "careers": [
+        "International Business Analyst",
+        "Marketing Executive",
+        "Department Manager",
+        "HR Manager",
+        "Import / Export Specialist",
+        "Company CEO"
+      ],
+      "admissionNotes": [
+        "Taught in English",
+        "Requires a relevant bachelor's degree"
+      ]
+    },
+    "3:master:master-of-business-administration-in-english": {
+      "overview": "An English-taught MBA in the field of Administration and Management (120 credits), developing strategic leadership and advanced management skills for contemporary business challenges.",
+      "keyFocus": "business strategy and growth, human-resource management, financial and corporate reporting, entrepreneurship development, digital transformation, service operations",
+      "duration": "Full-time (1.5 years / 3 semesters, 120 credits), January intake",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Emphasis on sustainability and digital innovation",
+        "Electives in European studies, business communications and cultural policy",
+        "Optional foreign-language courses (German, French, Russian)",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Senior Manager",
+        "Business Administrator",
+        "Entrepreneur",
+        "Management Consultant",
+        "Executive"
+      ],
+      "admissionNotes": [
+        "Taught in English",
+        "Requires a bachelor's degree"
+      ]
+    },
+    "3:master:computer-science-in-english": {
+      "overview": "An English-taught master's degree in computer science spanning web and e-business systems, business-process modelling and automation, data science and mobile application development.",
+      "keyFocus": "web technologies, server-side and cloud development, .NET frameworks, object-oriented programming, digital commerce, data science",
+      "duration": "Full-time or part-time (1.5 years / 3 semesters), January intake",
+      "partners": [
+        "Erasmus+ EU partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Electives in business-management systems, process modelling, GUI or mobile computing",
+        "Erasmus+ and EU partnership opportunities",
+        "Finish with a state exam or diploma thesis"
+      ],
+      "careers": [
+        "Systems Analyst",
+        "Software Developer",
+        "Web Developer",
+        "Network Designer",
+        "Database Professional",
+        "E-business Systems Manager"
+      ],
+      "admissionNotes": [
+        "Taught in English",
+        "Requires a relevant bachelor's degree"
+      ]
+    },
+    "3:master:finance-and-innovations": {
+      "overview": "A master's degree linking finance with innovation, covering financial innovation, innovations in banking and public finance, entrepreneurial finance and social innovation.",
+      "keyFocus": "innovations and financial crises, innovations in banking, innovations in public finance, entrepreneurial finance, life-insurance product innovations, social innovation",
+      "duration": "Full-time / distance learning (1 year / 2 semesters, 75 credits)",
+      "partners": [
+        "Banks, insurers and financial institutions"
+      ],
+      "highlights": [
+        "Offered in distance-learning format with January and regular intakes",
+        "Electives in financial regulation, controlling innovations and corporate performance",
+        "Open to Bulgarian and international students",
+        "Finish with a comprehensive state exam or thesis defence"
+      ],
+      "careers": [
+        "Finance & Innovation Specialist",
+        "Banking Professional",
+        "Financial Analyst",
+        "Entrepreneurial Finance Consultant",
+        "Public Finance Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree"
+      ]
+    },
+    "3:bachelor:business-economics": {
+      "overview": "A Faculty of Economics degree in the theory and practice of economics, covering micro- and macroeconomics, economic analysis and quantitative methods for business decision-making.",
+      "keyFocus": "microeconomics, macroeconomics, economic analysis, business statistics, quantitative methods",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Economist",
+        "Economic Analyst",
+        "Business Planner",
+        "Policy Analyst",
+        "Market Researcher"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:economics-and-trade": {
+      "overview": "A Faculty of Economics degree focused on the economics of commerce and trade, commercial operations and the organisation of domestic and international trade.",
+      "keyFocus": "trade economics, commercial operations, retail and wholesale trade, trade organisation, commerce",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Trade Specialist",
+        "Commercial Manager",
+        "Purchasing / Sales Specialist",
+        "Retail Manager",
+        "Trade Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:real-estate-and-investments": {
+      "overview": "A Faculty of Economics degree studying real-estate markets, property valuation, investment analysis and property management.",
+      "keyFocus": "real-estate markets, property valuation, investment analysis, property management, real-estate law",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Real Estate Broker",
+        "Property Valuer",
+        "Investment Analyst",
+        "Real Estate Manager",
+        "Property Consultant"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:industrial-business-and-entrepreneurship": {
+      "overview": "A Faculty of Economics degree in the economics and management of industrial enterprises, production organisation and entrepreneurship in industry.",
+      "keyFocus": "industrial economics, production and operations management, business planning, entrepreneurship, enterprise organisation",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Industrial Business Manager",
+        "Production Planner",
+        "Operations Specialist",
+        "Business Development Manager",
+        "Industrial Entrepreneur"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:logistics": {
+      "overview": "A Faculty of Economics degree in logistics and supply-chain management, covering transport, warehousing, inventory and distribution.",
+      "keyFocus": "supply-chain management, transport, warehousing, inventory control, distribution",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Logistics Specialist",
+        "Supply-chain Coordinator",
+        "Warehouse Operations Manager",
+        "Transport Coordinator",
+        "Procurement Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:agricultural-businesses": {
+      "overview": "A Faculty of Economics degree combining agricultural economics with business management, covering farm and agri-enterprise management and agri-marketing.",
+      "keyFocus": "agricultural economics, farm management, agri-business management, agri-marketing, rural enterprise",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Agribusiness Manager",
+        "Farm Consultant",
+        "Agri-marketing Specialist",
+        "Rural Development Specialist",
+        "Agricultural Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:commodities-science-and-customs-activity": {
+      "overview": "A Faculty of Economics degree in commodity science and customs activity, covering product quality, standards and customs procedures for trade.",
+      "keyFocus": "commodity science, product quality and standards, customs procedures, trade documentation, consumer protection",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Customs Officer",
+        "Commodity Expert",
+        "Quality Control Specialist",
+        "Trade Compliance Specialist",
+        "Certification Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:business-digital-technologies": {
+      "overview": "A Faculty of Information Technologies degree on the digital transformation of business, covering information systems, e-commerce and the automation of business processes.",
+      "keyFocus": "digital transformation, business information systems, e-commerce, business-process automation, digital analytics",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "IT companies and UE-Varna's business network"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Digital Business Analyst",
+        "Information Systems Specialist",
+        "E-commerce Manager",
+        "Business Process Analyst",
+        "Digital Transformation Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:informatics-and-computer-sciences": {
+      "overview": "A Faculty of Information Technologies degree in informatics and computer science, covering programming, algorithms, databases, software engineering and information systems.",
+      "keyFocus": "programming, algorithms and data structures, databases, software engineering, information systems",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "IT companies and UE-Varna's business network"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Software Developer",
+        "Database Administrator",
+        "Systems Analyst",
+        "IT Specialist",
+        "Information Systems Designer"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:mobile-and-web-technologies": {
+      "overview": "A Faculty of Information Technologies degree focused on mobile-application and web development, front-end and back-end technologies and cloud-based solutions.",
+      "keyFocus": "mobile development, web technologies, front-end and back-end development, UI/UX, cloud solutions",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "IT companies and UE-Varna's business network"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Mobile Developer",
+        "Web Developer",
+        "Front-end / Back-end Developer",
+        "UI/UX Designer",
+        "Cloud Solutions Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:data-science": {
+      "overview": "A Faculty of Information Technologies degree in data science, covering data analysis, machine learning, statistical modelling and data visualisation for business.",
+      "keyFocus": "data analysis, machine learning, statistical modelling, big-data technologies, data visualisation",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "IT companies and UE-Varna's business network"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Data Scientist",
+        "Data Analyst",
+        "Machine-learning Specialist",
+        "Business Intelligence Analyst",
+        "Statistical Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:international-tourism-in-russian": {
+      "overview": "A Russian-taught degree in the Faculty of Management focused on international tourism management, tour operations and destination marketing for Russian-speaking markets.",
+      "keyFocus": "international tourism management, tour operations, destination marketing, Russian-speaking markets, hospitality",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Tourism Manager",
+        "Tour Operator",
+        "Destination Marketing Specialist",
+        "Travel Consultant",
+        "Hospitality Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Russian (B2-level certificate required)",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:marketing": {
+      "overview": "A Faculty of Management degree in marketing, covering marketing strategy, consumer behaviour, market research, brand management and digital marketing.",
+      "keyFocus": "marketing strategy, consumer behaviour, market research, brand management, digital marketing",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Marketing Specialist",
+        "Brand Manager",
+        "Market Research Analyst",
+        "Digital Marketing Specialist",
+        "Advertising Coordinator"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:international-economic-relations": {
+      "overview": "A Faculty of Management degree in international economics, foreign trade, international finance and the economic relations of firms and countries.",
+      "keyFocus": "international economics, foreign trade, international finance, foreign investment, economic diplomacy",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "International Relations Specialist",
+        "Foreign Trade Specialist",
+        "International Project Coordinator",
+        "Export / Import Specialist",
+        "Economic Affairs Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:management": {
+      "overview": "A Faculty of Management degree in general management, covering organisation, strategy, human resources, operations and leadership.",
+      "keyFocus": "management and organisation, strategic management, human resources, operations, leadership",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Manager",
+        "HR Specialist",
+        "Operations Manager",
+        "Project Coordinator",
+        "Team Leader"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:public-administration": {
+      "overview": "A Faculty of Management degree in public administration, covering public policy, government administration, public finance and administrative law.",
+      "keyFocus": "public policy, government administration, public finance, administrative law, EU governance",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Public Administrator",
+        "Policy Analyst",
+        "Local-government Officer",
+        "Public-sector Specialist",
+        "EU Affairs Officer"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:tourism": {
+      "overview": "A Faculty of Management degree in tourism, covering travel-agency and tour operations, destination management, hospitality and sustainable tourism.",
+      "keyFocus": "tourism management, tour operations, destination management, hospitality, sustainable tourism",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Tourism Manager",
+        "Travel Agency Manager",
+        "Destination Manager",
+        "Hospitality Manager",
+        "Tour Operator"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:judicial-administration": {
+      "overview": "A Faculty of Management degree at the intersection of law and administration, covering judicial systems, court administration and legal procedures.",
+      "keyFocus": "judicial systems, court administration, legal procedures, public administration, administrative law",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Court Administrator",
+        "Judicial Assistant",
+        "Legal Office Manager",
+        "Administrative Specialist",
+        "Public Administration Officer"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:digital-media-and-pr": {
+      "overview": "A Faculty of Management degree in digital media and public relations, covering communications, social media, content creation and corporate communications.",
+      "keyFocus": "public relations, digital media, social media, content creation, corporate communications",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "PR Specialist",
+        "Digital Media Manager",
+        "Content Creator",
+        "Communications Officer",
+        "Social Media Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:accounting-and-audit": {
+      "overview": "A Faculty of Finance and Accounting degree in accounting and auditing, covering financial reporting, audit practice, internal control and taxation.",
+      "keyFocus": "financial accounting, auditing, internal control, financial reporting, taxation",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Banks, insurers and accounting & audit firms"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Accountant",
+        "Auditor",
+        "Financial Controller",
+        "Tax Specialist",
+        "Financial Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:finance": {
+      "overview": "A Faculty of Finance and Accounting degree in finance, covering corporate and public finance, financial markets, banking, taxation and investment analysis.",
+      "keyFocus": "corporate finance, public finance, financial markets, banking, taxation, investment analysis",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Banks, insurers and accounting & audit firms"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Financial Analyst",
+        "Corporate Finance Specialist",
+        "Banking Professional",
+        "Investment Consultant",
+        "Tax & Treasury Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:bachelor:accounting-and-finance": {
+      "overview": "A Faculty of Finance and Accounting degree combining accounting and finance, covering financial management, corporate finance, investment analysis and financial reporting.",
+      "keyFocus": "financial management, corporate finance, investment analysis, financial reporting, accounting",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Banks, insurers and accounting & audit firms"
+      ],
+      "highlights": [
+        "Erasmus+ study or traineeship abroad at partner universities",
+        "Internship / practical training as part of the degree",
+        "Foreign-language training alongside the specialty",
+        "Applied learning through case studies and business projects"
+      ],
+      "careers": [
+        "Financial Analyst",
+        "Accountant",
+        "Investment Analyst",
+        "Corporate Finance Associate",
+        "Financial Controller"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Admission by composite score from the secondary-school diploma (average grade, Bulgarian language and mathematics, plus one optional matriculation exam)"
+      ]
+    },
+    "3:master:intercultural-business-in-english": {
+      "overview": "An English-taught master's degree focused on cross-cultural business management, international negotiation and communication in a multicultural business environment.",
+      "keyFocus": "cross-cultural management, international negotiation, intercultural communication, global business, international marketing",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "International Business Consultant",
+        "Cross-cultural Manager",
+        "International Marketing Specialist",
+        "Global Project Manager",
+        "Business Development Manager"
+      ],
+      "admissionNotes": [
+        "Taught in English",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:accounting-and-auditing-control": {
+      "overview": "A master's degree in accounting, auditing and financial control, covering international accounting standards, financial analysis and corporate governance.",
+      "keyFocus": "financial accounting, auditing, financial control, international accounting standards, corporate governance",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Banks, insurers and accounting & audit firms"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Senior Accountant",
+        "Auditor",
+        "Financial Controller",
+        "Internal Control Specialist",
+        "Tax Advisor"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:bank-management": {
+      "overview": "A master's degree in banking management, covering bank operations, credit and risk, financial markets and regulatory compliance.",
+      "keyFocus": "banking operations, credit and risk management, financial markets, regulatory compliance, bank finance",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Banks, insurers and accounting & audit firms"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Bank Manager",
+        "Credit Analyst",
+        "Risk Manager",
+        "Banking Product Specialist",
+        "Financial Services Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:corporate-business-and-governance-management": {
+      "overview": "A master's degree in corporate business and management, covering corporate governance, business strategy and the management of companies and stakeholder relations.",
+      "keyFocus": "corporate governance, business strategy, corporate management, stakeholder relations, business ethics",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Corporate Manager",
+        "Business Strategy Specialist",
+        "Governance Officer",
+        "Corporate Development Manager",
+        "Management Consultant"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:logistics-management": {
+      "overview": "A master's degree in logistics and supply-chain management, covering global logistics, sourcing, distribution networks and supply-chain analytics.",
+      "keyFocus": "global logistics, strategic sourcing, distribution networks, supply-chain analytics, transport management",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Logistics Manager",
+        "Supply-chain Manager",
+        "Distribution Planner",
+        "Operations Consultant",
+        "Procurement Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:global-commercial-business": {
+      "overview": "A master's degree in commercial business covering modern (including omnichannel) commerce, trade management and commercial operations.",
+      "keyFocus": "commercial business, omnichannel commerce, trade management, retail and wholesale, commercial operations",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Commercial Manager",
+        "Sales & Trade Manager",
+        "Category Manager",
+        "Business Development Manager",
+        "Commerce Analyst"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:civil-engineering-entrepreneurship-and-real-estate": {
+      "overview": "A master's degree combining construction and real-estate entrepreneurship with investment and project management in the property sector.",
+      "keyFocus": "construction entrepreneurship, real-estate development, investment management, construction project management, property investment",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Construction Entrepreneur",
+        "Real Estate Developer",
+        "Investment Project Manager",
+        "Property Investment Specialist",
+        "Construction Project Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:eco-economics": {
+      "overview": "A master's degree in ecological economics, covering environmental economics, sustainable development, green business and environmental policy.",
+      "keyFocus": "environmental economics, sustainable development, green business, circular economy, environmental policy",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Environmental Economist",
+        "Sustainability Specialist",
+        "Green Business Manager",
+        "Environmental Policy Analyst",
+        "ESG Consultant"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:agricultural-business": {
+      "overview": "A master's degree in agribusiness management, covering agricultural value chains, the economics of the food sector and rural development.",
+      "keyFocus": "agribusiness management, agricultural value chains, food-sector economics, rural development, agri-marketing",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Agribusiness Manager",
+        "Food-sector Analyst",
+        "Rural Development Specialist",
+        "Agricultural Consultant",
+        "Agri-marketing Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:quality-and-expert-examination-of-commodities": {
+      "overview": "A master's degree in commodity quality and expertise, covering quality assessment, product examination, certification and standards.",
+      "keyFocus": "commodity quality, product expertise, certification and standards, consumer protection, metrology",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies and business organisations in Varna and Bulgaria"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Quality Manager",
+        "Commodity Expert",
+        "Certification Specialist",
+        "Product Examiner",
+        "Consumer Protection Officer"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:sales-management-and-merchandising": {
+      "overview": "A master's degree in sales management and merchandising, covering sales strategy, retail operations, merchandising and customer relationships.",
+      "keyFocus": "sales strategy, sales-team management, merchandising, retail operations, customer relationship management",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Sales Manager",
+        "Merchandising Manager",
+        "Retail Manager",
+        "Key Account Manager",
+        "CRM Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:advertising-and-media-communications": {
+      "overview": "A master's degree in advertising and media communications, covering advertising strategy, media planning, brand communication and campaign analytics.",
+      "keyFocus": "advertising strategy, media planning, digital advertising, brand communication, campaign analytics",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Advertising Manager",
+        "Media Planner",
+        "Brand Communications Manager",
+        "Campaign Analyst",
+        "Creative Strategist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:management-of-organizations": {
+      "overview": "A master's degree in the management of organisations, covering organisational design, change management, corporate culture and strategic human resources.",
+      "keyFocus": "organisational design, change management, corporate culture, strategic human resources, organisational behaviour",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Organisational Development Manager",
+        "Change Management Consultant",
+        "HR Director",
+        "Corporate Strategy Specialist",
+        "Management Consultant"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:human-resources-management": {
+      "overview": "A master's degree in human-resource management, covering talent acquisition, performance management, compensation, labour law and workforce planning.",
+      "keyFocus": "talent acquisition, performance management, compensation and benefits, labour law, workforce planning",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "HR Manager",
+        "Talent Acquisition Specialist",
+        "Compensation & Benefits Manager",
+        "HR Business Partner",
+        "Organisational Development Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:public-management-and-administrative-power": {
+      "overview": "A master's degree in public management and governance, covering public-sector governance, administrative reform, EU policy and public financial management.",
+      "keyFocus": "public-sector governance, administrative reform, EU policy, public financial management, public policy",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Public-sector Manager",
+        "Policy Advisor",
+        "EU Affairs Manager",
+        "Government Administrator",
+        "Public Governance Specialist"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:international-tourist-business": {
+      "overview": "A master's degree in international tourism business, covering tourism policy, destination marketing, sustainable tourism and global hospitality.",
+      "keyFocus": "international tourism policy, destination marketing, sustainable tourism, global hospitality, tourism management",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Tourism Director",
+        "Destination Marketing Manager",
+        "Sustainable Tourism Consultant",
+        "Hospitality Executive",
+        "Tour Operations Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:business-consulting": {
+      "overview": "A master's degree in business consulting, developing diagnostic and strategic-analysis skills, change management and client-facing consulting practice.",
+      "keyFocus": "management consulting, strategic analysis, diagnostic methods, change management, client management",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Management Consultant",
+        "Business Analyst",
+        "Strategy Advisor",
+        "Process Improvement Consultant",
+        "Independent Consultant"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:project-management": {
+      "overview": "A master's degree in project management, covering planning, execution, monitoring, risk management and agile methodologies.",
+      "keyFocus": "project planning, execution and monitoring, risk management, agile methodologies, project leadership",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Project Manager",
+        "Programme Manager",
+        "PMO Specialist",
+        "Agile Coach",
+        "Project Coordinator"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:marketing-and-brand-management": {
+      "overview": "A master's degree in marketing and brand management, covering brand strategy, brand equity, integrated marketing communications and digital branding.",
+      "keyFocus": "brand strategy, brand equity, integrated marketing communications, digital branding, marketing management",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "Companies, agencies and public institutions"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Brand Manager",
+        "Marketing Manager",
+        "Brand Strategy Consultant",
+        "Digital Marketing Manager",
+        "Marketing Communications Manager"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
+      ]
+    },
+    "3:master:mobile-and-web-technologies": {
+      "overview": "A master's degree in mobile and web technologies, covering full-stack development, progressive web apps, mobile frameworks and cloud deployment.",
+      "keyFocus": "full-stack development, progressive web apps, mobile frameworks, cloud deployment, DevOps",
+      "duration": "Full-time (1–1.5 years); 1 year for same-field graduates, 1.5 years otherwise",
+      "partners": [
+        "IT companies and UE-Varna's business network"
+      ],
+      "highlights": [
+        "Erasmus+ mobility at partner universities across Europe",
+        "Applied, project-based learning with real business cases",
+        "Finish with a thesis defence or comprehensive state exam"
+      ],
+      "careers": [
+        "Full-stack Developer",
+        "Mobile App Developer",
+        "Cloud Engineer",
+        "Web Technologies Specialist",
+        "Technical Lead"
+      ],
+      "admissionNotes": [
+        "Taught in Bulgarian",
+        "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
       ]
     }
   }

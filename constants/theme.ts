@@ -3,8 +3,6 @@
  * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */
 
-import { Platform } from 'react-native';
-
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
@@ -27,27 +25,29 @@ export const Colors = {
   },
 };
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+/** App brand accent, used for highlights, chevrons and the tab bar. */
+export const Brand = {
+  primary: '#810B38',
+  primaryDark: '#6A2E36',
+};
+
+/**
+ * The extended runtime palette layered on top of {@link Colors}. This is the
+ * single source of truth for surface/border/text-secondary/overlay tokens;
+ * `useAppTheme` returns the result of this builder.
+ */
+export function getAppPalette(isDark: boolean) {
+  const base = Colors[isDark ? 'dark' : 'light'];
+
+  return {
+    ...base,
+    surface: isDark ? '#171a21' : '#ffffff',
+    mutedSurface: isDark ? '#222733' : '#f1f5f9',
+    border: isDark ? '#2a303c' : '#e6e9ee',
+    softBorder: isDark ? '#394150' : '#f1f5f9',
+    textSecondary: isDark ? '#cbd5e1' : '#64748b',
+    textMuted: '#94a3b8',
+    heroOverlay: isDark ? 'rgba(0,0,0,0.58)' : 'rgba(0,0,0,0.45)',
+    cardShadow: '#000',
+  };
+}

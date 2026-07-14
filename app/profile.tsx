@@ -7,17 +7,19 @@ import {
   ActivityIndicator,
   Alert,
 } from 'react-native';
+import type { User } from '@supabase/supabase-js';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
-import { supabase } from '../lib/supabase';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
-import { ensureProfileRecord } from '../lib/auth';
+import { ensureProfileRecord, getCurrentUser } from '@/lib/auth';
+import { updateProfileFullName } from '@/lib/profile';
+import type { Profile } from '@/types/profile';
 
 export default function ProfileScreen() {
   const { t } = useTranslation();
-  const [authUser, setAuthUser] = useState<any>(null);
-  const [, setUser] = useState<any>(null);
+  const [authUser, setAuthUser] = useState<User | null>(null);
+  const [, setUser] = useState<Profile | null>(null);
   const [editedName, setEditedName] = useState('');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -25,9 +27,7 @@ export default function ProfileScreen() {
   useEffect(() => {
     (async () => {
       try {
-        const {
-          data: { user: au },
-        } = await supabase.auth.getUser();
+        const au = await getCurrentUser();
         setAuthUser(au);
         if (au) {
           const data = await ensureProfileRecord(au.id);
@@ -50,16 +50,13 @@ export default function ProfileScreen() {
     if (!editedName.trim()) return Alert.alert(t('profile.errorTitle'), t('profile.nameRequired'));
     setSaving(true);
     try {
-      const { error } = await supabase
-        .from('profiles')
-        .update({ full_name: editedName.trim() })
-        .eq('id', authUser.id);
-      if (error) throw error;
-      setUser((p: any) => ({ ...p, full_name: editedName.trim() }));
+      await updateProfileFullName(authUser.id, editedName.trim());
+      setUser((p) => (p ? { ...p, full_name: editedName.trim() } : p));
       Alert.alert(t('profile.savedTitle'));
-    } catch (err: any) {
+    } catch (err) {
       console.error(err);
-      Alert.alert(t('profile.errorTitle'), err.message || t('profile.failedToSave'));
+      const message = err instanceof Error ? err.message : t('profile.failedToSave');
+      Alert.alert(t('profile.errorTitle'), message);
     } finally {
       setSaving(false);
     }

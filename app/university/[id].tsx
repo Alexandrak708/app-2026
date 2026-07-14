@@ -11,8 +11,8 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { buildUniversities } from "./university-data";
-import { useFavourites } from "@/contexts/FavouritesContext";
+import { buildUniversities } from "@/data/university-data";
+import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 function StarRating({ rating }: { rating: number }) {
@@ -388,8 +388,8 @@ export default function UniversityPage() {
                   <StatCard value={sv.internationalPartners} label={t("universityStats.internationalPartners")} icon="globe-outline" />
                   <StatCard value={sv.countries} label={t("universityStats.fromCountries", { count: parseInt(sv.countries) || 0 })} icon="flag-outline" />
                   <StatCard value={sv.studentsGraduated} label={t("universityStats.studentsGraduated")} icon="people-outline" />
-                  <StatCard value={sv.labs} label={t("universityStats.labs")} icon="flask-outline" />
-                  <StatCard value={sv.tuitionFreeLabel} label={t("universityStats.tuitionFree")} icon="cash-outline" />
+                  <StatCard value={sv.labs} label={sv.labsText || t("universityStats.labs")} icon="flask-outline" />
+                  <StatCard value={sv.tuitionFreeLabel} label={sv.tuitionFreeText || t("universityStats.tuitionFree")} icon="cash-outline" />
                 </View>
               </SectionCard>
             );

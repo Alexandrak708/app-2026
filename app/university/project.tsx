@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next"; // 👈 ADDED
 import {
   getProgramSummaries,
   getUniversityName,
-} from "./university-programs";
+} from "@/data/university-programs";
 import { useAppTheme } from "@/hooks/use-theme-color";
 
 function ProgramRow({
@@ -238,8 +238,7 @@ export default function ProgramsPage() {
             tuition={program.tuition}
             faculty={program.faculty}
             index={index}
-            textOnly={activeUniversityId === "3"}
-            onPress={activeUniversityId === "3" ? undefined : () => openProgram(program.slug)}
+            onPress={() => openProgram(program.slug)}
           />
         ))}
 
