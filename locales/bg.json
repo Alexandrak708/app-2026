@@ -261,14 +261,16 @@
       "tuitionFreeLabel": "€0"
     },
     "3": {
-      "yearsTradition": "",
-      "bachelorPrograms": "",
-      "masterPrograms": "",
-      "internationalPartners": "",
-      "countries": "",
-      "studentsGraduated": "",
-      "labs": "",
-      "tuitionFreeLabel": ""
+      "yearsTradition": "105+",
+      "bachelorPrograms": "28",
+      "masterPrograms": "29",
+      "internationalPartners": "190+",
+      "countries": "45",
+      "studentsGraduated": "155K+",
+      "labs": "110+",
+      "labsText": "Учебни зали",
+      "tuitionFreeLabel": "€245",
+      "tuitionFreeText": "Най-ниска семестриална такса"
     }
   },
   "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
@@ -311,20 +313,20 @@
     ],
     "3": [
       {
-        "range": "",
-        "label": ""
+        "range": "€245",
+        "label": "Държавна субсидия (ЕС)"
       },
       {
-        "range": "",
-        "label": ""
+        "range": "€553-€1,045",
+        "label": "Платено редовно (ЕС)"
       },
       {
-        "range": "",
-        "label": ""
+        "range": "€440-€568",
+        "label": "Дистанционно обучение"
       },
       {
-        "range": "",
-        "label": ""
+        "range": "€1,350-€1,500",
+        "label": "Международни (извън ЕС)"
       }
     ]
   },
@@ -404,47 +406,47 @@
     "mu_dormitories": "Студентски общежития на достъпни цени за чуждестранни студенти",
     "mu_languagePrep": "Подготвителни езикови курсове по български и английски (9 месеца, €5,000)",
     "mu_recognition": "Услуга за признаване на дипломи чрез Министерството на образованието и науката",
-    "ue_scholarships": "",
-    "ue_scholarshipsDesc": "",
-    "ue_excellentScholarships": "",
-    "ue_erasmusGrants": "",
-    "ue_socialScholarships": "",
-    "ue_doctoralScholarships": "",
-    "ue_applicationInfo": "",
-    "ue_applicationDesc": "",
-    "ue_appEarly": "",
-    "ue_appDocuments": "",
-    "ue_appOnline": "",
-    "ue_appMainRound": "",
-    "ue_appFees": "",
-    "ue_appExams": "",
-    "ue_appInternational": "",
-    "ue_masterFees": "",
-    "ue_masterFeesDesc": "",
-    "ue_masterRegular": "",
-    "ue_masterEnglish": "",
-    "ue_masterDistance": "",
-    "ue_openDoors": "",
-    "ue_openDoorsDesc": "",
-    "ue_businessAccelerator": "",
-    "ue_careerCentre": "",
-    "ue_uebn": "",
-    "ue_alumni": "",
-    "ue_partners": "",
-    "ue_partnersDesc": "",
-    "ue_erasmusPartners": "",
-    "ue_dukenet": "",
-    "ue_businet": "",
-    "ue_ceepus": "",
-    "ue_doubleDegrees": "",
-    "ue_magellan": "",
-    "ue_internationalStudents": "",
-    "ue_internationalDesc": "",
-    "ue_visaSupport": "",
-    "ue_dormitories": "",
-    "ue_languageCourses": "",
-    "ue_recognition": "",
-    "ue_internationalOffice": ""
+    "ue_scholarships": "Стипендии и финансиране в ИУ – Варна",
+    "ue_scholarshipsDesc": "Студентите в ИУ – Варна могат да ползват държавни стипендии за успех, грантове за мобилност и подкрепа за нуждаещи се:",
+    "ue_excellentScholarships": "Стипендии за успех от държавния бюджет за редовни студенти с високи академични резултати (много добър успех и над него)",
+    "ue_erasmusGrants": "Грантове за мобилност по Еразъм+ за обучение (мин. 3 месеца) или практика (мин. 2 месеца) в партньорски университети, без такси в чужбина и с месечна издръжка за живот и пътни",
+    "ue_socialScholarships": "Социални стипендии за студенти от семейства с ниски доходи и специални категории",
+    "ue_doctoralScholarships": "Държавни стипендии за редовни докторанти по икономика, управление и информатика",
+    "ue_applicationInfo": "Прием (Бакалавър 2026/2027)",
+    "ue_applicationDesc": "Приемът за български кандидати и такива от ЕС/ЕИП е състезателен, въз основа на резултатите от средното образование; документи се приемат от 1 май до 30 септември.",
+    "ue_appEarly": "Класирането за държавна субсидия приключва в края на юни, а резултатите се обявяват в края на юли",
+    "ue_appDocuments": "Необходими: диплома за средно образование и приложение, копие на лична карта/паспорт, формуляр за кандидатстване, мотивационно писмо и снимки",
+    "ue_appOnline": "Кандидатстване онлайн през платформата за прием на ИУ – Варна или присъствено в Информационния център (бул. „Княз Борис I“ №77, Варна)",
+    "ue_appMainRound": "Балът се формира от средния успех от дипломата, оценките по български език и математика, плюс една избираема матура (или удвоена оценка по математика)",
+    "ue_appFees": "Кандидатите извън ЕС подават документи чрез Отдела за чуждестранни студенти с легализирани, преведени дипломи и удостоверение за признаване от НАЦИД",
+    "ue_appExams": "Програмите на английски или руски език изискват сертификат за ниво B2; някои програми може да включват интервю",
+    "ue_appInternational": "Кандидати извън ЕС: подават документи до 30 септември и се обучават платено (€1 350 – €1 500 на семестър)",
+    "ue_masterFees": "Магистърски такси (2025/2026)",
+    "ue_masterFeesDesc": "Семестриалните магистърски такси в ИУ – Варна варират според професионалното направление и формата на обучение:",
+    "ue_masterRegular": "Държавно субсидирани програми: от €416 до €598 на семестър според професионалното направление",
+    "ue_masterEnglish": "Програми на английски език (напр. „Дигитални иновации и междукултурен бизнес“): €1 000 на семестър",
+    "ue_masterDistance": "Задочно / дистанционно обучение: €440 – €713 на семестър; международни студенти (извън ЕС) €1 600/година (€800 за лица с двойно българско гражданство)",
+    "ue_openDoors": "Кариера, бизнес и практика",
+    "ue_openDoorsDesc": "ИУ – Варна свързва обучението с практиката чрез кариерни услуги, бизнес партньорства и студентски инициативи:",
+    "ue_businessAccelerator": "Бизнес инкубатор и подкрепа за предприемачество, които помагат на студентите да разработят и стартират стартъп проекти",
+    "ue_careerCentre": "Кариерен център, който организира форуми за работа, срещи с работодатели и стажове във водещи компании",
+    "ue_uebn": "Сътрудничество университет–бизнес с над 1 800 корпоративни и публични партньори във финанси, ИТ, търговия и туризъм",
+    "ue_alumni": "Активна общност на завършилите от над 155 000 възпитаници в България и чужбина",
+    "ue_partners": "Международни партньори и мрежи",
+    "ue_partnersDesc": "ИУ – Варна си сътрудничи с близо 190 университета и 258 институции от 45 държави:",
+    "ue_erasmusPartners": "Партньорски университети по Еразъм+ в ЕС, Турция и Северна Македония за студентски и преподавателски обмен",
+    "ue_dukenet": "Член на DukeNET – международна мрежа на бизнес и икономически университети",
+    "ue_businet": "Член на BusiNET – европейска мрежа за бизнес образование и приложни изследвания",
+    "ue_ceepus": "Участие в CEEPUS – Централноевропейската програма за обмен в университетското образование",
+    "ue_doubleDegrees": "Програми за двойна диплома и съвместни програми с избрани европейски партньорски университети",
+    "ue_magellan": "Член на мрежата Magellan Exchange за международна мобилност на студенти по бизнес",
+    "ue_internationalStudents": "Чуждестранни студенти в ИУ – Варна",
+    "ue_internationalDesc": "ИУ – Варна приема над 300 чуждестранни студенти от над 50 държави с подкрепата на специализиран Отдел за чуждестранни студенти:",
+    "ue_visaSupport": "Помощ за визи и разрешения за пребиваване за студенти извън ЕС (foreign_students@ue-varna.bg)",
+    "ue_dormitories": "Студентски общежития и кампус до Морската градина на достъпни цени",
+    "ue_languageCourses": "Подготвителен курс по български език за кандидати за програми на български език",
+    "ue_recognition": "Признаване на дипломи чрез НАЦИД за кандидати с чуждестранни дипломи за средно образование",
+    "ue_internationalOffice": "Отдел „Международни отношения“, който координира Еразъм+, обмените и входящите студенти (int_relations@ue-varna.bg)"
   },
   "programDetail": {
     "notFound": "Програмата не е намерена",
@@ -483,11 +485,11 @@
     "medical-college": "Медицински колеж - Варна"
   },
   "ue_faculties": {
-    "finance-accounting": "",
-    "business": "",
-    "informatics": "",
-    "management": "",
-    "tourism-college": ""
+    "finance-accounting": "Финансово-счетоводен факултет",
+    "business": "Стопански факултет",
+    "informatics": "Факултет по информатика",
+    "management": "Факултет по управление",
+    "tourism-college": "Колеж по туризъм – Варна"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -859,120 +861,216 @@
   },
   "ue_programInfo": {
     "hotel-and-restaurant-management": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "tourism-college"
     },
     "tourism-and-entertainment-business-management": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "tourism-college"
     },
     "business-and-management-in-english": {
-      "tuition": "",
+      "tuition": "280.00 €",
       "facultyKey": "business"
     },
     "business-economics": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "economics-and-trade": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "construction-business-and-entrepreneurship": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "real-estate-and-investments": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "industrial-business-and-entrepreneurship": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "logistics": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "agricultural-businesses": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "commodities-science-and-customs-activity": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "business"
     },
     "business-digital-technologies": {
-      "tuition": "",
+      "tuition": "300.00 €",
       "facultyKey": "informatics"
     },
     "informatics-and-computer-sciences": {
-      "tuition": "",
+      "tuition": "300.00 €",
       "facultyKey": "informatics"
     },
     "mobile-and-web-technologies": {
-      "tuition": "",
+      "tuition": "300.00 €",
       "facultyKey": "informatics"
     },
     "data-science": {
-      "tuition": "",
+      "tuition": "300.00 €",
       "facultyKey": "informatics"
     },
     "international-business-in-english": {
-      "tuition": "",
+      "tuition": "280.00 €",
       "facultyKey": "management"
     },
     "maritime-business-and-international-trade-in-english": {
-      "tuition": "",
+      "tuition": "280.00 €",
       "facultyKey": "management"
     },
     "international-tourism-in-russian": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "marketing": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "international-economic-relations": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "management": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "public-administration": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "tourism": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "judicial-administration": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "digital-media-and-pr": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "management"
     },
     "accounting-in-english": {
-      "tuition": "",
+      "tuition": "280.00 €",
       "facultyKey": "finance-accounting"
     },
     "accounting-and-audit": {
-      "tuition": "",
+      "tuition": "245.00 €",
+      "facultyKey": "finance-accounting"
+    },
+    "finance": {
+      "tuition": "245.00 €",
       "facultyKey": "finance-accounting"
     },
     "accounting-and-finance": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "finance-accounting"
     },
     "banking-and-insurance": {
-      "tuition": "",
+      "tuition": "245.00 €",
       "facultyKey": "finance-accounting"
+    },
+    "intercultural-business-in-english": {
+      "tuition": "1000.00 €",
+      "facultyKey": "management"
+    },
+    "international-business-and-management-in-english": {
+      "tuition": "1000.00 €",
+      "facultyKey": "management"
+    },
+    "master-of-business-administration-in-english": {
+      "tuition": "1000.00 €",
+      "facultyKey": "management"
+    },
+    "computer-science-in-english": {
+      "tuition": "1000.00 €",
+      "facultyKey": "informatics"
+    },
+    "accounting-and-auditing-control": {
+      "tuition": "568.00 €",
+      "facultyKey": "finance-accounting"
+    },
+    "bank-management": {
+      "tuition": "568.00 €",
+      "facultyKey": "finance-accounting"
+    },
+    "finance-and-innovations": {
+      "tuition": "568.00 €",
+      "facultyKey": "finance-accounting"
+    },
+    "corporate-business-and-governance-management": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "logistics-management": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "global-commercial-business": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "civil-engineering-entrepreneurship-and-real-estate": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "eco-economics": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "agricultural-business": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "quality-and-expert-examination-of-commodities": {
+      "tuition": "568.00 €",
+      "facultyKey": "business"
+    },
+    "sales-management-and-merchandising": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "advertising-and-media-communications": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "management-of-organizations": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "human-resources-management": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "public-management-and-administrative-power": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "business-consulting": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "project-management": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "marketing-and-brand-management": {
+      "tuition": "555.00 €",
+      "facultyKey": "management"
+    },
+    "international-tourist-business": {
+      "tuition": "603.00 €",
+      "facultyKey": "management"
     }
   },
   "universities": {
@@ -997,14 +1095,14 @@
       "applyUrl": "https://www.mu-varna.bg"
     },
     "3": {
-      "name": "",
-      "description": "",
-      "longDescription": "",
-      "location": "",
-      "degree": "",
-      "tuitionRange": "",
-      "website": "",
-      "applyUrl": ""
+      "name": "Икономически университет – Варна",
+      "description": "Най-старият специализиран икономически университет в България с програми по бизнес, финанси, ИТ, мениджмънт и туризъм на брега на Черно море.",
+      "longDescription": "Икономическият университет – Варна (ИУ – Варна) е един от най-старите и престижни висши икономически училища в България, основан на 14 май 1920 г. като Висше търговско училище. Той е вторият създаден в България университет с икономическа насоченост и символ на град Варна — централната му сграда е паметник на културата до Морската градина и е удостоена с наградата „Сграда на годината“ през 2015 г. Университетът е акредитиран от Националната агенция за оценяване и акредитация (НАОА) и е единственото българско висше училище, сертифицирано със знака за качество на програма „Европейски корпус за солидарност“. Присъства в класацията Times Higher Education World University Impact Rankings.\n\nУниверситетът е организиран в 4 факултета — „Финанси и счетоводство“, „Икономика“, „Информатика“ (Информационни технологии) и „Управление“ — заедно с Колеж по туризъм – Варна и Департамент по езиково обучение. Предлага 28 бакалавърски програми (23 на български, 3 на английски и 1 на руски език), 29 магистърски програми (25 на български, 4 на английски език), 16 докторски програми и над 20 следдипломни квалификационни програми.\n\nДнес ИУ – Варна има над 7 500 български и чуждестранни студенти, обучавани от над 230 щатни преподаватели, включително над 100 професори и доценти. Кампусът разполага с над 110 учебни и научни зали, аула с 600 места и библиотека с над 350 000 тома. Над 155 000 икономисти и специалисти са завършили университета през вековната му история.\n\nУниверситетът поддържа широка международна мрежа от близо 190 партньорски университета и сътрудничество с 258 институции от 45 държави чрез Еразъм+, CEEPUS, DukeNET, BusiNET, Magellan Exchange и Норвежкия финансов механизъм, и работи с над 1 800 корпоративни и публични партньори. Ректор: проф. д-р Евгени Станимиров.",
+      "location": "Варна, България",
+      "degree": "Бакалавър/Магистър",
+      "tuitionRange": "245 € - 1500 € / на семестър",
+      "website": "https://www.ue-varna.bg",
+      "applyUrl": "https://ue-varna.bg/en/p/7742/admission"
     },
     "4": {
       "name": "Военноморски университет",
@@ -1086,28 +1184,28 @@
       ]
     },
     "3": {
-      "name": "",
-      "focus": "",
-      "style": "",
+      "name": "Икономически университет – Варна",
+      "focus": "икономика, финанси, счетоводство, мениджмънт, маркетинг, бизнес, информатика, наука за данните и туризъм",
+      "style": "приложно бизнес обучение, реални фирмени казуси, стажове при корпоративни партньори, международен обмен по Еразъм+ и мрежата Magellan, и кариерен център със силни връзки с работодатели",
       "careers": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Икономист / Финансов анализатор",
+        "Счетоводител / Одитор",
+        "Мениджър / Бизнес администратор",
+        "Специалист по маркетинг и бранд",
+        "Специалист по банково дело и застраховане",
+        "ИТ, софтуерен и data специалист",
+        "Мениджър в туризма и хотелиерството",
+        "Специалист по логистика и вериги на доставки",
+        "Предприемач / Бизнес консултант"
       ],
       "admissionNotes": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Приемът за български кандидати и такива от ЕС/ЕИП е по състезателен бал от дипломата за средно образование (среден успех, оценки по български език и математика, плюс една избираема матура)",
+        "Програмите на английски или руски език изискват сертификат за ниво B2",
+        "Документи за кандидатстване се приемат от 1 май до 30 септември; класирането за държавна субсидия приключва в края на юни, а резултатите излизат в края на юли",
+        "Необходими документи: диплома за средно образование и приложение, лична карта/паспорт, формуляр за кандидатстване, мотивационно писмо и снимки (удостоверение за признаване от НАЦИД за чуждестранни дипломи)",
+        "Кандидатите извън ЕС подават документи чрез Отдела за чуждестранни студенти (foreign_students@ue-varna.bg) с легализирани, преведени дипломи",
+        "Онлайн и присъствено кандидатстване през платформата за прием на университета",
+        "Някои специализирани програми или такива на английски език може да включват интервю или входящ тест"
       ]
     },
     "4": {
@@ -1332,57 +1430,57 @@
     "nursing-management": "Управление на сестринските грижи",
     "health-information-technology": "Здравни информационни технологии",
     "___university_3": "",
-    "hotel-and-restaurant-management": "",
-    "tourism-and-entertainment-business-management": "",
-    "business-and-management-in-english": "",
-    "business-economics": "",
-    "economics-and-trade": "",
-    "construction-business-and-entrepreneurship": "",
-    "real-estate-and-investments": "",
-    "industrial-business-and-entrepreneurship": "",
-    "logistics": "",
-    "agricultural-businesses": "",
-    "commodities-science-and-customs-activity": "",
-    "business-digital-technologies": "",
-    "informatics-and-computer-sciences": "",
-    "mobile-and-web-technologies": "",
-    "data-science": "",
-    "international-business-in-english": "",
-    "maritime-business-and-international-trade-in-english": "",
-    "international-tourism-in-russian": "",
-    "marketing": "",
-    "international-economic-relations": "",
-    "management": "",
-    "tourism": "",
-    "judicial-administration": "",
-    "digital-media-and-pr": "",
-    "accounting-in-english": "",
-    "accounting-and-audit": "",
-    "accounting-and-finance": "",
-    "banking-and-insurance": "",
-    "intercultural-business-in-english": "",
-    "international-business-and-management-in-english": "",
-    "master-of-business-administration-in-english": "",
-    "computer-science-in-english": "",
-    "accounting-and-auditing-control": "",
-    "bank-management": "",
-    "finance-and-innovations": "",
-    "corporate-business-and-governance-management": "",
-    "logistics-management": "",
-    "global-commercial-business": "",
-    "civil-engineering-entrepreneurship-and-real-estate": "",
-    "eco-economics": "",
-    "agricultural-business": "",
-    "quality-and-expert-examination-of-commodities": "",
-    "sales-management-and-merchandising": "",
-    "advertising-and-media-communications": "",
-    "management-of-organizations": "",
-    "human-resources-management": "",
-    "public-management-and-administrative-power": "",
-    "international-tourist-business": "",
-    "business-consulting": "",
-    "project-management": "",
-    "marketing-and-brand-management": "",
+    "hotel-and-restaurant-management": "Хотелиерски и ресторантьорски мениджмънт",
+    "tourism-and-entertainment-business-management": "Мениджмънт на туризма и развлекателния бизнес",
+    "business-and-management-in-english": "Бизнес и мениджмънт (на английски език)",
+    "business-economics": "Бизнес икономика",
+    "economics-and-trade": "Икономика и търговия",
+    "construction-business-and-entrepreneurship": "Строителен бизнес и предприемачество",
+    "real-estate-and-investments": "Недвижими имоти и инвестиции",
+    "industrial-business-and-entrepreneurship": "Индустриален бизнес и предприемачество",
+    "logistics": "Логистика",
+    "agricultural-businesses": "Аграрен бизнес",
+    "commodities-science-and-customs-activity": "Стокознание и митническа дейност",
+    "business-digital-technologies": "Бизнес дигитални технологии",
+    "informatics-and-computer-sciences": "Информатика и компютърни науки",
+    "mobile-and-web-technologies": "Мобилни и уеб технологии",
+    "data-science": "Наука за данните",
+    "international-business-in-english": "Международен бизнес (на английски език)",
+    "maritime-business-and-international-trade-in-english": "Морски бизнес и международна търговия (на английски език)",
+    "international-tourism-in-russian": "Международен туризъм (на руски език)",
+    "marketing": "Маркетинг",
+    "international-economic-relations": "Международни икономически отношения",
+    "management": "Мениджмънт",
+    "tourism": "Туризъм",
+    "judicial-administration": "Съдебна администрация",
+    "digital-media-and-pr": "Дигитални медии и връзки с обществеността",
+    "accounting-in-english": "Счетоводство (на английски език)",
+    "accounting-and-audit": "Счетоводство и одит",
+    "accounting-and-finance": "Счетоводство и финанси",
+    "banking-and-insurance": "Банково дело и застраховане",
+    "intercultural-business-in-english": "Междукултурен бизнес (на английски език)",
+    "international-business-and-management-in-english": "Международен бизнес и мениджмънт (на английски език)",
+    "master-of-business-administration-in-english": "Магистър по бизнес администрация (на английски език)",
+    "computer-science-in-english": "Компютърни науки (на английски език)",
+    "accounting-and-auditing-control": "Счетоводство и одит/контрол",
+    "bank-management": "Банков мениджмънт",
+    "finance-and-innovations": "Финанси и иновации",
+    "corporate-business-and-governance-management": "Корпоративен бизнес и управление",
+    "logistics-management": "Логистичен мениджмънт",
+    "global-commercial-business": "Глобален търговски бизнес",
+    "civil-engineering-entrepreneurship-and-real-estate": "Строително предприемачество и недвижими имоти",
+    "eco-economics": "Екоикономика",
+    "agricultural-business": "Аграрен бизнес",
+    "quality-and-expert-examination-of-commodities": "Качество и експертиза на стоките",
+    "sales-management-and-merchandising": "Мениджмънт на продажбите и мърчандайзинг",
+    "advertising-and-media-communications": "Реклама и медийни комуникации",
+    "management-of-organizations": "Управление на организации",
+    "human-resources-management": "Управление на човешките ресурси",
+    "public-management-and-administrative-power": "Публичен мениджмънт и административна власт",
+    "international-tourist-business": "Международен туристически бизнес",
+    "business-consulting": "Бизнес консултиране",
+    "project-management": "Управление на проекти",
+    "marketing-and-brand-management": "Маркетинг и бранд мениджмънт",
     "___university_4": "Университет 4 — Военноморски / Морски университет",
     "cybersecurity": "Киберсигурност",
     "information-and-communication-technologies": "Информационни и комуникационни технологии",
@@ -1399,7 +1497,7 @@
     "international-business": "Международен бизнес",
     "business-administration": "Бизнес администрация",
     "international-relations": "Международни отношения",
-    "public-administration": "",
+    "public-administration": "Публична администрация",
     "european-studies": "Европейски изследвания",
     "___university_6": "Университет 6 — Университет по мениджмънт (VUM)",
     "software-engineering": "Софтуерно инженерство",
@@ -1414,7 +1512,8 @@
     "pedagogy-of-teaching-in-economics-and-management": "Педагогика на преподаването в икономиката и мениджмънта",
     "master-in-international-tourism": "Магистър в международен туризъм",
     "master-in-international-tourism-distance-learning-program": "Магистър в международен туризъм - Програма за дистанционно обучение",
-    "master-of-business-administration": "Магистър по бизнес администрация"
+    "master-of-business-administration": "Магистър по бизнес администрация",
+    "finance": "Финанси"
   },
   "programOverrides": {
     "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
@@ -3674,96 +3773,6 @@
         "Професионален опит в здравеопазването"
       ]
     },
-    "3:bachelor:economics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:finance": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:marketing": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "studyMode": "",
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:hotel-and-restaurant-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:informatics-and-computer-sciences": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
     "4:bachelor:navigation": {
       "overview": "Edit this overview.",
       "keyFocus": "Edit this key focus.",
@@ -4122,756 +4131,6 @@
         "Edit this admission note."
       ]
     },
-    "3:bachelor:tourism-and-entertainment-business-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:business-and-management-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:business-economics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:economics-and-trade": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:construction-business-and-entrepreneurship": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:real-estate-and-investments": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:industrial-business-and-entrepreneurship": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:logistics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:agricultural-businesses": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:commodities-science-and-customs-activity": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:business-digital-technologies": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:mobile-and-web-technologies": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:data-science": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:international-business-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:maritime-business-and-international-trade-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:international-tourism-in-russian": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:international-economic-relations": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:public-administration": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:tourism": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:judicial-administration": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:digital-media-and-pr": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting-and-audit": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:accounting-and-finance": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:bachelor:banking-and-insurance": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:intercultural-business-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:international-business-and-management-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:master-of-business-administration-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:computer-science-in-english": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:accounting-and-auditing-control": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:bank-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:finance-and-innovations": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:corporate-business-and-governance-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:logistics-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:global-commercial-business": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:civil-engineering-entrepreneurship-and-real-estate": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:eco-economics": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:agricultural-business": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:quality-and-expert-examination-of-commodities": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:sales-management-and-merchandising": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:advertising-and-media-communications": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:management-of-organizations": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:human-resources-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:public-management-and-administrative-power": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:international-tourist-business": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:business-consulting": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:project-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:marketing-and-brand-management": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
-    "3:master:mobile-and-web-technologies": {
-      "overview": "",
-      "keyFocus": "",
-      "duration": "",
-      "partners": [],
-      "highlights": [
-        ""
-      ],
-      "careers": [
-        ""
-      ],
-      "admissionNotes": [
-        ""
-      ]
-    },
     "4:bachelor:navigation-ship-maneuvering": {
       "overview": "���������� ���� ������� �� Navigation (Ship Maneuvering).",
       "keyFocus": "���������� ������ ����� �� Navigation (Ship Maneuvering).",
@@ -4930,6 +4189,1348 @@
       ],
       "admissionNotes": [
         "������������ ���� ��������� �� �����."
+      ]
+    },
+    "3:bachelor:hotel-and-restaurant-management": {
+      "overview": "Професионална бакалавърска програма в Колежа по туризъм, която дава теоретична и практическа подготовка по туризъм, управление на гостоприемството, туристически маркетинг и управление на човешките ресурси, за да подготви студентите да ръководят екипи в хотели, ресторанти и заведения за хранене.",
+      "keyFocus": "технология на хотелиерското и ресторантьорското обслужване, барово обслужване, туристически маркетинг, човешки ресурси в туризма, счетоводство в туризма",
+      "duration": "Професионален бакалавър, редовно (3 години / 6 семестъра)",
+      "partners": [
+        "Колеж по туризъм – Варна",
+        "Обмен по Еразъм+ и CEEPUS"
+      ],
+      "highlights": [
+        "Практическо обучение под наставничество в ресторанти, хотели и барове, плюс летни стажове",
+        "Многоезиково обучение (първи и втори чужд език — английски, немски, френски, руски)",
+        "Курсове по дигитални технологии и обслужване на клиенти в гостоприемството"
+      ],
+      "careers": [
+        "Хотелски мениджър",
+        "Ресторантьорски мениджър",
+        "Мениджър рецепция",
+        "Кухненски мениджър",
+        "Предприемач в гостоприемството"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование"
+      ]
+    },
+    "3:bachelor:tourism-and-entertainment-business-management": {
+      "overview": "Професионална бакалавърска програма в Колежа по туризъм, обхващаща управление на туризма, развлекателната индустрия и индустрията за свободно време, дейността на туристически агенции и транспорт, и управление на събития.",
+      "keyFocus": "управление на туризма, развлекателна индустрия и индустрия за свободно време, туристически агенции и транспорт, туристически маркетинг, управление на събития",
+      "duration": "Професионален бакалавър, редовно (3 години / 6 семестъра)",
+      "partners": [
+        "Колеж по туризъм – Варна",
+        "Туристически агенции и развлекателни обекти"
+      ],
+      "highlights": [
+        "Практическо обучение по екскурзоводство, развлекателен бизнес и туристически агенции",
+        "Летни стажове",
+        "Умения по дигитални технологии, междукултурна комуникация и управление на събития"
+      ],
+      "careers": [
+        "Мениджър в туризма",
+        "Мениджър събития и развлечения",
+        "Специалист в туристическа агенция",
+        "Координатор в индустрията за свободно време",
+        "Предприемач в туризма"
+      ],
+      "admissionNotes": [
+        "Обучение на български език (с английски и немски или руски)",
+        "Прием по състезателен бал от дипломата за средно образование"
+      ]
+    },
+    "3:bachelor:business-and-management-in-english": {
+      "overview": "Изцяло преподавана на английски език бакалавърска програма с широка бизнес учебна програма, свързваща теорията с практиката чрез реални казуси и съвместни проекти.",
+      "keyFocus": "основи на бизнеса, стартъпи и иновации, управление на операциите, маркетингови стратегии, финансово и инвестиционно управление, бизнес анализ",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Над 250 партньорски университета по Еразъм+"
+      ],
+      "highlights": [
+        "Обучение изцяло на английски език",
+        "Един или два семестъра обучение в чужбина с подкрепа по Еразъм+",
+        "Практическо обучение в 6-и семестър",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Бизнес анализатор",
+        "Управленски консултант",
+        "Предприемач / собственик на малък бизнес",
+        "Специалист човешки ресурси",
+        "Маркетинг мениджър",
+        "Финансов анализатор",
+        "Мениджър операции"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език (изисква се сертификат ниво B2)",
+        "Прием по диплома за кандидати от ЕС и чужбина"
+      ]
+    },
+    "3:bachelor:construction-business-and-entrepreneurship": {
+      "overview": "Програма на катедра „Бизнес, инвестиции, недвижими имоти“, която съчетава икономика на строителния сектор с предприемачество, управление на инвестиции и развитие на недвижими имоти.",
+      "keyFocus": "основи на строителния бизнес, управление на инвестициите в реални активи, ценообразуване в инвестиционния процес, логистика в строителството, иновации в строителството, предприемачество",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Строителни, инвестиционни и имотни компании"
+      ],
+      "highlights": [
+        "Практическо обучение в 6-и семестър",
+        "Избираеми дисциплини по устойчиво строителство и софтуер за управление на инвестиционни проекти",
+        "Чуждоезиково обучение (английски, немски, френски, руски, португалски)",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър строителен бизнес",
+        "Инвеститор в недвижими имоти",
+        "Ръководител инвестиционни проекти",
+        "Предприемач в строителството",
+        "Специалист инвестиции в имоти"
+      ],
+      "admissionNotes": [
+        "Обучение на български език (с англоезичен модул за чуждестранни студенти)",
+        "Прием по състезателен бал от дипломата за средно образование"
+      ]
+    },
+    "3:bachelor:international-business-in-english": {
+      "overview": "Редовна бакалавърска програма на английски език по международен бизнес, която изгражда теоретични основи и практически умения за глобалната бизнес среда, с производствен стаж в трети курс в международни компании.",
+      "keyFocus": "международна икономика и транснационални корпорации, международен маркетингов мениджмънт, международно управление на човешките ресурси и качеството, международна търговска политика, право на ЕС и международно право",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Мрежите Еразъм+, CEEPUS, DukeNet и BusiNet"
+      ],
+      "highlights": [
+        "Обучение изцяло на английски език",
+        "Производствен стаж в трети курс в международни компании",
+        "Участие в мрежите Еразъм+, CEEPUS, DukeNet и BusiNet",
+        "Завършване с дипломен проект или комплексен държавен изпит"
+      ],
+      "careers": [
+        "Мениджър в международния бизнес",
+        "Специалист по международен маркетинг",
+        "Аналитичен специалист в международната търговия",
+        "Консултант в корпоративни или държавни организации",
+        "Предприемач"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език (изисква се сертификат ниво B2)",
+        "Прием по диплома за кандидати от ЕС и чужбина"
+      ]
+    },
+    "3:bachelor:maritime-business-and-international-trade-in-english": {
+      "overview": "Цялостна бакалавърска програма на английски език, която подготвя студентите за глобалната морска индустрия, съчетавайки икономика и мениджмънт с морска търговия, морско право и синьо предприемачество.",
+      "keyFocus": "морска икономика, морска търговия, морско право, синьо предприемачество, управление на веригата на доставки, международен бизнес",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "University of Plymouth",
+        "Solent University",
+        "Old Dominion University",
+        "Erasmus University Rotterdam",
+        "World Maritime University"
+      ],
+      "highlights": [
+        "Обучение изцяло на английски език",
+        "Експерти от морския бизнес участват в обучението",
+        "Практическо обучение в 6-и семестър",
+        "Обучение чрез казуси, бизнес симулации и електронна среда"
+      ],
+      "careers": [
+        "Мениджър корабоплаване / логистика",
+        "Мениджър пристанищни операции",
+        "Специалист внос / износ",
+        "Морски анализатор",
+        "Специалист спедиция",
+        "Служител по търговско съответствие",
+        "Консултант морски бизнес"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език (изисква се сертификат ниво B2)",
+        "Прием по диплома за кандидати от ЕС и чужбина"
+      ]
+    },
+    "3:bachelor:accounting-in-english": {
+      "overview": "Редовна бакалавърска програма на английски език по счетоводство, анализ и одит по международни стандарти — първата програма в България, акредитирана едновременно от ACCA и CIMA.",
+      "keyFocus": "финансово счетоводство, управленско счетоводство, одит и заверка, корпоративно данъчно облагане, международни счетоводни стандарти, финансов анализ",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "ACCA",
+        "CIMA"
+      ],
+      "highlights": [
+        "Първата програма в България, акредитирана от ACCA и от CIMA",
+        "До шест освобождавания от изпити на ACCA към професионално членство",
+        "Обучение изцяло на английски език в мултикултурна среда",
+        "67 дисциплини (25 задължителни, 42 избираеми)"
+      ],
+      "careers": [
+        "Счетоводител",
+        "Управленски счетоводител",
+        "Финансов контрольор",
+        "Одитор",
+        "Данъчен специалист",
+        "Финансов анализатор"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език (изисква се сертификат ниво B2)",
+        "Първият випуск започна през септември 2025 г."
+      ]
+    },
+    "3:bachelor:banking-and-insurance": {
+      "overview": "Бакалавърска програма във Финансово-счетоводния факултет, обхващаща банково дело, застраховане, финансови пазари и финансово управление, със силна основа във финансите и риска.",
+      "keyFocus": "финанси, финансови пазари и институции, застраховане, обществено пенсионно осигуряване, финансово управление, управление на риска",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Банки, застрахователи и пенсионни фондове"
+      ],
+      "highlights": [
+        "Специализирани курсове по финансови пазари, застраховане и пенсионно осигуряване",
+        "Избираеми дисциплини по дигитални финанси, управление на риска и банково счетоводство",
+        "Чуждоезиково обучение (английски, немски, френски, руски, португалски)",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Банков служител",
+        "Специалист застраховане",
+        "Анализатор на риска",
+        "Финансов мениджър",
+        "Консултант финансови услуги"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование"
+      ]
+    },
+    "3:master:international-business-and-management-in-english": {
+      "overview": "Магистърска програма на английски език за бъдещи мениджъри, изграждащи международна осведоменост, с учебна програма, възприета от Nottingham Trent University и редовно обновявана с участието на студенти, работодатели и възпитаници.",
+      "keyFocus": "управленска икономика, международна икономика, глобална бизнес среда, международно предприемачество, съвременни международни маркетингови стратегии, международни финанси и стратегическо управление",
+      "duration": "Редовно (1,5 години / 3 семестъра), прием през януари",
+      "partners": [
+        "Nottingham Trent University (учебна програма)"
+      ],
+      "highlights": [
+        "Учебна програма, възприета от Nottingham Trent University",
+        "Интерактивни семинари с казуси, проблемно-базирано обучение и бизнес симулации",
+        "Бизнес проекти с реални компании, които може да доведат до предложения за работа",
+        "Обучение изцяло на английски език"
+      ],
+      "careers": [
+        "Анализатор в международния бизнес",
+        "Маркетинг мениджър",
+        "Ръководител отдел",
+        "Мениджър човешки ресурси",
+        "Специалист внос / износ",
+        "Изпълнителен директор"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език",
+        "Изисква се съответна бакалавърска степен"
+      ]
+    },
+    "3:master:master-of-business-administration-in-english": {
+      "overview": "Магистър по бизнес администрация (MBA) на английски език в направление „Администрация и управление“ (120 кредита), развиващ стратегическо лидерство и задълбочени управленски умения за съвременните бизнес предизвикателства.",
+      "keyFocus": "бизнес стратегия и растеж, управление на човешките ресурси, финансово и корпоративно отчитане, развитие на предприемачеството, дигитална трансформация, обслужващи операции",
+      "duration": "Редовно (1,5 години / 3 семестъра, 120 кредита), прием през януари",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Акцент върху устойчивостта и дигиталните иновации",
+        "Избираеми дисциплини по европейски изследвания, бизнес комуникации и културна политика",
+        "Избираеми чуждоезикови курсове (немски, френски, руски)",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Старши мениджър",
+        "Бизнес администратор",
+        "Предприемач",
+        "Управленски консултант",
+        "Изпълнителен директор"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език",
+        "Изисква се бакалавърска степен"
+      ]
+    },
+    "3:master:computer-science-in-english": {
+      "overview": "Магистърска програма на английски език по компютърни науки, обхващаща уеб и електронни бизнес системи, моделиране и автоматизация на бизнес процеси, наука за данните и разработка на мобилни приложения.",
+      "keyFocus": "уеб технологии, сървърна и облачна разработка, .NET фреймуърци, обектно-ориентирано програмиране, електронна търговия, наука за данните",
+      "duration": "Редовно или задочно (1,5 години / 3 семестъра), прием през януари",
+      "partners": [
+        "Партньорски университети от ЕС по Еразъм+"
+      ],
+      "highlights": [
+        "Обучение изцяло на английски език",
+        "Избираеми дисциплини по системи за управление на бизнеса, моделиране на процеси, GUI или мобилни изчисления",
+        "Възможности по Еразъм+ и партньорства в ЕС",
+        "Завършване с държавен изпит или защита на дипломна работа"
+      ],
+      "careers": [
+        "Системен анализатор",
+        "Софтуерен разработчик",
+        "Уеб разработчик",
+        "Проектант на мрежи",
+        "Специалист бази данни",
+        "Мениджър електронни бизнес системи"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език",
+        "Изисква се съответна бакалавърска степен"
+      ]
+    },
+    "3:master:finance-and-innovations": {
+      "overview": "Магистърска програма, свързваща финансите с иновациите, обхващаща финансови иновации, иновации в банковото дело и публичните финанси, предприемачески финанси и социални иновации.",
+      "keyFocus": "иновации и финансови кризи, иновации в банковото дело, иновации в публичните финанси, предприемачески финанси, продуктови иновации в животозастраховането, социални иновации",
+      "duration": "Редовно / дистанционно (1 година / 2 семестъра, 75 кредита)",
+      "partners": [
+        "Банки, застрахователи и финансови институции"
+      ],
+      "highlights": [
+        "Предлага се в дистанционна форма с прием през януари и редовен прием",
+        "Избираеми дисциплини по финансово регулиране, контролинг иновации и корпоративни резултати",
+        "Отворена за български и чуждестранни студенти",
+        "Завършване с държавен изпит или защита на дипломна работа"
+      ],
+      "careers": [
+        "Специалист финанси и иновации",
+        "Банков специалист",
+        "Финансов анализатор",
+        "Консултант предприемачески финанси",
+        "Специалист публични финанси"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен"
+      ]
+    },
+    "3:bachelor:business-economics": {
+      "overview": "Програма на Стопанския факултет по теория и практика на икономиката, обхващаща микро- и макроикономика, икономически анализ и количествени методи за вземане на бизнес решения.",
+      "keyFocus": "микроикономика, макроикономика, икономически анализ, бизнес статистика, количествени методи",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Икономист",
+        "Икономически анализатор",
+        "Бизнес плановик",
+        "Анализатор на политики",
+        "Специалист пазарни проучвания"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:economics-and-trade": {
+      "overview": "Програма на Стопанския факултет, фокусирана върху икономиката на търговията, търговските операции и организацията на вътрешната и международната търговия.",
+      "keyFocus": "икономика на търговията, търговски операции, търговия на дребно и едро, организация на търговията, комерс",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Специалист търговия",
+        "Търговски мениджър",
+        "Специалист покупки / продажби",
+        "Мениджър търговия на дребно",
+        "Търговски анализатор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:real-estate-and-investments": {
+      "overview": "Програма на Стопанския факултет, изучаваща пазарите на недвижими имоти, оценката на имоти, инвестиционния анализ и управлението на имоти.",
+      "keyFocus": "пазари на недвижими имоти, оценка на имоти, инвестиционен анализ, управление на имоти, право на недвижимите имоти",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Брокер на недвижими имоти",
+        "Оценител на имоти",
+        "Инвестиционен анализатор",
+        "Мениджър недвижими имоти",
+        "Консултант имоти"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:industrial-business-and-entrepreneurship": {
+      "overview": "Програма на Стопанския факултет по икономика и управление на индустриални предприятия, организация на производството и предприемачество в индустрията.",
+      "keyFocus": "индустриална икономика, управление на производството и операциите, бизнес планиране, предприемачество, организация на предприятието",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Мениджър индустриален бизнес",
+        "Производствен плановик",
+        "Специалист операции",
+        "Мениджър бизнес развитие",
+        "Индустриален предприемач"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:logistics": {
+      "overview": "Програма на Стопанския факултет по логистика и управление на веригата на доставки, обхващаща транспорт, складиране, запаси и дистрибуция.",
+      "keyFocus": "управление на веригата на доставки, транспорт, складиране, контрол на запасите, дистрибуция",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Специалист логистика",
+        "Координатор верига на доставки",
+        "Мениджър складови операции",
+        "Координатор транспорт",
+        "Специалист доставки"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:agricultural-businesses": {
+      "overview": "Програма на Стопанския факултет, съчетаваща аграрна икономика с бизнес мениджмънт, обхващаща управление на стопанства и аграрни предприятия и агромаркетинг.",
+      "keyFocus": "аграрна икономика, управление на стопанства, управление на аграрен бизнес, агромаркетинг, селско предприемачество",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Мениджър агробизнес",
+        "Консултант на стопанства",
+        "Специалист агромаркетинг",
+        "Специалист развитие на селските райони",
+        "Аграрен анализатор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:commodities-science-and-customs-activity": {
+      "overview": "Програма на Стопанския факултет по стокознание и митническа дейност, обхващаща качество на продуктите, стандарти и митнически процедури за търговията.",
+      "keyFocus": "стокознание, качество на продуктите и стандарти, митнически процедури, търговска документация, защита на потребителите",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Митнически служител",
+        "Експерт по стокознание",
+        "Специалист контрол на качеството",
+        "Специалист търговско съответствие",
+        "Специалист сертификация"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:business-digital-technologies": {
+      "overview": "Програма на Факултета по информатика за дигиталната трансформация на бизнеса, обхващаща информационни системи, електронна търговия и автоматизация на бизнес процеси.",
+      "keyFocus": "дигитална трансформация, бизнес информационни системи, електронна търговия, автоматизация на бизнес процеси, дигитален анализ",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "ИТ компании и бизнес мрежата на ИУ – Варна"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Дигитален бизнес анализатор",
+        "Специалист информационни системи",
+        "Мениджър електронна търговия",
+        "Анализатор бизнес процеси",
+        "Специалист дигитална трансформация"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:informatics-and-computer-sciences": {
+      "overview": "Програма на Факултета по информатика по информатика и компютърни науки, обхващаща програмиране, алгоритми, бази данни, софтуерно инженерство и информационни системи.",
+      "keyFocus": "програмиране, алгоритми и структури от данни, бази данни, софтуерно инженерство, информационни системи",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "ИТ компании и бизнес мрежата на ИУ – Варна"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Софтуерен разработчик",
+        "Администратор бази данни",
+        "Системен анализатор",
+        "ИТ специалист",
+        "Проектант информационни системи"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:mobile-and-web-technologies": {
+      "overview": "Програма на Факултета по информатика, фокусирана върху разработка на мобилни приложения и уеб, front-end и back-end технологии и облачни решения.",
+      "keyFocus": "мобилна разработка, уеб технологии, front-end и back-end разработка, UI/UX, облачни решения",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "ИТ компании и бизнес мрежата на ИУ – Варна"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Мобилен разработчик",
+        "Уеб разработчик",
+        "Front-end / Back-end разработчик",
+        "UI/UX дизайнер",
+        "Специалист облачни решения"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:data-science": {
+      "overview": "Програма на Факултета по информатика по наука за данните, обхващаща анализ на данни, машинно обучение, статистическо моделиране и визуализация на данни за бизнеса.",
+      "keyFocus": "анализ на данни, машинно обучение, статистическо моделиране, технологии за големи данни, визуализация на данни",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "ИТ компании и бизнес мрежата на ИУ – Варна"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Учен по данни (Data Scientist)",
+        "Анализатор на данни",
+        "Специалист машинно обучение",
+        "Анализатор бизнес интелигентност",
+        "Статистически анализатор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:international-tourism-in-russian": {
+      "overview": "Преподавана на руски език програма във Факултета по управление, фокусирана върху управление на международния туризъм, туроператорска дейност и маркетинг на дестинации за рускоезичните пазари.",
+      "keyFocus": "управление на международния туризъм, туроператорска дейност, маркетинг на дестинации, рускоезични пазари, гостоприемство",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Мениджър в туризма",
+        "Туроператор",
+        "Специалист маркетинг на дестинации",
+        "Туристически консултант",
+        "Мениджър гостоприемство"
+      ],
+      "admissionNotes": [
+        "Обучение на руски език (изисква се сертификат ниво B2)",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:marketing": {
+      "overview": "Програма на Факултета по управление по маркетинг, обхващаща маркетингова стратегия, потребителско поведение, пазарни проучвания, бранд мениджмънт и дигитален маркетинг.",
+      "keyFocus": "маркетингова стратегия, потребителско поведение, пазарни проучвания, бранд мениджмънт, дигитален маркетинг",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Специалист маркетинг",
+        "Бранд мениджър",
+        "Анализатор пазарни проучвания",
+        "Специалист дигитален маркетинг",
+        "Координатор реклама"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:international-economic-relations": {
+      "overview": "Програма на Факултета по управление по международна икономика, външна търговия, международни финанси и икономическите отношения на фирми и държави.",
+      "keyFocus": "международна икономика, външна търговия, международни финанси, чуждестранни инвестиции, икономическа дипломация",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Специалист международни отношения",
+        "Специалист външна търговия",
+        "Координатор международни проекти",
+        "Специалист внос / износ",
+        "Анализатор икономически въпроси"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:management": {
+      "overview": "Програма на Факултета по управление по общ мениджмънт, обхващаща организация, стратегия, човешки ресурси, операции и лидерство.",
+      "keyFocus": "управление и организация, стратегически мениджмънт, човешки ресурси, операции, лидерство",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Мениджър",
+        "Специалист човешки ресурси",
+        "Мениджър операции",
+        "Координатор проекти",
+        "Ръководител екип"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:public-administration": {
+      "overview": "Програма на Факултета по управление по публична администрация, обхващаща публична политика, държавна администрация, публични финанси и административно право.",
+      "keyFocus": "публична политика, държавна администрация, публични финанси, административно право, управление в ЕС",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Публичен администратор",
+        "Анализатор политики",
+        "Служител местна власт",
+        "Специалист публичен сектор",
+        "Служител европейски въпроси"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:tourism": {
+      "overview": "Програма на Факултета по управление по туризъм, обхващаща туристически агенции и туроператорска дейност, управление на дестинации, гостоприемство и устойчив туризъм.",
+      "keyFocus": "управление на туризма, туроператорска дейност, управление на дестинации, гостоприемство, устойчив туризъм",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Мениджър в туризма",
+        "Мениджър туристическа агенция",
+        "Мениджър на дестинация",
+        "Мениджър гостоприемство",
+        "Туроператор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:judicial-administration": {
+      "overview": "Програма на Факултета по управление в пресечната точка на правото и администрацията, обхващаща съдебните системи, съдебната администрация и правните процедури.",
+      "keyFocus": "съдебни системи, съдебна администрация, правни процедури, публична администрация, административно право",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Съдебен администратор",
+        "Съдебен помощник",
+        "Мениджър правна кантора",
+        "Административен специалист",
+        "Служител публична администрация"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:digital-media-and-pr": {
+      "overview": "Програма на Факултета по управление по дигитални медии и връзки с обществеността, обхващаща комуникации, социални медии, създаване на съдържание и корпоративни комуникации.",
+      "keyFocus": "връзки с обществеността, дигитални медии, социални медии, създаване на съдържание, корпоративни комуникации",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "PR специалист",
+        "Мениджър дигитални медии",
+        "Създател на съдържание",
+        "Служител комуникации",
+        "Мениджър социални медии"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:accounting-and-audit": {
+      "overview": "Програма на Финансово-счетоводния факултет по счетоводство и одит, обхващаща финансова отчетност, одиторска практика, вътрешен контрол и данъчно облагане.",
+      "keyFocus": "финансово счетоводство, одит, вътрешен контрол, финансова отчетност, данъчно облагане",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Банки, застрахователи и счетоводни/одиторски фирми"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Счетоводител",
+        "Одитор",
+        "Финансов контрольор",
+        "Данъчен специалист",
+        "Финансов анализатор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:finance": {
+      "overview": "Програма на Финансово-счетоводния факултет по финанси, обхващаща корпоративни и публични финанси, финансови пазари, банково дело, данъчно облагане и инвестиционен анализ.",
+      "keyFocus": "корпоративни финанси, публични финанси, финансови пазари, банково дело, данъчно облагане, инвестиционен анализ",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Банки, застрахователи и счетоводни/одиторски фирми"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Финансов анализатор",
+        "Специалист корпоративни финанси",
+        "Банков специалист",
+        "Инвестиционен консултант",
+        "Специалист данъци и трезор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:bachelor:accounting-and-finance": {
+      "overview": "Програма на Финансово-счетоводния факултет, съчетаваща счетоводство и финанси, обхващаща финансово управление, корпоративни финанси, инвестиционен анализ и финансова отчетност.",
+      "keyFocus": "финансово управление, корпоративни финанси, инвестиционен анализ, финансова отчетност, счетоводство",
+      "duration": "Редовно (4 години / 8 семестъра)",
+      "partners": [
+        "Банки, застрахователи и счетоводни/одиторски фирми"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ за обучение или практика в партньорски университети",
+        "Стаж / практическо обучение като част от програмата",
+        "Чуждоезиково обучение успоредно със специалността",
+        "Приложно обучение чрез казуси и бизнес проекти"
+      ],
+      "careers": [
+        "Финансов анализатор",
+        "Счетоводител",
+        "Инвестиционен анализатор",
+        "Сътрудник корпоративни финанси",
+        "Финансов контрольор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Прием по състезателен бал от дипломата за средно образование (среден успех, български език и математика, плюс една избираема матура)"
+      ]
+    },
+    "3:master:intercultural-business-in-english": {
+      "overview": "Магистърска програма на английски език, фокусирана върху междукултурния бизнес мениджмънт, международните преговори и комуникацията в мултикултурна бизнес среда.",
+      "keyFocus": "междукултурен мениджмънт, международни преговори, междукултурна комуникация, глобален бизнес, международен маркетинг",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Консултант международен бизнес",
+        "Междукултурен мениджър",
+        "Специалист международен маркетинг",
+        "Мениджър глобални проекти",
+        "Мениджър бизнес развитие"
+      ],
+      "admissionNotes": [
+        "Обучение на английски език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:accounting-and-auditing-control": {
+      "overview": "Магистърска програма по счетоводство, одит и финансов контрол, обхващаща международни счетоводни стандарти, финансов анализ и корпоративно управление.",
+      "keyFocus": "финансово счетоводство, одит, финансов контрол, международни счетоводни стандарти, корпоративно управление",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Банки, застрахователи и счетоводни/одиторски фирми"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Старши счетоводител",
+        "Одитор",
+        "Финансов контрольор",
+        "Специалист вътрешен контрол",
+        "Данъчен съветник"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:bank-management": {
+      "overview": "Магистърска програма по банков мениджмънт, обхващаща банкови операции, кредит и риск, финансови пазари и регулаторно съответствие.",
+      "keyFocus": "банкови операции, управление на кредита и риска, финансови пазари, регулаторно съответствие, банкови финанси",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Банки, застрахователи и счетоводни/одиторски фирми"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Банков мениджър",
+        "Кредитен анализатор",
+        "Мениджър риск",
+        "Специалист банкови продукти",
+        "Мениджър финансови услуги"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:corporate-business-and-governance-management": {
+      "overview": "Магистърска програма по корпоративен бизнес и управление, обхващаща корпоративно управление, бизнес стратегия и управлението на компании и отношенията със заинтересованите страни.",
+      "keyFocus": "корпоративно управление, бизнес стратегия, корпоративен мениджмънт, отношения със заинтересованите страни, бизнес етика",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Корпоративен мениджър",
+        "Специалист бизнес стратегия",
+        "Служител корпоративно управление",
+        "Мениджър корпоративно развитие",
+        "Управленски консултант"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:logistics-management": {
+      "overview": "Магистърска програма по логистика и управление на веригата на доставки, обхващаща глобална логистика, снабдяване, дистрибуционни мрежи и анализи на веригата на доставки.",
+      "keyFocus": "глобална логистика, стратегическо снабдяване, дистрибуционни мрежи, анализи на веригата на доставки, управление на транспорта",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Логистичен мениджър",
+        "Мениджър верига на доставки",
+        "Плановик дистрибуция",
+        "Консултант операции",
+        "Мениджър доставки"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:global-commercial-business": {
+      "overview": "Магистърска програма по търговски бизнес, обхващаща съвременна (включително омниканална) търговия, управление на търговията и търговски операции.",
+      "keyFocus": "търговски бизнес, омниканална търговия, управление на търговията, търговия на дребно и едро, търговски операции",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Търговски мениджър",
+        "Мениджър продажби и търговия",
+        "Категориен мениджър",
+        "Мениджър бизнес развитие",
+        "Търговски анализатор"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:civil-engineering-entrepreneurship-and-real-estate": {
+      "overview": "Магистърска програма, съчетаваща строително и имотно предприемачество с управление на инвестиции и проекти в сектора на недвижимите имоти.",
+      "keyFocus": "строително предприемачество, развитие на недвижими имоти, управление на инвестиции, управление на строителни проекти, инвестиции в имоти",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Предприемач в строителството",
+        "Инвеститор в недвижими имоти",
+        "Ръководител инвестиционни проекти",
+        "Специалист инвестиции в имоти",
+        "Ръководител строителни проекти"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:eco-economics": {
+      "overview": "Магистърска програма по екологична икономика, обхващаща икономика на околната среда, устойчиво развитие, зелен бизнес и екологична политика.",
+      "keyFocus": "икономика на околната среда, устойчиво развитие, зелен бизнес, кръгова икономика, екологична политика",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Екологичен икономист",
+        "Специалист устойчивост",
+        "Мениджър зелен бизнес",
+        "Анализатор екологична политика",
+        "ESG консултант"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:agricultural-business": {
+      "overview": "Магистърска програма по управление на агробизнеса, обхващаща аграрни вериги на стойността, икономиката на хранителния сектор и развитието на селските райони.",
+      "keyFocus": "управление на агробизнеса, аграрни вериги на стойността, икономика на хранителния сектор, развитие на селските райони, агромаркетинг",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър агробизнес",
+        "Анализатор хранителен сектор",
+        "Специалист развитие на селските райони",
+        "Аграрен консултант",
+        "Мениджър агромаркетинг"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:quality-and-expert-examination-of-commodities": {
+      "overview": "Магистърска програма по качество и експертиза на стоките, обхващаща оценка на качеството, експертиза на продуктите, сертификация и стандарти.",
+      "keyFocus": "качество на стоките, експертиза на продуктите, сертификация и стандарти, защита на потребителите, метрология",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании и бизнес организации във Варна и България"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър качество",
+        "Експерт по стокознание",
+        "Специалист сертификация",
+        "Експерт на продукти",
+        "Служител защита на потребителите"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:sales-management-and-merchandising": {
+      "overview": "Магистърска програма по управление на продажбите и мърчандайзинг, обхващаща стратегия за продажби, търговски операции, мърчандайзинг и взаимоотношения с клиенти.",
+      "keyFocus": "стратегия за продажби, управление на екипи за продажби, мърчандайзинг, търговски операции, управление на взаимоотношенията с клиенти",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър продажби",
+        "Мениджър мърчандайзинг",
+        "Мениджър търговия на дребно",
+        "Мениджър ключови клиенти",
+        "CRM специалист"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:advertising-and-media-communications": {
+      "overview": "Магистърска програма по реклама и медийни комуникации, обхващаща рекламна стратегия, медийно планиране, бранд комуникация и анализи на кампании.",
+      "keyFocus": "рекламна стратегия, медийно планиране, дигитална реклама, бранд комуникация, анализи на кампании",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър реклама",
+        "Медиен плановик",
+        "Мениджър бранд комуникации",
+        "Анализатор кампании",
+        "Креативен стратег"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:management-of-organizations": {
+      "overview": "Магистърска програма по управление на организации, обхващаща организационен дизайн, управление на промяната, корпоративна култура и стратегическо управление на човешките ресурси.",
+      "keyFocus": "организационен дизайн, управление на промяната, корпоративна култура, стратегически човешки ресурси, организационно поведение",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър организационно развитие",
+        "Консултант управление на промяната",
+        "Директор човешки ресурси",
+        "Специалист корпоративна стратегия",
+        "Управленски консултант"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:human-resources-management": {
+      "overview": "Магистърска програма по управление на човешките ресурси, обхващаща привличане на таланти, управление на представянето, възнаграждения, трудово право и планиране на работната сила.",
+      "keyFocus": "привличане на таланти, управление на представянето, възнаграждения и придобивки, трудово право, планиране на работната сила",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър човешки ресурси",
+        "Специалист привличане на таланти",
+        "Мениджър възнаграждения и придобивки",
+        "ЧР бизнес партньор",
+        "Специалист организационно развитие"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:public-management-and-administrative-power": {
+      "overview": "Магистърска програма по публичен мениджмънт и управление, обхващаща управление в публичния сектор, административна реформа, политики на ЕС и управление на публичните финанси.",
+      "keyFocus": "управление в публичния сектор, административна реформа, политики на ЕС, управление на публичните финанси, публична политика",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Мениджър публичен сектор",
+        "Съветник по политики",
+        "Мениджър европейски въпроси",
+        "Държавен администратор",
+        "Специалист публично управление"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:international-tourist-business": {
+      "overview": "Магистърска програма по международен туристически бизнес, обхващаща туристическа политика, маркетинг на дестинации, устойчив туризъм и глобално гостоприемство.",
+      "keyFocus": "международна туристическа политика, маркетинг на дестинации, устойчив туризъм, глобално гостоприемство, управление на туризма",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Директор туризъм",
+        "Мениджър маркетинг на дестинации",
+        "Консултант устойчив туризъм",
+        "Ръководител гостоприемство",
+        "Мениджър туроператорски операции"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:business-consulting": {
+      "overview": "Магистърска програма по бизнес консултиране, развиваща умения за диагностика и стратегически анализ, управление на промяната и консултантска практика с клиенти.",
+      "keyFocus": "управленско консултиране, стратегически анализ, диагностични методи, управление на промяната, управление на клиенти",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Управленски консултант",
+        "Бизнес анализатор",
+        "Съветник по стратегия",
+        "Консултант подобряване на процеси",
+        "Независим консултант"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:project-management": {
+      "overview": "Магистърска програма по управление на проекти, обхващаща планиране, изпълнение, наблюдение, управление на риска и гъвкави методологии.",
+      "keyFocus": "планиране на проекти, изпълнение и наблюдение, управление на риска, гъвкави методологии, лидерство на проекти",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Ръководител проекти",
+        "Ръководител програми",
+        "Специалист проектен офис (PMO)",
+        "Agile коуч",
+        "Координатор проекти"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:marketing-and-brand-management": {
+      "overview": "Магистърска програма по маркетинг и бранд мениджмънт, обхващаща бранд стратегия, капитал на марката, интегрирани маркетингови комуникации и дигитален брандинг.",
+      "keyFocus": "бранд стратегия, капитал на марката, интегрирани маркетингови комуникации, дигитален брандинг, маркетингов мениджмънт",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "Компании, агенции и публични институции"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Бранд мениджър",
+        "Маркетинг мениджър",
+        "Консултант бранд стратегия",
+        "Мениджър дигитален маркетинг",
+        "Мениджър маркетингови комуникации"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
+      ]
+    },
+    "3:master:mobile-and-web-technologies": {
+      "overview": "Магистърска програма по мобилни и уеб технологии, обхващаща full-stack разработка, прогресивни уеб приложения, мобилни фреймуърци и внедряване в облак.",
+      "keyFocus": "full-stack разработка, прогресивни уеб приложения, мобилни фреймуърци, внедряване в облак, DevOps",
+      "duration": "Редовно (1–1,5 години); 1 година за завършили същото направление, 1,5 години в останалите случаи",
+      "partners": [
+        "ИТ компании и бизнес мрежата на ИУ – Варна"
+      ],
+      "highlights": [
+        "Мобилност по Еразъм+ в партньорски университети в Европа",
+        "Приложно, проектно обучение с реални бизнес казуси",
+        "Завършване със защита на дипломна работа или държавен изпит"
+      ],
+      "careers": [
+        "Full-stack разработчик",
+        "Разработчик мобилни приложения",
+        "Облачен инженер",
+        "Специалист уеб технологии",
+        "Технически ръководител"
+      ],
+      "admissionNotes": [
+        "Обучение на български език",
+        "Изисква се съответна бакалавърска степен; 1 година за завършили същото направление, 1,5 години за други направления"
       ]
     }
   }
