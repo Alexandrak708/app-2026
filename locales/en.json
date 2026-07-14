@@ -270,6 +270,18 @@
       "labsText": "Lecture & study halls",
       "tuitionFreeLabel": "€245",
       "tuitionFreeText": "Lowest semester fee"
+    },
+    "4": {
+      "yearsTradition": "140+",
+      "bachelorPrograms": "12",
+      "masterPrograms": "13",
+      "internationalPartners": "20+",
+      "countries": "15+",
+      "studentsGraduated": "20K+",
+      "labs": "9",
+      "labsText": "Doctoral programs",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Military cadets funded"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -326,6 +338,24 @@
       {
         "range": "€1,350–€1,500",
         "label": "International (non-EU)"
+      }
+    ],
+    "4": [
+      {
+        "range": "€0",
+        "label": "Military cadets (MoD-funded)"
+      },
+      {
+        "range": "€2,750",
+        "label": "EU citizens (full-time / year)"
+      },
+      {
+        "range": "€1,375",
+        "label": "EU citizens (part-time / year)"
+      },
+      {
+        "range": "€3,900",
+        "label": "Non-EU students (per year)"
       }
     ]
   },
@@ -445,7 +475,45 @@
     "ue_dormitories": "Student dormitories and a campus by the Sea Garden at affordable rates",
     "ue_languageCourses": "Preparatory Bulgarian-language course for applicants entering Bulgarian-taught degrees",
     "ue_recognition": "Diploma recognition through NACID for applicants with foreign secondary-school diplomas",
-    "ue_internationalOffice": "International Relations Office coordinating Erasmus+, exchanges and incoming students (int_relations@ue-varna.bg)"
+    "ue_internationalOffice": "International Relations Office coordinating Erasmus+, exchanges and incoming students (int_relations@ue-varna.bg)",
+    "na_scholarshipsDesc": "As a state military-and-civilian academy, NVNA funds its cadets through the Ministry of Defence and offers Erasmus+ mobility, state merit and social scholarships, and reduced fees for students with Bulgarian roots.",
+    "na_militaryCadets": "Military cadets are fully funded by the Ministry of Defence — free tuition plus a monthly stipend, board, uniform and accommodation",
+    "na_erasmusGrants": "Erasmus+ mobility grants for study or traineeship at partner maritime universities across Europe",
+    "na_stateScholarships": "State merit and social scholarships for Bulgarian full-time students based on academic performance",
+    "na_dualCitizenship": "Students with dual Bulgarian citizenship pay only 50% of the applicable tuition fee",
+    "na_doctoralScholarships": "State scholarships for full-time doctoral candidates across the academy's 9 PhD programmes",
+    "na_applicationDesc": "Admission is open to Bulgarian and international applicants. English-taught programmes require proof of English at B2 level; apply online through the academy's admission portal.",
+    "na_appBachelor": "Bachelor: secondary-school diploma with Maths, English and overall GPA each at least 62% of the maximum grade",
+    "na_appEnglish": "English proficiency B2 or higher — Cambridge FCE/CAE, IELTS 5.5+, or TOEFL iBT 65+",
+    "na_appDeadlineBachelor": "Bachelor applications for international students close in mid-August",
+    "na_appMaster": "Master: a Bachelor degree (240 ECTS) plus B2 English; applications close in mid-September",
+    "na_appPrep": "A 9-month preparatory language course is available for applicants who need to reach the English requirement",
+    "na_appPortal": "Apply online at fees.nvna.eu — International Students Office: Int_students@nvna.eu, +359 52 632 015",
+    "na_masterFeesDesc": "Tuition is fixed by contract for the whole course. Military cadets study free of charge; civilian annual fees are:",
+    "na_feeEuFull": "EU citizens, full-time: €2,750 per year",
+    "na_feeEuPart": "EU citizens, part-time: €1,375 per year",
+    "na_feeNonEu": "Non-EU international students: €3,900 per year (two installments per semester)",
+    "na_feeDual": "Dual Bulgarian citizenship: 50% of the applicable fee",
+    "na_feeContract": "Campus dormitory accommodation costs €70 per month including utilities",
+    "na_facilities": "Training Facilities & Simulators",
+    "na_facilitiesDesc": "The academy trains cadets and students on a modern, STCW-certified material base:",
+    "na_simulators": "STCW-certified navigation/bridge, engine-room and GMDSS simulators",
+    "na_lngSimulator": "A unique LNG-bunkering simulator and a planetarium for astronavigation training",
+    "na_cyberCentre": "A dedicated Cyber Operations Training Centre for cybersecurity and ICT programmes",
+    "na_seaPractice": "Supervised sea practice and onboard training on naval and merchant vessels",
+    "na_dormitory": "Campus library, laboratories and a 200-room student dormitory",
+    "na_partnersDesc": "NVNA cooperates with naval academies, maritime universities and industry across Europe and beyond:",
+    "na_navalAcademies": "Partnerships with 10 naval academies in Germany, Greece, Spain, Italy, the UK, Poland, Romania, the USA, Turkey and France",
+    "na_maritimeUnis": "Maritime university partners including Piri Reis (Istanbul), Constanta Maritime and Rijeka Maritime universities",
+    "na_erasmusNetwork": "An Erasmus+ network spanning 13+ European higher-education institutions",
+    "na_imo": "IMO \"White List\" status and STCW 78/95 compliance, backed by ISO 9001 certification",
+    "na_ranking": "Ranked among the world's leading maritime schools (2nd–4th of 70 in international assessments)",
+    "na_internationalDesc": "International students are welcome across the academy's English-taught programmes, with dedicated admission and language support.",
+    "na_englishPrograms": "Degree programmes delivered entirely in English",
+    "na_visaSupport": "Admission and visa support through the International Students Office (Int_students@nvna.eu)",
+    "na_prepCourse": "A 9-month preparatory language course prepares future students for English-taught study",
+    "na_foreignTradition": "Foreign cadets have trained at the academy since 1953, from more than a dozen countries",
+    "na_recognition": "Diplomas are internationally recognised under STCW and the IMO White List"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -1105,13 +1173,13 @@
     },
     "4": {
       "name": "Naval University",
-      "description": "Pioneering maritime intelligence: Specialized education and research for a global industry.",
-      "longDescription": "The Naval University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
+      "description": "Bulgaria's oldest maritime school — training naval officers and merchant-marine professionals since 1881.",
+      "longDescription": "The Nikola Vaptsarov Naval Academy is Bulgaria's oldest maritime and technical school, founded in 1881 as a Maritime School and named in 1949 after the poet Nikola Vaptsarov, a 1926 graduate. It is the country's most authoritative centre for maritime education, training both military naval officers and civilian merchant-marine professionals.\n\nThe academy is organised into two faculties — the Faculty of Navigation and the Faculty of Engineering — each with six departments, supported by a Department of Postgraduate Training and Distance Learning, a Professional Junior-Officers' College, a Cyber Operations Training Centre and a research section. It offers 12 bachelor's, 13 master's and 9 doctoral programmes, with around 3,000 students and cadets.\n\nTraining complies with the IMO STCW 78/95 convention; the academy has been on the IMO \"White List\" since 2000, is ISO 9001 certified and received full university accreditation in 2001. It is consistently ranked among the world's leading maritime universities (placed 2nd–4th among 70 institutions in international assessments). Facilities include unique navigation, engine-room and LNG-bunkering simulators, a planetarium, laboratories and a campus dormitory.\n\nDegree programmes are offered in English, with a 9-month preparatory language course available. Military cadets are fully funded by the Ministry of Defence, while civilian tuition ranges from €2,750/year (EU) to €3,900/year (non-EU). Rector: Flotilla Admiral Prof. Kalin Kalinov.",
       "location": "Varna, Bulgaria",
-      "degree": "Bachelor",
-      "tuitionRange": "2 800 € - 4 000 € / year",
-      "website": "https://www.naval-acad.bg",
-      "applyUrl": "https://www.naval-acad.bg"
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€2,750 – €3,900 / year",
+      "website": "https://www.naval-acad.bg/en",
+      "applyUrl": "https://www.naval-acad.bg/en/home/admission/bachelor"
     },
     "5": {
       "name": "Free University",
@@ -1209,17 +1277,21 @@
     },
     "4": {
       "name": "Naval University",
-      "focus": "maritime operations, navigation, ship systems, and port logistics",
-      "style": "simulators, sea-focused practice, and technical training",
+      "focus": "navigation, marine engineering, port operations, maritime ICT, cybersecurity and naval leadership",
+      "style": "STCW-certified simulator training, supervised sea practice, and disciplined military-style instruction with strong maritime-industry links",
       "careers": [
-        "Navigator",
-        "Marine engineer",
-        "Port specialist",
-        "Fleet operations officer"
+        "Deck Officer / Watch Officer (Navigator)",
+        "Marine / Ship Engineer",
+        "Naval Officer",
+        "Port and Terminal Operations Specialist",
+        "Maritime Logistics Coordinator",
+        "Maritime ICT / Cybersecurity Specialist"
       ],
       "admissionNotes": [
-        "Best suited to students who enjoy technical and operational work",
-        "Safety and discipline are core parts of the training"
+        "Bachelor entry needs a secondary-school diploma with Maths, English and GPA each at least 62% of the maximum grade",
+        "English proficiency at B2 level or higher is required (IELTS 5.5+, TOEFL iBT 65+, or Cambridge FCE/CAE)",
+        "A 9-month preparatory course is available for applicants building up their English",
+        "Navigation and marine-engineering tracks include mandatory STCW simulator training and sea practice"
       ]
     },
     "5": {
@@ -2173,29 +2245,6 @@
         "Additional physical fitness requirements",
         "Security clearance may be required",
         "Service commitment after graduation"
-      ]
-    },
-    "4:bachelor:navigation-ship-maneuvering": {
-      "overview": "Navigation (Ship Maneuvering) at TU–Varna combines theoretical navigation with mandatory simulator training and sea practice complying with STCW conventions.",
-      "keyFocus": "Practical seamanship, navigation safety, and maritime operations",
-      "duration": "Full-time (4 years)",
-      "partners": [
-        "Maritime Qualification Centre (MQC)",
-        "Industry shipping partners"
-      ],
-      "highlights": [
-        "STCW-compliant simulator and sea training",
-        "Accredited professional certifications",
-        "Strong industry placement network"
-      ],
-      "careers": [
-        "Deck officer / Navigator",
-        "Port operations specialist",
-        "Logistics coordinator"
-      ],
-      "admissionNotes": [
-        "Program includes mandatory simulator and sea practice components",
-        "Contact the department for certification and training schedules"
       ]
     },
     "6:bachelor:software-systems-and-technologies": {
@@ -3551,66 +3600,6 @@
       "admissionNotes": [
         "Bachelor degree in health sciences or management required",
         "Professional experience in healthcare preferred"
-      ]
-    },
-    "4:bachelor:navigation": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "4:bachelor:marine-engineering": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "4:bachelor:naval-architecture": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "4:bachelor:port-management": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
       ]
     },
     "5:bachelor:business-administration": {
@@ -5267,6 +5256,362 @@
         "Taught in Bulgarian",
         "Requires a relevant bachelor's degree; 1 year for graduates of the same field, 1.5 years for other fields"
       ]
+    },
+    "4:bachelor:navigation": {
+      "overview": "The Bachelor in Navigation trains deck officers for the merchant fleet and the Navy, combining nautical science with mandatory STCW simulator training and supervised sea practice.",
+      "keyFocus": "ship navigation, watchkeeping, maritime safety, meteorology and international maritime law",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Bulgarian Navy",
+        "Merchant fleet operators"
+      ],
+      "highlights": [
+        "STCW-certified bridge simulators",
+        "Supervised sea practice on training vessels",
+        "Astronavigation in the academy planetarium",
+        "Path to Officer of the Watch certification"
+      ],
+      "careers": [
+        "Deck Officer / Watch Officer",
+        "Ship Navigator",
+        "Naval Officer",
+        "Harbour / VTS Operator"
+      ],
+      "admissionNotes": [
+        "Maths, English and GPA each at least 62% of the maximum grade",
+        "English at B2 level (IELTS 5.5+, TOEFL iBT 65+ or Cambridge FCE/CAE)",
+        "Includes a mandatory maritime medical fitness certificate"
+      ]
+    },
+    "4:bachelor:marine-engines-and-machinery": {
+      "overview": "This programme prepares marine engineers to operate and maintain ship propulsion plants and machinery, meeting STCW standards for engine-room watchkeeping.",
+      "keyFocus": "marine engines, ship machinery, thermodynamics, automation and engine-room operations",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Bulgarian Navy",
+        "Ship-repair and shipping companies"
+      ],
+      "highlights": [
+        "Engine-room simulator training",
+        "Hands-on workshops and laboratories",
+        "STCW engine-officer pathway",
+        "Sea practice on operating vessels"
+      ],
+      "careers": [
+        "Marine / Ship Engineer",
+        "Engine-Room Watch Officer",
+        "Ship-Repair Engineer",
+        "Technical Superintendent"
+      ],
+      "admissionNotes": [
+        "Maths, English and GPA each at least 62% of the maximum grade",
+        "English at B2 level (IELTS 5.5+, TOEFL iBT 65+ or Cambridge FCE/CAE)",
+        "Includes a mandatory maritime medical fitness certificate"
+      ]
+    },
+    "4:bachelor:cybersecurity": {
+      "overview": "The Cybersecurity bachelor develops specialists who protect maritime and enterprise information systems, taught partly at the academy's Cyber Operations Training Centre.",
+      "keyFocus": "network security, cyber defence, cryptography, secure systems and incident response",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Cyber Operations Training Centre"
+      ],
+      "highlights": [
+        "Cyber Operations Training Centre",
+        "Hands-on security laboratories",
+        "Maritime and defence security context",
+        "Erasmus+ mobility opportunities"
+      ],
+      "careers": [
+        "Cybersecurity Analyst",
+        "Security Engineer",
+        "SOC / Incident Responder",
+        "Maritime IT Security Specialist"
+      ],
+      "admissionNotes": [
+        "Maths, English and GPA each at least 62% of the maximum grade",
+        "English at B2 level (IELTS 5.5+, TOEFL iBT 65+ or Cambridge FCE/CAE)",
+        "A 9-month preparatory language course is available for English"
+      ]
+    },
+    "4:bachelor:information-and-communication-technologies": {
+      "overview": "This programme builds ICT engineers for the maritime industry, covering communications, networks and software with a focus on shipboard and port systems.",
+      "keyFocus": "communication systems, networks, software, and maritime information technology",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Maritime ICT industry partners"
+      ],
+      "highlights": [
+        "GMDSS and maritime communications",
+        "Networking and software laboratories",
+        "Applied projects with industry",
+        "Erasmus+ mobility opportunities"
+      ],
+      "careers": [
+        "ICT Engineer",
+        "Network Administrator",
+        "Maritime Communications Officer",
+        "Software Developer"
+      ],
+      "admissionNotes": [
+        "Maths, English and GPA each at least 62% of the maximum grade",
+        "English at B2 level (IELTS 5.5+, TOEFL iBT 65+ or Cambridge FCE/CAE)",
+        "A 9-month preparatory language course is available for English"
+      ]
+    },
+    "4:bachelor:artificial-intelligence-and-smart-technologies": {
+      "overview": "A modern bachelor combining artificial intelligence, data and smart technologies with maritime and engineering applications.",
+      "keyFocus": "machine learning, data science, smart sensors and intelligent automation",
+      "duration": "Full-time (4 years / 8 semesters)",
+      "partners": [
+        "Technology and research partners"
+      ],
+      "highlights": [
+        "AI and data-science laboratories",
+        "Smart-technology and IoT projects",
+        "Maritime automation applications",
+        "Erasmus+ mobility opportunities"
+      ],
+      "careers": [
+        "AI / Machine-Learning Engineer",
+        "Data Scientist",
+        "Automation Engineer",
+        "Smart-Systems Developer"
+      ],
+      "admissionNotes": [
+        "Maths, English and GPA each at least 62% of the maximum grade",
+        "English at B2 level (IELTS 5.5+, TOEFL iBT 65+ or Cambridge FCE/CAE)",
+        "A 9-month preparatory language course is available for English"
+      ]
+    },
+    "4:master:navigation": {
+      "overview": "The Master in Navigation advances the expertise of deck officers and maritime professionals in navigation management, safety and maritime operations.",
+      "keyFocus": "advanced navigation, maritime management, safety systems and operational leadership",
+      "duration": "Part-time (4 semesters)",
+      "partners": [
+        "Bulgarian Navy",
+        "Merchant fleet operators"
+      ],
+      "highlights": [
+        "Advanced bridge simulation",
+        "Maritime safety and management",
+        "Research-informed teaching",
+        "Progression to senior officer roles"
+      ],
+      "careers": [
+        "Senior Deck Officer / Master Mariner",
+        "Maritime Safety Manager",
+        "Fleet Operations Manager",
+        "Maritime Consultant"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    },
+    "4:master:integrated-maritime-policy": {
+      "overview": "This master examines EU and international maritime policy, governance and the sustainable management of the sea and its resources.",
+      "keyFocus": "maritime policy, governance, blue economy and international maritime law",
+      "duration": "Part-time (4 semesters)",
+      "partners": [
+        "EU maritime-policy partners"
+      ],
+      "highlights": [
+        "EU integrated maritime policy",
+        "Blue-economy and sustainability focus",
+        "Governance and regulation",
+        "International perspective"
+      ],
+      "careers": [
+        "Maritime Policy Analyst",
+        "Port / Coastal Administrator",
+        "Maritime Affairs Officer",
+        "Blue-Economy Consultant"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    },
+    "4:master:port-and-ship-operations": {
+      "overview": "The programme develops managers for the technical and operational running of ports and ships, from cargo handling to fleet exploitation.",
+      "keyFocus": "port operations, ship exploitation, cargo handling and maritime logistics",
+      "duration": "Part-time (4 semesters)",
+      "partners": [
+        "Port of Varna",
+        "Bulgarian Ports Infrastructure Company"
+      ],
+      "highlights": [
+        "Port and terminal operations",
+        "Ship exploitation and management",
+        "Cargo and logistics systems",
+        "Industry-linked projects"
+      ],
+      "careers": [
+        "Port Operations Manager",
+        "Ship Operations Superintendent",
+        "Terminal Manager",
+        "Maritime Logistics Manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    },
+    "4:master:port-management-and-logistics": {
+      "overview": "This master combines port management with maritime logistics and supply-chain expertise for the water-transport sector.",
+      "keyFocus": "port management, maritime logistics, supply chains and transport economics",
+      "duration": "Part-time (4 semesters)",
+      "partners": [
+        "Port of Varna",
+        "Logistics and shipping companies"
+      ],
+      "highlights": [
+        "Port and terminal management",
+        "Maritime supply-chain design",
+        "Transport economics",
+        "Digital logistics tools"
+      ],
+      "careers": [
+        "Port Manager",
+        "Logistics Manager",
+        "Supply-Chain Analyst",
+        "Freight / Shipping Coordinator"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    },
+    "4:master:artificial-intelligence": {
+      "overview": "The Master in Artificial Intelligence deepens expertise in machine learning, data and intelligent systems through applied, research-oriented projects.",
+      "keyFocus": "machine learning, deep learning, data engineering and intelligent systems",
+      "duration": "Full-time",
+      "partners": [
+        "Research and technology partners"
+      ],
+      "highlights": [
+        "Advanced machine learning",
+        "Applied AI research",
+        "Data-engineering projects",
+        "Erasmus+ mobility opportunities"
+      ],
+      "careers": [
+        "AI Engineer / Researcher",
+        "Machine-Learning Specialist",
+        "Data Scientist",
+        "R&D Engineer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    },
+    "4:master:digital-business-transformation": {
+      "overview": "This programme prepares professionals to lead digital transformation in maritime and other businesses, blending technology, data and management.",
+      "keyFocus": "digital transformation, business analytics, innovation and technology management",
+      "duration": "Full-time (4 semesters)",
+      "partners": [
+        "Industry and business partners"
+      ],
+      "highlights": [
+        "Digital-transformation strategy",
+        "Business analytics and data",
+        "Innovation management",
+        "Maritime-business applications"
+      ],
+      "careers": [
+        "Digital Transformation Manager",
+        "Business Analyst",
+        "Product / Innovation Manager",
+        "IT Project Manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    },
+    "4:master:space-engineering-and-technologies": {
+      "overview": "Taught in English, this master covers space engineering, satellite technologies and their applications, including maritime navigation and Earth observation.",
+      "keyFocus": "space systems, satellite technology, navigation systems and remote sensing",
+      "duration": "Full-time (2 semesters)",
+      "partners": [
+        "European space-technology partners"
+      ],
+      "highlights": [
+        "Space and satellite engineering",
+        "Satellite navigation (GNSS)",
+        "Earth-observation applications",
+        "Taught entirely in English"
+      ],
+      "careers": [
+        "Space Systems Engineer",
+        "Satellite / GNSS Specialist",
+        "Remote-Sensing Analyst",
+        "Aerospace R&D Engineer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree (240 ECTS)",
+        "English proficiency at B2 level or higher",
+        "Applications close in mid-September"
+      ]
+    }
+  },
+  "na_faculties": {
+    "navigation": "Faculty of Navigation",
+    "engineering": "Faculty of Engineering",
+    "postgraduate": "Postgraduate Training & Distance Learning"
+  },
+  "na_programInfo": {
+    "cybersecurity": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "information-and-communication-technologies": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "artificial-intelligence-and-smart-technologies": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "navigation": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "navigation"
+    },
+    "marine-engines-and-machinery": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "integrated-maritime-policy": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "port-and-ship-operations": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "port-management-and-logistics": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "artificial-intelligence": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "digital-business-transformation": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
+    },
+    "space-engineering-and-technologies": {
+      "tuition": "€2,750 – €3,900 / year",
+      "facultyKey": "engineering"
     }
   }
 }

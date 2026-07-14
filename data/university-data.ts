@@ -37,12 +37,12 @@ const UNIVERSITY_META: UniversityMeta[] = [
   },
   {
     id: "4",
-    rating: 3,
-    color: "#4a2a1a",
+    rating: 4,
+    color: "#0e3a54",
     image: require("../assets/images/DJI_0181.webp.webp"),
     category: "Engineering",
-    scholarship: false,
-    degreeLevels: ["Bachelor"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
   {

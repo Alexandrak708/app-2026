@@ -371,6 +371,19 @@ function getUeProgramInfo(programSlug: string): { tuition?: string; facultyKey?:
   };
 }
 
+function getNaProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`na_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -383,6 +396,16 @@ function getMuFaculty(facultyKey: string): string | null {
 
 function getUeFaculty(facultyKey: string): string | null {
   const name = i18n.t(`ue_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNaFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`na_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -455,6 +478,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (ueInfo.tuition) summary.tuition = ueInfo.tuition;
         if (ueInfo.facultyKey) {
           const facultyName = getUeFaculty(ueInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "4") {
+      const naInfo = getNaProgramInfo(slug);
+      if (naInfo) {
+        if (naInfo.tuition) summary.tuition = naInfo.tuition;
+        if (naInfo.facultyKey) {
+          const facultyName = getNaFaculty(naInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -558,6 +590,16 @@ export function buildProgramDetail(
       if (ueInfo.tuition) result.tuition = ueInfo.tuition;
       if (ueInfo.facultyKey) {
         const facultyName = getUeFaculty(ueInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "4" && normalizedSlug) {
+    const naInfo = getNaProgramInfo(normalizedSlug);
+
+    if (naInfo) {
+      if (naInfo.tuition) result.tuition = naInfo.tuition;
+      if (naInfo.facultyKey) {
+        const facultyName = getNaFaculty(naInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
