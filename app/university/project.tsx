@@ -238,8 +238,7 @@ export default function ProgramsPage() {
             tuition={program.tuition}
             faculty={program.faculty}
             index={index}
-            textOnly={activeUniversityId === "3"}
-            onPress={activeUniversityId === "3" ? undefined : () => openProgram(program.slug)}
+            onPress={() => openProgram(program.slug)}
           />
         ))}
 
