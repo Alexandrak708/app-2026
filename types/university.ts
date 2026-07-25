@@ -8,7 +8,14 @@
 
 export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6";
 
-export type UniversityCategory = "Engineering" | "Medical" | "Economics" | "Business";
+export type UniversityCategory =
+  | "Engineering"
+  | "Medical"
+  | "Economics"
+  | "Business"
+  | "Law"
+  | "Architecture"
+  | "Maritime";
 
 export type DegreeLevel = "Bachelor" | "Master";
 
@@ -17,7 +24,14 @@ export type UniversityMeta = {
   rating: number;
   color: string;
   image: number;
+  /** Primary category, used for the hero badge and quick-info label. */
   category: UniversityCategory;
+  /**
+   * All coarse fields the university offers programs in. Used by the category
+   * filter so a school shows under every field it teaches, not just its badge
+   * category. Should include `category`.
+   */
+  categories: UniversityCategory[];
   scholarship: boolean;
   degreeLevels: DegreeLevel[];
   countryKey: "Bulgaria";

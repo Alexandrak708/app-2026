@@ -227,25 +227,59 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
     ],
   },
   "5": {
-    bachelor: ["International Business"],
-    master: ["Business Administration", "International Relations", "Public Administration", "European Studies"],
+    bachelor: [
+      "Law",
+      "Psychology",
+      "Informatics and Computer Science",
+      "Business Administration and Management",
+      "Public Administration and Management",
+      "International Economic Relations",
+      "Finance and Accounting",
+      "International Business (in English)",
+      "Protection of National Security",
+      "Counteraction to Crime and Public Order",
+      "Architecture",
+      "Interior Design",
+      "Construction of Buildings and Facilities",
+      "Fire and Emergency Safety",
+      "Graphic Design",
+      "Choreography",
+    ],
+    master: [
+      "Psychology and Psychopathology of Development",
+      "Psychological Counselling",
+      "Positive Psychology",
+      "European Administration and Project Management",
+      "Management of International Business Projects",
+      "Advertising and Public Relations in Business Management",
+      "International Economics and Law",
+      "Financial and Banking Management and Marketing",
+      "Software Engineering and Management",
+      "Data Science",
+      "Digital Marketing and Web Design",
+      "Cybersecurity",
+      "Construction of Buildings and Facilities",
+      "Forensic Examinations",
+    ],
   },
   "6": {
     bachelor: [
-      "Software Engineering",
+      "Software Systems and Technologies",
+      "International Business and Management",
+      "Business Administration",
       "Hotel Management",
       "Hotel Management - Distance Learning Program",
-      "International Business and Management",
       "Gastronomy and Culinary Arts",
       "Hospitality and Culinary Arts",
-      "Pedagogy of education in Hospitality and Restaurant Business",
-      "Food technology in the culinary arts",
+      "Food Technology in the Culinary Arts",
+      "Pedagogy of Teaching in Hospitality and Restaurant Business",
       "Pedagogy of Teaching in Economics and Management",
     ],
     master: [
       "Master in International Tourism",
       "Master in International Tourism - Distance Learning Program",
       "Master of Business Administration",
+      "Anti-Corruption and Conflict of Interest Management",
     ],
   },
 };
@@ -384,6 +418,32 @@ function getNaProgramInfo(programSlug: string): { tuition?: string; facultyKey?:
   };
 }
 
+function getVfuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`vfu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getVumProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`vum_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -406,6 +466,26 @@ function getUeFaculty(facultyKey: string): string | null {
 
 function getNaFaculty(facultyKey: string): string | null {
   const name = i18n.t(`na_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getVfuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`vfu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getVumFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`vum_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -487,6 +567,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (naInfo.tuition) summary.tuition = naInfo.tuition;
         if (naInfo.facultyKey) {
           const facultyName = getNaFaculty(naInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "5") {
+      const vfuInfo = getVfuProgramInfo(slug);
+      if (vfuInfo) {
+        if (vfuInfo.tuition) summary.tuition = vfuInfo.tuition;
+        if (vfuInfo.facultyKey) {
+          const facultyName = getVfuFaculty(vfuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "6") {
+      const vumInfo = getVumProgramInfo(slug);
+      if (vumInfo) {
+        if (vumInfo.tuition) summary.tuition = vumInfo.tuition;
+        if (vumInfo.facultyKey) {
+          const facultyName = getVumFaculty(vumInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -600,6 +698,26 @@ export function buildProgramDetail(
       if (naInfo.tuition) result.tuition = naInfo.tuition;
       if (naInfo.facultyKey) {
         const facultyName = getNaFaculty(naInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "5" && normalizedSlug) {
+    const vfuInfo = getVfuProgramInfo(normalizedSlug);
+
+    if (vfuInfo) {
+      if (vfuInfo.tuition) result.tuition = vfuInfo.tuition;
+      if (vfuInfo.facultyKey) {
+        const facultyName = getVfuFaculty(vfuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "6" && normalizedSlug) {
+    const vumInfo = getVumProgramInfo(normalizedSlug);
+
+    if (vumInfo) {
+      if (vumInfo.tuition) result.tuition = vumInfo.tuition;
+      if (vumInfo.facultyKey) {
+        const facultyName = getVumFaculty(vumInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

@@ -1,4 +1,5 @@
-import { Text, TouchableOpacity, View, ImageBackground } from "react-native";
+import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import { Image as ExpoImage } from "expo-image";
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/favourites-context";
 import type { UniversityDisplay } from "@/types/university";
@@ -30,11 +31,12 @@ export default function CompactUniversityCard({
         }}
       >
         <PressableLike onPress={onPress} style={{ width: "100%" }}>
-          <ImageBackground
-            source={item.image}
-            style={{ height: 92, width: "100%" }}
-            resizeMode="cover"
-          >
+          <View style={{ height: 92, width: "100%" }}>
+            <ExpoImage
+              source={item.image}
+              style={StyleSheet.absoluteFill}
+              contentFit="cover"
+            />
             <View
               style={{
                 flex: 1,
@@ -75,7 +77,7 @@ export default function CompactUniversityCard({
                 </View>
               </View>
             </View>
-          </ImageBackground>
+          </View>
         </PressableLike>
       </View>
 

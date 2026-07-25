@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useMemo, useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
-import { Alert, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useRouter } from "expo-router";
 
 import { buildUniversities } from "@/data/university-data";
@@ -33,14 +33,23 @@ export default function Favourites() {
         return current.filter((selectedId) => selectedId !== id);
       }
 
+      // Compare is a two-way, side-by-side view, so cap the selection at two.
+      // Picking a third replaces the one chosen first, keeping the two most
+      // recent picks selected — no error prompt needed.
+      if (current.length >= 2) {
+        return [current[current.length - 1], id];
+      }
+
       return [...current, id];
     });
   };
 
   const compareCount = compareIds.length;
+  const canCompare = compareCount === 2;
 
   const handleComparePress = () => {
-    Alert.alert(t("favourites.compare"), t("favourites.compareComingSoon"));
+    if (!canCompare) return;
+    router.push({ pathname: "/compare", params: { ids: compareIds.join(",") } } as any);
   };
 
   // Use the shared UniversityCard for favourites list so design matches index
@@ -108,39 +117,64 @@ export default function Favourites() {
           }}
         >
           <TouchableOpacity
-            activeOpacity={0.85}
+            activeOpacity={canCompare ? 0.85 : 1}
             onPress={handleComparePress}
+            disabled={!canCompare}
             style={{
               flexDirection: "row",
               alignItems: "center",
               gap: 10,
-                backgroundColor: isDark ? "#e2e8f0" : "#0f172a",
+              backgroundColor: canCompare ? (isDark ? "#e2e8f0" : "#0f172a") : colors.surface,
               borderRadius: 999,
               paddingHorizontal: 18,
               paddingVertical: 14,
-                shadowColor: colors.cardShadow,
+              borderWidth: canCompare ? 0 : 1,
+              borderColor: colors.softBorder,
+              shadowColor: colors.cardShadow,
               shadowOffset: { width: 0, height: 8 },
-              shadowOpacity: 0.18,
+              shadowOpacity: canCompare ? 0.18 : 0.08,
               shadowRadius: 16,
               elevation: 12,
             }}
           >
-            <Ionicons name="swap-horizontal-outline" size={18} color={isDark ? "#0f172a" : "#ffffff"} />
-            <Text style={{ color: isDark ? "#0f172a" : "#ffffff", fontSize: 14, fontWeight: "800" }}>
-              {t("favourites.compare")}
+            <Ionicons
+              name="swap-horizontal-outline"
+              size={18}
+              color={canCompare ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary}
+            />
+            <Text
+              style={{
+                color: canCompare ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary,
+                fontSize: 14,
+                fontWeight: "800",
+              }}
+            >
+              {canCompare ? t("favourites.compare") : t("favourites.selectOneMore")}
             </Text>
             <View
               style={{
-                minWidth: 24,
+                minWidth: 34,
                 height: 24,
                 borderRadius: 999,
-                paddingHorizontal: 6,
-                backgroundColor: isDark ? "rgba(15,23,42,0.1)" : "rgba(255,255,255,0.16)",
+                paddingHorizontal: 8,
+                backgroundColor: canCompare
+                  ? isDark
+                    ? "rgba(15,23,42,0.1)"
+                    : "rgba(255,255,255,0.16)"
+                  : colors.mutedSurface,
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              <Text style={{ color: isDark ? "#0f172a" : "#ffffff", fontSize: 12, fontWeight: "800" }}>{compareCount}</Text>
+              <Text
+                style={{
+                  color: canCompare ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary,
+                  fontSize: 12,
+                  fontWeight: "800",
+                }}
+              >
+                {compareCount}/2
+              </Text>
             </View>
           </TouchableOpacity>
         </View>

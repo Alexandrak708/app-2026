@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, ImageBackground, TouchableOpacity, Pressable, useWindowDimensions } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Pressable, useWindowDimensions } from "react-native";
+import { Image as ExpoImage } from "expo-image";
 import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
 import { useFavourites } from "@/contexts/favourites-context";
@@ -101,8 +102,8 @@ export default function UniversityCard({
       )}
 
       <TouchableOpacity activeOpacity={0.92} onPress={onPress} style={{ flex: 1 }}>
-        <ImageBackground source={item.image} style={{ flex: 1 }} resizeMode="cover">
-          <View style={{ flex: 1, position: "relative" }}>
+        <ExpoImage source={item.image} style={StyleSheet.absoluteFill} contentFit="cover" />
+        <View style={{ flex: 1, position: "relative" }}>
             <View
               style={{
                 position: "absolute",
@@ -137,8 +138,7 @@ export default function UniversityCard({
                 </View>
               </View>
             </View>
-          </View>
-        </ImageBackground>
+        </View>
       </TouchableOpacity>
     </Animated.View>
   );

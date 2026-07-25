@@ -161,7 +161,7 @@ export default function Index() {
     }
     if (selectedDegree && !u.degreeLevels.includes(selectedDegree)) return false;
     if (selectedScholarship !== null && u.scholarship !== selectedScholarship) return false;
-    if (selectedCategory && u.category !== selectedCategory) return false;
+    if (selectedCategory && !u.categories.includes(selectedCategory as any)) return false;
     if (selectedCountry && u.countryKey !== selectedCountry) return false;
     return true;
   });
@@ -305,7 +305,7 @@ export default function Index() {
                 {t("filters.category")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
-                {["Engineering", "Medical", "Economics", "Business"].map((c) => (
+                {["Engineering", "Medical", "Economics", "Business", "Law", "Architecture", "Maritime"].map((c) => (
                   <FilterChip
                     key={c} label={t(`categories.${c}`)}
                     selected={selectedCategory === c}

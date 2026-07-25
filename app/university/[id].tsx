@@ -1,12 +1,12 @@
 import {
   View,
   Text,
-  ImageBackground,
   TouchableOpacity,
   ScrollView,
   useWindowDimensions,
   Linking,
 } from "react-native";
+import { Image as ExpoImage } from "expo-image";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
@@ -209,87 +209,117 @@ export default function UniversityPage() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView showsVerticalScrollIndicator={false} bounces contentContainerStyle={{ alignItems: "center" }}>
 
-        {/* Hero Image */}
-        <View style={{ height: 320, width: "100%", maxWidth: pageWidth }}>
-          <ImageBackground source={university.image} style={{ flex: 1 }} resizeMode="cover">
+        {/* Hero Image — full photo (contain) over a blurred fill of itself, so nothing is cropped */}
+        <View style={{ height: 320, width: "100%", maxWidth: pageWidth, backgroundColor: university.color, overflow: "hidden" }}>
+          {/* Blurred backdrop fills the frame edges */}
+          <ExpoImage
+            source={university.image}
+            style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}
+            contentFit="cover"
+            blurRadius={12}
+          />
+          {/* Dim the blurred backdrop for contrast (keeps the sharp photo below bright) */}
+          <View
+            style={{
+              position: "absolute",
+              top: 0, bottom: 0, left: 0, right: 0,
+              backgroundColor: isDark ? "rgba(0,0,0,0.5)" : "rgba(0,0,0,0.38)",
+            }}
+          />
+          {/* Sharp, fully-visible photo */}
+          <ExpoImage
+            source={university.image}
+            style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}
+            contentFit="contain"
+          />
+
+          <TouchableOpacity
+            onPress={() => router.back()}
+            style={{
+              position: "absolute",
+              top: 56,
+              left: 20,
+              backgroundColor: "rgba(0,0,0,0.35)",
+              borderRadius: 12,
+              padding: 8,
+            }}
+          >
+            <Ionicons name="arrow-back" size={22} color="#ffffff" />
+          </TouchableOpacity>
+
+          {/* Heart button in top-right of hero */}
+          <TouchableOpacity
+            onPress={() => toggleFavourite(id as any)}
+            style={{
+              position: "absolute",
+              top: 56,
+              right: 20,
+              backgroundColor: "rgba(0,0,0,0.35)",
+              borderRadius: 12,
+              padding: 8,
+            }}
+          >
+            <Ionicons
+              name={checkFavourite(id as any) ? "heart" : "heart-outline"}
+              size={22}
+              color={checkFavourite(id as any) ? "#ef4444" : "#ffffff"}
+            />
+          </TouchableOpacity>
+
+          <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 24 }}>
             <View
               style={{
-                position: "absolute",
-                top: 0, bottom: 0, left: 0, right: 0,
-                backgroundColor: isDark ? "rgba(0,0,0,0.58)" : "rgba(0,0,0,0.45)",
-              }}
-            />
-
-            <TouchableOpacity
-              onPress={() => router.back()}
-              style={{
-                position: "absolute",
-                top: 56,
-                left: 20,
-                backgroundColor: "rgba(255,255,255,0.2)",
-                borderRadius: 12,
-                padding: 8,
+                alignSelf: "flex-start",
+                backgroundColor: "rgba(0,0,0,0.4)",
+                borderRadius: 20,
+                paddingHorizontal: 12,
+                paddingVertical: 4,
+                marginBottom: 10,
               }}
             >
-              <Ionicons name="arrow-back" size={22} color="#ffffff" />
-            </TouchableOpacity>
+              <Text style={{ color: "#ffffff", fontSize: 11, fontWeight: "700", letterSpacing: 0.5 }}>
+                {categoryLabel.toUpperCase()}
+              </Text>
+            </View>
 
-            {/* Heart button in top-right of hero */}
-            <TouchableOpacity
-              onPress={() => toggleFavourite(id as any)}
+            <Text
               style={{
-                position: "absolute",
-                top: 56,
-                right: 20,
-                backgroundColor: "rgba(255,255,255,0.2)",
-                borderRadius: 12,
-                padding: 8,
+                color: "#ffffff",
+                fontSize: 26,
+                fontWeight: "800",
+                letterSpacing: 0.3,
+                textShadowColor: "rgba(0,0,0,0.6)",
+                textShadowOffset: { width: 0, height: 1 },
+                textShadowRadius: 6,
               }}
             >
-              <Ionicons
-                name={checkFavourite(id as any) ? "heart" : "heart-outline"}
-                size={22}
-                color={checkFavourite(id as any) ? "#ef4444" : "#ffffff"}
-              />
-            </TouchableOpacity>
+              {university.name}
+            </Text>
 
-            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 24 }}>
-              <View
+            <View style={{ flexDirection: "row", alignItems: "center", marginTop: 8, gap: 8 }}>
+              <StarRating rating={university.rating} />
+              <Text
                 style={{
-                  alignSelf: "flex-start",
-                  backgroundColor: "rgba(255,255,255,0.2)",
-                  borderRadius: 20,
-                  paddingHorizontal: 12,
-                  paddingVertical: 4,
-                  marginBottom: 10,
+                  color: "rgba(255,255,255,0.9)",
+                  fontSize: 12,
+                  textShadowColor: "rgba(0,0,0,0.6)",
+                  textShadowOffset: { width: 0, height: 1 },
+                  textShadowRadius: 5,
                 }}
               >
-                <Text style={{ color: "#ffffff", fontSize: 11, fontWeight: "700", letterSpacing: 0.5 }}>
-                  {categoryLabel.toUpperCase()}
-                </Text>
-              </View>
-
-              <Text style={{ color: "#ffffff", fontSize: 26, fontWeight: "800", letterSpacing: 0.3 }}>
-                {university.name}
+                {university.rating}.0 / 5.0
               </Text>
-
-              <View style={{ flexDirection: "row", alignItems: "center", marginTop: 8, gap: 8 }}>
-                <StarRating rating={university.rating} />
-                <Text style={{ color: "rgba(255,255,255,0.7)", fontSize: 12 }}>
-                  {university.rating}.0 / 5.0
-                </Text>
-              </View>
-
-              <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 12 }}>
-                <InfoBadge icon="location-sharp" label={university.location} />
-                <InfoBadge icon="school-outline" label={university.degreeLabel} />
-                <InfoBadge
-                  icon={university.scholarship ? "ribbon-outline" : "close-circle-outline"}
-                  label={scholarshipLabel}
-                />
-              </View>
             </View>
-          </ImageBackground>
+
+            <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 12 }}>
+              <InfoBadge icon="location-sharp" label={university.location} />
+              <InfoBadge icon="school-outline" label={university.degreeLabel} />
+              <InfoBadge
+                icon={university.scholarship ? "ribbon-outline" : "close-circle-outline"}
+                label={scholarshipLabel}
+              />
+            </View>
+          </View>
         </View>
 
         {/* Content */}
@@ -413,7 +443,7 @@ export default function UniversityPage() {
             </View>
           </SectionCard>
 
-          {(id === "1" || id === "2" || id === "3" || id === "4") && (
+          {(id === "1" || id === "2" || id === "3" || id === "4" || id === "5" || id === "6") && (
             <>
               {id === "1" && (
                 <>
@@ -631,6 +661,124 @@ export default function UniversityPage() {
                     <InfoRow label={t("universityExtra.na_prepCourse")} colors={colors} />
                     <InfoRow label={t("universityExtra.na_foreignTradition")} colors={colors} />
                     <InfoRow label={t("universityExtra.na_recognition")} colors={colors} />
+                  </ExpandableSection>
+                </>
+              )}
+              {id === "5" && (
+                <>
+                  <ExpandableSection title={t("universityExtra.scholarships")} icon="ribbon-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vfu_scholarshipsDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vfu_meritScholarships")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_earlyPaymentDiscount")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_familyDiscount")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_erasmusGrants")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_installments")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.applicationInfo")} icon="document-text-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vfu_applicationDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vfu_appRoutes")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_appArchitecture")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_appMaster")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_appDocuments")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_appLanguages")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_appContact")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.masterFees")} icon="cash-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vfu_masterFeesDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vfu_feeSocial")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_feeLaw")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_feeArch")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_feeIntl")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_feeDiscount")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.vfu_campus")} icon="business-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vfu_campusDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vfu_digitalCentre")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_mootCourt")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_studios")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_library")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_sportsHousing")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.partners")} icon="globe-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vfu_partnersDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vfu_eua")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_erasmusNetwork")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_qualityLabels")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_employers")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_smolyan")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.internationalStudents")} icon="airplane-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vfu_internationalDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vfu_englishTurkish")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_visaSupport")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_prepCourse")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_housing")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vfu_recognition")} colors={colors} />
+                  </ExpandableSection>
+                </>
+              )}
+              {id === "6" && (
+                <>
+                  <ExpandableSection title={t("universityExtra.scholarships")} icon="ribbon-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vum_scholarshipsDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vum_newStudents")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_partnerCompany")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_meritSports")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_earlyDiscount")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_referFriend")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_studentLoans")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.applicationInfo")} icon="document-text-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vum_applicationDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vum_appEnglish")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_appIntakes")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_appDualDiploma")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_appDocuments")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_appNacid")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_appOnline")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.masterFees")} icon="cash-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vum_masterFeesDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vum_feeBachelorEn")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_feeCulinary")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_feeBachelorBg")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_feeDistance")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_feeMasters")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_feeCardiff")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.vum_campus")} icon="business-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vum_campusDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vum_culinaryStudios")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_itLabs")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_library")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_careerCentre")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_accommodation")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.partners")} icon="globe-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vum_partnersDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vum_cardiff")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_ucBirmingham")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_stenden")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_globalNetwork")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_erasmus")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.internationalStudents")} icon="airplane-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.vum_internationalDesc")}</Text>
+                    <InfoRow label={t("universityExtra.vum_englishTaught")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_visaSupport")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_prep")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_multicultural")} colors={colors} />
+                    <InfoRow label={t("universityExtra.vum_recognition")} colors={colors} />
                   </ExpandableSection>
                 </>
               )}

@@ -71,7 +71,29 @@
     "emptyMessage": "Tap the heart on any university card to save it here.",
     "remove": "Remove from favourites",
     "compare": "Compare",
-    "compareComingSoon": "Compare is not connected yet."
+    "selectOneMore": "Select 1 more to compare"
+  },
+  "compare": {
+    "title": "Compare universities",
+    "subtitle": "See two universities side by side",
+    "openHint": "Tap a university to open its full profile",
+    "viewProfile": "View profile",
+    "overview": "Overview",
+    "keyFacts": "Key Facts",
+    "category": "Category",
+    "location": "Location",
+    "degreeLevels": "Degree levels",
+    "scholarship": "Scholarship",
+    "tuitionRange": "Tuition range",
+    "countries": "Countries",
+    "programsTitle": "Compare programs",
+    "programsHint": "Pick one program from each university, then compare them below.",
+    "selectProgram": "Select a program",
+    "chooseProgram": "Choose a program",
+    "tapToChange": "Tap to change",
+    "programComparison": "Program comparison",
+    "notFound": "Select two universities from your favourites to compare.",
+    "goBack": "Go back"
   },
   "settings": {
     "title": "Settings",
@@ -189,7 +211,10 @@
     "Engineering": "Engineering",
     "Medical": "Medical",
     "Economics": "Economics",
-    "Business": "Business"
+    "Business": "Business",
+    "Law": "Law",
+    "Architecture": "Architecture",
+    "Maritime": "Maritime"
   },
   "tabs": {
     "favourites": "Favourites",
@@ -282,6 +307,30 @@
       "labsText": "Doctoral programs",
       "tuitionFreeLabel": "€0",
       "tuitionFreeText": "Military cadets funded"
+    },
+    "5": {
+      "yearsTradition": "34+",
+      "bachelorPrograms": "20+",
+      "masterPrograms": "25+",
+      "internationalPartners": "100+",
+      "countries": "30+",
+      "studentsGraduated": "30K+",
+      "labs": "29",
+      "labsText": "Doctoral programs",
+      "tuitionFreeLabel": "€664",
+      "tuitionFreeText": "Lowest semester fee"
+    },
+    "6": {
+      "yearsTradition": "30",
+      "bachelorPrograms": "10",
+      "masterPrograms": "4",
+      "internationalPartners": "100+",
+      "countries": "45",
+      "studentsGraduated": "10K+",
+      "labs": "4",
+      "labsText": "Palmes of Excellence",
+      "tuitionFreeLabel": "€850",
+      "tuitionFreeText": "Lowest semester fee"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -356,6 +405,42 @@
       {
         "range": "€3,900",
         "label": "Non-EU students (per year)"
+      }
+    ],
+    "5": [
+      {
+        "range": "€848–€1,083",
+        "label": "Most BG/EU programs (per semester)"
+      },
+      {
+        "range": "€1,354",
+        "label": "Architecture (BG/EU, per semester)"
+      },
+      {
+        "range": "€1,600",
+        "label": "International students (bachelor)"
+      },
+      {
+        "range": "€1,800",
+        "label": "International (architecture/engineering)"
+      }
+    ],
+    "6": [
+      {
+        "range": "€850",
+        "label": "Bachelor (Bulgarian, per semester)"
+      },
+      {
+        "range": "€1,500",
+        "label": "Bachelor / MBA (English, EU, per semester)"
+      },
+      {
+        "range": "€1,950–€2,400",
+        "label": "Non-EU students (English, per semester)"
+      },
+      {
+        "range": "€1,200",
+        "label": "Distance learning (EU, per semester)"
       }
     ]
   },
@@ -513,7 +598,85 @@
     "na_visaSupport": "Admission and visa support through the International Students Office (Int_students@nvna.eu)",
     "na_prepCourse": "A 9-month preparatory language course prepares future students for English-taught study",
     "na_foreignTradition": "Foreign cadets have trained at the academy since 1953, from more than a dozen countries",
-    "na_recognition": "Diplomas are internationally recognised under STCW and the IMO White List"
+    "na_recognition": "Diplomas are internationally recognised under STCW and the IMO White List",
+    "vfu_scholarshipsDesc": "As a private university, VFU supports students through merit scholarships, tuition discounts and Erasmus+ mobility rather than state grants:",
+    "vfu_meritScholarships": "Merit (rector's) scholarships and awards for students with excellent academic results",
+    "vfu_earlyPaymentDiscount": "5% discount when the full semester fee is paid in advance by the set deadline",
+    "vfu_familyDiscount": "Tuition discounts for a second family member at VFU and for VFU alumni continuing to a Master's",
+    "vfu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship at partner universities across Europe",
+    "vfu_installments": "Tuition payable in two installments per semester to ease the financial load",
+    "vfu_applicationDesc": "Admission for 2026/2027 is open online through the candidate-student portal ksp.vfu.bg, with several entry routes depending on the programme:",
+    "vfu_appRoutes": "Bachelor entry by secondary-school (matriculation / ДЗИ) results, an entrance exam, or an online competition test",
+    "vfu_appArchitecture": "Architecture and arts programmes include a drawing or aptitude examination",
+    "vfu_appMaster": "Master's admission is document-based, after a relevant higher-education degree",
+    "vfu_appDocuments": "Required: secondary-school diploma (or higher-education diploma for Master's), application form, ID and photos",
+    "vfu_appLanguages": "Programmes are offered in Bulgarian, English and Turkish, in full-time, part-time or distance form",
+    "vfu_appContact": "Applications: priem@vfu.bg, +359 52 355 106, Chayka resort, 84 Yanko Slavchev St, Varna",
+    "vfu_masterFeesDesc": "Master's tuition is charged per semester and varies by faculty and student category (2025/2026):",
+    "vfu_feeSocial": "Social, Business & Computer Sciences: €664–€1,170 per semester (BG/EU students)",
+    "vfu_feeLaw": "Law & National Security: from €664 per semester (BG/EU students)",
+    "vfu_feeArch": "Architecture & Construction: €766–€1,227 per semester (BG/EU students)",
+    "vfu_feeIntl": "International (non-EU) students: €1,800 per semester (€2,000 for construction engineering)",
+    "vfu_feeDiscount": "5% discount for early full payment; fees are payable in two installments per semester",
+    "vfu_campus": "Campus & Facilities",
+    "vfu_campusDesc": "VFU's seaside campus in the Chayka resort offers a modern learning environment and student services:",
+    "vfu_digitalCentre": "Centre for Digital Technologies and modern computer laboratories",
+    "vfu_mootCourt": "Moot courtroom and legal clinic for Law students",
+    "vfu_studios": "Architecture and design studios and fine-arts ateliers",
+    "vfu_library": "University library, Distance Learning Centre and a medical centre",
+    "vfu_sportsHousing": "Sports facilities, an academic dance theatre and on-campus student accommodation",
+    "vfu_partnersDesc": "VFU is an active member of international academic networks and cooperates with employers and institutions across the region:",
+    "vfu_eua": "Member of the European University Association (EUA), holding the Erasmus Charter for Higher Education",
+    "vfu_erasmusNetwork": "Erasmus+ exchange with 100+ partner universities across Europe",
+    "vfu_qualityLabels": "Holder of the ECTS and Diploma Supplement labels and the HR Excellence in Research award",
+    "vfu_employers": "Cooperation with courts, public institutions and companies for student internships",
+    "vfu_smolyan": "A branch in Smolyan extends access to VFU programmes beyond Varna",
+    "vfu_internationalDesc": "VFU welcomes international students from across the world through its International Admissions Centre:",
+    "vfu_englishTurkish": "Bachelor's and Master's programmes taught in English and Turkish",
+    "vfu_visaSupport": "Admission, visa and residence-permit support for non-EU students (priem@vfu.bg)",
+    "vfu_prepCourse": "Preparatory Bulgarian-language course for students entering Bulgarian-taught degrees",
+    "vfu_housing": "On-campus student accommodation at affordable rates",
+    "vfu_recognition": "Recognition of foreign secondary-school and higher-education diplomas",
+    "vum_scholarshipsDesc": "VUM keeps tuition affordable and offers several forms of financial support so that motivation and talent are rewarded from the first year:",
+    "vum_newStudents": "New bachelor students can win a merit scholarship of up to €250 for the first year by passing a motivational interview and an English test with a score above 80%",
+    "vum_partnerCompany": "Partner-company scholarships of €250–€1,000 for the first year (requires an English certificate — IELTS, TOEFL, PTE, CAE or SAT — or a strong state matriculation result)",
+    "vum_meritSports": "Scholarships for excellent academic results, extracurricular activity and sporting achievement for students after the first year, and scholarships for Master's students",
+    "vum_earlyDiscount": "10% early-admission discount and a jubilee \"30 Years VUM\" campaign",
+    "vum_referFriend": "\"Refer a Friend\" reward programme for students who bring new applicants",
+    "vum_studentLoans": "State-guaranteed student loans (under-35s, EU/EEA citizens, interest capped at 7%) with a one-year grace period after graduation",
+    "vum_applicationDesc": "Admission is open online through vum.bg, with September and February intakes for bachelor's and master's programmes:",
+    "vum_appEnglish": "Programmes are taught in English — applicants sit an English-language test or provide a recognised certificate (IELTS, TOEFL, PTE, CAE, SAT)",
+    "vum_appIntakes": "Two intakes per year: September (standard cycle) and February",
+    "vum_appDualDiploma": "Eligible students graduate with both a Bulgarian VUM diploma and a British degree from Cardiff Metropolitan University",
+    "vum_appDocuments": "Required: secondary-school diploma (or higher-education diploma for Master's), application form, ID/passport and photos",
+    "vum_appNacid": "Foreign secondary-school diplomas require a NACID recognition procedure (€100)",
+    "vum_appOnline": "Apply online at vum.bg/bg/kandidatstvai-onlain — admissions@vum.bg (application fee €120 EU / €150 non-EU)",
+    "vum_masterFeesDesc": "Tuition is charged per semester and depends on the programme, language and student category (2025/2026):",
+    "vum_feeBachelorEn": "English-taught bachelor: €1,500 per semester (EU/EEA) · €1,950 (non-EU)",
+    "vum_feeCulinary": "Culinary Arts bachelor: €1,500 per semester (EU/EEA) · €2,400 (non-EU); uniforms & knives fee €725",
+    "vum_feeBachelorBg": "Bulgarian-taught bachelor: €850 per semester",
+    "vum_feeDistance": "Distance-learning bachelor: €1,200 per semester (EU/EEA) · €1,500 (non-EU)",
+    "vum_feeMasters": "MBA & International Tourism master: €1,500 per semester (EU/EEA) · €1,950–€2,400 (non-EU), lower in later semesters",
+    "vum_feeCardiff": "Cardiff Metropolitan University diploma registration: €475 per semester (final two semesters for bachelor's, semesters 1–3 for master's)",
+    "vum_campus": "Campus & Facilities",
+    "vum_campusDesc": "VUM's Varna campus offers a modern, practice-oriented learning environment, with additional teaching locations in Sofia and Dobrich:",
+    "vum_culinaryStudios": "Professional training kitchens and restaurant studios at the Institute of Culinary Arts",
+    "vum_itLabs": "Computer laboratories and an Online Campus (onlinecampus.vum.bg) for blended and distance learning",
+    "vum_library": "Library and information complex, Institute for Modern Education and a Research Institute with a Centre for Innovation in Tourism",
+    "vum_careerCentre": "Career centre with paid-internship placement and a strong \"business supports talent\" employer network",
+    "vum_accommodation": "Student accommodation and welfare services (accommodation reservation deposit €300 where applicable)",
+    "vum_partnersDesc": "VUM's dual-diploma model rests on strong strategic partnerships and an international academic network:",
+    "vum_cardiff": "Cardiff Metropolitan University (UK) — British bachelor's and master's diplomas awarded alongside the VUM degree",
+    "vum_ucBirmingham": "University College Birmingham (UK) — partner in hospitality and culinary education",
+    "vum_stenden": "Stenden University of Applied Sciences (Netherlands) and the Business & Hotel Management School (Switzerland)",
+    "vum_globalNetwork": "Cooperation with 100+ renowned institutions across Europe, Asia and South America",
+    "vum_erasmus": "Ranked No.1 in the world for student mobility by U-Multirank for four consecutive years, with a full Erasmus+ programme",
+    "vum_internationalDesc": "As an international business school with students from more than 45 countries, VUM offers dedicated support for foreign students:",
+    "vum_englishTaught": "All degree programmes are taught entirely in English in small, multicultural groups",
+    "vum_visaSupport": "Admission and visa support for non-EU students (visa deposit €500 where applicable) — admissions@vum.bg",
+    "vum_prep": "English-language testing and preparation, plus study-abroad semesters with partner universities worldwide",
+    "vum_multicultural": "A diverse, multicultural campus ranked first in Central & Eastern Europe for international orientation (U-Multirank)",
+    "vum_recognition": "Dual Bulgarian and British (Cardiff Metropolitan University) diplomas recognised internationally"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -557,6 +720,18 @@
     "informatics": "Faculty of Information Technologies",
     "management": "Faculty of Management",
     "tourism-college": "College of Tourism – Varna"
+  },
+  "vfu_faculties": {
+    "social-business-cs": "Faculty of Social, Business and Computer Sciences",
+    "law": "Faculty of Law",
+    "architecture": "Faculty of Architecture"
+  },
+  "vum_faculties": {
+    "business": "Faculty of Business (Administration & Management)",
+    "tourism": "Tourism & Hospitality",
+    "computing": "Informatics & Computer Science",
+    "culinary": "Institute of Culinary Arts",
+    "pedagogy": "Pedagogy of Teaching"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -1182,24 +1357,24 @@
       "applyUrl": "https://www.naval-acad.bg/en/home/admission/bachelor"
     },
     "5": {
-      "name": "Free University",
-      "description": "Specialized maritime education with cutting-edge naval research and training.",
-      "longDescription": "The Free University of Varna is a leading institution in Bulgarian maritime education, known for its specialized programs and research initiatives.",
+      "name": "Varna Free University",
+      "description": "Bulgaria's largest private university — law, economics, IT, psychology, security and architecture by the Black Sea.",
+      "longDescription": "Varna Free University \"Chernorizets Hrabar\" (VFU) is the largest and most established private university in Bulgaria, founded in 1991 and granted full higher-education status in 1995. It is named after Chernorizets Hrabar, the medieval Bulgarian monk and writer. The university holds its third institutional accreditation from the National Evaluation and Accreditation Agency (NEAA) for the maximum six-year period, with a score of 9.12 out of 10, and is an active member of the European University Association (EUA) with the Erasmus Charter for Higher Education, ECTS and Diploma Supplement labels and the HR Excellence in Research award.\n\nThe university is organised into three faculties — the Faculty of Social, Business and Computer Sciences (economics, administration and management, psychology, informatics and computer science), the Faculty of Law (law, national security and public order) and the Faculty of Architecture (architecture, construction engineering, fine arts, and music and dance) — together with a branch in Smolyan and a Department of Foreign Language Teaching and Postgraduate Qualification.\n\nVFU offers more than 60 bachelor's and master's programmes and 29 doctoral programmes, taught in Bulgarian, English and Turkish, in full-time, part-time and distance-learning formats. Over the last three decades more than 30,000 students have graduated. The seaside campus in the Chayka resort features modern lecture halls and computer laboratories, a moot courtroom, design and architecture studios, a library, a Centre for Digital Technologies, a medical centre, sports facilities and student accommodation.\n\nTuition for Bulgarian and EU students ranges from about €848 to €1,354 per semester depending on the programme, while international (non-EU) students pay €1,600–€1,800 per semester for bachelor's and €1,800–€2,000 for master's programmes. Rector: Prof. Dr. Petar Hristov.",
       "location": "Varna, Bulgaria",
-      "degree": "Master",
-      "tuitionRange": "664 € - 2 000 € / year",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€848 – €1,800 / semester",
       "website": "https://www.vfu.bg",
-      "applyUrl": "https://www.vfu.bg"
+      "applyUrl": "https://ksp.vfu.bg"
     },
     "6": {
       "name": "University of Management",
-      "description": "Where theory meets practice: Shaping the next generation of global business and tourism leaders.",
-      "longDescription": "The University of Management of Varna is a leading institution in Bulgarian business education, known for its comprehensive programs and research initiatives.",
+      "description": "International, English-taught business school in Varna offering dual Bulgarian–British (Cardiff Met) degrees in business, tourism, IT and culinary arts.",
+      "longDescription": "The University of Management (VUM) in Varna is an international business school and one of Bulgaria's most internationally recognised higher-education institutions. Founded in 1996 as a college of tourism and renamed from International College – Albena in 2015, it marks 30 years in 2026. Students from more than 45 countries study business, marketing, information technology and computer science, tourism, hotel management and culinary arts in a multicultural, English-language environment.\n\nVUM is accredited by the Bulgarian National Evaluation and Accreditation Agency (NEAA) in the professional fields of Administration and Management, Economics, Tourism, Informatics and Computer Science, Pedagogy of Teaching and Food Technologies, and offers bachelor's, master's and doctoral programmes through its Faculty of Business.\n\nThe university's flagship is its dual-diploma model: bachelor's and master's programmes are taught entirely in English and lead to both a Bulgarian VUM diploma and a British degree from strategic partner Cardiff Metropolitan University, without the usual requirement to spend a semester abroad. VUM also cooperates with University College Birmingham, Stenden University (Netherlands), the Business & Hotel Management School (Switzerland) and more than 100 institutions across Europe, Asia and South America.\n\nVUM holds 4 Palmes of Excellence from Eduniversal, placing it among the world's top 200 business schools and making it the only Bulgarian institution at this level. It has been ranked No.1 in the world for student mobility by U-Multirank for four consecutive years; its Master in International Tourism is ranked 10th worldwide and its MBA 5th in Central and Eastern Europe by Eduniversal Best Masters. President: Assoc. Prof. Dr. Todor Radev. Rector: Prof. Dr. Krasimira Staneva.",
       "location": "Varna, Bulgaria",
-      "degree": "Master",
-      "tuitionRange": "720 € - 2 850 € / year",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€850 – €2,400 / semester",
       "website": "https://www.vum.bg",
-      "applyUrl": "https://www.vum.bg"
+      "applyUrl": "https://vum.bg/bg/kandidatstvai-onlain/"
     }
   },
   "universityProfiles": {
@@ -1295,33 +1470,45 @@
       ]
     },
     "5": {
-      "name": "Free University",
-      "focus": "international relations, public administration, and business-oriented studies",
-      "style": "discussion-led seminars, policy analysis, and applied projects",
+      "name": "Varna Free University",
+      "focus": "law, economics, administration and management, psychology, informatics, national security, and architecture",
+      "style": "practice-oriented seminars, moot-court and studio work, computer and design labs, Erasmus+ mobility, and flexible full-time, part-time and distance learning",
       "careers": [
-        "Policy officer",
-        "Administrator",
-        "Consultant",
-        "International relations specialist"
+        "Lawyer / Legal advisor",
+        "Economist / Manager / Administrator",
+        "Psychologist / Counsellor",
+        "Software developer / IT specialist",
+        "National security and public-order specialist",
+        "Architect / Interior or graphic designer",
+        "Construction / fire-safety engineer"
       ],
       "admissionNotes": [
-        "Good communication and research skills are important",
-        "Group work is a major part of the study experience"
+        "Admission by secondary-school (matriculation/ДЗИ) results, an entrance exam, or an online competition test depending on the programme",
+        "Architecture and arts programmes include a drawing or aptitude examination",
+        "Online application via the candidate-student portal ksp.vfu.bg",
+        "Programmes are offered in Bulgarian, English and Turkish",
+        "International students apply through the International Admissions Centre (priem@vfu.bg)"
       ]
     },
     "6": {
       "name": "University of Management",
-      "focus": "tourism, hospitality, event planning, and digital business management",
-      "style": "practice-based learning, business cases, and service-industry projects",
+      "focus": "international business, management, tourism, hospitality, software systems, and culinary arts",
+      "style": "dual Bulgarian–British (Cardiff Metropolitan University) degrees taught entirely in English, small multicultural groups, case-based learning and mandatory internships with international partners",
       "careers": [
-        "Manager",
-        "Tourism specialist",
-        "Hotel coordinator",
-        "Digital marketer"
+        "Business and marketing manager",
+        "Tourism and hospitality manager",
+        "Hotel / restaurant manager",
+        "Software developer / IT specialist",
+        "Entrepreneur / business consultant",
+        "Culinary arts professional",
+        "Project and operations manager"
       ],
       "admissionNotes": [
-        "Helpful for students interested in leadership and customer experience",
-        "Internships can strongly improve outcomes"
+        "Programmes are taught in English; an English-language test or recognised certificate (IELTS, TOEFL, PTE, CAE, SAT) is required",
+        "Apply online at vum.bg — September and February intakes are available",
+        "Eligible programmes award a dual Bulgarian VUM and British Cardiff Metropolitan University diploma",
+        "Foreign secondary-school diplomas require NACID recognition (€100)",
+        "New bachelor students can apply for first-year scholarships of €250–€1,000"
       ]
     }
   },
@@ -1564,26 +1751,49 @@
     "artificial-intelligence": "Artificial Intelligence",
     "digital-business-transformation": "Digital Business Transformation",
     "space-engineering-and-technologies": "Space Engineering and Technologies",
-    "___university_5": "University 5 — Free University",
-    "international-business": "International Business",
-    "business-administration": "Business Administration",
-    "international-relations": "International Relations",
+    "___university_5": "University 5 — Varna Free University (VFU)",
+    "law": "Law",
+    "psychology": "Psychology",
+    "informatics-and-computer-science": "Informatics and Computer Science",
+    "business-administration-and-management": "Business Administration and Management",
+    "public-administration-and-management": "Public Administration and Management",
+    "finance-and-accounting": "Finance and Accounting",
+    "protection-of-national-security": "Protection of National Security",
+    "counteraction-to-crime-and-public-order": "Counteraction to Crime and Public Order",
+    "architecture": "Architecture",
+    "interior-design": "Interior Design",
+    "construction-of-buildings-and-facilities": "Construction of Buildings and Facilities",
+    "fire-and-emergency-safety": "Fire and Emergency Safety",
+    "graphic-design": "Graphic Design",
+    "choreography": "Choreography",
+    "psychology-and-psychopathology-of-development": "Psychology and Psychopathology of Development",
+    "psychological-counselling": "Psychological Counselling",
+    "positive-psychology": "Positive Psychology",
+    "european-administration-and-project-management": "European Administration and Project Management",
+    "management-of-international-business-projects": "Management of International Business Projects",
+    "advertising-and-public-relations-in-business-management": "Advertising and Public Relations in Business Management",
+    "international-economics-and-law": "International Economics and Law",
+    "financial-and-banking-management-and-marketing": "Financial and Banking Management and Marketing",
+    "software-engineering-and-management": "Software Engineering and Management",
+    "digital-marketing-and-web-design": "Digital Marketing and Web Design",
+    "forensic-examinations": "Forensic Examinations",
     "public-administration": "Public Administration",
-    "european-studies": "European Studies",
     "___university_6": "University 6 — University of Management (VUM)",
-    "software-engineering": "Software Engineering",
+    "software-systems-and-technologies": "Software Systems and Technologies",
     "digital-marketing": "Digital Marketing",
+    "business-administration": "Business Administration",
     "hotel-management": "Hotel Management",
     "hotel-management-distance-learning-program": "Hotel Management - Distance Learning Program",
     "international-business-and-management": "International Business and Management",
     "gastronomy-and-culinary-arts": "Gastronomy and Culinary Arts",
     "hospitality-and-culinary-arts": "Hospitality and Culinary Arts",
-    "pedagogy-of-education-in-hospitality-and-restaurant-business": "Pedagogy of education in Hospitality and Restaurant Business",
-    "food-technology-in-the-culinary-arts": "Food technology in the culinary arts",
+    "pedagogy-of-teaching-in-hospitality-and-restaurant-business": "Pedagogy of Teaching in Hospitality and Restaurant Business",
+    "food-technology-in-the-culinary-arts": "Food Technology in the Culinary Arts",
     "pedagogy-of-teaching-in-economics-and-management": "Pedagogy of Teaching in Economics and Management",
     "master-in-international-tourism": "Master in International Tourism",
     "master-in-international-tourism-distance-learning-program": "Master in International Tourism - Distance Learning Program",
     "master-of-business-administration": "Master of Business Administration",
+    "anti-corruption-and-conflict-of-interest-management": "Anti-Corruption and Conflict of Interest Management",
     "finance": "Finance"
   },
   "programOverrides": {
@@ -2292,7 +2502,128 @@
       ],
       "admissionNotes": [
         "Requires a relevant bachelor degree or equivalent professional experience",
-        "Check Cardiff Met admission alignment for postgraduate entry requirements"
+        "Ranked 5th in Central & Eastern Europe by Eduniversal Best Masters (2025)"
+      ]
+    },
+    "6:bachelor:international-business-and-management": {
+      "overview": "International Business and Management at VUM builds strategic thinkers and leaders for the global business environment, taught entirely in English with a dual Bulgarian VUM and British Cardiff Metropolitan University diploma.",
+      "keyFocus": "International business, management, finance, marketing, entrepreneurship and cross-cultural leadership",
+      "duration": "Full-time — 3 / 3.5 years (professional bachelor, 6 semesters) or 4 / 4.5 years (bachelor, 8 semesters)",
+      "partners": [
+        "Cardiff Metropolitan University",
+        "VUM international partner network"
+      ],
+      "highlights": [
+        "Dual Bulgarian–British diploma without the usual semester abroad",
+        "Small multicultural groups and case-based learning",
+        "Mandatory internship with international business partners",
+        "Study locations in Varna, Sofia and Dobrich"
+      ],
+      "careers": [
+        "Business / marketing manager",
+        "International project manager",
+        "Entrepreneur",
+        "Corporate analyst / consultant"
+      ],
+      "admissionNotes": [
+        "Taught in English — English test or recognised certificate required",
+        "September and February intakes; apply online at vum.bg"
+      ]
+    },
+    "6:bachelor:business-administration": {
+      "overview": "Business Administration at VUM prepares adaptable specialists in management and business, developing the analytical and strategic thinking that modern organisations need.",
+      "keyFocus": "Administration and management, business operations, planning and decision-making",
+      "duration": "Full-time (professional bachelor); Bulgarian- or English-taught options",
+      "partners": [
+        "VUM Faculty of Business",
+        "Regional employer network"
+      ],
+      "highlights": [
+        "Ranked 3rd in Bulgaria in Administration & Management by the Ministry of Education rating system",
+        "Practice-oriented curriculum with employer projects",
+        "Affordable Bulgarian-language track (€850 per semester)"
+      ],
+      "careers": [
+        "Business administrator",
+        "Operations manager",
+        "Team leader / coordinator",
+        "Public-sector specialist"
+      ],
+      "admissionNotes": [
+        "September and February intakes; apply online at vum.bg",
+        "English-taught track requires an English-language certificate"
+      ]
+    },
+    "6:bachelor:gastronomy-and-culinary-arts": {
+      "overview": "Gastronomy and Culinary Arts at VUM's Institute of Culinary Arts combines professional kitchen training with food science, hospitality and business, taught in English.",
+      "keyFocus": "Culinary technique, gastronomy, food technology, kitchen and restaurant management",
+      "duration": "Full-time (professional bachelor) with hands-on studio training",
+      "partners": [
+        "University College Birmingham",
+        "Hospitality and restaurant industry partners"
+      ],
+      "highlights": [
+        "Professional training kitchens and restaurant studios",
+        "Accredited in the Food Technologies professional field (NEAA)",
+        "Uniforms & knives kit provided (€725 fee)"
+      ],
+      "careers": [
+        "Chef / sous-chef",
+        "Restaurant or kitchen manager",
+        "Food & beverage specialist",
+        "Culinary entrepreneur"
+      ],
+      "admissionNotes": [
+        "Taught in English — English test or certificate required",
+        "Culinary Arts tuition: €1,500/sem (EU) · €2,400 (non-EU)"
+      ]
+    },
+    "6:master:master-in-international-tourism": {
+      "overview": "The Master in International Tourism draws on VUM's 20+ years of tourism education, taught entirely in English with a dual VUM and Cardiff Metropolitan University diploma. It is ranked 10th in the world by Eduniversal Best Masters.",
+      "keyFocus": "International tourism management, destination strategy, sustainability and hospitality leadership",
+      "duration": "3–4 semesters (depending on prior degree); full-time or distance learning",
+      "partners": [
+        "Cardiff Metropolitan University",
+        "International tourism and hospitality partners"
+      ],
+      "highlights": [
+        "Ranked No.10 in the world (Eduniversal Best Masters)",
+        "Now also offered as distance learning for the Bulgarian diploma",
+        "Dual Bulgarian–British diploma taught in English"
+      ],
+      "careers": [
+        "Tourism manager",
+        "Destination / resort manager",
+        "Hospitality director",
+        "Tourism consultant / entrepreneur"
+      ],
+      "admissionNotes": [
+        "Requires a relevant higher-education degree",
+        "September and February intakes; apply online at vum.bg"
+      ]
+    },
+    "6:master:anti-corruption-and-conflict-of-interest-management": {
+      "overview": "\"Anti-Corruption and Conflict of Interest – Legal and Management Aspects\" is an interdisciplinary master's that combines legal expertise with management tools to design and run effective anti-corruption and integrity systems.",
+      "keyFocus": "Anti-corruption policy, conflict-of-interest management, internal control, compliance and public integrity",
+      "duration": "Practice-oriented master's; finalised by a state exam or applied thesis",
+      "partners": [
+        "VUM Faculty of Business",
+        "Public-sector and corporate governance partners"
+      ],
+      "highlights": [
+        "Interdisciplinary blend of law, management and ethics",
+        "Real case studies, project-based learning and design thinking",
+        "Focus on internal control, risk management and transparency"
+      ],
+      "careers": [
+        "Compliance / integrity officer",
+        "Internal control & audit specialist",
+        "Public administration manager",
+        "Risk and governance advisor"
+      ],
+      "admissionNotes": [
+        "Suitable for professionals in the public and corporate sectors",
+        "Requires a relevant higher-education degree"
       ]
     },
     "1:bachelor:mechanical-engineering-and-technologies-met": {
@@ -3602,317 +3933,289 @@
         "Professional experience in healthcare preferred"
       ]
     },
-    "5:bachelor:business-administration": {
-      "overview": "The BBA at Free University of Varna develops practical management and business skills for international careers.",
-      "keyFocus": "Management, entrepreneurship, and applied business practice",
-      "duration": "Full-time (3-4 years depending on programme)",
+    "5:bachelor:law": {
+      "overview": "VFU's Law programme is a five-year integrated Master's degree (магистър) delivered by the Faculty of Law. It covers Bulgarian and EU private and public law and combines lectures with moot-court exercises, a legal clinic and internships in courts, prosecution offices and law firms.",
+      "keyFocus": "Bulgarian and EU law, civil, criminal and administrative procedure, and advocacy skills",
+      "duration": "Full-time / part-time (5 years, Master's degree)",
       "partners": [
-        "Industry partners",
+        "Regional courts and prosecution offices (internships)",
+        "Law firms and notaries",
+        "Erasmus+ partner law faculties"
+      ],
+      "highlights": [
+        "Moot-court and legal-clinic practice",
+        "Bulgarian and EU legal systems",
+        "Path to the legal professions after the state exam"
+      ],
+      "careers": [
+        "Attorney / Advocate",
+        "Judge / Prosecutor (after traineeship)",
+        "Notary / Legal advisor",
+        "Corporate lawyer"
+      ],
+      "admissionNotes": [
+        "Admission by secondary-school (matriculation) results or an entrance test",
+        "Five-year integrated Master's degree entered after secondary school",
+        "Offered in full-time and part-time modes"
+      ]
+    },
+    "5:bachelor:psychology": {
+      "overview": "The Psychology bachelor at VFU builds a broad foundation in general, developmental, social and clinical psychology, with strong practical training in assessment, counselling techniques and applied research in the faculty's psychology laboratories.",
+      "keyFocus": "general, developmental, social and clinical psychology with applied practice",
+      "duration": "Full-time / part-time / distance (4 years)",
+      "partners": [
+        "Schools and social institutions (practice)",
+        "Counselling and HR organisations",
         "Erasmus+ partner universities"
       ],
       "highlights": [
-        "Practice-based learning",
-        "Internships and industry projects",
-        "International exchange opportunities"
+        "Psychology labs and supervised practice",
+        "Counselling and psychodiagnostics skills",
+        "Route into VFU's psychology Master's programmes"
       ],
       "careers": [
-        "Business manager",
-        "Entrepreneur",
-        "Consultant",
-        "Operations specialist"
+        "Psychologist",
+        "HR / organisational specialist",
+        "School / educational psychologist",
+        "Research assistant"
       ],
       "admissionNotes": [
-        "Check the university admission pages for entry requirements",
-        "English-track intake available for international applicants"
+        "Admission by matriculation results, an entrance test or an online competition",
+        "Available in full-time, part-time and distance learning",
+        "Foundation for the regulated psychologist professions"
       ]
     },
-    "5:bachelor:international-relations": {
-      "overview": "A BA in International Relations at Free University covers diplomacy, policy analysis and international organisations.",
-      "keyFocus": "Diplomacy, policy analysis and global affairs",
-      "duration": "Full-time (3 years)",
+    "5:bachelor:informatics-and-computer-science": {
+      "overview": "Informatics and Computer Science at VFU trains software and systems specialists, covering programming, algorithms, databases, web and mobile development, computer networks and cybersecurity, with heavy hands-on work in the university's computer labs and Centre for Digital Technologies.",
+      "keyFocus": "software development, databases, networks, web/mobile and cybersecurity",
+      "duration": "Full-time / part-time / distance (4 years)",
       "partners": [
-        "Regional policy institutes",
-        "Erasmus+ partners"
+        "Regional IT and software companies (internships)",
+        "VFU Centre for Digital Technologies",
+        "Erasmus+ partner universities"
       ],
       "highlights": [
-        "Policy-focused modules",
-        "Opportunities for internships in NGOs and public bodies"
+        "Modern computer laboratories",
+        "Project-based software development",
+        "Available fully online (distance learning)"
       ],
       "careers": [
-        "Policy analyst",
-        "Diplomatic service",
-        "International NGO officer"
+        "Software developer",
+        "Web / mobile developer",
+        "Systems / network administrator",
+        "QA / IT specialist"
       ],
       "admissionNotes": [
-        "Strong writing and research skills are useful",
-        "Check specific document requirements on the university site"
+        "Admission by matriculation results, an entrance test or an online competition",
+        "Interest in mathematics and programming is an advantage",
+        "Offered in full-time, part-time and distance formats"
       ]
     },
-    "5:bachelor:public-administration": {
-      "overview": "The BA in Public Administration prepares students for careers in public sector management and policy implementation.",
-      "keyFocus": "Public policy, administration and governance",
-      "duration": "Full-time (3 years)",
+    "5:bachelor:architecture": {
+      "overview": "Architecture at VFU is a five-and-a-half-year integrated Master's degree in the Faculty of Architecture. Studio-based teaching develops architectural, urban and interior design skills alongside building construction, history and theory, supported by design studios and digital modelling labs.",
+      "keyFocus": "architectural, urban and interior design, construction and digital modelling",
+      "duration": "Full-time (5.5 years, Master's degree)",
       "partners": [
-        "Local government bodies",
-        "Public sector partners"
+        "Architecture and design studios (internships)",
+        "Construction companies",
+        "Erasmus+ partner architecture schools"
       ],
       "highlights": [
-        "Applied governance training",
-        "Practical projects with public institutions"
+        "Design studios and 3D modelling labs",
+        "Integrated Master of Architecture qualification",
+        "Portfolio and drawing-based training"
       ],
       "careers": [
-        "Public administrator",
-        "Policy officer",
-        "Civil service specialist"
+        "Architect",
+        "Urban / spatial planner",
+        "Interior designer",
+        "Design-studio specialist"
       ],
       "admissionNotes": [
-        "Relevant internships are highly valued",
-        "Check civic and language requirements"
+        "Entrance drawing / aptitude examination required",
+        "Five-and-a-half-year integrated Master's degree",
+        "Higher tuition band than most programmes (see fees)"
       ]
     },
-    "5:bachelor:european-studies": {
-      "overview": "European Studies focuses on the institutions, law and policy of the EU and its role in global affairs.",
-      "keyFocus": "EU institutions, law and comparative policy",
-      "duration": "Full-time (3 years)",
+    "5:bachelor:protection-of-national-security": {
+      "overview": "Protection of National Security, in the Faculty of Law, prepares specialists for the national-security, defence and corporate-security sectors, studying security theory, law, crisis and risk management, intelligence and the protection of classified information.",
+      "keyFocus": "national security, crisis and risk management, and protection of classified information",
+      "duration": "Full-time / part-time / distance (4 years)",
       "partners": [
-        "European research centres",
-        "Erasmus+ partners"
+        "Security and public-order institutions (practice)",
+        "Corporate security services",
+        "Erasmus+ partner universities"
       ],
       "highlights": [
-        "EU-focused modules",
-        "Exchange opportunities in EU universities"
+        "Security, law and crisis-management modules",
+        "Links with the national-security sector",
+        "Available in distance-learning format"
       ],
       "careers": [
-        "EU policy advisor",
-        "Researcher",
-        "International affairs specialist"
+        "National-security specialist",
+        "Corporate security manager",
+        "Crisis / risk management officer",
+        "Analyst in the security sector"
       ],
       "admissionNotes": [
-        "Language skills are an advantage",
-        "Check programme-specific entry rules"
+        "Admission by matriculation results or an entrance test",
+        "Offered in full-time, part-time and distance modes",
+        "Related programme: Counteraction to Crime and Public Order"
       ]
     },
-    "5:master:business-administration": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "5:master:international-relations": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "5:master:public-administration": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "5:master:european-studies": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "6:bachelor:tourism-management": {
-      "overview": "The BSc Tourism Management at University of Management focuses on tourism operations, strategy and destination marketing.",
-      "keyFocus": "Tourism operations, destination management and service design",
-      "duration": "Full-time (3 years)",
+    "5:bachelor:international-business-in-english": {
+      "overview": "International Business is taught entirely in English and prepares students for careers in international companies, trade and management. It combines economics, marketing, finance and cross-cultural management with practical projects and Erasmus+ mobility.",
+      "keyFocus": "international business, management, marketing and cross-cultural trade",
+      "duration": "Full-time (4 years, taught in English)",
       "partners": [
-        "Hospitality industry partners",
-        "Regional tourism boards"
+        "International companies (internships)",
+        "Erasmus+ partner universities",
+        "VFU International Admissions Centre"
       ],
       "highlights": [
-        "Industry placements",
-        "Practical workshops and case studies"
+        "Fully English-taught degree",
+        "International classroom and Erasmus+ exchange",
+        "Popular choice for international students"
       ],
       "careers": [
-        "Tourism manager",
-        "Destination marketer",
-        "Operations coordinator"
+        "International business manager",
+        "Trade / export specialist",
+        "Marketing specialist",
+        "Entrepreneur"
       ],
       "admissionNotes": [
-        "Work experience and language skills are an advantage",
-        "Check specific entrance requirements"
+        "Taught in English — B2-level English recommended",
+        "Open to Bulgarian and international applicants",
+        "International students apply via priem@vfu.bg"
+      ]
+    },
+    "5:master:data-science": {
+      "overview": "The Data Science Master's develops specialists in data analysis, machine learning and big-data technologies, covering statistics, Python, databases, data visualisation and AI methods, with a strong applied, project-based focus. It is available full-time and online.",
+      "keyFocus": "data analysis, machine learning, big data and AI methods",
+      "duration": "Full-time / online (18 months)",
+      "partners": [
+        "IT and analytics companies (projects)",
+        "VFU Centre for Digital Technologies",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Machine learning and big-data tooling",
+        "Applied, project-based curriculum",
+        "Available fully online"
+      ],
+      "careers": [
+        "Data scientist",
+        "Data / BI analyst",
+        "Machine-learning engineer",
+        "Data engineer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree",
+        "Programming or quantitative background is an advantage",
+        "Offered full-time and online"
+      ]
+    },
+    "5:master:cybersecurity": {
+      "overview": "The Cybersecurity Master's trains specialists to protect information systems and networks, covering network and application security, cryptography, digital forensics, security operations and risk and compliance management.",
+      "keyFocus": "network and application security, cryptography, digital forensics and risk management",
+      "duration": "Full-time (2 years)",
+      "partners": [
+        "IT security companies (projects)",
+        "VFU Centre for Digital Technologies",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Hands-on security operations and forensics",
+        "Cryptography and secure-systems design",
+        "Aligned with in-demand cyber roles"
+      ],
+      "careers": [
+        "Cybersecurity specialist",
+        "Security / SOC analyst",
+        "Penetration tester",
+        "Information-security manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree",
+        "IT or computer-science background recommended",
+        "Delivered by the Faculty of Social, Business and Computer Sciences"
+      ]
+    },
+    "5:master:software-engineering-and-management": {
+      "overview": "Software Engineering and Management combines advanced software development with IT project and team management, covering software architecture, agile methods, DevOps and product management to prepare technical leaders.",
+      "keyFocus": "software architecture, agile development, DevOps and IT project management",
+      "duration": "Full-time / online (2 years)",
+      "partners": [
+        "Software companies (projects and internships)",
+        "VFU Centre for Digital Technologies",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Software architecture and DevOps",
+        "IT project and team leadership",
+        "Available online for working professionals"
+      ],
+      "careers": [
+        "Software engineer / architect",
+        "Team / tech lead",
+        "IT project manager",
+        "Product manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant Bachelor degree",
+        "Software-development experience is an advantage",
+        "Offered full-time and online"
+      ]
+    },
+    "5:master:psychology-and-psychopathology-of-development": {
+      "overview": "This Master's focuses on developmental psychology and psychopathology across the lifespan, training students in psychological assessment, developmental disorders and counselling, with supervised practice. It is one of VFU's most established psychology programmes.",
+      "keyFocus": "developmental psychology, psychopathology and psychological assessment",
+      "duration": "Full-time (2 years)",
+      "partners": [
+        "Clinics and social institutions (supervised practice)",
+        "Schools and counselling centres",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Developmental and clinical focus",
+        "Supervised counselling practice",
+        "Route towards applied psychology careers"
+      ],
+      "careers": [
+        "Developmental psychologist",
+        "Counsellor",
+        "School / clinical psychology assistant",
+        "Researcher"
+      ],
+      "admissionNotes": [
+        "Requires a Bachelor degree (psychology or related field)",
+        "Some tracks may require prior psychology credits",
+        "Full-time study over two years"
       ]
     },
     "6:bachelor:hotel-management": {
-      "overview": "Hotel Management trains students in hospitality operations, service management and revenue optimisation.",
-      "keyFocus": "Hospitality operations, service excellence and management",
-      "duration": "Full-time (3 years)",
+      "overview": "Hotel Management at VUM trains hospitality leaders in operations, service management and revenue optimisation, taught in English with a dual Bulgarian VUM and British Cardiff Metropolitan University diploma.",
+      "keyFocus": "Hospitality operations, service excellence, revenue and hotel management",
+      "duration": "Full-time (professional bachelor); also offered as a distance-learning programme",
       "partners": [
-        "Hotel groups",
-        "Hospitality training centres"
+        "Cardiff Metropolitan University",
+        "University College Birmingham",
+        "Hotel and hospitality industry partners"
       ],
       "highlights": [
-        "Practical training in hotels",
-        "Internships with industry partners"
+        "Ranked 2nd in Bulgaria in Tourism by the Ministry of Education rating system",
+        "Dual Bulgarian–British diploma taught in English",
+        "Practical training and internships with industry partners"
       ],
       "careers": [
         "Hotel manager",
-        "Front office manager",
-        "Revenue manager"
+        "Front office / operations manager",
+        "Revenue manager",
+        "Hospitality entrepreneur"
       ],
       "admissionNotes": [
-        "Practical placement is part of the curriculum",
-        "Check language requirements for international tracks"
-      ]
-    },
-    "6:bachelor:event-management": {
-      "overview": "Event Management provides skills in planning, logistics and promotion of events and conferences.",
-      "keyFocus": "Event planning, logistics and marketing",
-      "duration": "Full-time (3 years)",
-      "partners": [
-        "Event agencies",
-        "Conference organisers"
-      ],
-      "highlights": [
-        "Project-based event delivery",
-        "Live event experience"
-      ],
-      "careers": [
-        "Event manager",
-        "Conference coordinator",
-        "Production manager"
-      ],
-      "admissionNotes": [
-        "Portfolio of event work or related experience can help",
-        "Check programme details for placement requirements"
-      ]
-    },
-    "6:bachelor:digital-marketing": {
-      "overview": "Digital Marketing trains students in online marketing, analytics and campaign management.",
-      "keyFocus": "Digital channels, analytics and content strategy",
-      "duration": "Full-time (3 years)",
-      "partners": [
-        "Digital agencies",
-        "Marketing technology partners"
-      ],
-      "highlights": [
-        "Hands-on campaign projects",
-        "Analytics and tools training"
-      ],
-      "careers": [
-        "Digital marketer",
-        "SEO specialist",
-        "Performance marketer"
-      ],
-      "admissionNotes": [
-        "Prior marketing interest or portfolio useful",
-        "Check course prerequisites"
-      ]
-    },
-    "6:master:tourism-management": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "6:master:hotel-management": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "6:master:event-management": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "6:master:digital-marketing": {
-      "overview": "Edit this overview.",
-      "keyFocus": "Edit this key focus.",
-      "duration": "Edit this duration.",
-      "studyMode": "Edit these partners.",
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
-      ]
-    },
-    "5:bachelor:international-business": {
-      "overview": "Edit this overview for International Business.",
-      "keyFocus": "Edit this key focus for International Business.",
-      "duration": "Full-time (3-4 years)",
-      "partners": [],
-      "highlights": [
-        "Edit this highlight."
-      ],
-      "careers": [
-        "Edit this career path."
-      ],
-      "admissionNotes": [
-        "Edit this admission note."
+        "Taught in English — English test or certificate required",
+        "September and February intakes; apply online at vum.bg"
       ]
     },
     "3:bachelor:hotel-and-restaurant-management": {
@@ -5612,6 +5915,181 @@
     "space-engineering-and-technologies": {
       "tuition": "€2,750 – €3,900 / year",
       "facultyKey": "engineering"
+    }
+  },
+  "vfu_programInfo": {
+    "law": {
+      "tuition": "€1,083/sem (BG) · €1,600 (intl)",
+      "facultyKey": "law"
+    },
+    "psychology": {
+      "tuition": "€1,002/sem (BG) · €1,600 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "informatics-and-computer-science": {
+      "tuition": "€1,083/sem (BG) · €1,600 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "business-administration-and-management": {
+      "tuition": "€930–€1,002/sem (BG) · €1,600 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "public-administration-and-management": {
+      "tuition": "€930–€1,002/sem (BG) · €1,600 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "international-economic-relations": {
+      "tuition": "€930–€1,002/sem (BG) · €1,600 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "finance-and-accounting": {
+      "tuition": "€930–€1,002/sem (BG) · €1,600 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "international-business-in-english": {
+      "tuition": "€1,600/sem (taught in English)",
+      "facultyKey": "social-business-cs"
+    },
+    "protection-of-national-security": {
+      "tuition": "€930–€1,083/sem (BG) · €1,600 (intl)",
+      "facultyKey": "law"
+    },
+    "counteraction-to-crime-and-public-order": {
+      "tuition": "€930–€1,083/sem (BG) · €1,600 (intl)",
+      "facultyKey": "law"
+    },
+    "architecture": {
+      "tuition": "€1,354/sem (BG) · €1,800 (intl)",
+      "facultyKey": "architecture"
+    },
+    "interior-design": {
+      "tuition": "€1,227/sem (BG) · €1,800 (intl)",
+      "facultyKey": "architecture"
+    },
+    "construction-of-buildings-and-facilities": {
+      "tuition": "€1,227–€1,354/sem (BG) · €1,800–€2,000 (intl)",
+      "facultyKey": "architecture"
+    },
+    "fire-and-emergency-safety": {
+      "tuition": "€1,227/sem (BG) · €1,800 (intl)",
+      "facultyKey": "architecture"
+    },
+    "graphic-design": {
+      "tuition": "€1,002–€1,227/sem (BG) · €1,600 (intl)",
+      "facultyKey": "architecture"
+    },
+    "choreography": {
+      "tuition": "€1,002/sem (BG) · €1,600 (intl)",
+      "facultyKey": "architecture"
+    },
+    "psychology-and-psychopathology-of-development": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "psychological-counselling": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "positive-psychology": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "european-administration-and-project-management": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "management-of-international-business-projects": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "advertising-and-public-relations-in-business-management": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "international-economics-and-law": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "financial-and-banking-management-and-marketing": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "software-engineering-and-management": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "data-science": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "digital-marketing-and-web-design": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "cybersecurity": {
+      "tuition": "€664–€1,170/sem (BG) · €1,800 (intl)",
+      "facultyKey": "social-business-cs"
+    },
+    "forensic-examinations": {
+      "tuition": "€664/sem (BG) · €1,800 (intl)",
+      "facultyKey": "law"
+    }
+  },
+  "vum_programInfo": {
+    "software-systems-and-technologies": {
+      "tuition": "€1,500/sem (EU) · €1,950 (intl)",
+      "facultyKey": "computing"
+    },
+    "international-business-and-management": {
+      "tuition": "€1,500/sem (EU) · €1,950 (intl)",
+      "facultyKey": "business"
+    },
+    "business-administration": {
+      "tuition": "€850/sem (BG) · €1,500 (EU, EN)",
+      "facultyKey": "business"
+    },
+    "hotel-management": {
+      "tuition": "€1,500/sem (EU) · €1,950 (intl)",
+      "facultyKey": "tourism"
+    },
+    "hotel-management-distance-learning-program": {
+      "tuition": "€1,200/sem (EU) · €1,500 (intl)",
+      "facultyKey": "tourism"
+    },
+    "gastronomy-and-culinary-arts": {
+      "tuition": "€1,500/sem (EU) · €2,400 (intl)",
+      "facultyKey": "culinary"
+    },
+    "hospitality-and-culinary-arts": {
+      "tuition": "€1,500/sem (EU) · €2,400 (intl)",
+      "facultyKey": "culinary"
+    },
+    "food-technology-in-the-culinary-arts": {
+      "tuition": "€1,500/sem (EU) · €2,400 (intl)",
+      "facultyKey": "culinary"
+    },
+    "pedagogy-of-teaching-in-hospitality-and-restaurant-business": {
+      "tuition": "€850/sem (BG)",
+      "facultyKey": "pedagogy"
+    },
+    "pedagogy-of-teaching-in-economics-and-management": {
+      "tuition": "€850/sem (BG)",
+      "facultyKey": "pedagogy"
+    },
+    "master-in-international-tourism": {
+      "tuition": "€1,500/sem (EU) · €1,950 (intl)",
+      "facultyKey": "tourism"
+    },
+    "master-in-international-tourism-distance-learning-program": {
+      "tuition": "€1,200/sem (EU) · €1,500 (intl)",
+      "facultyKey": "tourism"
+    },
+    "master-of-business-administration": {
+      "tuition": "€1,500/sem (EU) · €2,400 (intl)",
+      "facultyKey": "business"
+    },
+    "anti-corruption-and-conflict-of-interest-management": {
+      "facultyKey": "business"
     }
   }
 }
