@@ -33,6 +33,24 @@ export function updatePassword(password: string) {
   return supabase.auth.updateUser({ password });
 }
 
+/**
+ * Re-check a user's current password by attempting a fresh sign-in.
+ * Used to confirm identity before a sensitive change (e.g. changing the
+ * password). Same user, so the refreshed session is harmless.
+ */
+export function verifyPassword(email: string, password: string) {
+  return supabase.auth.signInWithPassword({ email, password });
+}
+
+/**
+ * Change the account email. Supabase sends a confirmation link to the new
+ * address (and, if enabled, the old one); the change only takes effect once
+ * confirmed.
+ */
+export function updateEmail(email: string) {
+  return supabase.auth.updateUser({ email });
+}
+
 /** Resolve the currently authenticated user, or null when signed out. */
 export async function getCurrentUser() {
   const {

@@ -2,9 +2,31 @@ import { supabase } from "./supabase";
 
 const AVATAR_BUCKET = "avatars";
 
+/** The editable, free-text detail columns on a profile row. */
+export type ProfileDetails = {
+  first_name: string | null;
+  last_name: string | null;
+  full_name: string | null;
+  phone: string | null;
+  address: string | null;
+  region: string | null;
+};
+
 /** Update the display name on a user's profile row. */
 export async function updateProfileFullName(userId: string, fullName: string): Promise<void> {
   const { error } = await supabase.from("profiles").update({ full_name: fullName }).eq("id", userId);
+
+  if (error) {
+    throw error;
+  }
+}
+
+/** Persist any subset of a user's editable profile detail fields. */
+export async function updateProfileDetails(
+  userId: string,
+  details: Partial<ProfileDetails>
+): Promise<void> {
+  const { error } = await supabase.from("profiles").update(details).eq("id", userId);
 
   if (error) {
     throw error;
