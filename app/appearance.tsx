@@ -1,94 +1,115 @@
-import React, { useEffect, useState } from 'react';
-import { View, TouchableOpacity, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { ThemeContext } from '@/contexts/theme-context';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
+import { ThemeContext } from '@/contexts/theme-context';
+import { Brand, getAppPalette } from '@/constants/theme';
+import { useColorScheme } from '@/hooks/use-color-scheme';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
 
 type ThemeChoice = 'light' | 'dark' | 'system';
 
+const OPTIONS: { key: ThemeChoice; icon: keyof typeof Ionicons.glyphMap }[] = [
+  { key: 'light', icon: 'sunny-outline' },
+  { key: 'dark', icon: 'moon-outline' },
+  { key: 'system', icon: 'phone-portrait-outline' },
+];
+
 export default function AppearanceScreen() {
-  const router = useRouter();
   const ctx = useContext(ThemeContext)!;
   const { t } = useTranslation();
-
-  const [draftTheme, setDraftTheme] = useState<ThemeChoice>(ctx.theme);
-  const previewResolvedScheme =
-    draftTheme === 'system' ? ctx.resolvedScheme : draftTheme;
-  const isDark = (previewResolvedScheme ?? 'light') === 'dark';
-
-  useEffect(() => {
-    setDraftTheme(ctx.theme);
-  }, [ctx.theme]);
-
-  const handleDone = () => {
-    if (draftTheme !== ctx.theme) {
-      ctx.setTheme(draftTheme);
-    }
-
-    router.back();
-  };
-
-  const rowStyle = (choice: ThemeChoice) => [styles.row, draftTheme === choice && styles.rowSelected];
+  const scheme = useColorScheme() ?? 'light';
+  const isDark = scheme === 'dark';
+  const palette = getAppPalette(isDark);
 
   return (
-    <ThemeContext.Provider
-      value={{
-        theme: draftTheme,
-        setTheme: setDraftTheme,
-        resolvedScheme: previewResolvedScheme,
-      }}
-    >
-      <ThemedView style={styles.container}>
+    <View style={[styles.container, { backgroundColor: palette.background }]}>
+      <View style={styles.inner}>
         <BackToSettingsButton />
+        <Text style={[styles.title, { color: palette.text }]}>{t('appearance.title')}</Text>
+        <Text style={[styles.subtitle, { color: palette.textSecondary }]}>
+          {t('appearance.subtitle')}
+        </Text>
+
         <View
-          style={[
-            styles.card,
-            {
-              backgroundColor: isDark ? '#171a21' : '#ffffff',
-              borderColor: isDark ? '#2a303c' : '#e6e9ee',
-            },
-          ]}
+          style={[styles.card, { backgroundColor: palette.surface, shadowColor: palette.cardShadow }]}
         >
-          <ThemedText type="subtitle">{t('appearance.title')}</ThemedText>
-
-          <TouchableOpacity style={rowStyle('light')} onPress={() => setDraftTheme('light')}>
-            <ThemedText type="defaultSemiBold">{t('appearance.light')}</ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={rowStyle('dark')} onPress={() => setDraftTheme('dark')}>
-            <ThemedText type="defaultSemiBold">{t('appearance.dark')}</ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={rowStyle('system')} onPress={() => setDraftTheme('system')}>
-            <ThemedText type="defaultSemiBold">{t('appearance.system')}</ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.close} onPress={handleDone}>
-            <ThemedText type="link">{t('appearance.done')}</ThemedText>
-          </TouchableOpacity>
-
+          {OPTIONS.map((opt, index) => {
+            const selected = ctx.theme === opt.key;
+            return (
+              <React.Fragment key={opt.key}>
+                {index > 0 ? (
+                  <View style={[styles.separator, { backgroundColor: palette.border }]} />
+                ) : null}
+                <TouchableOpacity
+                  style={styles.row}
+                  onPress={() => ctx.setTheme(opt.key)}
+                  activeOpacity={0.7}
+                  accessibilityRole="radio"
+                  accessibilityState={{ selected }}
+                >
+                  <View style={[styles.iconWrap, { backgroundColor: palette.mutedSurface }]}>
+                    <Ionicons name={opt.icon} size={20} color={palette.text} />
+                  </View>
+                  <View style={styles.rowText}>
+                    <Text style={[styles.rowLabel, { color: palette.text }]}>
+                      {t(`appearance.${opt.key}`)}
+                    </Text>
+                    <Text style={[styles.rowHint, { color: palette.textSecondary }]}>
+                      {t(`appearance.${opt.key}Hint`)}
+                    </Text>
+                  </View>
+                  {selected ? (
+                    <Ionicons name="checkmark-circle" size={24} color={Brand.primary} />
+                  ) : (
+                    <View style={[styles.radio, { borderColor: palette.border }]} />
+                  )}
+                </TouchableOpacity>
+              </React.Fragment>
+            );
+          })}
         </View>
-      </ThemedView>
-    </ThemeContext.Provider>
+      </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 24, paddingTop: 76 },
-  card: { gap: 18, marginTop: 16 },
+  container: { flex: 1, padding: 16, paddingTop: 64 },
+  inner: { width: '100%', maxWidth: 640, alignSelf: 'center' },
+  title: {
+    fontSize: 28,
+    fontWeight: '800',
+    letterSpacing: -0.5,
+    marginTop: 8,
+    marginLeft: 2,
+  },
+  subtitle: { fontSize: 14, marginTop: 4, marginBottom: 20, marginLeft: 2 },
+  card: {
+    borderRadius: 20,
+    overflow: 'hidden',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.08,
+    shadowRadius: 16,
+    elevation: 4,
+  },
   row: {
-    paddingVertical: 14,
-    paddingHorizontal: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+  },
+  iconWrap: {
+    width: 40,
+    height: 40,
     borderRadius: 12,
-    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  rowSelected: {
-    borderColor: '#0a7ea4',
-    backgroundColor: 'rgba(10, 126, 164, 0.08)',
-  },
-  close: { marginTop: 28 },
+  rowText: { flex: 1, gap: 2 },
+  rowLabel: { fontSize: 16, fontWeight: '700', letterSpacing: -0.2 },
+  rowHint: { fontSize: 13 },
+  radio: { width: 22, height: 22, borderRadius: 11, borderWidth: 2 },
+  separator: { height: 1, marginLeft: 70 },
 });

@@ -282,6 +282,129 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Anti-Corruption and Conflict of Interest Management",
     ],
   },
+  "7": {
+    bachelor: [
+      "Law",
+      "Medicine",
+      "Pharmacy",
+      "Psychology",
+      "Philosophy",
+      "Political Science",
+      "Sociology",
+      "International Relations",
+      "Economics",
+      "Business Administration",
+      "Finance",
+      "Computer Science",
+      "Software Engineering",
+      "Information Systems",
+      "Mathematics",
+      "Molecular Biology",
+      "Chemistry",
+      "Physics",
+      "History",
+      "English Studies",
+      "Journalism",
+      "Public Relations",
+    ],
+    master: [
+      "Artificial Intelligence",
+      "Data Science",
+      "Software Technologies",
+      "Information Security",
+      "Clinical Psychology",
+      "European Studies",
+      "Political Management",
+      "Finance and Banking",
+      "Marketing",
+      "Human Resources Management",
+      "Public Health and Health Management",
+      "Medical Physics",
+      "Bioinformatics",
+      "Digital Media",
+    ],
+  },
+  "8": {
+    bachelor: [
+      "Computer Systems and Technologies",
+      "Computer Science and Engineering",
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Automation and Information Technologies",
+      "Electronics",
+      "Telecommunications and Information Technologies",
+      "Electrical Engineering",
+      "Renewable Energy Sources",
+      "Thermal and Nuclear Power Engineering",
+      "Mechanical Engineering",
+      "Mechatronics",
+      "Industrial Engineering",
+      "Transport Equipment and Technologies",
+      "Automotive Engineering",
+      "Industrial Management",
+      "Management and Business Information Systems",
+      "Applied Mathematics and Informatics",
+      "Electrical Power Engineering",
+      "Advanced Industrial Technologies",
+    ],
+    master: [
+      "Artificial Intelligence and Data Science",
+      "Cyber Security",
+      "Software Technologies",
+      "Data Science",
+      "Embedded Systems",
+      "Communication Technologies",
+      "Power Engineering",
+      "Renewable Energy and Energy Efficiency",
+      "Robotics",
+      "Intelligent Transport Systems",
+      "Engineering Management",
+      "Business Information Technologies",
+      "Applied Mathematics",
+      "Electrical Engineering and Technologies",
+    ],
+  },
+  "9": {
+    bachelor: [
+      "Economics (English)",
+      "Economics",
+      "Finance",
+      "Accounting and Control",
+      "Finance and Accounting (English)",
+      "Business Economics",
+      "Marketing",
+      "Entrepreneurship",
+      "Economics of Tourism",
+      "Real Estate Economics",
+      "Economics of Transport and Energy",
+      "Management",
+      "Public Administration",
+      "Human Resources Management",
+      "Business Informatics (English)",
+      "Business Informatics and Communications",
+      "Statistics and Econometrics",
+      "International Economic Relations (English)",
+      "International Relations",
+      "Political Science",
+      "Law",
+    ],
+    master: [
+      "Finance and Banking",
+      "Auditing",
+      "Corporate Finance",
+      "Marketing Management",
+      "Business Administration",
+      "International Business",
+      "International Economics",
+      "Digital Economy",
+      "Data Science",
+      "Business Analytics",
+      "Public Management",
+      "Project Management",
+      "Nuclear Security",
+      "Global Sustainability Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -444,6 +567,45 @@ function getVumProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getSuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`su_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTusProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`tus_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUnweProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`unwe_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -486,6 +648,36 @@ function getVfuFaculty(facultyKey: string): string | null {
 
 function getVumFaculty(facultyKey: string): string | null {
   const name = i18n.t(`vum_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getSuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`su_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getTusFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`tus_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUnweFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`unwe_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -585,6 +777,33 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (vumInfo.tuition) summary.tuition = vumInfo.tuition;
         if (vumInfo.facultyKey) {
           const facultyName = getVumFaculty(vumInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "7") {
+      const suInfo = getSuProgramInfo(slug);
+      if (suInfo) {
+        if (suInfo.tuition) summary.tuition = suInfo.tuition;
+        if (suInfo.facultyKey) {
+          const facultyName = getSuFaculty(suInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "8") {
+      const tusInfo = getTusProgramInfo(slug);
+      if (tusInfo) {
+        if (tusInfo.tuition) summary.tuition = tusInfo.tuition;
+        if (tusInfo.facultyKey) {
+          const facultyName = getTusFaculty(tusInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "9") {
+      const unweInfo = getUnweProgramInfo(slug);
+      if (unweInfo) {
+        if (unweInfo.tuition) summary.tuition = unweInfo.tuition;
+        if (unweInfo.facultyKey) {
+          const facultyName = getUnweFaculty(unweInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -718,6 +937,36 @@ export function buildProgramDetail(
       if (vumInfo.tuition) result.tuition = vumInfo.tuition;
       if (vumInfo.facultyKey) {
         const facultyName = getVumFaculty(vumInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "7" && normalizedSlug) {
+    const suInfo = getSuProgramInfo(normalizedSlug);
+
+    if (suInfo) {
+      if (suInfo.tuition) result.tuition = suInfo.tuition;
+      if (suInfo.facultyKey) {
+        const facultyName = getSuFaculty(suInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "8" && normalizedSlug) {
+    const tusInfo = getTusProgramInfo(normalizedSlug);
+
+    if (tusInfo) {
+      if (tusInfo.tuition) result.tuition = tusInfo.tuition;
+      if (tusInfo.facultyKey) {
+        const facultyName = getTusFaculty(tusInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "9" && normalizedSlug) {
+    const unweInfo = getUnweProgramInfo(normalizedSlug);
+
+    if (unweInfo) {
+      if (unweInfo.tuition) result.tuition = unweInfo.tuition;
+      if (unweInfo.facultyKey) {
+        const facultyName = getUnweFaculty(unweInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

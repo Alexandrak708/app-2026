@@ -137,9 +137,13 @@
   },
   "appearance": {
     "title": "Appearance",
+    "subtitle": "Choose how the app looks.",
     "light": "Light",
     "dark": "Dark",
     "system": "System",
+    "lightHint": "Always use the light theme",
+    "darkHint": "Always use the dark theme",
+    "systemHint": "Match your device settings",
     "done": "Done"
   },
   "profile": {
@@ -373,6 +377,42 @@
       "labsText": "Palmes of Excellence",
       "tuitionFreeLabel": "€850",
       "tuitionFreeText": "Lowest semester fee"
+    },
+    "7": {
+      "yearsTradition": "135+",
+      "bachelorPrograms": "100+",
+      "masterPrograms": "200+",
+      "internationalPartners": "130+",
+      "countries": "50",
+      "studentsGraduated": "200K+",
+      "labs": "16",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€230",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "8": {
+      "yearsTradition": "80+",
+      "bachelorPrograms": "50+",
+      "masterPrograms": "80+",
+      "internationalPartners": "200+",
+      "countries": "45",
+      "studentsGraduated": "100K+",
+      "labs": "17",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€200",
+      "tuitionFreeText": "Lowest semester fee (BG/EU)"
+    },
+    "9": {
+      "yearsTradition": "105+",
+      "bachelorPrograms": "53",
+      "masterPrograms": "90",
+      "internationalPartners": "187",
+      "countries": "45",
+      "studentsGraduated": "200K+",
+      "labs": "120+",
+      "labsText": "Auditoriums & halls",
+      "tuitionFreeLabel": "€179",
+      "tuitionFreeText": "Lowest semester fee (BG/EU)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -483,6 +523,60 @@
       {
         "range": "€1,200",
         "label": "Distance learning (EU, per semester)"
+      }
+    ],
+    "7": [
+      {
+        "range": "€230–€300",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€2,800–€3,000",
+        "label": "Foreign students (bachelor, per year)"
+      },
+      {
+        "range": "€3,600",
+        "label": "Foreign students (master, per year)"
+      },
+      {
+        "range": "€7,700",
+        "label": "Medicine / Pharmacy in English (per year)"
+      }
+    ],
+    "8": [
+      {
+        "range": "€200–€360",
+        "label": "State-subsidised (BG/EU, per semester)"
+      },
+      {
+        "range": "€536–€2,025",
+        "label": "Paid education (per semester, by field)"
+      },
+      {
+        "range": "€3,000–€4,000",
+        "label": "Foreign students (English-taught, per year)"
+      },
+      {
+        "range": "€2,500",
+        "label": "Preparatory language year (per year)"
+      }
+    ],
+    "9": [
+      {
+        "range": "€179–€230",
+        "label": "State-subsidised (BG/EU, per semester)"
+      },
+      {
+        "range": "€1,650–€1,900",
+        "label": "Foreign students (bachelor, per semester)"
+      },
+      {
+        "range": "€2,000",
+        "label": "Foreign students (Law master, per semester)"
+      },
+      {
+        "range": "€1,500–€1,650",
+        "label": "Preparatory language year (per semester)"
       }
     ]
   },
@@ -718,7 +812,122 @@
     "vum_visaSupport": "Admission and visa support for non-EU students (visa deposit €500 where applicable) — admissions@vum.bg",
     "vum_prep": "English-language testing and preparation, plus study-abroad semesters with partner universities worldwide",
     "vum_multicultural": "A diverse, multicultural campus ranked first in Central & Eastern Europe for international orientation (U-Multirank)",
-    "vum_recognition": "Dual Bulgarian and British (Cardiff Metropolitan University) diplomas recognised internationally"
+    "vum_recognition": "Dual Bulgarian and British (Cardiff Metropolitan University) diplomas recognised internationally",
+    "su_scholarshipsDesc": "As a state university, Sofia University keeps tuition low for Bulgarian and EU students and offers a range of merit- and need-based support:",
+    "su_meritScholarships": "Merit scholarships from the state budget for full-time students with a strong grade-point average, plus special and named (donor) scholarships",
+    "su_socialScholarships": "Social (need-based) scholarships, support for students from vulnerable groups, and one-off assistance in special circumstances",
+    "su_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at hundreds of partner universities, plus Transform4Europe alliance opportunities",
+    "su_phdScholarships": "State scholarships for full-time doctoral candidates and paid participation in national and European research projects",
+    "su_studentLoans": "State-guaranteed, low-interest student loans for Bulgarian and EU students under the Student and Doctoral Loans Act",
+    "su_applicationDesc": "Admission is organised by the university each summer, with separate tracks for Bulgarian/EU and non-EU applicants:",
+    "su_appEuExam": "Bulgarian and EU applicants are ranked by a composite score from state matriculation (ДЗИ) exams and/or Sofia University entrance examinations",
+    "su_appNonEu": "Non-EU applicants are admitted on the basis of their documents, provided the relevant grade is at least 62% of the maximum in their country's system",
+    "su_appMedicine": "Medicine and Pharmacy applicants sit competitive entrance exams in Biology and Chemistry (with English for the English-taught programmes)",
+    "su_appDocuments": "Required documents include the secondary-school diploma (with NACID recognition for foreign diplomas), an application form, ID/passport and a medical certificate",
+    "su_appDeadlines": "Applications are typically submitted from June to August, with ranking rounds in July–September for the autumn start",
+    "su_appOnline": "Bulgarian/EU candidates apply through the online admission system (priem.uni-sofia.bg); foreign students apply via the International Relations Office (intdept@admin.uni-sofia.bg)",
+    "su_masterFeesDesc": "Fees for 2025/2026 are indicative and depend on the programme, language and student category; exact amounts are set annually by Rector's order and paid in two semester instalments:",
+    "su_feeSubsidised": "Bulgarian and EU students: state-subsidised places from about €230 per year, or paid places set per field (higher for professional and regulated programmes)",
+    "su_feeForeignBachelor": "Foreign (non-EU) students: bachelor programmes taught in Bulgarian from roughly €2,800 per year",
+    "su_feeForeignMaster": "Foreign (non-EU) students: master programmes from roughly €3,600 per year",
+    "su_feeMedicine": "Medicine and Pharmacy taught in English: about €7,700 per year for international students",
+    "su_feePrep": "Specialised one-year Bulgarian-language and subject preparatory course: €3,500",
+    "su_feePayment": "Annual tuition is paid in two equal halves at the start of each semester; an 80% refund applies to withdrawals before 1 October, and dual (Bulgarian) citizens pay reduced rates",
+    "su_campus": "Campus & Facilities",
+    "su_campusDesc": "The university is spread across historic and modern buildings in central Sofia and beyond:",
+    "su_rectorate": "The landmark Rectorate (1924–1934) on Tsar Osvoboditel Boulevard — over 18,000 m² and 324 rooms — funded by the benefactors Evlogi and Hristo Georgiev",
+    "su_libraries": "The University Library, the largest and oldest academic library in Bulgaria, with millions of volumes",
+    "su_insait": "Modern research institutes including INSAIT (Institute for Computer Science, AI and Technology), which won Bulgaria's first ERC grant",
+    "su_botanicalGarden": "A University Botanical Garden, astronomical observatories and specialised science laboratories and clinics",
+    "su_dormitories": "Student dormitories in the Studentski Grad complex, canteens, sports facilities and student organisations",
+    "su_partnersDesc": "Sofia University is Bulgaria's most internationally connected university:",
+    "su_erasmusNetwork": "Hundreds of Erasmus+ inter-institutional agreements for student and staff mobility across Europe",
+    "su_transform4europe": "Founding member of the Transform4Europe European University Alliance",
+    "su_researchRankings": "Ranked the No. 1 university in Bulgaria and listed in the QS World University Rankings, with strong performance in the natural and social sciences",
+    "su_alumni": "Alumni include Bulgarian presidents, prime ministers, academicians, writers and leading scientists",
+    "su_bilateral": "Bilateral cooperation agreements with partner universities and research centres worldwide",
+    "su_internationalDesc": "Sofia University welcomes international students and offers dedicated support:",
+    "su_englishPrograms": "Degree programmes in English and other foreign languages, including Medicine and Pharmacy, alongside a wide Bulgarian-taught offering",
+    "su_bulgarianPrep": "A one-year specialised preparatory course in Bulgarian language and subject preparation for foreign applicants",
+    "su_visaSupport": "Admission, visa and residence support for foreign students through the International Relations Office",
+    "su_accommodation": "Assistance with accommodation in university dormitories and integration through student organisations",
+    "su_recognition": "NACID recognition of foreign diplomas and internationally recognised Sofia University degrees",
+    "tus_scholarshipsDesc": "As Bulgaria's leading technical university, TU-Sofia offers state, merit and industry-sponsored support:",
+    "tus_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results, plus special and named scholarships",
+    "tus_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "tus_companyScholarships": "Corporate scholarships and paid internships from technology partners such as Bosch, SAP, VMware, Festo and Siemens",
+    "tus_erasmusGrants": "Erasmus+ and EUt+ alliance mobility grants for study or traineeship abroad",
+    "tus_studentLoans": "State-guaranteed, low-interest student loans for Bulgarian and EU students",
+    "tus_applicationDesc": "Admission for 2026/2027 is by competitive ranking, with several entry routes:",
+    "tus_appExam": "A TU-Sofia entrance examination in Mathematics is the main route for engineering programmes",
+    "tus_appMatriculation": "Admission is also possible with state matriculation (ДЗИ) results in Mathematics, Bulgarian or another relevant subject",
+    "tus_appForeign": "Foreign (non-EU) applicants apply on documents through the International Office; language or preparatory-course proof is required for English, German or French tracks",
+    "tus_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), application form and ID/passport",
+    "tus_appDeadlines": "Applications and ranking rounds run through the summer for the autumn (winter-semester) start",
+    "tus_appOnline": "Apply online via the admission portal priem.tu-sofia.bg",
+    "tus_masterFeesDesc": "Fees for 2025/2026 are paid in euro in two semester instalments and depend on the programme and student category:",
+    "tus_feeStateSubsidised": "State-subsidised (BG/EU): roughly €200–€360 per semester by field (about €307 for Informatics and Computer Technologies)",
+    "tus_feePaid": "Paid education (BG/EU): from about €536 per semester (Pedagogy) up to about €2,025 (Electrical Engineering, Electronics and Automation)",
+    "tus_feeForeign": "Foreign (non-EU) students: about €3,000–€4,000 per year depending on the specialty, including English-taught programmes",
+    "tus_feePrep": "Preparatory language course for applicants without a valid certificate: about €2,500 per year",
+    "tus_feePayment": "Fees are payable in euro in two equal instalments (due on enrolment and by 30 November / 30 April)",
+    "tus_campus": "Campus & Facilities",
+    "tus_campusDesc": "TU-Sofia's main campus is in the Studentski Grad district of Sofia, with branches in Plovdiv and Sliven:",
+    "tus_labs": "Modern engineering, electronics, robotics and computing laboratories, many equipped by industry partners",
+    "tus_technologyPark": "A High-Technology Business Incubator and Technology Park supporting research, start-ups and innovation",
+    "tus_library": "A central scientific-technical library and specialised faculty libraries",
+    "tus_dormitories": "Student dormitories in the Studentski Grad campus, canteens and student services",
+    "tus_sports": "A university sports complex and active student clubs and organisations",
+    "tus_partnersDesc": "TU-Sofia is deeply connected to industry and the European academic network:",
+    "tus_eut": "Founding member of the European University of Technology (EUt+) alliance of nine technical universities",
+    "tus_industryPartners": "Strategic partnerships with Bosch, SAP, VMware, Festo, Siemens, Schneider Electric and other technology leaders",
+    "tus_erasmusNetwork": "Hundreds of Erasmus+ agreements for student and staff mobility across Europe",
+    "tus_branches": "Campuses in Sofia, Plovdiv and Sliven, plus colleges in Sofia, Botevgrad, Kazanlak and beyond",
+    "tus_ranking": "Bulgaria's top-ranked technical university, consistently first in the engineering professional fields",
+    "tus_internationalDesc": "TU-Sofia has a long tradition of educating international students:",
+    "tus_englishGermanFrench": "Engineering programmes taught entirely in English (ELFE), German (FDIBA) and French, alongside Bulgarian-taught degrees",
+    "tus_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
+    "tus_prepCourse": "A preparatory year in Bulgarian, English or German language and engineering subjects",
+    "tus_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "tus_recognition": "NACID recognition of foreign diplomas and internationally recognised TU-Sofia engineering degrees",
+    "unwe_scholarshipsDesc": "As a state university, UNWE keeps tuition low for Bulgarian and EU students and offers a range of merit- and need-based support:",
+    "unwe_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results, plus named and donor scholarships",
+    "unwe_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "unwe_erasmusGrants": "Erasmus+ and ENGAGE.EU alliance mobility grants for study or traineeship abroad",
+    "unwe_companyScholarships": "Corporate scholarships and paid internships from banks, audit firms and business partners",
+    "unwe_studentLoans": "State-guaranteed, low-interest student loans for Bulgarian and EU students",
+    "unwe_applicationDesc": "Admission is organised each summer by professional field, with several entry routes:",
+    "unwe_appExam": "Applicants rank by a composite score from a UNWE entrance exam (or an approved external exam) and their diploma grades",
+    "unwe_appMatriculation": "State matriculation (ДЗИ) results — e.g. in Mathematics, Bulgarian or a foreign language — can be used for ranking",
+    "unwe_appEnglish": "English-taught majors require a B2-level English certificate or an entrance English test",
+    "unwe_appForeign": "Foreign (non-EU) applicants apply on documents through the International Office; a preparatory language year is available",
+    "unwe_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), an application form and ID/passport",
+    "unwe_appOnline": "Apply online via the UNWE candidate-student system (priem.unwe.bg)",
+    "unwe_masterFeesDesc": "Fees for 2025/2026 depend on the programme, language and student category and are paid per semester:",
+    "unwe_feeStateSubsidised": "State-subsidised (BG/EU): about €179 per semester for economics and administration, and €230 for law, political science, media and sociology",
+    "unwe_feeForeignBg": "Foreign (non-EU) bachelor in Bulgarian: about €1,650 per semester (€3,300 per year)",
+    "unwe_feeForeignEn": "Foreign (non-EU) bachelor in English: about €1,900 per semester (€3,800 per year)",
+    "unwe_feeLawMaster": "Foreign Law master (Bulgarian): about €2,000 per semester (€4,000 per year); dual (Bulgarian) citizens pay 50% less",
+    "unwe_feePrep": "Preparatory language year: about €3,000 (Bulgarian) or €3,300 (English) per year",
+    "unwe_campus": "Campus & Facilities",
+    "unwe_campusDesc": "UNWE's 41,000 m² campus is in the Studentski Grad district of Sofia:",
+    "unwe_auditoriums": "120 auditoriums and 367 study rooms, including modern lecture halls and computer rooms",
+    "unwe_library": "A modern university library with reading rooms and around 100 computer workstations",
+    "unwe_dormitories": "Student dormitories accommodating nearly 5,000 students, with canteens and services",
+    "unwe_sports": "A university sports complex, active student clubs and the Students' Council",
+    "unwe_careerCentre": "An Inter-university Centre for Career Development (ICCD) linking students with employers",
+    "unwe_partnersDesc": "UNWE is a leading, internationally connected economics university:",
+    "unwe_engage": "Member of the ENGAGE.EU European University alliance of business and economics universities",
+    "unwe_erasmusNetwork": "187 international and 221 local partners, with a full Erasmus+ programme",
+    "unwe_accreditation": "Highest institutional accreditation from the National Evaluation and Accreditation Agency (NEAA); ranked first in Bulgaria in its fields",
+    "unwe_alumni": "Alumni include five Bulgarian prime ministers, IMF Managing Director Kristalina Georgieva and many leading economists",
+    "unwe_bilateral": "Joint and double-degree programmes and cooperation with universities worldwide",
+    "unwe_internationalDesc": "UNWE has a long tradition of educating international students:",
+    "unwe_englishPrograms": "Bachelor majors taught entirely in English — Economics, International Economic Relations, Finance and Accounting, and Business Informatics — plus English master's programmes",
+    "unwe_prepCourse": "A preparatory year in Bulgarian or English language for foreign applicants",
+    "unwe_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
+    "unwe_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "unwe_recognition": "NACID recognition of foreign diplomas and internationally recognised UNWE degrees"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -774,6 +983,44 @@
     "computing": "Informatics & Computer Science",
     "culinary": "Institute of Culinary Arts",
     "pedagogy": "Pedagogy of Teaching"
+  },
+  "su_faculties": {
+    "law": "Faculty of Law",
+    "philosophy": "Faculty of Philosophy",
+    "history": "Faculty of History",
+    "philology": "Faculty of Classical and Modern Philology",
+    "journalism": "Faculty of Journalism and Mass Communication",
+    "economics": "Faculty of Economics and Business Administration",
+    "fmi": "Faculty of Mathematics and Informatics",
+    "physics": "Faculty of Physics",
+    "chemistry-pharmacy": "Faculty of Chemistry and Pharmacy",
+    "biology": "Faculty of Biology",
+    "medicine": "Faculty of Medicine"
+  },
+  "tus_faculties": {
+    "automation": "Faculty of Automation",
+    "fkst": "Faculty of Computer Systems and Technologies",
+    "electronics": "Faculty of Electronic Engineering and Technologies",
+    "telecom": "Faculty of Telecommunications",
+    "electrical": "Faculty of Electrical Engineering",
+    "power": "Faculty of Power Engineering and Power Machines",
+    "mechanical": "Faculty of Mechanical Engineering",
+    "industrial-tech": "Faculty of Industrial Technology",
+    "transport": "Faculty of Transport",
+    "management": "Faculty of Management",
+    "fpmi": "Faculty of Applied Mathematics and Informatics",
+    "fdiba": "German Faculty of Engineering (FDIBA)",
+    "elfe": "English Language Faculty of Engineering (ELFE)"
+  },
+  "unwe_faculties": {
+    "general-economics": "Faculty of General Economics",
+    "finance-accounting": "Faculty of Finance and Accountancy",
+    "business": "Faculty of Business",
+    "infrastructure": "Faculty of Economics of Infrastructure",
+    "management-admin": "Faculty of Management and Administration",
+    "international": "Faculty of International Economics and Politics",
+    "informatics-statistics": "Faculty of Applied Informatics and Statistics",
+    "law": "Faculty of Law"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -1417,6 +1664,36 @@
       "tuitionRange": "€850 – €2,400 / semester",
       "website": "https://www.vum.bg",
       "applyUrl": "https://vum.bg/bg/kandidatstvai-onlain/"
+    },
+    "7": {
+      "name": "Sofia University",
+      "description": "Bulgaria's oldest and largest university (est. 1888) — a comprehensive research university in the heart of Sofia with 16 faculties spanning law, sciences, humanities, economics and medicine.",
+      "longDescription": "Sofia University \"St. Kliment Ohridski\" is the oldest and largest higher-education institution in Bulgaria, founded on 1 October 1888 and established as a university in 1904. Named after the medieval scholar St. Kliment Ohridski, it is the country's leading centre of teaching and research and is consistently ranked the No. 1 university in Bulgaria.\n\nThe university is organised into 16 faculties — Law, Philosophy, History, Classical and Modern Philology, Slavic Studies, Education, Educational Studies and the Arts, Journalism and Mass Communication, Theology, Economics and Business Administration, Mathematics and Informatics, Physics, Chemistry and Pharmacy, Biology, Geology and Geography, and Medicine — together with three departments. It offers more than 100 bachelor's and over 200 master's programmes, plus doctoral training, in Bulgarian and in English and other foreign languages.\n\nToday over 20,000 students study at the university, taught by around 1,700 academic staff. Its landmark Rectorate on Tsar Osvoboditel Boulevard — built between 1924 and 1934 with a donation from the brothers Evlogi and Hristo Georgiev — spans more than 18,000 m² with 324 rooms. The university also runs the largest university library in the country, a botanical garden, observatories and modern research institutes, including INSAIT, which won Bulgaria's first European Research Council grant.\n\nSofia University maintains a wide international network through Erasmus+, the Transform4Europe alliance and hundreds of bilateral agreements, and its alumni include Bulgarian presidents, prime ministers, academicians and cultural figures. Bulgarian and EU students study on state-subsidised or paid places, while foreign students pay tuition set per programme; Medicine and Pharmacy are also offered as English-taught degrees. Rector: Prof. Dr. Georgi Valchev.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€230 – €7,700 / year",
+      "website": "https://www.uni-sofia.bg",
+      "applyUrl": "https://www.uni-sofia.bg/index.php/eng/admission"
+    },
+    "8": {
+      "name": "Technical University of Sofia",
+      "description": "Bulgaria's largest and foremost university for engineering and technology (est. 1945) — computing, electronics, electrical, mechanical and industrial engineering, with English, German and French-taught programs.",
+      "longDescription": "The Technical University of Sofia (TU-Sofia) is the largest and most prestigious higher school of engineering and technology in Bulgaria, founded on 15 October 1945 as the State Polytechnic and granted its current university status in 1995. It is the country's leading centre for training engineers and a founding member of the European University of Technology (EUt+) alliance.\n\nThe university is organised into 17 faculties based in Sofia, Plovdiv and Sliven, including specialised foreign-language faculties that teach engineering entirely in German (FDIBA), English (ELFE) and French. Its Sofia faculties cover Automation, Computer Systems and Technologies, Electronic Engineering, Telecommunications, Electrical Engineering, Power Engineering, Mechanical Engineering, Industrial Technology, Transport, Management, and Applied Mathematics and Informatics, together with two colleges and vocational schools.\n\nTU-Sofia has around 11,000 students — some 8,800 bachelor's, 1,900 master's and 500 doctoral students — across a wide range of engineering, computing and management programmes, many delivered in partnership with leading technology companies. Facilities include a High-Technology Business Incubator and Technology Park, modern laboratories, a central scientific-technical library, a sports complex and student dormitories in the Studentski Grad campus.\n\nThe university maintains extensive international cooperation through the EUt+ alliance, Erasmus+ and hundreds of partnerships, and works closely with industry — Bosch, SAP, VMware, Festo, Siemens and others — which sponsor scholarships, laboratories and internships. Bulgarian and EU students study on state-subsidised or paid places, while foreign students can study in Bulgarian, English, German or French. Rector: Prof. Dr. Georgi Venkov.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€200 – €2,025 / semester",
+      "website": "https://www.tu-sofia.bg",
+      "applyUrl": "https://priem.tu-sofia.bg"
+    },
+    "9": {
+      "name": "University of National and World Economy",
+      "description": "Bulgaria's oldest and largest university of economics and business (est. 1920) — economics, finance, management, informatics, international relations and law, in the heart of Sofia.",
+      "longDescription": "The University of National and World Economy (UNWE) is the oldest and largest higher school of economics and business in Bulgaria and South-Eastern Europe, founded in 1920 as the Free University of Political and Economic Sciences. After several transformations it took its present name in 1990 and is today the country's leading centre for economic, business and administrative education, ranked first in Bulgaria in its professional fields.\n\nThe university is organised into 8 faculties — General Economics, Finance and Accountancy, Business, Economics of Infrastructure, Management and Administration, International Economics and Politics, Applied Informatics and Statistics, and Law. It offers 53 bachelor's, 90 master's and 45 doctoral programmes, including majors taught entirely in English, and holds the highest institutional accreditation from the National Evaluation and Accreditation Agency.\n\nUNWE has around 20,000 students on its campus in the Studentski Grad district of Sofia. The 41,000 m² complex features 120 auditoriums and 367 study rooms, a modern library, an inter-university Career Development Centre, sports facilities and student dormitories for nearly 5,000 students.\n\nThe university is a member of the ENGAGE.EU European University alliance and cooperates with 187 international and 221 local partners through Erasmus+ and joint programmes. Its alumni include five Bulgarian prime ministers, IMF Managing Director Kristalina Georgieva and many leading economists and public figures. Bulgarian and EU students study on state-subsidised or paid places, while foreign students can study in Bulgarian or English. Rector: Prof. Dr. Dimitar Dimitrov.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€179 – €2,000 / semester",
+      "website": "https://www.unwe.bg",
+      "applyUrl": "https://www.unwe.bg/international/en/pages/3655/enrollment.html"
     }
   },
   "universityProfiles": {
@@ -1552,6 +1829,73 @@
         "Foreign secondary-school diplomas require NACID recognition (€100)",
         "New bachelor students can apply for first-year scholarships of €250–€1,000"
       ]
+    },
+    "7": {
+      "name": "Sofia University",
+      "focus": "law, the humanities, social and natural sciences, economics, informatics, and medicine",
+      "style": "research-led teaching in Bulgaria's oldest university, with strong theory, laboratory and clinical practice, Erasmus+ and Transform4Europe mobility, and access to the country's largest academic library and research institutes",
+      "careers": [
+        "Lawyer / Magistrate / Legal advisor",
+        "Physician / Pharmacist",
+        "Economist / Financial analyst / Manager",
+        "Software developer / Data scientist / IT specialist",
+        "Psychologist / Sociologist / Political scientist",
+        "Teacher / Researcher / University lecturer",
+        "Journalist / PR and media specialist",
+        "Scientist (physics, chemistry, biology, geography)"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by state matriculation (ДЗИ) results and/or university entrance examinations, ranked by a composite score",
+        "Medicine and Pharmacy require competitive entrance exams in Biology and Chemistry (plus English for the English-taught tracks)",
+        "Non-EU applicants are admitted on documents (grade at least 62% of the maximum), except Medicine and Pharmacy which require exams",
+        "Foreign applicants without Bulgarian can take a one-year specialised language and subject preparatory course",
+        "Applications and rankings are handled online via the university admission system; foreign students contact the International Relations Office"
+      ]
+    },
+    "8": {
+      "name": "Technical University of Sofia",
+      "focus": "engineering, computing, electronics, electrical and power engineering, mechanical and transport engineering, automation, and industrial management",
+      "style": "hands-on laboratory and project work, strong mathematics and physics foundations, industry-sponsored labs and internships with Bosch, SAP, Festo and Siemens, and English, German and French-taught engineering tracks",
+      "careers": [
+        "Software / Computer engineer",
+        "Electronics / Communications engineer",
+        "Electrical & power engineer",
+        "Mechanical / Mechatronics engineer",
+        "Automation & robotics engineer",
+        "Transport & automotive engineer",
+        "Industrial manager / systems analyst",
+        "R&D engineer / Researcher"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a competitive score from state matriculation (ДЗИ) and/or a TU-Sofia entrance exam in Mathematics",
+        "Results from the university's admission competition in Mathematics or Bulgarian may also be used",
+        "English, German and French-taught programmes require proof of the relevant language or a preparatory course",
+        "Foreign (non-EU) applicants are admitted on documents through the International Office",
+        "Online application via the admission portal priem.tu-sofia.bg"
+      ]
+    },
+    "9": {
+      "name": "University of National and World Economy",
+      "focus": "economics, finance, accounting, business, management, marketing, international relations, applied informatics, statistics and law",
+      "style": "applied business and economics training, case studies and internships with corporate and public-sector partners, Erasmus+ and ENGAGE.EU mobility, and English-taught majors",
+      "careers": [
+        "Economist / Financial analyst",
+        "Accountant / Auditor",
+        "Manager / Business administrator",
+        "Marketing and brand specialist",
+        "Banking, finance and investment professional",
+        "International relations / diplomacy specialist",
+        "Data, informatics and statistics specialist",
+        "Public administration expert",
+        "Lawyer / Legal advisor"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation (ДЗИ) and/or a UNWE entrance exam",
+        "Applicants rank for a chosen faculty/professional field and then select a major",
+        "English-taught majors require a B2-level English certificate or an entrance test",
+        "Foreign (non-EU) applicants apply on documents through the International Office; a preparatory language year is available",
+        "Online application via the UNWE candidate-student system"
+      ]
     }
   },
   "programThemes": {
@@ -1665,6 +2009,83 @@
     }
   },
   "programTitles": {
+    "economics-english": "Economics (English)",
+    "accounting-and-control": "Accounting and Control",
+    "finance-and-accounting-english": "Finance and Accounting (English)",
+    "entrepreneurship": "Entrepreneurship",
+    "economics-of-tourism": "Economics of Tourism",
+    "real-estate-economics": "Real Estate Economics",
+    "economics-of-transport-and-energy": "Economics of Transport and Energy",
+    "business-informatics-english": "Business Informatics (English)",
+    "business-informatics-and-communications": "Business Informatics and Communications",
+    "statistics-and-econometrics": "Statistics and Econometrics",
+    "international-economic-relations-english": "International Economic Relations (English)",
+    "auditing": "Auditing",
+    "corporate-finance": "Corporate Finance",
+    "marketing-management": "Marketing Management",
+    "international-business": "International Business",
+    "international-economics": "International Economics",
+    "digital-economy": "Digital Economy",
+    "business-analytics": "Business Analytics",
+    "public-management": "Public Management",
+    "nuclear-security": "Nuclear Security",
+    "global-sustainability-management": "Global Sustainability Management",
+    "computer-systems-and-technologies": "Computer Systems and Technologies",
+    "computer-science-and-engineering": "Computer Science and Engineering",
+    "automation-and-information-technologies": "Automation and Information Technologies",
+    "electronics": "Electronics",
+    "telecommunications-and-information-technologies": "Telecommunications and Information Technologies",
+    "electrical-engineering": "Electrical Engineering",
+    "renewable-energy-sources": "Renewable Energy Sources",
+    "thermal-and-nuclear-power-engineering": "Thermal and Nuclear Power Engineering",
+    "mechanical-engineering": "Mechanical Engineering",
+    "mechatronics": "Mechatronics",
+    "industrial-engineering": "Industrial Engineering",
+    "transport-equipment-and-technologies": "Transport Equipment and Technologies",
+    "automotive-engineering": "Automotive Engineering",
+    "industrial-management": "Industrial Management",
+    "management-and-business-information-systems": "Management and Business Information Systems",
+    "applied-mathematics-and-informatics": "Applied Mathematics and Informatics",
+    "electrical-power-engineering": "Electrical Power Engineering",
+    "advanced-industrial-technologies": "Advanced Industrial Technologies",
+    "artificial-intelligence-and-data-science": "Artificial Intelligence and Data Science",
+    "cyber-security": "Cyber Security",
+    "embedded-systems": "Embedded Systems",
+    "communication-technologies": "Communication Technologies",
+    "power-engineering": "Power Engineering",
+    "renewable-energy-and-energy-efficiency": "Renewable Energy and Energy Efficiency",
+    "robotics": "Robotics",
+    "intelligent-transport-systems": "Intelligent Transport Systems",
+    "engineering-management": "Engineering Management",
+    "business-information-technologies": "Business Information Technologies",
+    "applied-mathematics": "Applied Mathematics",
+    "electrical-engineering-and-technologies": "Electrical Engineering and Technologies",
+    "philosophy": "Philosophy",
+    "political-science": "Political Science",
+    "sociology": "Sociology",
+    "international-relations": "International Relations",
+    "economics": "Economics",
+    "computer-science": "Computer Science",
+    "software-engineering": "Software Engineering",
+    "information-systems": "Information Systems",
+    "mathematics": "Mathematics",
+    "molecular-biology": "Molecular Biology",
+    "chemistry": "Chemistry",
+    "physics": "Physics",
+    "history": "History",
+    "english-studies": "English Studies",
+    "journalism": "Journalism",
+    "public-relations": "Public Relations",
+    "software-technologies": "Software Technologies",
+    "information-security": "Information Security",
+    "clinical-psychology": "Clinical Psychology",
+    "european-studies": "European Studies",
+    "political-management": "Political Management",
+    "finance-and-banking": "Finance and Banking",
+    "public-health-and-health-management": "Public Health and Health Management",
+    "medical-physics": "Medical Physics",
+    "bioinformatics": "Bioinformatics",
+    "digital-media": "Digital Media",
     "___university_1": "University 1 — Technical University",
     "automation-information-and-control-computer-systems-aiccs": "Automation, Information and Control Computer Systems (AICCS)",
     "automotive-engineering-ae": "Automotive Engineering (AE)",
@@ -1839,6 +2260,682 @@
     "finance": "Finance"
   },
   "programOverrides": {
+    "9:bachelor:economics-english": {
+      "overview": "Economics (in English) at UNWE's Faculty of General Economics is a flagship English-taught bachelor giving a broad, international foundation in economic theory and applied economics.",
+      "keyFocus": "Microeconomics, macroeconomics, econometrics, and applied economic analysis",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of General Economics, UNWE",
+        "ENGAGE.EU European University alliance",
+        "Corporate and international partners"
+      ],
+      "highlights": [
+        "Taught entirely in English for a global career",
+        "Access to Erasmus+ and ENGAGE.EU mobility",
+        "Foundation for master's study in Bulgaria or abroad"
+      ],
+      "careers": [
+        "Economist / Analyst",
+        "Consultant",
+        "Researcher",
+        "Policy or business analyst"
+      ],
+      "admissionNotes": [
+        "Admission by composite score with a B2-level English certificate or entrance English test",
+        "Open to Bulgarian, EU and international applicants"
+      ]
+    },
+    "9:bachelor:finance": {
+      "overview": "Finance at UNWE's Faculty of Finance and Accountancy trains specialists in corporate finance, banking, investments and financial markets.",
+      "keyFocus": "Corporate finance, banking, investments, taxation and financial markets",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Finance and Accountancy, UNWE",
+        "Banks, investment firms and financial institutions",
+        "Professional finance bodies"
+      ],
+      "highlights": [
+        "Strong quantitative and applied finance training",
+        "Internships with banks and financial institutions",
+        "Bulgaria's leading finance programme by reputation"
+      ],
+      "careers": [
+        "Financial analyst",
+        "Banker / Credit analyst",
+        "Investment specialist",
+        "Corporate treasurer"
+      ],
+      "admissionNotes": [
+        "Admission by a composite score from matriculation and/or a UNWE entrance exam",
+        "Strong mathematics background is an advantage"
+      ]
+    },
+    "9:bachelor:accounting-and-control": {
+      "overview": "Accounting and Control at UNWE prepares professionals in financial and management accounting, auditing and internal control.",
+      "keyFocus": "Financial and management accounting, auditing, control and taxation",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Finance and Accountancy, UNWE",
+        "Audit firms and accounting practices",
+        "Professional accounting bodies"
+      ],
+      "highlights": [
+        "Curriculum aligned with professional accounting standards",
+        "Pathways into auditing and professional certification",
+        "Internships with audit and accounting firms"
+      ],
+      "careers": [
+        "Accountant",
+        "Auditor",
+        "Controller",
+        "Tax specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a composite score from matriculation and/or a UNWE entrance exam",
+        "Attention to detail and numeracy recommended"
+      ]
+    },
+    "9:bachelor:business-informatics-english": {
+      "overview": "Business Informatics (in English) at UNWE combines information technology with economics and management to build digital-business specialists.",
+      "keyFocus": "Information systems, databases, programming, data analysis and digital business",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Applied Informatics and Statistics, UNWE",
+        "IT and consulting companies",
+        "ENGAGE.EU alliance"
+      ],
+      "highlights": [
+        "English-taught, bridging IT and business",
+        "Applied projects with real business cases",
+        "High demand in digital transformation roles"
+      ],
+      "careers": [
+        "Business/IT analyst",
+        "Information systems specialist",
+        "Data analyst",
+        "ERP / digital consultant"
+      ],
+      "admissionNotes": [
+        "Admission by composite score with a B2-level English certificate or entrance English test",
+        "Interest in IT and mathematics recommended"
+      ]
+    },
+    "9:bachelor:international-economic-relations-english": {
+      "overview": "International Economic Relations (in English) at UNWE prepares specialists for international trade, business and economic diplomacy.",
+      "keyFocus": "International trade, world economy, international finance and economic diplomacy",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of International Economics and Politics, UNWE",
+        "ENGAGE.EU European University alliance",
+        "International organisations and companies"
+      ],
+      "highlights": [
+        "Taught entirely in English with an international focus",
+        "Erasmus+ and ENGAGE.EU exchange opportunities",
+        "Careers in international business and organisations"
+      ],
+      "careers": [
+        "International trade specialist",
+        "Export/import manager",
+        "Economic diplomat",
+        "International business analyst"
+      ],
+      "admissionNotes": [
+        "Admission by composite score with a B2-level English certificate or entrance English test",
+        "Open to Bulgarian, EU and international applicants"
+      ]
+    },
+    "9:bachelor:law": {
+      "overview": "Law at UNWE's Faculty of Law is a five-year integrated Master's programme entered after secondary school, with a strong grounding in economic and business law.",
+      "keyFocus": "Constitutional, civil, criminal, commercial, EU and international law",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Law, UNWE",
+        "Courts, law firms and public institutions",
+        "Business and financial-law practices"
+      ],
+      "highlights": [
+        "Awards the professional qualification 'jurist'",
+        "Distinctive focus on economic and business law",
+        "Moot courts and internships with institutions"
+      ],
+      "careers": [
+        "Lawyer / Advocate",
+        "Judge / Prosecutor",
+        "Corporate legal counsel",
+        "Notary / Legal advisor"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation results and/or a UNWE entrance exam",
+        "Graduates complete a state internship and exam for full legal capacity"
+      ]
+    },
+    "9:master:data-science": {
+      "overview": "The Data Science master's at UNWE's Faculty of Applied Informatics and Statistics equips graduates to analyse and model data for business and economics.",
+      "keyFocus": "Statistics, machine learning, big-data tools and business analytics",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Applied Informatics and Statistics, UNWE",
+        "Data-driven companies and consultancies",
+        "Research centres at UNWE"
+      ],
+      "highlights": [
+        "Applied, project-based curriculum with real data",
+        "Bridges statistics, computing and economics",
+        "Strong demand across the data economy"
+      ],
+      "careers": [
+        "Data scientist / analyst",
+        "Business-intelligence specialist",
+        "Machine-learning engineer",
+        "Research analyst"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree, ideally in a quantitative or economics field",
+        "Statistics and programming prerequisites apply"
+      ]
+    },
+    "9:master:nuclear-security": {
+      "overview": "The International Master's Programme in Nuclear Security at UNWE, supported by the IAEA, is a unique English-taught programme on the security of nuclear and radioactive materials.",
+      "keyFocus": "Nuclear security policy, non-proliferation, risk management and international law",
+      "duration": "Master's — full-time, taught in English",
+      "partners": [
+        "Faculty of International Economics and Politics, UNWE",
+        "International Atomic Energy Agency (IAEA)",
+        "International security institutions"
+      ],
+      "highlights": [
+        "Supported by the IAEA, a rare specialisation worldwide",
+        "Taught in English with international experts",
+        "Careers in security, policy and international organisations"
+      ],
+      "careers": [
+        "Nuclear-security specialist",
+        "Policy / non-proliferation analyst",
+        "International organisation officer",
+        "Risk and compliance manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree and English proficiency",
+        "Open to international applicants"
+      ]
+    },
+    "9:master:international-business": {
+      "overview": "The International Business master's at UNWE is an English-taught programme preparing managers and entrepreneurs for the global business environment.",
+      "keyFocus": "International management, global markets, strategy and cross-cultural business",
+      "duration": "Master's — 2–3 semesters, full-time, taught in English",
+      "partners": [
+        "Faculty of International Economics and Politics, UNWE",
+        "ENGAGE.EU European University alliance",
+        "International companies and partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English with an international cohort",
+        "Dual and joint-programme opportunities",
+        "Erasmus+ and ENGAGE.EU mobility"
+      ],
+      "careers": [
+        "International business manager",
+        "Business consultant",
+        "Entrepreneur",
+        "Export / market-development manager"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree and English proficiency",
+        "Open to Bulgarian, EU and international applicants"
+      ]
+    },
+    "8:bachelor:computer-systems-and-technologies": {
+      "overview": "Computer Systems and Technologies at TU-Sofia's Faculty of Computer Systems and Technologies is the university's flagship computing programme, combining hardware, software and networks with strong practical training.",
+      "keyFocus": "Programming, computer architecture, operating systems, databases, networks and embedded systems",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Computer Systems and Technologies",
+        "Bosch, SAP, VMware and other IT partners",
+        "TU-Sofia Technology Park"
+      ],
+      "highlights": [
+        "Industry-equipped computing and networking laboratories",
+        "Internships and diploma projects with major tech companies",
+        "Foundations for AI, cyber-security and software-technology master's tracks"
+      ],
+      "careers": [
+        "Software developer / engineer",
+        "Systems / network engineer",
+        "Embedded systems engineer",
+        "DevOps / IT specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a TU-Sofia entrance exam in Mathematics or matriculation results",
+        "Strong mathematics background recommended"
+      ]
+    },
+    "8:bachelor:software-engineering": {
+      "overview": "Software Engineering at TU-Sofia focuses on designing, building and maintaining large software systems, blending programming, software architecture and team project work.",
+      "keyFocus": "Software design, architecture, testing, databases and project management",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Computer Systems and Technologies",
+        "Software companies in Sofia",
+        "Industry mentors and internships"
+      ],
+      "highlights": [
+        "Project-driven, industry-aligned curriculum",
+        "Internships and diploma projects with tech partners",
+        "High graduate employability in Bulgaria's IT sector"
+      ],
+      "careers": [
+        "Software engineer",
+        "Backend / frontend developer",
+        "QA / test engineer",
+        "Technical lead / architect"
+      ],
+      "admissionNotes": [
+        "Admission by a TU-Sofia entrance exam in Mathematics or matriculation results",
+        "Programming experience is an advantage"
+      ]
+    },
+    "8:bachelor:artificial-intelligence": {
+      "overview": "The Artificial Intelligence bachelor at TU-Sofia trains engineers in machine learning, data and intelligent systems, combining computer science with applied mathematics.",
+      "keyFocus": "Machine learning, neural networks, data processing and intelligent systems",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Computer Systems and Technologies",
+        "AI and data-focused industry partners",
+        "Research laboratories at TU-Sofia"
+      ],
+      "highlights": [
+        "Modern curriculum in AI and data science",
+        "Hands-on projects with real data and industry cases",
+        "Strong demand across Bulgaria's technology sector"
+      ],
+      "careers": [
+        "Machine-learning engineer",
+        "AI / data specialist",
+        "Software developer",
+        "Research assistant"
+      ],
+      "admissionNotes": [
+        "Admission by a TU-Sofia entrance exam in Mathematics or matriculation results",
+        "Strong mathematics and programming aptitude expected"
+      ]
+    },
+    "8:bachelor:automation-and-information-technologies": {
+      "overview": "Automation and Information Technologies at the Faculty of Automation prepares engineers to design and control automated industrial systems and processes.",
+      "keyFocus": "Control systems, industrial automation, sensors, PLCs and information technologies",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Automation",
+        "Festo, Siemens and Schneider Electric",
+        "Industrial automation laboratories"
+      ],
+      "highlights": [
+        "Industry-standard automation and control laboratories",
+        "Close cooperation with automation-technology companies",
+        "Pathways into robotics and mechatronics master's tracks"
+      ],
+      "careers": [
+        "Automation engineer",
+        "Control systems engineer",
+        "PLC / SCADA specialist",
+        "Process control designer"
+      ],
+      "admissionNotes": [
+        "Admission by a TU-Sofia entrance exam in Mathematics or matriculation results",
+        "Interest in mathematics, physics and electronics recommended"
+      ]
+    },
+    "8:bachelor:electronics": {
+      "overview": "Electronics at the Faculty of Electronic Engineering and Technologies covers the design and manufacture of electronic devices, circuits and systems.",
+      "keyFocus": "Analog and digital electronics, microelectronics, circuit design and measurement",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Electronic Engineering and Technologies",
+        "Electronics and semiconductor industry partners",
+        "Specialised electronics laboratories"
+      ],
+      "highlights": [
+        "Well-equipped electronics and measurement laboratories",
+        "Strong theoretical and practical training",
+        "Careers across the electronics and embedded-systems industry"
+      ],
+      "careers": [
+        "Electronics engineer",
+        "Hardware / circuit designer",
+        "Embedded systems engineer",
+        "Test and measurement specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a TU-Sofia entrance exam in Mathematics or matriculation results",
+        "Strong physics and mathematics background recommended"
+      ]
+    },
+    "8:bachelor:mechatronics": {
+      "overview": "Mechatronics at TU-Sofia combines mechanical engineering, electronics, control and computing to design intelligent machines and automated systems.",
+      "keyFocus": "Mechanics, electronics, control systems, sensors, actuators and embedded software",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Mechanical Engineering",
+        "Festo and automation-technology partners",
+        "Mechatronics and robotics laboratories"
+      ],
+      "highlights": [
+        "Interdisciplinary engineering across mechanics, electronics and software",
+        "Hands-on work with robots, sensors and automated systems",
+        "Pathways into robotics and intelligent-systems master's tracks"
+      ],
+      "careers": [
+        "Mechatronics engineer",
+        "Robotics engineer",
+        "Automation engineer",
+        "Product development engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a TU-Sofia entrance exam in Mathematics or matriculation results",
+        "Interest in both mechanics and electronics recommended"
+      ]
+    },
+    "8:master:cyber-security": {
+      "overview": "The Cyber Security master's at TU-Sofia trains specialists to protect computer systems, networks and data against modern threats.",
+      "keyFocus": "Network and system security, cryptography, secure software and incident response",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Faculty of Computer Systems and Technologies",
+        "Cyber-security industry partners",
+        "TU-Sofia security laboratories"
+      ],
+      "highlights": [
+        "Applied, laboratory-based security training",
+        "Links to the IT and cyber-security industry",
+        "Strong demand for security engineers in Bulgaria and the EU"
+      ],
+      "careers": [
+        "Cyber-security engineer",
+        "Security analyst",
+        "Penetration tester",
+        "Security architect"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in computing, electronics or a related engineering field",
+        "Programming and networking background expected"
+      ]
+    },
+    "8:master:artificial-intelligence-and-data-science": {
+      "overview": "The Artificial Intelligence and Data Science master's at TU-Sofia combines machine learning, big data and applied mathematics for engineering and business problems.",
+      "keyFocus": "Machine learning, deep learning, big-data analytics and statistical modelling",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Faculty of Applied Mathematics and Informatics",
+        "Data-driven industry partners",
+        "Research groups at TU-Sofia"
+      ],
+      "highlights": [
+        "Bridges applied mathematics, computing and industry applications",
+        "Project-based learning with real data sets",
+        "High demand across technology and analytics roles"
+      ],
+      "careers": [
+        "Machine-learning engineer",
+        "Data scientist / analyst",
+        "AI engineer",
+        "Research analyst"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in a quantitative or computing field",
+        "Mathematics and programming prerequisites apply"
+      ]
+    },
+    "8:master:robotics": {
+      "overview": "The Robotics master's at TU-Sofia trains engineers to design, build and control robotic and automated systems for industry and research.",
+      "keyFocus": "Robot kinematics and dynamics, control, sensors, computer vision and automation",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Faculty of Automation",
+        "Festo, Siemens and robotics-industry partners",
+        "Robotics and automation laboratories"
+      ],
+      "highlights": [
+        "Hands-on work with industrial and service robots",
+        "Integration of control, sensing and computer vision",
+        "Strong links to automation and manufacturing industry"
+      ],
+      "careers": [
+        "Robotics engineer",
+        "Automation engineer",
+        "Control systems engineer",
+        "R&D engineer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in engineering, automation or a related field",
+        "Background in control, mechanics or electronics expected"
+      ]
+    },
+    "7:bachelor:law": {
+      "overview": "Law at Sofia University is Bulgaria's oldest and most prestigious legal programme — a five-year integrated Master's entered after secondary school, taught at the Faculty of Law.",
+      "keyFocus": "Bulgarian and international law, constitutional and civil law, criminal law, EU law and legal practice",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Law, Sofia University",
+        "Bulgarian courts and prosecution service",
+        "Law firms and state institutions"
+      ],
+      "highlights": [
+        "Awards the professional qualification 'jurist' required for the bar, judiciary and notary",
+        "Moot courts, legal clinics and internships with courts and institutions",
+        "Alumni include presidents, constitutional judges and leading advocates"
+      ],
+      "careers": [
+        "Lawyer / Advocate",
+        "Judge / Prosecutor",
+        "Notary / Legal advisor",
+        "Legal counsel in business or administration"
+      ],
+      "admissionNotes": [
+        "Entry by state matriculation results and/or an entrance exam (Bulgarian language, history or a corresponding subject)",
+        "Graduates complete a state internship and exam to gain full legal capacity"
+      ]
+    },
+    "7:bachelor:medicine": {
+      "overview": "Medicine at Sofia University's Faculty of Medicine is a six-year integrated Master's programme, available in Bulgarian and as an English-taught degree for international students.",
+      "keyFocus": "Basic medical sciences, clinical disciplines and supervised hospital practice",
+      "duration": "Integrated Master's — 6 years (12 semesters), full-time",
+      "partners": [
+        "Faculty of Medicine, Sofia University",
+        "University hospitals in Sofia",
+        "Clinical teaching bases"
+      ],
+      "highlights": [
+        "English-taught track for international students",
+        "Pre-clinical and clinical training with modern simulation facilities",
+        "Awards the qualification of Master of Medicine"
+      ],
+      "careers": [
+        "Physician / Medical Doctor",
+        "Hospital specialist (after residency)",
+        "Medical researcher",
+        "Public-health professional"
+      ],
+      "admissionNotes": [
+        "Competitive entrance examinations in Biology and Chemistry (plus English for the English-taught programme)",
+        "International tuition is about €7,700 per year for the English-taught degree",
+        "A medical certificate is required on enrolment"
+      ]
+    },
+    "7:bachelor:pharmacy": {
+      "overview": "Pharmacy at the Faculty of Chemistry and Pharmacy is a five-year integrated Master's programme, offered in Bulgarian and in English, combining chemistry, pharmacology and pharmaceutical practice.",
+      "keyFocus": "Medicinal chemistry, pharmacology, pharmaceutical technology and pharmacy practice",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time",
+      "partners": [
+        "Faculty of Chemistry and Pharmacy, Sofia University",
+        "Community and hospital pharmacies",
+        "Pharmaceutical companies"
+      ],
+      "highlights": [
+        "English-taught track for international students",
+        "Laboratory-intensive training and supervised pharmacy placement",
+        "Awards the qualification of Master of Pharmacy"
+      ],
+      "careers": [
+        "Pharmacist (community or hospital)",
+        "Pharmaceutical analyst / regulator",
+        "Drug development and quality control",
+        "Pharmaceutical sales and marketing"
+      ],
+      "admissionNotes": [
+        "Competitive entrance exams in Chemistry and Biology (with English for the English-taught programme)",
+        "International tuition is about €7,700 per year for the English-taught degree"
+      ]
+    },
+    "7:bachelor:computer-science": {
+      "overview": "Computer Science at the Faculty of Mathematics and Informatics (FMI) — Bulgaria's leading informatics school — combines rigorous theory with modern programming and software practice.",
+      "keyFocus": "Algorithms, programming, data structures, software systems and applied computing",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Mathematics and Informatics",
+        "Sofia's IT industry and startups",
+        "INSAIT research institute"
+      ],
+      "highlights": [
+        "Strong competitive-programming and research tradition",
+        "Close links to Sofia's large IT industry and internships",
+        "Pathways into AI, data science and software-technology master's programmes"
+      ],
+      "careers": [
+        "Software developer / engineer",
+        "Data or machine-learning specialist",
+        "Systems / DevOps engineer",
+        "Researcher in computing"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation and/or an entrance exam in Mathematics",
+        "A strong mathematics background is recommended"
+      ]
+    },
+    "7:bachelor:software-engineering": {
+      "overview": "Software Engineering at FMI focuses on building large, reliable software systems, blending programming, software architecture and team project work with industry practice.",
+      "keyFocus": "Software design, architecture, testing, databases and project management",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Mathematics and Informatics",
+        "Software companies in Sofia",
+        "Open-source and industry projects"
+      ],
+      "highlights": [
+        "Team-based, project-driven curriculum",
+        "Internships with Sofia's software industry",
+        "High graduate employability in Bulgaria's largest IT hub"
+      ],
+      "careers": [
+        "Software engineer",
+        "Backend / frontend developer",
+        "QA / test engineer",
+        "Technical lead / architect"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation and/or an entrance exam in Mathematics",
+        "Programming experience is an advantage"
+      ]
+    },
+    "7:bachelor:psychology": {
+      "overview": "Psychology at the Faculty of Philosophy provides a broad scientific foundation in human behaviour, cognition and mental processes, with laboratory and applied training.",
+      "keyFocus": "General, cognitive, social, developmental and clinical psychology",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Philosophy, Sofia University",
+        "Clinics, schools and NGOs for practice",
+        "Psychological research laboratories"
+      ],
+      "highlights": [
+        "Balance of theory, research methods and supervised practice",
+        "Pathways into clinical, organisational and counselling master's programmes",
+        "Access to psychology laboratories and research projects"
+      ],
+      "careers": [
+        "Psychologist",
+        "HR / organisational specialist",
+        "Researcher",
+        "Counsellor (after further qualification)"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation results and/or an entrance exam",
+        "Clinical practice requires further master's-level study"
+      ]
+    },
+    "7:master:artificial-intelligence": {
+      "overview": "The Artificial Intelligence master's at FMI trains specialists in machine learning, neural networks and intelligent systems, drawing on the faculty's research strength and the INSAIT institute.",
+      "keyFocus": "Machine learning, deep learning, natural-language processing, computer vision and AI systems",
+      "duration": "Master's — 3–4 semesters, full-time",
+      "partners": [
+        "Faculty of Mathematics and Informatics",
+        "INSAIT (Institute for Computer Science, AI and Technology)",
+        "AI industry and research partners"
+      ],
+      "highlights": [
+        "Taught by leading AI researchers",
+        "Links to INSAIT, winner of Bulgaria's first ERC grant",
+        "Research projects and industry collaboration"
+      ],
+      "careers": [
+        "Machine-learning engineer",
+        "AI / data scientist",
+        "Research scientist",
+        "AI product developer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in informatics, mathematics or a related field",
+        "A strong programming and mathematics background is expected"
+      ]
+    },
+    "7:master:data-science": {
+      "overview": "The Data Science master's at FMI equips graduates to collect, analyse and model large data sets using statistics, machine learning and modern data tools.",
+      "keyFocus": "Statistics, machine learning, big-data technologies and data visualisation",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Faculty of Mathematics and Informatics",
+        "Data-driven industry partners",
+        "Research groups at Sofia University"
+      ],
+      "highlights": [
+        "Applied, project-based curriculum with real data sets",
+        "Bridges statistics, computing and domain applications",
+        "Strong demand in Bulgaria's growing data economy"
+      ],
+      "careers": [
+        "Data scientist / analyst",
+        "Machine-learning engineer",
+        "Business-intelligence specialist",
+        "Research analyst"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in a quantitative field",
+        "Programming and mathematics prerequisites apply"
+      ]
+    },
+    "7:master:clinical-psychology": {
+      "overview": "The Clinical Psychology master's at the Faculty of Philosophy prepares psychologists for assessment, counselling and therapeutic work in health and social settings.",
+      "keyFocus": "Psychopathology, clinical assessment, psychotherapy approaches and clinical practice",
+      "duration": "Master's — 3–4 semesters, full-time",
+      "partners": [
+        "Faculty of Philosophy, Sofia University",
+        "Hospitals and mental-health clinics",
+        "Counselling and social-care services"
+      ],
+      "highlights": [
+        "Supervised clinical placements",
+        "Foundations for further psychotherapy training",
+        "Combines research and applied practice"
+      ],
+      "careers": [
+        "Clinical psychologist",
+        "Mental-health counsellor",
+        "Researcher in clinical psychology",
+        "Health or social-care specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in psychology or a related field",
+        "Some tracks admit applicants from other backgrounds with prerequisites"
+      ]
+    },
     "1:bachelor:automation-information-and-control-computer-systems-aiccs": {
       "overview": "Covers design, programming and maintenance of industrial control systems, PLCs, SCADA, and embedded systems with extensive lab work.",
       "keyFocus": "industrial automation, PLC/SCADA systems, embedded control, IIoT",
@@ -6133,5 +7230,116 @@
     "anti-corruption-and-conflict-of-interest-management": {
       "facultyKey": "business"
     }
+  },
+  "su_programInfo": {
+    "law": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "law" },
+    "medicine": { "tuition": "€7,700/yr (English-taught)", "facultyKey": "medicine" },
+    "pharmacy": { "tuition": "€7,700/yr (English-taught)", "facultyKey": "chemistry-pharmacy" },
+    "psychology": { "tuition": "€300/yr (BG/EU) · €2,800 (intl)", "facultyKey": "philosophy" },
+    "philosophy": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "philosophy" },
+    "political-science": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "philosophy" },
+    "sociology": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "philosophy" },
+    "international-relations": { "tuition": "€300/yr (BG/EU) · €2,800 (intl)", "facultyKey": "philosophy" },
+    "economics": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "economics" },
+    "business-administration": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "economics" },
+    "finance": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "economics" },
+    "computer-science": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "fmi" },
+    "software-engineering": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "fmi" },
+    "information-systems": { "tuition": "€300/yr (BG/EU) · €3,000 (intl)", "facultyKey": "fmi" },
+    "mathematics": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "fmi" },
+    "molecular-biology": { "tuition": "€300/yr (BG/EU) · €2,800 (intl)", "facultyKey": "biology" },
+    "chemistry": { "tuition": "€300/yr (BG/EU) · €2,800 (intl)", "facultyKey": "chemistry-pharmacy" },
+    "physics": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "physics" },
+    "history": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "history" },
+    "english-studies": { "tuition": "€230/yr (BG/EU) · €2,800 (intl)", "facultyKey": "philology" },
+    "journalism": { "tuition": "€300/yr (BG/EU) · €2,800 (intl)", "facultyKey": "journalism" },
+    "public-relations": { "tuition": "€300/yr (BG/EU) · €2,800 (intl)", "facultyKey": "journalism" },
+    "artificial-intelligence": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "fmi" },
+    "data-science": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "fmi" },
+    "software-technologies": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "fmi" },
+    "information-security": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "fmi" },
+    "clinical-psychology": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "philosophy" },
+    "european-studies": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "philosophy" },
+    "political-management": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "philosophy" },
+    "finance-and-banking": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "economics" },
+    "marketing": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "economics" },
+    "human-resources-management": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "economics" },
+    "public-health-and-health-management": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "medicine" },
+    "medical-physics": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "physics" },
+    "bioinformatics": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "biology" },
+    "digital-media": { "tuition": "€930/yr (BG/EU) · €3,600 (intl)", "facultyKey": "journalism" }
+  },
+  "tus_programInfo": {
+    "computer-systems-and-technologies": { "tuition": "€307/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fkst" },
+    "computer-science-and-engineering": { "tuition": "€307/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fkst" },
+    "software-engineering": { "tuition": "€307/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fkst" },
+    "artificial-intelligence": { "tuition": "€307/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fkst" },
+    "automation-and-information-technologies": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "automation" },
+    "electronics": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "electronics" },
+    "telecommunications-and-information-technologies": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "telecom" },
+    "electrical-engineering": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "electrical" },
+    "renewable-energy-sources": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "power" },
+    "thermal-and-nuclear-power-engineering": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "power" },
+    "mechanical-engineering": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "mechanical" },
+    "mechatronics": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "mechanical" },
+    "industrial-engineering": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "industrial-tech" },
+    "transport-equipment-and-technologies": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "transport" },
+    "automotive-engineering": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "transport" },
+    "industrial-management": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "management" },
+    "management-and-business-information-systems": { "tuition": "€1,750/sem (EN) · €3,500/yr (intl)", "facultyKey": "elfe" },
+    "applied-mathematics-and-informatics": { "tuition": "€307/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fpmi" },
+    "electrical-power-engineering": { "tuition": "€300/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "electrical" },
+    "advanced-industrial-technologies": { "tuition": "€1,750/sem (EN) · €3,500/yr (intl)", "facultyKey": "elfe" },
+    "artificial-intelligence-and-data-science": { "tuition": "€360/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fpmi" },
+    "cyber-security": { "tuition": "€360/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fkst" },
+    "software-technologies": { "tuition": "€360/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fkst" },
+    "data-science": { "tuition": "€360/sem (BG/EU) · €3,500/yr (intl)", "facultyKey": "fpmi" },
+    "embedded-systems": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "electronics" },
+    "communication-technologies": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "telecom" },
+    "power-engineering": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "power" },
+    "renewable-energy-and-energy-efficiency": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "power" },
+    "robotics": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "automation" },
+    "intelligent-transport-systems": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "transport" },
+    "engineering-management": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "management" },
+    "business-information-technologies": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "management" },
+    "applied-mathematics": { "tuition": "€307/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "fpmi" },
+    "electrical-engineering-and-technologies": { "tuition": "€360/sem (BG/EU) · €3,000/yr (intl)", "facultyKey": "electrical" }
+  },
+  "unwe_programInfo": {
+    "economics-english": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "general-economics" },
+    "economics": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "general-economics" },
+    "finance": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "finance-accounting" },
+    "accounting-and-control": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "finance-accounting" },
+    "finance-and-accounting-english": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "finance-accounting" },
+    "business-economics": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "business" },
+    "marketing": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "business" },
+    "entrepreneurship": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "business" },
+    "economics-of-tourism": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "infrastructure" },
+    "real-estate-economics": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "infrastructure" },
+    "economics-of-transport-and-energy": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "infrastructure" },
+    "management": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "management-admin" },
+    "public-administration": { "tuition": "€230/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "management-admin" },
+    "human-resources-management": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "management-admin" },
+    "business-informatics-english": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "informatics-statistics" },
+    "business-informatics-and-communications": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "informatics-statistics" },
+    "statistics-and-econometrics": { "tuition": "€179/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "informatics-statistics" },
+    "international-economic-relations-english": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "international" },
+    "international-relations": { "tuition": "€230/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "international" },
+    "political-science": { "tuition": "€230/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "international" },
+    "law": { "tuition": "€230/sem (BG/EU) · €1,650 (foreign)", "facultyKey": "law" },
+    "finance-and-banking": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "finance-accounting" },
+    "auditing": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "finance-accounting" },
+    "corporate-finance": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "finance-accounting" },
+    "marketing-management": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "business" },
+    "business-administration": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "business" },
+    "international-business": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "international" },
+    "international-economics": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "international" },
+    "digital-economy": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "general-economics" },
+    "data-science": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "informatics-statistics" },
+    "business-analytics": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "informatics-statistics" },
+    "public-management": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "management-admin" },
+    "project-management": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "management-admin" },
+    "nuclear-security": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "international" },
+    "global-sustainability-management": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "management-admin" }
   }
 }
