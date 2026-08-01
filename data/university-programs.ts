@@ -405,6 +405,112 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Global Sustainability Management",
     ],
   },
+  "10": {
+    bachelor: [
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Public Health and Health Management",
+      "Health Care Management",
+      "Medical Laboratory Assistant",
+      "Assistant Pharmacist",
+      "X-Ray Technician",
+      "Dental Technician",
+      "Rehabilitator",
+      "Medical Cosmetics",
+      "Sanitary Inspector",
+      "Medical Optician",
+      "Dental Hygienist",
+    ],
+    master: [
+      "Medicine",
+      "Medicine (English)",
+      "Dental Medicine",
+      "Dental Medicine (English)",
+      "Pharmacy",
+      "Pharmacy (English)",
+      "Public Health (MPH)",
+      "Health Management",
+      "Health Care Management (Master)",
+      "Nursing Management",
+      "Clinical Pharmacy",
+      "Pharmaceutical Management",
+    ],
+  },
+  "11": {
+    bachelor: [
+      "Business Administration",
+      "Economics",
+      "Finance",
+      "Marketing",
+      "Tourism",
+      "Law",
+      "Informatics",
+      "Network Technologies",
+      "Telecommunications",
+      "Graphic Design",
+      "Interior Design",
+      "Multimedia and Computer Graphics",
+      "Architecture",
+      "Fine Arts",
+      "Film and Television Art",
+      "Theatre",
+      "Music",
+      "Psychology",
+      "Political Science",
+      "International Relations",
+      "Journalism and Mass Communications",
+      "National Security",
+    ],
+    master: [
+      "Business Administration (MBA)",
+      "International Business Development",
+      "Marketing Management",
+      "Finance and Banking",
+      "Cybersecurity",
+      "Software Technologies",
+      "Cognitive Science",
+      "Clinical Psychology",
+      "Advertising Management",
+      "National and International Security",
+      "Visual Arts",
+      "Design",
+      "Art Management",
+      "Applied Linguistics",
+    ],
+  },
+  "12": {
+    bachelor: [
+      "Architecture",
+      "Architecture (in English)",
+      "Urbanism",
+      "Civil Engineering",
+      "Civil Engineering (in English)",
+      "Structural Engineering",
+      "Water Supply and Sewerage",
+      "Hydraulic Engineering",
+      "Hydromelioration Construction",
+      "Transportation Engineering",
+      "Railway Construction",
+      "Geodesy",
+      "Land Management and Agrarian Development",
+      "Surveying and Cadastre",
+    ],
+    master: [
+      "Urban Planning",
+      "Preservation of Architectural Heritage",
+      "Earthquake Engineering",
+      "Construction Technology and Management",
+      "Building Facilities and Installations",
+      "Transport Infrastructure",
+      "Bridges and Tunnels",
+      "Water Resources Engineering",
+      "Hydraulic Structures",
+      "Geoinformatics",
+      "Photogrammetry and Remote Sensing",
+      "Land Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -606,6 +712,45 @@ function getUnweProgramInfo(programSlug: string): { tuition?: string; facultyKey
   };
 }
 
+function getMusProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`mus_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getNbuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nbu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUacgProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uacg_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -678,6 +823,36 @@ function getTusFaculty(facultyKey: string): string | null {
 
 function getUnweFaculty(facultyKey: string): string | null {
   const name = i18n.t(`unwe_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getMusFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`mus_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNbuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nbu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUacgFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uacg_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -804,6 +979,33 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (unweInfo.tuition) summary.tuition = unweInfo.tuition;
         if (unweInfo.facultyKey) {
           const facultyName = getUnweFaculty(unweInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "10") {
+      const musInfo = getMusProgramInfo(slug);
+      if (musInfo) {
+        if (musInfo.tuition) summary.tuition = musInfo.tuition;
+        if (musInfo.facultyKey) {
+          const facultyName = getMusFaculty(musInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "11") {
+      const nbuInfo = getNbuProgramInfo(slug);
+      if (nbuInfo) {
+        if (nbuInfo.tuition) summary.tuition = nbuInfo.tuition;
+        if (nbuInfo.facultyKey) {
+          const facultyName = getNbuFaculty(nbuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "12") {
+      const uacgInfo = getUacgProgramInfo(slug);
+      if (uacgInfo) {
+        if (uacgInfo.tuition) summary.tuition = uacgInfo.tuition;
+        if (uacgInfo.facultyKey) {
+          const facultyName = getUacgFaculty(uacgInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -967,6 +1169,36 @@ export function buildProgramDetail(
       if (unweInfo.tuition) result.tuition = unweInfo.tuition;
       if (unweInfo.facultyKey) {
         const facultyName = getUnweFaculty(unweInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "10" && normalizedSlug) {
+    const musInfo = getMusProgramInfo(normalizedSlug);
+
+    if (musInfo) {
+      if (musInfo.tuition) result.tuition = musInfo.tuition;
+      if (musInfo.facultyKey) {
+        const facultyName = getMusFaculty(musInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "11" && normalizedSlug) {
+    const nbuInfo = getNbuProgramInfo(normalizedSlug);
+
+    if (nbuInfo) {
+      if (nbuInfo.tuition) result.tuition = nbuInfo.tuition;
+      if (nbuInfo.facultyKey) {
+        const facultyName = getNbuFaculty(nbuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "12" && normalizedSlug) {
+    const uacgInfo = getUacgProgramInfo(normalizedSlug);
+
+    if (uacgInfo) {
+      if (uacgInfo.tuition) result.tuition = uacgInfo.tuition;
+      if (uacgInfo.facultyKey) {
+        const facultyName = getUacgFaculty(uacgInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

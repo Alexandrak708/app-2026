@@ -413,6 +413,42 @@
       "labsText": "Auditoriums & halls",
       "tuitionFreeLabel": "€179",
       "tuitionFreeText": "Lowest semester fee (BG/EU)"
+    },
+    "10": {
+      "yearsTradition": "105+",
+      "bachelorPrograms": "14+",
+      "masterPrograms": "12+",
+      "internationalPartners": "100+",
+      "countries": "45",
+      "studentsGraduated": "80K+",
+      "labs": "14",
+      "labsText": "University hospitals",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "State-subsidised places"
+    },
+    "11": {
+      "yearsTradition": "35+",
+      "bachelorPrograms": "54",
+      "masterPrograms": "100+",
+      "internationalPartners": "150+",
+      "countries": "40",
+      "studentsGraduated": "60K+",
+      "labs": "24+",
+      "labsText": "Departments",
+      "tuitionFreeLabel": "€1,350",
+      "tuitionFreeText": "Lowest semester fee"
+    },
+    "12": {
+      "yearsTradition": "80+",
+      "bachelorPrograms": "12+",
+      "masterPrograms": "20+",
+      "internationalPartners": "100+",
+      "countries": "40",
+      "studentsGraduated": "50K+",
+      "labs": "33",
+      "labsText": "Departments",
+      "tuitionFreeLabel": "€215",
+      "tuitionFreeText": "Lowest semester fee (BG/EU)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -577,6 +613,60 @@
       {
         "range": "€1,500–€1,650",
         "label": "Preparatory language year (per semester)"
+      }
+    ],
+    "10": [
+      {
+        "range": "€0",
+        "label": "Nursing & Midwifery (protected specialties)"
+      },
+      {
+        "range": "€400–€800",
+        "label": "Other BG/EU programmes (per year)"
+      },
+      {
+        "range": "€9,950–€10,000",
+        "label": "Medicine / Dental in English (per year)"
+      },
+      {
+        "range": "€10,340",
+        "label": "Pharmacy in English (per year)"
+      }
+    ],
+    "11": [
+      {
+        "range": "€1,350–€2,000",
+        "label": "BG/EU bachelor (per semester)"
+      },
+      {
+        "range": "€1,600–€2,000",
+        "label": "Master's programmes (per semester)"
+      },
+      {
+        "range": "€2,600–€3,375",
+        "label": "Foreign students (per semester)"
+      },
+      {
+        "range": "25–50%",
+        "label": "Family / orphan / disability discounts"
+      }
+    ],
+    "12": [
+      {
+        "range": "€430",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€700",
+        "label": "EU/EEA Architecture & Civil Eng (per year)"
+      },
+      {
+        "range": "€5,200",
+        "label": "Non-EU students, English-taught (per year)"
+      },
+      {
+        "range": "€4,200",
+        "label": "Preparatory English language year"
       }
     ]
   },
@@ -927,7 +1017,116 @@
     "unwe_prepCourse": "A preparatory year in Bulgarian or English language for foreign applicants",
     "unwe_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
     "unwe_accommodation": "Assistance with accommodation in university dormitories and student integration",
-    "unwe_recognition": "NACID recognition of foreign diplomas and internationally recognised UNWE degrees"
+    "unwe_recognition": "NACID recognition of foreign diplomas and internationally recognised UNWE degrees",
+    "mus_scholarshipsDesc": "As a state university, MU-Sofia offers merit- and need-based support for Bulgarian and EU students:",
+    "mus_meritScholarships": "Merit scholarships from the state budget for full-time students with strong academic results, plus named scholarships",
+    "mus_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "mus_erasmusGrants": "Erasmus+ mobility grants for study or clinical placements at partner universities across Europe",
+    "mus_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
+    "mus_applicationDesc": "Admission to the regulated Medicine, Dental Medicine and Pharmacy programmes is competitive, by entrance examination:",
+    "mus_appExams": "Entrance examinations in Biology and Chemistry for the Bulgarian-language Medicine, Dental Medicine and Pharmacy programmes",
+    "mus_appEnglish": "International students in the English-taught programmes apply through a separate procedure (documents and/or English-language exams)",
+    "mus_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), a medical certificate, application form and ID/passport",
+    "mus_appDeadlines": "Entrance exams are held in early September (separate dates for EU/EEA and non-EU applicants)",
+    "mus_appFees": "Tuition for English-taught programmes is paid in two instalments (50% in September, 50% in February)",
+    "mus_masterFeesDesc": "Tuition for the English-taught programmes for 2025/2026 (foreign students):",
+    "mus_feeMedicineEn": "Medicine in English: about €9,950 per year",
+    "mus_feeDentalEn": "Dental Medicine in English: about €10,000 per year",
+    "mus_feePharmacyEn": "Pharmacy in English: about €10,340 per year",
+    "mus_feeStateSubsidised": "Bulgarian and EU students pay state-subsidised fees; Nursing and Midwifery are protected, tuition-free specialties",
+    "mus_feePayment": "Foreign-student tuition is paid in two equal instalments (September and February)",
+    "mus_facilities": "University Hospitals & Facilities",
+    "mus_facilitiesDesc": "MU-Sofia's clinical training takes place across Sofia's leading hospitals and modern facilities:",
+    "mus_hospitals": "14 university hospitals providing clinical training across all medical specialties",
+    "mus_alexandrovska": "The historic Alexandrovska University Hospital, a principal clinical and teaching base",
+    "mus_simulationCentre": "Modern medical simulation and clinical-skills training centres",
+    "mus_researchLabs": "Preclinical and research laboratories across the Medicine, Dental and Pharmacy faculties",
+    "mus_library": "A central medical library and specialised faculty libraries and reading rooms",
+    "mus_partnersDesc": "MU-Sofia is internationally connected and among the region's leading medical schools:",
+    "mus_euPartners": "Cooperation with European medical universities through Erasmus+ and joint projects",
+    "mus_erasmusNetwork": "Erasmus+ student and staff mobility for study and clinical placements",
+    "mus_ranking": "Ranked among the leading universities in Emerging Europe & Central Asia (QS)",
+    "mus_who": "Programmes recognised for international medical practice, with graduates working worldwide",
+    "mus_bilateral": "Bilateral agreements with universities and hospitals across Europe, the Middle East and beyond",
+    "mus_internationalDesc": "MU-Sofia has a long tradition of educating international students (around 800 from many countries):",
+    "mus_englishPrograms": "Medicine, Dental Medicine and Pharmacy taught entirely in English for international students",
+    "mus_visaSupport": "Admission, visa and residence support through the International Relations & Foreign Students Department",
+    "mus_prepCourse": "A preparatory Bulgarian-language course is available for foreign applicants",
+    "mus_accommodation": "Assistance with accommodation in university dormitories and student services",
+    "mus_recognition": "NACID recognition of foreign diplomas and internationally recognised MU-Sofia degrees",
+    "nbu_scholarshipsDesc": "As a private university, NBU funds studies through tuition, but offers merit awards and a wide range of discounts:",
+    "nbu_meritScholarships": "Merit awards and prizes for high-achieving students, and support through the NBU Fund and donor scholarships",
+    "nbu_familyDiscount": "25% tuition discount for a second or further family member studying at NBU",
+    "nbu_socialDiscount": "50% discount for students with a disability (50%+ reduced working capacity) and for full orphans under 26",
+    "nbu_alumniDiscount": "25% discount on the first master's semester for NBU bachelor graduates continuing without interruption",
+    "nbu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities",
+    "nbu_applicationDesc": "Admission uses NBU's flexible, credit-based model with its own assessment:",
+    "nbu_appTest": "Admission by an NBU electronic test (or recognised results) together with secondary-school grades",
+    "nbu_appCreditSystem": "Studies follow a credit (ECTS) system with a common first year and free electives in many fields",
+    "nbu_appEnglish": "English-taught programmes require proof of English (a certificate or an NBU placement test)",
+    "nbu_appForeign": "Foreign applicants apply through the International Students Office (foreign.student@nbu.bg)",
+    "nbu_appOnline": "Apply online via the NBU candidate-student portal at nbu.bg",
+    "nbu_masterFeesDesc": "NBU is tuition-based; fees are paid per semester and stay unchanged for the whole study period (2025/2026):",
+    "nbu_feeBachelor": "Bachelor (BG/EU): roughly €1,350–€2,000 per semester depending on the programme",
+    "nbu_feeMaster": "Master's: about €1,600–€2,000 per semester (e.g. Business Administration €1,800, Cybersecurity €2,000)",
+    "nbu_feeForeign": "Foreign (non-EU) students: roughly €2,600–€3,375 per semester (about €5,200–€6,750 per year)",
+    "nbu_feeUnchanged": "The semester fee remains unchanged for the entire study period when studies are not interrupted",
+    "nbu_feeDiscounts": "Discounts of 25–50% for family members, students with disabilities, orphans and continuing NBU graduates",
+    "nbu_campus": "Campus & Facilities",
+    "nbu_campusDesc": "NBU's campus is in the Ovcha Kupel district of western Sofia, near Vitosha mountain:",
+    "nbu_halls": "Two main buildings with over 100 halls and modern computer laboratories",
+    "nbu_library": "An award-winning academic library holding over 128,000 items (Library of the Year 2012)",
+    "nbu_studios": "Design, fashion, photography and film/TV studios and a sound-design centre",
+    "nbu_theatre": "Theatres, a cinema hall and galleries for the arts and performance programmes",
+    "nbu_sports": "Sports facilities and student clubs, near the Vitosha nature park",
+    "nbu_partnersDesc": "NBU is an internationally connected liberal-arts university:",
+    "nbu_openUniversity": "An accredited provider of The Open University Business School (UK) since 2004",
+    "nbu_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "nbu_accreditation": "Accredited by the National Evaluation and Accreditation Agency (NEAA); highly ranked among Bulgarian universities",
+    "nbu_honorary": "Honorary doctors include Richard Rorty, Julia Kristeva and Geert Hofstede",
+    "nbu_cognitiveScience": "The Central and East European Center for Cognitive Science, a distinctive research and teaching hub",
+    "nbu_internationalDesc": "NBU welcomes international students and offers dedicated support:",
+    "nbu_englishPrograms": "A range of bachelor's and master's programmes taught in English",
+    "nbu_visaSupport": "Admission, visa and residence support through the International Students Office",
+    "nbu_prepCourse": "A preparatory Bulgarian-language year is available for foreign applicants",
+    "nbu_accommodation": "Assistance with accommodation and student integration on and near campus",
+    "nbu_recognition": "NACID recognition of foreign diplomas and internationally recognised NBU degrees",
+    "uacg_scholarshipsDesc": "As a state university, UACEG keeps tuition low for Bulgarian and EU students and offers merit- and need-based support:",
+    "uacg_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results, plus named scholarships",
+    "uacg_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "uacg_erasmusGrants": "Erasmus+ mobility grants for study or placements at partner universities across Europe",
+    "uacg_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
+    "uacg_applicationDesc": "Admission is competitive and depends on the field of study:",
+    "uacg_appExam": "Engineering and geodesy programmes are admitted by a Mathematics entrance exam and/or state matriculation (ДЗИ) results",
+    "uacg_appArchitecture": "Architecture and Urbanism require a drawing (freehand and technical) entrance examination",
+    "uacg_appEnglish": "English-taught Architecture and Civil Engineering have a separate procedure and require proof of English",
+    "uacg_appForeign": "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+    "uacg_appOnline": "Apply online via the UACEG admission portal at uacg.bg",
+    "uacg_masterFeesDesc": "Fees for 2025/2026 depend on the programme and student category and are paid per semester or year:",
+    "uacg_feeStateSubsidised": "Bulgarian and EU students: state-subsidised about €215 per semester (€430 per year)",
+    "uacg_feeEuArch": "EU/EEA students in Architecture and Civil Engineering: about €700 per year",
+    "uacg_feeNonEu": "Non-EU students in the English-taught programmes: about €5,200 per year",
+    "uacg_feePrep": "Preparatory year in English (for the English-taught programmes): about €4,200",
+    "uacg_feePayment": "State fees are paid in two semester instalments; fees are set annually by the university",
+    "uacg_campus": "Campus & Facilities",
+    "uacg_campusDesc": "UACEG's campus is on Hristo Smirnenski Boulevard in central Sofia:",
+    "uacg_labs": "Engineering, structural, hydraulic and geodesy laboratories with modern equipment",
+    "uacg_studios": "Architecture and design studios and drawing halls for the creative programmes",
+    "uacg_testingCentre": "A Central Laboratory for materials and structural testing (a national reference base)",
+    "uacg_library": "A large scientific-technical library and specialised faculty reading rooms",
+    "uacg_dormitories": "Student dormitories, canteens, a sports complex and student services",
+    "uacg_partnersDesc": "UACEG is the national leader in its fields, with wide international links:",
+    "uacg_erasmusNetwork": "Erasmus+ student and staff mobility with partner universities across Europe",
+    "uacg_feani": "A FEANI-recognised engineering diploma, valid for professional practice across Europe",
+    "uacg_ranking": "Listed in the QS Emerging Europe & Central Asia University Rankings",
+    "uacg_industry": "Close ties with the construction, design and geodesy industry and professional chambers",
+    "uacg_bilateral": "Bilateral cooperation agreements with universities and research centres worldwide",
+    "uacg_internationalDesc": "UACEG welcomes international students to its English-taught programmes:",
+    "uacg_englishPrograms": "Architecture and Civil (Structural) Engineering taught entirely in English for international students",
+    "uacg_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
+    "uacg_prepCourse": "A one-year preparatory course in English (or Bulgarian) for foreign applicants",
+    "uacg_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "uacg_recognition": "NACID recognition of foreign diplomas and internationally recognised UACEG degrees"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -1021,6 +1220,38 @@
     "international": "Faculty of International Economics and Politics",
     "informatics-statistics": "Faculty of Applied Informatics and Statistics",
     "law": "Faculty of Law"
+  },
+  "mus_faculties": {
+    "medicine": "Faculty of Medicine",
+    "dental": "Faculty of Dental Medicine",
+    "pharmacy": "Faculty of Pharmacy",
+    "public-health": "Faculty of Public Health \"Prof. Dr. Tsekomir Vodenicharov\"",
+    "medical-college": "Medical College \"Yordanka Filaretova\""
+  },
+  "nbu_faculties": {
+    "business-admin": "Department of Administration and Management",
+    "economics": "Department of Economics",
+    "law": "Law Department",
+    "informatics": "Department of Informatics",
+    "telecommunications": "Department of Telecommunications",
+    "design": "Department of Design",
+    "architecture": "Department of Architecture",
+    "fine-arts": "Department of Fine Arts",
+    "cinema": "Department of Cinema, Advertising and Show Business",
+    "theatre": "Department of Theatre",
+    "music": "Department of Music",
+    "psychology": "Department of Cognitive Science and Psychology",
+    "political-science": "Department of Political Science",
+    "mass-communications": "Department of Mass Communications",
+    "national-security": "Department of National and International Security",
+    "foreign-languages": "Department of Foreign Languages and Cultures"
+  },
+  "uacg_faculties": {
+    "architecture": "Faculty of Architecture",
+    "structural": "Faculty of Structural Engineering",
+    "hydro": "Faculty of Hydraulic Engineering",
+    "transportation": "Faculty of Transportation Engineering",
+    "geodesy": "Faculty of Geodesy"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -1694,6 +1925,36 @@
       "tuitionRange": "€179 – €2,000 / semester",
       "website": "https://www.unwe.bg",
       "applyUrl": "https://www.unwe.bg/international/en/pages/3655/enrollment.html"
+    },
+    "10": {
+      "name": "Medical University of Sofia",
+      "description": "Bulgaria's oldest and most prestigious medical university (est. 1917) — medicine, dental medicine, pharmacy and public health, with English-taught programs and 14 university hospitals.",
+      "longDescription": "The Medical University of Sofia (MU-Sofia) is the oldest and largest institution for higher medical education in Bulgaria, founded on 22 November 1917 as the Medical Faculty of Sofia University and later made an independent university, adopting its present name in 1995. It is the country's leading centre for medical education, science and healthcare and is accredited with the highest rating by the National Evaluation and Accreditation Agency.\n\nThe university comprises four faculties — Medicine, Dental Medicine, Pharmacy and Public Health \"Prof. Dr. Tsekomir Vodenicharov\" — together with the Medical College \"Yordanka Filaretova\", a Department for Language Training and Sport and a branch in Vratsa. It has around 8,300 students, including some 800 international students from Germany, Greece, the UK, Italy, Scandinavia, Switzerland, the Middle East and India, and about 120 doctoral candidates.\n\nMU-Sofia trains doctors, dentists, pharmacists and public-health specialists across integrated Master's, professional bachelor and doctoral programmes. Medicine, Dental Medicine and Pharmacy are also offered entirely in English for international students. Clinical training takes place in 14 university hospitals, including the historic Alexandrovska Hospital, supported by modern simulation centres, research laboratories and libraries.\n\nThe university maintains active Erasmus+ and bilateral cooperation across Europe and beyond and is ranked among the region's leading medical schools. Bulgarian and EU students study on state-subsidised or paid places, while foreign students in the English-taught programmes pay tuition set per programme. Rector: Prof. Dr. Boycho Landzhov.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€0 - €10,340 / year",
+      "website": "https://mu-sofia.bg",
+      "applyUrl": "https://mu-sofia.bg"
+    },
+    "11": {
+      "name": "New Bulgarian University",
+      "description": "One of Bulgaria's leading private, liberal-arts universities (est. 1991) — business, economics, law, informatics, design, arts, psychology and social sciences in Sofia.",
+      "longDescription": "New Bulgarian University (NBU) is one of the first and most prestigious private universities in Bulgaria, founded on 18 September 1991 by Prof. Bogdan Bogdanov and a group of Bulgarian intellectuals through a resolution of the National Assembly. It pioneered liberal education, the credit (ECTS) system, interdisciplinary study and distance learning in Bulgaria, with the mission of modernising Bulgarian higher education.\n\nThe university is organised into more than 24 departments rather than classic faculties, spanning economics, business and administration, law, informatics and telecommunications, design and architecture, fine arts, cinema, theatre and music, psychology and cognitive science, political science, mass communications and the humanities. It offers 54 bachelor's, around 100 master's and 35 doctoral programmes, including tracks taught in English.\n\nNBU has around 12,000 students on its campus in the Ovcha Kupel district of western Sofia, near Vitosha mountain. The campus comprises two main buildings with over 100 halls, computer laboratories, design and film studios, theatres and sports facilities, and an award-winning academic library holding over 128,000 items. The Central and East European Center for Cognitive Science is a distinctive research hub.\n\nThe university is accredited by the National Evaluation and Accreditation Agency, is an accredited provider of The Open University Business School (UK), and maintains a wide Erasmus+ and international network; its honorary doctors include Richard Rorty, Julia Kristeva and Geert Hofstede. As a private university, NBU is tuition-based, with fees paid per semester that remain unchanged for the whole study period and a range of family, social and alumni discounts. Rector: Prof. Dr. Plamen Doynov.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€1,350 – €3,375 / semester",
+      "website": "https://www.nbu.bg",
+      "applyUrl": "https://www.nbu.bg/en/prospective-students"
+    },
+    "12": {
+      "name": "University of Architecture, Civil Engineering and Geodesy",
+      "description": "Bulgaria's only specialised state university for architecture, civil engineering and geodesy (est. 1942) — architecture, structural, hydraulic, transport engineering and geodesy in Sofia.",
+      "longDescription": "The University of Architecture, Civil Engineering and Geodesy (UACEG) is Bulgaria's oldest and only specialised state university for architecture, construction and geodesy, established in 1942 and made an independent higher school in 1945. It is the country's leading centre for training architects, civil engineers, geodesists and urban planners, accredited with a high rating by the National Evaluation and Accreditation Agency.\n\nThe university is organised into five faculties — Architecture, Structural Engineering, Hydraulic Engineering, Transportation Engineering and Geodesy — with 33 departments covering architecture, urbanism, building and structural construction, water supply and sewerage, transport construction, hydro-engineering and geodesy. It has around 5,000 students and offers integrated Master's, bachelor's, master's and doctoral programmes, including Architecture and Civil Engineering taught in English for international students.\n\nUACEG's campus is on Hristo Smirnenski Boulevard in central Sofia, with design studios, engineering and materials-testing laboratories, a large scientific-technical library, computer halls, a sports complex and student dormitories. Its diploma is FEANI-recognised and the university appears in the QS Emerging Europe & Central Asia rankings.\n\nThe university maintains a wide Erasmus+ and bilateral network and close ties with the construction and design industry. Bulgarian and EU students study on state-subsidised or paid places (about €215 per semester subsidised), while foreign students in the English-taught Architecture and Civil Engineering programmes pay tuition set per programme. Rector: Prof. Dr. Arch. Gichka Kutova-Kamenova.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€430 - €5,200 / year",
+      "website": "https://uacg.bg",
+      "applyUrl": "https://uacg.bg/page/kandidatstvai"
     }
   },
   "universityProfiles": {
@@ -1896,6 +2157,73 @@
         "Foreign (non-EU) applicants apply on documents through the International Office; a preparatory language year is available",
         "Online application via the UNWE candidate-student system"
       ]
+    },
+    "10": {
+      "name": "Medical University of Sofia",
+      "focus": "medicine, dental medicine, pharmacy, public health and healthcare management",
+      "style": "clinical training in 14 university hospitals including Alexandrovska Hospital, simulation centres, laboratory and research-based learning, and English-taught programmes for international students",
+      "careers": [
+        "Physician / Medical Doctor",
+        "Dentist",
+        "Pharmacist",
+        "Nurse / Midwife",
+        "Public health specialist",
+        "Healthcare manager",
+        "Medical laboratory / imaging specialist",
+        "Clinical researcher"
+      ],
+      "admissionNotes": [
+        "Strong biology and chemistry background required for Medicine, Dental Medicine and Pharmacy",
+        "Entrance examinations in Biology and Chemistry; English-taught programmes have a separate procedure for international students",
+        "Some professional-bachelor and public-health programmes admit by matriculation results",
+        "International students apply through the International Relations & Foreign Students Department",
+        "Application and exam periods run through the summer (September entrance exams)"
+      ]
+    },
+    "11": {
+      "name": "New Bulgarian University",
+      "focus": "business, economics, finance, law, informatics, telecommunications, design and architecture, fine and performing arts, psychology, political science and mass communications",
+      "style": "liberal, interdisciplinary education on a flexible credit system, seminar, studio and project work, internships with business and creative-industry partners, Erasmus+ mobility, and English-taught tracks",
+      "careers": [
+        "Manager / Business administrator",
+        "Economist / Financial specialist",
+        "Lawyer / Legal advisor",
+        "Software / IT and telecommunications specialist",
+        "Designer / Architect / Visual artist",
+        "Film, theatre or music professional",
+        "Psychologist / Cognitive-science specialist",
+        "Journalist / PR and media specialist",
+        "Political scientist / International relations expert"
+      ],
+      "admissionNotes": [
+        "Admission is by NBU's own assessment/test together with secondary-school results, on a flexible credit-based model",
+        "In several fields applicants choose a major after a common first year",
+        "English-taught programmes require proof of English (a certificate or a placement test)",
+        "Foreign applicants apply through the International Students Office (foreign.student@nbu.bg)",
+        "Online application via the NBU candidate-student portal"
+      ]
+    },
+    "12": {
+      "name": "University of Architecture, Civil Engineering and Geodesy",
+      "focus": "architecture, urbanism, structural and civil engineering, hydraulic and transport engineering, and geodesy",
+      "style": "design studios, engineering and materials-testing laboratories, field practice and surveying, strong mathematics and structural fundamentals, Erasmus+ mobility, and English-taught Architecture and Civil Engineering",
+      "careers": [
+        "Architect",
+        "Civil / Structural engineer",
+        "Urban planner",
+        "Hydraulic engineer",
+        "Transport / roads and railways engineer",
+        "Geodesist / Surveyor",
+        "Construction project manager",
+        "Cadastre and land-management specialist"
+      ],
+      "admissionNotes": [
+        "Architecture and Urbanism require a drawing entrance examination alongside secondary-school results",
+        "Engineering and geodesy programmes are admitted by a Mathematics exam and/or state matriculation results",
+        "English-taught Architecture and Civil Engineering have a separate procedure and require proof of English",
+        "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+        "Online application via the UACEG admission portal"
+      ]
     }
   },
   "programThemes": {
@@ -2009,6 +2337,54 @@
     }
   },
   "programTitles": {
+    "architecture-in-english": "Architecture (in English)",
+    "urbanism": "Urbanism",
+    "civil-engineering": "Civil Engineering",
+    "civil-engineering-in-english": "Civil Engineering (in English)",
+    "structural-engineering": "Structural Engineering",
+    "water-supply-and-sewerage": "Water Supply and Sewerage",
+    "hydraulic-engineering": "Hydraulic Engineering",
+    "hydromelioration-construction": "Hydromelioration Construction",
+    "transportation-engineering": "Transportation Engineering",
+    "railway-construction": "Railway Construction",
+    "geodesy": "Geodesy",
+    "land-management-and-agrarian-development": "Land Management and Agrarian Development",
+    "surveying-and-cadastre": "Surveying and Cadastre",
+    "urban-planning": "Urban Planning",
+    "preservation-of-architectural-heritage": "Preservation of Architectural Heritage",
+    "earthquake-engineering": "Earthquake Engineering",
+    "construction-technology-and-management": "Construction Technology and Management",
+    "building-facilities-and-installations": "Building Facilities and Installations",
+    "transport-infrastructure": "Transport Infrastructure",
+    "bridges-and-tunnels": "Bridges and Tunnels",
+    "water-resources-engineering": "Water Resources Engineering",
+    "hydraulic-structures": "Hydraulic Structures",
+    "geoinformatics": "Geoinformatics",
+    "photogrammetry-and-remote-sensing": "Photogrammetry and Remote Sensing",
+    "land-management": "Land Management",
+    "informatics": "Informatics",
+    "network-technologies": "Network Technologies",
+    "telecommunications": "Telecommunications",
+    "multimedia-and-computer-graphics": "Multimedia and Computer Graphics",
+    "fine-arts": "Fine Arts",
+    "film-and-television-art": "Film and Television Art",
+    "theatre": "Theatre",
+    "music": "Music",
+    "journalism-and-mass-communications": "Journalism and Mass Communications",
+    "national-security": "National Security",
+    "business-administration-mba": "Business Administration (MBA)",
+    "international-business-development": "International Business Development",
+    "cognitive-science": "Cognitive Science",
+    "advertising-management": "Advertising Management",
+    "national-and-international-security": "National and International Security",
+    "visual-arts": "Visual Arts",
+    "design": "Design",
+    "art-management": "Art Management",
+    "applied-linguistics": "Applied Linguistics",
+    "rehabilitator": "Rehabilitator",
+    "sanitary-inspector": "Sanitary Inspector",
+    "medical-optician": "Medical Optician",
+    "dental-hygienist": "Dental Hygienist",
     "economics-english": "Economics (English)",
     "accounting-and-control": "Accounting and Control",
     "finance-and-accounting-english": "Finance and Accounting (English)",
@@ -2260,6 +2636,608 @@
     "finance": "Finance"
   },
   "programOverrides": {
+    "12:bachelor:architecture": {
+      "overview": "Architecture at UACEG's Faculty of Architecture is Bulgaria's leading architecture programme — a five-and-a-half-year integrated Master's blending design studios, engineering and the history and theory of architecture.",
+      "keyFocus": "Architectural and urban design, building construction, history and theory of architecture",
+      "duration": "Integrated Master's — 5.5 years (11 semesters), full-time",
+      "partners": [
+        "Faculty of Architecture, UACEG",
+        "Architecture and design practices",
+        "Chamber of Architects in Bulgaria"
+      ],
+      "highlights": [
+        "Studio-based, portfolio-driven design education",
+        "Awards the qualification of Master-Architect with a FEANI-recognised diploma",
+        "Also offered as an English-taught programme for international students"
+      ],
+      "careers": [
+        "Architect",
+        "Urban / spatial designer",
+        "Interior architect",
+        "Heritage conservation specialist"
+      ],
+      "admissionNotes": [
+        "Admission requires a drawing entrance examination (freehand and technical) plus secondary-school results",
+        "A design portfolio and strong visual skills are an advantage"
+      ]
+    },
+    "12:bachelor:architecture-in-english": {
+      "overview": "Architecture (in English) at UACEG is the international, English-taught version of the flagship architecture programme, a five-and-a-half-year integrated Master's for foreign students.",
+      "keyFocus": "Architectural and urban design, building construction, history and theory of architecture",
+      "duration": "Integrated Master's — 5.5 years (11 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Architecture, UACEG",
+        "International partner universities",
+        "Architecture and design practices"
+      ],
+      "highlights": [
+        "Taught entirely in English for international students",
+        "FEANI-recognised Master-Architect diploma",
+        "A preparatory English-language year is available"
+      ],
+      "careers": [
+        "Architect",
+        "Urban / spatial designer",
+        "Interior architect",
+        "Heritage conservation specialist"
+      ],
+      "admissionNotes": [
+        "Separate admission procedure with a drawing assessment and proof of English",
+        "Tuition about €5,200 per year for non-EU students"
+      ]
+    },
+    "12:bachelor:civil-engineering": {
+      "overview": "Civil Engineering at UACEG's Faculty of Structural Engineering trains structural engineers to design and build safe, durable buildings and structures.",
+      "keyFocus": "Structural mechanics, reinforced concrete and steel structures, geotechnics and construction",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time",
+      "partners": [
+        "Faculty of Structural Engineering, UACEG",
+        "Construction companies and design offices",
+        "Chamber of Engineers in Investment Design"
+      ],
+      "highlights": [
+        "Strong structural-analysis and materials-testing training",
+        "A FEANI-recognised engineering diploma",
+        "Also offered as an English-taught programme for international students"
+      ],
+      "careers": [
+        "Structural / civil engineer",
+        "Construction project manager",
+        "Design engineer",
+        "Site / supervision engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a Mathematics entrance exam and/or state matriculation results",
+        "Strong mathematics and physics background recommended"
+      ]
+    },
+    "12:bachelor:civil-engineering-in-english": {
+      "overview": "Civil Engineering (in English) at UACEG is the international, English-taught structural-engineering programme for foreign students, leading to a recognised engineering degree.",
+      "keyFocus": "Structural mechanics, reinforced concrete and steel structures, geotechnics and construction",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Structural Engineering, UACEG",
+        "International partner universities",
+        "Construction and design industry"
+      ],
+      "highlights": [
+        "Taught entirely in English for international students",
+        "FEANI-recognised engineering diploma",
+        "A preparatory English-language year is available"
+      ],
+      "careers": [
+        "Structural / civil engineer",
+        "Construction project manager",
+        "Design engineer",
+        "Site / supervision engineer"
+      ],
+      "admissionNotes": [
+        "Separate admission procedure with proof of English",
+        "Tuition about €5,200 per year for non-EU students"
+      ]
+    },
+    "12:bachelor:geodesy": {
+      "overview": "Geodesy at UACEG's Faculty of Geodesy trains specialists in surveying, mapping, cadastre and geoinformation, from field measurement to GIS.",
+      "keyFocus": "Surveying, geodetic measurement, GNSS, cartography, cadastre and geoinformatics",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time",
+      "partners": [
+        "Faculty of Geodesy, UACEG",
+        "Geodesy and cadastre agencies",
+        "GIS and surveying companies"
+      ],
+      "highlights": [
+        "Field practice with modern surveying and GNSS equipment",
+        "Pathways into geoinformatics, photogrammetry and land management",
+        "Strong demand in cadastre, construction and mapping"
+      ],
+      "careers": [
+        "Geodesist / Surveyor",
+        "Cadastre specialist",
+        "GIS / geoinformatics specialist",
+        "Land-management expert"
+      ],
+      "admissionNotes": [
+        "Admission by a Mathematics entrance exam and/or state matriculation results",
+        "Interest in mathematics and fieldwork recommended"
+      ]
+    },
+    "12:bachelor:urbanism": {
+      "overview": "Urbanism at UACEG's Faculty of Architecture prepares specialists in spatial and urban planning, combining design, engineering and social sciences.",
+      "keyFocus": "Urban and regional planning, spatial design, transport and infrastructure, sustainability",
+      "duration": "Bachelor and Master — full-time",
+      "partners": [
+        "Faculty of Architecture, UACEG",
+        "Municipal and regional planning authorities",
+        "Planning and design practices"
+      ],
+      "highlights": [
+        "Interdisciplinary spatial-planning education",
+        "Studio and project work on real urban cases",
+        "Careers in municipal planning and development"
+      ],
+      "careers": [
+        "Urban planner",
+        "Spatial / regional planner",
+        "Development officer",
+        "GIS / planning analyst"
+      ],
+      "admissionNotes": [
+        "Admission includes a drawing/aptitude assessment alongside secondary-school results",
+        "Interest in design, geography and society recommended"
+      ]
+    },
+    "12:master:earthquake-engineering": {
+      "overview": "The Earthquake Engineering master's at UACEG specialises structural engineers in the seismic design and assessment of buildings and structures.",
+      "keyFocus": "Seismic analysis, earthquake-resistant design, structural dynamics and retrofitting",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Structural Engineering, UACEG",
+        "Structural design offices",
+        "Research and testing laboratories"
+      ],
+      "highlights": [
+        "Advanced seismic-design specialisation",
+        "Access to the Central materials- and structural-testing laboratory",
+        "Highly relevant in a seismically active region"
+      ],
+      "careers": [
+        "Structural / seismic design engineer",
+        "Research engineer",
+        "Construction consultant",
+        "Structural assessment specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's/master's degree in civil or structural engineering",
+        "Strong structural-mechanics background expected"
+      ]
+    },
+    "12:master:urban-planning": {
+      "overview": "The Urban Planning master's at UACEG's Faculty of Architecture trains specialists to plan and manage sustainable cities and regions.",
+      "keyFocus": "Urban and regional planning, land use, transport, environment and policy",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Architecture, UACEG",
+        "Municipal and regional authorities",
+        "Planning and development agencies"
+      ],
+      "highlights": [
+        "Integrates design, engineering and policy",
+        "Project-based work on real planning problems",
+        "Careers in public planning and development"
+      ],
+      "careers": [
+        "Urban / regional planner",
+        "Spatial-development specialist",
+        "Municipal planning officer",
+        "Planning consultant"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree (architecture, engineering, geography or related)",
+        "Open to graduates moving into planning"
+      ]
+    },
+    "11:bachelor:business-administration": {
+      "overview": "Business Administration at NBU's Department of Administration and Management is a flagship programme combining management, economics and hands-on business practice, with a British Open University Business School pathway.",
+      "keyFocus": "Management, marketing, finance, entrepreneurship and organisational behaviour",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Department of Administration and Management, NBU",
+        "The Open University Business School (UK)",
+        "Bulgarian and international companies"
+      ],
+      "highlights": [
+        "Flexible credit system with electives and specialisations",
+        "Internships and case-based, practice-oriented learning",
+        "Pathways to the NBU MBA and international master's programmes"
+      ],
+      "careers": [
+        "Manager / Administrator",
+        "Marketing or HR specialist",
+        "Entrepreneur",
+        "Business consultant"
+      ],
+      "admissionNotes": [
+        "Admission by an NBU test and secondary-school results",
+        "Available in Bulgarian, with English-taught tracks in some fields"
+      ]
+    },
+    "11:bachelor:law": {
+      "overview": "Law at NBU's Law Department is a five-year integrated Master's programme entered after secondary school, combining classical legal training with a modern, interdisciplinary approach.",
+      "keyFocus": "Constitutional, civil, criminal, commercial, EU and international law",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time or part-time",
+      "partners": [
+        "Law Department, NBU",
+        "Courts, law firms and public institutions",
+        "Legal clinics and moot-court programmes"
+      ],
+      "highlights": [
+        "Awards the professional qualification 'jurist'",
+        "Legal clinics, moot courts and practical training",
+        "Strong grounding in both Bulgarian and international law"
+      ],
+      "careers": [
+        "Lawyer / Advocate",
+        "Judge / Prosecutor",
+        "Corporate legal counsel",
+        "Notary / Legal advisor"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation results and/or an NBU entrance assessment",
+        "Graduates complete a state internship and exam for full legal capacity"
+      ]
+    },
+    "11:bachelor:informatics": {
+      "overview": "Informatics at NBU's Department of Informatics builds strong software and computing skills through programming, systems and applied project work.",
+      "keyFocus": "Programming, algorithms, databases, software engineering and information systems",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Department of Informatics, NBU",
+        "IT and software companies",
+        "Industry mentors and internships"
+      ],
+      "highlights": [
+        "Project-based, practice-oriented curriculum",
+        "Pathways into cybersecurity and software-technology master's tracks",
+        "Strong graduate employability in Bulgaria's IT sector"
+      ],
+      "careers": [
+        "Software developer",
+        "Systems / database specialist",
+        "IT consultant",
+        "Web / application developer"
+      ],
+      "admissionNotes": [
+        "Admission by an NBU test and secondary-school results",
+        "Interest in mathematics and programming recommended"
+      ]
+    },
+    "11:bachelor:psychology": {
+      "overview": "Psychology at NBU's Department of Cognitive Science and Psychology gives a scientific foundation in human behaviour and mind, linked to the university's renowned cognitive-science research.",
+      "keyFocus": "General, cognitive, social and clinical psychology and research methods",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Department of Cognitive Science and Psychology, NBU",
+        "Central and East European Center for Cognitive Science",
+        "Clinics, schools and NGOs for practice"
+      ],
+      "highlights": [
+        "Links to NBU's internationally recognised cognitive-science centre",
+        "Balance of theory, research methods and practice",
+        "Pathways into clinical psychology and cognitive-science master's tracks"
+      ],
+      "careers": [
+        "Psychologist",
+        "HR / organisational specialist",
+        "Researcher",
+        "Counsellor (after further qualification)"
+      ],
+      "admissionNotes": [
+        "Admission by an NBU test and secondary-school results",
+        "Clinical practice requires further master's-level study"
+      ]
+    },
+    "11:bachelor:architecture": {
+      "overview": "Architecture at NBU's Department of Architecture is an integrated Master's programme blending design studios, engineering and the arts within NBU's liberal-education model.",
+      "keyFocus": "Architectural design, construction, urbanism, history and theory of architecture",
+      "duration": "Integrated Master's — 5.5 years (11 semesters), full-time",
+      "partners": [
+        "Department of Architecture, NBU",
+        "Architecture and design studios",
+        "Construction and design practices"
+      ],
+      "highlights": [
+        "Studio-based, portfolio-driven learning",
+        "Interdisciplinary links to design and the fine arts",
+        "Awards the qualification of Master-Architect"
+      ],
+      "careers": [
+        "Architect",
+        "Urban / spatial planner",
+        "Interior or design specialist",
+        "Project designer"
+      ],
+      "admissionNotes": [
+        "Admission includes a drawing/aptitude assessment alongside secondary-school results",
+        "A design portfolio is an advantage"
+      ]
+    },
+    "11:master:business-administration-mba": {
+      "overview": "The MBA (Business Administration) at NBU is a graduate management programme focused on leadership, strategy and applied business, with a British Open University Business School pathway.",
+      "keyFocus": "Strategic management, finance, marketing, leadership and business analytics",
+      "duration": "Master's — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Department of Administration and Management, NBU",
+        "The Open University Business School (UK)",
+        "Business mentors and partner organisations"
+      ],
+      "highlights": [
+        "Practice-oriented, case-based management education",
+        "British Open University Business School pathway",
+        "Networking with business leaders and alumni"
+      ],
+      "careers": [
+        "Senior manager",
+        "Business consultant",
+        "Entrepreneur",
+        "Strategy analyst"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree or professional experience",
+        "NBU graduates receive a 25% first-semester discount"
+      ]
+    },
+    "11:master:cybersecurity": {
+      "overview": "The Cybersecurity master's at NBU's Department of Informatics trains specialists to protect systems, networks and data against modern threats.",
+      "keyFocus": "Network and system security, cryptography, secure software and risk management",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Department of Informatics, NBU",
+        "Cyber-security and IT companies",
+        "NBU computing laboratories"
+      ],
+      "highlights": [
+        "Applied, laboratory-based security training",
+        "Strong demand for security specialists in Bulgaria and the EU",
+        "Taught by practitioners and researchers"
+      ],
+      "careers": [
+        "Cyber-security engineer",
+        "Security analyst",
+        "Penetration tester",
+        "Security consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in informatics, IT or a related field",
+        "Programming and networking background expected"
+      ]
+    },
+    "11:master:cognitive-science": {
+      "overview": "The Cognitive Science master's at NBU — built on the Central and East European Center for Cognitive Science — studies mind, language, learning, AI and robotics across disciplines.",
+      "keyFocus": "Cognition, language, learning, artificial intelligence and cognitive modelling",
+      "duration": "Master's — full-time, taught in English",
+      "partners": [
+        "Central and East European Center for Cognitive Science, NBU",
+        "International cognitive-science networks",
+        "AI and research laboratories"
+      ],
+      "highlights": [
+        "A distinctive, internationally recognised programme taught in English",
+        "Interdisciplinary study across psychology, linguistics and AI",
+        "Strong research and PhD pathways"
+      ],
+      "careers": [
+        "Cognitive scientist / researcher",
+        "AI / UX specialist",
+        "Data or human-factors analyst",
+        "Academic / research careers"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree and English proficiency",
+        "Open to international applicants"
+      ]
+    },
+    "11:master:international-business-development": {
+      "overview": "International Business Development at NBU is an English-taught master's programme preparing managers for growth, strategy and entrepreneurship in international markets.",
+      "keyFocus": "International strategy, market development, entrepreneurship and cross-cultural management",
+      "duration": "Master's — 2 semesters, full-time, taught in English",
+      "partners": [
+        "Department of Administration and Management, NBU",
+        "International companies and partner universities",
+        "The Open University Business School (UK)"
+      ],
+      "highlights": [
+        "Taught entirely in English with an international focus",
+        "Case-based learning and business projects",
+        "Erasmus+ and international mobility opportunities"
+      ],
+      "careers": [
+        "International business manager",
+        "Business developer",
+        "Entrepreneur",
+        "Market / strategy analyst"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree and English proficiency",
+        "Open to Bulgarian, EU and international applicants"
+      ]
+    },
+    "10:master:medicine": {
+      "overview": "Medicine at MU-Sofia's Faculty of Medicine is a six-year integrated Master's programme — Bulgaria's oldest and most prestigious medical degree, with clinical training in Sofia's leading university hospitals.",
+      "keyFocus": "Basic medical sciences, clinical disciplines and supervised hospital practice",
+      "duration": "Integrated Master's — 6 years (12 semesters), full-time",
+      "partners": [
+        "Faculty of Medicine, MU-Sofia",
+        "Alexandrovska and other university hospitals",
+        "Clinical teaching bases across Sofia"
+      ],
+      "highlights": [
+        "Clinical training in 14 university hospitals",
+        "Modern simulation and skills-training centres",
+        "Awards the qualification of Master of Medicine"
+      ],
+      "careers": [
+        "Physician / Medical Doctor",
+        "Hospital specialist (after residency)",
+        "Medical researcher",
+        "Public-health professional"
+      ],
+      "admissionNotes": [
+        "Competitive entrance examinations in Biology and Chemistry",
+        "A medical certificate is required on enrolment",
+        "State-subsidised and paid places for Bulgarian and EU students"
+      ]
+    },
+    "10:master:medicine-english": {
+      "overview": "Medicine (in English) at MU-Sofia is a six-year integrated Master's programme for international students, taught entirely in English with clinical practice in Sofia's university hospitals.",
+      "keyFocus": "Basic medical sciences, clinical disciplines and supervised hospital practice",
+      "duration": "Integrated Master's — 6 years (12 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Medicine, MU-Sofia",
+        "Alexandrovska and other university hospitals",
+        "International partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English for international students",
+        "Students from Germany, Greece, the UK, Italy, the Middle East, India and more",
+        "Internationally recognised medical degree"
+      ],
+      "careers": [
+        "Physician / Medical Doctor",
+        "Hospital specialist (after residency)",
+        "Medical researcher"
+      ],
+      "admissionNotes": [
+        "Entrance examinations in Biology and Chemistry (separate procedure for international students)",
+        "Tuition about €9,950 per year, paid in two instalments",
+        "Entrance exams in early September"
+      ]
+    },
+    "10:master:dental-medicine": {
+      "overview": "Dental Medicine at MU-Sofia's Faculty of Dental Medicine is a five-year integrated Master's programme combining dental sciences with extensive clinical practice.",
+      "keyFocus": "Oral and dental medicine, prosthetics, surgery and clinical dental practice",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time",
+      "partners": [
+        "Faculty of Dental Medicine, MU-Sofia",
+        "University dental clinics",
+        "Clinical teaching bases"
+      ],
+      "highlights": [
+        "Extensive hands-on clinical and pre-clinical training",
+        "Also offered entirely in English for international students",
+        "Awards the qualification of Master of Dental Medicine"
+      ],
+      "careers": [
+        "Dentist",
+        "Dental surgeon (after specialisation)",
+        "Orthodontist",
+        "Dental researcher"
+      ],
+      "admissionNotes": [
+        "Competitive entrance examinations in Biology and Chemistry",
+        "English-taught track tuition about €10,000 per year",
+        "A medical certificate is required on enrolment"
+      ]
+    },
+    "10:master:pharmacy": {
+      "overview": "Pharmacy at MU-Sofia's Faculty of Pharmacy is a five-year integrated Master's programme covering medicinal chemistry, pharmacology and pharmaceutical practice.",
+      "keyFocus": "Medicinal chemistry, pharmacology, pharmaceutical technology and pharmacy practice",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time",
+      "partners": [
+        "Faculty of Pharmacy, MU-Sofia",
+        "Community and hospital pharmacies",
+        "Pharmaceutical companies"
+      ],
+      "highlights": [
+        "Laboratory-intensive training and supervised pharmacy placement",
+        "Also offered entirely in English for international students",
+        "Awards the qualification of Master of Pharmacy"
+      ],
+      "careers": [
+        "Pharmacist (community or hospital)",
+        "Pharmaceutical analyst / regulator",
+        "Drug development and quality control",
+        "Clinical pharmacist"
+      ],
+      "admissionNotes": [
+        "Competitive entrance examinations in Biology and Chemistry",
+        "English-taught track tuition about €10,340 per year",
+        "State-subsidised and paid places for Bulgarian and EU students"
+      ]
+    },
+    "10:master:pharmacy-english": {
+      "overview": "Pharmacy (in English) at MU-Sofia is a five-year integrated Master's programme for international students, combining pharmaceutical sciences with practical training, taught in English.",
+      "keyFocus": "Medicinal chemistry, pharmacology, pharmaceutical technology and pharmacy practice",
+      "duration": "Integrated Master's — 5 years (10 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Pharmacy, MU-Sofia",
+        "Community and hospital pharmacies",
+        "International partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English for international students",
+        "Laboratory-intensive training and supervised placement",
+        "Internationally recognised pharmacy degree"
+      ],
+      "careers": [
+        "Pharmacist (community or hospital)",
+        "Pharmaceutical analyst / regulator",
+        "Drug development and quality control"
+      ],
+      "admissionNotes": [
+        "Entrance examinations in Biology and Chemistry (separate procedure for international students)",
+        "Tuition about €10,340 per year, paid in two instalments"
+      ]
+    },
+    "10:bachelor:nursing": {
+      "overview": "Nursing at MU-Sofia's Faculty of Public Health prepares professional nurses through theory, laboratory practice and supervised clinical placements in university hospitals.",
+      "keyFocus": "Nursing care, clinical practice, patient support and public health",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Public Health, MU-Sofia",
+        "University hospitals and clinics",
+        "Community health services"
+      ],
+      "highlights": [
+        "A protected, tuition-free specialty for state-funded students",
+        "Extensive supervised clinical placements",
+        "High demand for nurses in Bulgaria and abroad"
+      ],
+      "careers": [
+        "Registered nurse",
+        "Clinical / ward nurse",
+        "Community health nurse",
+        "Nursing manager (after further study)"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation results and/or an entrance exam",
+        "Nursing is a protected specialty and is tuition-free for state-funded places"
+      ]
+    },
+    "10:master:public-health-mph": {
+      "overview": "The Master of Public Health (MPH) at MU-Sofia's Faculty of Public Health trains specialists in health policy, epidemiology, health management and prevention.",
+      "keyFocus": "Epidemiology, health policy, health management, prevention and health promotion",
+      "duration": "Master's — full-time or part-time",
+      "partners": [
+        "Faculty of Public Health, MU-Sofia",
+        "Health institutions and public agencies",
+        "Research and policy centres"
+      ],
+      "highlights": [
+        "Interdisciplinary public-health and management training",
+        "Suited to clinicians and non-clinicians moving into public health",
+        "Careers in health administration, policy and prevention"
+      ],
+      "careers": [
+        "Public health specialist",
+        "Health policy analyst",
+        "Healthcare manager",
+        "Epidemiologist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's or master's degree",
+        "Open to medical and non-medical graduates"
+      ]
+    },
     "9:bachelor:economics-english": {
       "overview": "Economics (in English) at UNWE's Faculty of General Economics is a flagship English-taught bachelor giving a broad, international foundation in economic theory and applied economics.",
       "keyFocus": "Microeconomics, macroeconomics, econometrics, and applied economic analysis",
@@ -7341,5 +8319,99 @@
     "project-management": { "tuition": "€230/sem (BG/EU) · €1,900 (foreign)", "facultyKey": "management-admin" },
     "nuclear-security": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "international" },
     "global-sustainability-management": { "tuition": "€1,900/sem (English-taught)", "facultyKey": "management-admin" }
+  },
+  "mus_programInfo": {
+    "nursing": { "tuition": "€0 (protected specialty)", "facultyKey": "public-health" },
+    "midwifery": { "tuition": "€0 (protected specialty)", "facultyKey": "public-health" },
+    "kinesitherapy": { "tuition": "€500/yr (BG/EU)", "facultyKey": "public-health" },
+    "public-health-and-health-management": { "tuition": "€500/yr (BG/EU)", "facultyKey": "public-health" },
+    "health-care-management": { "tuition": "€500/yr (BG/EU)", "facultyKey": "public-health" },
+    "medical-laboratory-assistant": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "assistant-pharmacist": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "x-ray-technician": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "dental-technician": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "rehabilitator": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "medical-cosmetics": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "sanitary-inspector": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "medical-optician": { "tuition": "€450/yr (BG/EU)", "facultyKey": "medical-college" },
+    "dental-hygienist": { "tuition": "€450/yr (BG/EU)", "facultyKey": "dental" },
+    "medicine": { "tuition": "€800/yr (BG/EU) · €9,950 (English)", "facultyKey": "medicine" },
+    "medicine-english": { "tuition": "€9,950/yr (English-taught)", "facultyKey": "medicine" },
+    "dental-medicine": { "tuition": "€800/yr (BG/EU) · €10,000 (English)", "facultyKey": "dental" },
+    "dental-medicine-english": { "tuition": "€10,000/yr (English-taught)", "facultyKey": "dental" },
+    "pharmacy": { "tuition": "€800/yr (BG/EU) · €10,340 (English)", "facultyKey": "pharmacy" },
+    "pharmacy-english": { "tuition": "€10,340/yr (English-taught)", "facultyKey": "pharmacy" },
+    "public-health-mph": { "tuition": "€600/yr (BG/EU)", "facultyKey": "public-health" },
+    "health-management": { "tuition": "€600/yr (BG/EU)", "facultyKey": "public-health" },
+    "health-care-management-master": { "tuition": "€600/yr (BG/EU)", "facultyKey": "public-health" },
+    "nursing-management": { "tuition": "€600/yr (BG/EU)", "facultyKey": "public-health" },
+    "clinical-pharmacy": { "tuition": "€600/yr (BG/EU)", "facultyKey": "pharmacy" },
+    "pharmaceutical-management": { "tuition": "€600/yr (BG/EU)", "facultyKey": "pharmacy" }
+  },
+  "nbu_programInfo": {
+    "business-administration": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "business-admin" },
+    "economics": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "economics" },
+    "finance": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "economics" },
+    "marketing": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "business-admin" },
+    "tourism": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "economics" },
+    "law": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "law" },
+    "informatics": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "informatics" },
+    "network-technologies": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "informatics" },
+    "telecommunications": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "telecommunications" },
+    "graphic-design": { "tuition": "€1,700/sem (BG/EU) · €3,000 (foreign)", "facultyKey": "design" },
+    "interior-design": { "tuition": "€1,700/sem (BG/EU) · €3,000 (foreign)", "facultyKey": "design" },
+    "multimedia-and-computer-graphics": { "tuition": "€1,700/sem (BG/EU) · €3,000 (foreign)", "facultyKey": "design" },
+    "architecture": { "tuition": "€1,800/sem (BG/EU) · €3,375 (foreign)", "facultyKey": "architecture" },
+    "fine-arts": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "fine-arts" },
+    "film-and-television-art": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "cinema" },
+    "theatre": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "theatre" },
+    "music": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "music" },
+    "psychology": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "psychology" },
+    "political-science": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "political-science" },
+    "international-relations": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "political-science" },
+    "journalism-and-mass-communications": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "mass-communications" },
+    "national-security": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "national-security" },
+    "business-administration-mba": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "business-admin" },
+    "international-business-development": { "tuition": "€2,000/sem (BG/EU) · €3,375 (foreign)", "facultyKey": "business-admin" },
+    "marketing-management": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "business-admin" },
+    "finance-and-banking": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "economics" },
+    "cybersecurity": { "tuition": "€2,000/sem (BG/EU) · €3,375 (foreign)", "facultyKey": "informatics" },
+    "software-technologies": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "informatics" },
+    "cognitive-science": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "psychology" },
+    "clinical-psychology": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "psychology" },
+    "advertising-management": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "mass-communications" },
+    "national-and-international-security": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "national-security" },
+    "visual-arts": { "tuition": "€1,700/sem (BG/EU) · €3,000 (foreign)", "facultyKey": "fine-arts" },
+    "design": { "tuition": "€1,700/sem (BG/EU) · €3,000 (foreign)", "facultyKey": "design" },
+    "art-management": { "tuition": "€1,800/sem (BG/EU) · €3,200 (foreign)", "facultyKey": "fine-arts" },
+    "applied-linguistics": { "tuition": "€1,600/sem (BG/EU) · €2,900 (foreign)", "facultyKey": "foreign-languages" }
+  },
+  "uacg_programInfo": {
+    "architecture": { "tuition": "€215/sem (BG/EU) · €700/yr (EU paid)", "facultyKey": "architecture" },
+    "architecture-in-english": { "tuition": "€5,200/yr (foreign, English)", "facultyKey": "architecture" },
+    "urbanism": { "tuition": "€215/sem (BG/EU)", "facultyKey": "architecture" },
+    "civil-engineering": { "tuition": "€215/sem (BG/EU) · €700/yr (EU paid)", "facultyKey": "structural" },
+    "civil-engineering-in-english": { "tuition": "€5,200/yr (foreign, English)", "facultyKey": "structural" },
+    "structural-engineering": { "tuition": "€215/sem (BG/EU)", "facultyKey": "structural" },
+    "water-supply-and-sewerage": { "tuition": "€215/sem (BG/EU)", "facultyKey": "hydro" },
+    "hydraulic-engineering": { "tuition": "€215/sem (BG/EU)", "facultyKey": "hydro" },
+    "hydromelioration-construction": { "tuition": "€215/sem (BG/EU)", "facultyKey": "hydro" },
+    "transportation-engineering": { "tuition": "€215/sem (BG/EU)", "facultyKey": "transportation" },
+    "railway-construction": { "tuition": "€215/sem (BG/EU)", "facultyKey": "transportation" },
+    "geodesy": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
+    "land-management-and-agrarian-development": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
+    "surveying-and-cadastre": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
+    "urban-planning": { "tuition": "€215/sem (BG/EU)", "facultyKey": "architecture" },
+    "preservation-of-architectural-heritage": { "tuition": "€215/sem (BG/EU)", "facultyKey": "architecture" },
+    "earthquake-engineering": { "tuition": "€215/sem (BG/EU)", "facultyKey": "structural" },
+    "construction-technology-and-management": { "tuition": "€215/sem (BG/EU)", "facultyKey": "structural" },
+    "building-facilities-and-installations": { "tuition": "€215/sem (BG/EU)", "facultyKey": "structural" },
+    "transport-infrastructure": { "tuition": "€215/sem (BG/EU)", "facultyKey": "transportation" },
+    "bridges-and-tunnels": { "tuition": "€215/sem (BG/EU)", "facultyKey": "transportation" },
+    "water-resources-engineering": { "tuition": "€215/sem (BG/EU)", "facultyKey": "hydro" },
+    "hydraulic-structures": { "tuition": "€215/sem (BG/EU)", "facultyKey": "hydro" },
+    "geoinformatics": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
+    "photogrammetry-and-remote-sensing": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
+    "land-management": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" }
   }
 }
