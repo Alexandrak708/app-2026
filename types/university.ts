@@ -6,7 +6,7 @@
  * platform imports so it can be imported from anywhere without side effects.
  */
 
-export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12";
+export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19";
 
 export type UniversityCategory =
   | "Engineering"

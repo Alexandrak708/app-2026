@@ -449,6 +449,90 @@
       "labsText": "Departments",
       "tuitionFreeLabel": "€215",
       "tuitionFreeText": "Lowest semester fee (BG/EU)"
+    },
+    "13": {
+      "yearsTradition": "70+",
+      "bachelorPrograms": "18+",
+      "masterPrograms": "12+",
+      "internationalPartners": "100+",
+      "countries": "40",
+      "studentsGraduated": "40K+",
+      "labs": "4",
+      "labsText": "Teaching languages",
+      "tuitionFreeLabel": "€430",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "14": {
+      "yearsTradition": "70+",
+      "bachelorPrograms": "16+",
+      "masterPrograms": "12+",
+      "internationalPartners": "80+",
+      "countries": "35",
+      "studentsGraduated": "14K+",
+      "labs": "3",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€215",
+      "tuitionFreeText": "Lowest semester fee (BG/EU)"
+    },
+    "15": {
+      "yearsTradition": "100+",
+      "bachelorPrograms": "18+",
+      "masterPrograms": "12+",
+      "internationalPartners": "100+",
+      "countries": "40",
+      "studentsGraduated": "60K+",
+      "labs": "30",
+      "labsText": "Departments",
+      "tuitionFreeLabel": "€215",
+      "tuitionFreeText": "Lowest semester fee (BG/EU)"
+    },
+    "16": {
+      "yearsTradition": "75+",
+      "bachelorPrograms": "15",
+      "masterPrograms": "20+",
+      "internationalPartners": "50+",
+      "countries": "10",
+      "studentsGraduated": "20K+",
+      "labs": "5",
+      "labsText": "Research institutes",
+      "tuitionFreeLabel": "€530",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "17": {
+      "yearsTradition": "100+",
+      "bachelorPrograms": "17",
+      "masterPrograms": "14+",
+      "internationalPartners": "50+",
+      "countries": "10",
+      "studentsGraduated": "30K+",
+      "labs": "3",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€300",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "18": {
+      "yearsTradition": "145",
+      "bachelorPrograms": "11",
+      "masterPrograms": "5",
+      "internationalPartners": "30+",
+      "countries": "6",
+      "studentsGraduated": "15K+",
+      "labs": "90%",
+      "labsText": "Employed before graduation",
+      "tuitionFreeLabel": "€360",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "19": {
+      "yearsTradition": "20+",
+      "bachelorPrograms": "8",
+      "masterPrograms": "14+",
+      "internationalPartners": "40+",
+      "countries": "15",
+      "studentsGraduated": "10K+",
+      "labs": "90%",
+      "labsText": "Employed in their field",
+      "tuitionFreeLabel": "Top 3",
+      "tuitionFreeText": "in Economics (Bulgaria)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -668,6 +752,132 @@
         "range": "€4,200",
         "label": "Preparatory English language year"
       }
+    ],
+    "13": [
+      {
+        "range": "€430–€530",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€4,600–€5,000",
+        "label": "Foreign students, English-taught (per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Preparatory language year"
+      },
+      {
+        "range": "EN / FR / DE",
+        "label": "Programmes in English, French, German"
+      }
+    ],
+    "14": [
+      {
+        "range": "€430",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€3,300",
+        "label": "Foreign students, Bulgarian-taught (per year)"
+      },
+      {
+        "range": "€3,800",
+        "label": "Foreign students, English-taught (per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Preparatory language year"
+      }
+    ],
+    "15": [
+      {
+        "range": "€430",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€3,000–€3,500",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€4,500",
+        "label": "Veterinary Medicine in English (per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Preparatory language year"
+      }
+    ],
+    "16": [
+      {
+        "range": "€530",
+        "label": "BG/EU bachelor & master (per year)"
+      },
+      {
+        "range": "€265",
+        "label": "BG/EU (per semester)"
+      },
+      {
+        "range": "€4,600",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€2,300",
+        "label": "Foreign students (per semester)"
+      }
+    ],
+    "17": [
+      {
+        "range": "€300",
+        "label": "BG/EU economics & management (per year)"
+      },
+      {
+        "range": "€360",
+        "label": "BG/EU engineering (per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€0",
+        "label": "Exempt categories (orphans, disability)"
+      }
+    ],
+    "18": [
+      {
+        "range": "€360",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€770",
+        "label": "BG/EU paid, ICT (per year)"
+      },
+      {
+        "range": "€2,900",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€0",
+        "label": "Exempt categories (orphans, disability)"
+      }
+    ],
+    "19": [
+      {
+        "range": "€1,000",
+        "label": "Bulgarian-taught (per semester)"
+      },
+      {
+        "range": "€1,800",
+        "label": "English bachelor (per semester)"
+      },
+      {
+        "range": "€1,950",
+        "label": "English master (per semester)"
+      },
+      {
+        "range": "€3,410",
+        "label": "International Banking & Finance (per semester)"
+      }
     ]
   },
   "universityExtra": {
@@ -832,7 +1042,7 @@
     "vfu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship at partner universities across Europe",
     "vfu_installments": "Tuition payable in two installments per semester to ease the financial load",
     "vfu_applicationDesc": "Admission for 2026/2027 is open online through the candidate-student portal ksp.vfu.bg, with several entry routes depending on the programme:",
-    "vfu_appRoutes": "Bachelor entry by secondary-school (matriculation / ДЗИ) results, an entrance exam, or an online competition test",
+    "vfu_appRoutes": "Bachelor entry by secondary-school matriculation results, an entrance exam, or an online competition test",
     "vfu_appArchitecture": "Architecture and arts programmes include a drawing or aptitude examination",
     "vfu_appMaster": "Master's admission is document-based, after a relevant higher-education degree",
     "vfu_appDocuments": "Required: secondary-school diploma (or higher-education diploma for Master's), application form, ID and photos",
@@ -910,7 +1120,7 @@
     "su_phdScholarships": "State scholarships for full-time doctoral candidates and paid participation in national and European research projects",
     "su_studentLoans": "State-guaranteed, low-interest student loans for Bulgarian and EU students under the Student and Doctoral Loans Act",
     "su_applicationDesc": "Admission is organised by the university each summer, with separate tracks for Bulgarian/EU and non-EU applicants:",
-    "su_appEuExam": "Bulgarian and EU applicants are ranked by a composite score from state matriculation (ДЗИ) exams and/or Sofia University entrance examinations",
+    "su_appEuExam": "Bulgarian and EU applicants are ranked by a composite score from state matriculation exams and/or Sofia University entrance examinations",
     "su_appNonEu": "Non-EU applicants are admitted on the basis of their documents, provided the relevant grade is at least 62% of the maximum in their country's system",
     "su_appMedicine": "Medicine and Pharmacy applicants sit competitive entrance exams in Biology and Chemistry (with English for the English-taught programmes)",
     "su_appDocuments": "Required documents include the secondary-school diploma (with NACID recognition for foreign diplomas), an application form, ID/passport and a medical certificate",
@@ -950,7 +1160,7 @@
     "tus_studentLoans": "State-guaranteed, low-interest student loans for Bulgarian and EU students",
     "tus_applicationDesc": "Admission for 2026/2027 is by competitive ranking, with several entry routes:",
     "tus_appExam": "A TU-Sofia entrance examination in Mathematics is the main route for engineering programmes",
-    "tus_appMatriculation": "Admission is also possible with state matriculation (ДЗИ) results in Mathematics, Bulgarian or another relevant subject",
+    "tus_appMatriculation": "Admission is also possible with state matriculation exam results in Mathematics, Bulgarian or another relevant subject",
     "tus_appForeign": "Foreign (non-EU) applicants apply on documents through the International Office; language or preparatory-course proof is required for English, German or French tracks",
     "tus_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), application form and ID/passport",
     "tus_appDeadlines": "Applications and ranking rounds run through the summer for the autumn (winter-semester) start",
@@ -988,7 +1198,7 @@
     "unwe_studentLoans": "State-guaranteed, low-interest student loans for Bulgarian and EU students",
     "unwe_applicationDesc": "Admission is organised each summer by professional field, with several entry routes:",
     "unwe_appExam": "Applicants rank by a composite score from a UNWE entrance exam (or an approved external exam) and their diploma grades",
-    "unwe_appMatriculation": "State matriculation (ДЗИ) results — e.g. in Mathematics, Bulgarian or a foreign language — can be used for ranking",
+    "unwe_appMatriculation": "State matriculation exam results — e.g. in Mathematics, Bulgarian or a foreign language — can be used for ranking",
     "unwe_appEnglish": "English-taught majors require a B2-level English certificate or an entrance English test",
     "unwe_appForeign": "Foreign (non-EU) applicants apply on documents through the International Office; a preparatory language year is available",
     "unwe_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), an application form and ID/passport",
@@ -1097,7 +1307,7 @@
     "uacg_erasmusGrants": "Erasmus+ mobility grants for study or placements at partner universities across Europe",
     "uacg_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
     "uacg_applicationDesc": "Admission is competitive and depends on the field of study:",
-    "uacg_appExam": "Engineering and geodesy programmes are admitted by a Mathematics entrance exam and/or state matriculation (ДЗИ) results",
+    "uacg_appExam": "Engineering and geodesy programmes are admitted by a Mathematics entrance exam and/or state matriculation exam results",
     "uacg_appArchitecture": "Architecture and Urbanism require a drawing (freehand and technical) entrance examination",
     "uacg_appEnglish": "English-taught Architecture and Civil Engineering have a separate procedure and require proof of English",
     "uacg_appForeign": "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
@@ -1126,7 +1336,262 @@
     "uacg_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
     "uacg_prepCourse": "A one-year preparatory course in English (or Bulgarian) for foreign applicants",
     "uacg_accommodation": "Assistance with accommodation in university dormitories and student integration",
-    "uacg_recognition": "NACID recognition of foreign diplomas and internationally recognised UACEG degrees"
+    "uacg_recognition": "NACID recognition of foreign diplomas and internationally recognised UACEG degrees",
+    "uctm_scholarshipsDesc": "As a state university, UCTM keeps tuition low for Bulgarian and EU students and offers merit- and need-based support:",
+    "uctm_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results, plus named and company scholarships",
+    "uctm_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "uctm_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "uctm_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
+    "uctm_applicationDesc": "Admission is competitive, with several entry routes:",
+    "uctm_appExam": "Bulgarian and EU applicants rank by a composite score from state matriculation exams and/or a UCTM entrance exam in Chemistry or Mathematics",
+    "uctm_appLanguages": "Many programmes are offered in English, French or German for those who prefer foreign-language study",
+    "uctm_appForeign": "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+    "uctm_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), application form and ID/passport",
+    "uctm_appOnline": "Apply online via the UCTM admission system at uctm.edu",
+    "uctm_masterFeesDesc": "Fees for 2025/2026 depend on the programme, language and student category:",
+    "uctm_feeStateSubsidised": "Bulgarian and EU students: state-subsidised from about €430 per year",
+    "uctm_feeForeign": "Foreign (non-EU) students: from about €4,600 per year (up to about €5,000 for some programmes)",
+    "uctm_feeLanguages": "Foreign-language (English, French, German) programmes may carry an additional language-instruction fee",
+    "uctm_feePrep": "Preparatory language year for foreign applicants: about €3,000",
+    "uctm_feePayment": "State fees are paid in two semester instalments; fees are set annually by the university",
+    "uctm_campus": "Campus & Facilities",
+    "uctm_campusDesc": "UCTM's campus is in Sofia's Studentski Grad district:",
+    "uctm_labs": "Modern chemical, biotechnology, metallurgical and materials laboratories",
+    "uctm_pilot": "Pilot plants and technological installations for hands-on process training",
+    "uctm_library": "A scientific-technical library and specialised faculty reading rooms",
+    "uctm_dormitories": "Student dormitories, canteens and student services",
+    "uctm_sports": "A university sports complex and active student clubs and organisations",
+    "uctm_partnersDesc": "UCTM is internationally connected, with a strong tradition of double-diploma engineering degrees:",
+    "uctm_jointDegrees": "European double-diploma degrees with Hamburg, Otto von Guericke Magdeburg and other partner universities",
+    "uctm_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "uctm_feani": "Engineering specialties recognised by FEANI, valid for professional practice across Europe",
+    "uctm_francophone": "A Francophone Faculty of Chemical Engineering delivering programmes in French, part of the AUF network",
+    "uctm_bilateral": "Bilateral cooperation and joint research with universities and industry worldwide",
+    "uctm_internationalDesc": "UCTM has a long tradition of educating international students in several languages:",
+    "uctm_englishFrenchGerman": "Programmes taught in English, French and German, alongside Bulgarian-taught degrees",
+    "uctm_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
+    "uctm_prepCourse": "A one-year preparatory course in Bulgarian, English, French or German for foreign applicants",
+    "uctm_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "uctm_recognition": "NACID recognition of foreign diplomas and internationally recognised UCTM degrees",
+    "mgu_scholarshipsDesc": "As a state university, MGU keeps tuition low for Bulgarian and EU students and offers merit-, need- and industry-based support:",
+    "mgu_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results, plus named scholarships",
+    "mgu_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "mgu_companyScholarships": "Scholarships and paid internships sponsored by mining and energy companies",
+    "mgu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "mgu_applicationDesc": "Admission is competitive, with several entry routes:",
+    "mgu_appExam": "Bulgarian and EU applicants rank by a composite score from an MGU entrance exam in Mathematics and their diploma",
+    "mgu_appMatriculation": "State matriculation exam results in Mathematics, Geography or another relevant subject can be used for ranking",
+    "mgu_appForeign": "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+    "mgu_appDocuments": "Required documents: secondary-school diploma (with NACID recognition for foreign diplomas), a medical certificate, application form and ID/passport",
+    "mgu_appOnline": "Apply online via the MGU candidate-student system",
+    "mgu_masterFeesDesc": "Fees for 2025/2026 depend on the programme and student category:",
+    "mgu_feeStateSubsidised": "Bulgarian and EU students: state-subsidised from about €430 per year",
+    "mgu_feeForeignBg": "Foreign (non-EU) students, Bulgarian-taught programmes: about €3,300 per year",
+    "mgu_feeForeignEn": "Foreign (non-EU) students, English-taught programmes: about €3,800 per year",
+    "mgu_feePrep": "Preparatory language year for foreign applicants: about €3,000",
+    "mgu_feePayment": "State fees are paid in two semester instalments; fees are set annually by the university",
+    "mgu_campus": "Campus & Facilities",
+    "mgu_campusDesc": "MGU's main campus is in Sofia's Studentski Grad district, with a branch in Kardzhali:",
+    "mgu_labs": "Specialised mining, geology, geophysics and materials laboratories",
+    "mgu_museum": "A rich mineralogical and geological museum with a large mineral and rock collection",
+    "mgu_library": "A scientific-technical library and specialised faculty reading rooms",
+    "mgu_kardzhali": "A branch campus in Kardzhali serving the mining region of the Eastern Rhodopes",
+    "mgu_dormitories": "Student dormitories, canteens, a sports complex and student services",
+    "mgu_partnersDesc": "MGU is closely tied to the mining and energy industry and the European academic network:",
+    "mgu_industry": "Strong partnerships with mining, energy and geology companies that sponsor scholarships and internships",
+    "mgu_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "mgu_feani": "Engineering specialties recognised for professional practice across Europe",
+    "mgu_research": "Applied research and expert services for the mining, energy and geology sectors",
+    "mgu_bilateral": "Bilateral cooperation with universities and research centres worldwide",
+    "mgu_internationalDesc": "MGU welcomes international students and offers dedicated support:",
+    "mgu_englishPrograms": "Selected programmes taught in English for international students, alongside Bulgarian-taught degrees",
+    "mgu_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
+    "mgu_prepCourse": "A one-year preparatory course in Bulgarian (or English) for foreign applicants",
+    "mgu_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "mgu_recognition": "NACID recognition of foreign diplomas and internationally recognised MGU degrees",
+    "ltu_scholarshipsDesc": "As a state university, LTU keeps tuition low for Bulgarian and EU students and offers merit- and need-based support:",
+    "ltu_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results, plus named scholarships",
+    "ltu_socialScholarships": "Social (need-based) scholarships and support for students from vulnerable groups",
+    "ltu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "ltu_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
+    "ltu_applicationDesc": "Admission is competitive and depends on the field of study:",
+    "ltu_appExam": "Bulgarian and EU applicants rank by a composite score from state matriculation exams and/or a University of Forestry entrance exam",
+    "ltu_appVeterinary": "Landscape Architecture includes a drawing examination, and Veterinary Medicine is a competitive integrated Master's programme",
+    "ltu_appEnglish": "Veterinary Medicine and selected programmes are offered in English for international students",
+    "ltu_appForeign": "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+    "ltu_appOnline": "Apply online via the University of Forestry admission system at ltu.bg",
+    "ltu_masterFeesDesc": "Fees for 2025/2026 depend on the programme and student category:",
+    "ltu_feeStateSubsidised": "Bulgarian and EU students: state-subsidised from about €430 per year",
+    "ltu_feeForeign": "Foreign (non-EU) students: about €3,000–€3,500 per year depending on the programme",
+    "ltu_feeVeterinaryEn": "Veterinary Medicine taught in English: about €4,500 per year for international students",
+    "ltu_feePrep": "Preparatory language year for foreign applicants: about €3,000",
+    "ltu_feePayment": "State fees are paid in two semester instalments; fees are set annually by the university",
+    "ltu_campus": "Campus & Facilities",
+    "ltu_campusDesc": "LTU's wooded campus is in central Sofia, with field bases in the mountains:",
+    "ltu_forests": "Two university research forests near Yundola and Barzia for forestry field practice",
+    "ltu_arboretum": "An arboretum and botanical collections used for teaching and research",
+    "ltu_clinic": "A veterinary clinic and specialised forestry, wood and agronomy laboratories",
+    "ltu_library": "A scientific-technical library and specialised faculty reading rooms",
+    "ltu_dormitories": "Student dormitories, canteens, a sports complex and student services",
+    "ltu_partnersDesc": "LTU is internationally connected across forestry, ecology and veterinary science:",
+    "ltu_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "ltu_veterinaryEn": "The only university in Sofia teaching Veterinary Medicine in English",
+    "ltu_industry": "Partnerships with the forestry, wood, agriculture and environmental sectors",
+    "ltu_research": "Applied research and expert services in forestry, ecology and the bioeconomy",
+    "ltu_bilateral": "Bilateral cooperation with universities and research centres worldwide",
+    "ltu_internationalDesc": "LTU welcomes international students and offers dedicated support:",
+    "ltu_englishPrograms": "Veterinary Medicine and selected programmes taught in English, alongside Bulgarian-taught degrees",
+    "ltu_visaSupport": "Admission, visa and residence support for foreign students through the International Office",
+    "ltu_prepCourse": "A one-year preparatory course in Bulgarian (or English) for foreign applicants",
+    "ltu_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "ltu_recognition": "NACID recognition of foreign diplomas and internationally recognised University of Forestry degrees",
+    "ulsit_scholarshipsDesc": "As a state university, UniBIT keeps tuition low for Bulgarian and EU students and offers state and merit-based support:",
+    "ulsit_meritScholarships": "Merit scholarships from the state budget for full-time students with strong academic results",
+    "ulsit_socialScholarships": "Social (need-based) scholarships and special-purpose support for students from vulnerable groups",
+    "ulsit_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "ulsit_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
+    "ulsit_applicationDesc": "Admission is by competition and is organised through the university's online system:",
+    "ulsit_appExam": "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a UniBIT entrance exam",
+    "ulsit_appMatriculation": "Most programmes admit on the secondary-school diploma and matriculation results; some fields use a ranking test",
+    "ulsit_appForeign": "Foreign (non-EU) applicants apply as international students with a recognised diploma and proof of language",
+    "ulsit_appDocuments": "Required documents: secondary-school diploma, application form, ID and the relevant application fee",
+    "ulsit_appOnline": "Apply online through the UniBIT admission portal at apply.unibit.bg",
+    "ulsit_masterFeesDesc": "Fees for 2025/2026 depend on the student category; Bulgarian state fees are among the lowest in the country:",
+    "ulsit_feeStateSubsidised": "Bulgarian and EU bachelor students: state-subsidised, about €530 per year (roughly €265 per semester)",
+    "ulsit_feeMaster": "Bulgarian and EU master's students: about €530 per year, paid in two semester instalments",
+    "ulsit_feeForeign": "Foreign (non-EU) students: about €4,600 per year for bachelor's and master's programmes",
+    "ulsit_feePrep": "The Software Engineering master's is also offered in English; some master's programmes run over three semesters",
+    "ulsit_feePayment": "Tuition is paid in two semester instalments; exact fees are set annually by government decree",
+    "ulsit_campus": "Campus & Facilities",
+    "ulsit_campusDesc": "UniBIT's campus is in Sofia, with a modern library and computing facilities:",
+    "ulsit_library": "A Library and Information Centre with 52,000 volumes, EBSCO and SpringerLink databases and RFID automation",
+    "ulsit_computerLabs": "Ten instructional computer rooms and a licensed ECDL testing centre",
+    "ulsit_atanasoffLab": "The \"John Atanasoff\" computer laboratory with campus-wide wireless internet",
+    "ulsit_museum": "A \"Spirituality and Leadership\" museum collection and a chapel used for cultural-heritage teaching",
+    "ulsit_dormitories": "Student dormitories in Sofia's Studentski Grad, a sports hall, tennis courts and a canteen",
+    "ulsit_partnersDesc": "UniBIT is nationally and internationally connected in information science and cultural heritage:",
+    "ulsit_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "ulsit_unesco": "Holds a UNESCO Chair and takes part in international information-science initiatives",
+    "ulsit_accreditation": "Institutionally accredited by the National Evaluation and Accreditation Agency (NEAA) with a high score",
+    "ulsit_balkanNetwork": "Member of the Balkan Universities Network, with AQ Austria quality assurance",
+    "ulsit_bilateral": "Bilateral cooperation with universities, libraries and cultural institutions worldwide",
+    "ulsit_internationalDesc": "UniBIT welcomes international students and offers dedicated support:",
+    "ulsit_englishPrograms": "A Software Engineering master's taught in English, alongside Bulgarian-taught degrees",
+    "ulsit_visaSupport": "Admission, visa and residence support for foreign students",
+    "ulsit_prepCourse": "A preparatory year in Bulgarian for foreign applicants, and IELTS testing via the British Council",
+    "ulsit_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "ulsit_recognition": "NACID recognition of foreign diplomas and internationally recognised UniBIT degrees",
+    "vtu_scholarshipsDesc": "As a state university, VTU keeps tuition low for Bulgarian and EU students and offers state and merit-based support:",
+    "vtu_meritScholarships": "Merit scholarships from the state budget for full-time students with strong academic results",
+    "vtu_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "vtu_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "vtu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "vtu_doctoralScholarships": "State scholarships and research funding for full-time doctoral candidates",
+    "vtu_applicationDesc": "Admission is competitive and is organised through the university's admission campaign:",
+    "vtu_appExam": "Bulgarian and EU applicants are admitted by a competitive score from a VTU entrance test in mathematics and/or state matriculation exams",
+    "vtu_appMatriculation": "Many specialties admit on the secondary-school diploma and matriculation results without a separate exam",
+    "vtu_appForeign": "Foreign (non-EU) applicants apply as international students with a recognised diploma and proof of language",
+    "vtu_appDocuments": "Required documents: secondary-school diploma, application form, ID and the application fee (about €50)",
+    "vtu_appOnline": "Apply on site or online through the VTU admission office; see vtu.bg for dates and details",
+    "vtu_masterFeesDesc": "Fees for 2025/2026 depend on the field and the student category; state fees are among the lowest in the country:",
+    "vtu_feeStateSubsidised": "Bulgarian and EU students, economics and management: state-subsidised, about €300 per year",
+    "vtu_feeEngineering": "Bulgarian and EU students, engineering specialties: about €360 per year",
+    "vtu_feeForeign": "Foreign (non-EU) students: about €3,000 per year for bachelor's and master's programmes",
+    "vtu_feeExempt": "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+    "vtu_feePayment": "Tuition is paid in two semester instalments; the master's application fee is about €36 (70 BGN)",
+    "vtu_campus": "Campus & Facilities",
+    "vtu_campusDesc": "VTU's campus is in the Slatina district of Sofia (158 Geo Milev St), with specialised transport facilities:",
+    "vtu_labs": "Specialised laboratories for railway, automotive, electrical and telecommunications engineering",
+    "vtu_roadSafetyLab": "A modern Road Safety Laboratory and applied transport-research facilities",
+    "vtu_museum": "A transport museum and historic rolling-stock collection used in teaching",
+    "vtu_ravda": "A student recreation centre on the Black Sea coast at Ravda and sports facilities",
+    "vtu_dormitories": "Student dormitories, a canteen, a library and a ceremonial hall",
+    "vtu_partnersDesc": "VTU is closely tied to the transport sector nationally and internationally:",
+    "vtu_industry": "Partnerships with the railways, transport operators, and the automotive and construction sectors",
+    "vtu_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "vtu_accreditation": "Institutionally accredited by the National Evaluation and Accreditation Agency (NEAA), score 9.05/10",
+    "vtu_conferences": "Hosts international scientific conferences in transport, mechanics and telecommunications",
+    "vtu_bilateral": "Bilateral cooperation with transport universities and research centres abroad",
+    "vtu_internationalDesc": "VTU welcomes international students and offers dedicated support:",
+    "vtu_englishPrograms": "Selected programmes and courses offered in English, alongside Bulgarian-taught degrees",
+    "vtu_visaSupport": "Admission, visa and residence support for foreign students",
+    "vtu_prepCourse": "A preparatory year in Bulgarian for foreign applicants who need it",
+    "vtu_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "vtu_recognition": "NACID recognition of foreign diplomas and internationally recognised VTU degrees",
+    "utp_scholarshipsDesc": "As a state higher school, UTP keeps tuition affordable and offers state, corporate and merit-based support:",
+    "utp_meritScholarships": "Merit scholarships from the state budget for full-time students with strong academic results",
+    "utp_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "utp_corporateScholarships": "Corporate and named scholarships from industry partners such as A1, Huawei and Siemens",
+    "utp_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "utp_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "utp_applicationDesc": "Admission is straightforward and open to secondary-school graduates:",
+    "utp_appDiploma": "Bulgarian and EU applicants are admitted mainly on their secondary-school diploma grades",
+    "utp_appNoExam": "Most specialties have no entrance exam; ranking is by diploma score (minimum about 62% of the maximum)",
+    "utp_appForeign": "Foreign applicants apply as international students with a recognised diploma and proof of language",
+    "utp_appDocuments": "Required documents: secondary-school diploma, application form, ID and the application fee (120 BGN)",
+    "utp_appOnline": "Apply online or on site; tuition is paid in two semester instalments; see utp.bg for details",
+    "utp_masterFeesDesc": "Fees for 2025/2026 depend on the study cycle and the student category:",
+    "utp_feeStateSubsidised": "Bulgarian and EU students on state-subsidised places: from about €360 per year",
+    "utp_feePaid": "Bulgarian and EU students on paid ICT places: about €770 per year",
+    "utp_feeForeign": "Foreign (non-EU) students: about €2,900 per year for bachelor's and master's programmes",
+    "utp_feeExempt": "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+    "utp_feePayment": "Tuition is paid in two semester instalments; the application fee is 120 BGN",
+    "utp_campus": "Campus & Facilities",
+    "utp_campusDesc": "UTP's campus is in Sofia's Studentski grad (1 Akad. Stefan Mladenov St), with modern ICT facilities:",
+    "utp_labs": "Modern telecommunications, networking and cybersecurity laboratories",
+    "utp_ciscoAws": "A Cisco Networking Academy and an AWS Academy for industry-standard certification",
+    "utp_elearning": "An electronic learning platform and a career development and job-placement centre",
+    "utp_library": "A specialised library and study spaces for communications and IT",
+    "utp_dormitories": "Renovated student dormitories on campus and student services",
+    "utp_partnersDesc": "UTP is closely tied to the ICT and telecommunications industry:",
+    "utp_industry": "Industry partnerships with A1, Huawei and Siemens, and industry-certified training",
+    "utp_academic": "Academic partnerships with Medical University Pleven, Medical University Plovdiv and the Air Force Academy",
+    "utp_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "utp_employment": "Nearly 90% of students are employed in their field before graduation",
+    "utp_eurashe": "Member of EURASHE, with Cisco and AWS Academy programmes",
+    "utp_internationalDesc": "UTP is a leading choice for foreign students in ICT and welcomes international applicants:",
+    "utp_englishPrograms": "Selected programmes and courses offered in English, alongside Bulgarian-taught degrees",
+    "utp_sixCountries": "Students from Serbia, North Macedonia, Turkey, Albania, Moldova and Ukraine",
+    "utp_visaSupport": "An international office providing admission, visa and residence support",
+    "utp_accommodation": "Assistance with accommodation in campus dormitories and student integration",
+    "utp_recognition": "NACID recognition of foreign diplomas and internationally recognised UTP degrees",
+    "vuzf_scholarshipsDesc": "As a private university, VUZF sets its own fees and offers merit awards, discounts and flexible payment:",
+    "vuzf_meritScholarships": "Merit scholarships and awards for students with excellent academic results",
+    "vuzf_earlyPaymentDiscount": "Discounts for early or full payment of the semester tuition fee",
+    "vuzf_familyDiscount": "Family and alumni discounts for related students and returning graduates",
+    "vuzf_corporateScholarships": "Corporate and partner scholarships funded by employers in finance and business",
+    "vuzf_installments": "Interest-free payment in instalments across the semester",
+    "vuzf_applicationDesc": "Admission is open and continuous, based on prior education:",
+    "vuzf_appDiploma": "Bachelor applicants are admitted on their secondary-school diploma, without an entrance exam",
+    "vuzf_appRolling": "Rolling admission with intakes through the year; a master's requires a completed degree",
+    "vuzf_appEnglish": "English-taught programmes require proof of English language proficiency",
+    "vuzf_appDocuments": "Required documents: diploma, application form, ID and the application fee",
+    "vuzf_appOnline": "Apply online via the VUZF admission system at uzf.bg",
+    "vuzf_masterFeesDesc": "Fees are per semester and depend on the programme and language of instruction:",
+    "vuzf_feeBachelorBg": "Bulgarian-taught bachelor programmes: about €1,000 per semester",
+    "vuzf_feeBachelorEn": "English-taught bachelor (Business Management and Marketing): €1,800 per semester",
+    "vuzf_feeMasterEn": "English-taught master's programmes: about €1,950 per semester",
+    "vuzf_feeIntlBanking": "International Banking and Finance master's (English): €3,410 per semester",
+    "vuzf_feePayment": "Tuition is paid per semester; instalment plans and discounts are available",
+    "vuzf_campus": "Campus & Facilities",
+    "vuzf_campusDesc": "VUZF's campus is in Sofia's Ovcha Kupel district (1 Gusla Street):",
+    "vuzf_lab": "The VUZF Lab research centre for applied finance, fintech and business research",
+    "vuzf_library": "A specialised finance and economics library, lecture halls and event spaces",
+    "vuzf_moodle": "A Moodle-based e-learning platform for distance and blended study",
+    "vuzf_careerCentre": "A career centre — about 90% of graduates work in their field",
+    "vuzf_location": "Located in Ovcha Kupel, about 30 minutes by tram from the city centre",
+    "vuzf_partnersDesc": "VUZF is nationally and internationally accredited and industry-connected:",
+    "vuzf_bac": "Accredited by the National Evaluation and Accreditation Agency and the British Accreditation Council",
+    "vuzf_acca": "Accounting programmes accredited by ACCA (Association of Chartered Certified Accountants)",
+    "vuzf_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "vuzf_industry": "Close ties to banks, insurers and financial companies for internships and projects",
+    "vuzf_ranking": "Ranked in the top 3 in Bulgaria in the field of Economics",
+    "vuzf_internationalDesc": "VUZF welcomes international students and teaches several programmes in English:",
+    "vuzf_englishPrograms": "English-taught degrees in Business Management and Marketing and International Banking and Finance",
+    "vuzf_coburg": "Double-degree and exchange opportunities, including with Coburg University (Germany)",
+    "vuzf_visaSupport": "Admission, visa and residence support for foreign students",
+    "vuzf_accommodation": "Assistance with accommodation and student integration in Sofia",
+    "vuzf_recognition": "NACID recognition of foreign diplomas and internationally recognised VUZF degrees"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -1252,6 +1717,44 @@
     "hydro": "Faculty of Hydraulic Engineering",
     "transportation": "Faculty of Transportation Engineering",
     "geodesy": "Faculty of Geodesy"
+  },
+  "uctm_faculties": {
+    "chemical-tech": "Faculty of Chemical Technologies",
+    "chemical-systems": "Faculty of Chemical and Systems Engineering",
+    "metallurgy": "Faculty of Metallurgy and Materials Science",
+    "francophone": "Francophone Faculty of Chemical Engineering"
+  },
+  "mgu_faculties": {
+    "mining-tech": "Faculty of Mining Technology",
+    "electromechanics": "Faculty of Mining Electromechanics",
+    "geology": "Faculty of Geology and Exploration"
+  },
+  "ltu_faculties": {
+    "forestry": "Faculty of Forestry",
+    "forest-industry": "Faculty of Forest Industry",
+    "ecology-landscape": "Faculty of Ecology and Landscape Architecture",
+    "agronomy": "Faculty of Agronomy",
+    "veterinary": "Faculty of Veterinary Medicine",
+    "business": "Faculty of Business Management"
+  },
+  "ulsit_faculties": {
+    "library": "Faculty of Library Studies and Cultural Heritage",
+    "information": "Faculty of Information Sciences"
+  },
+  "vtu_faculties": {
+    "management": "Faculty of Transport Management",
+    "machinery": "Faculty of Machinery and Construction Technologies in Transport",
+    "telecom": "Faculty of Telecommunications and Electrical Equipment in Transport"
+  },
+  "utp_faculties": {
+    "telecom": "Communications & Computer Technology (Prof. field 5.3)",
+    "management": "Administration & Management (Prof. field 3.7)"
+  },
+  "vuzf_faculties": {
+    "finance": "Department of Finance",
+    "insurance": "Department of Insurance and Social Security",
+    "accounting": "Department of Accounting and Control",
+    "management": "Department of Management and Marketing"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -1955,6 +2458,76 @@
       "tuitionRange": "€430 - €5,200 / year",
       "website": "https://uacg.bg",
       "applyUrl": "https://uacg.bg/page/kandidatstvai"
+    },
+    "13": {
+      "name": "University of Chemical Technology and Metallurgy",
+      "description": "Bulgaria's leading specialised university for chemical technology, metallurgy and materials science (est. 1953) — chemistry, biotechnology, metallurgy, environmental and industrial engineering in Sofia, with English, French and German-taught programs.",
+      "longDescription": "The University of Chemical Technology and Metallurgy (UCTM) is Bulgaria's leading specialised state university for chemical engineering, chemical technology, metallurgy and materials science, established in 1953 as the Institute of Chemical Technology. It holds the highest institutional accreditation in the country for its professional field and its engineering specialties are recognised by FEANI (the European Federation of National Engineering Associations).\n\nThe university is organised into three faculties — Chemical Technologies, Chemical and Systems Engineering, and Metallurgy and Materials Science — together with a Francophone Faculty of Chemical Engineering. Its departments cover chemical and biochemical technology, biotechnology, polymers, pharmaceutical and fine chemistry, metallurgy, materials and nanomaterials, electrochemistry, environmental engineering, automation, information technology and industrial management.\n\nUCTM has around 3,800 students in bachelor's, master's and doctoral programmes, taught in Bulgarian and — for many programmes — in English, French and German. It offers European double-diploma engineering degrees jointly with partner universities such as Hamburg and Otto von Guericke Magdeburg.\n\nThe campus in Sofia's Studentski Grad district features modern chemical, metallurgical and materials laboratories, pilot installations, a scientific-technical library, computer halls, a sports complex and student dormitories. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students in the foreign-language programmes pay tuition from about €4,600 per year. Rector: Prof. Dr. Eng. Senia Terzieva.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€430 - €5,000 / year",
+      "website": "https://uctm.edu",
+      "applyUrl": "https://uctm.edu/en/"
+    },
+    "14": {
+      "name": "University of Mining and Geology \"St. Ivan Rilski\"",
+      "description": "Bulgaria's only specialised university for mining, geology and earth sciences (est. 1953) — mining, geology, geophysics, oil & gas, electromechanics and environmental engineering in Sofia.",
+      "longDescription": "The University of Mining and Geology \"St. Ivan Rilski\" (MGU) is Bulgaria's only specialised state university for mining, geology and the earth sciences, established on 10 June 1953. Named after St. Ivan Rilski, the patron of Bulgarian miners and geologists, it is the country's leading centre for training engineers in geological exploration, mining, oil and gas, and mineral resources, and is accredited by the National Evaluation and Accreditation Agency.\n\nThe university is organised into three faculties — Mining Technology, Mining Electromechanics, and Geology and Exploration — with a Humanitarian Department. Its departments cover mineral-resource development, underground construction, mine surveying, mineral processing and recycling, blasting technologies, electromechanics and automation, mining machinery, geology and geoinformatics, geophysics, hydrogeology and engineering geology, geoecology, and drilling, oil and gas production.\n\nSince its founding MGU has trained over 14,000 engineers who work in geology, mining, energy, construction and environmental protection worldwide. It has around 2,000 students in bachelor's (4 years), master's and doctoral programmes, with a main campus in Sofia's Studentski Grad district and a branch in Kardzhali.\n\nThe campus features specialised mining, geology and materials laboratories, a rich mineralogical and geological museum, a scientific-technical library, computer halls, a sports complex and student dormitories, and the university works closely with the mining and energy industry, which sponsors scholarships and internships. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students pay tuition set per programme. Rector: Prof. Dr. Eng. Ivaylo Koprev.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€430 - €3,800 / year",
+      "website": "https://mgu.bg",
+      "applyUrl": "https://mgu.bg/en/"
+    },
+    "15": {
+      "name": "University of Forestry",
+      "description": "Bulgaria's only university for forestry, ecology and landscape architecture (est. 1925) — forestry, wood technology, veterinary medicine, agronomy, landscape architecture and business in Sofia.",
+      "longDescription": "The University of Forestry (LTU) is Bulgaria's oldest and only specialised state university for forestry, forest management, landscape architecture and wood technology, with roots dating to 1925 when a Forestry Division was founded at Sofia University. It became an independent higher school in 1953 and took its present name in 1995, and it is accredited by the National Evaluation and Accreditation Agency under the motto \"Bulgarian traditions and European standards in education\".\n\nThe university is organised into six faculties — Forestry, Forest Industry, Ecology and Landscape Architecture, Agronomy, Veterinary Medicine, and Business Management — with around 30 departments. In the 1990s it broadened from forestry, wood processing and landscape architecture to also cover ecology, agronomy, veterinary medicine and business.\n\nLTU offers bachelor's, master's and doctoral programmes on the European credit system. It is the only university in Sofia teaching Veterinary Medicine in English, and it welcomes international students across several fields. Practical training is supported by two university research forests near Yundola and Barzia and a training facility in the Vrazhdebna area.\n\nThe wooded campus in central Sofia features specialised forestry, wood, agronomy and veterinary laboratories, a veterinary clinic, an arboretum and botanical collections, a scientific library, a sports complex and student dormitories. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students pay tuition set per programme. Rector: Prof. Dr. Ivan Iliev.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€430 - €4,500 / year",
+      "website": "https://ltu.bg",
+      "applyUrl": "https://ltu.bg/en/"
+    },
+    "16": {
+      "name": "University of Library Studies and Information Technologies",
+      "description": "Bulgaria's specialised state university for information technologies, library science and cultural heritage (est. 1950) — from computer science, cybersecurity and AI to archives, media and national security, in Sofia.",
+      "longDescription": "The University of Library Studies and Information Technologies (ULSIT, known as UniBIT) is Bulgaria's specialised state university for information science, library and archival studies, cultural heritage and information technologies. It was founded in 1950 as the State Institute of Library Studies, grew from an institute into a college, became a Specialised Higher School in 2004, and was granted full university status by the National Assembly in 2010.\n\nUniBIT is organised into two faculties — the Faculty of Library Studies and Cultural Heritage and the Faculty of Information Sciences — supported by a department of comprehensive studies, five research institutes and specialised laboratories and centres. Around 2,500 Bulgarian and international students study across bachelor's, master's and doctoral programmes, taught by more than 140 lecturers. The rector is Prof. Dr. Irena Peteva.\n\nThe university combines its traditional strengths in library science, archives, publishing and cultural heritage with fast-growing programmes in computer science, information technology, information and cybersecurity, artificial intelligence, software engineering and national security. It holds a UNESCO Chair, is a member of the Balkan Universities Network, and is institutionally accredited by the National Evaluation and Accreditation Agency.\n\nThe Sofia campus offers a modern Library and Information Centre with 52,000 volumes and international databases, ten computer rooms and the \"John Atanasoff\" computer laboratory, a sports complex and dormitories in Studentski Grad. Bulgarian and EU students study at low state-subsidised fees of about €530 per year, while foreign students pay around €4,600 per year; the Software Engineering master's is also offered in English.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€530 - €4,600 / year",
+      "website": "https://www.unibit.bg",
+      "applyUrl": "https://apply.unibit.bg"
+    },
+    "17": {
+      "name": "Todor Kableshkov University of Transport",
+      "description": "Bulgaria's specialised state university for transport (est. 1922) — railway, automotive and transport engineering, telecommunications, electrical equipment, logistics and transport management, in Sofia.",
+      "longDescription": "Todor Kableshkov University of Transport (VTU) is Bulgaria's specialised state university for transport, and one of the country's oldest engineering-technical higher schools. It was founded in 1922 as the State Railway School and, over more than a century, has grown into a modern university under the motto \"Traditions and professional knowledge\", training engineers and managers for the whole transport sector.\n\nThe university is organised into three faculties — Transport Management, Machinery and Construction Technologies in Transport, and Telecommunications and Electrical Equipment in Transport. Around 2,500 students study across bachelor's, master's and doctoral programmes, taught by more than 160 lecturers, and VTU counts over 30,000 alumni. The rector is Prof. Dr. Eng. Daniela Todorova.\n\nProgrammes span railway and automotive engineering, rolling stock, transport construction, hoisting and construction machinery, electric transport and electric vehicles, telecommunications and signalling, transport economics, logistics, accounting and industrial management. VTU was among the first Bulgarian universities to enrol students directly into master's programmes and is institutionally accredited by the National Evaluation and Accreditation Agency.\n\nThe campus in Sofia's Slatina district (158 Geo Milev Street) has specialised transport laboratories including a Road Safety Laboratory, a transport museum, a library, dormitories and a Black Sea recreation centre at Ravda. Bulgarian and EU students study at low state-subsidised fees (from about €300 per year, with full exemptions for certain categories), while foreign students pay around €3,000 per year.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€300 - €3,000 / year",
+      "website": "https://www.vtu.bg/en/",
+      "applyUrl": "https://www.vtu.bg/admission-vtu/"
+    },
+    "18": {
+      "name": "University of Telecommunications and Post",
+      "description": "Bulgaria's oldest telecommunications and IT higher school (est. 1881) — telecommunications, computer technologies, cybersecurity, AI, digital entrepreneurship and management, in Sofia.",
+      "longDescription": "The University of Telecommunications and Post (UTP) is a specialised state higher school in Sofia and the institution with the longest history in Bulgaria after the Military School. It traces its origins to the State Telegraph-Postal School founded by decree of Prince Alexander I on 21 December 1881, became the College of Telecommunications and Posts in 1997 and gained higher-school status in 2015, marking 145 years in 2026.\n\nUTP is built around its Faculty of Telecommunications and Management and is accredited in the professional fields of Communication & Computer Technology and Administration & Management. Around 1,500 students study across professional-bachelor, bachelor, master's and doctoral programmes, under the motto \"Wisdom, Knowledge, Competence\". The rector is Prof. Dr. Miglena Temelkova.\n\nProgrammes focus on telecommunications, computer technologies, cybersecurity, artificial intelligence, digital entrepreneurship, digital public administration and management — including hybrid programmes in telemedicine and software programming in medicine run with the Medical Universities of Pleven and Plovdiv. Nearly 90% of students are employed in their field before graduation, and the school works closely with industry partners such as A1, Huawei, Siemens, Cisco and AWS.\n\nThe campus in Sofia's Studentski grad (1 Akademik Stefan Mladenov Street) offers modern telecommunications, networking and cybersecurity laboratories, a Cisco Networking Academy and AWS Academy, an e-learning platform and renovated dormitories. Bulgarian and EU students study at low fees (from about €360 per year, with exemptions for certain categories), while foreign students — from Serbia, North Macedonia, Turkey, Albania, Moldova and Ukraine — pay around €2,900 per year.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€360 - €2,900 / year",
+      "website": "https://www.utp.bg/en/",
+      "applyUrl": "https://www.utp.bg/en/bachelor-admission/"
+    },
+    "19": {
+      "name": "University of Insurance and Finance (VUZF)",
+      "description": "Bulgaria's first private university for finance, insurance and business (est. 2002) — finance, fintech, insurance, accounting, management, marketing and digital business, in Sofia.",
+      "longDescription": "The University of Insurance and Finance (VUZF), also known as VUZF University, is Bulgaria's first private higher school specialised in finance, insurance, social insurance, management and marketing. It was established by a resolution of the National Assembly in 2002 and welcomed its first students in the 2002/2003 academic year, and today it is consistently ranked among the top three institutions in Bulgaria in the field of Economics.\n\nVUZF teaches bachelor's, master's and doctoral programmes in the professional field of Economics, organised around departments of Finance, Insurance and Social Security, Accounting and Control, and Management and Marketing. The rector is Prof. Boris Velchev, and the university was founded by its President and Rector Emeritus, Assoc. Prof. Dr. Grigorii Vazov. About 90% of graduates start work in their field — in banks, insurers, financial institutions and companies.\n\nThe curriculum emphasises practical, career-focused education delivered by working professionals, with a strong modern focus on fintech, digital finance, accounting and analytics, and green and sustainable economics. Several programmes are taught in English — including Business Management and Marketing and International Banking and Finance — and accounting degrees are accredited by ACCA. The university holds accreditation from both the National Evaluation and Accreditation Agency and the British Accreditation Council.\n\nThe campus in Sofia's Ovcha Kupel district (1 Gusla Street) houses the VUZF Lab research centre, a specialised library, lecture halls and a Moodle e-learning platform for distance study. As a private university, VUZF charges per-semester fees — from about €1,000 for Bulgarian-taught programmes to €1,800–€3,410 for English-taught ones — with merit scholarships, discounts and instalment plans available.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€1,000 - €3,410 / semester",
+      "website": "https://uzf.bg/en",
+      "applyUrl": "https://uzf.bg/en/programs"
     }
   },
   "universityProfiles": {
@@ -2063,7 +2636,7 @@
         "Construction / fire-safety engineer"
       ],
       "admissionNotes": [
-        "Admission by secondary-school (matriculation/ДЗИ) results, an entrance exam, or an online competition test depending on the programme",
+        "Admission by secondary-school matriculation results, an entrance exam, or an online competition test depending on the programme",
         "Architecture and arts programmes include a drawing or aptitude examination",
         "Online application via the candidate-student portal ksp.vfu.bg",
         "Programmes are offered in Bulgarian, English and Turkish",
@@ -2106,7 +2679,7 @@
         "Scientist (physics, chemistry, biology, geography)"
       ],
       "admissionNotes": [
-        "Bulgarian and EU applicants are admitted by state matriculation (ДЗИ) results and/or university entrance examinations, ranked by a composite score",
+        "Bulgarian and EU applicants are admitted by state matriculation exam results and/or university entrance examinations, ranked by a composite score",
         "Medicine and Pharmacy require competitive entrance exams in Biology and Chemistry (plus English for the English-taught tracks)",
         "Non-EU applicants are admitted on documents (grade at least 62% of the maximum), except Medicine and Pharmacy which require exams",
         "Foreign applicants without Bulgarian can take a one-year specialised language and subject preparatory course",
@@ -2128,7 +2701,7 @@
         "R&D engineer / Researcher"
       ],
       "admissionNotes": [
-        "Bulgarian and EU applicants are admitted by a competitive score from state matriculation (ДЗИ) and/or a TU-Sofia entrance exam in Mathematics",
+        "Bulgarian and EU applicants are admitted by a competitive score from state matriculation exams and/or a TU-Sofia entrance exam in Mathematics",
         "Results from the university's admission competition in Mathematics or Bulgarian may also be used",
         "English, German and French-taught programmes require proof of the relevant language or a preparatory course",
         "Foreign (non-EU) applicants are admitted on documents through the International Office",
@@ -2151,7 +2724,7 @@
         "Lawyer / Legal advisor"
       ],
       "admissionNotes": [
-        "Bulgarian and EU applicants are admitted by a composite score from state matriculation (ДЗИ) and/or a UNWE entrance exam",
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a UNWE entrance exam",
         "Applicants rank for a chosen faculty/professional field and then select a major",
         "English-taught majors require a B2-level English certificate or an entrance test",
         "Foreign (non-EU) applicants apply on documents through the International Office; a preparatory language year is available",
@@ -2223,6 +2796,156 @@
         "English-taught Architecture and Civil Engineering have a separate procedure and require proof of English",
         "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
         "Online application via the UACEG admission portal"
+      ]
+    },
+    "13": {
+      "name": "University of Chemical Technology and Metallurgy",
+      "focus": "chemical engineering and technology, biotechnology, polymers, pharmaceutical and fine chemistry, metallurgy, materials science, environmental engineering, automation and industrial management",
+      "style": "laboratory- and pilot-plant-based training, applied research, double-diploma engineering degrees with European partners, and programmes taught in Bulgarian, English, French and German",
+      "careers": [
+        "Chemical / process engineer",
+        "Biotechnologist",
+        "Pharmaceutical / fine-chemistry specialist",
+        "Metallurgical / materials engineer",
+        "Environmental engineer",
+        "Automation / IT specialist",
+        "Quality and R&D specialist",
+        "Industrial manager"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a UCTM entrance exam in Chemistry or Mathematics",
+        "Many programmes are also offered in English, French or German for international students",
+        "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+        "Required documents include the secondary-school diploma (NACID recognition for foreign diplomas)",
+        "Online application via the UCTM admission system"
+      ]
+    },
+    "14": {
+      "name": "University of Mining and Geology \"St. Ivan Rilski\"",
+      "focus": "mining engineering, geology, geophysics, oil and gas, mineral processing, underground construction, mine surveying, electromechanics and environmental engineering",
+      "style": "laboratory and field practice, geological expeditions and mine visits, strong applied-earth-science fundamentals, industry-sponsored internships, and Erasmus+ mobility",
+      "careers": [
+        "Mining engineer",
+        "Geologist / Prospecting engineer",
+        "Geophysicist",
+        "Oil and gas engineer",
+        "Mineral-processing engineer",
+        "Mine surveyor",
+        "Hydrogeologist / Engineering geologist",
+        "Environmental / geoecology specialist"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or an MGU entrance exam in Mathematics",
+        "State matriculation results in Mathematics, Geography or another relevant subject can be used for ranking",
+        "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+        "Required documents include the secondary-school diploma (NACID recognition for foreign diplomas) and a medical certificate",
+        "Online application via the MGU admission system"
+      ]
+    },
+    "15": {
+      "name": "University of Forestry",
+      "focus": "forestry and forest management, ecology, landscape architecture, wood technology and furniture design, agronomy, plant protection, veterinary medicine and business management",
+      "style": "laboratory and field practice in university research forests, studio and design work, clinical veterinary training, applied research, and Erasmus+ mobility, with Veterinary Medicine also taught in English",
+      "careers": [
+        "Forester / Forest engineer",
+        "Landscape architect",
+        "Wood technologist / Furniture designer",
+        "Veterinarian",
+        "Agronomist / Plant protection specialist",
+        "Ecologist / Environmental specialist",
+        "Tourism specialist",
+        "Business manager"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a University of Forestry entrance exam",
+        "Landscape Architecture includes a drawing entrance examination; Veterinary Medicine is a competitive integrated Master's programme",
+        "Veterinary Medicine and selected programmes are also offered in English for international students",
+        "Foreign (non-EU) applicants apply through the International Office; a preparatory language year is available",
+        "Online application via the University of Forestry admission system"
+      ]
+    },
+    "16": {
+      "name": "University of Library Studies and Information Technologies",
+      "focus": "library and information science, archives and cultural heritage, information technology and computer science, information and cybersecurity, artificial intelligence, media and national security",
+      "style": "applied laboratory and project work in a modern library and information centre, digital and archival practice, internships, and Erasmus+ mobility",
+      "careers": [
+        "Software developer / IT specialist",
+        "Information security / cybersecurity specialist",
+        "Data analyst",
+        "Librarian / Information manager",
+        "Archivist / Cultural heritage specialist",
+        "Media and communications specialist",
+        "National security analyst"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a UniBIT entrance or ranking test",
+        "Most programmes are open to secondary-school graduates; selected IT and security fields are competitive",
+        "Foreign (non-EU) applicants apply as international students; a preparatory year in Bulgarian is available",
+        "The Software Engineering master's is offered in English for international students",
+        "Online application via the UniBIT admission portal at apply.unibit.bg"
+      ]
+    },
+    "17": {
+      "name": "Todor Kableshkov University of Transport",
+      "focus": "railway, automotive and transport engineering, rolling stock and construction machinery, transport construction, electric transport and electric vehicles, telecommunications and signalling, transport economics, logistics and management",
+      "style": "engineering laboratory and workshop practice, applied transport research, internships with railways and transport operators, and Erasmus+ mobility",
+      "careers": [
+        "Transport / railway engineer",
+        "Automotive engineer",
+        "Electrical or telecommunications engineer",
+        "Transport technologist / operations specialist",
+        "Logistics specialist",
+        "Transport economist / manager",
+        "Transport construction engineer"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a competitive score from a VTU entrance test in mathematics and/or state matriculation exams",
+        "Many specialties admit directly on the secondary-school diploma and matriculation results",
+        "Foreign (non-EU) applicants apply as international students; a preparatory year in Bulgarian is available",
+        "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+        "Application through the VTU admission office; see vtu.bg for dates and details"
+      ]
+    },
+    "18": {
+      "name": "University of Telecommunications and Post",
+      "focus": "telecommunications and network technologies, computer technologies and software, cybersecurity, artificial intelligence, digital entrepreneurship, digital public administration and management",
+      "style": "hands-on laboratory work, Cisco and AWS academy training, industry internships with A1, Huawei and Siemens, and Erasmus+ mobility, with strong graduate employability",
+      "careers": [
+        "Telecommunications / network engineer",
+        "Software developer / IT specialist",
+        "Cybersecurity specialist",
+        "AI / data specialist",
+        "Digital entrepreneur",
+        "ICT project or service manager",
+        "Digital administration specialist"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted mainly on secondary-school diploma grades, usually without an entrance exam",
+        "A minimum diploma score of about 62% of the maximum is required",
+        "Foreign applicants apply as international students with a recognised diploma and proof of language",
+        "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+        "Online or on-site application via the UTP admission office; see utp.bg"
+      ]
+    },
+    "19": {
+      "name": "University of Insurance and Finance (VUZF)",
+      "focus": "finance, banking and investment, insurance and risk, accounting and audit, fintech and digital finance, management, marketing and digital business, and green economics",
+      "style": "practical, career-focused teaching by working professionals, applied projects with the VUZF Lab, English-taught options, internships in banks and financial firms, and Erasmus+ mobility",
+      "careers": [
+        "Financial analyst / manager",
+        "Banking / investment specialist",
+        "Insurance and risk specialist",
+        "Accountant / auditor (ACCA track)",
+        "Fintech / digital finance specialist",
+        "Marketing or digital business manager",
+        "Entrepreneur / business consultant"
+      ],
+      "admissionNotes": [
+        "Bachelor applicants are admitted on their secondary-school diploma, without an entrance exam",
+        "Rolling admission with intakes through the year; a master's requires a completed bachelor's degree",
+        "English-taught programmes require proof of English language proficiency",
+        "As a private university, VUZF charges per-semester fees with scholarships, discounts and instalments",
+        "Online application via the VUZF admission system at uzf.bg"
       ]
     }
   },
@@ -2337,6 +3060,155 @@
     }
   },
   "programTitles": {
+    "finance-and-international-business": "Finance and International Business",
+    "insurance-and-assurance": "Insurance and Assurance",
+    "business-strategies-and-project-management": "Business Strategies and Project Management",
+    "business-psychology-and-human-resources": "Business Psychology and Human Resources",
+    "management-marketing-and-digital-business": "Management, Marketing and Digital Business",
+    "information-technologies-and-business-management": "Information Technologies and Business Management",
+    "business-management-and-marketing": "Business Management and Marketing",
+    "financial-management-and-marketing": "Financial Management and Marketing",
+    "accounting-audit-and-corporate-analysis": "Accounting, Audit and Corporate Analysis",
+    "insurance-business-and-risk-management": "Insurance Business and Risk Management",
+    "banking-management-and-investment": "Banking Management and Investment",
+    "finance-fintech-and-digital-innovation": "Finance, Fintech and Digital Innovation",
+    "green-economy-and-sustainable-development": "Green Economy and Sustainable Development",
+    "digital-marketing-and-online-analytics": "Digital Marketing and Online Analytics",
+    "business-software-and-erp-platforms": "Business Software and ERP Platforms",
+    "human-resources-management-and-leadership": "Human Resources Management and Leadership",
+    "economics-and-organisation-of-healthcare-institutions": "Economics and Organisation of Healthcare Institutions",
+    "insurance-business-and-financial-technologies": "Insurance Business and Financial Technologies",
+    "international-banking-and-finance": "International Banking and Finance",
+    "telecommunication-technologies": "Telecommunication Technologies",
+    "computer-technologies": "Computer Technologies",
+    "cybersecurity-of-communication-technologies": "Cybersecurity of Communication Technologies",
+    "software-programming-in-medicine": "Software Programming in Medicine",
+    "telemedicine": "Telemedicine",
+    "management-in-telecommunications-and-post": "Management in Telecommunications and Post",
+    "management-and-artificial-intelligence": "Management and Artificial Intelligence",
+    "digital-public-administration": "Digital Public Administration",
+    "cybersecurity-in-business": "Cybersecurity in Business",
+    "digital-entrepreneurship-and-high-technologies": "Digital Entrepreneurship and High Technologies",
+    "digital-entrepreneurship-and-artificial-intelligence": "Digital Entrepreneurship and Artificial Intelligence",
+    "communication-networks-and-cybercrime-investigation": "Communication Networks and Cybercrime Investigation",
+    "cybersecurity-in-communication-technologies": "Cybersecurity in Communication Technologies",
+    "smart-leadership": "Smart Leadership",
+    "service-management": "Service Management",
+    "economics-of-transport": "Economics of Transport",
+    "security-and-safety-in-transport": "Security and Safety in Transport",
+    "accounting-and-analysis-in-transport": "Accounting and Analysis in Transport",
+    "technology-and-management-of-transport": "Technology and Management of Transport",
+    "internal-combustion-engines": "Internal Combustion Engines",
+    "railway-engineering": "Railway Engineering",
+    "rolling-stock-for-high-speed-trains": "Rolling Stock for High Speed Trains",
+    "hoisting-road-and-construction-machinery": "Hoisting, Road and Construction Machinery",
+    "automation-electronics-and-computer-management-in-electric-transport": "Automation, Electronics and Computer Management in Electric Transport",
+    "electric-power-engineering-and-electrical-equipment": "Electric Power Engineering and Electrical Equipment",
+    "electric-vehicles": "Electric Vehicles",
+    "telecommunications-and-signalling": "Telecommunications and Signalling",
+    "telecommunications-and-computer-engineering-and-systems": "Telecommunications and Computer Engineering and Systems",
+    "transport-economics": "Transport Economics",
+    "economics-of-transport-firm": "Economics of the Transport Firm",
+    "management-of-technical-systems-for-ecology-and-logistics": "Management of Technical Systems for Ecology and Logistics",
+    "automotive-technology": "Automotive Technology",
+    "automotive-technical-expertise": "Automotive Technical Expertise",
+    "transport-construction": "Transport Construction",
+    "tunnel-boring-machine-exploitation": "Tunnel Boring Machine Exploitation",
+    "electrical-engineering-and-electrical-equipment-in-transport": "Electrical Engineering and Electrical Equipment in Transport",
+    "library-and-information-sciences-and-knowledge-management": "Library and Information Sciences and Knowledge Management",
+    "library-and-information-management": "Library and Information Management",
+    "innovative-communications-and-media-technologies": "Innovative Communications and Media Technologies",
+    "cultural-and-historical-heritage": "Cultural and Historical Heritage",
+    "archival-and-documentary-studies": "Archival and Documentary Studies",
+    "communications-and-information": "Communications and Information",
+    "public-policies-and-practices": "Public Policies and Practices",
+    "information-resources-of-tourism": "Information Resources of Tourism",
+    "information-technology": "Information Technology",
+    "computer-science-and-information-brokerage": "Computer Science and Information Brokerage",
+    "information-technology-in-institutional-and-corporate-environments": "Information Technology in Institutional and Corporate Environments",
+    "national-security-and-cultural-heritage": "National Security and Cultural Heritage",
+    "artificial-intelligence-and-data-processing": "Artificial Intelligence and Data Processing",
+    "cybersecurity-and-digital-forensics": "Cybersecurity and Digital Forensics",
+    "information-systems-and-technologies": "Information Systems and Technologies",
+    "data-analysis-and-management": "Data Analysis and Management",
+    "software-architectures-and-quality-management": "Software Architectures and Quality Management",
+    "protection-of-personal-data-and-classified-information": "Protection of Personal Data and Classified Information",
+    "library-information-and-cultural-management": "Library Information and Cultural Management",
+    "protection-of-cultural-and-historical-heritage": "Protection of Cultural and Historical Heritage",
+    "media-information-and-advertising": "Media Information and Advertising",
+    "historical-heritage-and-cultural-institutions": "Historical Heritage and Cultural Institutions",
+    "forestry": "Forestry",
+    "game-management": "Game Management",
+    "forest-engineering": "Forest Engineering",
+    "wood-technology": "Wood Technology",
+    "interior-and-furniture-design": "Interior and Furniture Design",
+    "chemical-technologies-of-wood": "Chemical Technologies of Wood",
+    "engineering-design": "Engineering Design",
+    "landscape-architecture": "Landscape Architecture",
+    "alternative-tourism": "Alternative Tourism",
+    "agronomy": "Agronomy",
+    "plant-protection": "Plant Protection",
+    "viticulture-and-horticulture": "Viticulture and Horticulture",
+    "veterinary-medicine": "Veterinary Medicine",
+    "veterinary-medicine-in-english": "Veterinary Medicine (in English)",
+    "business-management": "Business Management",
+    "forest-management": "Forest Management",
+    "hunting-and-game-management": "Hunting and Game Management",
+    "wood-engineering": "Wood Engineering",
+    "furniture-design": "Furniture Design",
+    "landscape-planning": "Landscape Planning",
+    "sustainable-tourism": "Sustainable Tourism",
+    "agroecology": "Agroecology",
+    "ornamental-plants-and-landscaping": "Ornamental Plants and Landscaping",
+    "veterinary-public-health": "Veterinary Public Health",
+    "mining-engineering": "Mining Engineering",
+    "underground-construction": "Underground Construction",
+    "mine-surveying": "Mine Surveying",
+    "mineral-processing": "Mineral Processing",
+    "blasting-techniques-and-technologies": "Blasting Techniques and Technologies",
+    "automation": "Automation",
+    "mining-machinery-and-equipment": "Mining Machinery and Equipment",
+    "computer-systems-and-informatics": "Computer Systems and Informatics",
+    "geology": "Geology",
+    "applied-geophysics": "Applied Geophysics",
+    "hydrogeology-and-engineering-geology": "Hydrogeology and Engineering Geology",
+    "ecology-and-environmental-protection": "Ecology and Environmental Protection",
+    "oil-and-gas-production": "Oil and Gas Production",
+    "surface-and-underground-mining": "Surface and Underground Mining",
+    "mineral-processing-and-recycling": "Mineral Processing and Recycling",
+    "tunnelling-and-underground-construction": "Tunnelling and Underground Construction",
+    "geophysics": "Geophysics",
+    "engineering-geology": "Engineering Geology",
+    "water-resources-and-geothermal-energy": "Water Resources and Geothermal Energy",
+    "geographic-information-systems": "Geographic Information Systems",
+    "oil-and-gas-engineering": "Oil and Gas Engineering",
+    "chemical-engineering": "Chemical Engineering",
+    "chemical-engineering-in-english": "Chemical Engineering (in English)",
+    "chemical-engineering-in-french": "Chemical Engineering (in French)",
+    "inorganic-substances-technology": "Inorganic Substances Technology",
+    "organic-chemical-technologies": "Organic Chemical Technologies",
+    "polymer-engineering": "Polymer Engineering",
+    "pharmaceutical-and-fine-chemistry": "Pharmaceutical and Fine Chemistry",
+    "biotechnology": "Biotechnology",
+    "oil-gas-and-solid-fuels-technology": "Oil, Gas and Solid Fuels Technology",
+    "cellulose-paper-and-printing": "Cellulose, Paper and Printing",
+    "metallurgy": "Metallurgy",
+    "materials-science-and-engineering": "Materials Science and Engineering",
+    "electrochemical-technologies-and-corrosion-protection": "Electrochemical Technologies and Corrosion Protection",
+    "semiconductor-technologies": "Semiconductor Technologies",
+    "environmental-engineering": "Environmental Engineering",
+    "information-technologies": "Information Technologies",
+    "process-engineering": "Process Engineering",
+    "industrial-biotechnology": "Industrial Biotechnology",
+    "pharmaceutical-engineering": "Pharmaceutical Engineering",
+    "polymer-materials": "Polymer Materials",
+    "cosmetics-and-household-chemistry": "Cosmetics and Household Chemistry",
+    "metallurgical-engineering": "Metallurgical Engineering",
+    "advanced-materials": "Advanced Materials",
+    "nanomaterials-and-nanotechnology": "Nanomaterials and Nanotechnology",
+    "electrochemistry-and-corrosion-protection": "Electrochemistry and Corrosion Protection",
+    "environmental-protection-and-sustainable-development": "Environmental Protection and Sustainable Development",
+    "automation-engineering": "Automation Engineering",
     "architecture-in-english": "Architecture (in English)",
     "urbanism": "Urbanism",
     "civil-engineering": "Civil Engineering",
@@ -2636,6 +3508,1506 @@
     "finance": "Finance"
   },
   "programOverrides": {
+    "19:bachelor:finance-and-international-business": {
+      "overview": "Finance and International Business at VUZF trains specialists in corporate and international finance, investment and cross-border business, taught by practitioners from the sector.",
+      "keyFocus": "Corporate finance, investments, international business and financial markets",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or distance learning",
+      "partners": [
+        "Department of Finance, VUZF",
+        "Banks, investment and financial companies",
+        "VUZF Lab research centre"
+      ],
+      "highlights": [
+        "Practical training by working finance professionals",
+        "Strong focus on international and corporate finance",
+        "High graduate employability in the financial sector"
+      ],
+      "careers": [
+        "Financial analyst",
+        "Corporate finance specialist",
+        "Investment specialist",
+        "International business manager"
+      ],
+      "admissionNotes": [
+        "Admission on the secondary-school diploma, without an entrance exam",
+        "Interest in finance, economics and business recommended"
+      ]
+    },
+    "19:bachelor:insurance-and-assurance": {
+      "overview": "Insurance and Assurance at VUZF is a signature programme of Bulgaria's first insurance-and-finance university, preparing specialists for the insurance and social-security sector.",
+      "keyFocus": "Insurance, reinsurance, social security, underwriting and risk assessment",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or distance learning",
+      "partners": [
+        "Department of Insurance and Social Security, VUZF",
+        "Insurance and pension companies",
+        "VUZF Lab research centre"
+      ],
+      "highlights": [
+        "A founding specialism of VUZF",
+        "Practice-oriented insurance and risk training",
+        "Direct pathways into insurers and pension funds"
+      ],
+      "careers": [
+        "Insurance specialist / underwriter",
+        "Risk assessor",
+        "Claims / actuarial support specialist",
+        "Pension and social-security specialist"
+      ],
+      "admissionNotes": [
+        "Admission on the secondary-school diploma, without an entrance exam",
+        "Interest in finance, risk and economics recommended"
+      ]
+    },
+    "19:bachelor:accounting-and-audit": {
+      "overview": "Accounting and Audit at VUZF trains accountants and auditors and is internationally accredited by ACCA, giving graduates exemptions towards the ACCA qualification.",
+      "keyFocus": "Financial and management accounting, auditing, tax and corporate reporting",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or distance learning",
+      "partners": [
+        "Department of Accounting and Control, VUZF",
+        "ACCA (Association of Chartered Certified Accountants)",
+        "Audit and accounting firms"
+      ],
+      "highlights": [
+        "ACCA-accredited curriculum with exam exemptions",
+        "Practice-based accounting and audit training",
+        "Strong demand from audit and finance firms"
+      ],
+      "careers": [
+        "Accountant",
+        "Auditor",
+        "Financial controller",
+        "Tax specialist"
+      ],
+      "admissionNotes": [
+        "Admission on the secondary-school diploma, without an entrance exam",
+        "Interest in numbers, finance and analysis recommended"
+      ]
+    },
+    "19:bachelor:business-management-and-marketing": {
+      "overview": "Business Management and Marketing at VUZF is an English-taught bachelor programme combining management, marketing and digital business skills for an international career.",
+      "keyFocus": "Management, marketing, digital business and entrepreneurship",
+      "duration": "Bachelor — 4 years (8 semesters), taught in English",
+      "partners": [
+        "Department of Management and Marketing, VUZF",
+        "International partner universities",
+        "Companies and employers"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Combines management with modern digital marketing",
+        "Open to Bulgarian and international students"
+      ],
+      "careers": [
+        "Business manager",
+        "Marketing specialist",
+        "Digital business manager",
+        "Entrepreneur"
+      ],
+      "admissionNotes": [
+        "Admission on the secondary-school diploma; proof of English required",
+        "Open to international applicants; tuition €1,800 per semester"
+      ]
+    },
+    "19:bachelor:information-technologies-and-business-management": {
+      "overview": "Information Technologies and Business Management at VUZF is a joint programme with the University of Veliko Tarnovo, blending IT skills with business and management.",
+      "keyFocus": "Information technologies, business management, data and digital business",
+      "duration": "Bachelor — 4 years (8 semesters); joint programme with the University of Veliko Tarnovo",
+      "partners": [
+        "Department of Management and Marketing, VUZF",
+        "University of Veliko Tarnovo \"St. Cyril and St. Methodius\"",
+        "IT and business employers"
+      ],
+      "highlights": [
+        "A joint IT-and-business degree",
+        "Combines technology with management",
+        "An in-demand digital-business skill set"
+      ],
+      "careers": [
+        "Business IT specialist",
+        "Digital business manager",
+        "IT project coordinator",
+        "Systems / business analyst"
+      ],
+      "admissionNotes": [
+        "Admission on the secondary-school diploma, without an entrance exam",
+        "Interest in both IT and business recommended"
+      ]
+    },
+    "19:master:finance-fintech-and-digital-innovation": {
+      "overview": "The Finance, Fintech and Digital Innovation master's at VUZF specialises graduates in the technologies transforming finance — from digital payments to blockchain and data-driven finance.",
+      "keyFocus": "Fintech, digital finance, blockchain, data analytics and financial innovation",
+      "duration": "Master's — 2-3 semesters; full-time or distance learning",
+      "partners": [
+        "Department of Finance, VUZF",
+        "Fintech companies and banks",
+        "VUZF Lab research centre"
+      ],
+      "highlights": [
+        "Focus on the fast-growing fintech field",
+        "Applied projects with the VUZF Lab",
+        "Strong demand from banks and fintech firms"
+      ],
+      "careers": [
+        "Fintech specialist",
+        "Digital finance analyst",
+        "Product manager (fintech)",
+        "Financial data analyst"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; a finance or IT background is an advantage",
+        "Open to Bulgarian and international students"
+      ]
+    },
+    "19:master:insurance-business-and-risk-management": {
+      "overview": "The Insurance Business and Risk Management master's at VUZF develops advanced expertise in managing insurance operations and financial and enterprise risk.",
+      "keyFocus": "Insurance management, underwriting, risk analysis and enterprise risk management",
+      "duration": "Master's — 2-3 semesters; full-time or distance learning",
+      "partners": [
+        "Department of Insurance and Social Security, VUZF",
+        "Insurance and reinsurance companies",
+        "Risk-management practitioners"
+      ],
+      "highlights": [
+        "Specialised insurance and risk expertise",
+        "Taught by senior sector professionals",
+        "Careers in insurers and risk departments"
+      ],
+      "careers": [
+        "Insurance manager",
+        "Risk manager",
+        "Underwriting specialist",
+        "Actuarial / analytics specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree",
+        "A finance, economics or insurance background is an advantage"
+      ]
+    },
+    "19:master:international-banking-and-finance": {
+      "overview": "The International Banking and Finance master's at VUZF is an English-taught programme preparing specialists for international banking, finance and investment.",
+      "keyFocus": "International banking, corporate finance, investment and financial markets",
+      "duration": "Master's — taught in English, following a bachelor's degree",
+      "partners": [
+        "Department of Finance, VUZF",
+        "International banks and financial institutions",
+        "International partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "An international banking and finance focus",
+        "Open to Bulgarian and international students"
+      ],
+      "careers": [
+        "International banker",
+        "Finance / investment analyst",
+        "Corporate finance specialist",
+        "Risk / treasury specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; proof of English required",
+        "Tuition €3,410 per semester for this English-taught programme"
+      ]
+    },
+    "19:master:accounting-audit-and-corporate-analysis": {
+      "overview": "The Accounting, Audit and Corporate Analysis master's at VUZF is ACCA-accredited and develops senior expertise in accounting, auditing and corporate financial analysis.",
+      "keyFocus": "Advanced accounting, auditing, corporate analysis and financial reporting",
+      "duration": "Master's — 2-3 semesters; full-time or distance learning",
+      "partners": [
+        "Department of Accounting and Control, VUZF",
+        "ACCA",
+        "Audit and consulting firms"
+      ],
+      "highlights": [
+        "ACCA-accredited, with exam exemptions",
+        "Senior accounting and audit specialisation",
+        "Strong demand from audit and consulting firms"
+      ],
+      "careers": [
+        "Senior accountant",
+        "Auditor",
+        "Financial controller / analyst",
+        "Corporate finance consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree, preferably in economics or accounting",
+        "Relevant professional experience is an advantage"
+      ]
+    },
+    "18:bachelor:telecommunication-technologies": {
+      "overview": "Telecommunication Technologies at UTP is the university's core programme, rooted in its 1881 origins, training engineers to design, build and operate modern wired and wireless communication networks.",
+      "keyFocus": "Communication networks, wireless and mobile systems, signal transmission and network operation",
+      "duration": "Bachelor — 4 years (8 semesters); a 3-year professional bachelor and part-time/distance options are also available",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "A1, Huawei and Siemens",
+        "Cisco Networking Academy"
+      ],
+      "highlights": [
+        "The flagship specialism of Bulgaria's oldest telecom school",
+        "Hands-on training in modern networking laboratories",
+        "Strong demand from telecom operators and integrators"
+      ],
+      "careers": [
+        "Telecommunications engineer",
+        "Network engineer / administrator",
+        "Mobile / wireless systems engineer",
+        "Telecom operations specialist"
+      ],
+      "admissionNotes": [
+        "Admission mainly on secondary-school diploma grades, usually without an entrance exam",
+        "Interest in electronics, networks and mathematics recommended"
+      ]
+    },
+    "18:bachelor:cybersecurity-of-communication-technologies": {
+      "overview": "Cybersecurity of Communication Technologies at UTP trains specialists to secure networks, monitor threats and protect e-commerce and e-government systems.",
+      "keyFocus": "Network and system security, security monitoring, cryptography and secure communications",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, part-time or distance",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "Cisco Networking Academy and AWS Academy",
+        "ICT security employers"
+      ],
+      "highlights": [
+        "A fast-growing, high-demand cybersecurity field",
+        "Industry-certified training (Cisco, AWS)",
+        "Strong graduate employability"
+      ],
+      "careers": [
+        "Cybersecurity specialist",
+        "Network security engineer",
+        "Security operations (SOC) analyst",
+        "IT security consultant"
+      ],
+      "admissionNotes": [
+        "Admission mainly on secondary-school diploma grades",
+        "Interest in networks, systems and security recommended"
+      ]
+    },
+    "18:bachelor:computer-technologies": {
+      "overview": "Computer Technologies at UTP trains engineers in software development, databases and the design and management of computer systems and projects.",
+      "keyFocus": "Programming, databases, software development, computer systems and project management",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, part-time or distance",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "AWS Academy and Cisco Networking Academy",
+        "Software and IT companies"
+      ],
+      "highlights": [
+        "Practical, project-based IT education",
+        "Industry-standard cloud and networking training",
+        "A broad, employable computing skill set"
+      ],
+      "careers": [
+        "Software developer",
+        "Database / systems specialist",
+        "IT project coordinator",
+        "Cloud / DevOps specialist"
+      ],
+      "admissionNotes": [
+        "Admission mainly on secondary-school diploma grades",
+        "Interest in programming and mathematics recommended"
+      ]
+    },
+    "18:bachelor:management-and-artificial-intelligence": {
+      "overview": "Management and Artificial Intelligence at UTP prepares tech-savvy leaders who combine management with Big Data analysis and AI-driven decision-making.",
+      "keyFocus": "Management, data analytics, artificial intelligence and digital decision-making",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, part-time or distance",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "ICT and data-driven companies",
+        "Industry partners such as A1 and Siemens"
+      ],
+      "highlights": [
+        "Combines management with AI and data skills",
+        "Aligned with the digital economy",
+        "A leadership-oriented, in-demand profile"
+      ],
+      "careers": [
+        "ICT / digital manager",
+        "Data-driven decision analyst",
+        "AI project manager",
+        "Digital transformation specialist"
+      ],
+      "admissionNotes": [
+        "Admission mainly on secondary-school diploma grades",
+        "Interest in management, data and technology recommended"
+      ]
+    },
+    "18:bachelor:digital-entrepreneurship-and-high-technologies": {
+      "overview": "Digital Entrepreneurship and High Technologies at UTP trains engineers and founders for the IT sector and digital leadership roles.",
+      "keyFocus": "Digital business, high technologies, innovation and entrepreneurship",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, part-time or distance",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "Technology startups and IT companies",
+        "Industry partners and incubators"
+      ],
+      "highlights": [
+        "Blends technology with entrepreneurship",
+        "Prepares founders and digital leaders",
+        "Strong ties to the ICT industry"
+      ],
+      "careers": [
+        "Digital entrepreneur / founder",
+        "Product manager",
+        "Innovation / business developer",
+        "IT sector specialist"
+      ],
+      "admissionNotes": [
+        "Admission mainly on secondary-school diploma grades",
+        "Interest in technology and business recommended"
+      ]
+    },
+    "18:bachelor:telemedicine": {
+      "overview": "Telemedicine at UTP is a hybrid programme run with the Medical Universities of Pleven and Plovdiv, combining communication technologies with medical applications.",
+      "keyFocus": "Telemedicine systems, medical informatics, communications and e-health",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "Medical University Pleven",
+        "Medical University Plovdiv"
+      ],
+      "highlights": [
+        "An innovative, cross-disciplinary hybrid programme",
+        "Combines ICT with healthcare",
+        "A niche, future-oriented field"
+      ],
+      "careers": [
+        "Telemedicine / e-health specialist",
+        "Medical informatics specialist",
+        "Health IT engineer",
+        "Digital health project specialist"
+      ],
+      "admissionNotes": [
+        "Admission mainly on secondary-school diploma grades",
+        "Interest in both technology and healthcare recommended"
+      ]
+    },
+    "18:master:information-technologies": {
+      "overview": "The Information Technologies master's at UTP develops advanced expertise in server and cloud administration, databases, machine learning and artificial intelligence.",
+      "keyFocus": "Cloud and server administration, databases, machine learning and AI applications",
+      "duration": "Master's — full-time or part-time, following a bachelor's degree",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "AWS Academy",
+        "ICT employers"
+      ],
+      "highlights": [
+        "Advanced cloud, data and AI specialisation",
+        "Industry-standard tools and certification",
+        "High demand across the IT sector"
+      ],
+      "careers": [
+        "IT / cloud architect",
+        "Machine-learning engineer",
+        "Database / systems administrator",
+        "AI solutions specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; a computing background is recommended",
+        "Open to Bulgarian and international students"
+      ]
+    },
+    "18:master:communication-networks-and-cybercrime-investigation": {
+      "overview": "The Communication Networks and Cybercrime Investigation master's at UTP specialises graduates in secure network design and the detection and investigation of cyberattacks.",
+      "keyFocus": "Secure network design, security monitoring, cyberattack detection and digital investigation",
+      "duration": "Master's — full-time or part-time, following a bachelor's degree",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "Cisco Networking Academy",
+        "Cybersecurity and law-enforcement partners"
+      ],
+      "highlights": [
+        "Combines networking with cybercrime investigation",
+        "Hands-on labs in a high-demand field",
+        "Relevant to industry and public security"
+      ],
+      "careers": [
+        "Network security engineer",
+        "Cybercrime investigator",
+        "Incident-response (SOC) analyst",
+        "Security consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; an ICT or security background is recommended",
+        "Strong analytical skills are an advantage"
+      ]
+    },
+    "18:master:smart-leadership": {
+      "overview": "The Smart Leadership master's at UTP develops leaders for the digital economy, focused on managing knowledge-based and intangible production.",
+      "keyFocus": "Digital leadership, knowledge management, innovation and the digital economy",
+      "duration": "Master's — full-time or part-time, following a bachelor's degree",
+      "partners": [
+        "Faculty of Telecommunications and Management, UTP",
+        "ICT and service companies",
+        "Industry partners"
+      ],
+      "highlights": [
+        "Leadership for the digital and knowledge economy",
+        "Aligned with European directives",
+        "A management-oriented, forward-looking profile"
+      ],
+      "careers": [
+        "Digital business leader",
+        "Innovation manager",
+        "Knowledge / change manager",
+        "ICT service director"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree",
+        "Management or ICT experience is an advantage"
+      ]
+    },
+    "17:bachelor:railway-engineering": {
+      "overview": "Railway Engineering at VTU is the university's signature programme, rooted in its 1922 origins as the State Railway School, training engineers to design, build, maintain and operate railway systems and rolling stock.",
+      "keyFocus": "Railway track and infrastructure, rolling stock, traction, signalling and railway operations",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Machinery and Construction Technologies in Transport, VTU",
+        "BDZ and national railway operators",
+        "Railway infrastructure companies"
+      ],
+      "highlights": [
+        "The flagship specialism of Bulgaria's transport university",
+        "Practical training with real rolling stock and rail laboratories",
+        "Strong demand from railways and rail-infrastructure projects"
+      ],
+      "careers": [
+        "Railway engineer",
+        "Rolling-stock engineer",
+        "Rail infrastructure specialist",
+        "Railway operations engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a VTU mathematics entrance test and/or state matriculation results",
+        "Interest in mechanics, electrical systems and transport recommended"
+      ]
+    },
+    "17:bachelor:automotive-engineering": {
+      "overview": "Automotive Engineering at VTU trains engineers to design, build, diagnose and maintain motor vehicles and their systems.",
+      "keyFocus": "Vehicle design, engines and powertrains, diagnostics, maintenance and automotive electronics",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Machinery and Construction Technologies in Transport, VTU",
+        "Automotive service and manufacturing companies",
+        "Vehicle inspection and expertise centres"
+      ],
+      "highlights": [
+        "Hands-on training in automotive laboratories and workshops",
+        "Pathways into automotive technology and technical-expertise master's tracks",
+        "Strong employability across the automotive sector"
+      ],
+      "careers": [
+        "Automotive engineer",
+        "Service / diagnostics engineer",
+        "Vehicle testing specialist",
+        "Fleet / maintenance engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a VTU mathematics entrance test and/or state matriculation results",
+        "Interest in mechanics and vehicles recommended"
+      ]
+    },
+    "17:bachelor:logistics": {
+      "overview": "Logistics at VTU's Faculty of Transport Management trains specialists to plan, organise and optimise the movement of goods and the supply chains behind modern transport.",
+      "keyFocus": "Supply-chain management, freight transport, warehousing and transport logistics",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Transport Management, VTU",
+        "Logistics and freight-forwarding companies",
+        "Transport operators and warehouses"
+      ],
+      "highlights": [
+        "Combines transport, IT and management",
+        "A fast-growing, in-demand field",
+        "Internships with logistics operators"
+      ],
+      "careers": [
+        "Logistics specialist",
+        "Supply-chain coordinator",
+        "Freight-forwarding specialist",
+        "Transport operations manager"
+      ],
+      "admissionNotes": [
+        "Admission by a VTU mathematics entrance test and/or state matriculation results",
+        "Interest in organisation, transport and economics recommended"
+      ]
+    },
+    "17:bachelor:transportation-engineering": {
+      "overview": "Transportation Engineering at VTU trains engineers in the technology, organisation and safety of transport and its infrastructure.",
+      "keyFocus": "Transport technology, traffic organisation, transport infrastructure and safety",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Machinery and Construction Technologies in Transport, VTU",
+        "Transport operators and infrastructure agencies",
+        "Road and rail authorities"
+      ],
+      "highlights": [
+        "Broad transport-engineering foundation",
+        "Links to logistics, railways and road transport",
+        "Applied projects on real transport systems"
+      ],
+      "careers": [
+        "Transport engineer",
+        "Traffic / operations engineer",
+        "Transport infrastructure specialist",
+        "Transport safety specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a VTU mathematics entrance test and/or state matriculation results",
+        "Interest in transport systems and engineering recommended"
+      ]
+    },
+    "17:bachelor:telecommunications-and-signalling": {
+      "overview": "Telecommunications and Signalling at VTU trains engineers in communication systems and the signalling and safety technology that keeps transport running.",
+      "keyFocus": "Telecommunications, railway signalling, control systems and transport safety technology",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Telecommunications and Electrical Equipment in Transport, VTU",
+        "Railway signalling and telecom companies",
+        "Transport infrastructure operators"
+      ],
+      "highlights": [
+        "A niche, high-demand transport-technology specialism",
+        "Practical labs in signalling and communications",
+        "Careers with railways and telecom operators"
+      ],
+      "careers": [
+        "Signalling engineer",
+        "Telecommunications engineer",
+        "Control-systems specialist",
+        "Transport safety-systems engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a VTU mathematics entrance test and/or state matriculation results",
+        "Interest in electronics and communications recommended"
+      ]
+    },
+    "17:bachelor:economics-of-transport": {
+      "overview": "Economics of Transport at VTU's Faculty of Transport Management trains specialists in the economics, finance and organisation of transport companies and services.",
+      "keyFocus": "Transport economics, finance, management and transport-market analysis",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Transport Management, VTU",
+        "Transport companies and operators",
+        "Public transport administration"
+      ],
+      "highlights": [
+        "Combines economics with the transport sector",
+        "Management and analytical skills",
+        "Careers across transport firms and administration"
+      ],
+      "careers": [
+        "Transport economist",
+        "Transport company manager",
+        "Financial / commercial analyst",
+        "Transport administration specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a VTU mathematics entrance test and/or state matriculation results",
+        "Interest in economics and transport recommended"
+      ]
+    },
+    "17:master:transport-construction": {
+      "overview": "The Transport Construction master's at VTU specialises graduates in the design and building of transport infrastructure — railways, roads, bridges and tunnels.",
+      "keyFocus": "Transport infrastructure design, railway and road construction, bridges and tunnels",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Machinery and Construction Technologies in Transport, VTU",
+        "Infrastructure construction companies",
+        "Road and rail agencies"
+      ],
+      "highlights": [
+        "Focus on transport-infrastructure engineering",
+        "Relevant to major national transport projects",
+        "Careers in construction and infrastructure"
+      ],
+      "careers": [
+        "Transport construction engineer",
+        "Infrastructure project engineer",
+        "Railway / road construction specialist",
+        "Bridges and tunnels engineer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in engineering or a related field",
+        "A relevant construction or transport background is an advantage"
+      ]
+    },
+    "17:master:automotive-technical-expertise": {
+      "overview": "The Automotive Technical Expertise master's at VTU trains specialists to assess, diagnose and provide expert evaluation of motor vehicles, including for accidents and insurance.",
+      "keyFocus": "Automotive diagnostics, technical expertise, accident analysis and vehicle assessment",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Machinery and Construction Technologies in Transport, VTU",
+        "Vehicle inspection and expertise centres",
+        "Insurance and forensic bodies"
+      ],
+      "highlights": [
+        "Specialised, in-demand automotive expertise",
+        "Links diagnostics with legal and insurance work",
+        "Opens forensic and expert-witness careers"
+      ],
+      "careers": [
+        "Automotive expert / assessor",
+        "Vehicle diagnostics specialist",
+        "Accident analysis expert",
+        "Insurance / claims technical specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree, preferably in automotive or mechanical engineering",
+        "Relevant automotive experience is an advantage"
+      ]
+    },
+    "17:master:electric-vehicles": {
+      "overview": "The Electric Vehicles master's at VTU develops advanced expertise in the design, drives and infrastructure of electric and electrified transport.",
+      "keyFocus": "Electric drives and batteries, power electronics, charging infrastructure and e-mobility",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Telecommunications and Electrical Equipment in Transport, VTU",
+        "E-mobility and electrical-equipment companies",
+        "Electric transport operators"
+      ],
+      "highlights": [
+        "Focus on a fast-growing e-mobility field",
+        "Combines electrical engineering with transport",
+        "Strong future demand across the sector"
+      ],
+      "careers": [
+        "Electric vehicle engineer",
+        "E-mobility / charging specialist",
+        "Electric drives engineer",
+        "Electric transport engineer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in an electrical or transport field",
+        "An electrical-engineering background is an advantage"
+      ]
+    },
+    "16:bachelor:information-technology": {
+      "overview": "Information Technology at UniBIT's Faculty of Information Sciences trains specialists to design, build and manage modern information systems, networks and web and mobile applications.",
+      "keyFocus": "Programming, databases, networks, web and mobile development, and information systems",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "IT companies and software firms",
+        "The \"John Atanasoff\" computer laboratory"
+      ],
+      "highlights": [
+        "Hands-on training in UniBIT's computer laboratories",
+        "A broad, employable IT skill set",
+        "Pathways into master's programmes in software and data"
+      ],
+      "careers": [
+        "Software developer",
+        "Systems / network administrator",
+        "Web or mobile developer",
+        "IT support and infrastructure specialist"
+      ],
+      "admissionNotes": [
+        "Admission by state matriculation results and/or a UniBIT ranking test",
+        "Interest in mathematics and computing recommended"
+      ]
+    },
+    "16:bachelor:computer-science": {
+      "overview": "Computer Science at UniBIT combines the theoretical foundations of computing with practical software development, algorithms and data processing.",
+      "keyFocus": "Algorithms and data structures, programming, software engineering and computer systems",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "Software and technology companies",
+        "Research institutes in informatics"
+      ],
+      "highlights": [
+        "Strong computing fundamentals",
+        "Project-based programming coursework",
+        "A foundation for AI, data and cybersecurity master's tracks"
+      ],
+      "careers": [
+        "Software engineer",
+        "Backend / systems developer",
+        "Data or algorithms specialist",
+        "Computer science researcher"
+      ],
+      "admissionNotes": [
+        "Admission by state matriculation results and/or a UniBIT ranking test",
+        "A strong mathematics background is an advantage"
+      ]
+    },
+    "16:bachelor:information-security": {
+      "overview": "Information Security at UniBIT trains specialists to protect information systems, data and digital infrastructure against modern threats.",
+      "keyFocus": "Network and system security, cryptography, risk management and secure information systems",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "Security and IT companies",
+        "Public-sector information-security bodies"
+      ],
+      "highlights": [
+        "Practical security and networking labs",
+        "A fast-growing, in-demand field",
+        "Links to national-security and defence topics"
+      ],
+      "careers": [
+        "Information security specialist",
+        "Security analyst / SOC analyst",
+        "Network security administrator",
+        "IT risk and compliance officer"
+      ],
+      "admissionNotes": [
+        "Admission by state matriculation results and/or a UniBIT ranking test",
+        "Interest in networks, systems and problem-solving recommended"
+      ]
+    },
+    "16:bachelor:library-and-information-sciences-and-knowledge-management": {
+      "overview": "Library and Information Sciences and Knowledge Management is UniBIT's founding, flagship programme, preparing information professionals to organise, preserve and provide access to knowledge in modern libraries and information centres.",
+      "keyFocus": "Library and information science, cataloguing and metadata, digital libraries and knowledge management",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Library Studies and Cultural Heritage, UniBIT",
+        "National, academic and public libraries",
+        "Information and documentation centres"
+      ],
+      "highlights": [
+        "The university's founding specialism, taught since 1950",
+        "Digital-library and information-management skills",
+        "Placements in leading libraries and archives"
+      ],
+      "careers": [
+        "Librarian / Information specialist",
+        "Digital-library curator",
+        "Knowledge manager",
+        "Information and documentation officer"
+      ],
+      "admissionNotes": [
+        "Open to secondary-school graduates by matriculation results and/or a ranking test",
+        "An interest in information, culture and technology is an advantage"
+      ]
+    },
+    "16:bachelor:cultural-and-historical-heritage": {
+      "overview": "Cultural and Historical Heritage at UniBIT trains specialists to document, preserve, digitise and promote Bulgaria's cultural and historical heritage.",
+      "keyFocus": "Cultural heritage, museums and archives, digitisation, and heritage tourism",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Library Studies and Cultural Heritage, UniBIT",
+        "Museums, galleries and heritage institutions",
+        "Cultural-tourism organisations"
+      ],
+      "highlights": [
+        "Combines heritage studies with digital technology",
+        "Work with museum and archive collections",
+        "Links to tourism and the creative sector"
+      ],
+      "careers": [
+        "Cultural heritage specialist",
+        "Museum / gallery curator",
+        "Archivist",
+        "Heritage tourism specialist"
+      ],
+      "admissionNotes": [
+        "Open to secondary-school graduates by matriculation results and/or a ranking test",
+        "An interest in history, culture and the arts is an advantage"
+      ]
+    },
+    "16:bachelor:national-security": {
+      "overview": "National Security at UniBIT prepares specialists in the protection of information, institutions and society, spanning security policy, information security and crisis management.",
+      "keyFocus": "Security studies, information and cyber security, crisis management and law",
+      "duration": "Bachelor — 4 years (8 semesters), full-time or part-time",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "Security and defence institutions",
+        "Public administration bodies"
+      ],
+      "highlights": [
+        "Blends security studies with information technology",
+        "Strong ties to state institutions",
+        "Pathways into security and defence master's programmes"
+      ],
+      "careers": [
+        "National security analyst",
+        "Information / cyber security officer",
+        "Crisis management specialist",
+        "Public administration and defence roles"
+      ],
+      "admissionNotes": [
+        "Admission by state matriculation results and/or a UniBIT ranking test",
+        "A competitive field with strong interest from applicants"
+      ]
+    },
+    "16:master:software-engineering": {
+      "overview": "The Software Engineering master's at UniBIT is an English-taught programme that develops advanced skills in designing, building and managing large-scale software systems.",
+      "keyFocus": "Software architecture and design, development methodologies, quality and project management",
+      "duration": "Master's — 1 year (2 semesters), full-time or part-time, taught in English",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "Software companies and IT employers",
+        "International partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Industry-oriented software engineering curriculum",
+        "Open to Bulgarian and international students"
+      ],
+      "careers": [
+        "Software engineer",
+        "Software architect",
+        "Technical / team lead",
+        "Quality assurance engineer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; a computing background is recommended",
+        "Proof of English is required for international applicants"
+      ]
+    },
+    "16:master:artificial-intelligence-and-data-processing": {
+      "overview": "The Artificial Intelligence and Data Processing master's at UniBIT specialises graduates in machine learning, data analysis and intelligent information systems.",
+      "keyFocus": "Machine learning, data processing and analytics, and intelligent systems",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "Technology and data-driven companies",
+        "Research institutes in informatics"
+      ],
+      "highlights": [
+        "Focus on AI and applied data science",
+        "Project work on real data sets",
+        "A high-demand, fast-growing specialisation"
+      ],
+      "careers": [
+        "AI / machine-learning engineer",
+        "Data scientist",
+        "Data analyst",
+        "Intelligent-systems developer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree, preferably in computing or a quantitative field",
+        "Programming and mathematics skills are an advantage"
+      ]
+    },
+    "16:master:cybersecurity-and-digital-forensics": {
+      "overview": "The Cybersecurity and Digital Forensics master's at UniBIT trains specialists to defend digital systems and to investigate cyber incidents and digital evidence.",
+      "keyFocus": "Cybersecurity, digital forensics, incident response and secure systems",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Information Sciences, UniBIT",
+        "Cybersecurity firms and IT-security teams",
+        "Law-enforcement and public-sector bodies"
+      ],
+      "highlights": [
+        "Combines defensive security with forensic investigation",
+        "Hands-on labs in a high-demand field",
+        "Relevant to both business and national security"
+      ],
+      "careers": [
+        "Cybersecurity specialist",
+        "Digital forensics analyst",
+        "Incident-response / SOC analyst",
+        "Security consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; an IT or security background is recommended",
+        "Strong analytical and problem-solving skills are an advantage"
+      ]
+    },
+    "15:bachelor:forestry": {
+      "overview": "Forestry at LTU's Faculty of Forestry is the university's flagship programme, training engineers to manage forests sustainably for timber, biodiversity, water and recreation.",
+      "keyFocus": "Silviculture, forest ecology, forest management, protection and inventory",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Forestry, LTU",
+        "Forestry agencies and state forest enterprises",
+        "University research forests near Yundola and Barzia"
+      ],
+      "highlights": [
+        "Field practice in the university's own research forests",
+        "The oldest and only forestry programme in Bulgaria",
+        "Careers across forest management and conservation"
+      ],
+      "careers": [
+        "Forester / Forest engineer",
+        "Forest management specialist",
+        "Conservation / protected-areas specialist",
+        "Forest inventory and planning expert"
+      ],
+      "admissionNotes": [
+        "Admission by a University of Forestry entrance exam and/or state matriculation exam results",
+        "Interest in biology, ecology and the outdoors recommended"
+      ]
+    },
+    "15:bachelor:landscape-architecture": {
+      "overview": "Landscape Architecture at LTU's Faculty of Ecology and Landscape Architecture is one of Bulgaria's leading programmes, blending design, ecology, horticulture and engineering to shape parks, gardens and urban green space.",
+      "keyFocus": "Landscape design, planting design, urban green systems, ecology and horticulture",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Ecology and Landscape Architecture, LTU",
+        "Landscape and design practices",
+        "Municipal parks and green-space authorities"
+      ],
+      "highlights": [
+        "Studio-based, portfolio-driven design education",
+        "Access to an arboretum and botanical collections",
+        "Strong demand for green-space and sustainability specialists"
+      ],
+      "careers": [
+        "Landscape architect",
+        "Landscape / urban designer",
+        "Green-space planner",
+        "Horticulture and parks specialist"
+      ],
+      "admissionNotes": [
+        "Admission includes a drawing entrance examination alongside secondary-school results",
+        "A design portfolio and visual skills are an advantage"
+      ]
+    },
+    "15:bachelor:veterinary-medicine": {
+      "overview": "Veterinary Medicine at LTU's Faculty of Veterinary Medicine is a competitive integrated Master's programme training veterinarians in animal health, welfare and public health.",
+      "keyFocus": "Animal anatomy and physiology, pathology, clinical medicine, surgery and public health",
+      "duration": "Integrated Master's — 5.5 years (11 semesters), full-time",
+      "partners": [
+        "Faculty of Veterinary Medicine, LTU",
+        "University veterinary clinic",
+        "Farms, clinics and veterinary services"
+      ],
+      "highlights": [
+        "Clinical training in the university veterinary clinic",
+        "Also offered entirely in English for international students",
+        "Awards the qualification of Doctor of Veterinary Medicine"
+      ],
+      "careers": [
+        "Veterinarian (clinical practice)",
+        "Veterinary public-health specialist",
+        "Farm / livestock veterinarian",
+        "Veterinary researcher"
+      ],
+      "admissionNotes": [
+        "Competitive admission by entrance examination in Biology (or matriculation results)",
+        "The English-taught track has a separate procedure for international students"
+      ]
+    },
+    "15:bachelor:veterinary-medicine-in-english": {
+      "overview": "Veterinary Medicine (in English) at LTU is the international, English-taught version of the veterinary programme — LTU is the only university in Sofia offering it — for foreign students.",
+      "keyFocus": "Animal anatomy and physiology, pathology, clinical medicine, surgery and public health",
+      "duration": "Integrated Master's — 5.5 years (11 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Veterinary Medicine, LTU",
+        "University veterinary clinic",
+        "International partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English for international students",
+        "The only English-taught veterinary programme in Sofia",
+        "Awards an internationally recognised Doctor of Veterinary Medicine"
+      ],
+      "careers": [
+        "Veterinarian (clinical practice)",
+        "Veterinary public-health specialist",
+        "Farm / livestock veterinarian",
+        "Veterinary researcher"
+      ],
+      "admissionNotes": [
+        "Separate admission procedure with proof of English and a biology background",
+        "Tuition about €4,500 per year for international students"
+      ]
+    },
+    "15:bachelor:wood-technology": {
+      "overview": "Wood Technology at LTU's Faculty of Forest Industry trains engineers in the processing of wood and the manufacture of timber, board and furniture products.",
+      "keyFocus": "Wood science, timber processing, board and furniture technology, and production",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Forest Industry, LTU",
+        "Wood, furniture and board industry",
+        "Manufacturing partners"
+      ],
+      "highlights": [
+        "Laboratory and workshop training in wood processing",
+        "Careers across the wood and furniture industry",
+        "Pathways into wood-engineering and furniture-design master's tracks"
+      ],
+      "careers": [
+        "Wood technologist",
+        "Production / process engineer",
+        "Furniture / product engineer",
+        "Quality and R&D specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a University of Forestry entrance exam and/or matriculation results",
+        "Interest in materials, design and technology recommended"
+      ]
+    },
+    "15:bachelor:ecology-and-environmental-protection": {
+      "overview": "Ecology and Environmental Protection at LTU trains specialists to study ecosystems and to protect and restore the natural environment.",
+      "keyFocus": "Ecology, environmental monitoring, conservation and sustainable resource management",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Ecology and Landscape Architecture, LTU",
+        "Environmental agencies and NGOs",
+        "Protected areas and research institutes"
+      ],
+      "highlights": [
+        "Field and laboratory training in ecology",
+        "Strong links to forestry and conservation",
+        "Careers in environmental protection and the green economy"
+      ],
+      "careers": [
+        "Ecologist",
+        "Environmental protection specialist",
+        "Conservation officer",
+        "Environmental consultant"
+      ],
+      "admissionNotes": [
+        "Admission by a University of Forestry entrance exam and/or matriculation results",
+        "Interest in biology and the environment recommended"
+      ]
+    },
+    "15:master:forest-management": {
+      "overview": "The Forest Management master's at LTU specialises graduates in the sustainable planning, management and conservation of forest resources.",
+      "keyFocus": "Sustainable forest management, planning, inventory, economics and conservation",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Forestry, LTU",
+        "State forest enterprises and agencies",
+        "Research forests and institutes"
+      ],
+      "highlights": [
+        "Advanced forest-management specialisation",
+        "Field work in the university research forests",
+        "Careers in forestry administration and consulting"
+      ],
+      "careers": [
+        "Forest management specialist",
+        "Forestry planner",
+        "Conservation manager",
+        "Forestry consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in forestry or a related field",
+        "Relevant field experience is an advantage"
+      ]
+    },
+    "15:master:landscape-planning": {
+      "overview": "The Landscape Planning master's at LTU trains specialists to plan and design sustainable landscapes, green infrastructure and protected areas.",
+      "keyFocus": "Landscape and spatial planning, green infrastructure, ecology and design",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Ecology and Landscape Architecture, LTU",
+        "Planning and design practices",
+        "Municipal and regional authorities"
+      ],
+      "highlights": [
+        "Integrates design, ecology and planning",
+        "Project-based work on real landscapes",
+        "Careers in landscape planning and green-space management"
+      ],
+      "careers": [
+        "Landscape planner",
+        "Green-infrastructure specialist",
+        "Spatial / environmental planner",
+        "Landscape design consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in landscape architecture, ecology or a related field",
+        "A design or planning background is an advantage"
+      ]
+    },
+    "14:bachelor:mining-engineering": {
+      "overview": "Mining Engineering at MGU's Faculty of Mining Technology is the university's flagship programme, training engineers to plan and run surface and underground mines safely and efficiently.",
+      "keyFocus": "Mine planning, rock mechanics, surface and underground mining, mine safety and economics",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Mining Technology, MGU",
+        "Mining and quarrying companies",
+        "Industry internships and site practice"
+      ],
+      "highlights": [
+        "Laboratory and field practice with real mine visits",
+        "Industry-sponsored scholarships and internships",
+        "Strong demand in Bulgaria's mining and resources sector"
+      ],
+      "careers": [
+        "Mining engineer",
+        "Mine planning / production engineer",
+        "Health, safety and environment specialist",
+        "Operations manager"
+      ],
+      "admissionNotes": [
+        "Admission by an MGU entrance exam in Mathematics and/or matriculation results",
+        "Interest in mathematics, physics and earth sciences recommended"
+      ]
+    },
+    "14:bachelor:geology": {
+      "overview": "Geology at MGU's Faculty of Geology and Exploration trains geologists to study the Earth and to find and evaluate mineral, energy and water resources.",
+      "keyFocus": "Mineralogy, petrology, structural geology, prospecting and exploration of deposits",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Geology and Exploration, MGU",
+        "Geology and exploration companies",
+        "Geological surveys and research institutes"
+      ],
+      "highlights": [
+        "Field expeditions and a rich mineralogical museum",
+        "Foundations for geophysics, hydrogeology and geoinformatics",
+        "Careers in resources, energy and environmental sectors"
+      ],
+      "careers": [
+        "Geologist",
+        "Exploration / prospecting geologist",
+        "Mineralogist",
+        "Resource evaluation specialist"
+      ],
+      "admissionNotes": [
+        "Admission by an MGU entrance exam (Mathematics or Geography) and/or matriculation results",
+        "Interest in earth sciences and fieldwork recommended"
+      ]
+    },
+    "14:bachelor:applied-geophysics": {
+      "overview": "Applied Geophysics at MGU trains specialists to investigate the subsurface using seismic, gravity, magnetic, electrical and geophysical methods.",
+      "keyFocus": "Seismic, gravity, magnetic and electrical methods, geophysical data processing",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Geology and Exploration, MGU",
+        "Geophysical and exploration companies",
+        "Research institutes"
+      ],
+      "highlights": [
+        "Hands-on geophysical field and laboratory training",
+        "Applications in mining, oil & gas, water and engineering",
+        "Strong physics and mathematics foundation"
+      ],
+      "careers": [
+        "Geophysicist",
+        "Exploration geophysicist",
+        "Seismic data analyst",
+        "Engineering-geophysics specialist"
+      ],
+      "admissionNotes": [
+        "Admission by an MGU entrance exam in Mathematics and/or matriculation results",
+        "Strong mathematics and physics background recommended"
+      ]
+    },
+    "14:bachelor:oil-and-gas-production": {
+      "overview": "Oil and Gas Production at MGU trains engineers in drilling, extraction and the technology of oil and gas from exploration to production.",
+      "keyFocus": "Drilling technology, reservoir engineering, oil and gas production and processing",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Geology and Exploration, MGU",
+        "Oil, gas and energy companies",
+        "Drilling and service contractors"
+      ],
+      "highlights": [
+        "Specialised drilling and reservoir-engineering training",
+        "Careers in the energy and resources industry",
+        "Industry internships and site practice"
+      ],
+      "careers": [
+        "Oil and gas engineer",
+        "Drilling engineer",
+        "Reservoir / production engineer",
+        "Energy-sector specialist"
+      ],
+      "admissionNotes": [
+        "Admission by an MGU entrance exam in Mathematics and/or matriculation results",
+        "Interest in geology, physics and engineering recommended"
+      ]
+    },
+    "14:bachelor:underground-construction": {
+      "overview": "Underground Construction at MGU's Faculty of Mining Technology trains engineers to design and build tunnels, metro lines and other underground structures.",
+      "keyFocus": "Tunnelling, rock mechanics, geotechnics and underground structural design",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Mining Technology, MGU",
+        "Construction and tunnelling companies",
+        "Infrastructure projects"
+      ],
+      "highlights": [
+        "Specialised tunnelling and geotechnics training",
+        "Careers in metro, road, rail and utility tunnels",
+        "Hands-on laboratory and site practice"
+      ],
+      "careers": [
+        "Underground / tunnelling engineer",
+        "Geotechnical engineer",
+        "Construction project engineer",
+        "Site / supervision engineer"
+      ],
+      "admissionNotes": [
+        "Admission by an MGU entrance exam in Mathematics and/or matriculation results",
+        "Strong mathematics and physics background recommended"
+      ]
+    },
+    "14:bachelor:mineral-processing": {
+      "overview": "Mineral Processing at MGU trains engineers to extract and upgrade valuable minerals from ores and to recycle mineral raw materials.",
+      "keyFocus": "Comminution, separation, flotation, mineral technology and recycling",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Mining Technology, MGU",
+        "Mineral-processing and metallurgical industry",
+        "Recycling companies"
+      ],
+      "highlights": [
+        "Laboratory and pilot training in mineral technologies",
+        "Growing focus on recycling and the circular economy",
+        "Strong industry demand"
+      ],
+      "careers": [
+        "Mineral-processing engineer",
+        "Process / plant engineer",
+        "Quality and recycling specialist",
+        "R&D engineer"
+      ],
+      "admissionNotes": [
+        "Admission by an MGU entrance exam in Mathematics and/or matriculation results",
+        "Interest in chemistry, physics and materials recommended"
+      ]
+    },
+    "14:master:oil-and-gas-engineering": {
+      "overview": "The Oil and Gas Engineering master's at MGU specialises graduates in advanced drilling, reservoir engineering and the technology of hydrocarbon production.",
+      "keyFocus": "Reservoir engineering, advanced drilling, production technology and energy resources",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Geology and Exploration, MGU",
+        "Oil, gas and energy companies",
+        "Research institutes"
+      ],
+      "highlights": [
+        "Advanced specialisation in hydrocarbon engineering",
+        "Strong industry and research links",
+        "Careers across the energy sector"
+      ],
+      "careers": [
+        "Oil and gas engineer",
+        "Reservoir / drilling engineer",
+        "Energy consultant",
+        "Research engineer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in oil and gas, geology or a related engineering field",
+        "Relevant background in geosciences expected"
+      ]
+    },
+    "14:master:geophysics": {
+      "overview": "The Geophysics master's at MGU trains specialists in advanced geophysical methods for exploration, engineering and environmental applications.",
+      "keyFocus": "Advanced seismics, potential-field methods, geophysical modelling and interpretation",
+      "duration": "Master's — 2–3 semesters, full-time",
+      "partners": [
+        "Faculty of Geology and Exploration, MGU",
+        "Geophysical and exploration companies",
+        "Research institutes"
+      ],
+      "highlights": [
+        "Advanced geophysical modelling and data interpretation",
+        "Applications in resources, energy and engineering",
+        "Strong research and PhD pathways"
+      ],
+      "careers": [
+        "Geophysicist",
+        "Exploration / engineering geophysicist",
+        "Data analyst",
+        "Research scientist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in geophysics, geology, physics or a related field",
+        "Strong mathematics and physics background expected"
+      ]
+    },
+    "13:bachelor:chemical-engineering": {
+      "overview": "Chemical Engineering at UCTM's Faculty of Chemical and Systems Engineering is the university's flagship programme, training engineers to design and run chemical, biochemical and process installations.",
+      "keyFocus": "Process engineering, unit operations, reaction engineering, control and plant design",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Chemical and Systems Engineering, UCTM",
+        "Chemical, pharmaceutical and process industry",
+        "European partner universities (double diploma)"
+      ],
+      "highlights": [
+        "Laboratory- and pilot-plant-based training",
+        "European double-diploma options with Hamburg and Magdeburg",
+        "FEANI-recognised engineering qualification"
+      ],
+      "careers": [
+        "Chemical / process engineer",
+        "Production / plant engineer",
+        "R&D engineer",
+        "Quality and safety specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a UCTM entrance exam (Chemistry or Mathematics) and/or matriculation results",
+        "Also offered in English and French for international students"
+      ]
+    },
+    "13:bachelor:chemical-engineering-in-english": {
+      "overview": "Chemical Engineering (in English) at UCTM is the international, English-taught version of the flagship programme, preparing process engineers for a global career.",
+      "keyFocus": "Process engineering, unit operations, reaction engineering, control and plant design",
+      "duration": "Bachelor — 4 years (8 semesters), full-time, taught in English",
+      "partners": [
+        "Faculty of Chemical and Systems Engineering, UCTM",
+        "International partner universities",
+        "Chemical and process industry"
+      ],
+      "highlights": [
+        "Taught entirely in English for international students",
+        "European double-diploma opportunities",
+        "FEANI-recognised engineering qualification"
+      ],
+      "careers": [
+        "Chemical / process engineer",
+        "Production / plant engineer",
+        "R&D engineer",
+        "Quality and safety specialist"
+      ],
+      "admissionNotes": [
+        "Separate admission procedure with proof of English",
+        "Tuition from about €4,600 per year for foreign students"
+      ]
+    },
+    "13:bachelor:biotechnology": {
+      "overview": "Biotechnology at UCTM's Faculty of Chemical Technologies combines biology, chemistry and engineering to develop biotechnological products and processes.",
+      "keyFocus": "Industrial microbiology, biochemistry, fermentation, bioprocess and enzyme technology",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Chemical Technologies, UCTM",
+        "Pharmaceutical, food and biotech industry",
+        "Research laboratories"
+      ],
+      "highlights": [
+        "Laboratory-intensive training in bioprocesses",
+        "Applications in pharma, food and environmental biotech",
+        "Pathways into industrial-biotechnology master's tracks"
+      ],
+      "careers": [
+        "Biotechnologist",
+        "Bioprocess engineer",
+        "Quality control specialist",
+        "R&D scientist"
+      ],
+      "admissionNotes": [
+        "Admission by a UCTM entrance exam (Chemistry or Biology) and/or matriculation results",
+        "Strong chemistry and biology background recommended"
+      ]
+    },
+    "13:bachelor:metallurgy": {
+      "overview": "Metallurgy at UCTM's Faculty of Metallurgy and Materials Science trains engineers in the production, processing and recycling of metals and alloys.",
+      "keyFocus": "Ferrous and non-ferrous metallurgy, casting, metal forming and recycling",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Metallurgy and Materials Science, UCTM",
+        "Metallurgical and materials industry",
+        "Research and testing laboratories"
+      ],
+      "highlights": [
+        "Hands-on training in metallurgical processes and materials testing",
+        "Strong ties to the metals and materials industry",
+        "FEANI-recognised engineering qualification"
+      ],
+      "careers": [
+        "Metallurgical engineer",
+        "Materials / process engineer",
+        "Quality and testing specialist",
+        "Production engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a UCTM entrance exam (Chemistry or Mathematics) and/or matriculation results",
+        "Interest in chemistry, physics and materials recommended"
+      ]
+    },
+    "13:bachelor:pharmaceutical-and-fine-chemistry": {
+      "overview": "Pharmaceutical and Fine Chemistry at UCTM prepares specialists to develop and produce pharmaceuticals, cosmetics and fine-chemical products.",
+      "keyFocus": "Organic and medicinal chemistry, pharmaceutical technology, quality control and analysis",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Chemical Technologies, UCTM",
+        "Pharmaceutical and cosmetics industry",
+        "Analytical and quality-control laboratories"
+      ],
+      "highlights": [
+        "Laboratory-intensive training in synthesis and analysis",
+        "Careers in the pharmaceutical and cosmetics industry",
+        "Pathways into pharmaceutical-engineering master's tracks"
+      ],
+      "careers": [
+        "Pharmaceutical / fine-chemistry specialist",
+        "Quality control analyst",
+        "Formulation / process engineer",
+        "R&D chemist"
+      ],
+      "admissionNotes": [
+        "Admission by a UCTM entrance exam (Chemistry) and/or matriculation results",
+        "Strong chemistry background recommended"
+      ]
+    },
+    "13:bachelor:materials-science-and-engineering": {
+      "overview": "Materials Science and Engineering at UCTM studies the structure, properties and processing of metals, ceramics, polymers and composites, including nanomaterials.",
+      "keyFocus": "Structure–property relationships, materials processing, testing and nanomaterials",
+      "duration": "Bachelor — 4 years (8 semesters), full-time",
+      "partners": [
+        "Faculty of Metallurgy and Materials Science, UCTM",
+        "Materials and manufacturing industry",
+        "Research and testing laboratories"
+      ],
+      "highlights": [
+        "Broad training across metals, ceramics, polymers and composites",
+        "Access to materials-characterisation and testing laboratories",
+        "Pathways into advanced-materials and nanotechnology master's tracks"
+      ],
+      "careers": [
+        "Materials engineer",
+        "Process / quality engineer",
+        "R&D specialist",
+        "Failure-analysis / testing engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a UCTM entrance exam (Chemistry or Mathematics) and/or matriculation results",
+        "Interest in chemistry, physics and materials recommended"
+      ]
+    },
+    "13:master:industrial-biotechnology": {
+      "overview": "The Industrial Biotechnology master's at UCTM specialises graduates in large-scale bioprocesses for pharmaceutical, food and environmental applications.",
+      "keyFocus": "Bioprocess engineering, fermentation technology, downstream processing and bioproducts",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Faculty of Chemical Technologies, UCTM",
+        "Biotech, pharmaceutical and food industry",
+        "Research laboratories"
+      ],
+      "highlights": [
+        "Advanced bioprocess and fermentation training",
+        "Strong industry and research links",
+        "Growing demand in the bioeconomy"
+      ],
+      "careers": [
+        "Bioprocess engineer",
+        "Biotechnologist",
+        "Production / quality manager",
+        "R&D scientist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in biotechnology, chemistry or a related field",
+        "Laboratory experience is an advantage"
+      ]
+    },
+    "13:master:nanomaterials-and-nanotechnology": {
+      "overview": "The Nanomaterials and Nanotechnology master's at UCTM trains specialists in the synthesis, characterisation and application of advanced nanomaterials.",
+      "keyFocus": "Nanomaterials synthesis, nanocharacterisation, functional and composite materials",
+      "duration": "Master's — 3 semesters, full-time",
+      "partners": [
+        "Faculty of Metallurgy and Materials Science, UCTM",
+        "Materials and electronics industry",
+        "Research and characterisation laboratories"
+      ],
+      "highlights": [
+        "Advanced materials and nanotechnology specialisation",
+        "Access to modern characterisation equipment",
+        "Strong research and PhD pathways"
+      ],
+      "careers": [
+        "Materials / nanotechnology engineer",
+        "R&D scientist",
+        "Process / quality engineer",
+        "Research careers"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in materials, chemistry, physics or a related field",
+        "Interest in research and characterisation expected"
+      ]
+    },
     "12:bachelor:architecture": {
       "overview": "Architecture at UACEG's Faculty of Architecture is Bulgaria's leading architecture programme — a five-and-a-half-year integrated Master's blending design studios, engineering and the history and theory of architecture.",
       "keyFocus": "Architectural and urban design, building construction, history and theory of architecture",
@@ -6051,7 +8423,7 @@
       ]
     },
     "5:bachelor:law": {
-      "overview": "VFU's Law programme is a five-year integrated Master's degree (магистър) delivered by the Faculty of Law. It covers Bulgarian and EU private and public law and combines lectures with moot-court exercises, a legal clinic and internships in courts, prosecution offices and law firms.",
+      "overview": "VFU's Law programme is a five-year integrated Master's degree (Master's) delivered by the Faculty of Law. It covers Bulgarian and EU private and public law and combines lectures with moot-court exercises, a legal clinic and internships in courts, prosecution offices and law firms.",
       "keyFocus": "Bulgarian and EU law, civil, criminal and administrative procedure, and advocacy skills",
       "duration": "Full-time / part-time (5 years, Master's degree)",
       "partners": [
@@ -8413,5 +10785,196 @@
     "geoinformatics": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
     "photogrammetry-and-remote-sensing": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" },
     "land-management": { "tuition": "€215/sem (BG/EU)", "facultyKey": "geodesy" }
+  },
+  "uctm_programInfo": {
+    "chemical-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "chemical-engineering-in-english": { "tuition": "€4,600/yr (foreign, English)", "facultyKey": "chemical-systems" },
+    "chemical-engineering-in-french": { "tuition": "€4,600/yr (foreign, French)", "facultyKey": "francophone" },
+    "inorganic-substances-technology": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "organic-chemical-technologies": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "polymer-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "pharmaceutical-and-fine-chemistry": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "biotechnology": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "oil-gas-and-solid-fuels-technology": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "cellulose-paper-and-printing": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "metallurgy": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "materials-science-and-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "electrochemical-technologies-and-corrosion-protection": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "semiconductor-technologies": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "environmental-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "automation-and-information-technologies": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "information-technologies": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "industrial-management": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "process-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "industrial-biotechnology": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "pharmaceutical-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "polymer-materials": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "cosmetics-and-household-chemistry": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-tech" },
+    "metallurgical-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "advanced-materials": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "nanomaterials-and-nanotechnology": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "electrochemistry-and-corrosion-protection": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "metallurgy" },
+    "environmental-protection-and-sustainable-development": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "automation-engineering": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" },
+    "engineering-management": { "tuition": "€430/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "chemical-systems" }
+  },
+  "mgu_programInfo": {
+    "mining-engineering": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "underground-construction": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "mine-surveying": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "mineral-processing": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "blasting-techniques-and-technologies": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "industrial-management": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "electrical-engineering": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "automation": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "mining-machinery-and-equipment": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "computer-systems-and-informatics": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "geology": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "applied-geophysics": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "hydrogeology-and-engineering-geology": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "geoinformatics": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "ecology-and-environmental-protection": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "oil-and-gas-production": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "surface-and-underground-mining": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "mineral-processing-and-recycling": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "tunnelling-and-underground-construction": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "mining-tech" },
+    "automation-and-information-technologies": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "electrical-power-engineering": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "renewable-energy-sources": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "electromechanics" },
+    "geophysics": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "engineering-geology": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "water-resources-and-geothermal-energy": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "geographic-information-systems": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "oil-and-gas-engineering": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" },
+    "environmental-protection-and-sustainable-development": { "tuition": "€430/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "geology" }
+  },
+  "ltu_programInfo": {
+    "forestry": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forestry" },
+    "game-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forestry" },
+    "forest-engineering": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forestry" },
+    "wood-technology": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forest-industry" },
+    "interior-and-furniture-design": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forest-industry" },
+    "chemical-technologies-of-wood": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forest-industry" },
+    "engineering-design": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forest-industry" },
+    "landscape-architecture": { "tuition": "€430/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "ecology-landscape" },
+    "ecology-and-environmental-protection": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "ecology-landscape" },
+    "alternative-tourism": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "ecology-landscape" },
+    "agronomy": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "agronomy" },
+    "plant-protection": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "agronomy" },
+    "viticulture-and-horticulture": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "agronomy" },
+    "veterinary-medicine": { "tuition": "€430/yr (BG/EU) · €4,500 (English)", "facultyKey": "veterinary" },
+    "veterinary-medicine-in-english": { "tuition": "€4,500/yr (English-taught)", "facultyKey": "veterinary" },
+    "business-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "business" },
+    "business-economics": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "business" },
+    "marketing": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "business" },
+    "forest-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forestry" },
+    "hunting-and-game-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forestry" },
+    "wood-engineering": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forest-industry" },
+    "furniture-design": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "forest-industry" },
+    "landscape-planning": { "tuition": "€430/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "ecology-landscape" },
+    "environmental-protection-and-sustainable-development": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "ecology-landscape" },
+    "sustainable-tourism": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "ecology-landscape" },
+    "agroecology": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "agronomy" },
+    "ornamental-plants-and-landscaping": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "agronomy" },
+    "veterinary-public-health": { "tuition": "€430/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "veterinary" },
+    "business-administration": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "business" },
+    "marketing-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "business" }
+  },
+  "ulsit_programInfo": {
+    "library-and-information-sciences-and-knowledge-management": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "library-and-information-management": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "innovative-communications-and-media-technologies": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "cultural-and-historical-heritage": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "archival-and-documentary-studies": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "communications-and-information": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "public-policies-and-practices": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "information-resources-of-tourism": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "information-technology": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "computer-science-and-information-brokerage": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "information-security": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "computer-science": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "information-technology-in-institutional-and-corporate-environments": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "national-security-and-cultural-heritage": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "national-security": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "software-engineering": { "tuition": "€530/yr (BG/EU) · €4,600 (English)", "facultyKey": "information" },
+    "artificial-intelligence-and-data-processing": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "cybersecurity-and-digital-forensics": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "information-systems-and-technologies": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "data-analysis-and-management": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "digital-marketing-and-web-design": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "software-architectures-and-quality-management": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "protection-of-personal-data-and-classified-information": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "information" },
+    "library-information-and-cultural-management": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "protection-of-cultural-and-historical-heritage": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "media-information-and-advertising": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" },
+    "historical-heritage-and-cultural-institutions": { "tuition": "€530/yr (BG/EU) · €4,600 (foreign)", "facultyKey": "library" }
+  },
+  "vtu_programInfo": {
+    "economics-of-transport": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "industrial-management": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "security-and-safety-in-transport": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "accounting-and-analysis-in-transport": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "technology-and-management-of-transport": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "logistics": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "transport-economics": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "economics-of-transport-firm": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "management-of-technical-systems-for-ecology-and-logistics": { "tuition": "€300/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "management" },
+    "automotive-engineering": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "internal-combustion-engines": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "railway-engineering": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "rolling-stock-for-high-speed-trains": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "hoisting-road-and-construction-machinery": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "transportation-engineering": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "automotive-technology": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "automotive-technical-expertise": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "transport-construction": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "tunnel-boring-machine-exploitation": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "machinery" },
+    "automation-electronics-and-computer-management-in-electric-transport": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "telecom" },
+    "electric-power-engineering-and-electrical-equipment": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "telecom" },
+    "electric-vehicles": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "telecom" },
+    "telecommunications-and-signalling": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "telecom" },
+    "telecommunications-and-computer-engineering-and-systems": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "telecom" },
+    "electrical-engineering-and-electrical-equipment-in-transport": { "tuition": "€360/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "telecom" }
+  },
+  "utp_programInfo": {
+    "telecommunication-technologies": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "computer-technologies": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "cybersecurity-of-communication-technologies": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "software-programming-in-medicine": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "telemedicine": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "management-in-telecommunications-and-post": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "management-and-artificial-intelligence": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "digital-public-administration": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "cybersecurity-in-business": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "digital-entrepreneurship-and-high-technologies": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "digital-entrepreneurship-and-artificial-intelligence": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "communication-networks-and-cybercrime-investigation": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "information-technologies": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "cybersecurity-in-communication-technologies": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "telecom" },
+    "smart-leadership": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" },
+    "service-management": { "tuition": "€770/yr (BG/EU) · €2,900 (foreign)", "facultyKey": "management" }
+  },
+  "vuzf_programInfo": {
+    "finance-and-international-business": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "finance" },
+    "insurance-and-assurance": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "insurance" },
+    "accounting-and-audit": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "accounting" },
+    "business-strategies-and-project-management": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "business-psychology-and-human-resources": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "management-marketing-and-digital-business": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "information-technologies-and-business-management": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "business-management-and-marketing": { "tuition": "€1,800–€1,950/sem (English)", "facultyKey": "management" },
+    "finance": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "finance" },
+    "financial-management-and-marketing": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "finance" },
+    "accounting-audit-and-corporate-analysis": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "accounting" },
+    "insurance-business-and-risk-management": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "insurance" },
+    "banking-management-and-investment": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "finance" },
+    "finance-fintech-and-digital-innovation": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "finance" },
+    "green-economy-and-sustainable-development": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "finance" },
+    "digital-marketing-and-online-analytics": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "business-software-and-erp-platforms": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "human-resources-management-and-leadership": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "economics-and-organisation-of-healthcare-institutions": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
+    "insurance-business-and-financial-technologies": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "insurance" },
+    "international-banking-and-finance": { "tuition": "€3,410/sem (English)", "facultyKey": "finance" }
   }
 }
