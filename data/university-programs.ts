@@ -739,6 +739,54 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Business Management and Marketing",
     ],
   },
+  "20": {
+    bachelor: [
+      "Sport (Coaching)",
+      "Sports Management",
+      "Physical Education",
+      "Physical Education and Sport",
+      "Adapted Physical Activity and Sport",
+      "Sports Journalism",
+      "Kinesitherapy",
+      "Ergotherapy",
+      "Sports Animation",
+      "Tourism",
+    ],
+    master: [
+      "Coaching and Sport Preparation",
+      "Sports Management",
+      "Fitness and Personal Training",
+      "Physical Education and Sport",
+      "Adapted Physical Activity",
+      "Olympic Education and Sport for All",
+      "Sports Journalism",
+      "Kinesitherapy",
+      "Sports Psychology",
+      "Sports Nutrition",
+      "Sports Medicine and Rehabilitation",
+      "Ergotherapy",
+      "Sports Tourism",
+      "Sports Massage",
+    ],
+  },
+  "21": {
+    bachelor: [
+      "Construction of Buildings and Facilities",
+      "Construction Management",
+      "Fire Safety and Rescue",
+      "Construction and Architecture of Buildings and Structures",
+      "Architecture",
+    ],
+    master: [
+      "Building Constructions",
+      "Construction Production Technology",
+      "Investment Project Management",
+      "Building Technology and Management",
+      "Architectural Heritage Preservation",
+      "Urbanism",
+      "Design",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1070,6 +1118,32 @@ function getVuzfProgramInfo(programSlug: string): { tuition?: string; facultyKey
   };
 }
 
+function getNsaProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nsa_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getVsuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`vsu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1242,6 +1316,26 @@ function getUtpFaculty(facultyKey: string): string | null {
 
 function getVuzfFaculty(facultyKey: string): string | null {
   const name = i18n.t(`vuzf_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNsaFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nsa_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getVsuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`vsu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -1458,6 +1552,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (vuzfInfo.tuition) summary.tuition = vuzfInfo.tuition;
         if (vuzfInfo.facultyKey) {
           const facultyName = getVuzfFaculty(vuzfInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "20") {
+      const nsaInfo = getNsaProgramInfo(slug);
+      if (nsaInfo) {
+        if (nsaInfo.tuition) summary.tuition = nsaInfo.tuition;
+        if (nsaInfo.facultyKey) {
+          const facultyName = getNsaFaculty(nsaInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "21") {
+      const vsuInfo = getVsuProgramInfo(slug);
+      if (vsuInfo) {
+        if (vsuInfo.tuition) summary.tuition = vsuInfo.tuition;
+        if (vsuInfo.facultyKey) {
+          const facultyName = getVsuFaculty(vsuInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -1721,6 +1833,26 @@ export function buildProgramDetail(
       if (vuzfInfo.tuition) result.tuition = vuzfInfo.tuition;
       if (vuzfInfo.facultyKey) {
         const facultyName = getVuzfFaculty(vuzfInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "20" && normalizedSlug) {
+    const nsaInfo = getNsaProgramInfo(normalizedSlug);
+
+    if (nsaInfo) {
+      if (nsaInfo.tuition) result.tuition = nsaInfo.tuition;
+      if (nsaInfo.facultyKey) {
+        const facultyName = getNsaFaculty(nsaInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "21" && normalizedSlug) {
+    const vsuInfo = getVsuProgramInfo(normalizedSlug);
+
+    if (vsuInfo) {
+      if (vsuInfo.tuition) result.tuition = vsuInfo.tuition;
+      if (vsuInfo.facultyKey) {
+        const facultyName = getVsuFaculty(vsuInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

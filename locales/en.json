@@ -260,7 +260,8 @@
     "Business": "Business",
     "Law": "Law",
     "Architecture": "Architecture",
-    "Maritime": "Maritime"
+    "Maritime": "Maritime",
+    "Sports": "Sports"
   },
   "tabs": {
     "favourites": "Favourites",
@@ -533,6 +534,30 @@
       "labsText": "Employed in their field",
       "tuitionFreeLabel": "Top 3",
       "tuitionFreeText": "in Economics (Bulgaria)"
+    },
+    "20": {
+      "yearsTradition": "80+",
+      "bachelorPrograms": "10",
+      "masterPrograms": "14+",
+      "internationalPartners": "50+",
+      "countries": "20",
+      "studentsGraduated": "30K+",
+      "labs": "60",
+      "labsText": "Sports disciplines",
+      "tuitionFreeLabel": "€1,230",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "21": {
+      "yearsTradition": "85+",
+      "bachelorPrograms": "5",
+      "masterPrograms": "7+",
+      "internationalPartners": "30+",
+      "countries": "10",
+      "studentsGraduated": "10K+",
+      "labs": "2",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€430",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -877,6 +902,42 @@
       {
         "range": "€3,410",
         "label": "International Banking & Finance (per semester)"
+      }
+    ],
+    "20": [
+      {
+        "range": "€1,230",
+        "label": "BG/EU sport & pedagogy (per year)"
+      },
+      {
+        "range": "€1,340",
+        "label": "BG/EU kinesitherapy (per year)"
+      },
+      {
+        "range": "€3,300",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€0",
+        "label": "Exempt categories (orphans, disability)"
+      }
+    ],
+    "21": [
+      {
+        "range": "€430",
+        "label": "BG/EU state-subsidised (per year)"
+      },
+      {
+        "range": "€700",
+        "label": "Architecture / paid programmes (per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€0",
+        "label": "Exempt categories (orphans, disability)"
       }
     ]
   },
@@ -1591,7 +1652,81 @@
     "vuzf_coburg": "Double-degree and exchange opportunities, including with Coburg University (Germany)",
     "vuzf_visaSupport": "Admission, visa and residence support for foreign students",
     "vuzf_accommodation": "Assistance with accommodation and student integration in Sofia",
-    "vuzf_recognition": "NACID recognition of foreign diplomas and internationally recognised VUZF degrees"
+    "vuzf_recognition": "NACID recognition of foreign diplomas and internationally recognised VUZF degrees",
+    "nsa_scholarshipsDesc": "As a state university, NSA keeps tuition affordable and offers state and sport-related support:",
+    "nsa_meritScholarships": "Merit scholarships from the state budget for full-time students with strong academic results",
+    "nsa_athleteSupport": "Support and flexible study arrangements for elite athletes competing for national teams and clubs",
+    "nsa_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "nsa_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "nsa_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "nsa_applicationDesc": "Admission is competitive and combines academic results with a practical aptitude test:",
+    "nsa_appPhysicalExam": "Most specialties require a practical entrance examination testing physical and sporting ability",
+    "nsa_appMatriculation": "Admission also uses the secondary-school diploma and state matriculation results",
+    "nsa_appForeign": "Foreign (non-EU) applicants apply as international students with a recognised diploma and medical certificate",
+    "nsa_appDocuments": "Required documents: secondary-school diploma, medical certificate, application form and ID",
+    "nsa_appOnline": "Apply through the NSA admission campaign; see nsa.bg for dates and the entrance-exam schedule",
+    "nsa_masterFeesDesc": "Fees for 2025/2026 depend on the specialty and the student category:",
+    "nsa_feeSport": "Bulgarian and EU students, sport and pedagogy specialties: about €1,230 per year (2,408 BGN)",
+    "nsa_feeKinesitherapy": "Bulgarian and EU students, Kinesitherapy and Ergotherapy: about €1,340 per year (2,624 BGN)",
+    "nsa_feeForeign": "Foreign (non-EU) students: about €3,300 per year depending on the specialty",
+    "nsa_feeExempt": "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+    "nsa_feePayment": "Tuition is paid in two equal semester instalments before each semester",
+    "nsa_campus": "Campus & Facilities",
+    "nsa_campusDesc": "NSA's campus is in Sofia's Studentski grad, with views of Mount Vitosha and extensive sports facilities:",
+    "nsa_stadiums": "Stadiums, athletics tracks, sports halls, a swimming pool and tennis courts",
+    "nsa_olympicCentre": "An Educational and Olympic Centre (opened 2022) and the Olympic Club \"NSA – Vasil Levski\"",
+    "nsa_researchCentre": "The Centre for Scientific and Applied Activities in Sports (CSAAS)",
+    "nsa_clinics": "Kinesitherapy and rehabilitation clinics and laboratories for practical training",
+    "nsa_dormitories": "Student dormitories, canteens, a library and a chapel of Saints Cyril and Methodius",
+    "nsa_partnersDesc": "NSA is closely tied to the Olympic movement and to sport in Bulgaria and abroad:",
+    "nsa_olympicCommittee": "Close cooperation with the Bulgarian Olympic Committee and the sports ministry",
+    "nsa_federations": "Partnerships with national and international sports federations and clubs",
+    "nsa_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "nsa_enssee": "Membership of European sport-science and physical-education networks",
+    "nsa_champions": "Alumni include Olympic and world champions, coaches and national-team specialists",
+    "nsa_internationalDesc": "NSA welcomes international students and offers dedicated support:",
+    "nsa_englishPrograms": "Selected programmes, including Kinesitherapy, offered in English for international students",
+    "nsa_visaSupport": "Admission, visa and residence support for foreign students",
+    "nsa_prepCourse": "A preparatory year in Bulgarian for foreign applicants who need it",
+    "nsa_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "nsa_recognition": "NACID recognition of foreign diplomas and internationally recognised NSA degrees",
+    "vsu_scholarshipsDesc": "As a state university, VSU keeps tuition affordable and offers state and sector-related support:",
+    "vsu_meritScholarships": "Merit scholarships from the state budget for full-time students with strong academic results",
+    "vsu_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "vsu_militaryCadets": "Military cadets in construction specialties are funded by the Ministry of Defence",
+    "vsu_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "vsu_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner universities across Europe",
+    "vsu_applicationDesc": "Admission is by competition in the professional field of Architecture, Construction and Geodesy:",
+    "vsu_appExam": "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a VSU entrance exam",
+    "vsu_appArchitecture": "Architecture includes an entrance examination in drawing (freehand and technical)",
+    "vsu_appEnglish": "Construction Engineering and Construction Management are also offered in English",
+    "vsu_appForeign": "Foreign (non-EU) applicants apply as international students with a recognised diploma",
+    "vsu_appOnline": "Apply online or on site through the VSU admission office; see priem.vsu.bg",
+    "vsu_masterFeesDesc": "Fees for 2025/2026 depend on the programme and the student category:",
+    "vsu_feeStateSubsidised": "Bulgarian and EU students: state-subsidised from about €430 per year",
+    "vsu_feeArchitecture": "Architecture and paid programmes: about €700 per year",
+    "vsu_feeForeign": "Foreign (non-EU) students: about €3,000 per year depending on the programme",
+    "vsu_feeExempt": "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+    "vsu_feePayment": "Tuition is paid in two semester instalments; fees are set annually by the university",
+    "vsu_campus": "Campus & Facilities",
+    "vsu_campusDesc": "VSU has its own student campus in south-west Sofia (175 Suhodolska Street), with views toward Vitosha:",
+    "vsu_labs": "Specialised construction, materials and structural-testing laboratories",
+    "vsu_studios": "Architecture and design studios for studio-based project work",
+    "vsu_testingCentre": "A structural testing centre used for teaching and applied research",
+    "vsu_library": "A specialised library and reading rooms in construction and architecture",
+    "vsu_dormitories": "Student dormitories, a canteen and sports facilities on campus",
+    "vsu_partnersDesc": "VSU is closely tied to the construction and architecture sector:",
+    "vsu_industry": "Partnerships with construction companies, design offices and the industry",
+    "vsu_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "vsu_militaryLink": "Historic links to the Construction Troops, still training military and civilian students",
+    "vsu_engineerArchitect": "The only Bulgarian school offering the combined \"engineer-architect\" qualification",
+    "vsu_bilateral": "Bilateral cooperation with construction and architecture universities abroad",
+    "vsu_internationalDesc": "VSU welcomes international students and teaches some programmes in English:",
+    "vsu_englishPrograms": "Construction Engineering and Construction Management offered in English",
+    "vsu_visaSupport": "Admission, visa and residence support for foreign students",
+    "vsu_prepCourse": "A preparatory year in Bulgarian for foreign applicants who need it",
+    "vsu_accommodation": "Assistance with accommodation in university dormitories and student integration",
+    "vsu_recognition": "NACID recognition of foreign diplomas and internationally recognised VSU degrees"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -1755,6 +1890,15 @@
     "insurance": "Department of Insurance and Social Security",
     "accounting": "Department of Accounting and Control",
     "management": "Department of Management and Marketing"
+  },
+  "nsa_faculties": {
+    "sports": "Faculty of Sports",
+    "pedagogy": "Faculty of Pedagogy",
+    "health": "Faculty of Public Health, Health Care and Tourism"
+  },
+  "vsu_faculties": {
+    "construction": "Faculty of Civil Engineering",
+    "architecture": "Faculty of Architecture"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -2528,6 +2672,26 @@
       "tuitionRange": "€1,000 - €3,410 / semester",
       "website": "https://uzf.bg/en",
       "applyUrl": "https://uzf.bg/en/programs"
+    },
+    "20": {
+      "name": "National Sports Academy \"Vasil Levski\"",
+      "description": "Bulgaria's national state university for sport, physical education and kinesitherapy (est. 1942) — coaching in around 60 sports, PE teaching, sports management, kinesitherapy and rehabilitation, in Sofia.",
+      "longDescription": "The National Sports Academy \"Vasil Levski\" (NSA) is Bulgaria's only specialised state university for sport, physical education and kinesitherapy (physiotherapy). It was founded in 1942 by decree of Tsar Boris III as the Higher School for Physical Education, became the Higher Institute for Physical Education and Sports in 1953, and took its present name in 1995. It has a strong Olympic heritage, and its alumni include many Olympic and world champions, coaches and national-team specialists.\n\nAround 3,500 students study across three faculties — Sports, Pedagogy, and Public Health, Health Care and Tourism — plus a department of language education and information technologies. The Faculty of Sports trains coaches across roughly 60 sports disciplines, the Faculty of Pedagogy prepares physical-education teachers, and the health faculty educates kinesitherapists, ergotherapists and sports-animation specialists. The rector is Prof. Krasimir Petkov.\n\nNSA offers bachelor's, master's and doctoral programmes covering coaching, sports management, physical education, adapted physical activity, sports journalism, kinesitherapy, sports psychology, sports medicine and rehabilitation, and more. Admission is competitive and usually includes a practical aptitude examination alongside secondary-school results, and several programmes — including Kinesitherapy — are offered in English for international students.\n\nThe campus in Sofia's Studentski grad, with views of Mount Vitosha, offers stadiums, sports halls, an athletics track, a swimming pool and tennis courts, an Educational and Olympic Centre, the Centre for Scientific and Applied Activities in Sports, kinesitherapy clinics and student dormitories. Bulgarian and EU students pay affordable state fees — about €1,230 per year for sport and pedagogy specialties and €1,340 for Kinesitherapy — while foreign students pay around €3,300 per year.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€1,230 - €3,300 / year",
+      "website": "https://www.nsa.bg/en",
+      "applyUrl": "https://www.nsa.bg/en"
+    },
+    "21": {
+      "name": "VSU \"Lyuben Karavelov\"",
+      "description": "Bulgaria's specialised state university for civil engineering and architecture (est. 1938) — construction of buildings, construction management, fire safety, architecture and the unique engineer-architect degree, in Sofia.",
+      "longDescription": "VSU \"Lyuben Karavelov\" (the Higher School of Civil Engineering \"Lyuben Karavelov\") is a specialised state university in Sofia for civil engineering and architecture. It was founded in 1938 as a military engineering school for Bulgaria's Construction Troops and became a civilian higher school in 2000; a Faculty of Architecture was added in 2006. It still trains both civilian and military students, under the motto \"Vision. Construction. Success\".\n\nThe university is organised into two faculties — Civil Engineering and Architecture — teaching in the professional field of Architecture, Construction and Geodesy. Around 1,000 students study bachelor's, master's and doctoral programmes with about 99 lecturers, and the rector is Assoc. Prof. Dr. Eng. Iliyana Stoynova. VSU is institutionally accredited by the National Evaluation and Accreditation Agency.\n\nProgrammes cover construction of buildings and facilities, construction management (also taught in English), fire safety and rescue, architecture, and the combined \"engineer-architect\" degree that is unique in Bulgaria. Master's specialisations include building constructions, construction technology and management, investment project management, urbanism, design, and architectural heritage preservation — the last offered only at VSU.\n\nVSU has its own student campus in south-west Sofia (175 Suhodolska Street), with construction and structural-testing laboratories, architecture and design studios, a specialised library, dormitories and sports facilities. Bulgarian and EU students pay affordable state fees from about €430 per year (around €700 for architecture and paid programmes), while foreign students pay around €3,000 per year.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€430 - €3,000 / year",
+      "website": "https://vsu.bg/en_gb/",
+      "applyUrl": "https://priem.vsu.bg/?lang=en"
     }
   },
   "universityProfiles": {
@@ -2947,6 +3111,48 @@
         "As a private university, VUZF charges per-semester fees with scholarships, discounts and instalments",
         "Online application via the VUZF admission system at uzf.bg"
       ]
+    },
+    "20": {
+      "name": "National Sports Academy \"Vasil Levski\"",
+      "focus": "sport and coaching, physical education and PE teaching, sports management, adapted physical activity, sports journalism, kinesitherapy and rehabilitation, ergotherapy and sports animation",
+      "style": "practical training on the academy's stadiums, halls, pool and clinics, coaching and sport-specific practice, applied sports science, and Erasmus+ mobility, with several programmes offered in English",
+      "careers": [
+        "Sports coach / trainer",
+        "Physical education teacher",
+        "Kinesitherapist / physiotherapist",
+        "Sports manager / administrator",
+        "Fitness / conditioning specialist",
+        "Sports journalist",
+        "Rehabilitation / ergotherapy specialist"
+      ],
+      "admissionNotes": [
+        "Most specialties require a practical entrance examination testing physical and sporting ability",
+        "Admission also uses the secondary-school diploma and state matriculation results",
+        "Foreign (non-EU) applicants apply as international students with a recognised diploma and medical certificate",
+        "Kinesitherapy and selected programmes are offered in English for international students",
+        "Application through the NSA admission campaign; see nsa.bg for dates and the entrance-exam schedule"
+      ]
+    },
+    "21": {
+      "name": "VSU \"Lyuben Karavelov\"",
+      "focus": "civil and structural engineering, construction of buildings and facilities, construction management, fire safety, architecture and urban design, and the combined engineer-architect qualification",
+      "style": "studio-based architecture and design work, construction and structural-testing laboratories, site and applied practice, and Erasmus+ mobility, with some programmes taught in English",
+      "careers": [
+        "Civil / structural engineer",
+        "Architect",
+        "Construction manager",
+        "Engineer-architect",
+        "Fire safety engineer",
+        "Investment / project manager",
+        "Urban planner / designer"
+      ],
+      "admissionNotes": [
+        "Bulgarian and EU applicants are admitted by a composite score from state matriculation exams and/or a VSU entrance exam",
+        "Architecture includes an entrance examination in drawing",
+        "Construction Engineering and Construction Management are also offered in English",
+        "Foreign (non-EU) applicants apply as international students with a recognised diploma",
+        "Online or on-site application via the VSU admission office at priem.vsu.bg"
+      ]
     }
   },
   "programThemes": {
@@ -3060,6 +3266,31 @@
     }
   },
   "programTitles": {
+    "construction-management": "Construction Management",
+    "fire-safety-and-rescue": "Fire Safety and Rescue",
+    "construction-and-architecture-of-buildings-and-structures": "Construction and Architecture of Buildings and Structures",
+    "building-constructions": "Building Constructions",
+    "construction-production-technology": "Construction Production Technology",
+    "investment-project-management": "Investment Project Management",
+    "building-technology-and-management": "Building Technology and Management",
+    "architectural-heritage-preservation": "Architectural Heritage Preservation",
+    "sport-coaching": "Sport (Coaching)",
+    "sports-management": "Sports Management",
+    "physical-education": "Physical Education",
+    "physical-education-and-sport": "Physical Education and Sport",
+    "adapted-physical-activity-and-sport": "Adapted Physical Activity and Sport",
+    "sports-journalism": "Sports Journalism",
+    "ergotherapy": "Ergotherapy",
+    "sports-animation": "Sports Animation",
+    "coaching-and-sport-preparation": "Coaching and Sport Preparation",
+    "fitness-and-personal-training": "Fitness and Personal Training",
+    "adapted-physical-activity": "Adapted Physical Activity",
+    "olympic-education-and-sport-for-all": "Olympic Education and Sport for All",
+    "sports-psychology": "Sports Psychology",
+    "sports-nutrition": "Sports Nutrition",
+    "sports-medicine-and-rehabilitation": "Sports Medicine and Rehabilitation",
+    "sports-tourism": "Sports Tourism",
+    "sports-massage": "Sports Massage",
     "finance-and-international-business": "Finance and International Business",
     "insurance-and-assurance": "Insurance and Assurance",
     "business-strategies-and-project-management": "Business Strategies and Project Management",
@@ -3508,6 +3739,456 @@
     "finance": "Finance"
   },
   "programOverrides": {
+    "21:bachelor:construction-of-buildings-and-facilities": {
+      "overview": "Construction of Buildings and Facilities is VSU's flagship programme, training civil engineers to design, build and maintain buildings and structures.",
+      "keyFocus": "Structural design, building technology, materials, and construction management",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time",
+      "partners": [
+        "Faculty of Civil Engineering, VSU",
+        "Construction companies and design offices",
+        "The construction and building sector"
+      ],
+      "highlights": [
+        "VSU's core civil-engineering specialism",
+        "Laboratory and site-based practical training",
+        "Strong demand across the construction industry"
+      ],
+      "careers": [
+        "Civil engineer",
+        "Structural engineer",
+        "Site / construction engineer",
+        "Building design engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a VSU entrance exam and/or state matriculation results",
+        "Interest in mathematics, physics and design recommended"
+      ]
+    },
+    "21:bachelor:architecture": {
+      "overview": "Architecture at VSU is a 5.5-year integrated Master's programme training architects to design buildings and spaces, blending creativity with construction knowledge.",
+      "keyFocus": "Architectural design, urban design, building technology and history of architecture",
+      "duration": "Integrated Master's — 5.5 years (11 semesters), full-time",
+      "partners": [
+        "Faculty of Architecture, VSU",
+        "Architecture and design practices",
+        "The construction sector"
+      ],
+      "highlights": [
+        "Studio-based, portfolio-driven architectural education",
+        "Benefits from VSU's strong construction-engineering base",
+        "Awards the qualification of Master of Architecture"
+      ],
+      "careers": [
+        "Architect",
+        "Urban / spatial designer",
+        "Interior architect",
+        "Building design specialist"
+      ],
+      "admissionNotes": [
+        "Admission includes an entrance examination in drawing",
+        "A visual portfolio and design aptitude are an advantage"
+      ]
+    },
+    "21:bachelor:construction-management": {
+      "overview": "Construction Management at VSU combines civil engineering with management and is also taught in English, preparing specialists to plan and run construction projects.",
+      "keyFocus": "Construction technology, project planning, costing, and site management",
+      "duration": "Bachelor — 4 years (8 semesters); offered in Bulgarian and English",
+      "partners": [
+        "Faculty of Civil Engineering, VSU",
+        "Construction and project-management companies",
+        "International partners (English-taught track)"
+      ],
+      "highlights": [
+        "Combines engineering with management",
+        "Also taught entirely in English",
+        "Careers in construction project management"
+      ],
+      "careers": [
+        "Construction manager",
+        "Project manager",
+        "Site manager",
+        "Cost / planning engineer"
+      ],
+      "admissionNotes": [
+        "Admission by a VSU entrance exam and/or state matriculation results",
+        "The English-taught track requires proof of English"
+      ]
+    },
+    "21:bachelor:fire-safety-and-rescue": {
+      "overview": "Fire Safety and Rescue at VSU trains engineers in fire protection, the safety of buildings and rescue operations.",
+      "keyFocus": "Fire safety engineering, building safety, risk assessment and rescue operations",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time",
+      "partners": [
+        "Faculty of Civil Engineering, VSU",
+        "Fire safety and emergency services",
+        "Construction and safety companies"
+      ],
+      "highlights": [
+        "A niche safety-engineering specialism",
+        "Links construction with fire protection",
+        "Careers in safety, prevention and rescue"
+      ],
+      "careers": [
+        "Fire safety engineer",
+        "Building safety specialist",
+        "Risk / prevention specialist",
+        "Emergency and rescue specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a VSU entrance exam and/or state matriculation results",
+        "Interest in safety, engineering and public service recommended"
+      ]
+    },
+    "21:bachelor:construction-and-architecture-of-buildings-and-structures": {
+      "overview": "Construction and Architecture of Buildings and Structures is unique in Bulgaria, giving graduates the combined qualification of \"engineer-architect\" — both a builder and a designer.",
+      "keyFocus": "Structural engineering and architectural design combined in one degree",
+      "duration": "Integrated programme — full-time; awards the engineer-architect qualification",
+      "partners": [
+        "Faculty of Civil Engineering, VSU",
+        "Faculty of Architecture, VSU",
+        "Construction and design companies"
+      ],
+      "highlights": [
+        "The only \"engineer-architect\" degree in Bulgaria",
+        "Combines structural engineering with architecture",
+        "Versatile across design and construction"
+      ],
+      "careers": [
+        "Engineer-architect",
+        "Structural / design engineer",
+        "Building designer",
+        "Construction project specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a VSU entrance exam and/or matriculation results, with a drawing component",
+        "Suits students interested in both engineering and design"
+      ]
+    },
+    "21:master:building-constructions": {
+      "overview": "The Building Constructions master's at VSU specialises graduates in the analysis and design of structural systems for buildings and facilities.",
+      "keyFocus": "Structural analysis and design, reinforced concrete, steel and seismic design",
+      "duration": "Master's — 2-3 semesters; full-time or part-time",
+      "partners": [
+        "Faculty of Civil Engineering, VSU",
+        "Structural design offices",
+        "Construction companies"
+      ],
+      "highlights": [
+        "Advanced structural-engineering specialisation",
+        "Design of complex and seismic-resistant structures",
+        "Strong demand from design and construction firms"
+      ],
+      "careers": [
+        "Structural engineer",
+        "Structural designer",
+        "Seismic / analysis specialist",
+        "Construction consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in civil engineering or a related field",
+        "A structural-engineering background is an advantage"
+      ]
+    },
+    "21:master:architectural-heritage-preservation": {
+      "overview": "The Architectural Heritage Preservation master's at VSU — the only open programme of its kind in Bulgaria — trains specialists to conserve and restore historic buildings and monuments.",
+      "keyFocus": "Conservation, restoration, heritage documentation and adaptive reuse",
+      "duration": "Master's — 2 years, part-time (paid)",
+      "partners": [
+        "Faculty of Architecture, VSU",
+        "Heritage and conservation bodies",
+        "Museums and cultural institutions"
+      ],
+      "highlights": [
+        "The only open heritage-preservation master's in Bulgaria",
+        "Focus on conservation and restoration",
+        "Careers in heritage and cultural institutions"
+      ],
+      "careers": [
+        "Heritage conservation specialist",
+        "Restoration architect",
+        "Cultural heritage consultant",
+        "Conservation project manager"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's or master's degree in architecture, construction or a related field",
+        "An interest in history and heritage is an advantage"
+      ]
+    },
+    "21:master:investment-project-management": {
+      "overview": "The Investment Project Management master's at VSU develops expertise in planning, financing and managing construction and investment projects.",
+      "keyFocus": "Project management, investment planning, costing and construction economics",
+      "duration": "Master's — 2-3 semesters; full-time or part-time",
+      "partners": [
+        "Faculty of Civil Engineering, VSU",
+        "Construction and investment companies",
+        "Project-management practices"
+      ],
+      "highlights": [
+        "Combines construction with project and investment management",
+        "An in-demand management skill set",
+        "Careers across construction and real estate"
+      ],
+      "careers": [
+        "Investment project manager",
+        "Construction project manager",
+        "Cost / contract manager",
+        "Development / real-estate specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in engineering, economics or a related field",
+        "Relevant construction or management experience is an advantage"
+      ]
+    },
+    "21:master:urbanism": {
+      "overview": "The Urbanism master's at VSU trains specialists to plan and design sustainable urban environments, spaces and infrastructure.",
+      "keyFocus": "Urban and spatial planning, urban design, and sustainable development",
+      "duration": "Master's — 2 years, part-time (paid)",
+      "partners": [
+        "Faculty of Architecture, VSU",
+        "Municipal planning authorities",
+        "Architecture and planning practices"
+      ],
+      "highlights": [
+        "Focus on urban planning and design",
+        "Combines architecture with spatial planning",
+        "Careers in urban development and municipalities"
+      ],
+      "careers": [
+        "Urban planner",
+        "Urban designer",
+        "Spatial planning specialist",
+        "Municipal development specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in architecture, construction or a related field",
+        "A design or planning background is an advantage"
+      ]
+    },
+    "20:bachelor:sport-coaching": {
+      "overview": "Sport (Coaching) is NSA's flagship programme, training coaches across roughly 60 sports disciplines — from athletics, football and gymnastics to combat and water sports — for clubs and national teams.",
+      "keyFocus": "Sport-specific coaching, training methodology, sports physiology and competition preparation",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time",
+      "partners": [
+        "Faculty of Sports, NSA",
+        "Sports clubs and national federations",
+        "Bulgarian Olympic Committee"
+      ],
+      "highlights": [
+        "Coaching specialisation in a chosen sport",
+        "Practical training with NSA's elite coaches and facilities",
+        "Strong links to clubs, federations and the Olympic movement"
+      ],
+      "careers": [
+        "Sports coach / trainer",
+        "Assistant / national-team coach",
+        "Strength and conditioning specialist",
+        "Club or academy sports director"
+      ],
+      "admissionNotes": [
+        "Requires a practical entrance examination in the chosen sport",
+        "Physical fitness and a sporting background are essential"
+      ]
+    },
+    "20:bachelor:kinesitherapy": {
+      "overview": "Kinesitherapy (physiotherapy) at NSA trains specialists in therapeutic exercise, physical rehabilitation and recovery — one of the academy's most sought-after programmes.",
+      "keyFocus": "Therapeutic exercise, physical rehabilitation, manual therapy and injury recovery",
+      "duration": "Bachelor — 4 years (8 semesters); full-time",
+      "partners": [
+        "Faculty of Public Health, Health Care and Tourism, NSA",
+        "Hospitals, clinics and rehabilitation centres",
+        "Sports-medicine and physiotherapy practices"
+      ],
+      "highlights": [
+        "Clinical and practical training in NSA's rehabilitation labs",
+        "Also offered in English for international students",
+        "High demand in health, sport and rehabilitation"
+      ],
+      "careers": [
+        "Kinesitherapist / physiotherapist",
+        "Rehabilitation specialist",
+        "Sports physiotherapist",
+        "Wellness and recovery specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a practical examination and/or state matriculation results",
+        "A medical certificate is required; interest in health and anatomy recommended"
+      ]
+    },
+    "20:bachelor:physical-education": {
+      "overview": "Physical Education at NSA prepares physical-education teachers for Bulgarian primary and secondary schools, combining pedagogy with sport.",
+      "keyFocus": "Pedagogy, physical-education methodology, sport didactics and child development",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time",
+      "partners": [
+        "Faculty of Pedagogy, NSA",
+        "Schools and educational institutions",
+        "Sport and recreation organisations"
+      ],
+      "highlights": [
+        "Qualifies graduates as PE teachers",
+        "Combines teaching skills with sport",
+        "Steady demand across the school system"
+      ],
+      "careers": [
+        "Physical education teacher",
+        "School sports coordinator",
+        "Sport and recreation instructor",
+        "Coach in school sport"
+      ],
+      "admissionNotes": [
+        "Requires a practical entrance examination testing physical ability",
+        "Admission also uses secondary-school and matriculation results"
+      ]
+    },
+    "20:bachelor:sports-management": {
+      "overview": "Sports Management at NSA combines sport with business, preparing managers and administrators for clubs, federations, facilities and sports events.",
+      "keyFocus": "Sports administration, event and facility management, marketing and sports law",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time",
+      "partners": [
+        "Faculty of Sports, NSA",
+        "Sports clubs, federations and event organisers",
+        "Sports facilities and companies"
+      ],
+      "highlights": [
+        "Combines sport with management and marketing",
+        "Careers across the sports industry",
+        "Links to clubs, federations and events"
+      ],
+      "careers": [
+        "Sports manager / administrator",
+        "Club or facility manager",
+        "Sports event organiser",
+        "Sports marketing specialist"
+      ],
+      "admissionNotes": [
+        "Admission by a practical examination and/or state matriculation results",
+        "Interest in sport, organisation and business recommended"
+      ]
+    },
+    "20:bachelor:sports-journalism": {
+      "overview": "Sports Journalism at NSA trains journalists and commentators specialised in sport, combining media skills with deep sports knowledge.",
+      "keyFocus": "Sports reporting, commentary, media production and communications",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time",
+      "partners": [
+        "Faculty of Pedagogy, NSA",
+        "Sports media and broadcasters",
+        "Clubs, federations and press offices"
+      ],
+      "highlights": [
+        "A niche specialism combining media and sport",
+        "Practical reporting and commentary training",
+        "Careers in sports media and communications"
+      ],
+      "careers": [
+        "Sports journalist",
+        "Sports commentator",
+        "Press / media officer (sport)",
+        "Sports content creator"
+      ],
+      "admissionNotes": [
+        "Admission by examination and/or state matriculation results",
+        "Interest in sport, writing and media recommended"
+      ]
+    },
+    "20:master:sports-psychology": {
+      "overview": "The Sports Psychology master's at NSA develops expertise in the mental preparation and wellbeing of athletes and teams.",
+      "keyFocus": "Sport psychology, motivation, mental preparation and performance under pressure",
+      "duration": "Master's — 2-3 semesters; full-time or part-time",
+      "partners": [
+        "Faculty of Public Health, Health Care and Tourism, NSA",
+        "Sports clubs and national teams",
+        "Performance and wellbeing specialists"
+      ],
+      "highlights": [
+        "Focus on the psychology of performance",
+        "Applied work with athletes and teams",
+        "A growing field in elite and grassroots sport"
+      ],
+      "careers": [
+        "Sports psychologist",
+        "Mental performance coach",
+        "Athlete wellbeing specialist",
+        "Team performance consultant"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree, preferably in sport, psychology or a related field",
+        "A relevant sporting or psychology background is an advantage"
+      ]
+    },
+    "20:master:sports-medicine-and-rehabilitation": {
+      "overview": "The Sports Medicine and Rehabilitation master's at NSA specialises graduates in preventing, treating and rehabilitating sports injuries.",
+      "keyFocus": "Sports injury prevention, treatment, rehabilitation and recovery",
+      "duration": "Master's — 2-3 semesters; full-time or part-time",
+      "partners": [
+        "Faculty of Public Health, Health Care and Tourism, NSA",
+        "Hospitals, sports-medicine and rehabilitation centres",
+        "Clubs and national teams"
+      ],
+      "highlights": [
+        "Combines sports medicine with rehabilitation",
+        "Clinical and practical training",
+        "High demand in sport and healthcare"
+      ],
+      "careers": [
+        "Sports rehabilitation specialist",
+        "Sports-medicine support specialist",
+        "Physiotherapist (sport)",
+        "Recovery and conditioning specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in kinesitherapy, medicine or a related field",
+        "A health or sport background is an advantage"
+      ]
+    },
+    "20:master:adapted-physical-activity": {
+      "overview": "The Adapted Physical Activity master's at NSA trains specialists to deliver sport and physical activity for people with disabilities and special needs.",
+      "keyFocus": "Adapted physical activity, inclusive sport, para-sport and therapeutic movement",
+      "duration": "Master's — 2-3 semesters; full-time or part-time",
+      "partners": [
+        "Faculty of Pedagogy, NSA",
+        "Para-sport clubs and organisations",
+        "Schools, rehabilitation and social-care centres"
+      ],
+      "highlights": [
+        "Focus on inclusive and adapted sport",
+        "Growing demand in education and para-sport",
+        "Practical, people-centred training"
+      ],
+      "careers": [
+        "Adapted physical activity specialist",
+        "Para-sport coach",
+        "Inclusive PE teacher",
+        "Rehabilitation and activity specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in sport, PE, kinesitherapy or a related field",
+        "An interest in inclusion and special needs recommended"
+      ]
+    },
+    "20:master:fitness-and-personal-training": {
+      "overview": "The Fitness and Personal Training master's at NSA develops advanced expertise in fitness, conditioning and personal training for health and performance.",
+      "keyFocus": "Fitness training, strength and conditioning, programme design and nutrition basics",
+      "duration": "Master's — 2-3 semesters; full-time or part-time",
+      "partners": [
+        "Faculty of Sports, NSA",
+        "Fitness centres and gyms",
+        "Sports clubs and wellness businesses"
+      ],
+      "highlights": [
+        "Focus on fitness and personal training",
+        "Practical, industry-oriented skills",
+        "Strong demand in the fitness and wellness sector"
+      ],
+      "careers": [
+        "Personal trainer",
+        "Fitness / conditioning coach",
+        "Gym or fitness manager",
+        "Wellness and health specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree, preferably in sport or a related field",
+        "Practical fitness experience is an advantage"
+      ]
+    },
     "19:bachelor:finance-and-international-business": {
       "overview": "Finance and International Business at VUZF trains specialists in corporate and international finance, investment and cross-border business, taught by practitioners from the sector.",
       "keyFocus": "Corporate finance, investments, international business and financial markets",
@@ -10976,5 +11657,40 @@
     "economics-and-organisation-of-healthcare-institutions": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "management" },
     "insurance-business-and-financial-technologies": { "tuition": "€1,000/sem (Bulgarian-taught)", "facultyKey": "insurance" },
     "international-banking-and-finance": { "tuition": "€3,410/sem (English)", "facultyKey": "finance" }
+  },
+  "nsa_programInfo": {
+    "sport-coaching": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "sports" },
+    "sports-management": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "sports" },
+    "physical-education": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "pedagogy" },
+    "physical-education-and-sport": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "pedagogy" },
+    "adapted-physical-activity-and-sport": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "pedagogy" },
+    "sports-journalism": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "pedagogy" },
+    "kinesitherapy": { "tuition": "€1,340/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "ergotherapy": { "tuition": "€1,340/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "sports-animation": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "tourism": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "coaching-and-sport-preparation": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "sports" },
+    "fitness-and-personal-training": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "sports" },
+    "adapted-physical-activity": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "pedagogy" },
+    "olympic-education-and-sport-for-all": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "pedagogy" },
+    "sports-psychology": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "sports-nutrition": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "sports-medicine-and-rehabilitation": { "tuition": "€1,340/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "sports-tourism": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" },
+    "sports-massage": { "tuition": "€1,230/yr (BG/EU) · €3,300 (foreign)", "facultyKey": "health" }
+  },
+  "vsu_programInfo": {
+    "construction-of-buildings-and-facilities": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "construction-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "fire-safety-and-rescue": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "construction-and-architecture-of-buildings-and-structures": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "architecture": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" },
+    "building-constructions": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "construction-production-technology": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "investment-project-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "building-technology-and-management": { "tuition": "€430/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "construction" },
+    "architectural-heritage-preservation": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" },
+    "urbanism": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" },
+    "design": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" }
   }
 }

@@ -214,6 +214,28 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "20",
+    rating: 5,
+    color: "#b0450a",
+    image: require("../assets/images/sports-academy-sofia.jpg"),
+    category: "Sports",
+    categories: ["Sports", "Medical", "Business"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
+  {
+    id: "21",
+    rating: 4,
+    color: "#34495e",
+    image: require("../assets/images/vsu-sofia.jpg"),
+    category: "Architecture",
+    categories: ["Architecture", "Engineering"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {

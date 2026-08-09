@@ -305,7 +305,7 @@ export default function Index() {
                 {t("filters.category")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
-                {["Engineering", "Medical", "Economics", "Business", "Law", "Architecture", "Maritime"].map((c) => (
+                {["Engineering", "Medical", "Economics", "Business", "Law", "Architecture", "Maritime", "Sports"].map((c) => (
                   <FilterChip
                     key={c} label={t(`categories.${c}`)}
                     selected={selectedCategory === c}
