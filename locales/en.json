@@ -261,7 +261,11 @@
     "Law": "Law",
     "Architecture": "Architecture",
     "Maritime": "Maritime",
-    "Sports": "Sports"
+    "Sports": "Sports",
+    "Arts": "Arts",
+    "Security": "Security",
+    "Military": "Military",
+    "Defence": "Defence"
   },
   "tabs": {
     "favourites": "Favourites",
@@ -558,6 +562,54 @@
       "labsText": "Faculties",
       "tuitionFreeLabel": "€430",
       "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "22": {
+      "yearsTradition": "125+",
+      "bachelorPrograms": "14",
+      "masterPrograms": "14+",
+      "internationalPartners": "40+",
+      "countries": "20",
+      "studentsGraduated": "20K+",
+      "labs": "24",
+      "labsText": "Art specialties",
+      "tuitionFreeLabel": "1896",
+      "tuitionFreeText": "Oldest art academy in BG"
+    },
+    "23": {
+      "yearsTradition": "100+",
+      "bachelorPrograms": "14",
+      "masterPrograms": "14+",
+      "internationalPartners": "40+",
+      "countries": "20",
+      "studentsGraduated": "10K+",
+      "labs": "30+",
+      "labsText": "Music specialties",
+      "tuitionFreeLabel": "1921",
+      "tuitionFreeText": "Only state music academy"
+    },
+    "24": {
+      "yearsTradition": "110+",
+      "bachelorPrograms": "2",
+      "masterPrograms": "16",
+      "internationalPartners": "30+",
+      "countries": "20",
+      "studentsGraduated": "10K+",
+      "labs": "4",
+      "labsText": "Faculties & institutes",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "For military students (MoD-funded)"
+    },
+    "25": {
+      "yearsTradition": "75+",
+      "bachelorPrograms": "17",
+      "masterPrograms": "10",
+      "internationalPartners": "40+",
+      "countries": "20",
+      "studentsGraduated": "10K+",
+      "labs": "27",
+      "labsText": "Stage & screen specialties",
+      "tuitionFreeLabel": "1948",
+      "tuitionFreeText": "First theatre school in Bulgaria"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -938,6 +990,78 @@
       {
         "range": "€0",
         "label": "Exempt categories (orphans, disability)"
+      }
+    ],
+    "22": [
+      {
+        "range": "€2,308",
+        "label": "Annual tuition (2025/2026)"
+      },
+      {
+        "range": "€1,154",
+        "label": "Per semester (BG/EU)"
+      },
+      {
+        "range": "€3,500",
+        "label": "Foreign students (per year)"
+      },
+      {
+        "range": "€0",
+        "label": "Exempt categories (orphans, disability)"
+      }
+    ],
+    "23": [
+      {
+        "range": "€450",
+        "label": "Music Pedagogy (BG/EU, per year)"
+      },
+      {
+        "range": "€850",
+        "label": "Bachelor & Master (BG/EU, per year)"
+      },
+      {
+        "range": "€7,000",
+        "label": "Foreign Bachelor (per year)"
+      },
+      {
+        "range": "€8,500",
+        "label": "Foreign Master (per year)"
+      }
+    ],
+    "24": [
+      {
+        "range": "€0",
+        "label": "Military & MoD-funded students"
+      },
+      {
+        "range": "€360",
+        "label": "Civilian state-subsidised (BG/EU, per year)"
+      },
+      {
+        "range": "€770",
+        "label": "Civilian paid tuition (BG/EU, per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students (per year)"
+      }
+    ],
+    "25": [
+      {
+        "range": "€920",
+        "label": "Bachelor (BG/EU, per year)"
+      },
+      {
+        "range": "€1,020",
+        "label": "Master (BG/EU, per year)"
+      },
+      {
+        "range": "€4,000",
+        "label": "Foreign, stage arts (per year)"
+      },
+      {
+        "range": "€6,000",
+        "label": "Foreign, film & TV (per year)"
       }
     ]
   },
@@ -1726,7 +1850,155 @@
     "vsu_visaSupport": "Admission, visa and residence support for foreign students",
     "vsu_prepCourse": "A preparatory year in Bulgarian for foreign applicants who need it",
     "vsu_accommodation": "Assistance with accommodation in university dormitories and student integration",
-    "vsu_recognition": "NACID recognition of foreign diplomas and internationally recognised VSU degrees"
+    "vsu_recognition": "NACID recognition of foreign diplomas and internationally recognised VSU degrees",
+    "nha_scholarshipsDesc": "As a state academy, NHA keeps tuition affordable and offers state and talent-based support:",
+    "nha_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results",
+    "nha_talentAwards": "Awards and prizes for outstanding artistic achievement, exhibitions and competitions",
+    "nha_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "nha_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "nha_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner art academies",
+    "nha_applicationDesc": "Admission is by competitive creative examination in the chosen specialty:",
+    "nha_appDrawingExam": "Applicants sit practical entrance examinations in drawing, composition and specialty-specific tasks",
+    "nha_appPortfolio": "A portfolio of artworks is required or recommended for most specialties",
+    "nha_appForeign": "Foreign applicants apply as international students; a portfolio and language proof are required",
+    "nha_appDocuments": "Required documents: secondary-school diploma, application form and the exam fees",
+    "nha_appOnline": "Apply through the NHA admission campaign; see nha.bg for exam dates and requirements",
+    "nha_masterFeesDesc": "Fees for 2025/2026 depend on the student category; arts programmes are studio-intensive:",
+    "nha_feeAnnual": "Annual tuition for 2025/2026 is about €2,308 (4,515 BGN)",
+    "nha_feeSemester": "Tuition is paid in two semester instalments of about €1,154 each",
+    "nha_feeForeign": "Foreign (non-EU) students pay a higher annual fee, around €3,500",
+    "nha_feeExempt": "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+    "nha_feeApplication": "Entrance-exam fee about €28 per specialty, plus a €12 materials fee",
+    "nha_campus": "Campus & Facilities",
+    "nha_campusDesc": "NHA's historic main building is at 1 Shipka Street in central Sofia (built 1907):",
+    "nha_building": "A landmark red-brick building housing lecture halls and specialty ateliers",
+    "nha_studios": "Studios and workshops for painting, sculpture, graphics, ceramics, textiles and design",
+    "nha_gallery": "The Academia Gallery and exhibition halls showcasing student and faculty work",
+    "nha_burgas": "A Burgas branch at Magazia 1 in the port complex",
+    "nha_residences": "Creative residences on the Black Sea coast at Balchik, Ahtopol and Burgas",
+    "nha_partnersDesc": "NHA is Bulgaria's leading art academy, nationally and internationally connected:",
+    "nha_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "nha_chinaAcademy": "International partnerships, including with the China Academy of Art in Hangzhou",
+    "nha_exhibitions": "Hundreds of student exhibitions, fashion shows and public art events each year",
+    "nha_alumni": "Alumni include leading Bulgarian artists, sculptors, designers and art scholars",
+    "nha_bilateral": "Bilateral cooperation with art academies and cultural institutions worldwide",
+    "nha_internationalDesc": "NHA welcomes international students — over 50 study across its specialties:",
+    "nha_foreignStudents": "Over 50 foreign students and 50+ doctoral candidates study at the academy",
+    "nha_englishSupport": "Support and selected instruction in English for international students",
+    "nha_visaSupport": "Admission, visa and residence support for foreign students",
+    "nha_accommodation": "Assistance with accommodation and student integration in Sofia",
+    "nha_recognition": "NACID recognition of foreign diplomas and internationally recognised NHA degrees",
+    "nma_scholarshipsDesc": "As a state academy, NMA keeps tuition affordable and offers state and talent-based support:",
+    "nma_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results",
+    "nma_talentAwards": "Awards and prizes for outstanding performance at concerts and international competitions",
+    "nma_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "nma_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "nma_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner conservatories and music academies",
+    "nma_applicationDesc": "Admission is by competitive practical examination in the chosen specialty:",
+    "nma_appExam": "Applicants sit practical entrance examinations (performance, theory and specialty-specific tasks)",
+    "nma_appAudition": "Instrumentalists and singers perform a prepared programme before an examination jury",
+    "nma_appForeign": "Foreign applicants apply as international students; an audition or recording and language proof may be required",
+    "nma_appDocuments": "Required documents: secondary-school diploma, application form and the exam fees",
+    "nma_appOnline": "Apply through the NMA admission campaign; see nma.bg for exam dates and requirements",
+    "nma_masterFeesDesc": "Fees for 2025/2026 depend on the student category; performance training is one-to-one and intensive:",
+    "nma_feeState": "Bulgarian and EU students on state-funded places pay from about €450 (Music Pedagogy) to €850 per year",
+    "nma_feeSemester": "Tuition is paid in two semester instalments; a master's after a bachelor's is about €900 per year",
+    "nma_feeRefund": "The academy refunds 50% of the annual tuition on each successfully completed year",
+    "nma_feeForeign": "Foreign (non-EU) students pay about €7,000/year (bachelor), €8,500 (master) and €10,000 (doctoral)",
+    "nma_feeApplication": "A preparatory year for foreign students is about €5,500; document-recognition fee from about €153",
+    "nma_campus": "Campus & Facilities",
+    "nma_campusDesc": "NMA occupies two buildings in central Sofia with concert halls, studios and rich music collections:",
+    "nma_building": "Two academy buildings — Boulevard \"Evlogi i Hristo Georgievi\" 94 and 6 Lyudmil Stoyanov Street",
+    "nma_concertHalls": "Concert and recital halls, including chamber and grand halls, and an organ hall",
+    "nma_operaTheatre": "A teaching opera theatre, the academic symphony orchestra and a mixed choir",
+    "nma_library": "A specialised music library with rare editions and a sound archive (phonoteca)",
+    "nma_studios": "Individual practice studios, rehearsal rooms and recording facilities",
+    "nma_partnersDesc": "NMA is Bulgaria's leading music academy, nationally and internationally connected:",
+    "nma_erasmusNetwork": "A wide Erasmus+ network for student and staff mobility across Europe",
+    "nma_competitions": "Students and graduates win top prizes at prestigious international music competitions",
+    "nma_concerts": "Hundreds of concerts, recitals and masterclasses each year, open to the public",
+    "nma_alumni": "Alumni include leading Bulgarian performers, composers, conductors and pedagogues",
+    "nma_bilateral": "Bilateral cooperation with conservatories and music academies worldwide",
+    "nma_internationalDesc": "NMA welcomes international students from many countries across its specialties:",
+    "nma_foreignStudents": "Foreign students and doctoral candidates study across all three faculties",
+    "nma_englishSupport": "Support and selected instruction in English for international students",
+    "nma_visaSupport": "Admission, visa and residence support for foreign students",
+    "nma_accommodation": "Assistance with accommodation in student dormitories and integration in Sofia",
+    "nma_recognition": "NACID recognition of foreign diplomas and internationally recognised NMA degrees",
+    "rndc_scholarshipsDesc": "As a state military academy, Rakovski funds serving officers and supports civilian students:",
+    "rndc_militaryFunding": "Serving military students are fully funded by the Ministry of Defence, with pay and no tuition",
+    "rndc_meritScholarships": "Merit scholarships from the state budget for full-time civilian students with strong results",
+    "rndc_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "rndc_exemptCategories": "Tuition exemptions for orphans, students with disabilities and other protected categories",
+    "rndc_erasmusGrants": "Erasmus+ mobility grants and NATO / Partnership-for-Peace exchange opportunities abroad",
+    "rndc_applicationDesc": "Admission runs on two tracks — state-funded (exam-based) and paid (document-based):",
+    "rndc_appMilitary": "State-funded military places are filled by competitive entrance exams; officers are assigned by the Ministry of Defence",
+    "rndc_appCivilian": "Civilian applicants may apply for state-subsidised places (exam-based) or paid places (document-based)",
+    "rndc_appMaster": "Master's applicants need a relevant prior degree; some fields expect security or military experience",
+    "rndc_appDocuments": "Required documents: prior diploma, application form and the application fee (about 50-70 BGN)",
+    "rndc_appOnline": "Apply through the Rakovski admission campaign; see rndc.bg for dates and deadlines",
+    "rndc_masterFeesDesc": "Fees depend on the student category; serving military study without tuition (figures are indicative):",
+    "rndc_feeMilitary": "Serving military students are funded by the Ministry of Defence and pay no tuition",
+    "rndc_feeState": "Civilian state-subsidised places carry low annual fees, about €360 per year",
+    "rndc_feePaid": "Civilian paid tuition is about €770 per year, depending on the specialty and form of study",
+    "rndc_feeForeign": "Foreign (non-EU) students pay a higher annual fee, around €3,000",
+    "rndc_feeApplication": "Application fee is about 50 BGN (paid study) to 70 BGN (state-funded)",
+    "rndc_campus": "Campus & Facilities",
+    "rndc_campusDesc": "Rakovski's historic campus is on Boulevard \"Evlogi i Hristo Georgievi\" in central Sofia:",
+    "rndc_building": "A historic campus at 82 Boulevard \"Evlogi i Hristo Georgievi\", 1504 Sofia",
+    "rndc_simulation": "Command-post exercise halls, situation rooms and simulation facilities",
+    "rndc_library": "A specialised military-science library and the \"Voenen Zhurnal\" (Military Journal)",
+    "rndc_dari": "The Defence Advanced Research Institute (DARI) for applied defence research",
+    "rndc_dormitory": "Student dormitories, dining and sports facilities on campus",
+    "rndc_partnersDesc": "Rakovski is closely tied to Bulgaria's defence sector and NATO partners:",
+    "rndc_nato": "Cooperation with NATO and Partnership-for-Peace defence-education institutions",
+    "rndc_erasmusNetwork": "An Erasmus+ network for student and staff mobility across Europe",
+    "rndc_ministries": "Close links with the Ministry of Defence, the armed forces and security agencies",
+    "rndc_alumni": "Alumni include senior Bulgarian officers, generals and security leaders",
+    "rndc_international": "International officers have trained at the academy for decades",
+    "rndc_internationalDesc": "The academy educates international military and civilian students:",
+    "rndc_foreignStudents": "International military and civilian students study alongside Bulgarian officers",
+    "rndc_englishSupport": "Language training and selected instruction in English for international students",
+    "rndc_visaSupport": "Admission, visa and residence support for foreign students",
+    "rndc_accommodation": "Assistance with accommodation and integration in Sofia",
+    "rndc_recognition": "NACID recognition of foreign diplomas and internationally recognised Rakovski degrees",
+    "natfa_scholarshipsDesc": "As a state academy, NATFA keeps tuition affordable and offers state and talent-based support:",
+    "natfa_meritScholarships": "Merit scholarships from the state budget for full-time students with strong results",
+    "natfa_talentAwards": "Awards for outstanding artistic achievement at student productions, festivals and competitions",
+    "natfa_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "natfa_exemptCategories": "Full tuition exemption for orphans, students with severe disabilities and war-affected students",
+    "natfa_erasmusGrants": "Erasmus+ mobility grants for study or traineeship abroad at partner theatre and film schools",
+    "natfa_applicationDesc": "Admission is by competitive creative entrance examination in the chosen specialty:",
+    "natfa_appAudition": "Applicants sit practical creative exams (auditions, screen tests, portfolio or specialty tasks)",
+    "natfa_appPortfolio": "Most screen and design specialties require a portfolio or a body of creative work",
+    "natfa_appForeign": "Foreign applicants apply as international students; an audition or portfolio and language proof are required",
+    "natfa_appDocuments": "Required documents: secondary-school diploma, application form and the exam fees (about 50 BGN per section)",
+    "natfa_appOnline": "Apply through the NATFA admission campaign; see natfiz.bg for exam dates and requirements",
+    "natfa_masterFeesDesc": "Fees depend on the specialty and student category; production-based training is studio-intensive:",
+    "natfa_feeState": "Bulgarian and EU bachelor students pay about €920 per year (1,800 BGN), in two semester instalments",
+    "natfa_feeMaster": "Bulgarian and EU master's students pay about €1,020 per year (2,000 BGN)",
+    "natfa_feeForeign": "Foreign (non-EU) students pay about €4,000/year for stage arts and €6,000/year for film and TV",
+    "natfa_feeExempt": "Orphans, students with severe disabilities and war-affected students are exempt from tuition",
+    "natfa_feeApplication": "Entrance-exam fee is about 50 BGN per exam section; a Bulgarian-language year costs about €3,000",
+    "natfa_campus": "Campus & Facilities",
+    "natfa_campusDesc": "NATFA's campus in central Sofia is built around working theatres and a film complex:",
+    "natfa_theatre": "The NATFA Theatre, where students stage full public productions",
+    "natfa_puppetTheatre": "A dedicated NATFA Puppet Theatre for puppetry students",
+    "natfa_avComplex": "An Educational Audio-visual Complex with film and TV studios and editing suites",
+    "natfa_library": "A specialised academic library of theatre and film literature",
+    "natfa_dormitory": "A student dormitory and canteen for students",
+    "natfa_partnersDesc": "NATFA is Bulgaria's leading theatre and film school, deeply connected internationally:",
+    "natfa_cilect": "Full member of CILECT (International Association of Film and Television Schools) since 1982",
+    "natfa_elia": "Full member of ELIA (European League of Institutes of the Arts) and ENCATC",
+    "natfa_erasmusNetwork": "A wide Erasmus+ and FilmEU network for student and staff mobility across Europe",
+    "natfa_festivals": "Student films and productions shown at international festivals; the academy runs its own showcases",
+    "natfa_alumni": "Alumni include leading Bulgarian actors, directors, cinematographers and playwrights",
+    "natfa_internationalDesc": "NATFA welcomes international students across its stage and screen specialties:",
+    "natfa_englishPrograms": "Selected programmes and modules are taught in English for international students",
+    "natfa_visaSupport": "Admission, visa and residence support for foreign students",
+    "natfa_bulgarianCourse": "A preparatory Bulgarian-language year is available for foreign applicants (about €3,000)",
+    "natfa_accommodation": "Assistance with accommodation and student integration in Sofia",
+    "natfa_recognition": "NACID recognition of foreign diplomas and internationally recognised NATFA degrees"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -1899,6 +2171,25 @@
   "vsu_faculties": {
     "construction": "Faculty of Civil Engineering",
     "architecture": "Faculty of Architecture"
+  },
+  "nha_faculties": {
+    "fine": "Faculty of Fine Arts",
+    "applied": "Faculty of Applied Arts and Design"
+  },
+  "nma_faculties": {
+    "theory": "Theory, Composition and Conducting Faculty",
+    "instrumental": "Instrumental Faculty",
+    "vocal": "Vocal Faculty (incl. Pop & Jazz and Ballet Art)"
+  },
+  "rndc_faculties": {
+    "nsd": "Faculty of National Security and Defence",
+    "command": "Faculty of Command and Staff",
+    "language": "Department of Language Training",
+    "dari": "Institute for Advanced Defence Research (DARI)"
+  },
+  "natfa_faculties": {
+    "stage": "Faculty of Stage Arts",
+    "screen": "Faculty of Screen Arts"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -2692,6 +2983,46 @@
       "tuitionRange": "€430 - €3,000 / year",
       "website": "https://vsu.bg/en_gb/",
       "applyUrl": "https://priem.vsu.bg/?lang=en"
+    },
+    "22": {
+      "name": "National Academy of Art",
+      "description": "Bulgaria's oldest and most prestigious art academy (est. 1896 as the State Drawing School) — painting, sculpture, graphics, scenography, restoration, ceramics, fashion and design, in Sofia.",
+      "longDescription": "The National Academy of Art (NHA) is Bulgaria's oldest and most prestigious institution of fine and applied arts. It was founded on 1 October 1896 as the State Drawing School and grew into a full academy; its landmark red-brick building at 1 Shipka Street in central Sofia was built in 1907. Its alumni include many of Bulgaria's leading artists, sculptors, designers and art scholars.\n\nAround 1,000 students study across two faculties — Fine Arts and Applied Arts and Design — with more than 50 international students and over 50 doctoral candidates. The academy offers about two dozen specialties in visual arts, art studies and design, and the rector is Prof. Georgi Yankov. NHA also has a branch in Burgas and creative residences on the Black Sea coast.\n\nProgrammes span painting, mural painting, sculpture, graphics, book and print graphics, poster and visual communication, scenography, conservation and restoration, art studies, ceramics, textile art, fashion, industrial and advertising design, and photography. Admission is by competitive creative examinations — drawing, composition and specialty tasks — and a portfolio, at both bachelor's and master's level.\n\nThe historic Shipka Street building houses studios and workshops for each specialty, the Academia Gallery and exhibition halls, and the academy stages hundreds of student shows, fashion shows and public art events every year. Annual tuition for 2025/2026 is about €2,308, paid in two semester instalments, with foreign students paying around €3,500; NHA is active in Erasmus+ and partners with academies such as the China Academy of Art.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€2,308 - €3,500 / year",
+      "website": "https://nha.bg/en",
+      "applyUrl": "https://nha.bg/en"
+    },
+    "23": {
+      "name": "National Academy of Music",
+      "description": "Bulgaria's only state academy for professional musicians (est. 1921, named after Prof. Pancho Vladigerov) — instrumental and vocal performance, composition, conducting, musicology, music pedagogy, folk music, pop & jazz and ballet, in Sofia.",
+      "longDescription": "The National Academy of Music \"Prof. Pancho Vladigerov\" (NMA) is the only higher-education institution in Bulgaria dedicated entirely to professional musicians, covering the full range of music-theoretical and performance specialties. It was founded on 21 July 1921 by Royal Decree as the State Music Academy — growing out of the private music school opened in 1904 — and in 2006 was elevated to a National Academy. It is named after the composer and pianist Prof. Pancho Vladigerov.\n\nAround 800 students study across three faculties — Theory, Composition and Conducting; Instrumental; and Vocal (which also covers ballet art and pop & jazz) — and the rector is Prof. Dr. Sava Dimitrov. The academy teaches over 30 specialties at bachelor's, master's and doctoral level, and its distinguished teachers have included Dobri Hristov, Pancho Vladigerov, Lyubomir Pipkov and Marin Goleminov.\n\nProgrammes span piano, string, wind and percussion instruments, accordion and classical guitar, classical, chamber and pop & jazz singing, composition, opera-symphony and choral conducting, musicology, music pedagogy, Bulgarian folk music, ballet, sound engineering, music and stage direction, and the management of music and performing arts. Admission is by competitive practical examinations in the chosen specialty.\n\nThe academy has its own academic symphony orchestra, choir and teaching opera theatre, a specialised music library with rare editions and a sound archive, and concert halls at its two Sofia buildings on Boulevard \"Evlogi i Hristo Georgievi\" and Lyudmil Stoyanov Street. Bulgarian and EU students on state-funded places pay low annual fees from about €450 (music pedagogy) to €850, with a 50% refund on each successfully completed year, while foreign students pay around €7,000-€8,500 per year. NMA is active in Erasmus+ and its graduates win top prizes at international competitions.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€450 - €8,500 / year",
+      "website": "https://nma.bg/en/",
+      "applyUrl": "https://nma.bg/en/admission/"
+    },
+    "24": {
+      "name": "Rakovski National Defence College",
+      "description": "Bulgaria's oldest and only state military academy (est. 1912, named after Georgi Stoykov Rakovski) — national security and defence, strategic leadership, command and staff, cybersecurity and defence management, in Sofia.",
+      "longDescription": "The Rakovski National Defence College — officially the Military Academy \"Georgi Stoykov Rakovski\" — is Bulgaria's oldest and most senior military higher-education institution, and the third-oldest higher school in the country. It was established by decree on 1 March 1912 as the country's first higher military school, opened in 1915 after the Balkan Wars, and was named in 1946 after Georgi Stoykov Rakovski, a leader of the Bulgarian national-liberation movement.\n\nThe academy trains both military officers and civilians in the field of security and defence, and is led by its commandant, Major General Stayko Prokopiev. It is organised into two faculties — National Security and Defence, and Command and Staff — together with a Department of Language Training and the Defence Advanced Research Institute (DARI). Teaching and research cover the professional fields of National Security, Military Science and Psychology.\n\nThe college offers accredited programmes at bachelor's, master's and doctoral level. Bachelor's studies are in Security and Defence and in Cybersecurity, while its sixteen master's specialties span strategic leadership of defence and the armed forces, command and staff, security and defence management, corporate and aviation security, counter-terrorism, protection of the population and critical infrastructure, industrial, energy and climate security, logistics, cybersecurity, communication and information systems, and psychology in security and defence.\n\nServing military students are funded by the Ministry of Defence and study without tuition, while civilian students may enrol in state-subsidised or paid places (paid civilian fees are around €360-€770 per year, with foreign students paying about €3,000). The academy is active in NATO cooperation and Erasmus+, holds strong national accreditation (9.02/10), and hosts the Defence Advanced Research Institute and its \"Voenen Zhurnal\" journal on a historic campus on Boulevard \"Evlogi i Hristo Georgievi\" in central Sofia.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€0 - €3,000 / year",
+      "website": "https://rndc.bg/en/",
+      "applyUrl": "https://rndc.bg/en/"
+    },
+    "25": {
+      "name": "National Academy of Theatre and Film Arts",
+      "description": "Bulgaria's first and most prestigious theatre and film school (est. 1948, named after Krastyo Sarafov) — acting, directing, dramaturgy, scenography, film and TV, cinematography, animation and arts management, in Sofia.",
+      "longDescription": "The National Academy of Theatre and Film Arts \"Krastyo Sarafov\" (NATFA) is Bulgaria's first and most prestigious higher school of stage and screen arts. Founded in 1948 as the country's first higher theatre school, it is named after the celebrated actor Krastyo Sarafov, and its history is closely bound up with the development of Bulgarian theatre and cinema. Its alumni include many of Bulgaria's leading actors, directors, cinematographers and playwrights.\n\nAbout 220 students are admitted each year across two faculties — Stage Arts and Screen Arts — and the rector is Prof. DSc Miroslav Dachev. The academy has been a full member of CILECT (the International Association of Film and Television Schools) since 1982 and of ELIA (the European League of Institutes of the Arts) since 1990, and takes part in the FilmEU alliance.\n\nProgrammes span drama and puppet-theatre acting, movement and dance theatre, performing-arts directing, scenography, theatre studies, management and production, film and TV directing, cinematography, editing, sound, producing and design, screenwriting and playwriting, photography, animation and screen research, with master's specialties in directing, screenwriting, animation, photographic art and arts management. Admission is by competitive creative examinations — auditions, screen tests, portfolios and specialty tasks.\n\nNATFA is built around working stages — the NATFA Theatre and NATFA Puppet Theatre — and an Educational Audio-visual Complex with film and TV studios, plus a specialised library, dormitory and canteen. Bulgarian and EU students pay affordable state fees (about €920 per year for bachelor's and €1,020 for master's), while foreign students pay around €4,000 per year for stage arts and €6,000 for film and TV. The academy is active in Erasmus+ and its student films and productions travel to international festivals.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€920 - €6,000 / year",
+      "website": "https://natfiz.bg/en/",
+      "applyUrl": "https://natfiz.bg/en/european-citizenship/"
     }
   },
   "universityProfiles": {
@@ -3153,6 +3484,90 @@
         "Foreign (non-EU) applicants apply as international students with a recognised diploma",
         "Online or on-site application via the VSU admission office at priem.vsu.bg"
       ]
+    },
+    "22": {
+      "name": "National Academy of Art",
+      "focus": "painting, mural painting, sculpture, graphics and print, poster and visual communication, scenography, conservation and restoration, art studies, and applied arts and design (ceramics, textiles, fashion, industrial and advertising design, photography)",
+      "style": "studio- and atelier-based creative practice, exhibitions and public shows, work with master artists, and Erasmus+ mobility and international residencies",
+      "careers": [
+        "Artist (painter / sculptor / graphic artist)",
+        "Illustrator / graphic designer",
+        "Fashion or textile designer",
+        "Industrial / product designer",
+        "Scenographer / stage designer",
+        "Conservator / restorer",
+        "Art historian / curator"
+      ],
+      "admissionNotes": [
+        "Admission is by competitive creative entrance examinations (drawing, composition and specialty tasks)",
+        "A portfolio of artworks is required or recommended for most specialties",
+        "Foreign applicants apply as international students with a portfolio and language proof",
+        "Both bachelor's and master's specialties are offered across fine and applied arts",
+        "Application through the NHA admission campaign; see nha.bg for dates and requirements"
+      ]
+    },
+    "23": {
+      "name": "National Academy of Music",
+      "focus": "instrumental performance, classical, chamber and pop & jazz singing, composition, opera-symphony and choral conducting, musicology, music pedagogy, Bulgarian folk music, ballet, sound engineering and music management",
+      "style": "one-to-one studio tuition with leading musicians, ensemble and orchestral practice, recitals and public concerts, the academy's symphony orchestra, choir and opera theatre, and Erasmus+ mobility",
+      "careers": [
+        "Concert / orchestral musician",
+        "Soloist / recitalist",
+        "Opera / concert singer",
+        "Composer / arranger",
+        "Conductor",
+        "Music teacher / pedagogue",
+        "Sound engineer / music producer"
+      ],
+      "admissionNotes": [
+        "Admission is by competitive practical entrance examinations in the chosen specialty",
+        "Instrumentalists and singers perform a prepared programme before an examination jury",
+        "Foreign applicants apply as international students; an audition or recording and language proof may be required",
+        "Both bachelor's and master's specialties are offered across the three faculties",
+        "Application through the NMA admission campaign; see nma.bg for dates and requirements"
+      ]
+    },
+    "24": {
+      "name": "Rakovski National Defence College",
+      "focus": "national security and defence, strategic and operational leadership, command and staff, security and defence management, corporate and aviation security, counter-terrorism, critical-infrastructure protection, cybersecurity, defence logistics and security psychology",
+      "style": "postgraduate military and civilian education, staff rides and command-post exercises, NATO-oriented training, applied defence research at DARI, and Erasmus+ mobility",
+      "careers": [
+        "Military / staff officer",
+        "Security and defence manager",
+        "National-security analyst",
+        "Corporate / industrial security manager",
+        "Cybersecurity specialist",
+        "Defence policy / strategy adviser",
+        "Crisis and critical-infrastructure specialist"
+      ],
+      "admissionNotes": [
+        "State-funded military places are filled by competitive entrance exams; officers are assigned by the Ministry of Defence",
+        "Civilian applicants may apply for state-subsidised places (exam-based) or paid places (document-based)",
+        "Master's applicants need a relevant prior degree; some fields expect security or military experience",
+        "Programmes are offered full-time, part-time and by distance learning",
+        "Application through the Rakovski admission campaign; see rndc.bg for dates and requirements"
+      ]
+    },
+    "25": {
+      "name": "National Academy of Theatre and Film Arts",
+      "focus": "drama and puppet-theatre acting, movement theatre, performing-arts directing, scenography, theatre studies and management, film and TV directing, cinematography, editing, sound, producing and design, screenwriting, photography, animation and screen research",
+      "style": "studio- and stage-based creative practice, full theatre productions and student films, work with master artists, festivals and public showcases, and Erasmus+ and FilmEU mobility",
+      "careers": [
+        "Actor (theatre / film / TV)",
+        "Theatre / film / TV director",
+        "Cinematographer / camera operator",
+        "Screenwriter / playwright / dramaturg",
+        "Film editor / sound designer / producer",
+        "Scenographer / production designer",
+        "Animator / photographer / arts manager"
+      ],
+      "admissionNotes": [
+        "Admission is by competitive creative entrance examinations (auditions, screen tests and specialty tasks)",
+        "Most screen and design specialties require a portfolio or a body of creative work",
+        "Foreign applicants apply as international students with a portfolio or audition and language proof",
+        "Both bachelor's and master's specialties are offered across stage and screen arts",
+        "Application through the NATFA admission campaign; see natfiz.bg for dates and requirements"
+      ]
     }
   },
   "programThemes": {
@@ -3266,6 +3681,78 @@
     }
   },
   "programTitles": {
+    "drama-theatre-acting": "Drama Theatre Acting",
+    "puppet-theatre-acting": "Puppet Theatre Acting",
+    "movement-theatre-dance-theatre": "Movement Theatre - Dance Theatre",
+    "performing-arts-directing": "Performing Arts Directing",
+    "theatre-studies-and-theatre-management": "Theatre Studies and Theatre Management",
+    "theatre-production": "Theatre Production",
+    "film-and-tv-directing": "Film and TV Directing",
+    "film-and-tv-cinematography": "Film and TV Cinematography",
+    "film-and-tv-editing": "Film and TV Editing",
+    "film-and-tv-sound": "Film and TV Sound",
+    "film-and-tv-producing": "Film and TV Producing",
+    "film-and-tv-design": "Film and TV Design",
+    "screenwriting-and-playwriting": "Screenwriting and Playwriting",
+    "animation": "Animation",
+    "screen-research-and-journalism": "Screen Research and Journalism",
+    "management-of-performing-arts-and-industries": "Management of Performing Arts and Industries",
+    "theatre-art": "Theatre Art",
+    "public-speech": "Public Speech",
+    "screenwriting": "Screenwriting",
+    "screen-directing": "Screen Directing",
+    "animation-directing": "Animation Directing",
+    "management-of-screen-arts": "Management of Screen Arts",
+    "photographic-art": "Photographic Art",
+    "security-and-defence": "Security and Defence",
+    "strategic-leadership-of-defence-and-the-armed-forces": "Strategic Leadership of Defence and the Armed Forces",
+    "organisation-and-management-of-military-formations-at-operational-level": "Organisation and Management of Military Formations at Operational Level",
+    "national-security-and-defence": "National Security and Defence",
+    "security-and-defence-management": "Security and Defence Management",
+    "public-communications-in-security-and-defence": "Public Communications in Security and Defence",
+    "organisation-and-management-of-corporate-security": "Organisation and Management of Corporate Security",
+    "strategic-leadership-of-security-and-defence": "Strategic Leadership of Security and Defence",
+    "aviation-security": "Aviation Security",
+    "security-and-counter-terrorism": "Security and Counter-Terrorism",
+    "protection-of-the-population-and-critical-infrastructure": "Protection of the Population and Critical Infrastructure",
+    "industrial-energy-and-climate-security": "Industrial, Energy and Climate Security",
+    "security-and-defence-logistics": "Security and Defence Logistics",
+    "communication-and-information-systems-in-security-and-defence": "Communication and Information Systems in Security and Defence",
+    "psychology-in-security-and-defence": "Psychology in Security and Defence",
+    "piano": "Piano",
+    "violin": "Violin",
+    "classical-guitar": "Classical Guitar",
+    "flute": "Flute",
+    "accordion": "Accordion",
+    "percussion-instruments": "Percussion Instruments",
+    "classical-singing": "Classical Singing",
+    "pop-and-jazz": "Pop and Jazz",
+    "composition": "Composition",
+    "choral-conducting": "Choral Conducting",
+    "opera-and-symphony-conducting": "Opera and Symphony Conducting",
+    "chamber-singing": "Chamber Singing",
+    "musicology": "Musicology",
+    "music-pedagogy": "Music Pedagogy",
+    "bulgarian-folk-music": "Bulgarian Folk Music",
+    "ballet-pedagogy": "Ballet Pedagogy",
+    "sound-engineering": "Sound Engineering",
+    "music-and-stage-direction": "Music and Stage Direction",
+    "management-of-music-and-performing-arts": "Management of Music and Performing Arts",
+    "painting": "Painting",
+    "mural-painting": "Mural Painting",
+    "sculpture": "Sculpture",
+    "graphics": "Graphics",
+    "book-illustration-and-print-graphics": "Book, Illustration and Print Graphics",
+    "poster-and-visual-communication": "Poster and Visual Communication",
+    "scenography": "Scenography",
+    "conservation-and-restoration": "Conservation and Restoration",
+    "ceramics": "Ceramics",
+    "textile-art": "Textile Art",
+    "fashion": "Fashion",
+    "industrial-design": "Industrial Design",
+    "advertising-design": "Advertising Design",
+    "photography": "Photography",
+    "art-studies": "Art Studies",
     "construction-management": "Construction Management",
     "fire-safety-and-rescue": "Fire Safety and Rescue",
     "construction-and-architecture-of-buildings-and-structures": "Construction and Architecture of Buildings and Structures",
@@ -3739,6 +4226,906 @@
     "finance": "Finance"
   },
   "programOverrides": {
+    "22:bachelor:painting": {
+      "overview": "Painting at NHA is a cornerstone of Bulgaria's oldest art academy, developing artists' skills in composition, colour and a personal visual language.",
+      "keyFocus": "Painting techniques, composition, colour, drawing and personal artistic expression",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio-based",
+      "partners": [
+        "Faculty of Fine Arts, NHA",
+        "Galleries and art institutions",
+        "The Academia Gallery"
+      ],
+      "highlights": [
+        "Studio training with leading Bulgarian painters",
+        "Regular exhibitions of student work",
+        "A foundation for a career as a professional artist"
+      ],
+      "careers": [
+        "Painter / visual artist",
+        "Exhibiting artist",
+        "Art teacher",
+        "Studio / gallery artist"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams in drawing, painting and composition",
+        "A portfolio of artworks is recommended"
+      ]
+    },
+    "22:bachelor:sculpture": {
+      "overview": "Sculpture at NHA trains artists to work in three dimensions across stone, metal, wood, clay and modern materials.",
+      "keyFocus": "Modelling, carving, casting, form and space, and monumental sculpture",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio- and workshop-based",
+      "partners": [
+        "Faculty of Fine Arts, NHA",
+        "Foundries and sculpture workshops",
+        "Galleries and public-art commissions"
+      ],
+      "highlights": [
+        "Hands-on training in sculpture workshops",
+        "Work across traditional and modern materials",
+        "Public-art and monumental sculpture practice"
+      ],
+      "careers": [
+        "Sculptor",
+        "Public / monumental artist",
+        "Studio artist",
+        "Art teacher"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams in drawing and modelling",
+        "A portfolio of artworks is recommended"
+      ]
+    },
+    "22:bachelor:graphics": {
+      "overview": "Graphics at NHA covers printmaking and graphic art — from etching and lithography to contemporary print and digital techniques.",
+      "keyFocus": "Printmaking, etching, lithography, drawing and graphic composition",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio-based",
+      "partners": [
+        "Faculty of Fine Arts, NHA",
+        "Print studios and galleries",
+        "Publishing and design houses"
+      ],
+      "highlights": [
+        "Traditional and contemporary printmaking techniques",
+        "Well-equipped print workshops",
+        "Careers in fine-art print and illustration"
+      ],
+      "careers": [
+        "Printmaker / graphic artist",
+        "Illustrator",
+        "Book / print artist",
+        "Studio artist"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams in drawing and composition",
+        "A portfolio of artworks is recommended"
+      ]
+    },
+    "22:bachelor:fashion": {
+      "overview": "Fashion at NHA trains fashion designers, combining creative design with garment construction, and is showcased in the academy's celebrated annual fashion shows.",
+      "keyFocus": "Fashion design, garment construction, textiles, and collection development",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio-based",
+      "partners": [
+        "Faculty of Applied Arts and Design, NHA",
+        "Fashion houses and designers",
+        "The fashion and textile industry"
+      ],
+      "highlights": [
+        "Design studios and garment workshops",
+        "The academy's renowned annual fashion shows",
+        "A pathway into the fashion industry"
+      ],
+      "careers": [
+        "Fashion designer",
+        "Textile / garment designer",
+        "Stylist",
+        "Costume designer"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams in drawing, composition and design",
+        "A portfolio of designs is recommended"
+      ]
+    },
+    "22:bachelor:conservation-and-restoration": {
+      "overview": "Conservation and Restoration at NHA trains specialists to preserve and restore paintings, murals, sculptures and cultural artefacts.",
+      "keyFocus": "Conservation science, restoration techniques, art history and materials",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio- and laboratory-based",
+      "partners": [
+        "Faculty of Fine Arts, NHA",
+        "Museums, galleries and heritage bodies",
+        "Conservation laboratories"
+      ],
+      "highlights": [
+        "Combines art skills with conservation science",
+        "Hands-on restoration practice",
+        "Careers in museums and heritage"
+      ],
+      "careers": [
+        "Conservator / restorer",
+        "Museum conservation specialist",
+        "Heritage / artefact specialist",
+        "Restoration studio artist"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams and drawing",
+        "An interest in art history and materials is an advantage"
+      ]
+    },
+    "22:master:scenography": {
+      "overview": "The Scenography master's at NHA specialises artists in stage, set and costume design for theatre, film and performance.",
+      "keyFocus": "Stage and set design, costume design, spatial concept and visual storytelling",
+      "duration": "Master's — 2-3 semesters, full-time; studio- and project-based",
+      "partners": [
+        "Faculty of Fine Arts, NHA",
+        "Theatres and opera houses",
+        "Film and performance productions"
+      ],
+      "highlights": [
+        "Design for theatre, opera, film and performance",
+        "Project work with cultural institutions",
+        "A specialised, in-demand creative field"
+      ],
+      "careers": [
+        "Scenographer / set designer",
+        "Costume designer",
+        "Production / art director",
+        "Exhibition designer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in art or design, with a portfolio",
+        "A background in visual arts or theatre is an advantage"
+      ]
+    },
+    "22:master:industrial-design": {
+      "overview": "The Industrial Design master's at NHA develops designers of products, objects and environments, combining creativity with function and manufacturing.",
+      "keyFocus": "Product design, prototyping, materials and manufacturing, and user-centred design",
+      "duration": "Master's — 2-3 semesters, full-time; studio- and workshop-based",
+      "partners": [
+        "Faculty of Applied Arts and Design, NHA",
+        "Manufacturers and design studios",
+        "Industry partners"
+      ],
+      "highlights": [
+        "Combines art, design and technology",
+        "Prototyping and product-development skills",
+        "Careers across the design and manufacturing industry"
+      ],
+      "careers": [
+        "Industrial / product designer",
+        "Design consultant",
+        "Furniture / object designer",
+        "Design studio lead"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in design or a related field, with a portfolio",
+        "A design or technical background is an advantage"
+      ]
+    },
+    "22:master:advertising-design": {
+      "overview": "The Advertising Design master's at NHA trains designers for visual communication, branding and advertising across print and digital media.",
+      "keyFocus": "Graphic and advertising design, branding, typography and visual communication",
+      "duration": "Master's — 2-3 semesters, full-time; studio- and project-based",
+      "partners": [
+        "Faculty of Applied Arts and Design, NHA",
+        "Advertising and design agencies",
+        "Media and brand companies"
+      ],
+      "highlights": [
+        "Focus on branding and visual communication",
+        "Print and digital design skills",
+        "Strong demand in the creative industries"
+      ],
+      "careers": [
+        "Graphic / advertising designer",
+        "Art director",
+        "Brand / visual identity designer",
+        "Creative studio lead"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in design or a related field, with a portfolio",
+        "A graphic-design background is an advantage"
+      ]
+    },
+    "22:master:art-studies": {
+      "overview": "The Art Studies master's at NHA develops art historians, critics and curators, studying the theory and history of art.",
+      "keyFocus": "Art history, theory and criticism, curatorship and cultural heritage",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Fine Arts, NHA",
+        "Museums, galleries and cultural institutions",
+        "Research and heritage bodies"
+      ],
+      "highlights": [
+        "The theory-and-history counterpart to NHA's studio arts",
+        "Careers in museums, galleries and academia",
+        "Curatorial and critical practice"
+      ],
+      "careers": [
+        "Art historian",
+        "Curator",
+        "Art critic / writer",
+        "Museum / gallery specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; a humanities or arts background is recommended",
+        "An interest in art history and theory is essential"
+      ]
+    },
+    "23:bachelor:piano": {
+      "overview": "Piano at NMA is one of the academy's flagship specialties, developing concert pianists through intensive one-to-one tuition with leading Bulgarian performers.",
+      "keyFocus": "Solo piano repertoire, technique, interpretation, chamber music and accompaniment",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; individual instruction",
+      "partners": [
+        "Instrumental Faculty, NMA",
+        "The academic symphony orchestra and concert halls",
+        "National and international piano competitions"
+      ],
+      "highlights": [
+        "One-to-one lessons with renowned concert pianists",
+        "Regular recitals and public performances",
+        "A foundation for a career as a soloist or accompanist"
+      ],
+      "careers": [
+        "Concert pianist / soloist",
+        "Accompanist / répétiteur",
+        "Chamber musician",
+        "Piano teacher"
+      ],
+      "admissionNotes": [
+        "Admission by a practical entrance exam — a prepared piano programme before a jury",
+        "A strong prior level of instrumental training is expected"
+      ]
+    },
+    "23:bachelor:violin": {
+      "overview": "Violin at NMA trains orchestral and solo violinists through individual tuition, ensemble playing and orchestral practice.",
+      "keyFocus": "Violin repertoire, technique, interpretation, chamber and orchestral playing",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; individual instruction",
+      "partners": [
+        "Instrumental Faculty, NMA",
+        "The academic symphony orchestra",
+        "Chamber-music ensembles and competitions"
+      ],
+      "highlights": [
+        "One-to-one lessons with leading string players",
+        "Orchestral and chamber-music practice",
+        "Preparation for orchestral auditions and solo careers"
+      ],
+      "careers": [
+        "Orchestral violinist",
+        "Soloist / recitalist",
+        "Chamber musician",
+        "Violin teacher"
+      ],
+      "admissionNotes": [
+        "Admission by a practical entrance exam — a prepared violin programme before a jury",
+        "A strong prior level of instrumental training is expected"
+      ]
+    },
+    "23:bachelor:classical-singing": {
+      "overview": "Classical Singing at NMA prepares opera and concert singers, combining vocal technique with stagecraft, languages and repertoire study.",
+      "keyFocus": "Vocal technique, opera and concert repertoire, diction, languages and stage performance",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; individual instruction",
+      "partners": [
+        "Vocal Faculty, NMA",
+        "The teaching opera theatre",
+        "Opera houses and concert stages"
+      ],
+      "highlights": [
+        "One-to-one voice training with experienced singers",
+        "Performance in the academy's opera theatre productions",
+        "Repertoire in several languages and styles"
+      ],
+      "careers": [
+        "Opera singer",
+        "Concert / oratorio soloist",
+        "Ensemble / choir singer",
+        "Voice teacher"
+      ],
+      "admissionNotes": [
+        "Admission by a practical entrance exam — a prepared vocal programme before a jury",
+        "A voice assessment and general musicianship test are part of the exam"
+      ]
+    },
+    "23:bachelor:composition": {
+      "overview": "Composition at NMA develops composers across classical and contemporary idioms, from chamber and orchestral works to music for stage and screen.",
+      "keyFocus": "Composition, orchestration, harmony, counterpoint, music theory and analysis",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; individual instruction",
+      "partners": [
+        "Theory, Composition and Conducting Faculty, NMA",
+        "The academic symphony orchestra and ensembles",
+        "Contemporary-music festivals and performers"
+      ],
+      "highlights": [
+        "One-to-one tuition with established composers",
+        "Performance of student works by academy ensembles",
+        "A rigorous grounding in theory and orchestration"
+      ],
+      "careers": [
+        "Composer",
+        "Arranger / orchestrator",
+        "Film / stage / game composer",
+        "Music theory teacher"
+      ],
+      "admissionNotes": [
+        "Admission by a creative exam — a portfolio of compositions and theory tests",
+        "Strong music-theory and keyboard skills are expected"
+      ]
+    },
+    "23:bachelor:pop-and-jazz": {
+      "overview": "Pop and Jazz at NMA trains performers in jazz and popular music — voice or instrument — with improvisation, ensemble playing and studio work.",
+      "keyFocus": "Jazz and pop performance, improvisation, harmony, ensemble playing and stage practice",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; individual instruction",
+      "partners": [
+        "Vocal Faculty, NMA",
+        "Jazz clubs, festivals and recording studios",
+        "The academy's pop & jazz ensembles"
+      ],
+      "highlights": [
+        "Specialised training in jazz and popular styles",
+        "Improvisation and ensemble performance",
+        "Studio, stage and live-performance experience"
+      ],
+      "careers": [
+        "Jazz / pop performer",
+        "Session / studio musician",
+        "Arranger / bandleader",
+        "Music teacher"
+      ],
+      "admissionNotes": [
+        "Admission by a practical entrance exam — a prepared programme with improvisation",
+        "General musicianship and harmony are tested"
+      ]
+    },
+    "23:master:opera-and-symphony-conducting": {
+      "overview": "The Opera and Symphony Conducting master's at NMA trains conductors to lead orchestras and opera productions, working with the academy's own ensembles.",
+      "keyFocus": "Orchestral and operatic conducting technique, score reading, rehearsal method and repertoire",
+      "duration": "Master's — 2-4 semesters, full-time; individual instruction and podium practice",
+      "partners": [
+        "Theory, Composition and Conducting Faculty, NMA",
+        "The academic symphony orchestra and opera theatre",
+        "Professional orchestras and opera houses"
+      ],
+      "highlights": [
+        "Podium time with the academy's symphony orchestra",
+        "Work on operatic and symphonic repertoire",
+        "Mentoring by experienced conductors"
+      ],
+      "careers": [
+        "Orchestra conductor",
+        "Opera conductor",
+        "Chorus master",
+        "Ensemble / festival director"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in music and strong score-reading skills",
+        "Admission by a practical conducting exam before a jury"
+      ]
+    },
+    "23:master:musicology": {
+      "overview": "The Musicology master's at NMA develops music scholars, critics and researchers, studying the history, theory and analysis of music.",
+      "keyFocus": "Music history and theory, analysis, research methods, criticism and editing",
+      "duration": "Master's — 2-4 semesters, full-time or part-time",
+      "partners": [
+        "Theory, Composition and Conducting Faculty, NMA",
+        "Music libraries, archives and research institutes",
+        "Concert institutions and the media"
+      ],
+      "highlights": [
+        "The scholarly counterpart to NMA's performance specialties",
+        "Access to the academy's rare-editions library and sound archive",
+        "Research, publishing and critical practice"
+      ],
+      "careers": [
+        "Musicologist / researcher",
+        "Music critic / writer",
+        "Editor / archivist",
+        "Lecturer"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; a musicology or performance background is recommended",
+        "Admission includes a theory and research-oriented exam"
+      ]
+    },
+    "23:master:sound-engineering": {
+      "overview": "The Sound Engineering master's at NMA combines musicianship with recording and audio technology, training tonmeisters and music producers.",
+      "keyFocus": "Recording, mixing, sound design, acoustics and music production",
+      "duration": "Master's — 2-4 semesters, full-time; studio-based",
+      "partners": [
+        "Theory, Composition and Conducting Faculty, NMA",
+        "Recording studios and broadcasters",
+        "The academy's concert halls and ensembles"
+      ],
+      "highlights": [
+        "A rare blend of trained musicianship and audio engineering",
+        "Hands-on work in recording studios",
+        "Live and studio production of classical and popular music"
+      ],
+      "careers": [
+        "Tonmeister / sound engineer",
+        "Music producer",
+        "Recording / mixing engineer",
+        "Broadcast audio specialist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; music and technical aptitude are expected",
+        "Admission includes a musicianship and audio-oriented exam"
+      ]
+    },
+    "23:master:management-of-music-and-performing-arts": {
+      "overview": "This master's specialty trains managers for the music and performing-arts sector — concert halls, opera houses, festivals, ensembles and cultural projects.",
+      "keyFocus": "Arts management, cultural project and event management, marketing, funding and copyright",
+      "duration": "Master's — 2-4 semesters, full-time or part-time",
+      "partners": [
+        "Theory, Composition and Conducting Faculty, NMA",
+        "Concert halls, opera houses and festivals",
+        "Cultural institutions and funding bodies"
+      ],
+      "highlights": [
+        "A newer specialty combining music expertise with management",
+        "Project, event and organisation management for the arts",
+        "Careers in concert, opera and festival administration"
+      ],
+      "careers": [
+        "Arts / cultural manager",
+        "Concert / festival producer",
+        "Orchestra or opera administrator",
+        "Cultural-project coordinator"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree; a music or arts background is an advantage",
+        "Admission includes an interview and a specialty-oriented exam"
+      ]
+    },
+    "24:bachelor:security-and-defence": {
+      "overview": "Security and Defence is Rakovski's core bachelor's programme, training officers and civilian specialists in the foundations of national security, defence and the armed forces.",
+      "keyFocus": "National security, defence policy, military organisation, law and leadership fundamentals",
+      "duration": "Bachelor — full-time or part-time; for military and civilian students",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "The Ministry of Defence and the Bulgarian Armed Forces",
+        "NATO and Partnership-for-Peace institutions"
+      ],
+      "highlights": [
+        "The academy's flagship entry-level security and defence degree",
+        "Taught by serving and former officers and defence experts",
+        "A foundation for a career in the armed forces or security sector"
+      ],
+      "careers": [
+        "Military officer",
+        "Security and defence specialist",
+        "Public-administration officer (security)",
+        "Analyst in a security institution"
+      ],
+      "admissionNotes": [
+        "State-funded military places are filled by competitive entrance exams",
+        "Civilian applicants may apply for state-subsidised or paid places"
+      ]
+    },
+    "24:bachelor:cybersecurity": {
+      "overview": "The Cybersecurity bachelor's at Rakovski prepares specialists to protect information systems and networks in the security and defence sector.",
+      "keyFocus": "Network and information security, cyber defence, cryptography and incident response",
+      "duration": "Bachelor — part-time; for military and civilian students",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "The Communication and Information Systems services of the armed forces",
+        "National cyber-security and CERT bodies"
+      ],
+      "highlights": [
+        "Cyber defence taught in a national-security context",
+        "Hands-on work with security tools and simulations",
+        "Strong demand across defence, government and industry"
+      ],
+      "careers": [
+        "Cybersecurity specialist",
+        "Security operations (SOC) analyst",
+        "Network / systems security engineer",
+        "Cyber-defence officer"
+      ],
+      "admissionNotes": [
+        "Offered in a part-time form for working students",
+        "A technical or IT background is an advantage"
+      ]
+    },
+    "24:master:strategic-leadership-of-defence-and-the-armed-forces": {
+      "overview": "This master's — the academy's most senior programme — develops strategic leaders for the defence establishment and the armed forces at the national level.",
+      "keyFocus": "Defence strategy, national security policy, force planning and senior leadership",
+      "duration": "Master's — full-time or distance; for senior officers and defence officials",
+      "partners": [
+        "Faculty of Command and Staff, Rakovski",
+        "The Ministry of Defence and the General Staff",
+        "NATO Defence College and allied institutions"
+      ],
+      "highlights": [
+        "The top strategic-level course for future defence leaders",
+        "Work on real defence-strategy and force-planning problems",
+        "Access to senior serving officers and policymakers"
+      ],
+      "careers": [
+        "Senior / flag officer",
+        "Defence-strategy planner",
+        "Ministry of Defence official",
+        "National-security policy adviser"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree and, typically, command experience",
+        "Primarily for serving senior officers and defence officials"
+      ]
+    },
+    "24:master:national-security-and-defence": {
+      "overview": "National Security and Defence gives a broad master's-level grounding in the policies, institutions and instruments that keep a state secure.",
+      "keyFocus": "National security policy, defence institutions, strategy, law and crisis management",
+      "duration": "Master's — full-time, part-time or distance",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "Security and defence institutions",
+        "NATO and Partnership-for-Peace institutions"
+      ],
+      "highlights": [
+        "A comprehensive view of the national-security system",
+        "Suitable for both military and civilian professionals",
+        "Strong links to Bulgaria's security institutions"
+      ],
+      "careers": [
+        "National-security analyst",
+        "Defence / security policy officer",
+        "Public-administration manager (security)",
+        "Crisis-management specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's or master's degree",
+        "Open to military and civilian applicants"
+      ]
+    },
+    "24:master:security-and-defence-management": {
+      "overview": "Security and Defence Management trains managers to lead organisations, resources and projects in the security and defence sector.",
+      "keyFocus": "Security and defence management, resources, projects, and organisational leadership",
+      "duration": "Master's — full-time, part-time or distance",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "The Ministry of Defence and security agencies",
+        "Defence-industry and security companies"
+      ],
+      "highlights": [
+        "Management skills applied to the defence and security sector",
+        "Resource, project and organisational management",
+        "Careers in defence administration and security firms"
+      ],
+      "careers": [
+        "Security and defence manager",
+        "Resource / project manager (defence)",
+        "Administrator in a security institution",
+        "Defence-industry manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "Open to military and civilian applicants"
+      ]
+    },
+    "24:master:aviation-security": {
+      "overview": "Aviation Security is a specialised master's addressing the protection of civil and military aviation and airspace.",
+      "keyFocus": "Aviation and airspace security, air-traffic protection, threats and regulation",
+      "duration": "Master's — full-time, part-time or distance",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "Civil-aviation and air-force authorities",
+        "Airport and airspace security bodies"
+      ],
+      "highlights": [
+        "A niche specialty in a high-demand security field",
+        "Covers civil-aviation and military-aviation security",
+        "Links to aviation and air-defence institutions"
+      ],
+      "careers": [
+        "Aviation-security specialist",
+        "Airport / airspace security manager",
+        "Air-defence officer",
+        "Civil-aviation regulator"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "An aviation or security background is an advantage"
+      ]
+    },
+    "24:master:security-and-counter-terrorism": {
+      "overview": "This master's prepares specialists to counter radicalisation and terrorism and to protect society from asymmetric threats.",
+      "keyFocus": "Counter-terrorism, counter-radicalisation, intelligence and asymmetric threats",
+      "duration": "Master's — full-time, part-time or distance",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "Security and intelligence agencies",
+        "Law-enforcement and counter-terrorism bodies"
+      ],
+      "highlights": [
+        "Focused on one of today's most pressing security challenges",
+        "Combines policy, intelligence and operational perspectives",
+        "Links to intelligence and law-enforcement institutions"
+      ],
+      "careers": [
+        "Counter-terrorism analyst",
+        "Intelligence officer",
+        "Security-agency specialist",
+        "Risk and threat analyst"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "A security, military or law-enforcement background is an advantage"
+      ]
+    },
+    "24:master:communication-and-information-systems-in-security-and-defence": {
+      "overview": "This master's develops specialists in the communication and information systems (CIS) that underpin modern command, control and defence.",
+      "keyFocus": "Military communication and information systems, C4ISR, networks and cyber resilience",
+      "duration": "Master's — full-time, part-time or distance",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "The CIS services of the armed forces",
+        "Defence-technology and telecommunications partners"
+      ],
+      "highlights": [
+        "The technical backbone of command and control",
+        "Covers networks, C4ISR and cyber resilience",
+        "Strong demand in defence and telecommunications"
+      ],
+      "careers": [
+        "CIS / signals officer",
+        "Defence communications engineer",
+        "C4ISR systems specialist",
+        "Network / cyber-resilience specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "A technical or engineering background is an advantage"
+      ]
+    },
+    "24:master:psychology-in-security-and-defence": {
+      "overview": "Psychology in Security and Defence applies psychology to the military and security context — from selection and resilience to leadership and crisis response.",
+      "keyFocus": "Military and security psychology, resilience, selection, leadership and crisis response",
+      "duration": "Master's — full-time, part-time or distance",
+      "partners": [
+        "Faculty of National Security and Defence, Rakovski",
+        "Military and security psychological services",
+        "Crisis-response and support institutions"
+      ],
+      "highlights": [
+        "Psychology applied to defence and security roles",
+        "Covers selection, resilience, leadership and crisis support",
+        "The only field at Rakovski in the Psychology professional area"
+      ],
+      "careers": [
+        "Military / security psychologist",
+        "Personnel-selection specialist",
+        "Crisis and support counsellor",
+        "Human-factors / resilience specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree, usually in psychology",
+        "Open to military and civilian applicants"
+      ]
+    },
+    "25:bachelor:drama-theatre-acting": {
+      "overview": "Drama Theatre Acting is NATFA's flagship programme, training stage and screen actors through the academy's renowned acting studios and public productions.",
+      "keyFocus": "Acting technique, voice and movement, role-building, and stage and camera performance",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio- and stage-based",
+      "partners": [
+        "Faculty of Stage Arts, NATFA",
+        "The NATFA Theatre and professional theatres",
+        "Film and TV productions"
+      ],
+      "highlights": [
+        "Intensive acting-studio training with leading directors and actors",
+        "Full public productions staged at the NATFA Theatre",
+        "A foundation for a career in theatre, film and television"
+      ],
+      "careers": [
+        "Theatre actor",
+        "Film / TV actor",
+        "Voice / dubbing artist",
+        "Drama teacher"
+      ],
+      "admissionNotes": [
+        "Admission by a competitive audition before an examination jury",
+        "Prepared monologues, songs and movement tasks are usually required"
+      ]
+    },
+    "25:bachelor:film-and-tv-directing": {
+      "overview": "Film and TV Directing trains directors for cinema and television, from concept and script to shooting and editing, in NATFA's audio-visual complex.",
+      "keyFocus": "Directing for film and TV, working with actors, visual storytelling and post-production",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; production-based",
+      "partners": [
+        "Faculty of Screen Arts, NATFA",
+        "The Educational Audio-visual Complex and film studios",
+        "Film and TV production companies"
+      ],
+      "highlights": [
+        "Hands-on direction of student short films and exercises",
+        "Work with cinematography, editing and sound students",
+        "Films shown at national and international festivals"
+      ],
+      "careers": [
+        "Film director",
+        "TV director",
+        "Documentary / commercial director",
+        "Creative producer"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams and an interview before a jury",
+        "A portfolio of creative work or short films is expected"
+      ]
+    },
+    "25:bachelor:film-and-tv-cinematography": {
+      "overview": "Film and TV Cinematography trains cinematographers (directors of photography) to shape the image with camera, lighting and composition.",
+      "keyFocus": "Camera, lighting, composition, colour and the language of the moving image",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; production-based",
+      "partners": [
+        "Faculty of Screen Arts, NATFA",
+        "The Educational Audio-visual Complex and film studios",
+        "Film and TV production companies"
+      ],
+      "highlights": [
+        "Technical and artistic training in cinematography",
+        "Well-equipped camera and lighting facilities",
+        "Collaboration on student films across specialties"
+      ],
+      "careers": [
+        "Cinematographer / director of photography",
+        "Camera operator",
+        "Lighting specialist (gaffer)",
+        "Colourist"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams, including a photography portfolio",
+        "A strong visual sense and technical aptitude are expected"
+      ]
+    },
+    "25:bachelor:animation": {
+      "overview": "Animation trains animation artists and directors across drawn, puppet and digital techniques, from storyboard to finished short film.",
+      "keyFocus": "Animation techniques, character and movement, storyboarding and directing",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio-based",
+      "partners": [
+        "Faculty of Screen Arts, NATFA",
+        "Animation studios and the audio-visual complex",
+        "Animation festivals and production houses"
+      ],
+      "highlights": [
+        "Training across traditional and digital animation",
+        "Bulgaria has a strong animation heritage",
+        "Student films shown at animation festivals"
+      ],
+      "careers": [
+        "Animator",
+        "Animation director",
+        "Storyboard / concept artist",
+        "Motion-graphics designer"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams and a drawing / animation portfolio",
+        "Drawing skills and imagination are essential"
+      ]
+    },
+    "25:bachelor:scenography": {
+      "overview": "Scenography at NATFA trains stage and production designers to create the visual world of theatre, opera and screen productions.",
+      "keyFocus": "Set and costume design, space, light and the visual concept of a production",
+      "duration": "Bachelor — 4 years (8 semesters), full-time; studio-based",
+      "partners": [
+        "Faculty of Stage Arts, NATFA",
+        "The NATFA Theatre and professional theatres",
+        "Opera houses and film productions"
+      ],
+      "highlights": [
+        "Design of real student productions on stage",
+        "Work with directors, actors and technicians",
+        "Careers across theatre, opera, film and events"
+      ],
+      "careers": [
+        "Scenographer / set designer",
+        "Costume designer",
+        "Production designer (film / TV)",
+        "Exhibition / event designer"
+      ],
+      "admissionNotes": [
+        "Admission by creative entrance exams and a design portfolio",
+        "Drawing and spatial-design skills are expected"
+      ]
+    },
+    "25:master:screen-directing": {
+      "overview": "The Screen Directing master's develops directors' authorship and craft for film and television at an advanced level.",
+      "keyFocus": "Advanced film / TV directing, authorship, dramaturgy and production",
+      "duration": "Master's — 2-3 semesters, full-time; production-based",
+      "partners": [
+        "Faculty of Screen Arts, NATFA",
+        "The Educational Audio-visual Complex",
+        "Film and TV production companies and festivals"
+      ],
+      "highlights": [
+        "Advanced, author-driven directing practice",
+        "A graduation film as the centrepiece of the degree",
+        "Mentoring by established directors"
+      ],
+      "careers": [
+        "Film / TV director",
+        "Author-director",
+        "Documentary director",
+        "Creative producer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree and a creative portfolio",
+        "Admission includes an interview and a directing project"
+      ]
+    },
+    "25:master:screenwriting": {
+      "overview": "The Screenwriting master's develops screenwriters for film and television, from idea and structure to finished script.",
+      "keyFocus": "Dramaturgy, story structure, character and writing for the screen",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Screen Arts, NATFA",
+        "Film and TV production companies",
+        "Script-development and festival programmes"
+      ],
+      "highlights": [
+        "Intensive writing workshops and script development",
+        "Feedback from working screenwriters and directors",
+        "A completed screenplay as the graduation work"
+      ],
+      "careers": [
+        "Screenwriter",
+        "Script editor / story consultant",
+        "Series / TV writer",
+        "Dramaturg"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree and writing samples",
+        "Admission includes an interview and a writing task"
+      ]
+    },
+    "25:master:management-of-screen-arts": {
+      "overview": "Management of Screen Arts trains producers and managers for the film, TV and screen industries — from development and financing to distribution.",
+      "keyFocus": "Film and media producing, project development, financing, marketing and distribution",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Screen Arts, NATFA",
+        "Production companies, broadcasters and funds",
+        "Festivals and distribution networks"
+      ],
+      "highlights": [
+        "Producing and management for the screen industries",
+        "Covers development, financing and distribution",
+        "Strong links to the film and media sector"
+      ],
+      "careers": [
+        "Film / TV producer",
+        "Production manager",
+        "Distribution / festival manager",
+        "Media project manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "A media, arts or management background is an advantage"
+      ]
+    },
+    "25:master:theatre-art": {
+      "overview": "The Theatre Art master's deepens artistic and scholarly work in theatre, for practitioners and researchers of the stage.",
+      "keyFocus": "Theatre theory and practice, dramaturgy, criticism and advanced stage work",
+      "duration": "Master's — 2-3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Stage Arts, NATFA",
+        "The NATFA Theatre and professional theatres",
+        "Theatre institutions and the media"
+      ],
+      "highlights": [
+        "Advanced study of the art and theory of theatre",
+        "Bridges stage practice and scholarship",
+        "Careers in theatre-making, criticism and academia"
+      ],
+      "careers": [
+        "Theatre-maker / director",
+        "Dramaturg",
+        "Theatre critic / scholar",
+        "Arts educator"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "A theatre or humanities background is recommended"
+      ]
+    },
     "21:bachelor:construction-of-buildings-and-facilities": {
       "overview": "Construction of Buildings and Facilities is VSU's flagship programme, training civil engineers to design, build and maintain buildings and structures.",
       "keyFocus": "Structural design, building technology, materials, and construction management",
@@ -11692,5 +13079,88 @@
     "architectural-heritage-preservation": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" },
     "urbanism": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" },
     "design": { "tuition": "€700/yr (BG/EU) · €3,000 (foreign)", "facultyKey": "architecture" }
+  },
+  "nha_programInfo": {
+    "painting": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "mural-painting": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "sculpture": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "graphics": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "book-illustration-and-print-graphics": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "poster-and-visual-communication": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "scenography": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "conservation-and-restoration": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "art-studies": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "fine" },
+    "ceramics": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "applied" },
+    "textile-art": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "applied" },
+    "fashion": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "applied" },
+    "industrial-design": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "applied" },
+    "advertising-design": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "applied" },
+    "photography": { "tuition": "€2,308/yr (BG/EU) · €3,500 (foreign)", "facultyKey": "applied" }
+  },
+  "nma_programInfo": {
+    "piano": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "violin": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "classical-guitar": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "flute": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "accordion": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "percussion-instruments": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "bulgarian-folk-music": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "instrumental" },
+    "classical-singing": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "vocal" },
+    "pop-and-jazz": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "vocal" },
+    "chamber-singing": { "tuition": "€900/yr (BG/EU) · €8,500 (foreign)", "facultyKey": "vocal" },
+    "ballet-pedagogy": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "vocal" },
+    "composition": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "theory" },
+    "choral-conducting": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "theory" },
+    "opera-and-symphony-conducting": { "tuition": "€900/yr (BG/EU) · €8,500 (foreign)", "facultyKey": "theory" },
+    "musicology": { "tuition": "€850/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "theory" },
+    "music-pedagogy": { "tuition": "€450/yr (BG/EU) · €7,000 (foreign)", "facultyKey": "theory" },
+    "sound-engineering": { "tuition": "€900/yr (BG/EU) · €8,500 (foreign)", "facultyKey": "theory" },
+    "music-and-stage-direction": { "tuition": "€900/yr (BG/EU) · €8,500 (foreign)", "facultyKey": "theory" },
+    "management-of-music-and-performing-arts": { "tuition": "€900/yr (BG/EU) · €8,500 (foreign)", "facultyKey": "theory" }
+  },
+  "rndc_programInfo": {
+    "security-and-defence": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "cybersecurity": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "strategic-leadership-of-defence-and-the-armed-forces": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "command" },
+    "organisation-and-management-of-military-formations-at-operational-level": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "command" },
+    "national-security-and-defence": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "security-and-defence-management": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "public-communications-in-security-and-defence": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "organisation-and-management-of-corporate-security": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "strategic-leadership-of-security-and-defence": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "aviation-security": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "security-and-counter-terrorism": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "protection-of-the-population-and-critical-infrastructure": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "industrial-energy-and-climate-security": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "security-and-defence-logistics": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "communication-and-information-systems-in-security-and-defence": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" },
+    "psychology-in-security-and-defence": { "tuition": "€0 (military) · €770/yr (civilian) · €3,000 (foreign)", "facultyKey": "nsd" }
+  },
+  "natfa_programInfo": {
+    "drama-theatre-acting": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "puppet-theatre-acting": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "movement-theatre-dance-theatre": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "performing-arts-directing": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "scenography": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "theatre-studies-and-theatre-management": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "theatre-production": { "tuition": "€920/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "management-of-performing-arts-and-industries": { "tuition": "€1,020/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "theatre-art": { "tuition": "€1,020/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "public-speech": { "tuition": "€1,020/yr (BG/EU) · €4,000 (foreign)", "facultyKey": "stage" },
+    "film-and-tv-directing": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "film-and-tv-cinematography": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "film-and-tv-editing": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "film-and-tv-sound": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "film-and-tv-producing": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "film-and-tv-design": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "screenwriting-and-playwriting": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "photography": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "animation": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "screen-research-and-journalism": { "tuition": "€920/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "screenwriting": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "screen-directing": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "animation-directing": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "management-of-screen-arts": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
+    "photographic-art": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" }
   }
 }

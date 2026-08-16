@@ -6,7 +6,7 @@
  * platform imports so it can be imported from anywhere without side effects.
  */
 
-export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21";
+export type UniversityId = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23" | "24" | "25";
 
 export type UniversityCategory =
   | "Engineering"
@@ -16,7 +16,11 @@ export type UniversityCategory =
   | "Law"
   | "Architecture"
   | "Maritime"
-  | "Sports";
+  | "Sports"
+  | "Arts"
+  | "Security"
+  | "Military"
+  | "Defence";
 
 export type DegreeLevel = "Bachelor" | "Master";
 

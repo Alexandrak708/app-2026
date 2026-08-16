@@ -787,6 +787,130 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Design",
     ],
   },
+  "22": {
+    bachelor: [
+      "Painting",
+      "Mural Painting",
+      "Sculpture",
+      "Graphics",
+      "Book, Illustration and Print Graphics",
+      "Poster and Visual Communication",
+      "Scenography",
+      "Conservation and Restoration",
+      "Ceramics",
+      "Textile Art",
+      "Fashion",
+      "Industrial Design",
+      "Advertising Design",
+      "Photography",
+    ],
+    master: [
+      "Painting",
+      "Sculpture",
+      "Graphics",
+      "Mural Painting",
+      "Poster and Visual Communication",
+      "Scenography",
+      "Art Studies",
+      "Conservation and Restoration",
+      "Ceramics",
+      "Textile Art",
+      "Fashion",
+      "Industrial Design",
+      "Advertising Design",
+      "Photography",
+    ],
+  },
+  "23": {
+    bachelor: [
+      "Piano",
+      "Violin",
+      "Classical Guitar",
+      "Flute",
+      "Accordion",
+      "Percussion Instruments",
+      "Classical Singing",
+      "Pop and Jazz",
+      "Composition",
+      "Choral Conducting",
+      "Musicology",
+      "Music Pedagogy",
+      "Bulgarian Folk Music",
+      "Ballet Pedagogy",
+    ],
+    master: [
+      "Piano",
+      "Violin",
+      "Classical Guitar",
+      "Composition",
+      "Opera and Symphony Conducting",
+      "Choral Conducting",
+      "Classical Singing",
+      "Chamber Singing",
+      "Pop and Jazz",
+      "Musicology",
+      "Music Pedagogy",
+      "Sound Engineering",
+      "Music and Stage Direction",
+      "Management of Music and Performing Arts",
+    ],
+  },
+  "24": {
+    bachelor: [
+      "Security and Defence",
+      "Cybersecurity",
+    ],
+    master: [
+      "Strategic Leadership of Defence and the Armed Forces",
+      "Organisation and Management of Military Formations at Operational Level",
+      "Security and Defence",
+      "National Security and Defence",
+      "Security and Defence Management",
+      "Public Communications in Security and Defence",
+      "Organisation and Management of Corporate Security",
+      "Strategic Leadership of Security and Defence",
+      "Aviation Security",
+      "Security and Counter-Terrorism",
+      "Protection of the Population and Critical Infrastructure",
+      "Industrial, Energy and Climate Security",
+      "Security and Defence Logistics",
+      "Cybersecurity",
+      "Communication and Information Systems in Security and Defence",
+      "Psychology in Security and Defence",
+    ],
+  },
+  "25": {
+    bachelor: [
+      "Drama Theatre Acting",
+      "Puppet Theatre Acting",
+      "Movement Theatre - Dance Theatre",
+      "Performing Arts Directing",
+      "Scenography",
+      "Theatre Studies and Theatre Management",
+      "Theatre Production",
+      "Film and TV Directing",
+      "Film and TV Cinematography",
+      "Film and TV Editing",
+      "Film and TV Sound",
+      "Film and TV Producing",
+      "Film and TV Design",
+      "Screenwriting and Playwriting",
+      "Photography",
+      "Animation",
+      "Screen Research and Journalism",
+    ],
+    master: [
+      "Management of Performing Arts and Industries",
+      "Theatre Art",
+      "Performing Arts Directing",
+      "Public Speech",
+      "Screenwriting",
+      "Screen Directing",
+      "Animation Directing",
+      "Management of Screen Arts",
+      "Photographic Art",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1144,6 +1268,58 @@ function getVsuProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getNhaProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nha_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getNmaProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nma_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getRndcProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`rndc_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getNatfaProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`natfa_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1336,6 +1512,46 @@ function getNsaFaculty(facultyKey: string): string | null {
 
 function getVsuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`vsu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNhaFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nha_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNmaFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nma_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getRndcFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`rndc_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNatfaFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`natfa_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -1570,6 +1786,42 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (vsuInfo.tuition) summary.tuition = vsuInfo.tuition;
         if (vsuInfo.facultyKey) {
           const facultyName = getVsuFaculty(vsuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "22") {
+      const nhaInfo = getNhaProgramInfo(slug);
+      if (nhaInfo) {
+        if (nhaInfo.tuition) summary.tuition = nhaInfo.tuition;
+        if (nhaInfo.facultyKey) {
+          const facultyName = getNhaFaculty(nhaInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "23") {
+      const nmaInfo = getNmaProgramInfo(slug);
+      if (nmaInfo) {
+        if (nmaInfo.tuition) summary.tuition = nmaInfo.tuition;
+        if (nmaInfo.facultyKey) {
+          const facultyName = getNmaFaculty(nmaInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "24") {
+      const rndcInfo = getRndcProgramInfo(slug);
+      if (rndcInfo) {
+        if (rndcInfo.tuition) summary.tuition = rndcInfo.tuition;
+        if (rndcInfo.facultyKey) {
+          const facultyName = getRndcFaculty(rndcInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "25") {
+      const natfaInfo = getNatfaProgramInfo(slug);
+      if (natfaInfo) {
+        if (natfaInfo.tuition) summary.tuition = natfaInfo.tuition;
+        if (natfaInfo.facultyKey) {
+          const facultyName = getNatfaFaculty(natfaInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -1853,6 +2105,46 @@ export function buildProgramDetail(
       if (vsuInfo.tuition) result.tuition = vsuInfo.tuition;
       if (vsuInfo.facultyKey) {
         const facultyName = getVsuFaculty(vsuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "22" && normalizedSlug) {
+    const nhaInfo = getNhaProgramInfo(normalizedSlug);
+
+    if (nhaInfo) {
+      if (nhaInfo.tuition) result.tuition = nhaInfo.tuition;
+      if (nhaInfo.facultyKey) {
+        const facultyName = getNhaFaculty(nhaInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "23" && normalizedSlug) {
+    const nmaInfo = getNmaProgramInfo(normalizedSlug);
+
+    if (nmaInfo) {
+      if (nmaInfo.tuition) result.tuition = nmaInfo.tuition;
+      if (nmaInfo.facultyKey) {
+        const facultyName = getNmaFaculty(nmaInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "24" && normalizedSlug) {
+    const rndcInfo = getRndcProgramInfo(normalizedSlug);
+
+    if (rndcInfo) {
+      if (rndcInfo.tuition) result.tuition = rndcInfo.tuition;
+      if (rndcInfo.facultyKey) {
+        const facultyName = getRndcFaculty(rndcInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "25" && normalizedSlug) {
+    const natfaInfo = getNatfaProgramInfo(normalizedSlug);
+
+    if (natfaInfo) {
+      if (natfaInfo.tuition) result.tuition = natfaInfo.tuition;
+      if (natfaInfo.facultyKey) {
+        const facultyName = getNatfaFaculty(natfaInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
