@@ -911,6 +911,25 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Photographic Art",
     ],
   },
+  "26": {
+    bachelor: [
+      "Counteraction to Crime and Public Order",
+      "Border Police",
+      "Protection of National Security",
+      "Public Administration",
+      "Fire Safety and Protection of the Population",
+    ],
+    master: [
+      "Counteraction to Crime and Public Order",
+      "Protection of National Security",
+      "Strategic Management of Security and Public Order",
+      "Psychological Support for Operational-Investigative Activities",
+      "Public Administration",
+      "Fire and Emergency Safety",
+      "Fire Safety and Protection of the Population",
+      "Border Police",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1320,6 +1339,19 @@ function getNatfaProgramInfo(programSlug: string): { tuition?: string; facultyKe
   };
 }
 
+function getAmvrProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`amvr_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1552,6 +1584,16 @@ function getRndcFaculty(facultyKey: string): string | null {
 
 function getNatfaFaculty(facultyKey: string): string | null {
   const name = i18n.t(`natfa_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getAmvrFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`amvr_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -1822,6 +1864,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (natfaInfo.tuition) summary.tuition = natfaInfo.tuition;
         if (natfaInfo.facultyKey) {
           const facultyName = getNatfaFaculty(natfaInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "26") {
+      const amvrInfo = getAmvrProgramInfo(slug);
+      if (amvrInfo) {
+        if (amvrInfo.tuition) summary.tuition = amvrInfo.tuition;
+        if (amvrInfo.facultyKey) {
+          const facultyName = getAmvrFaculty(amvrInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2145,6 +2196,16 @@ export function buildProgramDetail(
       if (natfaInfo.tuition) result.tuition = natfaInfo.tuition;
       if (natfaInfo.facultyKey) {
         const facultyName = getNatfaFaculty(natfaInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "26" && normalizedSlug) {
+    const amvrInfo = getAmvrProgramInfo(normalizedSlug);
+
+    if (amvrInfo) {
+      if (amvrInfo.tuition) result.tuition = amvrInfo.tuition;
+      if (amvrInfo.facultyKey) {
+        const facultyName = getAmvrFaculty(amvrInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

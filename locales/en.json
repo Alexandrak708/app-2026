@@ -616,6 +616,18 @@
       "labsText": "Stage & screen specialties",
       "tuitionFreeLabel": "1948",
       "tuitionFreeText": "First theatre school in Bulgaria"
+    },
+    "26": {
+      "yearsTradition": "145+",
+      "bachelorPrograms": "5",
+      "masterPrograms": "8",
+      "internationalPartners": "20+",
+      "countries": "15",
+      "studentsGraduated": "10K+",
+      "labs": "2",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "For cadets (MoI-funded)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -1068,6 +1080,24 @@
       {
         "range": "€6,000",
         "label": "Foreign, film & TV (per year)"
+      }
+    ],
+    "26": [
+      {
+        "range": "€0",
+        "label": "Cadets (MoI-funded, tuition-free)"
+      },
+      {
+        "range": "€360",
+        "label": "Civilian state-subsidised (BG/EU, per year)"
+      },
+      {
+        "range": "€640",
+        "label": "Civilian paid tuition (BG/EU, per year)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students (per year)"
       }
     ]
   },
@@ -2004,7 +2034,44 @@
     "natfa_visaSupport": "Admission, visa and residence support for foreign students",
     "natfa_bulgarianCourse": "A preparatory Bulgarian-language year is available for foreign applicants (about €3,000)",
     "natfa_accommodation": "Assistance with accommodation and student integration in Sofia",
-    "natfa_recognition": "NACID recognition of foreign diplomas and internationally recognised NATFA degrees"
+    "natfa_recognition": "NACID recognition of foreign diplomas and internationally recognised NATFA degrees",
+    "amvr_scholarshipsDesc": "As a state Ministry-of-Interior academy, it funds cadets fully and supports civilian students:",
+    "amvr_cadetFunding": "Cadets are fully funded by the Ministry of the Interior — tuition-free study, accommodation and a state-guaranteed stipend",
+    "amvr_meritScholarships": "Merit scholarships from the state budget for full-time civilian students with strong results",
+    "amvr_socialScholarships": "Social (need-based) scholarships for students who meet income and performance criteria",
+    "amvr_exemptCategories": "Tuition exemptions for orphans, students with disabilities and other protected categories",
+    "amvr_erasmusGrants": "Erasmus+ mobility and CEPOL exchange opportunities for study or training abroad",
+    "amvr_applicationDesc": "Admission runs on two tracks — cadets (uniformed) and civilian students:",
+    "amvr_appCadets": "Cadet places are filled by competitive entrance exams plus medical and physical-fitness tests",
+    "amvr_appCivilian": "Civilian applicants may apply for state-subsidised places (exam-based) or paid student places",
+    "amvr_appMaster": "Master's applicants need a relevant prior degree; some fields expect service experience",
+    "amvr_appDocuments": "Required documents: prior diploma, application form and the application fee",
+    "amvr_appOnline": "Apply through the Academy admission campaign; see mvr.bg/academy for dates and deadlines",
+    "amvr_masterFeesDesc": "Fees depend on the student category; cadets study without tuition (civilian figures are indicative):",
+    "amvr_feeCadets": "Cadets pay no tuition — the whole course is funded by the Ministry of the Interior",
+    "amvr_feeState": "Civilian state-subsidised student places carry low annual fees, about €360 per year",
+    "amvr_feePaid": "Civilian paid tuition is about €640 per year, depending on the specialty and form of study",
+    "amvr_feeForeign": "Foreign (non-EU) students pay a higher annual fee, around €3,000",
+    "amvr_feeApplication": "An application fee applies; fee amounts are set annually by the Council of Ministers",
+    "amvr_campus": "Campus & Facilities",
+    "amvr_campusDesc": "The Academy's campus is in the Mladost district of Sofia, on historic former college grounds:",
+    "amvr_building": "Campus at 1 Aleksandar Malinov Blvd, Mladost, Sofia, on the former American College grounds",
+    "amvr_ranges": "Tactical, shooting and physical-training facilities for police and fire-safety training",
+    "amvr_institute": "A Scientific Research Institute for applied security and forensic research",
+    "amvr_library": "A specialised library of law, security and forensic literature",
+    "amvr_dormitory": "Cadet dormitories, a canteen and sports facilities on campus",
+    "amvr_partnersDesc": "The Academy is closely tied to Bulgaria's Ministry of the Interior and EU partners:",
+    "amvr_ministry": "Close links with the Ministry of the Interior, the police and other security agencies",
+    "amvr_cepol": "Cooperation with CEPOL (the EU Agency for Law Enforcement Training) and foreign police academies",
+    "amvr_erasmusNetwork": "An Erasmus+ network for student and staff mobility across Europe",
+    "amvr_alumni": "Alumni serve as senior police, border-police, security and fire-safety officers",
+    "amvr_international": "International cooperation on law-enforcement training and security research",
+    "amvr_internationalDesc": "The Academy admits international students to selected specialties:",
+    "amvr_foreignStudents": "International students may study alongside Bulgarian cadets and students",
+    "amvr_englishSupport": "Selected instruction and materials in English for international students",
+    "amvr_visaSupport": "Admission, visa and residence support for foreign students",
+    "amvr_accommodation": "Assistance with accommodation and integration in Sofia",
+    "amvr_recognition": "NACID recognition of foreign diplomas and internationally recognised Academy degrees"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -2196,6 +2263,12 @@
   "natfa_faculties": {
     "stage": "Faculty of Stage Arts",
     "screen": "Faculty of Screen Arts"
+  },
+  "amvr_faculties": {
+    "police": "Faculty of Police",
+    "fire": "Faculty of Fire Safety and Civil Protection",
+    "institute": "Scientific Research Institute",
+    "cpo": "Centre for Vocational Training"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -3029,6 +3102,16 @@
       "tuitionRange": "€920 - €6,000 / year",
       "website": "https://natfiz.bg/en/",
       "applyUrl": "https://natfiz.bg/en/european-citizenship/"
+    },
+    "26": {
+      "name": "Academy of the Ministry of the Interior",
+      "description": "Bulgaria's state academy for police, security and fire-safety officers (police education since 1879, university status 2002) — counteraction to crime, national security, border police, public administration and fire safety, in Sofia.",
+      "longDescription": "The Academy of the Ministry of the Interior (Academy of the MoI) is Bulgaria's specialised state higher-education institution for police, security and fire-safety professionals. Its lineage goes back to the police-administrative department founded in 1879, through the Higher Special School and the Higher Institute (VIPOND); it gained university status as the \"Academy of the Ministry of the Interior\" in 2002. It trains civil servants for the Ministry of the Interior and specialists for other law-enforcement and security bodies.\n\nThe Academy is organised into two faculties — Police, and Fire Safety and Civil Protection — together with a Scientific Research Institute and a Centre for Vocational Training, and is led by its rector, Senior Commissioner Assoc. Prof. Dr. Milorad Yordanov. Its campus is in the Mladost district of Sofia (1 Aleksandar Malinov Blvd), on the historic former grounds of the American College.\n\nThe Academy offers accredited bachelor's, master's and doctoral programmes in the professional fields of national security and law. Bachelor's specialties include counteraction to crime and public order, border police, protection of national security, public administration, and fire safety and protection of the population, while master's specialties add strategic management of security and public order, psychological support for operational-investigative activities, and fire and emergency safety.\n\nCadets study on a fully Ministry-of-Interior-funded basis — four years of tuition-free education, guaranteed accommodation and a state-guaranteed stipend for the whole course, followed by appointment in the Ministry of the Interior. Civilian students may enrol in state-subsidised or paid places (paid civilian fees are around €360-€640 per year, with foreign students paying about €3,000). The Academy takes part in Erasmus+ and CEPOL cooperation and works closely with the structures of the Ministry of the Interior.",
+      "location": "Sofia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€0 - €3,000 / year",
+      "website": "https://www.mvr.bg/academy/en",
+      "applyUrl": "https://www.mvr.bg/academy/en"
     }
   },
   "universityProfiles": {
@@ -3574,6 +3657,27 @@
         "Both bachelor's and master's specialties are offered across stage and screen arts",
         "Application through the NATFA admission campaign; see natfiz.bg for dates and requirements"
       ]
+    },
+    "26": {
+      "name": "Academy of the Ministry of the Interior",
+      "focus": "counteraction to crime and public order, protection of national security, border police, strategic security and public-order management, psychological support for operational-investigative work, public administration, and fire safety and civil protection",
+      "style": "police and security education for cadets and civilians, field and tactical training, work with the structures of the Ministry of the Interior, applied security research, and Erasmus+ / CEPOL cooperation",
+      "careers": [
+        "Police officer / investigator",
+        "Border-police officer",
+        "National-security officer",
+        "Fire-safety / civil-protection officer",
+        "Security manager",
+        "Public-administration officer",
+        "Criminologist / security analyst"
+      ],
+      "admissionNotes": [
+        "Cadet places are filled by competitive entrance exams plus medical and physical-fitness tests; graduates are appointed in the Ministry of the Interior",
+        "Civilian applicants may apply for state-subsidised places (exam-based) or paid student places",
+        "Master's applicants need a relevant prior degree; some fields expect service experience",
+        "Programmes are offered full-time and part-time / distance learning",
+        "Application through the Academy admission campaign; see mvr.bg/academy for dates and requirements"
+      ]
     }
   },
   "programThemes": {
@@ -3687,6 +3791,10 @@
     }
   },
   "programTitles": {
+    "border-police": "Border Police",
+    "fire-safety-and-protection-of-the-population": "Fire Safety and Protection of the Population",
+    "strategic-management-of-security-and-public-order": "Strategic Management of Security and Public Order",
+    "psychological-support-for-operational-investigative-activities": "Psychological Support for Operational-Investigative Activities",
     "drama-theatre-acting": "Drama Theatre Acting",
     "puppet-theatre-acting": "Puppet Theatre Acting",
     "movement-theatre-dance-theatre": "Movement Theatre - Dance Theatre",
@@ -5130,6 +5238,231 @@
       "admissionNotes": [
         "Requires a relevant bachelor's degree",
         "A theatre or humanities background is recommended"
+      ]
+    },
+    "26:bachelor:counteraction-to-crime-and-public-order": {
+      "overview": "Counteraction to Crime and Public Order is the Academy's core police programme, training officers to prevent and investigate crime and maintain public order.",
+      "keyFocus": "Criminal law and procedure, criminology, investigation, policing and public order",
+      "duration": "Bachelor — 4 years, full-time (cadets) or part-time; police training",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "The Ministry of the Interior and the National Police",
+        "CEPOL and foreign police academies"
+      ],
+      "highlights": [
+        "The academy's flagship degree for future police officers",
+        "Combines law, criminology and hands-on police training",
+        "Cadets are appointed in the Ministry of the Interior on graduation"
+      ],
+      "careers": [
+        "Police officer / inspector",
+        "Criminal investigator",
+        "Public-order officer",
+        "Security specialist"
+      ],
+      "admissionNotes": [
+        "Cadet places are filled by competitive exams plus medical and physical tests",
+        "Civilian applicants may apply for state-subsidised or paid places"
+      ]
+    },
+    "26:bachelor:border-police": {
+      "overview": "Border Police trains officers to guard the state border, control migration and counter cross-border crime.",
+      "keyFocus": "Border control, migration, document security, and cross-border crime",
+      "duration": "Bachelor — 4 years, full-time (cadets) or part-time; police training",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "The General Directorate Border Police",
+        "Frontex and EU border-security bodies"
+      ],
+      "highlights": [
+        "Specialised training for the Border Police",
+        "Covers migration and document security",
+        "Strong demand at Bulgaria's external EU border"
+      ],
+      "careers": [
+        "Border-police officer",
+        "Migration / document specialist",
+        "Border-security analyst",
+        "Frontier-control coordinator"
+      ],
+      "admissionNotes": [
+        "Cadet places are filled by competitive exams plus medical and physical tests",
+        "Graduates are appointed in the Border Police"
+      ]
+    },
+    "26:bachelor:protection-of-national-security": {
+      "overview": "Protection of National Security trains specialists to identify and counter threats to the security of the state and society.",
+      "keyFocus": "National security, counter-intelligence, threat analysis, and security law",
+      "duration": "Bachelor — 4 years, full-time or part-time",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "National security and intelligence services",
+        "Security and law-enforcement agencies"
+      ],
+      "highlights": [
+        "Focused on the protection of national security",
+        "Combines analysis, law and operational knowledge",
+        "Careers in the security services and agencies"
+      ],
+      "careers": [
+        "National-security officer",
+        "Security analyst",
+        "Counter-intelligence specialist",
+        "Risk / threat analyst"
+      ],
+      "admissionNotes": [
+        "Cadet places are filled by competitive exams plus medical and physical tests",
+        "Civilian applicants may apply for state-subsidised or paid places"
+      ]
+    },
+    "26:bachelor:public-administration": {
+      "overview": "Public Administration at the Academy prepares administrators for the Ministry of the Interior and the wider public sector, with a security focus.",
+      "keyFocus": "Public administration, administrative law, management and security policy",
+      "duration": "Bachelor — full-time or part-time; for civilian students",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "The Ministry of the Interior and public institutions",
+        "Local and central administration bodies"
+      ],
+      "highlights": [
+        "Public administration with a security and law-enforcement focus",
+        "Suited to civilian students and public servants",
+        "Careers across the public sector"
+      ],
+      "careers": [
+        "Public-administration officer",
+        "Administrative manager",
+        "Policy / compliance specialist",
+        "Local-government officer"
+      ],
+      "admissionNotes": [
+        "Open to civilian applicants (state-subsidised or paid places)",
+        "Admission is document- and exam-based"
+      ]
+    },
+    "26:bachelor:fire-safety-and-protection-of-the-population": {
+      "overview": "Fire Safety and Protection of the Population trains fire-safety and civil-protection officers to prevent and respond to fires, accidents and disasters.",
+      "keyFocus": "Fire safety, rescue, civil protection, disaster response and prevention",
+      "duration": "Bachelor — 4 years, full-time (cadets) or part-time; fire-safety training",
+      "partners": [
+        "Faculty of Fire Safety and Civil Protection, Academy of the MoI",
+        "The General Directorate Fire Safety and Civil Protection",
+        "Emergency and disaster-response services"
+      ],
+      "highlights": [
+        "Training for fire-safety and civil-protection officers",
+        "Hands-on rescue and disaster-response practice",
+        "Cadets are appointed in the Fire Safety service"
+      ],
+      "careers": [
+        "Fire-safety officer",
+        "Civil-protection specialist",
+        "Rescue / emergency officer",
+        "Disaster-response coordinator"
+      ],
+      "admissionNotes": [
+        "Cadet places are filled by competitive exams plus medical and physical tests",
+        "Civilian applicants may apply for state-subsidised or paid places"
+      ]
+    },
+    "26:master:strategic-management-of-security-and-public-order": {
+      "overview": "This master's develops senior leaders to manage security and public order at a strategic level within the Ministry of the Interior.",
+      "keyFocus": "Strategic security management, leadership, policy and resource management",
+      "duration": "Master's — full-time or part-time; for officers and civilians",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "The Ministry of the Interior and its directorates",
+        "CEPOL and international partners"
+      ],
+      "highlights": [
+        "Strategic-level leadership for the security sector",
+        "Policy, resource and organisational management",
+        "Aimed at current and future senior officers"
+      ],
+      "careers": [
+        "Senior police / security manager",
+        "Security-policy adviser",
+        "Directorate head",
+        "Strategic planner"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "Command or service experience is an advantage"
+      ]
+    },
+    "26:master:psychological-support-for-operational-investigative-activities": {
+      "overview": "This master's applies psychology to police and investigative work — from interviewing and profiling to officer resilience.",
+      "keyFocus": "Investigative and forensic psychology, interviewing, profiling and resilience",
+      "duration": "Master's — full-time or part-time",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "Police and investigative services",
+        "Forensic and psychological services"
+      ],
+      "highlights": [
+        "Psychology applied to operational-investigative work",
+        "Covers interviewing, profiling and officer support",
+        "A specialised niche in the security sector"
+      ],
+      "careers": [
+        "Police / investigative psychologist",
+        "Interview / interrogation specialist",
+        "Behavioural analyst / profiler",
+        "Officer-support specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree, usually in psychology",
+        "Open to officers and civilian applicants"
+      ]
+    },
+    "26:master:fire-and-emergency-safety": {
+      "overview": "The Fire and Emergency Safety master's advances the expertise of fire-safety and civil-protection officers in prevention, response and management.",
+      "keyFocus": "Advanced fire safety, emergency management, risk assessment and prevention",
+      "duration": "Master's — full-time or part-time",
+      "partners": [
+        "Faculty of Fire Safety and Civil Protection, Academy of the MoI",
+        "The Fire Safety and Civil Protection service",
+        "Emergency and disaster-management bodies"
+      ],
+      "highlights": [
+        "Advanced fire-safety and emergency-management expertise",
+        "Risk assessment, prevention and crisis response",
+        "Career progression for fire-safety officers"
+      ],
+      "careers": [
+        "Senior fire-safety officer",
+        "Emergency-management specialist",
+        "Risk-assessment expert",
+        "Civil-protection manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "A fire-safety or engineering background is an advantage"
+      ]
+    },
+    "26:master:protection-of-national-security": {
+      "overview": "The Protection of National Security master's deepens expertise in analysing and countering threats to national security.",
+      "keyFocus": "National security, strategic analysis, counter-intelligence and security law",
+      "duration": "Master's — full-time or part-time",
+      "partners": [
+        "Faculty of Police, Academy of the MoI",
+        "National security and intelligence services",
+        "Security and law-enforcement agencies"
+      ],
+      "highlights": [
+        "Advanced study of national-security protection",
+        "Strategic analysis and counter-intelligence",
+        "Careers in the security services"
+      ],
+      "careers": [
+        "National-security officer",
+        "Senior security analyst",
+        "Counter-intelligence specialist",
+        "Security adviser"
+      ],
+      "admissionNotes": [
+        "Requires a relevant prior degree",
+        "A security or law background is an advantage"
       ]
     },
     "21:bachelor:construction-of-buildings-and-facilities": {
@@ -13168,5 +13501,15 @@
     "animation-directing": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
     "management-of-screen-arts": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" },
     "photographic-art": { "tuition": "€1,020/yr (BG/EU) · €6,000 (foreign)", "facultyKey": "screen" }
+  },
+  "amvr_programInfo": {
+    "counteraction-to-crime-and-public-order": { "tuition": "€0 (cadets) · €640/yr (civilian) · €3,000 (foreign)", "facultyKey": "police" },
+    "border-police": { "tuition": "€0 (cadets) · €640/yr (civilian) · €3,000 (foreign)", "facultyKey": "police" },
+    "protection-of-national-security": { "tuition": "€0 (cadets) · €640/yr (civilian) · €3,000 (foreign)", "facultyKey": "police" },
+    "public-administration": { "tuition": "€360/yr (civilian, BG/EU) · €3,000 (foreign)", "facultyKey": "police" },
+    "strategic-management-of-security-and-public-order": { "tuition": "€0 (cadets) · €640/yr (civilian) · €3,000 (foreign)", "facultyKey": "police" },
+    "psychological-support-for-operational-investigative-activities": { "tuition": "€640/yr (civilian, BG/EU) · €3,000 (foreign)", "facultyKey": "police" },
+    "fire-safety-and-protection-of-the-population": { "tuition": "€0 (cadets) · €640/yr (civilian) · €3,000 (foreign)", "facultyKey": "fire" },
+    "fire-and-emergency-safety": { "tuition": "€360/yr (civilian, BG/EU) · €3,000 (foreign)", "facultyKey": "fire" }
   }
 }

@@ -418,7 +418,7 @@ export default function UniversityPage() {
             </View>
           </SectionCard>
 
-          {(id === "1" || id === "2" || id === "3" || id === "4" || id === "5" || id === "6" || id === "7" || id === "8" || id === "9" || id === "10" || id === "11" || id === "12" || id === "13" || id === "14" || id === "15" || id === "16" || id === "17" || id === "18" || id === "19" || id === "20" || id === "21" || id === "22" || id === "23" || id === "24" || id === "25") && (
+          {(id === "1" || id === "2" || id === "3" || id === "4" || id === "5" || id === "6" || id === "7" || id === "8" || id === "9" || id === "10" || id === "11" || id === "12" || id === "13" || id === "14" || id === "15" || id === "16" || id === "17" || id === "18" || id === "19" || id === "20" || id === "21" || id === "22" || id === "23" || id === "24" || id === "25" || id === "26") && (
             <>
               {id === "1" && (
                 <>
@@ -1835,6 +1835,63 @@ export default function UniversityPage() {
                     <InfoRow label={t("universityExtra.natfa_bulgarianCourse")} colors={colors} />
                     <InfoRow label={t("universityExtra.natfa_accommodation")} colors={colors} />
                     <InfoRow label={t("universityExtra.natfa_recognition")} colors={colors} />
+                  </ExpandableSection>
+                </>
+              )}
+              {id === "26" && (
+                <>
+                  <ExpandableSection title={t("universityExtra.scholarships")} icon="ribbon-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.amvr_scholarshipsDesc")}</Text>
+                    <InfoRow label={t("universityExtra.amvr_cadetFunding")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_meritScholarships")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_socialScholarships")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_exemptCategories")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_erasmusGrants")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.applicationInfo")} icon="document-text-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.amvr_applicationDesc")}</Text>
+                    <InfoRow label={t("universityExtra.amvr_appCadets")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_appCivilian")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_appMaster")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_appDocuments")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_appOnline")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.masterFees")} icon="cash-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.amvr_masterFeesDesc")}</Text>
+                    <InfoRow label={t("universityExtra.amvr_feeCadets")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_feeState")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_feePaid")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_feeForeign")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_feeApplication")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.amvr_campus")} icon="business-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.amvr_campusDesc")}</Text>
+                    <InfoRow label={t("universityExtra.amvr_building")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_ranges")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_institute")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_library")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_dormitory")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.partners")} icon="globe-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.amvr_partnersDesc")}</Text>
+                    <InfoRow label={t("universityExtra.amvr_ministry")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_cepol")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_erasmusNetwork")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_alumni")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_international")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.internationalStudents")} icon="airplane-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.amvr_internationalDesc")}</Text>
+                    <InfoRow label={t("universityExtra.amvr_foreignStudents")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_englishSupport")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_visaSupport")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_accommodation")} colors={colors} />
+                    <InfoRow label={t("universityExtra.amvr_recognition")} colors={colors} />
                   </ExpandableSection>
                 </>
               )}

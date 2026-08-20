@@ -280,6 +280,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "26",
+    rating: 5,
+    color: "#22315e",
+    image: require("../assets/images/amvr-sofia.jpg"),
+    category: "Security",
+    categories: ["Security", "Law"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
