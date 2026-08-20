@@ -82,8 +82,8 @@ function StatCard({ value, label, icon }: { value: string; label: string; icon: 
       }}
     >
       <Ionicons name={icon} size={18} color={colors.accent} style={{ marginBottom: 6 }} />
-      <Text style={{ fontFamily: Fonts.heading, fontSize: 19, color: colors.text }}>{value}</Text>
-      <Text style={{ fontFamily: Fonts.body, fontSize: 10, color: colors.textMuted, textAlign: "center", marginTop: 2 }}>{label}</Text>
+      <Text style={{ fontFamily: Fonts.number, fontSize: 18, color: colors.text }}>{value}</Text>
+      <Text style={{ fontFamily: Fonts.body, fontSize: 10, color: colors.textMuted, textAlign: "center", marginTop: 3 }}>{label}</Text>
     </View>
   );
 }
@@ -310,8 +310,8 @@ export default function UniversityPage() {
                       borderRightWidth: i < cells.length - 1 ? 1 : 0, borderRightColor: colors.divider,
                     }}
                   >
-                    <Text style={{ fontFamily: Fonts.heading, fontSize: 18, color: colors.text }}>{c.value}</Text>
-                    <Text style={{ fontFamily: Fonts.body, fontSize: 11, color: colors.textMuted, marginTop: 2, textAlign: "center", paddingHorizontal: 4 }}>{c.label}</Text>
+                    <Text style={{ fontFamily: Fonts.number, fontSize: 19, color: colors.text }}>{c.value}</Text>
+                    <Text style={{ fontFamily: Fonts.body, fontSize: 11, color: colors.textMuted, marginTop: 3, textAlign: "center", paddingHorizontal: 4 }}>{c.label}</Text>
                   </View>
                 ))}
               </View>
@@ -371,7 +371,7 @@ export default function UniversityPage() {
                   <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
                     {tiers.map((tier) => (
                       <View key={tier.range} style={{ borderWidth: 1, borderColor: colors.divider, borderRadius: 3, padding: 8, minWidth: "45%", flex: 1 }}>
-                        <Text style={{ fontFamily: Fonts.heading, fontSize: 14, color: colors.text }}>{tier.range}</Text>
+                        <Text style={{ fontFamily: Fonts.number, fontSize: 14, color: colors.text }}>{tier.range}</Text>
                         <Text style={{ fontFamily: Fonts.body, fontSize: 10, color: colors.textMuted, marginTop: 1 }}>{tier.label}</Text>
                       </View>
                     ))}

@@ -20,6 +20,12 @@ export const Fonts = {
   body: 'Lora_400Regular',
   /** Emphasised body / labels / meta. */
   bodyMedium: 'Lora_600SemiBold',
+  /**
+   * Numeric values (stats, tuition, counts). Lora's sturdier strokes and
+   * lining figures read far more clearly at small sizes than the display
+   * serif's old-style numerals, while staying inside the serif system.
+   */
+  number: 'Lora_600SemiBold',
 } as const;
 
 export type FontToken = keyof typeof Fonts;
