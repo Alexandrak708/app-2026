@@ -6,6 +6,12 @@ import * as Linking from "expo-linking";
 import { supabase } from "@/lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { View, ActivityIndicator } from "react-native";
+import { useFonts } from "expo-font";
+import {
+  CormorantGaramond_400Regular,
+  CormorantGaramond_600SemiBold,
+} from "@expo-google-fonts/cormorant-garamond";
+import { Lora_400Regular, Lora_600SemiBold } from "@expo-google-fonts/lora";
 import AppThemeProvider from '@/contexts/theme-context';
 import { FavouritesProvider } from '@/contexts/favourites-context';
 import { ensureProfileRecord, createSessionFromUrl } from "@/lib/auth";
@@ -19,6 +25,13 @@ export default function RootLayout() {
   const segments = useSegments();
   const url = Linking.useURL();
   const handledUrl = useRef<string | null>(null);
+
+  const [fontsLoaded] = useFonts({
+    CormorantGaramond_400Regular,
+    CormorantGaramond_600SemiBold,
+    Lora_400Regular,
+    Lora_600SemiBold,
+  });
 
   // 👇 added - loads i18n once when app starts
   useEffect(() => {
@@ -116,10 +129,10 @@ export default function RootLayout() {
     }
   }, [session, loading, segments, router, recoveryMode]);
 
-  // 👇 updated - wait for BOTH loading AND i18n to be ready
-  if (loading || !i18nReady) {
+  // 👇 updated - wait for loading, i18n AND the editorial fonts to be ready
+  if (loading || !i18nReady || !fontsLoaded) {
     return (
-      <View style={{ flex: 1, backgroundColor: "#02050a", justifyContent: "center", alignItems: "center" }}>
+      <View style={{ flex: 1, backgroundColor: "#21030d", justifyContent: "center", alignItems: "center" }}>
         <ActivityIndicator color="#ffffff" size="large" />
       </View>
     );

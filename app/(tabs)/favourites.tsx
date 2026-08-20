@@ -9,6 +9,8 @@ import type { UniversityId } from "@/types/university";
 import UniversityCard from "@/components/university-card";
 import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { Fonts } from "@/constants/typography";
+import { ScreenHeader, Hairline } from "@/components/editorial";
 
 export default function Favourites() {
   const { t } = useTranslation();
@@ -16,7 +18,7 @@ export default function Favourites() {
   const universities = buildUniversities(t);
   const { favouriteIds } = useFavourites();
   const [compareIds, setCompareIds] = useState<UniversityId[]>([]);
-  const { colors, isDark } = useAppTheme();
+  const { colors } = useAppTheme();
 
   const favouriteUniversities = useMemo(
     () => universities.filter((university) => favouriteIds.includes(university.id)),
@@ -52,69 +54,48 @@ export default function Favourites() {
     router.push({ pathname: "/compare", params: { ids: compareIds.join(",") } } as any);
   };
 
-  // Use the shared UniversityCard for favourites list so design matches index
-  
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <ScrollView contentContainerStyle={{ padding: 24, paddingTop: 64, paddingBottom: 140 }}>
-        <Text style={{ color: colors.text, fontSize: 30, fontWeight: "900", letterSpacing: -0.4 }}>
-          {t("favourites.title")}
-        </Text>
+      <ScrollView contentContainerStyle={{ padding: 24, paddingTop: 64, paddingBottom: 120 }}>
+        <ScreenHeader
+          kicker={t("favourites.kicker")}
+          title={t("favourites.title")}
+          subtitle={t("favourites.subtitle")}
+          titleSize={30}
+        />
 
-        <Text style={{ color: colors.textSecondary, fontSize: 14, marginTop: 8, marginBottom: 20 }}>
-          {t("favourites.subtitle")}
-        </Text>
+        <Hairline style={{ marginTop: 18, marginBottom: 18 }} />
 
         {favouriteUniversities.length === 0 ? (
-          <View
-            style={{
-              backgroundColor: colors.surface,
-              borderRadius: 22,
-              padding: 24,
-              alignItems: "center",
-              justifyContent: "center",
-              minHeight: 220,
-              shadowColor: colors.cardShadow,
-              shadowOffset: { width: 0, height: 4 },
-              shadowOpacity: 0.05,
-              shadowRadius: 14,
-              elevation: 3,
-            }}
-          >
+          <View style={{ alignItems: "center", justifyContent: "center", paddingVertical: 60 }}>
             <Ionicons name="heart-outline" size={42} color={colors.textMuted} />
-            <Text style={{ color: colors.text, fontSize: 18, fontWeight: "800", marginTop: 14 }}>
+            <Text style={{ fontFamily: Fonts.heading, color: colors.text, fontSize: 20, marginTop: 16 }}>
               {t("favourites.emptyTitle")}
             </Text>
-            <Text style={{ color: colors.textSecondary, fontSize: 14, textAlign: "center", marginTop: 8, lineHeight: 20 }}>
+            <Text style={{ fontFamily: Fonts.body, color: colors.textSecondary, fontSize: 14, textAlign: "center", marginTop: 8, lineHeight: 21, maxWidth: 280 }}>
               {t("favourites.emptyMessage")}
             </Text>
           </View>
         ) : (
-          favouriteUniversities.map((item) => (
-            <View key={item.id} style={{ marginBottom: 16 }}>
+          <View style={{ gap: 18 }}>
+            {favouriteUniversities.map((item) => (
               <UniversityCard
+                key={item.id}
                 item={item}
                 onPress={() => router.push(`/university/${item.id}` as any)}
                 showCompareButton
                 compareSelected={compareIds.includes(item.id)}
                 onComparePress={() => toggleCompare(item.id)}
               />
-            </View>
-          ))
+            ))}
+          </View>
         )}
       </ScrollView>
 
       {compareCount > 0 && (
         <View
           pointerEvents="box-none"
-          style={{
-            position: "absolute",
-            left: 24,
-            right: 24,
-            bottom: 90,
-            alignItems: "center",
-            zIndex: 20,
-          }}
+          style={{ position: "absolute", left: 24, right: 24, bottom: 24, alignItems: "center", zIndex: 20 }}
         >
           <TouchableOpacity
             activeOpacity={canCompare ? 0.85 : 1}
@@ -124,53 +105,44 @@ export default function Favourites() {
               flexDirection: "row",
               alignItems: "center",
               gap: 10,
-              backgroundColor: canCompare ? (isDark ? "#e2e8f0" : "#0f172a") : colors.surface,
+              backgroundColor: canCompare ? colors.accentInk : colors.surface,
               borderRadius: 999,
-              paddingHorizontal: 18,
-              paddingVertical: 14,
+              paddingHorizontal: 20,
+              paddingVertical: 13,
               borderWidth: canCompare ? 0 : 1,
-              borderColor: colors.softBorder,
-              shadowColor: colors.cardShadow,
-              shadowOffset: { width: 0, height: 8 },
-              shadowOpacity: canCompare ? 0.18 : 0.08,
-              shadowRadius: 16,
-              elevation: 12,
+              borderColor: colors.divider,
             }}
           >
             <Ionicons
               name="swap-horizontal-outline"
-              size={18}
-              color={canCompare ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary}
+              size={16}
+              color={canCompare ? "#ffffff" : colors.textSecondary}
             />
             <Text
               style={{
-                color: canCompare ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary,
-                fontSize: 14,
-                fontWeight: "800",
+                fontFamily: Fonts.bodyMedium,
+                color: canCompare ? "#ffffff" : colors.textSecondary,
+                fontSize: 13,
               }}
             >
               {canCompare ? t("favourites.compare") : t("favourites.selectOneMore")}
             </Text>
             <View
               style={{
-                minWidth: 34,
-                height: 24,
+                minWidth: 28,
+                height: 22,
                 borderRadius: 999,
                 paddingHorizontal: 8,
-                backgroundColor: canCompare
-                  ? isDark
-                    ? "rgba(15,23,42,0.1)"
-                    : "rgba(255,255,255,0.16)"
-                  : colors.mutedSurface,
+                backgroundColor: canCompare ? "rgba(255,255,255,0.18)" : colors.mutedSurface,
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
               <Text
                 style={{
-                  color: canCompare ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary,
-                  fontSize: 12,
-                  fontWeight: "800",
+                  fontFamily: Fonts.bodyMedium,
+                  color: canCompare ? "#ffffff" : colors.textSecondary,
+                  fontSize: 11,
                 }}
               >
                 {compareCount}/2

@@ -1,6 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Modal, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { Image as ExpoImage } from "expo-image";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -9,6 +8,9 @@ import { buildUniversities } from "@/data/university-data";
 import { buildProgramDetail, getProgramSummaries } from "@/data/university-programs";
 import type { ProgramLevel, UniversityDisplay } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { Fonts } from "@/constants/typography";
+import { Plate } from "@/components/plate";
+import { Kicker } from "@/components/editorial";
 
 /** A single program picked for a university: which level it lives in + its slug. */
 type SelectedProgram = { level: ProgramLevel; slug: string };
@@ -34,21 +36,6 @@ const STAT_METRICS: StatMetric[] = [
   { valueKey: "tuitionFreeLabel", labelKey: "universityStats.tuitionFree", overrideKey: "tuitionFreeText" },
 ];
 
-function StarRow({ rating, colors }: { rating: number; colors: any }) {
-  return (
-    <View style={{ flexDirection: "row", gap: 2 }}>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <Ionicons
-          key={star}
-          name={star <= rating ? "star" : "star-outline"}
-          size={13}
-          color={star <= rating ? "#f59e0b" : colors.textMuted}
-        />
-      ))}
-    </View>
-  );
-}
-
 function HeaderColumn({
   uni,
   onPress,
@@ -62,33 +49,16 @@ function HeaderColumn({
 }) {
   return (
     <TouchableOpacity activeOpacity={0.9} onPress={onPress} style={{ flex: 1, alignItems: "center" }}>
-      <View style={{ width: "100%", height: 104, borderRadius: 16, overflow: "hidden", backgroundColor: uni.color }}>
-        <ExpoImage source={uni.image} style={StyleSheet.absoluteFill} contentFit="cover" />
-        <View style={{ ...StyleSheet.absoluteFillObject, backgroundColor: colors.heroOverlay }} />
-      </View>
+      <Plate source={uni.image} style={{ width: "100%", height: 96 }} />
       <Text
         numberOfLines={2}
-        style={{ marginTop: 10, fontSize: 14, fontWeight: "800", color: colors.text, textAlign: "center", lineHeight: 18 }}
+        style={{ fontFamily: Fonts.heading, marginTop: 10, fontSize: 15, color: colors.text, textAlign: "center", lineHeight: 19 }}
       >
         {uni.name}
       </Text>
-      <View style={{ marginTop: 6 }}>
-        <StarRow rating={uni.rating} colors={colors} />
-      </View>
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          gap: 3,
-          marginTop: 8,
-          backgroundColor: colors.mutedSurface,
-          borderRadius: 999,
-          paddingHorizontal: 10,
-          paddingVertical: 5,
-        }}
-      >
-        <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textSecondary }}>{viewLabel}</Text>
-        <Ionicons name="chevron-forward" size={12} color={colors.textSecondary} />
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 3, marginTop: 8 }}>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 11, color: colors.accent }}>{viewLabel}</Text>
+        <Ionicons name="chevron-forward" size={12} color={colors.accent} />
       </View>
     </TouchableOpacity>
   );
@@ -100,8 +70,8 @@ function Cell({ caption, value, colors }: { caption?: string; value: string; col
       {caption ? (
         <Text
           style={{
+            fontFamily: Fonts.heading,
             fontSize: 10,
-            fontWeight: "700",
             color: colors.textMuted,
             textAlign: "center",
             textTransform: "uppercase",
@@ -112,7 +82,7 @@ function Cell({ caption, value, colors }: { caption?: string; value: string; col
           {caption}
         </Text>
       ) : null}
-      <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text, textAlign: "center" }}>{value}</Text>
+      <Text style={{ fontFamily: Fonts.body, fontSize: 14, color: colors.text, textAlign: "center" }}>{value}</Text>
     </View>
   );
 }
@@ -137,12 +107,12 @@ function CompareAttr({
 }) {
   const sameLabel = labelA === labelB;
   return (
-    <View style={{ paddingVertical: 14, borderTopWidth: 1, borderTopColor: colors.softBorder }}>
+    <View style={{ paddingVertical: 14, borderTopWidth: 1, borderTopColor: colors.divider }}>
       {sameLabel ? (
         <Text
           style={{
+            fontFamily: Fonts.heading,
             fontSize: 11,
-            fontWeight: "700",
             color: colors.textMuted,
             textAlign: "center",
             textTransform: "uppercase",
@@ -155,7 +125,7 @@ function CompareAttr({
       ) : null}
       <View style={{ flexDirection: "row", alignItems: "flex-start" }}>
         <Cell caption={sameLabel ? undefined : labelA} value={valueA} colors={colors} />
-        <View style={{ width: 1, alignSelf: "stretch", backgroundColor: colors.softBorder, marginHorizontal: 6 }} />
+        <View style={{ width: 1, alignSelf: "stretch", backgroundColor: colors.divider, marginHorizontal: 6 }} />
         <Cell caption={sameLabel ? undefined : labelB} value={valueB} colors={colors} />
       </View>
     </View>
@@ -164,22 +134,8 @@ function CompareAttr({
 
 function Section({ title, children, colors }: { title: string; children: ReactNode; colors: any }) {
   return (
-    <View
-      style={{
-        backgroundColor: colors.surface,
-        borderRadius: 20,
-        paddingHorizontal: 18,
-        paddingTop: 16,
-        paddingBottom: 6,
-        marginBottom: 16,
-        shadowColor: colors.cardShadow,
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.06,
-        shadowRadius: 8,
-        elevation: 3,
-      }}
-    >
-      <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 4 }}>{title}</Text>
+    <View style={{ marginBottom: 20 }}>
+      <Text style={{ fontFamily: Fonts.heading, fontSize: 19, color: colors.text, marginBottom: 2 }}>{title}</Text>
       {children}
     </View>
   );
@@ -199,7 +155,7 @@ function ProgramPicker({
   onClose: () => void;
   onSelect: (level: ProgramLevel, slug: string) => void;
 }) {
-  const { colors, isDark } = useAppTheme();
+  const { colors } = useAppTheme();
   const { t } = useTranslation();
 
   const bachelor = university ? getProgramSummaries(university.id, "bachelor") : [];
@@ -230,10 +186,10 @@ function ProgramPicker({
           paddingVertical: 10,
           borderRadius: 11,
           alignItems: "center",
-          backgroundColor: active ? (isDark ? "#e2e8f0" : "#0f172a") : "transparent",
+          backgroundColor: active ? colors.accent : "transparent",
         }}
       >
-        <Text style={{ fontSize: 14, fontWeight: "700", color: active ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary }}>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 14, color: active ? "#ffffff" : colors.textSecondary }}>
           {label}
         </Text>
       </TouchableOpacity>
@@ -350,15 +306,16 @@ export default function CompareScreen() {
     <TouchableOpacity
       onPress={() => router.back()}
       style={{
-        width: 40,
-        height: 40,
-        borderRadius: 12,
-        backgroundColor: colors.mutedSurface,
+        width: 38,
+        height: 38,
+        borderRadius: 999,
+        borderWidth: 1,
+        borderColor: colors.divider,
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <Ionicons name="arrow-back" size={22} color={colors.text} />
+      <Ionicons name="chevron-back" size={18} color={colors.text} />
     </TouchableOpacity>
   );
 
@@ -490,30 +447,18 @@ export default function CompareScreen() {
       >
         <View style={{ width: "100%", maxWidth: 820 }}>
           {/* Top bar */}
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 12, marginBottom: 18 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 14, marginBottom: 20 }}>
             {backButton}
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 22, fontWeight: "900", color: colors.text, letterSpacing: -0.3 }}>
+              <Kicker>{t("compare.subtitle")}</Kicker>
+              <Text style={{ fontFamily: Fonts.display, fontSize: 24, color: colors.text, letterSpacing: -0.3, marginTop: 2 }}>
                 {t("compare.title")}
               </Text>
-              <Text style={{ fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>{t("compare.subtitle")}</Text>
             </View>
           </View>
 
           {/* Header: the two universities with a VS badge */}
-          <View
-            style={{
-              backgroundColor: colors.surface,
-              borderRadius: 20,
-              padding: 16,
-              marginBottom: 16,
-              shadowColor: colors.cardShadow,
-              shadowOffset: { width: 0, height: 2 },
-              shadowOpacity: 0.06,
-              shadowRadius: 8,
-              elevation: 3,
-            }}
-          >
+          <View style={{ marginBottom: 20 }}>
             <View style={{ flexDirection: "row", alignItems: "flex-start" }}>
               <HeaderColumn
                 uni={a}
@@ -521,18 +466,18 @@ export default function CompareScreen() {
                 viewLabel={t("compare.viewProfile")}
                 colors={colors}
               />
-              <View style={{ width: 40, alignItems: "center", marginTop: 36 }}>
+              <View style={{ width: 40, alignItems: "center", marginTop: 30 }}>
                 <View
                   style={{
                     width: 34,
                     height: 34,
                     borderRadius: 999,
-                    backgroundColor: colors.text,
+                    backgroundColor: colors.accentInk,
                     alignItems: "center",
                     justifyContent: "center",
                   }}
                 >
-                  <Text style={{ color: colors.background, fontSize: 11, fontWeight: "900" }}>VS</Text>
+                  <Text style={{ fontFamily: Fonts.heading, color: "#ffffff", fontSize: 12 }}>VS</Text>
                 </View>
               </View>
               <HeaderColumn
@@ -542,7 +487,7 @@ export default function CompareScreen() {
                 colors={colors}
               />
             </View>
-            <Text style={{ fontSize: 11, color: colors.textMuted, textAlign: "center", marginTop: 14 }}>
+            <Text style={{ fontFamily: Fonts.body, fontSize: 11, color: colors.textMuted, textAlign: "center", marginTop: 14 }}>
               {t("compare.openHint")}
             </Text>
           </View>

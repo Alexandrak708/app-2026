@@ -1,26 +1,35 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Pressable, useWindowDimensions } from "react-native";
-import { Image as ExpoImage } from "expo-image";
-import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue } from "react-native-reanimated";
+import { View, Text, Pressable, TouchableOpacity, useWindowDimensions, type DimensionValue } from "react-native";
+import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue, useSharedValue, withTiming } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useFavourites } from "@/contexts/favourites-context";
 import type { UniversityDisplay } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { Fonts } from "@/constants/typography";
+import { Plate } from "@/components/plate";
 
 const CARD_GAP = 16;
 const CARD_HORIZONTAL_PADDING = 48;
 const MAX_CARD_WIDTH = 560;
-const CARD_HEIGHT = 220;
 
 function getUniversityCardWidth(screenWidth: number) {
   return Math.min(screenWidth - CARD_HORIZONTAL_PADDING, MAX_CARD_WIDTH);
 }
 
+/**
+ * Editorial "plate + caption" card: a framed photo with a caption block below
+ * (category kicker · serif title · muted meta). Used by the Home recommended
+ * carousel (with `index`/`scrollX` for the scale animation) and by the
+ * Favourites list (full width, with heart + compare pills on the photo).
+ */
 export default function UniversityCard({
   item,
   index,
   scrollX,
   onPress,
+  width,
+  photoHeight = 150,
   showCompareButton,
   compareSelected,
   onComparePress,
@@ -29,15 +38,21 @@ export default function UniversityCard({
   index?: number;
   scrollX?: SharedValue<number>;
   onPress?: () => void;
+  /** Fixed pixel width for carousel use; omit for full-width (favourites). */
+  width?: number;
+  photoHeight?: number;
   showCompareButton?: boolean;
   compareSelected?: boolean;
   onComparePress?: (event?: any) => void;
 }) {
   const { width: screenWidth } = useWindowDimensions();
-  const cardWidth = getUniversityCardWidth(screenWidth);
+  const { colors } = useAppTheme();
+  const { t } = useTranslation();
   const { toggleFavourite, isFavourite: checkFavourite } = useFavourites();
   const isFavourite = checkFavourite(item.id as any);
-  const { colors } = useAppTheme();
+
+  const cardWidth = getUniversityCardWidth(screenWidth);
+  const outerWidth: DimensionValue = width ?? "100%";
 
   function handleToggle(e?: any) {
     e?.stopPropagation?.();
@@ -46,99 +61,103 @@ export default function UniversityCard({
 
   const animatedStyle = useAnimatedStyle(() => {
     if (scrollX == null || index == null) return {} as any;
-    const inputRange = [
-      (index - 1) * (cardWidth + CARD_GAP),
-      index * (cardWidth + CARD_GAP),
-      (index + 1) * (cardWidth + CARD_GAP),
-    ];
-    const scale = interpolate(scrollX!.value, inputRange, [0.93, 1, 0.93], Extrapolation.CLAMP);
-    const opacity = interpolate(scrollX!.value, inputRange, [0.6, 1, 0.6], Extrapolation.CLAMP);
+    const step = (width ?? cardWidth) + CARD_GAP;
+    const inputRange = [(index - 1) * step, index * step, (index + 1) * step];
+    const scale = interpolate(scrollX!.value, inputRange, [0.96, 1, 0.96], Extrapolation.CLAMP);
+    const opacity = interpolate(scrollX!.value, inputRange, [0.55, 1, 0.55], Extrapolation.CLAMP);
     return { transform: [{ scale }], opacity } as any;
   });
 
-  return (
-    <Animated.View
-      style={[
-        {
-          width: cardWidth,
-          height: CARD_HEIGHT,
-          marginRight: CARD_GAP,
-          borderRadius: 24,
-          overflow: "hidden",
-          backgroundColor: item.color,
-        },
-        animatedStyle,
-      ]}
-    >
-      {/* Heart button (top-right) */}
-      <Pressable
-        onPress={handleToggle}
-        accessibilityLabel={`toggle-favourite-${item.id}`}
-        style={{ position: "absolute", top: 12, right: 20, zIndex: 2 }}
-      >
-        <View style={{ backgroundColor: "rgba(255,255,255,0.12)", padding: 8, borderRadius: 999 }}>
-          <Ionicons name={isFavourite ? "heart" : "heart-outline"} size={20} color={isFavourite ? "#ef4444" : "#ffffff"} />
-        </View>
-      </Pressable>
+  // Web-only "light up" on hover — a soft white wash over the photo. On native
+  // the hover callbacks never fire, so this stays at rest.
+  const hover = useSharedValue(0);
+  const lightStyle = useAnimatedStyle(() => ({ opacity: hover.value * 0.22 }));
 
-      {showCompareButton && isFavourite && onComparePress && (
+  const categoryLabel = t(`categories.${item.category}`);
+  const metaLine = item.scholarship
+    ? `${item.location} · ${t("university.scholarshipAvailable")}`
+    : item.location;
+
+  return (
+    <Animated.View style={[{ width: outerWidth, marginRight: width != null ? CARD_GAP : 0 }, animatedStyle]}>
+      <Pressable
+        onPress={onPress}
+        onHoverIn={() => { hover.value = withTiming(1, { duration: 160 }); }}
+        onHoverOut={() => { hover.value = withTiming(0, { duration: 220 }); }}
+        style={{ position: "relative" }}
+      >
+        <Plate source={item.image} style={{ height: photoHeight }}>
+          <Animated.View
+            pointerEvents="none"
+            style={[{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "#ffffff" }, lightStyle]}
+          />
+        </Plate>
+
+        {/* Heart pill (top-right) */}
         <Pressable
-          onPress={onComparePress}
-          accessibilityLabel={`toggle-compare-${item.id}`}
-          style={{ position: "absolute", top: 12, left: 20, zIndex: 2 }}
+          onPress={handleToggle}
+          accessibilityLabel={`toggle-favourite-${item.id}`}
+          style={{
+            position: "absolute",
+            top: 12,
+            right: 12,
+            width: 32,
+            height: 32,
+            borderRadius: 999,
+            backgroundColor: "rgba(255,255,255,0.88)",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <View
+          <Ionicons
+            name={isFavourite ? "heart" : "heart-outline"}
+            size={16}
+            color={colors.accent}
+          />
+        </Pressable>
+
+        {/* Compare pill (top-left) — favourites only */}
+        {showCompareButton && onComparePress && (
+          <Pressable
+            onPress={(e) => { e?.stopPropagation?.(); onComparePress(e); }}
+            accessibilityLabel={`toggle-compare-${item.id}`}
             style={{
-              backgroundColor: compareSelected ? "rgba(15, 23, 42, 0.82)" : "rgba(255,255,255,0.12)",
-              padding: 8,
+              position: "absolute",
+              top: 12,
+              left: 12,
+              width: 32,
+              height: 32,
               borderRadius: 999,
-              borderWidth: 1,
-              borderColor: compareSelected ? "rgba(255,255,255,0.28)" : "rgba(255,255,255,0.06)",
+              backgroundColor: compareSelected ? colors.accentInk : "rgba(255,255,255,0.88)",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            <Ionicons name="swap-horizontal-outline" size={20} color="#ffffff" />
-          </View>
-        </Pressable>
-      )}
-
-      <TouchableOpacity activeOpacity={0.92} onPress={onPress} style={{ flex: 1 }}>
-        <ExpoImage source={item.image} style={StyleSheet.absoluteFill} contentFit="cover" />
-        <View style={{ flex: 1, position: "relative" }}>
-            <View
-              style={{
-                position: "absolute",
-                top: 0, bottom: 0, left: 0, right: 0,
-                backgroundColor: colors.heroOverlay,
-                zIndex: 0,
-              }}
+            <Ionicons
+              name="swap-horizontal-outline"
+              size={16}
+              color={compareSelected ? "#ffffff" : colors.accent}
             />
+          </Pressable>
+        )}
+      </Pressable>
 
-            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 20, zIndex: 1 }}>
-              <Text style={{ color: "#ffffff", fontSize: 20, fontWeight: "700", letterSpacing: 0.3 }}>
-                {item.name}
-              </Text>
-              <Text
-                style={{ color: "rgba(255,255,255,0.78)", fontSize: 12, marginTop: 4, lineHeight: 18 }}
-                numberOfLines={2}
-              >
-                {item.description}
-              </Text>
-              <View style={{ marginTop: 10, gap: 6 }}>
-                <View style={{ flexDirection: "row", alignItems: "center" }}>
-                  <Ionicons name="cash-outline" size={12} color="rgba(255,255,255,0.82)" />
-                  <Text style={{ color: "rgba(255,255,255,0.82)", fontSize: 11, marginLeft: 3 }}>
-                    {item.tuitionRange}
-                  </Text>
-                </View>
-                <View style={{ flexDirection: "row", alignItems: "center" }}>
-                  <Ionicons name="location-sharp" size={12} color="rgba(255,255,255,0.82)" />
-                  <Text style={{ color: "rgba(255,255,255,0.82)", fontSize: 11, marginLeft: 3 }}>
-                    {item.location}
-                  </Text>
-                </View>
-              </View>
-            </View>
-        </View>
+      <TouchableOpacity activeOpacity={0.85} onPress={onPress} style={{ paddingTop: 9 }}>
+        <Text style={{ fontFamily: Fonts.heading, color: colors.accent, fontSize: 10, letterSpacing: 0.8, textTransform: "uppercase" }}>
+          {categoryLabel}
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={{ fontFamily: Fonts.heading, color: colors.text, fontSize: 17, lineHeight: 21, marginTop: 3 }}
+        >
+          {item.name}
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={{ fontFamily: Fonts.body, color: colors.textSecondary, fontSize: 12, marginTop: 4 }}
+        >
+          {compareSelected ? `${item.location} · ${t("favourites.compare")}` : metaLine}
+        </Text>
       </TouchableOpacity>
     </Animated.View>
   );

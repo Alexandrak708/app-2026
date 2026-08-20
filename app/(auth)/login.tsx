@@ -1,26 +1,26 @@
 import { useRef, useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, useWindowDimensions, ActivityIndicator } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import LottieView from "lottie-react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "@/lib/i18n";
 import { getAuthErrorMessage, requestPasswordReset, signIn, validatePassword } from "@/lib/auth";
+import { Fonts } from "@/constants/typography";
 
-const STARS = Array.from({ length: 72 }, (_, i) => {
-  const left = (i * 37) % 100;
-  const top = (i * 53) % 100;
-  return {
-    id: i,
-    left: `${left}%`,
-    top: `${top}%`,
-    size: (i % 3) + 1,
-    opacity: 0.35 + (((i * 17) % 60) / 100),
-  };
-});
+// Login is a fixed dark-burgundy hero over a light "paper" card in both themes,
+// so these editorial tones are pinned here rather than read from the palette.
+const INK = "#21030d";
+const INK_SOFT = "#350515";
+const PAPER = "#f3f2f2";
+const TEXT = "#201f1d";
+const MUTED = "rgba(32,31,29,0.55)";
+const LINE = "rgba(32,31,29,0.16)";
+const ACCENT = "#810B38";
+const ON_INK = "rgba(255,255,255,0.6)";
+const RING = "rgba(255,255,255,0.10)";
 
 export default function SignIn() {
-  const { width: screenWidth, height: screenHeight } = useWindowDimensions();
+  const { width: screenWidth } = useWindowDimensions();
   const isDesktop = screenWidth >= 980;
   const router = useRouter();
   const { t } = useTranslation();
@@ -136,8 +136,6 @@ export default function SignIn() {
   };
 
   const formWidth = isDesktop ? 440 : "100%";
-  const mobileGlobeSize = screenWidth * 0.85;
-  const desktopGlobeSize = Math.max(screenHeight * 1.9, screenWidth * 1.05);
 
   const LanguageSwitcher = (
     <View
@@ -150,7 +148,7 @@ export default function SignIn() {
         gap: 8,
         padding: 6,
         borderRadius: 999,
-        backgroundColor: "rgba(15, 23, 42, 0.35)",
+        backgroundColor: "rgba(255,255,255,0.08)",
         borderWidth: 1,
         borderColor: "rgba(255, 255, 255, 0.18)",
       }}
@@ -190,161 +188,178 @@ export default function SignIn() {
     </View>
   );
 
-  const FormContent = (
-    <>
-      <Text className="text-3xl font-bold text-slate-900">{t("auth.signIn")}</Text>
-      <Text className="text-slate-500 mt-2 mb-7">
+  const inputStyle = {
+    borderWidth: 1,
+    borderColor: LINE,
+    borderRadius: 4,
+    paddingHorizontal: 12,
+    paddingVertical: 12,
+    fontSize: 14,
+    fontFamily: Fonts.body,
+    color: TEXT,
+    backgroundColor: "transparent" as const,
+  };
+  const labelStyle = { fontFamily: Fonts.bodyMedium, fontSize: 12, color: MUTED, marginBottom: 6 };
+  const messageStyle = { fontFamily: Fonts.bodyMedium, fontSize: 13, textAlign: "center" as const, marginBottom: 12 };
+
+  const Hero = (
+    <View style={{ marginBottom: 26 }}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 16 }}>
+        <View style={{ width: 24, height: 1, backgroundColor: "rgba(255,255,255,0.4)" }} />
+        <Text style={{ fontFamily: Fonts.heading, fontSize: 11, letterSpacing: 1.6, textTransform: "uppercase", color: ON_INK }}>
+          {t("home.kicker")}
+        </Text>
+      </View>
+      <Text style={{ fontFamily: Fonts.display, fontSize: isDesktop ? 42 : 32, lineHeight: isDesktop ? 46 : 36, color: "#ffffff" }}>
+        {t("auth.heroHeadline")}
+      </Text>
+      <Text style={{ fontFamily: Fonts.body, fontSize: 14, lineHeight: 22, color: "rgba(255,255,255,0.55)", marginTop: 14, maxWidth: 380 }}>
         {t("auth.signInSubtitle")}
       </Text>
-      <TextInput
-        placeholder={t("auth.email")}
-        placeholderTextColor="#94a3b8"
-        keyboardType="email-address"
-        autoCapitalize="none"
-        autoComplete="email"
-        textContentType="emailAddress"
-        returnKeyType="next"
-        onSubmitEditing={() => passwordRef.current?.focus()}
-        submitBehavior="submit"
-        value={email}
-        onChangeText={(text) => {
-          setEmail(text);
-          clearMessages();
+    </View>
+  );
+
+  // Concentric-ring corners give the burgundy field depth without imagery.
+  const ringCluster = (anchor: "topRight" | "bottomLeft") =>
+    [520, 400, 280, 160].map((s) => (
+      <View
+        key={`${anchor}-${s}`}
+        style={{
+          position: "absolute",
+          width: s,
+          height: s,
+          borderRadius: s / 2,
+          borderWidth: 1,
+          borderColor: RING,
+          ...(anchor === "topRight"
+            ? { top: 70 - s / 2, left: screenWidth - 40 - s / 2 }
+            : { bottom: 40 - s / 2, left: 28 - s / 2 }),
         }}
-        className="border border-slate-300 rounded-full px-5 py-3.5 mb-4 text-base bg-white text-black"
       />
-      <View style={{ position: "relative", marginBottom: 12 }}>
+    ));
+
+  const Decoration = (
+    <View pointerEvents="none" style={{ position: "absolute", top: 0, right: 0, bottom: 0, left: 0, overflow: "hidden" }}>
+      <View style={{ position: "absolute", top: -150, right: -130, width: 380, height: 380, borderRadius: 190, backgroundColor: INK_SOFT }} />
+      {ringCluster("topRight")}
+      {ringCluster("bottomLeft")}
+    </View>
+  );
+
+  const FormContent = (
+    <>
+      <View style={{ marginBottom: 16 }}>
+        <Text style={labelStyle}>{t("auth.email")}</Text>
         <TextInput
-          ref={passwordRef}
-          placeholder={t("auth.password")}
-          placeholderTextColor="#94a3b8"
-          secureTextEntry={!showPassword}
-        value={password}
-        onChangeText={(text) => {
-          setPassword(text);
-          clearMessages();
-        }}
+          placeholder="you@example.com"
+          placeholderTextColor="rgba(32,31,29,0.4)"
+          keyboardType="email-address"
           autoCapitalize="none"
-          autoComplete="password"
-          textContentType="password"
-          returnKeyType="go"
-          onSubmitEditing={handleSignIn}
-          className="border border-slate-300 rounded-full px-5 py-3.5 pr-12 text-base bg-white text-black"
+          autoComplete="email"
+          textContentType="emailAddress"
+          returnKeyType="next"
+          onSubmitEditing={() => passwordRef.current?.focus()}
+          submitBehavior="submit"
+          value={email}
+          onChangeText={(text) => {
+            setEmail(text);
+            clearMessages();
+          }}
+          style={inputStyle}
         />
-        <TouchableOpacity
-          onPress={() => setShowPassword((value) => !value)}
-          activeOpacity={0.7}
-          style={{ position: "absolute", right: 14, top: 0, bottom: 0, justifyContent: "center" }}
-          accessibilityRole="button"
-          accessibilityLabel={showPassword ? "Hide password" : "Show password"}
-        >
-          <MaterialCommunityIcons
-            name={showPassword ? "eye-outline" : "eye-off-outline"}
-            size={20}
-            color="#64748b"
-          />
-        </TouchableOpacity>
       </View>
-      <TouchableOpacity onPress={handleForgotPassword} disabled={loading} style={{ alignSelf: "flex-end", marginBottom: 18 }}>
-        <Text className="text-slate-500 text-sm underline">{t("auth.forgotPassword")}</Text>
+      <View style={{ marginBottom: 8 }}>
+        <Text style={labelStyle}>{t("auth.password")}</Text>
+        <View style={{ position: "relative" }}>
+          <TextInput
+            ref={passwordRef}
+            placeholder="••••••••"
+            placeholderTextColor="rgba(32,31,29,0.4)"
+            secureTextEntry={!showPassword}
+            value={password}
+            onChangeText={(text) => {
+              setPassword(text);
+              clearMessages();
+            }}
+            autoCapitalize="none"
+            autoComplete="password"
+            textContentType="password"
+            returnKeyType="go"
+            onSubmitEditing={handleSignIn}
+            style={[inputStyle, { paddingRight: 44 }]}
+          />
+          <TouchableOpacity
+            onPress={() => setShowPassword((value) => !value)}
+            activeOpacity={0.7}
+            style={{ position: "absolute", right: 12, top: 0, bottom: 0, justifyContent: "center" }}
+            accessibilityRole="button"
+            accessibilityLabel={showPassword ? "Hide password" : "Show password"}
+          >
+            <MaterialCommunityIcons
+              name={showPassword ? "eye-outline" : "eye-off-outline"}
+              size={20}
+              color={MUTED}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+      <TouchableOpacity onPress={handleForgotPassword} disabled={loading} style={{ alignSelf: "flex-end", marginTop: 6, marginBottom: 20 }}>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12, color: ACCENT }}>{t("auth.forgotPassword")}</Text>
       </TouchableOpacity>
-      {authError ? (
-        <Text className="text-red-500 text-sm font-medium mb-3 text-center">
-          {authError}
-        </Text>
-      ) : null}
-      {warning ? (
-        <Text className="text-amber-600 text-sm font-medium mb-3 text-center">
-          {warning}
-        </Text>
-      ) : null}
-      {infoMessage ? (
-        <Text className="text-green-600 text-sm font-medium mb-3 text-center">
-          {infoMessage}
-        </Text>
-      ) : null}
+      {authError ? <Text style={[messageStyle, { color: "#b00020" }]}>{authError}</Text> : null}
+      {warning ? <Text style={[messageStyle, { color: "#b45309" }]}>{warning}</Text> : null}
+      {infoMessage ? <Text style={[messageStyle, { color: "#15803d" }]}>{infoMessage}</Text> : null}
       <TouchableOpacity
         onPress={handleSignIn}
         disabled={loading}
         activeOpacity={0.85}
-        style={{ opacity: loading ? 0.7 : 1 }}
-        className="bg-slate-900 rounded-full py-4 items-center"
+        style={{
+          borderWidth: 1, borderColor: ACCENT, borderRadius: 4,
+          paddingVertical: 13, alignItems: "center", justifyContent: "center",
+          opacity: loading ? 0.7 : 1,
+        }}
       >
         {loading
-          ? <ActivityIndicator color="#ffffff" />
-          : <Text className="text-white text-base font-semibold">{t("auth.login")}</Text>
+          ? <ActivityIndicator color={ACCENT} />
+          : <Text style={{ fontFamily: Fonts.heading, color: ACCENT, fontSize: 15 }}>{t("auth.login")}</Text>
         }
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => router.push("/register")} style={{ marginTop: 16 }}>
-        <Text className="text-slate-500 text-center text-sm underline">
+      <TouchableOpacity onPress={() => router.push("/register")} style={{ marginTop: 18 }}>
+        <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: MUTED, textAlign: "center" }}>
           {t("auth.loginQuestion")}
         </Text>
       </TouchableOpacity>
     </>
   );
 
+  const card = (
+    <View style={{
+      backgroundColor: PAPER,
+      borderRadius: 12, paddingHorizontal: 24, paddingVertical: 26,
+      borderWidth: 1, borderColor: LINE,
+    }}>
+      {FormContent}
+    </View>
+  );
+
   return (
-    <View style={{ flex: 1, backgroundColor: "#02050a" }}>
+    <View style={{ flex: 1, backgroundColor: INK }}>
+      {Decoration}
       {LanguageSwitcher}
-      <View style={{ position: "absolute", top: 0, right: 0, bottom: 0, left: 0 }} pointerEvents="none">
-        {STARS.map((star) => (
-          <View
-            key={star.id}
-            style={{
-              position: "absolute",
-              left: star.left as `${number}%`,
-              top: star.top as `${number}%`,
-              width: star.size,
-              height: star.size,
-              borderRadius: 99,
-              backgroundColor: "#ffffff",
-              opacity: star.opacity,
-            }}
-          />
-        ))}
-      </View>
 
       {isDesktop ? (
-        <View style={{ flex: 1, flexDirection: "row", alignItems: "stretch" }}>
-          <View style={{ width: "50%", height: "100%", overflow: "hidden", justifyContent: "center", alignItems: "flex-start" }}>
-            <LottieView
-              source={require("../../assets/images/Globe.json")}
-              autoPlay
-              loop
-              style={{ width: desktopGlobeSize, height: desktopGlobeSize, marginLeft: -desktopGlobeSize * 0.36 }}
-            />
+        <View style={{ flex: 1, flexDirection: "row", alignItems: "center" }}>
+          <View style={{ flex: 1, justifyContent: "center", paddingHorizontal: 64 }}>
+            <View style={{ maxWidth: 460 }}>{Hero}</View>
           </View>
-          <View style={{ width: "50%", justifyContent: "center", alignItems: "center", paddingHorizontal: 40, paddingTop: 40 }}>
-            <View style={{
-              width: formWidth, maxWidth: 440,
-              backgroundColor: "rgba(255,255,255,0.92)",
-              borderRadius: 26, paddingHorizontal: 22, paddingVertical: 24,
-              borderWidth: 1, borderColor: "rgba(148,163,184,0.28)",
-              shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 18, shadowOffset: { width: 0, height: 8 },
-            }}>
-              {FormContent}
-            </View>
+          <View style={{ flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 48 }}>
+            <View style={{ width: formWidth, maxWidth: 420 }}>{card}</View>
           </View>
         </View>
       ) : (
-        <View style={{ flex: 1 }}>
-          <View style={{ paddingHorizontal: 28, paddingTop: 108 }}>
-            <View style={{
-              backgroundColor: "rgba(255,255,255,0.92)",
-              borderRadius: 26, paddingHorizontal: 22, paddingVertical: 24,
-              borderWidth: 1, borderColor: "rgba(148,163,184,0.28)",
-            }}>
-              {FormContent}
-            </View>
-          </View>
-          <LottieView
-            source={require("../../assets/images/Globe.json")}
-            autoPlay loop
-            style={{
-              width: mobileGlobeSize, height: mobileGlobeSize,
-              position: "absolute", bottom: -mobileGlobeSize * 0.25, left: -mobileGlobeSize * 0.2,
-            }}
-          />
+        <View style={{ flex: 1, justifyContent: "center", paddingHorizontal: 28, paddingBottom: 24 }}>
+          {Hero}
+          {card}
         </View>
       )}
     </View>

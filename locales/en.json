@@ -2,6 +2,8 @@
   "auth": {
     "signIn": "Log In",
     "signUp": "Register",
+    "heroHeadline": "Sign in to continue your search.",
+    "registerHeroHeadline": "Create your account.",
     "signInSubtitle": "Welcome back. Continue your journey around the world.",
     "signUpSubtitle": "Create an account and start your journey.",
     "language": "Language",
@@ -62,10 +64,14 @@
   },
   "home": {
     "recommended": "Most searched",
-    "allUniversities": "All universities"
+    "allUniversities": "All universities",
+    "kicker": "Universities · Bulgaria",
+    "headline": "Find your path forward.",
+    "allUniversitiesSubtitle": "{{count}} institutions across Bulgaria"
   },
   "favourites": {
     "title": "Favourites",
+    "kicker": "Your shortlist",
     "subtitle": "Universities you saved with the heart button appear here.",
     "emptyTitle": "No favourites yet",
     "emptyMessage": "Tap the heart on any university card to save it here.",

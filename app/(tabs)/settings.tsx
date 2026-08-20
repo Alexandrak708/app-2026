@@ -11,8 +11,8 @@ import {
   Easing,
   ScrollView,
   Platform,
-  type ViewStyle,
 } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
 import type { User } from "@supabase/supabase-js";
@@ -21,42 +21,65 @@ import Constants from "expo-constants";
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
-import { Colors } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { useAppTheme } from "@/hooks/use-theme-color";
+import { Fonts } from "@/constants/typography";
+import { ScreenHeader } from "@/components/editorial";
 import { ensureProfileRecord, getCurrentUser, signOutLocal } from "@/lib/auth";
 import { updateProfileAvatarUrl, updateProfileFullName, uploadAvatar } from "@/lib/profile";
 import type { Profile } from "@/types/profile";
 
-// ── Reusable row ──────────────────────────────────────────────────────────────
-type SettingsRowProps = {
+// ── Reusable hairline row ──────────────────────────────────────────────────────
+function SettingsRow({
+  icon,
+  label,
+  value,
+  onPress,
+  isLast,
+  colors,
+}: {
+  icon: keyof typeof Ionicons.glyphMap;
   label: string;
+  value?: string;
   onPress?: () => void;
-  labelColor: string;
-  chevronColor: string;
-};
-
-function SettingsRow({ label, onPress, labelColor, chevronColor }: SettingsRowProps) {
+  isLast?: boolean;
+  colors: any;
+}) {
   return (
-    <TouchableOpacity style={styles.settingsRow} onPress={onPress} activeOpacity={0.7}>
-      <Text style={[styles.rowLabel, { color: labelColor }]}>{label}</Text>
-      <Text style={[styles.rowChevron, { color: chevronColor }]}>›</Text>
+    <TouchableOpacity
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 14,
+        paddingVertical: 14,
+        borderBottomWidth: isLast ? 0 : 1,
+        borderBottomColor: colors.divider,
+      }}
+      onPress={onPress}
+      activeOpacity={0.7}
+    >
+      <Ionicons name={icon} size={18} color={colors.accent} />
+      <Text style={{ flex: 1, fontFamily: Fonts.body, fontSize: 14, color: colors.text }}>{label}</Text>
+      {value ? <Text style={{ fontFamily: Fonts.body, fontSize: 12, color: colors.textMuted }}>{value}</Text> : null}
+      <Ionicons name="chevron-forward" size={14} color={colors.textMuted} />
     </TouchableOpacity>
   );
 }
 
-type SectionProps = {
-  title: string;
-  children: React.ReactNode;
-  titleColor: string;
-  cardStyle: ViewStyle;
-};
-
-function Section({ title, children, titleColor, cardStyle }: SectionProps) {
+function SectionLabel({ children, colors }: { children: React.ReactNode; colors: any }) {
   return (
-    <View style={styles.section}>
-      <Text style={[styles.sectionLabel, { color: titleColor }]}>{title}</Text>
-      <View style={[styles.sectionCard, cardStyle]}>{children}</View>
-    </View>
+    <Text
+      style={{
+        fontFamily: Fonts.heading,
+        fontSize: 11,
+        letterSpacing: 0.8,
+        textTransform: "uppercase",
+        color: colors.textMuted,
+        marginTop: 22,
+        marginBottom: 2,
+      }}
+    >
+      {children}
+    </Text>
   );
 }
 
@@ -64,15 +87,7 @@ function Section({ title, children, titleColor, cardStyle }: SectionProps) {
 export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
-  const colorScheme = useColorScheme() ?? "light";
-  const isDark = colorScheme === "dark";
-  const basePalette = Colors[isDark ? "dark" : "light"];
-  const palette = {
-    ...basePalette,
-    border: isDark ? "#2a303c" : "#e6e9ee",
-    surface: isDark ? "#171a21" : "#ffffff",
-    surfaceMuted: isDark ? "#222733" : "#f1f5f9",
-  };
+  const { colors, isDark } = useAppTheme();
   const scrollRef = useRef<ScrollView>(null);
   const [user, setUser] = useState<Profile | null>(null);
   const [authUser, setAuthUser] = useState<User | null>(null);
@@ -269,224 +284,166 @@ export default function Settings() {
 
   if (initialLoading) {
     return (
-      <View style={[styles.loadingContainer, { backgroundColor: palette.background }]}>
-        <ActivityIndicator size="large" color={palette.text} />
+      <View style={[styles.loadingContainer, { backgroundColor: colors.background }]}>
+        <ActivityIndicator size="large" color={colors.accent} />
       </View>
     );
   }
 
+  const initials = (user?.full_name || authUser?.email || "U")
+    .trim()
+    .split(/\s+/)
+    .map((s) => s[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+
   return (
     <ScrollView
       ref={scrollRef}
-      style={[styles.container, { backgroundColor: palette.background }]}
-      contentContainerStyle={[styles.scrollContent, { alignItems: "center" }]}
+      style={{ flex: 1, backgroundColor: colors.background }}
+      contentContainerStyle={{ alignItems: "center", paddingBottom: 48 }}
       showsVerticalScrollIndicator={false}
     >
-      <View style={{ width: "100%", maxWidth: 980, paddingHorizontal: 12 }}>
-        <Text style={[styles.pageTitle, { color: palette.text }]}>{t("settings.title")}</Text>
+      <View style={{ width: "100%", maxWidth: 640, paddingHorizontal: 24, paddingTop: 64 }}>
+        <ScreenHeader kicker={t("settings.sections.account")} title={t("settings.title")} titleSize={30} />
 
-        {/* ── Profile Card — all logic unchanged ── */}
-        <View
-          style={[
-            styles.profileCard,
-            {
-              backgroundColor: isDark ? "#171a21" : "#ffffff",
-              shadowColor: palette.text,
-            },
-          ]}
-        >
-          <TouchableOpacity
-            style={styles.avatarWrapper}
-            onPress={handlePickAvatar}
-            activeOpacity={0.85}
-            disabled={loadingAvatar}
-          >
-            <Animated.View style={[styles.avatarRing, { transform: [{ scale: pulseAnim }] }]}>
+        {/* ── Profile row — outlined initials avatar / photo, editable name ── */}
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 14, marginTop: 22, marginBottom: 4 }}>
+          <TouchableOpacity onPress={handlePickAvatar} activeOpacity={0.85} disabled={loadingAvatar}>
+            <Animated.View
+              style={{
+                width: 56,
+                height: 56,
+                borderRadius: 999,
+                borderWidth: 1,
+                borderColor: colors.accent,
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
+                transform: [{ scale: pulseAnim }],
+              }}
+            >
               {loadingAvatar ? (
-                <View style={[styles.avatar, styles.avatarPlaceholder, { backgroundColor: palette.tint }]}>
-                  <ActivityIndicator color="#fff" size="small" />
-                </View>
+                <ActivityIndicator color={colors.accent} size="small" />
+              ) : user?.avatar_url ? (
+                <Image source={{ uri: user.avatar_url }} style={{ width: 56, height: 56 }} />
               ) : (
-                <Image
-                  source={{
-                    uri:
-                      user?.avatar_url ||
-                      `https://ui-avatars.com/api/?name=${encodeURIComponent(
-                        user?.full_name || "U"
-                      )}&background=${isDark ? "ECEDEE" : "1a1a2e"}&color=${isDark ? "151718" : "fff"}&size=200`,
-                  }}
-                  style={styles.avatar}
-                />
+                <Text style={{ fontFamily: Fonts.heading, fontSize: 20, color: colors.accent }}>{initials}</Text>
               )}
             </Animated.View>
-            <View style={[styles.cameraOverlay, { backgroundColor: palette.background, borderColor: palette.border }]}>
-              <Text style={styles.cameraIcon}>📷</Text>
-            </View>
           </TouchableOpacity>
 
-          <View style={styles.profileInfo}>
+          <View style={{ flex: 1 }}>
             {isEditingName ? (
-              <View style={styles.editBlock}>
+              <View style={{ gap: 8 }}>
                 <TextInput
-                  style={[styles.nameInput, { color: palette.text, borderBottomColor: palette.text }]}
+                  style={{
+                    fontFamily: Fonts.heading,
+                    fontSize: 17,
+                    color: colors.text,
+                    borderBottomWidth: 1,
+                    borderBottomColor: colors.accent,
+                    paddingBottom: 4,
+                  }}
                   value={editedName}
                   onChangeText={setEditedName}
                   placeholder={t("settings.yourNamePlaceholder")}
-                  placeholderTextColor={palette.icon}
+                  placeholderTextColor={colors.textMuted}
                   editable={!loadingName}
                   autoFocus
                   returnKeyType="done"
                   onSubmitEditing={handleSaveName}
                 />
-                <View style={styles.editActions}>
+                <View style={{ flexDirection: "row", gap: 8 }}>
                   <TouchableOpacity
-                    style={[styles.saveBtn, { backgroundColor: palette.text }]}
+                    style={{
+                      borderWidth: 1, borderColor: colors.accent, borderRadius: 4,
+                      paddingHorizontal: 16, paddingVertical: 7, minWidth: 60, alignItems: "center",
+                    }}
                     onPress={handleSaveName}
                     disabled={loadingName}
                   >
                     {loadingName ? (
-                      <ActivityIndicator color="#fff" size="small" />
+                      <ActivityIndicator color={colors.accent} size="small" />
                     ) : (
-                      <Text style={styles.saveBtnText}>{t("settings.save")}</Text>
+                      <Text style={{ fontFamily: Fonts.heading, color: colors.accent, fontSize: 13 }}>{t("settings.save")}</Text>
                     )}
                   </TouchableOpacity>
                   <TouchableOpacity
-                    style={[styles.cancelBtn, { backgroundColor: isDark ? "#222733" : "#f1f5f9" }]}
+                    style={{
+                      borderWidth: 1, borderColor: colors.divider, borderRadius: 4,
+                      paddingHorizontal: 14, paddingVertical: 7,
+                    }}
                     onPress={handleCancelEdit}
                   >
-                    <Text style={[styles.cancelBtnText, { color: palette.tint }]}>{t("settings.cancel")}</Text>
+                    <Text style={{ fontFamily: Fonts.heading, color: colors.text, fontSize: 13 }}>{t("settings.cancel")}</Text>
                   </TouchableOpacity>
                 </View>
               </View>
             ) : (
               <TouchableOpacity
                 onPress={() => setIsEditingName(true)}
-                style={styles.nameRow}
+                style={{ flexDirection: "row", alignItems: "center", gap: 6 }}
                 activeOpacity={0.7}
               >
-                <Text style={[styles.profileName, { color: palette.text }]}>{user?.full_name || t("settings.addYourName")}</Text>
-                <Text style={styles.editPencil}>✏️</Text>
+                <Text style={{ fontFamily: Fonts.heading, fontSize: 17, color: colors.text }}>
+                  {user?.full_name || t("settings.addYourName")}
+                </Text>
+                <Ionicons name="pencil-outline" size={13} color={colors.textMuted} />
               </TouchableOpacity>
             )}
-            <Text style={[styles.profileEmail, { color: palette.tint }]}>{authUser?.email || ""}</Text>
+            <Text style={{ fontFamily: Fonts.body, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
+              {authUser?.email || ""}
+            </Text>
           </View>
         </View>
 
+        <View style={{ height: 1, backgroundColor: colors.divider, marginTop: 18 }} />
+
         {/* ── Account ── */}
-        <Section
-          title={t("settings.sections.account")}
-          titleColor={palette.tint}
-          cardStyle={{ backgroundColor: isDark ? "#171a21" : "#ffffff", shadowColor: palette.text }}
-        >
-          <SettingsRow
-            label={t("settings.items.profile")}
-            onPress={() => router.push('/profile')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
-            label={t("settings.items.emailNotifications")}
-            onPress={() => router.push('/email-notifications')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-        </Section>
+        <SectionLabel colors={colors}>{t("settings.sections.account")}</SectionLabel>
+        <SettingsRow icon="person-outline" label={t("settings.items.profile")} onPress={() => router.push("/profile")} colors={colors} />
+        <SettingsRow icon="notifications-outline" label={t("settings.items.emailNotifications")} onPress={() => router.push("/email-notifications")} isLast colors={colors} />
 
         {/* ── Preferences ── */}
-        <Section
-          title={t("settings.sections.preferences")}
-          titleColor={palette.tint}
-          cardStyle={{ backgroundColor: isDark ? "#171a21" : "#ffffff", shadowColor: palette.text }}
-        >
-          <SettingsRow
-            label={t("settings.items.appearance")}
-            onPress={() => router.push('/appearance')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
-            label={t("settings.language")}
-            onPress={() => router.push('/language')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
-            label={t("settings.items.accessibility")}
-            onPress={() => router.push('/accessibility')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-        </Section>
+        <SectionLabel colors={colors}>{t("settings.sections.preferences")}</SectionLabel>
+        <SettingsRow icon="sunny-outline" label={t("settings.items.appearance")} onPress={() => router.push("/appearance")} colors={colors} />
+        <SettingsRow icon="globe-outline" label={t("settings.language")} onPress={() => router.push("/language")} colors={colors} />
+        <SettingsRow icon="accessibility-outline" label={t("settings.items.accessibility")} onPress={() => router.push("/accessibility")} isLast colors={colors} />
 
         {/* ── Support ── */}
-        <Section
-          title={t("settings.sections.support")}
-          titleColor={palette.tint}
-          cardStyle={{ backgroundColor: isDark ? "#171a21" : "#ffffff", shadowColor: palette.text }}
-        >
-          <SettingsRow
-            label={t("settings.items.helpCenter")}
-            onPress={() => router.push('/help-center')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
-            label={t("settings.items.about")}
-            onPress={() => router.push('/about')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
-            label={t("settings.items.termsOfService")}
-            onPress={() => router.push('/terms')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-          <View style={[styles.separator, { backgroundColor: palette.border }]} />
-          <SettingsRow
-            label={t("settings.items.privacyPolicy")}
-            onPress={() => router.push('/privacy')}
-            labelColor={palette.text}
-            chevronColor={palette.tint}
-          />
-        </Section>
+        <SectionLabel colors={colors}>{t("settings.sections.support")}</SectionLabel>
+        <SettingsRow icon="help-circle-outline" label={t("settings.items.helpCenter")} onPress={() => router.push("/help-center")} colors={colors} />
+        <SettingsRow icon="information-circle-outline" label={t("settings.items.about")} onPress={() => router.push("/about")} colors={colors} />
+        <SettingsRow icon="document-text-outline" label={t("settings.items.termsOfService")} onPress={() => router.push("/terms")} colors={colors} />
+        <SettingsRow icon="shield-checkmark-outline" label={t("settings.items.privacyPolicy")} onPress={() => router.push("/privacy")} isLast colors={colors} />
 
-        {/* ── Log Out — logic unchanged ── */}
+        {/* ── Sign out ── */}
         <TouchableOpacity
-          style={[
-            styles.logoutBtn,
-            {
-              backgroundColor: isDark ? "#2a1719" : "#fff0f0",
-              borderColor: isDark ? "#7f1d1d" : "#fecaca",
-            },
-          ]}
+          style={{
+            borderWidth: 1, borderColor: colors.divider, borderRadius: 4,
+            paddingVertical: 13, alignItems: "center", marginTop: 26, marginBottom: 18,
+          }}
           onPress={handleLogout}
           activeOpacity={0.8}
         >
-          <Text style={[styles.logoutText, { color: isDark ? "#fca5a5" : "#dc2626" }]}>{t("settings.logout") || "Log Out"}</Text>
+          <Text style={{ fontFamily: Fonts.heading, fontSize: 15, color: colors.accent }}>{t("settings.logout") || "Log Out"}</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={styles.deleteAccountBtn}
-          onPress={handleDeleteAccount}
-          activeOpacity={0.7}
-          disabled={deleting}
-        >
+        <TouchableOpacity style={{ padding: 12, alignItems: "center", marginBottom: 12 }} onPress={handleDeleteAccount} activeOpacity={0.7} disabled={deleting}>
           {deleting ? (
             <ActivityIndicator color={isDark ? "#fca5a5" : "#dc2626"} size="small" />
           ) : (
-            <Text style={[styles.deleteAccountText, { color: isDark ? "#fca5a5" : "#dc2626" }]}>
+            <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: isDark ? "#fca5a5" : "#dc2626", textDecorationLine: "underline" }}>
               {t("settings.deleteAccount")}
             </Text>
           )}
         </TouchableOpacity>
 
-        <Text style={[styles.versionText, { color: palette.tint }]}>{t("settings.appVersion", { version: Constants.expoConfig?.version ?? "1.0.0" })}</Text>
+        <Text style={{ textAlign: "center", fontFamily: Fonts.body, fontSize: 12, color: colors.textMuted }}>
+          {t("settings.appVersion", { version: Constants.expoConfig?.version ?? "1.0.0" })}
+        </Text>
       </View>
     </ScrollView>
   );
@@ -497,187 +454,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FCFBF7",
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "#FCFBF7",
-  },
-  scrollContent: {
-    padding: 12,
-    paddingTop: 64,
-    paddingBottom: 48,
-    flexGrow: 1,
-  },
-  pageTitle: {
-    fontSize: 28,
-    fontWeight: "800",
-    color: "#1a1a2e",
-    marginBottom: 28,
-    marginLeft: 2,
-    letterSpacing: -0.5,
-  },
-
-  // ── Profile Card (identical to original) ──
-  profileCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#ffffff",
-    borderRadius: 20,
-    padding: 20,
-    shadowColor: "#1a1a2e",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 16,
-    elevation: 4,
-    gap: 20,
-    marginBottom: 28,
-  },
-  avatarWrapper: { position: "relative" },
-  avatarRing: {
-    width: 92,
-    height: 92,
-    borderRadius: 46,
-    padding: 3,
-    backgroundColor: "#1a1a2e",
-  },
-  avatar: {
-    width: 86,
-    height: 86,
-    borderRadius: 43,
-  },
-  avatarPlaceholder: {
-    backgroundColor: "#1a1a2e",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  cameraOverlay: {
-    position: "absolute",
-    bottom: 0,
-    right: 0,
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    width: 26,
-    height: 26,
-    justifyContent: "center",
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.15,
-    shadowRadius: 4,
-    elevation: 3,
-  },
-  cameraIcon: { fontSize: 13 },
-  profileInfo: { flex: 1, gap: 4 },
-  nameRow: { flexDirection: "row", alignItems: "center", gap: 6 },
-  profileName: {
-    fontSize: 20,
-    fontWeight: "700",
-    color: "#1a1a2e",
-    letterSpacing: -0.3,
-  },
-  editPencil: { fontSize: 14, opacity: 0.5 },
-  profileEmail: { fontSize: 13, color: "#810B38", fontWeight: "500" },
-  editBlock: { gap: 8 },
-  nameInput: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#1a1a2e",
-    borderBottomWidth: 2,
-    borderBottomColor: "#1a1a2e",
-    paddingBottom: 4,
-    letterSpacing: -0.3,
-  },
-  editActions: { flexDirection: "row", gap: 8 },
-  saveBtn: {
-    backgroundColor: "#1a1a2e",
-    paddingHorizontal: 16,
-    paddingVertical: 7,
-    borderRadius: 8,
-    minWidth: 60,
-    alignItems: "center",
-  },
-  saveBtnText: { color: "#fff", fontWeight: "700", fontSize: 13 },
-  cancelBtn: {
-    backgroundColor: "#f1f5f9",
-    paddingHorizontal: 14,
-    paddingVertical: 7,
-    borderRadius: 8,
-  },
-  cancelBtnText: { color: "#810B38", fontWeight: "600", fontSize: 13 },
-
-  // ── Sections ──
-  section: { marginBottom: 20 },
-  sectionLabel: {
-    fontSize: 11,
-    fontWeight: "700",
-    color: "#810B38",
-    letterSpacing: 1.5,
-    textTransform: "uppercase",
-    marginBottom: 10,
-    paddingHorizontal: 4,
-  },
-  sectionCard: {
-    backgroundColor: "#ffffff",
-    borderRadius: 20,
-    overflow: "hidden",
-    shadowColor: "#1a1a2e",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 16,
-    elevation: 4,
-  },
-
-  // ── Settings Row ──
-  settingsRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 14,
-    paddingVertical: 14,
-    gap: 10,
-    minHeight: 58,
-  },
-  rowLabel: {
-    flex: 1,
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#1a1a2e",
-    letterSpacing: -0.1,
-  },
-  rowChevron: { fontSize: 22, color: "#810B38", fontWeight: "300" },
-  separator: { height: 1, backgroundColor: "#f1f5f9", marginLeft: 14 },
-
-  // ── Logout (identical to original) ──
-  logoutBtn: {
-    padding: 16,
-    borderRadius: 14,
-    backgroundColor: "#fff0f0",
-    alignItems: "center",
-    borderWidth: 1.5,
-    borderColor: "#fecaca",
-    marginTop: 8,
-    marginBottom: 20,
-  },
-  logoutText: { fontSize: 15, fontWeight: "700", color: "#dc2626", letterSpacing: 0.2 },
-
-  deleteAccountBtn: {
-    padding: 12,
-    alignItems: "center",
-    marginBottom: 12,
-  },
-  deleteAccountText: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#dc2626",
-    textDecorationLine: "underline",
-    letterSpacing: 0.2,
-  },
-
-  versionText: {
-    textAlign: "center",
-    fontSize: 12,
-    color: "#810B38",
-    fontWeight: "500",
-    letterSpacing: 0.5,
   },
 });

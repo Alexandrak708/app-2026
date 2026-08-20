@@ -9,74 +9,41 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import Animated, {
   useSharedValue, useAnimatedScrollHandler, useAnimatedStyle,
-  interpolate, Extrapolation, SharedValue, withTiming, Easing,
+  withTiming, Easing,
 } from "react-native-reanimated";
 import { useRouter } from "expo-router";
 import UniversityCard from "@/components/university-card";
 import CompactUniversityCard from "@/components/compact-university-card";
 import { useAppTheme } from "@/hooks/use-theme-color";
-import { Brand } from "@/constants/theme";
+import { Fonts } from "@/constants/typography";
+import { Kicker, ScreenHeader, Hairline } from "@/components/editorial";
 
-const CARD_GAP = 16;
-const CARD_HORIZONTAL_PADDING = 48;
-const MAX_CARD_WIDTH = 560;
 const FILTER_PANEL_HEIGHT = 340;
-
-function getCardWidth(screenWidth: number) {
-  return Math.min(screenWidth - CARD_HORIZONTAL_PADDING, MAX_CARD_WIDTH);
-}
 
 const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
 
+/** Editorial filter chip: outlined-accent when selected, neutral tint when not. */
 function FilterChip({
   label, selected, onPress,
 }: {
   label: string; selected: boolean; onPress: () => void;
 }) {
-  const { colors, isDark } = useAppTheme();
+  const { colors } = useAppTheme();
 
   return (
     <TouchableOpacity
       onPress={onPress}
       style={{
-        paddingHorizontal: 14, paddingVertical: 7, borderRadius: 20,
-        backgroundColor: selected ? (isDark ? "#e2e8f0" : "#0f172a") : colors.mutedSurface,
-        marginRight: 8, marginBottom: 8,
-        borderWidth: 1, borderColor: selected ? (isDark ? "#cbd5e1" : "#0f172a") : colors.border,
+        paddingHorizontal: 13, paddingVertical: 7, borderRadius: 4,
+        marginRight: 8, marginBottom: 8, borderWidth: 1,
+        borderColor: selected ? colors.accent : "transparent",
+        backgroundColor: selected ? "transparent" : colors.mutedSurface,
       }}
     >
-      <Text style={{ color: selected ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary, fontSize: 13, fontWeight: "600" }}>
+      <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12.5, color: selected ? colors.accent : colors.textSecondary }}>
         {label}
       </Text>
     </TouchableOpacity>
-  );
-}
-
-function Dot({ index, scrollX, cardWidth }: { index: number; scrollX: SharedValue<number>; cardWidth: number }) {
-  const { isDark } = useAppTheme();
-
-  const animatedDotStyle = useAnimatedStyle(() => {
-    const inputRange = [
-      (index - 1) * (cardWidth + CARD_GAP),
-      index * (cardWidth + CARD_GAP),
-      (index + 1) * (cardWidth + CARD_GAP),
-    ];
-    const width = interpolate(scrollX.value, inputRange, [8, 24, 8], Extrapolation.CLAMP);
-    const opacity = interpolate(scrollX.value, inputRange, [0.45, 1, 0.45], Extrapolation.CLAMP);
-    return { width, opacity };
-  });
-
-  return (
-    <Animated.View
-      style={[
-        {
-          height: 8, borderRadius: 999, backgroundColor: isDark ? "#e2e8f0" : "#0f172a",
-          borderWidth: 1, borderColor: isDark ? "rgba(226, 232, 240, 0.28)" : "rgba(15, 23, 42, 0.12)",
-          marginHorizontal: 3,
-        },
-        animatedDotStyle,
-      ]}
-    />
   );
 }
 
@@ -101,9 +68,12 @@ export default function Index() {
   const router = useRouter();
   const { t } = useTranslation();
   const { width: screenWidth } = useWindowDimensions();
-  const cardWidth = getCardWidth(screenWidth);
   const universities = useMemo(() => buildUniversities(t), [t]);
-  const { colors, isDark } = useAppTheme();
+  const { colors } = useAppTheme();
+
+  // Fixed-ish width with a safe floor: some web/hydration timings report a
+  // window width of 0, which must never collapse the carousel cards.
+  const recommendedCardWidth = screenWidth >= 200 ? Math.min(Math.round(screenWidth * 0.6), 250) : 230;
 
   const [searchText, setSearchText] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -138,8 +108,6 @@ export default function Index() {
   const scrollHandler = useAnimatedScrollHandler((event) => {
     scrollX.value = event.contentOffset.x;
   });
-
-  const cardSnapInterval = cardWidth + CARD_GAP;
 
   const searchQuery = searchText.trim().toLowerCase();
   const hasSearchQuery = searchQuery.length > 0;
@@ -183,101 +151,90 @@ export default function Index() {
     >
       {showFilters && (
         <View pointerEvents="box-none" style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0, zIndex: 5 }}>
-          <TouchableOpacity
-            onPress={closeFilters}
-            activeOpacity={1}
-            style={{ flex: 1 }}
-          />
+          <TouchableOpacity onPress={closeFilters} activeOpacity={1} style={{ flex: 1 }} />
         </View>
       )}
 
       <View style={{ zIndex: 10, elevation: 10 }}>
-        {/* Search Bar + Filter Panel */}
-        <View style={{ paddingHorizontal: 24, paddingTop: 60, marginBottom: 16 }}>
-          <View
-            style={{
-              flexDirection: "row", alignItems: "center",
-              backgroundColor: isDark ? Brand.primaryDark : Brand.primary,
-              borderRadius: 16,
-              borderBottomLeftRadius: showFilters ? 0 : 16,
-              borderBottomRightRadius: showFilters ? 0 : 16,
-              paddingHorizontal: 14, paddingVertical: 11,
-              shadowColor: colors.cardShadow, shadowOffset: { width: 0, height: 2 },
-              shadowOpacity: 0.07, shadowRadius: 10, elevation: 4,
-            }}
-          >
-            <Ionicons
-              name="search" size={18}
-              color={isSearchFocused ? (isDark ? "#FFFFFF" : "#000000") : (isDark ? "#FFFFFF" : "#F1F5F9")}
-              style={{ marginRight: 10 }}
-            />
-            <TextInput
-              ref={inputRef}
-              value={searchText}
-              onChangeText={setSearchText}
-              onFocus={() => setIsSearchFocused(true)}
-              onBlur={() => setIsSearchFocused(false)}
-              placeholder={t("search.placeholder")}
-              placeholderTextColor={isDark ? "rgba(255,255,255,0.7)" : "#F1F5F9"}
-              style={{ flex: 1, fontSize: 14, fontWeight: "500", color: isSearchFocused ? (isDark ? "#FFFFFF" : "#000000") : (isDark ? "#FFFFFF" : "#F1F5F9"), paddingVertical: 0 }}
-              returnKeyType="search"
-            />
-            {searchText.length > 0 && (
-                <TouchableOpacity onPress={() => setSearchText("")} style={{ marginRight: 8 }}>
-                <Ionicons name="close-circle" size={18} color={isDark ? "#FFFFFF" : "#F1F5F9"} />
-              </TouchableOpacity>
-            )}
-            <View style={{ width: 1, height: 20, backgroundColor: isDark ? "rgba(255,255,255,0.32)" : "#F1F5F9", marginRight: 10, opacity: 0.32 }} />
+        {/* Header */}
+        <View style={{ paddingHorizontal: 24, paddingTop: 60, paddingBottom: 16 }}>
+          <ScreenHeader kicker={t("home.kicker")} title={t("home.headline")} titleSize={34} />
+        </View>
+
+        {/* Search + filter button */}
+        <View style={{ paddingHorizontal: 24 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <View
+              style={{
+                flex: 1, flexDirection: "row", alignItems: "center", gap: 9,
+                borderWidth: 1, borderColor: isSearchFocused ? colors.accent : colors.divider,
+                borderRadius: 4, paddingHorizontal: 12, paddingVertical: 11,
+                backgroundColor: colors.surface,
+              }}
+            >
+              <Ionicons name="search" size={16} color={colors.textSecondary} />
+              <TextInput
+                ref={inputRef}
+                value={searchText}
+                onChangeText={setSearchText}
+                onFocus={() => setIsSearchFocused(true)}
+                onBlur={() => setIsSearchFocused(false)}
+                placeholder={t("search.placeholder")}
+                placeholderTextColor={colors.textMuted}
+                style={{ flex: 1, fontFamily: Fonts.body, fontSize: 14, color: colors.text, paddingVertical: 0 }}
+                returnKeyType="search"
+              />
+              {searchText.length > 0 && (
+                <TouchableOpacity onPress={() => setSearchText("")}>
+                  <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+                </TouchableOpacity>
+              )}
+            </View>
+
             <TouchableOpacity
               onPress={toggleFilters}
-              style={{ flexDirection: "row", alignItems: "center", gap: 5 }}
+              style={{
+                width: 44, height: 44, borderRadius: 4, borderWidth: 1,
+                borderColor: activeFiltersCount > 0 ? colors.accent : colors.divider,
+                backgroundColor: colors.surface, alignItems: "center", justifyContent: "center",
+              }}
             >
-              <Ionicons
-                name="options-outline" size={18}
-                color={activeFiltersCount > 0 ? (isDark ? "#FFFFFF" : "#000000") : (isDark ? "#FFFFFF" : "#F1F5F9")}
-              />
+              <Ionicons name="options-outline" size={18} color={activeFiltersCount > 0 ? colors.accent : colors.text} />
               {activeFiltersCount > 0 && (
                 <View
                   style={{
-                    backgroundColor: isDark ? "#0f172a" : "#000000", borderRadius: 10,
-                    minWidth: 18, height: 18,
-                    alignItems: "center", justifyContent: "center", paddingHorizontal: 4,
+                    position: "absolute", top: 6, right: 6, minWidth: 14, height: 14,
+                    borderRadius: 7, backgroundColor: colors.accent,
+                    alignItems: "center", justifyContent: "center", paddingHorizontal: 3,
                   }}
                 >
-                  <Text style={{ color: isDark ? "#ffffff" : "#fff", fontSize: 10, fontWeight: "700" }}>
-                    {activeFiltersCount}
-                  </Text>
+                  <Text style={{ color: "#fff", fontSize: 9, fontFamily: Fonts.bodyMedium }}>{activeFiltersCount}</Text>
                 </View>
               )}
             </TouchableOpacity>
           </View>
 
-          {/* Slide-down Filter Panel */}
+          {/* Slide-down full filter panel */}
           <Animated.View
             style={[
               filterPanelStyle,
               {
-                backgroundColor: colors.surface,
-                borderBottomLeftRadius: 16, borderBottomRightRadius: 16,
-                shadowColor: colors.cardShadow, shadowOffset: { width: 0, height: 6 },
-                shadowOpacity: 0.08, shadowRadius: 12, elevation: 12,
-                zIndex: 20,
+                marginTop: 14, backgroundColor: colors.surface,
+                borderRadius: 4, borderWidth: 1, borderColor: colors.divider, zIndex: 20,
               },
             ]}
           >
             <ScrollView
               style={{ flex: 1 }}
-              contentContainerStyle={{ padding: 16, paddingTop: 12, paddingBottom: 18 }}
+              contentContainerStyle={{ padding: 16, paddingBottom: 18 }}
               showsVerticalScrollIndicator={false}
               keyboardShouldPersistTaps="always"
               nestedScrollEnabled
             >
-              <View style={{ height: 1, backgroundColor: colors.softBorder, marginBottom: 14 }} />
-
-              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontFamily: Fonts.heading, fontSize: 11, color: colors.textMuted, letterSpacing: 0.8, textTransform: "uppercase", marginBottom: 8 }}>
                 {t("filters.degree")}
               </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 8 }}>
                 {(["Bachelor", "Master"] as const).map((d) => (
                   <FilterChip
                     key={d} label={t(`degrees.${d}`)}
@@ -287,10 +244,10 @@ export default function Index() {
                 ))}
               </View>
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontFamily: Fonts.heading, fontSize: 11, color: colors.textMuted, letterSpacing: 0.8, textTransform: "uppercase", marginBottom: 8 }}>
                 {t("filters.scholarship")}
               </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 8 }}>
                 <FilterChip
                   label={t("filters.yes")} selected={selectedScholarship === true}
                   onPress={() => setSelectedScholarship(selectedScholarship === true ? null : true)}
@@ -301,10 +258,10 @@ export default function Index() {
                 />
               </View>
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontFamily: Fonts.heading, fontSize: 11, color: colors.textMuted, letterSpacing: 0.8, textTransform: "uppercase", marginBottom: 8 }}>
                 {t("filters.category")}
               </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 14 }}>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 8 }}>
                 {["Engineering", "Medical", "Economics", "Business", "Law", "Architecture", "Maritime", "Sports", "Arts", "Security", "Military", "Defence"].map((c) => (
                   <FilterChip
                     key={c} label={t(`categories.${c}`)}
@@ -314,7 +271,7 @@ export default function Index() {
                 ))}
               </View>
 
-              <Text style={{ fontSize: 11, fontWeight: "700", color: colors.textMuted, letterSpacing: 1, marginBottom: 8 }}>
+              <Text style={{ fontFamily: Fonts.heading, fontSize: 11, color: colors.textMuted, letterSpacing: 0.8, textTransform: "uppercase", marginBottom: 8 }}>
                 {t("filters.country")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", marginBottom: 6 }}>
@@ -327,13 +284,15 @@ export default function Index() {
                 ))}
               </View>
 
-              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 4 }}>
-                <Text style={{ fontSize: 13, color: colors.textSecondary, fontWeight: "500" }}>
+              <Hairline style={{ marginTop: 6, marginBottom: 12 }} />
+
+              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: colors.textSecondary }}>
                   {t("search.found", { count: filteredUniversities.length })}
                 </Text>
                 {activeFiltersCount > 0 && (
                   <TouchableOpacity onPress={clearFilters}>
-                    <Text style={{ fontSize: 13, color: colors.textMuted, fontWeight: "600" }}>
+                    <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 13, color: colors.accent }}>
                       {t("search.clearAll")}
                     </Text>
                   </TouchableOpacity>
@@ -346,34 +305,46 @@ export default function Index() {
 
       <ScrollView
         style={{ flex: 1 }}
-        contentContainerStyle={{ paddingBottom: 36 }}
+        contentContainerStyle={{ paddingBottom: 24 }}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
         scrollEnabled={!showFilters}
       >
         {hasSearchQuery ? (
-          <View style={{ paddingHorizontal: 24, paddingTop: 6, paddingBottom: 12 }}>
-            <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text, marginBottom: 10 }}>
+          <View style={{ paddingHorizontal: 24, paddingTop: 18 }}>
+            <Text style={{ fontFamily: Fonts.heading, fontSize: 20, color: colors.text, marginBottom: 12 }}>
               {t("search.found", { count: displayedUniversities.length })}
             </Text>
 
             {displayedUniversities.length > 0 ? (
               <View>
-                <Text style={{ fontSize: 12, fontWeight: "700", color: colors.textMuted, marginBottom: 10, textTransform: "uppercase", letterSpacing: 1 }}>
+                <Kicker style={{ fontSize: 10, marginBottom: 12 }}>
                   {t("search.closestMatch", { defaultValue: "Closest match" })}
-                </Text>
+                </Kicker>
                 <UniversityCard
                   item={displayedUniversities[0]}
                   onPress={() => router.push(`/university/${displayedUniversities[0].id}` as any)}
                 />
+                {displayedUniversities.length > 1 && (
+                  <View style={{ marginTop: 22 }}>
+                    {displayedUniversities.slice(1).map((item, i, arr) => (
+                      <CompactUniversityCard
+                        key={item.id}
+                        item={item}
+                        isLast={i === arr.length - 1}
+                        onPress={() => router.push(`/university/${item.id}` as any)}
+                      />
+                    ))}
+                  </View>
+                )}
               </View>
             ) : (
-              <View style={{ alignItems: "center", marginTop: 18 }}>
+              <View style={{ alignItems: "center", marginTop: 40 }}>
                 <Ionicons name="search-outline" size={40} color={colors.textMuted} />
-                <Text style={{ color: colors.textMuted, fontSize: 15, fontWeight: "600", marginTop: 12 }}>
+                <Text style={{ fontFamily: Fonts.heading, color: colors.text, fontSize: 18, marginTop: 12 }}>
                   {t("search.noResults")}
                 </Text>
-                <Text style={{ color: colors.textSecondary, fontSize: 13, marginTop: 4, textAlign: "center" }}>
+                <Text style={{ fontFamily: Fonts.body, color: colors.textSecondary, fontSize: 13, marginTop: 4, textAlign: "center" }}>
                   {t("search.tryDifferent")}
                 </Text>
               </View>
@@ -381,62 +352,48 @@ export default function Index() {
           </View>
         ) : (
           <>
-            <Text style={{ fontSize: 18, fontWeight: "800", color: colors.text, paddingHorizontal: 24, marginBottom: 12 }}>
+            <Hairline style={{ marginHorizontal: 24, marginTop: 4, marginBottom: 18 }} />
+
+            <Text style={{ fontFamily: Fonts.heading, fontSize: 22, color: colors.text, paddingHorizontal: 24, marginBottom: 12 }}>
               {t("home.recommended")}
             </Text>
 
-            {/* Carousel */}
-            <View style={{ position: "relative" }}>
-              <AnimatedScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                snapToInterval={cardSnapInterval}
-                decelerationRate="fast"
-                contentContainerStyle={{ paddingHorizontal: 24 }}
-                onScroll={scrollHandler}
-                scrollEventThrottle={16}
-              >
-                {filteredUniversities.map((item, index) => (
-                  <UniversityCard
-                    key={item.id}
-                    item={item}
-                    index={index}
-                    scrollX={scrollX}
-                    onPress={() => router.push(`/university/${item.id}` as any)}
-                  />
-                ))}
-              </AnimatedScrollView>
+            <AnimatedScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              snapToInterval={recommendedCardWidth + 16}
+              decelerationRate="fast"
+              contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 6 }}
+              onScroll={scrollHandler}
+              scrollEventThrottle={16}
+            >
+              {filteredUniversities.map((item, index) => (
+                <UniversityCard
+                  key={item.id}
+                  item={item}
+                  index={index}
+                  scrollX={scrollX}
+                  width={recommendedCardWidth}
+                  onPress={() => router.push(`/university/${item.id}` as any)}
+                />
+              ))}
+            </AnimatedScrollView>
 
-              {filteredUniversities.length > 0 && (
-                <View
-                  style={{
-                    alignSelf: "center", flexDirection: "row",
-                    alignItems: "center", justifyContent: "center",
-                    marginTop: 14,
-                    paddingHorizontal: 12, paddingVertical: 8,
-                    borderRadius: 999,
-                    backgroundColor: colors.surface,
-                    borderWidth: 1, borderColor: colors.softBorder,
-                    shadowColor: colors.cardShadow, shadowOffset: { width: 0, height: 4 },
-                    shadowOpacity: 0.06, shadowRadius: 10, elevation: 3,
-                  }}
-                >
-                  {filteredUniversities.map((_, index) => (
-                    <Dot key={index} index={index} scrollX={scrollX} cardWidth={cardWidth} />
-                  ))}
-                </View>
-              )}
+            <View style={{ paddingHorizontal: 24, paddingTop: 26, paddingBottom: 2 }}>
+              <Text style={{ fontFamily: Fonts.heading, fontSize: 22, color: colors.text }}>
+                {t("home.allUniversities")}
+              </Text>
+              <Text style={{ fontFamily: Fonts.body, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
+                {t("home.allUniversitiesSubtitle", { count: universities.length })}
+              </Text>
             </View>
 
-            <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text, paddingHorizontal: 24, marginTop: 18, marginBottom: 10 }}>
-              {t("home.allUniversities")}
-            </Text>
-
-            <View style={{ paddingHorizontal: 24, paddingBottom: 12 }}>
-              {universities.map((item) => (
+            <View style={{ paddingHorizontal: 24 }}>
+              {universities.map((item, i) => (
                 <CompactUniversityCard
                   key={item.id}
                   item={item}
+                  isLast={i === universities.length - 1}
                   onPress={() => router.push(`/university/${item.id}` as any)}
                 />
               ))}

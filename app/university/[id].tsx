@@ -14,62 +14,56 @@ import { useTranslation } from "react-i18next";
 import { buildUniversities } from "@/data/university-data";
 import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { Fonts } from "@/constants/typography";
 
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <View style={{ flexDirection: "row", gap: 4 }}>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <Ionicons
-          key={star}
-          name={star <= rating ? "star" : "star-outline"}
-          size={16}
-          color={star <= rating ? "#f59e0b" : "rgba(255,255,255,0.4)"}
-        />
-      ))}
-    </View>
-  );
-}
-
-function InfoBadge({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; label: string }) {
+/** An editorial tag: outlined-accent, or a plain neutral tint. */
+function Tag({ label, outline = false }: { label: string; outline?: boolean }) {
+  const { colors } = useAppTheme();
   return (
     <View
       style={{
-        flexDirection: "row",
-        alignItems: "center",
-        backgroundColor: "rgba(255,255,255,0.15)",
-        borderRadius: 20,
-        paddingHorizontal: 12,
-        paddingVertical: 6,
+        borderRadius: 4,
+        paddingHorizontal: 10,
+        paddingVertical: 5,
         marginRight: 8,
         marginBottom: 8,
-        gap: 6,
+        borderWidth: 1,
+        borderColor: outline ? colors.accent : "transparent",
+        backgroundColor: outline ? "transparent" : colors.mutedSurface,
       }}
     >
-      <Ionicons name={icon} size={13} color="#ffffff" />
-      <Text style={{ color: "#ffffff", fontSize: 12, fontWeight: "600" }}>{label}</Text>
+      <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12, color: outline ? colors.accent : colors.textSecondary }}>
+        {label}
+      </Text>
     </View>
   );
 }
 
+/** Quiet bordered section container — hairline border, no shadow. */
 function SectionCard({ children }: { children: React.ReactNode }) {
   const { colors } = useAppTheme();
 
   return (
     <View
       style={{
-        backgroundColor: colors.surface,
-        borderRadius: 20,
-        padding: 20,
-        marginBottom: 16,
-        shadowColor: colors.cardShadow,
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.06,
-        shadowRadius: 8,
-        elevation: 3,
+        borderWidth: 1,
+        borderColor: colors.divider,
+        borderRadius: 4,
+        padding: 18,
+        marginBottom: 14,
+        backgroundColor: "transparent",
       }}
     >
       {children}
     </View>
+  );
+}
+
+/** Section heading — serif, semibold. */
+function SectionTitle({ children, style }: { children: React.ReactNode; style?: any }) {
+  const { colors } = useAppTheme();
+  return (
+    <Text style={[{ fontFamily: Fonts.heading, fontSize: 19, color: colors.text }, style]}>{children}</Text>
   );
 }
 
@@ -79,20 +73,22 @@ function StatCard({ value, label, icon }: { value: string; label: string; icon: 
     <View
       style={{
         flex: 1,
-        backgroundColor: colors.mutedSurface,
-        borderRadius: 16,
+        borderWidth: 1,
+        borderColor: colors.divider,
+        borderRadius: 4,
         padding: 14,
         alignItems: "center",
         minWidth: 80,
       }}
     >
-      <Ionicons name={icon} size={18} color={colors.text} style={{ marginBottom: 6 }} />
-      <Text style={{ fontSize: 18, fontWeight: "800", color: colors.text }}>{value}</Text>
-      <Text style={{ fontSize: 10, color: colors.textMuted, textAlign: "center", marginTop: 2 }}>{label}</Text>
+      <Ionicons name={icon} size={18} color={colors.accent} style={{ marginBottom: 6 }} />
+      <Text style={{ fontFamily: Fonts.heading, fontSize: 19, color: colors.text }}>{value}</Text>
+      <Text style={{ fontFamily: Fonts.body, fontSize: 10, color: colors.textMuted, textAlign: "center", marginTop: 2 }}>{label}</Text>
     </View>
   );
 }
 
+/** Outlined action button — accent (primary) or neutral (secondary). */
 function ActionButton({
   icon,
   label,
@@ -104,7 +100,7 @@ function ActionButton({
   onPress?: () => void;
   primary?: boolean;
 }) {
-  const { colors, isDark } = useAppTheme();
+  const { colors } = useAppTheme();
 
   return (
     <TouchableOpacity
@@ -114,15 +110,17 @@ function ActionButton({
         alignItems: "center",
         justifyContent: "center",
         gap: 8,
-        backgroundColor: primary ? (isDark ? "#e2e8f0" : "#0f172a") : colors.mutedSurface,
-        borderRadius: 14,
-        paddingVertical: 14,
+        backgroundColor: "transparent",
+        borderWidth: 1,
+        borderColor: primary ? colors.accent : colors.divider,
+        borderRadius: 4,
+        paddingVertical: 13,
         paddingHorizontal: 20,
         flex: 1,
       }}
     >
-      <Ionicons name={icon} size={18} color={primary ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary} />
-      <Text style={{ color: primary ? (isDark ? "#0f172a" : "#ffffff") : colors.textSecondary, fontSize: 14, fontWeight: "700" }}>
+      <Ionicons name={icon} size={17} color={primary ? colors.accent : colors.text} />
+      <Text style={{ fontFamily: Fonts.heading, color: primary ? colors.accent : colors.text, fontSize: 15 }}>
         {label}
       </Text>
     </TouchableOpacity>
@@ -133,9 +131,9 @@ function ExpandableSection({ title, icon, children, colors }: { title: string; i
   const [open, setOpen] = useState(false);
   return (
     <SectionCard>
-      <TouchableOpacity onPress={() => setOpen(!open)} style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-        <Ionicons name={icon} size={18} color={colors.text} />
-        <Text style={{ fontSize: 15, fontWeight: "700", color: colors.text, flex: 1 }}>{title}</Text>
+      <TouchableOpacity onPress={() => setOpen(!open)} style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+        <Ionicons name={icon} size={18} color={colors.accent} />
+        <Text style={{ fontFamily: Fonts.heading, fontSize: 17, color: colors.text, flex: 1 }}>{title}</Text>
         <Ionicons name={open ? "chevron-up" : "chevron-down"} size={16} color={colors.textMuted} />
       </TouchableOpacity>
       {open && <View style={{ marginTop: 14 }}>{children}</View>}
@@ -145,9 +143,9 @@ function ExpandableSection({ title, icon, children, colors }: { title: string; i
 
 function InfoRow({ label, colors }: { label: string; colors: any }) {
   return (
-    <View style={{ flexDirection: "row", gap: 8, marginBottom: 6 }}>
-      <Text style={{ color: colors.text, fontSize: 12 }}>•</Text>
-      <Text style={{ color: colors.textSecondary, fontSize: 12, lineHeight: 18, flex: 1 }}>{label}</Text>
+    <View style={{ flexDirection: "row", gap: 10, marginBottom: 8 }}>
+      <Text style={{ color: colors.accent, fontSize: 12, lineHeight: 18 }}>•</Text>
+      <Text style={{ fontFamily: Fonts.body, color: colors.textSecondary, fontSize: 13, lineHeight: 19, flex: 1 }}>{label}</Text>
     </View>
   );
 }
@@ -209,16 +207,14 @@ export default function UniversityPage() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView showsVerticalScrollIndicator={false} bounces contentContainerStyle={{ alignItems: "center" }}>
 
-        {/* Hero Image — full photo (contain) over a blurred fill of itself, so nothing is cropped */}
-        <View style={{ height: 320, width: "100%", maxWidth: pageWidth, backgroundColor: university.color, overflow: "hidden" }}>
-          {/* Blurred backdrop fills the frame edges */}
+        {/* Hero — full photo (contain) over a blurred fill of itself, so nothing is cropped */}
+        <View style={{ height: 280, width: "100%", maxWidth: pageWidth, backgroundColor: university.color, overflow: "hidden" }}>
           <ExpoImage
             source={university.image}
             style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}
             contentFit="cover"
             blurRadius={12}
           />
-          {/* Dim the blurred backdrop for contrast (keeps the sharp photo below bright) */}
           <View
             style={{
               position: "absolute",
@@ -226,158 +222,141 @@ export default function UniversityPage() {
               backgroundColor: isDark ? "rgba(0,0,0,0.5)" : "rgba(0,0,0,0.38)",
             }}
           />
-          {/* Sharp, fully-visible photo */}
           <ExpoImage
             source={university.image}
             style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}
             contentFit="contain"
           />
+          {/* Warm plate tint + bottom gradient for legible title */}
+          <View pointerEvents="none" style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0, backgroundColor: "rgba(129,11,56,0.06)" }} />
+          <View pointerEvents="none" style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 160, backgroundColor: "rgba(0,0,0,0.42)" }} />
 
+          {/* Back pill */}
           <TouchableOpacity
             onPress={() => router.back()}
             style={{
-              position: "absolute",
-              top: 56,
-              left: 20,
-              backgroundColor: "rgba(0,0,0,0.35)",
-              borderRadius: 12,
-              padding: 8,
+              position: "absolute", top: 56, left: 20,
+              width: 38, height: 38, borderRadius: 999,
+              backgroundColor: "rgba(255,255,255,0.9)",
+              alignItems: "center", justifyContent: "center",
             }}
           >
-            <Ionicons name="arrow-back" size={22} color="#ffffff" />
+            <Ionicons name="chevron-back" size={20} color="#201f1d" />
           </TouchableOpacity>
 
-          {/* Heart button in top-right of hero */}
+          {/* Favourite pill */}
           <TouchableOpacity
             onPress={() => toggleFavourite(id as any)}
             style={{
-              position: "absolute",
-              top: 56,
-              right: 20,
-              backgroundColor: "rgba(0,0,0,0.35)",
-              borderRadius: 12,
-              padding: 8,
+              position: "absolute", top: 56, right: 20,
+              width: 38, height: 38, borderRadius: 999,
+              backgroundColor: "rgba(255,255,255,0.9)",
+              alignItems: "center", justifyContent: "center",
             }}
           >
             <Ionicons
               name={checkFavourite(id as any) ? "heart" : "heart-outline"}
-              size={22}
-              color={checkFavourite(id as any) ? "#ef4444" : "#ffffff"}
+              size={19}
+              color={colors.accent}
             />
           </TouchableOpacity>
 
-          <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 24 }}>
-            <View
-              style={{
-                alignSelf: "flex-start",
-                backgroundColor: "rgba(0,0,0,0.4)",
-                borderRadius: 20,
-                paddingHorizontal: 12,
-                paddingVertical: 4,
-                marginBottom: 10,
-              }}
-            >
-              <Text style={{ color: "#ffffff", fontSize: 11, fontWeight: "700", letterSpacing: 0.5 }}>
-                {categoryLabel.toUpperCase()}
-              </Text>
-            </View>
-
-            <Text
-              style={{
-                color: "#ffffff",
-                fontSize: 26,
-                fontWeight: "800",
-                letterSpacing: 0.3,
-                textShadowColor: "rgba(0,0,0,0.6)",
-                textShadowOffset: { width: 0, height: 1 },
-                textShadowRadius: 6,
-              }}
-            >
+          <View style={{ position: "absolute", left: 24, right: 24, bottom: 20 }}>
+            <Text style={{ fontFamily: Fonts.heading, color: "#fff", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", opacity: 0.85 }}>
+              {categoryLabel}
+            </Text>
+            <Text style={{ fontFamily: Fonts.heading, color: "#fff", fontSize: 27, lineHeight: 31, marginTop: 4 }}>
               {university.name}
             </Text>
-
-            <View style={{ flexDirection: "row", alignItems: "center", marginTop: 8, gap: 8 }}>
-              <StarRating rating={university.rating} />
-              <Text
-                style={{
-                  color: "rgba(255,255,255,0.9)",
-                  fontSize: 12,
-                  textShadowColor: "rgba(0,0,0,0.6)",
-                  textShadowOffset: { width: 0, height: 1 },
-                  textShadowRadius: 5,
-                }}
-              >
-                {university.rating}.0 / 5.0
-              </Text>
-            </View>
-
-            <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 12 }}>
-              <InfoBadge icon="location-sharp" label={university.location} />
-              <InfoBadge icon="school-outline" label={university.degreeLabel} />
-              <InfoBadge
-                icon={university.scholarship ? "ribbon-outline" : "close-circle-outline"}
-                label={scholarshipLabel}
-              />
-            </View>
           </View>
         </View>
 
         {/* Content */}
-        <View style={{ padding: 20, width: "100%", maxWidth: pageWidth }}>
+        <View style={{ paddingHorizontal: 24, paddingTop: 20, paddingBottom: 20, width: "100%", maxWidth: pageWidth }}>
+
+          {/* Location line */}
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <Ionicons name="location-outline" size={13} color={colors.textSecondary} />
+            <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: colors.textSecondary }}>
+              {university.location}
+            </Text>
+          </View>
+
+          {/* Tags */}
+          <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 14 }}>
+            {university.degreeLevels.map((level) => (
+              <Tag key={level} label={t(`degrees.${level}`)} outline />
+            ))}
+            <Tag label={scholarshipLabel} />
+          </View>
+
+          {/* 3-column stat strip */}
+          {id && (() => {
+            const sv = t(`universityStatsValues.${id}`, { returnObjects: true }) as Record<string, string> | string | undefined;
+            if (!sv || typeof sv === "string") return null;
+            const cells = [
+              { value: sv.yearsTradition, label: t("universityStats.yearsTradition") },
+              { value: sv.bachelorPrograms, label: t("universityStats.bachelorPrograms") },
+              { value: sv.studentsGraduated, label: t("universityStats.studentsGraduated") },
+            ].filter((c) => c.value);
+            if (cells.length === 0) return null;
+            return (
+              <View style={{ flexDirection: "row", borderWidth: 1, borderColor: colors.divider, borderRadius: 4, overflow: "hidden", marginTop: 22 }}>
+                {cells.map((c, i) => (
+                  <View
+                    key={i}
+                    style={{
+                      flex: 1, paddingVertical: 14, alignItems: "center",
+                      borderRightWidth: i < cells.length - 1 ? 1 : 0, borderRightColor: colors.divider,
+                    }}
+                  >
+                    <Text style={{ fontFamily: Fonts.heading, fontSize: 18, color: colors.text }}>{c.value}</Text>
+                    <Text style={{ fontFamily: Fonts.body, fontSize: 11, color: colors.textMuted, marginTop: 2, textAlign: "center", paddingHorizontal: 4 }}>{c.label}</Text>
+                  </View>
+                ))}
+              </View>
+            );
+          })()}
+
+          <View style={{ height: 1, backgroundColor: colors.divider, marginVertical: 22 }} />
 
           {/* About */}
-          <SectionCard>
-            <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 10 }}>
-              {t("university.about")}
+          <SectionTitle style={{ marginBottom: 8 }}>{t("university.about")}</SectionTitle>
+          <Text
+            style={{ fontFamily: Fonts.body, fontSize: 14, color: colors.textSecondary, lineHeight: 23, textAlign: "justify" }}
+            numberOfLines={expanded ? undefined : 4}
+          >
+            {university.longDescription || university.description}
+          </Text>
+          <TouchableOpacity onPress={() => setExpanded(!expanded)} style={{ marginTop: 8, marginBottom: 22 }}>
+            <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 13, color: colors.accent }}>
+              {expanded ? t("university.showLess") : t("university.readMore")}
             </Text>
-            <Text style={{ fontSize: 14, color: colors.textSecondary, lineHeight: 22 }} numberOfLines={expanded ? undefined : 3}>
-              {university.longDescription || university.description}
-            </Text>
-            <TouchableOpacity onPress={() => setExpanded(!expanded)} style={{ marginTop: 8 }}>
-              <Text style={{ fontSize: 13, fontWeight: "700", color: colors.text }}>
-                {expanded ? t("university.showLess") : t("university.readMore")}
-              </Text>
-            </TouchableOpacity>
-          </SectionCard>
+          </TouchableOpacity>
 
           {/* Quick Info */}
           <SectionCard>
-            <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 14 }}>
-              {t("university.quickInfo")}
-            </Text>
+            <SectionTitle style={{ marginBottom: 8 }}>{t("university.quickInfo")}</SectionTitle>
 
-            {quickInfoRows.map((row) => (
+            {quickInfoRows.map((row, i) => (
               <View
                 key={row.label}
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
-                  paddingVertical: 10,
-                  borderBottomWidth: 1,
-                  borderBottomColor: colors.softBorder,
+                  paddingVertical: 12,
+                  borderBottomWidth: i === quickInfoRows.length - 1 ? 0 : 1,
+                  borderBottomColor: colors.divider,
                   gap: 12,
                 }}
               >
-                <View
-                  style={{
-                    width: 36,
-                    height: 36,
-                    borderRadius: 10,
-                    backgroundColor: colors.mutedSurface,
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Ionicons name={row.icon} size={18} color={colors.textSecondary} />
-                </View>
-                <View style={{ flex: 1 }}>
-                  <Text style={{ fontSize: 11, color: colors.textMuted, fontWeight: "600", letterSpacing: 0.5 }}>
-                    {row.label.toUpperCase()}
-                  </Text>
-                  <Text style={{ fontSize: 14, color: colors.text, fontWeight: "600", marginTop: 1 }}>
-                    {row.value}
-                  </Text>
-                </View>
+                <Ionicons name={row.icon} size={18} color={colors.accent} />
+                <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: colors.textSecondary, flex: 1 }}>
+                  {row.label}
+                </Text>
+                <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 13, color: colors.text, textAlign: "right", flexShrink: 1 }}>
+                  {row.value}
+                </Text>
               </View>
             ))}
 
@@ -385,15 +364,15 @@ export default function UniversityPage() {
               const tiers = t(`tuitionTiers.${id}`, { returnObjects: true }) as Array<{ range: string; label: string }> | string | undefined;
               if (!tiers || typeof tiers === "string") return null;
               return (
-                <View style={{ marginTop: 14, backgroundColor: colors.mutedSurface, borderRadius: 12, padding: 12 }}>
-                  <Text style={{ fontSize: 11, color: colors.textMuted, fontWeight: "600", letterSpacing: 0.5, marginBottom: 8 }}>
+                <View style={{ marginTop: 16, borderWidth: 1, borderColor: colors.divider, borderRadius: 4, padding: 12 }}>
+                  <Text style={{ fontFamily: Fonts.heading, fontSize: 11, color: colors.textMuted, letterSpacing: 0.8, textTransform: "uppercase", marginBottom: 8 }}>
                     {t("tuitionTiersHeader")}
                   </Text>
-                  <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 4 }}>
+                  <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
                     {tiers.map((tier) => (
-                      <View key={tier.range} style={{ backgroundColor: colors.background, borderRadius: 8, padding: 8, minWidth: "45%", flex: 1 }}>
-                        <Text style={{ fontSize: 13, fontWeight: "700", color: colors.text }}>{tier.range}</Text>
-                        <Text style={{ fontSize: 10, color: colors.textMuted }}>{tier.label}</Text>
+                      <View key={tier.range} style={{ borderWidth: 1, borderColor: colors.divider, borderRadius: 3, padding: 8, minWidth: "45%", flex: 1 }}>
+                        <Text style={{ fontFamily: Fonts.heading, fontSize: 14, color: colors.text }}>{tier.range}</Text>
+                        <Text style={{ fontFamily: Fonts.body, fontSize: 10, color: colors.textMuted, marginTop: 1 }}>{tier.label}</Text>
                       </View>
                     ))}
                   </View>
@@ -408,9 +387,7 @@ export default function UniversityPage() {
             if (!sv || typeof sv === "string") return null;
             return (
               <SectionCard>
-                <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text, marginBottom: 14 }}>
-                  {t("universityStats.title")}
-                </Text>
+                <SectionTitle style={{ marginBottom: 14 }}>{t("universityStats.title")}</SectionTitle>
                 <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
                   <StatCard value={sv.yearsTradition} label={t("universityStats.yearsTradition")} icon="time-outline" />
                   <StatCard value={sv.bachelorPrograms} label={t("universityStats.bachelorPrograms")} icon="school-outline" />
@@ -427,18 +404,16 @@ export default function UniversityPage() {
 
           {/* Programs */}
           <SectionCard>
-            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-              <Text style={{ fontSize: 16, fontWeight: "800", color: colors.text }}>
-                {t("university.programs")}
-              </Text>
+            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+              <SectionTitle>{t("university.programs")}</SectionTitle>
               <TouchableOpacity
                 onPress={() => router.push({ pathname: "/university/project", params: { id } })}
-                style={{ alignItems: "center" }}
+                style={{ flexDirection: "row", alignItems: "center", gap: 6 }}
               >
-                <Text style={{ fontSize: 11, color: colors.text, fontWeight: "600" }}>
+                <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 13, color: colors.accent }}>
                   {t("university.viewMore")}
                 </Text>
-                <Ionicons name="grid-outline" size={18} color={colors.text} style={{ marginTop: 2 }} />
+                <Ionicons name="grid-outline" size={16} color={colors.accent} />
               </TouchableOpacity>
             </View>
           </SectionCard>
