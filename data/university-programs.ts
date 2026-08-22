@@ -930,6 +930,23 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Border Police",
     ],
   },
+  "27": {
+    bachelor: [
+      "Acting for Drama Theatre",
+      "Acting for Film",
+    ],
+    master: [],
+  },
+  "28": {
+    bachelor: [
+      "Marketing",
+      "Entrepreneurship",
+      "Advertising and Communications",
+      "Digital Marketing",
+      "International Marketing",
+    ],
+    master: [],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1352,6 +1369,32 @@ function getAmvrProgramInfo(programSlug: string): { tuition?: string; facultyKey
   };
 }
 
+function getLgcProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`lgc_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getMtmProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`mtm_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1594,6 +1637,26 @@ function getNatfaFaculty(facultyKey: string): string | null {
 
 function getAmvrFaculty(facultyKey: string): string | null {
   const name = i18n.t(`amvr_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getLgcFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`lgc_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getMtmFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`mtm_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -1873,6 +1936,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (amvrInfo.tuition) summary.tuition = amvrInfo.tuition;
         if (amvrInfo.facultyKey) {
           const facultyName = getAmvrFaculty(amvrInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "27") {
+      const lgcInfo = getLgcProgramInfo(slug);
+      if (lgcInfo) {
+        if (lgcInfo.tuition) summary.tuition = lgcInfo.tuition;
+        if (lgcInfo.facultyKey) {
+          const facultyName = getLgcFaculty(lgcInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "28") {
+      const mtmInfo = getMtmProgramInfo(slug);
+      if (mtmInfo) {
+        if (mtmInfo.tuition) summary.tuition = mtmInfo.tuition;
+        if (mtmInfo.facultyKey) {
+          const facultyName = getMtmFaculty(mtmInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2206,6 +2287,26 @@ export function buildProgramDetail(
       if (amvrInfo.tuition) result.tuition = amvrInfo.tuition;
       if (amvrInfo.facultyKey) {
         const facultyName = getAmvrFaculty(amvrInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "27" && normalizedSlug) {
+    const lgcInfo = getLgcProgramInfo(normalizedSlug);
+
+    if (lgcInfo) {
+      if (lgcInfo.tuition) result.tuition = lgcInfo.tuition;
+      if (lgcInfo.facultyKey) {
+        const facultyName = getLgcFaculty(lgcInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "28" && normalizedSlug) {
+    const mtmInfo = getMtmProgramInfo(normalizedSlug);
+
+    if (mtmInfo) {
+      if (mtmInfo.tuition) result.tuition = mtmInfo.tuition;
+      if (mtmInfo.facultyKey) {
+        const facultyName = getMtmFaculty(mtmInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

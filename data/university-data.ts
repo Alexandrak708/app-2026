@@ -291,6 +291,28 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "27",
+    rating: 4,
+    color: "#9b2d54",
+    image: require("../assets/images/lgroys-college.jpg"),
+    category: "Arts",
+    categories: ["Arts"],
+    scholarship: true,
+    degreeLevels: ["Bachelor"],
+    countryKey: "Bulgaria",
+  },
+  {
+    id: "28",
+    rating: 4,
+    color: "#1f6f78",
+    image: require("../assets/images/mtm-college.jpg"),
+    category: "Business",
+    categories: ["Business", "Economics"],
+    scholarship: true,
+    degreeLevels: ["Bachelor"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
