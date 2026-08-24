@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "UniApp",
+    "name": "U&I",
     "slug": "app-2026",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,10 @@
     "scheme": "app2026",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": ["googlegmail"]
+      }
     },
     "android": {
       "package": "com.yourcompany.app2026",

@@ -4,6 +4,7 @@ import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue, us
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useFavourites } from "@/contexts/favourites-context";
+import { useAppSettings } from "@/contexts/settings-context";
 import type { UniversityDisplay } from "@/types/university";
 import { useAppTheme } from "@/hooks/use-theme-color";
 import { Fonts } from "@/constants/typography";
@@ -47,6 +48,7 @@ export default function UniversityCard({
 }) {
   const { width: screenWidth } = useWindowDimensions();
   const { colors } = useAppTheme();
+  const { reduceMotion } = useAppSettings();
   const { t } = useTranslation();
   const { toggleFavourite, isFavourite: checkFavourite } = useFavourites();
   const isFavourite = checkFavourite(item.id as any);
@@ -60,7 +62,8 @@ export default function UniversityCard({
   }
 
   const animatedStyle = useAnimatedStyle(() => {
-    if (scrollX == null || index == null) return {} as any;
+    // Reduce Motion: keep carousel cards static (no scale/fade as they scroll).
+    if (reduceMotion || scrollX == null || index == null) return {} as any;
     const step = (width ?? cardWidth) + CARD_GAP;
     const inputRange = [(index - 1) * step, index * step, (index + 1) * step];
     const scale = interpolate(scrollX!.value, inputRange, [0.96, 1, 0.96], Extrapolation.CLAMP);

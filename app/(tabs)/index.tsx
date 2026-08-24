@@ -15,6 +15,7 @@ import { useRouter } from "expo-router";
 import UniversityCard from "@/components/university-card";
 import CompactUniversityCard from "@/components/compact-university-card";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { useAppSettings } from "@/contexts/settings-context";
 import { Fonts } from "@/constants/typography";
 import { Kicker, ScreenHeader, Hairline } from "@/components/editorial";
 
@@ -70,6 +71,7 @@ export default function Index() {
   const { width: screenWidth } = useWindowDimensions();
   const universities = useMemo(() => buildUniversities(t), [t]);
   const { colors } = useAppTheme();
+  const { reduceMotion } = useAppSettings();
 
   // Fixed-ish width with a safe floor: some web/hydration timings report a
   // window width of 0, which must never collapse the carousel cards.
@@ -96,13 +98,13 @@ export default function Index() {
     const opening = !showFilters;
     setShowFilters(opening);
     filterHeight.value = withTiming(opening ? FILTER_PANEL_HEIGHT : 0, {
-      duration: 320, easing: Easing.out(Easing.cubic),
+      duration: reduceMotion ? 0 : 320, easing: Easing.out(Easing.cubic),
     });
   };
 
   const closeFilters = () => {
     setShowFilters(false);
-    filterHeight.value = withTiming(0, { duration: 260, easing: Easing.out(Easing.cubic) });
+    filterHeight.value = withTiming(0, { duration: reduceMotion ? 0 : 260, easing: Easing.out(Easing.cubic) });
   };
 
   const scrollHandler = useAnimatedScrollHandler((event) => {

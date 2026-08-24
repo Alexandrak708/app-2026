@@ -207,46 +207,267 @@
   },
   "emailNotifications": {
     "title": "Email Notifications",
-    "marketing": "Marketing",
-    "productUpdates": "Product Updates"
+    "intro": "Choose which emails you'd like to receive from us.",
+    "marketing": "Promotions & tips",
+    "marketingHint": "Occasional news, offers and study tips.",
+    "productUpdates": "Product updates",
+    "productUpdatesHint": "New features and important changes to the app.",
+    "footnote": "You'll always receive essential account and security emails, even with these turned off."
   },
   "accessibility": {
     "title": "Accessibility",
+    "intro": "Adjust the app to make it more comfortable to use. Your choices are saved on this device.",
     "reduceMotion": "Reduce Motion",
-    "largeText": "Large Text"
+    "reduceMotionHint": "Turns off non-essential animations and movement.",
+    "largeText": "Large Text",
+    "largeTextHint": "Increases the text size on the information screens."
   },
   "helpCenter": {
     "title": "Help Center",
-    "contactQuestion": "How do I contact support?",
-    "contactAnswer": "Please email support@example.com for help.",
-    "profileQuestion": "How do I change my profile?",
-    "profileAnswer": "Go to Profile in Settings to edit your information.",
-    "termsQuestion": "Where can I see terms?",
-    "termsAnswer": "Open Terms of Service from the Support section."
+    "intro": "Answers to common questions about using {{app}}. Can't find what you need? Contact us below.",
+    "faqs": [
+      {
+        "q": "How do I create an account or sign in?",
+        "a": "Open the app and use the Sign up screen to register with your email and a password, or Log in if you already have an account. You'll receive a confirmation email — tap the link inside to activate your account."
+      },
+      {
+        "q": "How do I edit my name, photo, email or password?",
+        "a": "Go to Settings → Profile to update your first and last name, phone, address and region. You can change your email or password there under Security. To set a profile photo, tap your avatar at the top of the Settings screen."
+      },
+      {
+        "q": "How do I save a university or program?",
+        "a": "Tap the heart icon on any university to add it to your Favourites. Open the Favourites tab to see everything you've saved and to compare universities side by side."
+      },
+      {
+        "q": "How do I change the language or turn on dark mode?",
+        "a": "Go to Settings → Language to switch between English and Bulgarian, and Settings → Appearance to choose Light, Dark or System theme."
+      },
+      {
+        "q": "What do the accessibility settings do?",
+        "a": "Settings → Accessibility lets you Reduce Motion (turns off animations) and turn on Large Text (bigger text on the information screens). Your choices are saved on your device."
+      },
+      {
+        "q": "How do I manage marketing emails?",
+        "a": "Go to Settings → Email Notifications and turn each category on or off. Essential account and security emails are always sent."
+      },
+      {
+        "q": "Some university or tuition information looks wrong. What should I do?",
+        "a": "University details such as programs, tuition and deadlines can change over time. Always confirm on the university's official website before applying. If something looks incorrect, email us and we'll review it."
+      },
+      {
+        "q": "How do I delete my account and data?",
+        "a": "Go to Settings and tap Delete Account at the bottom. This permanently removes your account and associated data and cannot be undone."
+      },
+      {
+        "q": "How is my personal data handled?",
+        "a": "See our Privacy Policy (Settings → Privacy Policy) for what we collect, how we use it and your rights. You can request access to or deletion of your data at any time."
+      }
+    ],
+    "contactHeading": "Still need help?",
+    "contactBody": "Email our support team and we'll get back to you as soon as we can.",
+    "emailButton": "Email support",
+    "emailSubject": "{{app}} — Support request"
   },
   "about": {
-    "title": "About",
-    "version": "Version 1.0.0",
-    "description": "This is a demo application. More information can be added here when you are ready."
+    "title": "About {{app}}",
+    "version": "Version {{version}}",
+    "tagline": "Discover universities and programs — all in one place.",
+    "paragraphs": [
+      "{{app}} helps students explore universities and study programs, compare their options and keep track of the ones they love. Browse by field of study, degree, location and scholarship availability, then open a university to see quick facts, its programs and a link to the official website.",
+      "Save any university or program to your Favourites so you can find it again later and compare choices side by side. The app is available in English and Bulgarian, with light and dark themes."
+    ],
+    "featuresHeading": "What you can do",
+    "features": [
+      "Browse and search universities and programs",
+      "Filter by degree, category, country and scholarships",
+      "Save favourites and compare universities",
+      "Manage your profile, language and appearance",
+      "Use it in English or Bulgarian, light or dark"
+    ],
+    "contactHeading": "Get in touch",
+    "contactBody": "Questions, feedback, or found something that needs fixing? We'd love to hear from you.",
+    "emailButton": "Contact us",
+    "emailSubject": "{{app}} — Feedback",
+    "credits": "{{app}} · Made by {{entity}} · v{{version}}"
   },
   "terms": {
     "title": "Terms of Service",
-    "description": "These are placeholder terms. Replace with your actual terms of service text."
+    "updated": "Last updated: {{date}}",
+    "intro": "Please read these Terms of Service (\"Terms\") carefully before using {{app}} (the \"app\"). By creating an account or using the app, you agree to these Terms. If you do not agree, please do not use the app.",
+    "sections": [
+      {
+        "heading": "1. Who we are",
+        "paragraphs": [
+          "The app is operated by {{entity}} (\"we\", \"us\", \"our\"). These Terms form a binding agreement between you and {{entity}}."
+        ]
+      },
+      {
+        "heading": "2. Eligibility",
+        "paragraphs": [
+          "You must be at least {{age}} years old, or the age of digital consent in your country, to use the app. By using it you confirm that you meet this requirement and that the information you provide is accurate."
+        ]
+      },
+      {
+        "heading": "3. Your account",
+        "paragraphs": [
+          "To use certain features you must create an account with a valid email address and a password. You are responsible for keeping your login details secure and for all activity that happens under your account. Tell us immediately if you believe your account has been accessed without your permission."
+        ]
+      },
+      {
+        "heading": "4. Acceptable use",
+        "paragraphs": [
+          "You agree to use the app only for lawful, personal, non-commercial purposes. You must not: copy, scrape or harvest data from the app; attempt to reverse engineer, disrupt or gain unauthorised access to the app or its systems; upload unlawful, offensive or infringing content; or impersonate anyone or otherwise misuse the app in a way that harms us or other users."
+        ]
+      },
+      {
+        "heading": "5. Information and accuracy",
+        "paragraphs": [
+          "The app provides information about universities, programs, tuition, scholarships and deadlines for general guidance only. This information may change and may contain errors or be out of date, and it is not official advice. Always verify the details on the relevant university's official website before making any decision or application.",
+          "{{app}} is an independent app and is not affiliated with, endorsed by, or an official representative of any university listed."
+        ]
+      },
+      {
+        "heading": "6. Your content",
+        "paragraphs": [
+          "You keep ownership of the information you add to your profile (such as your name, photo and preferences). You grant us permission to store and display this information to you so that we can provide the app. You are responsible for the content you provide and confirm that you have the right to use it."
+        ]
+      },
+      {
+        "heading": "7. Intellectual property",
+        "paragraphs": [
+          "The app, together with its design, text, logos and software, is owned by {{entity}} or its licensors and is protected by law. You may not use our name, branding or content without our prior written permission. University names, logos and materials remain the property of their respective owners."
+        ]
+      },
+      {
+        "heading": "8. Third-party links and services",
+        "paragraphs": [
+          "The app links to external websites (for example, university websites) and relies on third-party service providers to operate. We are not responsible for the content, accuracy or practices of third-party sites and services."
+        ]
+      },
+      {
+        "heading": "9. Disclaimers",
+        "paragraphs": [
+          "The app is provided \"as is\" and \"as available\", without warranties of any kind, whether express or implied. We do not guarantee that the app will be uninterrupted, error-free or secure, or that the information in it is complete or accurate."
+        ]
+      },
+      {
+        "heading": "10. Limitation of liability",
+        "paragraphs": [
+          "To the maximum extent permitted by law, {{entity}} will not be liable for any indirect, incidental or consequential loss, or for any decision you make based on information in the app. Nothing in these Terms limits any liability that cannot be limited under applicable law."
+        ]
+      },
+      {
+        "heading": "11. Suspension and termination",
+        "paragraphs": [
+          "You may stop using the app and delete your account at any time from Settings. We may suspend or terminate your access if you breach these Terms or use the app unlawfully."
+        ]
+      },
+      {
+        "heading": "12. Changes to the app and these Terms",
+        "paragraphs": [
+          "We may update the app and these Terms from time to time. When we make significant changes we will update the \"Last updated\" date. Continuing to use the app after changes take effect means you accept the updated Terms."
+        ]
+      },
+      {
+        "heading": "13. Governing law",
+        "paragraphs": [
+          "These Terms are governed by the laws of {{country}}. Any disputes will be subject to the competent courts of {{country}}, unless mandatory consumer law gives you additional rights."
+        ]
+      },
+      {
+        "heading": "14. Contact",
+        "paragraphs": [
+          "If you have questions about these Terms, contact us at {{email}}."
+        ]
+      }
+    ],
+    "emailButton": "Email us about the Terms",
+    "emailSubject": "{{app}} — Terms of Service question"
   },
   "privacy": {
     "title": "Privacy Policy",
-    "intro": "This Privacy Policy explains what data we collect, how we use it, and the choices you have. By using this app you agree to this policy.",
-    "dataWeCollectTitle": "Data we collect",
-    "dataWeCollect": "Account information you provide: your email address, your name, and an optional profile photo. We also store the universities and programs you save as favourites.",
-    "howWeUseTitle": "How we use your data",
-    "howWeUse": "We use your data to create and secure your account, show your profile, and save your preferences. We do not sell your personal data.",
-    "storageTitle": "Storage and security",
-    "storage": "Your data is stored securely with our backend provider (Supabase) and transmitted over encrypted (HTTPS) connections.",
-    "deletionTitle": "Deleting your data",
-    "deletion": "You can permanently delete your account and all associated data at any time from Settings, or by contacting us at the email below.",
-    "contactTitle": "Contact",
-    "contact": "For any privacy questions or data requests, contact us at support@example.com.",
-    "updated": "Last updated: 2026"
+    "updated": "Last updated: {{date}}",
+    "intro": "This Privacy Policy explains what personal data {{app}} collects, how we use it, who we share it with, and the rights you have. By using the app you agree to the practices described here.",
+    "sections": [
+      {
+        "heading": "1. Who we are (data controller)",
+        "paragraphs": [
+          "{{app}} is operated by {{entity}}, the data controller responsible for your personal data. If you have any questions, contact us at {{email}}."
+        ]
+      },
+      {
+        "heading": "2. Information we collect",
+        "paragraphs": [
+          "Account information you give us: your email address, your password (stored in encrypted/hashed form by our authentication provider), and optionally your first and last name, profile photo, phone number, postal address and account region.",
+          "Content you create: the universities and programs you save as favourites, and your app preferences (language, theme, accessibility and email choices — some of these are stored only on your device).",
+          "Technical information: the basic data needed to run the app securely, such as the app version and authentication logs handled by our provider. The app does not track your location."
+        ]
+      },
+      {
+        "heading": "3. How we use your data",
+        "paragraphs": [
+          "We use your personal data to: create and secure your account; provide core features such as your profile and saved favourites; remember your preferences; respond to your support requests; send essential service emails (for example, email confirmation and password resets); and, only if you opt in, send product updates or promotional emails.",
+          "We do not sell your personal data."
+        ]
+      },
+      {
+        "heading": "4. Legal bases for processing",
+        "paragraphs": [
+          "Where the EU/UK General Data Protection Regulation (GDPR) applies, we process your data on these bases: performance of our contract with you (to provide the app and your account); your consent (for optional marketing emails, which you can withdraw at any time); our legitimate interests (to keep the app secure and to improve it); and compliance with legal obligations."
+        ]
+      },
+      {
+        "heading": "5. Sharing your data",
+        "paragraphs": [
+          "We share data only with trusted service providers who help us run the app — in particular our backend provider Supabase, which hosts our database, authentication and file storage. These providers process data on our behalf under agreements that protect your information. We may also disclose data where required by law or to protect our rights and our users. We do not sell your data or share it for third-party advertising."
+        ]
+      },
+      {
+        "heading": "6. Storage, security and international transfers",
+        "paragraphs": [
+          "Your data is stored with our backend provider and transmitted over encrypted (HTTPS) connections. We apply access controls and rely on our providers' security measures. Some providers may process data outside your country, including outside the European Economic Area; where they do, appropriate safeguards (such as Standard Contractual Clauses) are used."
+        ]
+      },
+      {
+        "heading": "7. How long we keep your data",
+        "paragraphs": [
+          "We keep your personal data for as long as your account is active. When you delete your account, we delete or anonymise the associated data, except where we are required to keep certain information to meet legal obligations."
+        ]
+      },
+      {
+        "heading": "8. Your rights",
+        "paragraphs": [
+          "Depending on where you live, you have the right to: access the personal data we hold about you; correct inaccurate data; delete your data (the \"right to be forgotten\"); restrict or object to certain processing; receive your data in a portable format; and withdraw consent at any time. You can exercise many of these rights directly in the app — edit your profile, manage your email preferences, or delete your account in Settings — or by emailing us at {{email}}.",
+          "If you are in the EU, you also have the right to lodge a complaint with your local data protection authority (in {{country}}, the Commission for Personal Data Protection)."
+        ]
+      },
+      {
+        "heading": "9. Children's privacy",
+        "paragraphs": [
+          "The app is not intended for children under {{age}}. We do not knowingly collect personal data from children under this age. If you believe a child has provided us with personal data, contact us and we will delete it."
+        ]
+      },
+      {
+        "heading": "10. Third-party links",
+        "paragraphs": [
+          "The app contains links to external websites, such as university websites. We are not responsible for the privacy practices or content of those sites; please review their own privacy policies."
+        ]
+      },
+      {
+        "heading": "11. Changes to this policy",
+        "paragraphs": [
+          "We may update this Privacy Policy from time to time. When we do, we will change the \"Last updated\" date above and, where appropriate, notify you in the app."
+        ]
+      },
+      {
+        "heading": "12. Contact us",
+        "paragraphs": [
+          "For any privacy questions or to make a data request, contact us at {{email}}."
+        ]
+      }
+    ],
+    "emailButton": "Email us about privacy",
+    "emailSubject": "{{app}} — Privacy request"
   },
   "languages": {
     "en": "English",

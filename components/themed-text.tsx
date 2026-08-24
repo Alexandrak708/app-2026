@@ -1,6 +1,7 @@
-import { StyleSheet, Text, type TextProps } from 'react-native';
+import { StyleSheet, Text, type TextProps, type TextStyle } from 'react-native';
 
 import { useThemeColor } from '@/hooks/use-theme-color';
+import { useAppSettings } from '@/contexts/settings-context';
 
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
@@ -16,21 +17,34 @@ export function ThemedText({
   ...rest
 }: ThemedTextProps) {
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
+  const { fontScale } = useAppSettings();
 
-  return (
-    <Text
-      style={[
-        { color },
-        type === 'default' ? styles.default : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.subtitle : undefined,
-        type === 'link' ? styles.link : undefined,
-        style,
-      ]}
-      {...rest}
-    />
-  );
+  // Flatten the type preset + caller style, then enlarge whatever font size /
+  // line height ends up applied so the "Large Text" accessibility setting has a
+  // consistent, correct effect (line height scales with the type).
+  const flat: TextStyle =
+    StyleSheet.flatten([
+      type === 'default' ? styles.default : undefined,
+      type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
+      type === 'title' ? styles.title : undefined,
+      type === 'subtitle' ? styles.subtitle : undefined,
+      type === 'link' ? styles.link : undefined,
+      style,
+    ]) ?? {};
+
+  const scaled =
+    fontScale === 1
+      ? null
+      : {
+          ...(typeof flat.fontSize === 'number'
+            ? { fontSize: flat.fontSize * fontScale }
+            : null),
+          ...(typeof flat.lineHeight === 'number'
+            ? { lineHeight: flat.lineHeight * fontScale }
+            : null),
+        };
+
+  return <Text style={[{ color }, flat, scaled]} {...rest} />;
 }
 
 const styles = StyleSheet.create({

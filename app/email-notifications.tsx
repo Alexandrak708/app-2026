@@ -1,49 +1,50 @@
-import React, { useEffect, useState } from 'react';
-import { View, StyleSheet, Switch } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React from 'react';
+import { View, StyleSheet, Switch, Platform } from 'react-native';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
-
-const KEY_MARKETING = 'settings:email:marketing';
-const KEY_UPDATES = 'settings:email:updates';
+import { useAppSettings } from '@/contexts/settings-context';
+import { Brand } from '@/constants/theme';
 
 export default function EmailNotifications() {
   const { t } = useTranslation();
-  const [marketing, setMarketing] = useState(false);
-  const [updates, setUpdates] = useState(false);
-
-  useEffect(() => {
-    (async () => {
-      const m = await AsyncStorage.getItem(KEY_MARKETING);
-      const u = await AsyncStorage.getItem(KEY_UPDATES);
-      setMarketing(m === '1');
-      setUpdates(u === '1');
-    })();
-  }, []);
-
-  const toggle = async (key: string, val: boolean, setter: (v: boolean) => void) => {
-    setter(val);
-    await AsyncStorage.setItem(key, val ? '1' : '0');
-  };
+  const { emailMarketing, emailUpdates, setEmailMarketing, setEmailUpdates } = useAppSettings();
 
   return (
     <ThemedView style={styles.container}>
       <BackToSettingsButton />
       <View style={styles.card}>
         <ThemedText type="title">{t('emailNotifications.title')}</ThemedText>
+        <ThemedText style={styles.intro}>{t('emailNotifications.intro')}</ThemedText>
 
         <View style={styles.row}>
-          <ThemedText>{t('emailNotifications.marketing')}</ThemedText>
-          <Switch value={marketing} onValueChange={(v) => toggle(KEY_MARKETING, v, setMarketing)} />
+          <View style={styles.rowText}>
+            <ThemedText type="defaultSemiBold">{t('emailNotifications.marketing')}</ThemedText>
+            <ThemedText style={styles.hint}>{t('emailNotifications.marketingHint')}</ThemedText>
+          </View>
+          <Switch
+            value={emailMarketing}
+            onValueChange={setEmailMarketing}
+            trackColor={{ true: Brand.primary }}
+            {...(Platform.OS !== 'android' ? { ios_backgroundColor: '#d1d5db' } : {})}
+          />
         </View>
 
         <View style={styles.row}>
-          <ThemedText>{t('emailNotifications.productUpdates')}</ThemedText>
-          <Switch value={updates} onValueChange={(v) => toggle(KEY_UPDATES, v, setUpdates)} />
+          <View style={styles.rowText}>
+            <ThemedText type="defaultSemiBold">{t('emailNotifications.productUpdates')}</ThemedText>
+            <ThemedText style={styles.hint}>{t('emailNotifications.productUpdatesHint')}</ThemedText>
+          </View>
+          <Switch
+            value={emailUpdates}
+            onValueChange={setEmailUpdates}
+            trackColor={{ true: Brand.primary }}
+            {...(Platform.OS !== 'android' ? { ios_backgroundColor: '#d1d5db' } : {})}
+          />
         </View>
 
+        <ThemedText style={styles.footnote}>{t('emailNotifications.footnote')}</ThemedText>
       </View>
     </ThemedView>
   );
@@ -51,6 +52,10 @@ export default function EmailNotifications() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 24, paddingTop: 76 },
-  card: { gap: 18 },
-  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  card: { gap: 20 },
+  intro: { opacity: 0.7, marginTop: -4 },
+  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16 },
+  rowText: { flex: 1, gap: 3 },
+  hint: { fontSize: 13, opacity: 0.6 },
+  footnote: { fontSize: 12, opacity: 0.5, marginTop: 4 },
 });

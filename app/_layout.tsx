@@ -1,4 +1,5 @@
 import "../global.css";
+import "@/lib/text-scaling"; // installs global Large Text scaling (JSX runtime patch)
 import { useEffect, useRef, useState } from "react";
 import { initI18n } from "@/lib/i18n";
 import { Stack, useRouter, useSegments } from "expo-router";
@@ -13,6 +14,7 @@ import {
 } from "@expo-google-fonts/cormorant-garamond";
 import { Lora_400Regular, Lora_600SemiBold } from "@expo-google-fonts/lora";
 import AppThemeProvider from '@/contexts/theme-context';
+import { SettingsProvider } from '@/contexts/settings-context';
 import { FavouritesProvider } from '@/contexts/favourites-context';
 import { ensureProfileRecord, createSessionFromUrl } from "@/lib/auth";
 
@@ -140,12 +142,14 @@ export default function RootLayout() {
 
   return (
     <AppThemeProvider>
+      <SettingsProvider>
       <FavouritesProvider>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
       </Stack>
       </FavouritesProvider>
+      </SettingsProvider>
     </AppThemeProvider>
   );
 }

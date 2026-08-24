@@ -22,6 +22,7 @@ import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { useAppSettings } from "@/contexts/settings-context";
 import { Fonts } from "@/constants/typography";
 import { ScreenHeader } from "@/components/editorial";
 import { ensureProfileRecord, getCurrentUser, signOutLocal } from "@/lib/auth";
@@ -88,6 +89,7 @@ export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
   const { colors, isDark } = useAppTheme();
+  const { reduceMotion } = useAppSettings();
   const scrollRef = useRef<ScrollView>(null);
   const [user, setUser] = useState<Profile | null>(null);
   const [authUser, setAuthUser] = useState<User | null>(null);
@@ -133,6 +135,7 @@ export default function Settings() {
   }, []);
 
   const startPulse = () => {
+    if (reduceMotion) return; // Respect the Reduce Motion accessibility setting.
     Animated.sequence([
       Animated.timing(pulseAnim, {
         toValue: 1.06,
