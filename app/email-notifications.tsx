@@ -52,7 +52,7 @@ export default function EmailNotifications() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 24, paddingTop: 76 },
-  card: { gap: 20 },
+  card: { gap: 20, width: '100%', maxWidth: 640, alignSelf: 'center' },
   intro: { opacity: 0.7, marginTop: -4 },
   row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16 },
   rowText: { flex: 1, gap: 3 },

@@ -6,6 +6,7 @@ import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
 import { EmailSupportButton } from '@/components/support-ui';
+import { ContentWrap } from '@/components/responsive';
 import { AppInfo } from '@/constants/app-info';
 
 export default function About() {
@@ -27,6 +28,7 @@ export default function About() {
     <ThemedView style={styles.container}>
       <BackToSettingsButton />
       <ScrollView contentContainerStyle={styles.card} showsVerticalScrollIndicator={false}>
+       <ContentWrap maxWidth={760} style={{ width: '100%', gap: 10 }}>
         <ThemedText type="title">{t('about.title', vars)}</ThemedText>
         <ThemedText style={styles.version}>{t('about.version', vars)}</ThemedText>
         <ThemedText style={styles.tagline}>{t('about.tagline', vars)}</ThemedText>
@@ -58,6 +60,7 @@ export default function About() {
         />
 
         <ThemedText style={styles.credits}>{t('about.credits', vars)}</ThemedText>
+       </ContentWrap>
       </ScrollView>
     </ThemedView>
   );

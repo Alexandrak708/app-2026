@@ -4,7 +4,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "@/lib/i18n";
-import { getAuthErrorMessage, signUp, validatePassword } from "@/lib/auth";
+import { getAuthErrorMessage, signInWithGoogle, signUp, validatePassword } from "@/lib/auth";
+import { GoogleAuthButton } from "@/components/google-auth-button";
 import { Fonts } from "@/constants/typography";
 
 // Matches the login screen: a fixed dark-burgundy hero over a light "paper"
@@ -32,11 +33,34 @@ export default function Register() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const [authError, setAuthError] = useState("");
   const [warning, setWarning] = useState("");
 
   const passwordRef = useRef<TextInput>(null);
   const confirmPasswordRef = useRef<TextInput>(null);
+
+  const handleGoogleSignIn = async () => {
+    setAuthError("");
+    setWarning("");
+    setGoogleLoading(true);
+    try {
+      const { error } = await signInWithGoogle();
+      if (error) {
+        setAuthError(
+          getAuthErrorMessage(error, {
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
+        );
+      }
+    } catch (error) {
+      if (__DEV__) console.error("Google sign in error:", error);
+      setAuthError(t("auth.errorUnexpected"));
+    } finally {
+      setGoogleLoading(false);
+    }
+  };
 
   const handleRegister = async () => {
     setAuthError("");
@@ -137,7 +161,7 @@ export default function Register() {
           borderColor: currentLang === "en" ? "#ffffff" : "rgba(255,255,255,0.12)",
         }}
       >
-        <Text style={{ fontSize: 16 }}>🇬🇧</Text>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12.5, letterSpacing: 0.5, color: currentLang === "en" ? "#810B38" : "#ffffff" }}>EN</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => handleLanguageChange("bg")}
@@ -153,7 +177,7 @@ export default function Register() {
           borderColor: currentLang === "bg" ? "#ffffff" : "rgba(255,255,255,0.12)",
         }}
       >
-        <Text style={{ fontSize: 16 }}>🇧🇬</Text>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12.5, letterSpacing: 0.5, color: currentLang === "bg" ? "#810B38" : "#ffffff" }}>BG</Text>
       </TouchableOpacity>
     </View>
   );
@@ -307,6 +331,12 @@ export default function Register() {
           : <Text style={{ fontFamily: Fonts.heading, color: ACCENT, fontSize: 15 }}>{t("auth.signUpButton")}</Text>
         }
       </TouchableOpacity>
+      <GoogleAuthButton
+        onPress={handleGoogleSignIn}
+        loading={googleLoading}
+        label={t("auth.continueWithGoogle", { defaultValue: "Continue with Google" })}
+        dividerLabel={t("auth.or", { defaultValue: "or" })}
+      />
       <TouchableOpacity onPress={() => router.replace("/login")} style={{ marginTop: 18 }}>
         <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: MUTED, textAlign: "center" }}>
           {t("auth.registerQuestion")}

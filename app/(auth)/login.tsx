@@ -4,7 +4,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "@/lib/i18n";
-import { getAuthErrorMessage, requestPasswordReset, signIn, validatePassword } from "@/lib/auth";
+import { getAuthErrorMessage, requestPasswordReset, signIn, signInWithGoogle, validatePassword } from "@/lib/auth";
+import { GoogleAuthButton } from "@/components/google-auth-button";
 import { Fonts } from "@/constants/typography";
 
 // Login is a fixed dark-burgundy hero over a light "paper" card in both themes,
@@ -30,6 +31,7 @@ export default function SignIn() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const [authError, setAuthError] = useState("");
   const [infoMessage, setInfoMessage] = useState("");
   const [warning, setWarning] = useState("");
@@ -93,6 +95,29 @@ export default function SignIn() {
       setAuthError(t("auth.errorUnexpected"));
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    clearMessages();
+    setGoogleLoading(true);
+    try {
+      const { error } = await signInWithGoogle();
+      if (error) {
+        setAuthError(
+          getAuthErrorMessage(error, {
+            authUnavailable: t("auth.errorAuthUnavailable"),
+            fallback: t("auth.errorUnexpected"),
+          })
+        );
+      }
+      // On web the page redirects to Google; on native a success establishes the
+      // session and the root layout routes into the app.
+    } catch (error) {
+      if (__DEV__) console.error("Google sign in error:", error);
+      setAuthError(t("auth.errorUnexpected"));
+    } finally {
+      setGoogleLoading(false);
     }
   };
 
@@ -167,7 +192,7 @@ export default function SignIn() {
           borderColor: currentLang === "en" ? "#ffffff" : "rgba(255,255,255,0.12)",
         }}
       >
-        <Text style={{ fontSize: 16 }}>🇬🇧</Text>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12.5, letterSpacing: 0.5, color: currentLang === "en" ? "#810B38" : "#ffffff" }}>EN</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => handleLanguageChange("bg")}
@@ -183,7 +208,7 @@ export default function SignIn() {
           borderColor: currentLang === "bg" ? "#ffffff" : "rgba(255,255,255,0.12)",
         }}
       >
-        <Text style={{ fontSize: 16 }}>🇧🇬</Text>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 12.5, letterSpacing: 0.5, color: currentLang === "bg" ? "#810B38" : "#ffffff" }}>BG</Text>
       </TouchableOpacity>
     </View>
   );
@@ -324,6 +349,12 @@ export default function SignIn() {
           : <Text style={{ fontFamily: Fonts.heading, color: ACCENT, fontSize: 15 }}>{t("auth.login")}</Text>
         }
       </TouchableOpacity>
+      <GoogleAuthButton
+        onPress={handleGoogleSignIn}
+        loading={googleLoading}
+        label={t("auth.continueWithGoogle", { defaultValue: "Continue with Google" })}
+        dividerLabel={t("auth.or", { defaultValue: "or" })}
+      />
       <TouchableOpacity onPress={() => router.push("/register")} style={{ marginTop: 18 }}>
         <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: MUTED, textAlign: "center" }}>
           {t("auth.loginQuestion")}

@@ -45,15 +45,24 @@ export function AnimatedTabBar({ state, navigation }: BottomTabBarProps) {
   return (
     <View
       style={{
-        flexDirection: "row",
         backgroundColor: colors.background,
         borderTopWidth: 1,
         borderTopColor: colors.divider,
-        paddingTop: 10,
-        paddingHorizontal: 12,
+        alignItems: "center",
         paddingBottom: Math.max(insets.bottom, 12),
       }}
     >
+     <View
+       style={{
+         flexDirection: "row",
+         width: "100%",
+         // Web: keep the three tabs in a centred, readable cluster instead of
+         // stretched across a wide monitor. Native leaves it full-width.
+         maxWidth: Platform.OS === "web" ? 560 : undefined,
+         paddingTop: 10,
+         paddingHorizontal: 12,
+       }}
+     >
       {state.routes.map((route, index) => {
         const isFocused = state.index === index;
         const iconName = TAB_ICONS[route.name] ?? "ellipse";
@@ -79,6 +88,7 @@ export function AnimatedTabBar({ state, navigation }: BottomTabBarProps) {
           </TouchableOpacity>
         );
       })}
+     </View>
     </View>
   );
 }

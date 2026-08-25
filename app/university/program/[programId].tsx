@@ -4,6 +4,7 @@ import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useTranslation } from "react-i18next"; // 👈 ADDED
 import { buildProgramDetail } from "@/data/university-programs";
 import { useAppTheme } from "@/hooks/use-theme-color";
+import { ContentWrap } from "@/components/responsive";
 
 function SectionCard({ children }: { children: React.ReactNode }) {
   const { colors } = useAppTheme();
@@ -86,6 +87,7 @@ export default function ProgramDetailPage() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 32 }}>
+       <ContentWrap maxWidth={820}>
         <View style={{ paddingHorizontal: 24, paddingTop: 56, paddingBottom: 18 }}>
           <TouchableOpacity
             onPress={() => router.back()}
@@ -206,6 +208,7 @@ export default function ProgramDetailPage() {
             </Text>
           </TouchableOpacity>
         </View>
+       </ContentWrap>
       </ScrollView>
     </View>
   );

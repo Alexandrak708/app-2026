@@ -5,6 +5,7 @@ import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
 import { EmailSupportButton } from '@/components/support-ui';
+import { ContentWrap } from '@/components/responsive';
 import { AppInfo } from '@/constants/app-info';
 
 type Faq = { q: string; a: string };
@@ -24,6 +25,7 @@ export default function HelpCenter() {
     <ThemedView style={styles.container}>
       <BackToSettingsButton />
       <ScrollView contentContainerStyle={styles.card} showsVerticalScrollIndicator={false}>
+       <ContentWrap maxWidth={760} style={{ width: '100%', gap: 14 }}>
         <ThemedText type="title">{t('helpCenter.title')}</ThemedText>
         <ThemedText style={styles.intro}>{t('helpCenter.intro', vars)}</ThemedText>
 
@@ -47,6 +49,7 @@ export default function HelpCenter() {
             subject={t('helpCenter.emailSubject', vars)}
           />
         </View>
+       </ContentWrap>
       </ScrollView>
     </ThemedView>
   );

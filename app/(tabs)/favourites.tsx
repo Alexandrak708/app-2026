@@ -11,6 +11,10 @@ import { useFavourites } from "@/contexts/favourites-context";
 import { useAppTheme } from "@/hooks/use-theme-color";
 import { Fonts } from "@/constants/typography";
 import { ScreenHeader, Hairline } from "@/components/editorial";
+import { ContentWrap, useGridColumns, isWeb } from "@/components/responsive";
+
+const FAV_MAX_WIDTH = 1600;
+const FAV_GRID_GAP = 24;
 
 export default function Favourites() {
   const { t } = useTranslation();
@@ -46,6 +50,8 @@ export default function Favourites() {
     });
   };
 
+  const gridColumns = useGridColumns(4);
+
   const compareCount = compareIds.length;
   const canCompare = compareCount === 2;
 
@@ -57,6 +63,7 @@ export default function Favourites() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView contentContainerStyle={{ padding: 24, paddingTop: 64, paddingBottom: 120 }}>
+       <ContentWrap maxWidth={FAV_MAX_WIDTH}>
         <ScreenHeader
           kicker={t("favourites.kicker")}
           title={t("favourites.title")}
@@ -76,6 +83,23 @@ export default function Favourites() {
               {t("favourites.emptyMessage")}
             </Text>
           </View>
+        ) : isWeb && gridColumns > 1 ? (
+          <View style={{ flexDirection: "row", flexWrap: "wrap", columnGap: FAV_GRID_GAP, rowGap: 22 }}>
+            {favouriteUniversities.map((item) => (
+              <View
+                key={item.id}
+                style={{ width: `calc((100% - ${(gridColumns - 1) * FAV_GRID_GAP}px) / ${gridColumns})` as any }}
+              >
+                <UniversityCard
+                  item={item}
+                  onPress={() => router.push(`/university/${item.id}` as any)}
+                  showCompareButton
+                  compareSelected={compareIds.includes(item.id)}
+                  onComparePress={() => toggleCompare(item.id)}
+                />
+              </View>
+            ))}
+          </View>
         ) : (
           <View style={{ gap: 18 }}>
             {favouriteUniversities.map((item) => (
@@ -90,6 +114,7 @@ export default function Favourites() {
             ))}
           </View>
         )}
+       </ContentWrap>
       </ScrollView>
 
       {compareCount > 0 && (

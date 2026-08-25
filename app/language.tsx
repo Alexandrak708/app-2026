@@ -75,6 +75,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 12,
     marginBottom: 18,
+    width: "100%",
+    maxWidth: 520,
+    alignSelf: "center",
   },
   backButton: {
     width: 40,
@@ -102,6 +105,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.08,
     shadowRadius: 16,
     elevation: 4,
+    width: "100%",
+    maxWidth: 520,
+    alignSelf: "center",
   },
   row: {
     minHeight: 64,

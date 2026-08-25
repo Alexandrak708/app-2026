@@ -1,4 +1,6 @@
 import * as Linking from "expo-linking";
+import * as WebBrowser from "expo-web-browser";
+import { Platform } from "react-native";
 
 import { supabase } from "./supabase";
 
@@ -19,6 +21,61 @@ export function signIn(credentials: EmailPasswordCredentials) {
 /** Register a new account with email + password. */
 export function signUp(credentials: EmailPasswordCredentials) {
   return supabase.auth.signUp(credentials);
+}
+
+/**
+ * Sign in / sign up with a real Google account via Supabase OAuth.
+ *
+ * - Web: redirects the page to Google's consent screen, then back to the app
+ *   origin; the client's `detectSessionInUrl` establishes the session on return
+ *   (so this function does not resolve with a session — the page navigates away).
+ * - Native (iOS/Android): opens an in-app browser (expo-web-browser) and turns
+ *   the resulting redirect deep link into a session via `createSessionFromUrl`.
+ *
+ * REQUIRES dashboard setup: the Google provider must be enabled in the Supabase
+ * dashboard, backed by a Google Cloud OAuth 2.0 client, with the Supabase
+ * callback URL registered in Google and the app's URLs allow-listed in Supabase.
+ * Until that's done this returns a "provider is not enabled" error.
+ */
+export async function signInWithGoogle(): Promise<{ error: SupabaseLikeError | null }> {
+  if (Platform.OS === "web") {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
+        // Always let the user pick which Google account to use.
+        queryParams: { prompt: "select_account" },
+      },
+    });
+    return { error: error ?? null };
+  }
+
+  // Native: run the OAuth handshake in a system browser, then set the session
+  // from the redirect back into the app (app2026://…).
+  const redirectTo = Linking.createURL("/");
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: { redirectTo, skipBrowserRedirect: true },
+  });
+  if (error) {
+    return { error };
+  }
+  if (!data?.url) {
+    return { error: { message: "Could not start Google sign-in." } };
+  }
+
+  const result = await WebBrowser.openAuthSessionAsync(data.url, redirectTo);
+  if (result.type === "success" && result.url) {
+    try {
+      await createSessionFromUrl(result.url);
+      return { error: null };
+    } catch (err) {
+      return { error: { message: err instanceof Error ? err.message : "Google sign-in failed." } };
+    }
+  }
+
+  // The user dismissed the browser — treat as a silent cancel, not an error.
+  return { error: null };
 }
 
 /** Send a password-reset email that deep-links back into the app. */

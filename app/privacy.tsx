@@ -5,6 +5,7 @@ import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
 import { DocSections, EmailSupportButton, type DocSection } from '@/components/support-ui';
+import { ContentWrap } from '@/components/responsive';
 import { AppInfo } from '@/constants/app-info';
 
 export default function Privacy() {
@@ -26,6 +27,7 @@ export default function Privacy() {
     <ThemedView style={styles.container}>
       <BackToSettingsButton />
       <ScrollView contentContainerStyle={styles.card} showsVerticalScrollIndicator={false}>
+       <ContentWrap maxWidth={760} style={{ width: '100%', gap: 10 }}>
         <ThemedText type="title">{t('privacy.title')}</ThemedText>
         <ThemedText style={styles.updated}>{t('privacy.updated', vars)}</ThemedText>
         <ThemedText style={styles.intro}>{t('privacy.intro', vars)}</ThemedText>
@@ -37,6 +39,7 @@ export default function Privacy() {
           label={t('privacy.emailButton')}
           subject={t('privacy.emailSubject', vars)}
         />
+       </ContentWrap>
       </ScrollView>
     </ThemedView>
   );

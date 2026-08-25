@@ -18,6 +18,13 @@ import { useAppTheme } from "@/hooks/use-theme-color";
 import { useAppSettings } from "@/contexts/settings-context";
 import { Fonts } from "@/constants/typography";
 import { Kicker, ScreenHeader, Hairline } from "@/components/editorial";
+import { ContentWrap, useGridColumns, isWeb } from "@/components/responsive";
+
+// Web lets the feed fill most of the viewport (only reining in ultra-wide
+// monitors) so there are no big empty gutters. Native ignores this
+// (ContentWrap is a pass-through).
+const HOME_MAX_WIDTH = 1600;
+const HOME_GRID_GAP = 28;
 
 const FILTER_PANEL_HEIGHT = 340;
 
@@ -72,6 +79,7 @@ export default function Index() {
   const universities = useMemo(() => buildUniversities(t), [t]);
   const { colors } = useAppTheme();
   const { reduceMotion } = useAppSettings();
+  const gridColumns = useGridColumns(4);
 
   // Fixed-ish width with a safe floor: some web/hydration timings report a
   // window width of 0, which must never collapse the carousel cards.
@@ -158,6 +166,7 @@ export default function Index() {
       )}
 
       <View style={{ zIndex: 10, elevation: 10 }}>
+       <ContentWrap maxWidth={HOME_MAX_WIDTH}>
         {/* Header */}
         <View style={{ paddingHorizontal: 24, paddingTop: 60, paddingBottom: 16 }}>
           <ScreenHeader kicker={t("home.kicker")} title={t("home.headline")} titleSize={34} />
@@ -303,6 +312,7 @@ export default function Index() {
             </ScrollView>
           </Animated.View>
         </View>
+       </ContentWrap>
       </View>
 
       <ScrollView
@@ -312,8 +322,10 @@ export default function Index() {
         showsVerticalScrollIndicator={false}
         scrollEnabled={!showFilters}
       >
+       <ContentWrap maxWidth={HOME_MAX_WIDTH}>
         {hasSearchQuery ? (
           <View style={{ paddingHorizontal: 24, paddingTop: 18 }}>
+           <ContentWrap maxWidth={820}>
             <Text style={{ fontFamily: Fonts.heading, fontSize: 20, color: colors.text, marginBottom: 12 }}>
               {t("search.found", { count: displayedUniversities.length })}
             </Text>
@@ -351,6 +363,7 @@ export default function Index() {
                 </Text>
               </View>
             )}
+           </ContentWrap>
           </View>
         ) : (
           <>
@@ -390,18 +403,44 @@ export default function Index() {
               </Text>
             </View>
 
-            <View style={{ paddingHorizontal: 24 }}>
-              {universities.map((item, i) => (
-                <CompactUniversityCard
-                  key={item.id}
-                  item={item}
-                  isLast={i === universities.length - 1}
-                  onPress={() => router.push(`/university/${item.id}` as any)}
-                />
-              ))}
-            </View>
+            {isWeb && gridColumns > 1 ? (
+              <View
+                style={{
+                  paddingHorizontal: 24,
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                  columnGap: HOME_GRID_GAP,
+                }}
+              >
+                {universities.map((item) => (
+                  <View
+                    key={item.id}
+                    style={{
+                      width: `calc((100% - ${(gridColumns - 1) * HOME_GRID_GAP}px) / ${gridColumns})` as any,
+                    }}
+                  >
+                    <CompactUniversityCard
+                      item={item}
+                      onPress={() => router.push(`/university/${item.id}` as any)}
+                    />
+                  </View>
+                ))}
+              </View>
+            ) : (
+              <View style={{ paddingHorizontal: 24 }}>
+                {universities.map((item, i) => (
+                  <CompactUniversityCard
+                    key={item.id}
+                    item={item}
+                    isLast={i === universities.length - 1}
+                    onPress={() => router.push(`/university/${item.id}` as any)}
+                  />
+                ))}
+              </View>
+            )}
           </>
         )}
+       </ContentWrap>
       </ScrollView>
     </KeyboardAvoidingView>
   );

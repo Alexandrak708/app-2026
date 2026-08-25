@@ -5,6 +5,7 @@ import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
 import { BackToSettingsButton } from '@/components/back-to-settings-button';
 import { DocSections, EmailSupportButton, type DocSection } from '@/components/support-ui';
+import { ContentWrap } from '@/components/responsive';
 import { AppInfo } from '@/constants/app-info';
 
 export default function Terms() {
@@ -26,6 +27,7 @@ export default function Terms() {
     <ThemedView style={styles.container}>
       <BackToSettingsButton />
       <ScrollView contentContainerStyle={styles.card} showsVerticalScrollIndicator={false}>
+       <ContentWrap maxWidth={760} style={{ width: '100%', gap: 10 }}>
         <ThemedText type="title">{t('terms.title')}</ThemedText>
         <ThemedText style={styles.updated}>{t('terms.updated', vars)}</ThemedText>
         <ThemedText style={styles.intro}>{t('terms.intro', vars)}</ThemedText>
@@ -37,6 +39,7 @@ export default function Terms() {
           label={t('terms.emailButton')}
           subject={t('terms.emailSubject', vars)}
         />
+       </ContentWrap>
       </ScrollView>
     </ThemedView>
   );
