@@ -313,6 +313,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "29",
+    rating: 5,
+    color: "#2b4c7e",
+    image: require("../assets/images/swu-blagoevgrad.jpg"),
+    category: "Law",
+    categories: ["Law", "Economics", "Business", "Arts", "Sports", "Medical", "Engineering"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {

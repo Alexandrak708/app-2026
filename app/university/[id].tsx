@@ -418,7 +418,7 @@ export default function UniversityPage() {
             </View>
           </SectionCard>
 
-          {(id === "1" || id === "2" || id === "3" || id === "4" || id === "5" || id === "6" || id === "7" || id === "8" || id === "9" || id === "10" || id === "11" || id === "12" || id === "13" || id === "14" || id === "15" || id === "16" || id === "17" || id === "18" || id === "19" || id === "20" || id === "21" || id === "22" || id === "23" || id === "24" || id === "25" || id === "26" || id === "27" || id === "28") && (
+          {(id === "1" || id === "2" || id === "3" || id === "4" || id === "5" || id === "6" || id === "7" || id === "8" || id === "9" || id === "10" || id === "11" || id === "12" || id === "13" || id === "14" || id === "15" || id === "16" || id === "17" || id === "18" || id === "19" || id === "20" || id === "21" || id === "22" || id === "23" || id === "24" || id === "25" || id === "26" || id === "27" || id === "28" || id === "29") && (
             <>
               {id === "1" && (
                 <>
@@ -2006,6 +2006,63 @@ export default function UniversityPage() {
                     <InfoRow label={t("universityExtra.mtm_intake")} colors={colors} />
                     <InfoRow label={t("universityExtra.mtm_accommodation")} colors={colors} />
                     <InfoRow label={t("universityExtra.mtm_recognition")} colors={colors} />
+                  </ExpandableSection>
+                </>
+              )}
+
+              {id === "29" && (
+                <>
+                  <ExpandableSection title={t("universityExtra.scholarships")} icon="ribbon-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.swu_scholarshipsDesc")}</Text>
+                    <InfoRow label={t("universityExtra.swu_merit")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_social")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_erasmus")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_phd")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_special")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.applicationInfo")} icon="document-text-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.swu_applicationDesc")}</Text>
+                    <InfoRow label={t("universityExtra.swu_appExams")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_appRanking")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_appOnline")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_appDocuments")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_appForeign")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.swu_feesTitle")} icon="cash-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.swu_feesDesc")}</Text>
+                    <InfoRow label={t("universityExtra.swu_feeState")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_feePaid")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_feeForeign")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_feeLanguage")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_feeApplication")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.swu_campus")} icon="business-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.swu_campusDesc")}</Text>
+                    <InfoRow label={t("universityExtra.swu_location")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_nineFaculties")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_library")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_sports")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_labs")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.partners")} icon="globe-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.swu_partnersDesc")}</Text>
+                    <InfoRow label={t("universityExtra.swu_erasmusPartners")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_researchPartners")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_regionalPartners")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_crossBorder")} colors={colors} />
+                  </ExpandableSection>
+
+                  <ExpandableSection title={t("universityExtra.internationalStudents")} icon="airplane-outline" colors={colors}>
+                    <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 20, marginBottom: 10 }}>{t("universityExtra.swu_internationalDesc")}</Text>
+                    <InfoRow label={t("universityExtra.swu_englishTaught")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_visaSupport")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_prep")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_intake")} colors={colors} />
+                    <InfoRow label={t("universityExtra.swu_recognition")} colors={colors} />
                   </ExpandableSection>
                 </>
               )}
