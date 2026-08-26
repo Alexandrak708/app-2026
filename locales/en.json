@@ -873,6 +873,18 @@
       "labsText": "Google rating (out of 5)",
       "tuitionFreeLabel": "1993",
       "tuitionFreeText": "The 'Danish College'"
+    },
+    "29": {
+      "yearsTradition": "50",
+      "bachelorPrograms": "71",
+      "masterPrograms": "100",
+      "internationalPartners": "200+",
+      "countries": "40+",
+      "studentsGraduated": "60K+",
+      "labs": "9",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€150",
+      "tuitionFreeText": "Lowest semester fee (BG/EU)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -1379,6 +1391,24 @@
       {
         "range": "€30",
         "label": "Application / test fee"
+      }
+    ],
+    "29": [
+      {
+        "range": "€150",
+        "label": "Lowest state-subsidised fee / semester (BG/EU)"
+      },
+      {
+        "range": "€260",
+        "label": "Highest state-subsidised fee / semester (BG/EU)"
+      },
+      {
+        "range": "€1,360",
+        "label": "Paid programmes, up to / semester (BG/EU)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students / year (approx.)"
       }
     ]
   },
@@ -2429,7 +2459,44 @@
     "mtm_visaSupport": "Admission, visa and residence support for foreign students",
     "mtm_intake": "Flexible autumn and spring intakes suit international applicants",
     "mtm_accommodation": "Help and advice on living and studying in Sofia",
-    "mtm_recognition": "A NEAA-accredited professional-bachelor diploma recognised in Bulgaria and the EU"
+    "mtm_recognition": "A NEAA-accredited professional-bachelor diploma recognised in Bulgaria and the EU",
+    "swu_scholarshipsDesc": "As a large state university, SWU offers a full range of state and mobility scholarships:",
+    "swu_merit": "Merit scholarships from the state budget for strong exam results (paid each semester)",
+    "swu_social": "Social scholarships for students from low-income families and special-support groups",
+    "swu_erasmus": "Erasmus+ mobility grants for study and traineeships at partner universities in Europe",
+    "swu_phd": "State scholarships and research support for full-time doctoral (PhD) students",
+    "swu_special": "Special-purpose scholarships in priority fields and for high-achieving new entrants",
+    "swu_applicationDesc": "Admission is open to secondary-school graduates through a simple, competitive procedure:",
+    "swu_appExams": "Ranking by state matriculation exam grades or a university entrance exam for the specialty",
+    "swu_appRanking": "Candidates are ranked in several admission rounds by an aggregate score",
+    "swu_appOnline": "Online application and candidate account through the university admissions system",
+    "swu_appDocuments": "Secondary-school diploma, application form and the relevant supporting documents",
+    "swu_appForeign": "Separate procedure for foreign applicants, with diploma recognition and a Bulgarian-language check",
+    "swu_feesTitle": "Tuition & Fees",
+    "swu_feesDesc": "SWU keeps fees among the lowest for a Bulgarian state university; amounts are per semester unless noted:",
+    "swu_feeState": "State-subsidised places: about €150–€260 per semester for Bulgarian and EU students",
+    "swu_feePaid": "Paid form of study: from about €370 up to €1,360 per semester depending on the specialty",
+    "swu_feeForeign": "Foreign (non-EU) students: around €3,000 per year, set annually by the Council of Ministers",
+    "swu_feeLanguage": "One-year Bulgarian-language preparatory course for foreign students: about €3,000",
+    "swu_feeApplication": "A small application and entrance-exam fee applies for each admission round",
+    "swu_campus": "Campus & Facilities",
+    "swu_campusDesc": "SWU is spread across several teaching blocks and centres in the town of Blagoevgrad:",
+    "swu_location": "Main building at 66 Ivan Mihaylov St, Blagoevgrad, at the foot of the Rila and Pirin mountains",
+    "swu_nineFaculties": "Nine faculties, from law, economics and philology to arts, sport and engineering",
+    "swu_library": "A large university library, digital catalogue and academic information system",
+    "swu_sports": "The 'Bachinovo' university sports and recovery centre and a multifunctional sports complex",
+    "swu_labs": "Specialised labs, art studios, speech-therapy and health-care centres, and student halls of residence",
+    "swu_partnersDesc": "SWU is an active partner in European academic and regional cooperation networks:",
+    "swu_erasmusPartners": "Erasmus+ partnerships with many universities across the EU for student and staff mobility",
+    "swu_researchPartners": "Joint research and doctoral projects with Bulgarian and international institutes",
+    "swu_regionalPartners": "Strong ties with schools, hospitals, businesses and cultural institutions in south-west Bulgaria",
+    "swu_crossBorder": "Cross-border cooperation projects with universities in Greece, North Macedonia and the Balkans",
+    "swu_internationalDesc": "SWU has long welcomed international students and offers dedicated support:",
+    "swu_englishTaught": "Selected programmes and courses are available in English for international students",
+    "swu_visaSupport": "Admission, visa and residence support for foreign applicants",
+    "swu_prep": "A one-year Bulgarian-language and specialised preparatory course before degree study",
+    "swu_intake": "Autumn intake with international-office guidance throughout the application",
+    "swu_recognition": "State-recognised Bulgarian diplomas, valid across the EU"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -2635,6 +2702,17 @@
   "mtm_faculties": {
     "marketing": "Marketing and Advertising",
     "business": "Management and Entrepreneurship"
+  },
+  "swu_faculties": {
+    "law": "Faculty of Law and History",
+    "economics": "Faculty of Economics",
+    "philology": "Faculty of Philology",
+    "philosophy": "Faculty of Philosophy",
+    "pedagogy": "Faculty of Pedagogy",
+    "sciences": "Faculty of Natural Sciences and Mathematics",
+    "health": "Faculty of Public Health, Health Care and Sport",
+    "arts": "Faculty of Arts",
+    "engineering": "Technical Faculty (Engineering)"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -3498,6 +3576,16 @@
       "tuitionRange": "€1,300 - €1,800 / year",
       "website": "https://mtmcollege.org/en/home-en/",
       "applyUrl": "https://mtmcollege.org/en/admissions/"
+    },
+    "29": {
+      "name": "South-West University \"Neofit Rilski\"",
+      "description": "Blagoevgrad's large public university (est. 1975) — a classical, comprehensive university with nine faculties spanning law, economics, philology, philosophy, pedagogy, sciences, public health and sport, arts and engineering.",
+      "longDescription": "South-West University \"Neofit Rilski\" is a state university in Blagoevgrad, in the heart of south-west Bulgaria between the Rila and Pirin mountains. It was founded in 1975 as a branch of Sofia University, became an independent Higher Pedagogical Institute in 1983 and was granted full university status by the National Assembly in 1995. It is named after Neofit Rilski, the \"patriarch of modern Bulgarian education\".\n\nToday it is one of the country's leading classical, comprehensive universities, with around 12,500 students and some 470 academic staff. Its structure includes nine faculties — Law and History, Economics, Philology, Philosophy, Pedagogy, Natural Sciences and Mathematics, Public Health, Health Care and Sport, Arts, and the Technical (Engineering) Faculty — together with a department for language training and continuing education.\n\nThe university offers a very broad academic portfolio: roughly 71 bachelor's, 100 master's and more than 70 doctoral programmes across the humanities, social and natural sciences, health, sport, the arts and engineering. Its Faculty of Arts is unique in Bulgaria, teaching music, fine arts, fashion, choreography, theatre and film alongside cultural studies and cultural tourism, while the Faculty of Public Health, Health Care and Sport prepares nurses, midwives, kinesitherapists and speech therapists.\n\nStudy is mainly in Bulgarian, with selected programmes and courses in English and a one-year Bulgarian-language preparatory course for international students. Admission is by state matriculation results or university entrance exams, in several competitive rounds. Tuition is among the lowest at any Bulgarian state university — roughly €150–€260 per semester for Bulgarian and EU students on state-subsidised places — and a wide range of merit, social and Erasmus+ scholarships is available.",
+      "location": "Blagoevgrad, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€150 - €1,360 / semester",
+      "website": "https://www.swu.bg/en/",
+      "applyUrl": "https://www.swu.bg/en/for-candidate-students/"
     }
   },
   "universityProfiles": {
@@ -4104,6 +4192,27 @@
         "Full-time and part-time forms of study are available",
         "The programme is a three-year professional bachelor's",
         "Application through the college; see mtmcollege.org for dates and requirements"
+      ]
+    },
+    "29": {
+      "name": "South-West University \"Neofit Rilski\"",
+      "focus": "a broad classical education across law, economics, humanities, natural sciences, health, sport, the arts and engineering",
+      "style": "academic teaching backed by research, art studios, health-care and speech-therapy centres, sports facilities and Erasmus+ mobility across Europe",
+      "careers": [
+        "Teacher / lecturer",
+        "Lawyer / public administration specialist",
+        "Economist / financial specialist",
+        "Psychologist / social worker",
+        "Nurse / kinesitherapist / health professional",
+        "Artist / designer / performer",
+        "IT / engineering specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation exam grades or a university entrance exam",
+        "Several competitive admission rounds, mainly in the summer",
+        "Online application through the university candidate-student system",
+        "Some specialties (arts, sport, health) have an aptitude or practical exam",
+        "Separate procedure and Bulgarian-language check for foreign applicants"
       ]
     }
   },
@@ -4768,7 +4877,16 @@
     "master-in-international-tourism-distance-learning-program": "Master in International Tourism - Distance Learning Program",
     "master-of-business-administration": "Master of Business Administration",
     "anti-corruption-and-conflict-of-interest-management": "Anti-Corruption and Conflict of Interest Management",
-    "finance": "Finance"
+    "finance": "Finance",
+    "bulgarian-philology": "Bulgarian Philology",
+    "english-philology": "English Philology",
+    "preschool-and-primary-school-pedagogy": "Preschool and Primary School Pedagogy",
+    "social-pedagogy": "Social Pedagogy",
+    "geography": "Geography",
+    "sport": "Sport",
+    "educational-management": "Educational Management",
+    "social-work": "Social Work",
+    "cultural-tourism": "Cultural Tourism"
   },
   "programOverrides": {
     "22:bachelor:painting": {
@@ -13366,6 +13484,240 @@
         "English proficiency at B2 level or higher",
         "Applications close in mid-September"
       ]
+    },
+    "29:bachelor:law": {
+      "overview": "Law at SWU's Faculty of Law and History is a five-year integrated Master's programme (Master of Laws) leading to the regulated legal profession in Bulgaria.",
+      "keyFocus": "constitutional, civil, criminal, administrative and EU law, with legal practice and moot courts",
+      "duration": "Integrated Master of Laws — 5 years, full-time",
+      "partners": [
+        "Faculty of Law and History, SWU",
+        "Courts, prosecutor's offices and law firms in south-west Bulgaria",
+        "Public administration and notary practices for internships"
+      ],
+      "highlights": [
+        "Regulated five-year programme leading to the Master of Laws degree",
+        "Strong grounding in Bulgarian and European Union law",
+        "Moot courts, legal clinics and practical placements"
+      ],
+      "careers": [
+        "Lawyer / attorney",
+        "Judge / prosecutor (after the state exam)",
+        "Legal adviser",
+        "Public administration / notary specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation exams or a Bulgarian-language and history entrance exam",
+        "Five-year integrated programme entered after secondary school",
+        "Leads to the regulated legal profession after the state legal exam"
+      ]
+    },
+    "29:bachelor:computer-systems-and-technologies": {
+      "overview": "Computer Systems and Technologies at the Technical Faculty trains engineers for modern hardware, software and networked computer systems.",
+      "keyFocus": "computer architecture, programming, networks, embedded and information systems",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Technical Faculty, SWU",
+        "Regional IT companies and technology employers",
+        "Erasmus+ partner universities for exchange"
+      ],
+      "highlights": [
+        "Balanced hardware and software engineering curriculum",
+        "Labs for computer systems, networks and embedded technology",
+        "Courses can also be delivered in English"
+      ],
+      "careers": [
+        "Software / systems developer",
+        "Computer systems engineer",
+        "Network / IT administrator",
+        "Embedded systems specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics / IT entrance exam",
+        "Interest in mathematics and technology is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "29:bachelor:psychology": {
+      "overview": "Psychology at the Faculty of Philosophy combines a solid theoretical foundation with practical training in one of SWU's strongest social-science schools.",
+      "keyFocus": "general, developmental, social and clinical psychology, with research methods",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Philosophy, SWU",
+        "Schools, clinics and social institutions for practice",
+        "Erasmus+ partner universities in Europe"
+      ],
+      "highlights": [
+        "Broad grounding across the main branches of psychology",
+        "Research methods, testing and practical placements",
+        "A route into the master's in Clinical Psychology"
+      ],
+      "careers": [
+        "Psychologist / counsellor",
+        "HR / organisational specialist",
+        "Research assistant",
+        "Social and educational services specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Interest in people, biology and statistics is helpful",
+        "Online application through the university candidate system"
+      ]
+    },
+    "29:bachelor:fine-arts": {
+      "overview": "Fine Arts is taught in SWU's Faculty of Arts — a school unique in Bulgaria for combining fine, applied and performing arts under one roof.",
+      "keyFocus": "painting, drawing, graphics and applied visual arts, with a personal portfolio",
+      "duration": "Bachelor — 4 years, full-time; studio-based",
+      "partners": [
+        "Faculty of Arts, SWU",
+        "Galleries, cultural institutions and artist studios",
+        "Erasmus+ art academies across Europe"
+      ],
+      "highlights": [
+        "Studio-based teaching by practising artists",
+        "Part of a faculty covering music, fashion, theatre and film",
+        "Exhibitions, projects and a graduation portfolio"
+      ],
+      "careers": [
+        "Artist / painter",
+        "Illustrator / graphic artist",
+        "Art teacher",
+        "Gallery / cultural-project specialist"
+      ],
+      "admissionNotes": [
+        "Admission includes a practical / aptitude exam and a portfolio",
+        "A strong body of personal artwork is important",
+        "Open to secondary-school graduates with artistic talent"
+      ]
+    },
+    "29:bachelor:nursing": {
+      "overview": "Nursing at the Faculty of Public Health, Health Care and Sport is a regulated health-care programme with a long tradition in Blagoevgrad.",
+      "keyFocus": "clinical nursing care, anatomy, physiology and patient support",
+      "duration": "Bachelor — 4 years, full-time; clinical placements",
+      "partners": [
+        "Faculty of Public Health, Health Care and Sport, SWU",
+        "Hospitals and health centres in south-west Bulgaria",
+        "University health-care training centre"
+      ],
+      "highlights": [
+        "A regulated professional health-care qualification",
+        "Extensive supervised clinical practice",
+        "Long-standing tradition of training nurses in Blagoevgrad"
+      ],
+      "careers": [
+        "Registered nurse",
+        "Hospital / clinic nurse",
+        "Community and primary-care nurse",
+        "Health-care team member"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "A regulated specialty with a medical fitness requirement",
+        "Strong demand for graduates in the health system"
+      ]
+    },
+    "29:bachelor:tourism": {
+      "overview": "Tourism at the Faculty of Economics prepares specialists and managers for the tourism, hospitality and travel industry.",
+      "keyFocus": "tourism management, hospitality, destinations, marketing and economics of tourism",
+      "duration": "Bachelor — 4 years, full-time; industry placements",
+      "partners": [
+        "Faculty of Economics, SWU",
+        "Hotels, tour operators and travel companies",
+        "Cultural and destination-management organisations"
+      ],
+      "highlights": [
+        "Business-focused tourism and hospitality curriculum",
+        "Placements with hotels and tour operators",
+        "Well placed for the tourism-rich south-west of Bulgaria"
+      ],
+      "careers": [
+        "Tourism / hospitality manager",
+        "Tour operator / travel specialist",
+        "Destination / event manager",
+        "Tourism marketing specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Foreign languages and communication skills are an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "29:master:software-technologies": {
+      "overview": "The Software Technologies master's at the Technical Faculty deepens skills in software engineering, modern platforms and applied computing.",
+      "keyFocus": "software engineering, web and mobile technologies, databases and applied AI",
+      "duration": "Master — 2–3 semesters, full-time; project-based",
+      "partners": [
+        "Technical Faculty, SWU",
+        "Regional and national IT companies",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Advanced, project-based software engineering",
+        "Modern development platforms and applied AI",
+        "Builds on a computing or engineering bachelor's"
+      ],
+      "careers": [
+        "Software engineer / architect",
+        "Full-stack / backend developer",
+        "DevOps / data specialist",
+        "IT project lead"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to computing, engineering and IT graduates",
+        "Online application through the university candidate system"
+      ]
+    },
+    "29:master:art-management": {
+      "overview": "Art Management, offered by the Faculty of Arts, blends artistic understanding with the business and organisation of cultural life.",
+      "keyFocus": "management of cultural projects, galleries, events, funding and the creative industries",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Arts, SWU",
+        "Cultural institutions, galleries and festivals",
+        "Municipal and NGO cultural programmes"
+      ],
+      "highlights": [
+        "Bridges the arts with management and cultural policy",
+        "Project, event and cultural-organisation practice",
+        "Part of a nationally unique arts faculty"
+      ],
+      "careers": [
+        "Arts / cultural manager",
+        "Gallery / museum administrator",
+        "Festival / event producer",
+        "Creative-industries project manager"
+      ],
+      "admissionNotes": [
+        "Open to graduates of arts, humanities and related fields",
+        "Interest in both culture and management is valued",
+        "Online application through the university candidate system"
+      ]
+    },
+    "29:master:national-security": {
+      "overview": "National Security at the Faculty of Law and History prepares specialists for security, defence and public-order institutions.",
+      "keyFocus": "national and international security, crisis management, law and public administration",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Law and History, SWU",
+        "Security, defence and public-administration institutions",
+        "Regional and cross-border security bodies"
+      ],
+      "highlights": [
+        "Interdisciplinary security, law and administration training",
+        "Crisis and risk management focus",
+        "Links with security and public-order institutions"
+      ],
+      "careers": [
+        "Security / defence analyst",
+        "Public administration specialist",
+        "Crisis-management coordinator",
+        "Corporate security officer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to law, political-science and administration graduates",
+        "Online application through the university candidate system"
+      ]
     }
   },
   "na_faculties": {
@@ -14128,5 +14480,45 @@
     "advertising-and-communications": { "tuition": "€1,300/yr (BG/EU) · €1,800 (intl)", "facultyKey": "marketing" },
     "digital-marketing": { "tuition": "€1,300/yr (BG/EU) · €1,800 (intl)", "facultyKey": "marketing" },
     "international-marketing": { "tuition": "€1,300/yr (BG/EU) · €1,800 (intl)", "facultyKey": "marketing" }
+  },
+  "swu_programInfo": {
+    "law": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "law" },
+    "international-relations": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "law" },
+    "history": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "law" },
+    "finance": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "marketing": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "tourism": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "bulgarian-philology": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "english-philology": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "psychology": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philosophy" },
+    "sociology": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philosophy" },
+    "political-science": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philosophy" },
+    "preschool-and-primary-school-pedagogy": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "social-pedagogy": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "mathematics": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "sciences" },
+    "informatics": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "sciences" },
+    "geography": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "sciences" },
+    "nursing": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "health" },
+    "kinesitherapy": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "health" },
+    "sport": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "health" },
+    "fine-arts": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" },
+    "music": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" },
+    "fashion": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" },
+    "computer-systems-and-technologies": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "engineering" },
+    "electronics": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "engineering" },
+    "international-economic-relations": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "finance-and-banking": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "applied-linguistics": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "clinical-psychology": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philosophy" },
+    "public-administration": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "law" },
+    "national-security": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "law" },
+    "educational-management": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "social-work": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "health" },
+    "public-health-and-health-management": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "health" },
+    "sports-management": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "health" },
+    "software-technologies": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "engineering" },
+    "applied-mathematics": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "sciences" },
+    "art-management": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" },
+    "cultural-tourism": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" }
   }
 }
