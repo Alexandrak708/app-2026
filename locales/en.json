@@ -885,6 +885,30 @@
       "labsText": "Faculties",
       "tuitionFreeLabel": "€150",
       "tuitionFreeText": "Lowest semester fee (BG/EU)"
+    },
+    "30": {
+      "yearsTradition": "34",
+      "bachelorPrograms": "13",
+      "masterPrograms": "1",
+      "internationalPartners": "60+",
+      "countries": "40+",
+      "studentsGraduated": "13K+",
+      "labs": "100%",
+      "labsText": "Taught in English",
+      "tuitionFreeLabel": "1991",
+      "tuitionFreeText": "First US-style university in E. Europe"
+    },
+    "31": {
+      "yearsTradition": "22",
+      "bachelorPrograms": "4",
+      "masterPrograms": "0",
+      "internationalPartners": "10+",
+      "countries": "10+",
+      "studentsGraduated": "5K+",
+      "labs": "2",
+      "labsText": "Departments",
+      "tuitionFreeLabel": "2003",
+      "tuitionFreeText": "Specialist tourism college"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -1409,6 +1433,42 @@
       {
         "range": "€3,000",
         "label": "Foreign students / year (approx.)"
+      }
+    ],
+    "30": [
+      {
+        "range": "€13,800",
+        "label": "Tuition per year (bachelor)"
+      },
+      {
+        "range": "€6,900",
+        "label": "Tuition per semester (bachelor)"
+      },
+      {
+        "range": "€320",
+        "label": "Student-activity fee / semester"
+      },
+      {
+        "range": "€18,500",
+        "label": "Executive MBA (full programme)"
+      }
+    ],
+    "31": [
+      {
+        "range": "€750",
+        "label": "Tourism, per year, full-time (indicative)"
+      },
+      {
+        "range": "€700",
+        "label": "Business Administration, per year, full-time (indicative)"
+      },
+      {
+        "range": "€560",
+        "label": "Per year, part-time (indicative)"
+      },
+      {
+        "range": "€30",
+        "label": "Application fee"
       }
     ]
   },
@@ -2496,7 +2556,81 @@
     "swu_visaSupport": "Admission, visa and residence support for foreign applicants",
     "swu_prep": "A one-year Bulgarian-language and specialised preparatory course before degree study",
     "swu_intake": "Autumn intake with international-office guidance throughout the application",
-    "swu_recognition": "State-recognised Bulgarian diplomas, valid across the EU"
+    "swu_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
+    "aubg_scholarshipsDesc": "AUBG is need-blind in spirit and supports students with generous merit and need-based aid:",
+    "aubg_earlyWaiver": "A 10% tuition waiver for early applicants (by 1 March), valid for the first two semesters",
+    "aubg_meritAid": "Merit scholarships based on academic excellence, awarded at admission",
+    "aubg_needAid": "Need-based financial aid, so ability to pay is not a barrier for strong candidates",
+    "aubg_donor": "14 named donor scholarships funded by foundations, companies and alumni",
+    "aubg_workStudy": "On-campus student-employment and assistantship opportunities to help cover costs",
+    "aubg_applicationDesc": "Admission is holistic and competitive, on a rolling basis in English:",
+    "aubg_appRolling": "Rolling admission for the autumn and spring semesters",
+    "aubg_appEnglish": "Proof of English proficiency (e.g. TOEFL, IELTS, Duolingo) or an AUBG English test",
+    "aubg_appTests": "SAT is optional; the school-leaving record and academic profile are assessed",
+    "aubg_appEssay": "An application essay and a recommendation letter are part of the review",
+    "aubg_appOnline": "Apply online through the AUBG admissions portal; interviews may be requested",
+    "aubg_feesTitle": "Tuition & Fees",
+    "aubg_feesDesc": "As a private American-style university, AUBG charges US-style tuition (2025/2026, indicative):",
+    "aubg_feeYear": "Bachelor tuition is about €13,800 per year before financial aid",
+    "aubg_feeSemester": "Paid per semester — roughly €6,900 each",
+    "aubg_feeActivity": "A student-activity fee of about €320 per semester",
+    "aubg_feeHousing": "On-campus residence halls cost roughly €1,300–€1,600 per academic year",
+    "aubg_feeEmba": "The Executive MBA (in Sofia) is about €18,500 for the whole programme",
+    "aubg_campus": "Campus & Facilities",
+    "aubg_campusDesc": "AUBG has a modern two-part campus in Blagoevgrad, in south-west Bulgaria:",
+    "aubg_mainBuilding": "The Main Building on Blagoevgrad's central square (a landmark historic building)",
+    "aubg_skaptopara": "The Skaptopara campus with the Balkanski Academic Center and three residence halls",
+    "aubg_library": "The Panitza Library — the largest English-language library in South-East Europe",
+    "aubg_studentCenter": "The America for Bulgaria Student Center and the 'Aspire' innovation hub",
+    "aubg_sports": "The ABF Sports Hall, fitness facilities and a lively student-club scene",
+    "aubg_partnersDesc": "AUBG's international, American-model education is built on strong partnerships:",
+    "aubg_usDegree": "Dual accreditation — US (NECHE) and Bulgarian — with a US-style Bachelor of Arts",
+    "aubg_maine": "Founded with support from the University of Maine, the US and Bulgarian governments and the Open Society Institute",
+    "aubg_exchange": "Study-abroad and exchange partnerships with universities across the US and Europe",
+    "aubg_employers": "Strong graduate outcomes at global employers and top graduate schools worldwide",
+    "aubg_alumni": "A worldwide alumni network of 13,000+ graduates in 100+ countries",
+    "aubg_internationalDesc": "AUBG is one of the most international universities in the region:",
+    "aubg_englishTaught": "All degree programmes are taught entirely in English",
+    "aubg_countries": "Students come from over 40 countries across five continents",
+    "aubg_visaSupport": "A dedicated international office provides admission, visa and residence support",
+    "aubg_housing": "Guaranteed on-campus housing in modern residence halls",
+    "aubg_recognition": "A US-accredited degree recognised worldwide and across the EU",
+    "cotur_scholarshipsDesc": "As a specialised private tourism college, COTUR supports students in several ways:",
+    "cotur_stateScholarships": "Access to national student-scholarship programmes co-funded by the EU",
+    "cotur_erasmus": "Erasmus+ grants for study and traineeship mobility abroad",
+    "cotur_earlyBird": "Discounts for early enrolment and for paying the full year in advance",
+    "cotur_installments": "Tuition can be paid by semester rather than in one sum",
+    "cotur_internships": "Paid internships and seasonal work placements in hotels and resorts",
+    "cotur_applicationDesc": "Admission is open to secondary-school graduates for full-time and part-time study:",
+    "cotur_appExams": "Ranking by state matriculation exam grades (language, geography-economics, foreign language)",
+    "cotur_appDocuments": "Secondary-school diploma, ID copy, photos and the paid semester fee",
+    "cotur_appForms": "Full-time (redovno) and part-time (zadochno) forms of study are offered",
+    "cotur_appRounds": "Admission runs for the autumn intake of the academic year",
+    "cotur_appOnline": "Documents are accepted at the college's academic department and online",
+    "cotur_feesTitle": "Tuition & Fees",
+    "cotur_feesDesc": "As a private college COTUR charges tuition; the amounts below are indicative:",
+    "cotur_feeFullTime": "Full-time tuition is around €700–€750 per year, depending on the specialty",
+    "cotur_feePartTime": "Part-time (distance) tuition is lower, around €560 per year",
+    "cotur_feeSemester": "Fees can be paid per semester (roughly half the annual amount)",
+    "cotur_feeApplication": "A small application fee applies for each admission",
+    "cotur_feeDistance": "Distance learning through the Moodle platform is available for part-time students",
+    "cotur_campus": "Campus & Facilities",
+    "cotur_campusDesc": "The college occupies a renovated building in the centre of Blagoevgrad:",
+    "cotur_location": "Located at 2 Bregalnitsa St, Blagoevgrad (the former First Primary School)",
+    "cotur_classrooms": "Modern classrooms and computer rooms for tourism and business training",
+    "cotur_practice": "Practical training rooms modelled on hotel and restaurant service",
+    "cotur_moodle": "A Moodle e-learning platform for distance and blended study",
+    "cotur_library": "A specialised library and study resources in tourism and hospitality",
+    "cotur_partnersDesc": "COTUR keeps close links with the tourism and hospitality industry:",
+    "cotur_hotels": "Partner hotels and restaurants for student internships and practice",
+    "cotur_tourOperators": "Tour operators and travel agencies for placements and projects",
+    "cotur_erasmusPartners": "Erasmus+ partner colleges and universities across Europe",
+    "cotur_industry": "Close ties with the tourism sector in the Pirin and south-west Bulgaria region",
+    "cotur_internationalDesc": "The college welcomes international students and mobility participants:",
+    "cotur_erasmusMobility": "Incoming and outgoing Erasmus+ mobility for study and traineeships",
+    "cotur_bulgarianCourses": "Bulgarian-language courses for foreign students",
+    "cotur_support": "Admission and settling-in support for international applicants",
+    "cotur_recognition": "A state-recognised professional-bachelor diploma, valid across the EU"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -2713,6 +2847,18 @@
     "health": "Faculty of Public Health, Health Care and Sport",
     "arts": "Faculty of Arts",
     "engineering": "Technical Faculty (Engineering)"
+  },
+  "aubg_faculties": {
+    "business": "Department of Business and Economics",
+    "cs": "Department of Computer Science",
+    "politics": "Department of Politics and European Studies",
+    "journalism": "Department of Journalism and Mass Communication",
+    "literature": "Department of Literature and Modern Languages",
+    "science": "Department of Mathematics and Science"
+  },
+  "cotur_faculties": {
+    "tourism": "Department of Tourism",
+    "business": "Department of Business Administration"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -3586,6 +3732,26 @@
       "tuitionRange": "€150 - €1,360 / semester",
       "website": "https://www.swu.bg/en/",
       "applyUrl": "https://www.swu.bg/en/for-candidate-students/"
+    },
+    "30": {
+      "name": "American University in Bulgaria",
+      "description": "Blagoevgrad's private American-style liberal-arts university (est. 1991) — the first of its kind in Eastern Europe, taught entirely in English, US- and Bulgarian-accredited, with students from 40+ countries.",
+      "longDescription": "The American University in Bulgaria (AUBG) is a private, American-style liberal-arts university in Blagoevgrad, in south-west Bulgaria. Founded in 1991 as a cooperative venture supported by the United States and Bulgarian governments, the Open Society Institute, the City of Blagoevgrad and the University of Maine, it was the first American-style liberal-arts university in Eastern Europe. Its first class in 1991 had just 208 students; today it has around 1,200 students from more than 40 countries across five continents, and its president is J.D. Mininger.\n\nAUBG is accredited both in the United States, by the New England Commission of Higher Education (NECHE), and in Bulgaria, and its degrees are recognised across the EU. All programmes are taught entirely in English, and students graduate with a US-style Bachelor of Arts. More than 60% complete a double major or a major-and-minor combination, reflecting the breadth of the liberal-arts model.\n\nStudents choose from 13 majors, 20 minors and several concentrations across departments in business and economics, computer science, politics and European studies, journalism and mass communication, literature and modern languages, and mathematics and science. AUBG's Business Administration, Journalism and Mass Communication, Political Science and International Relations and European Studies programmes are consistently ranked first in Bulgaria. At graduate level the university runs an Executive MBA in Sofia.\n\nThe campus combines a landmark Main Building on Blagoevgrad's central square with the modern Skaptopara campus, home to the Balkanski Academic Center, three residence halls, the ABF Sports Hall, the America for Bulgaria Student Center and the Panitza Library — the largest English-language library in South-East Europe. As a private university, AUBG charges US-style tuition (around €13,800 per year), but supports students with extensive merit- and need-based aid. Its alumni — more than 13,000 in over 100 countries — include entrepreneurs, journalists and public figures such as investigative reporter Christo Grozev and Sofia mayor Vassil Terziev.",
+      "location": "Blagoevgrad, Bulgaria",
+      "degree": "Bachelor of Arts / Executive MBA",
+      "tuitionRange": "€13,800 / year (bachelor)",
+      "website": "https://www.aubg.edu/",
+      "applyUrl": "https://www.aubg.edu/admissions/"
+    },
+    "31": {
+      "name": "College of Tourism – Blagoevgrad",
+      "description": "Blagoevgrad's private, specialised tourism college (est. 2003) — a NEAA-accredited professional-bachelor school for hotel and restaurant management, tourist services and business administration.",
+      "longDescription": "The College of Tourism – Blagoevgrad (COTUR) is a private, specialised higher-education college in the centre of Blagoevgrad, in south-west Bulgaria. It was founded on 16 October 2003 and is dedicated to training professionals for the tourism, hospitality and travel industry — one of the region's most important economic sectors. In February 2025 it received a fresh institutional accreditation from the National Evaluation and Accreditation Agency (NEAA), valid until 2031.\n\nThe college awards the 'professional bachelor' degree — a practical, three-year higher-education qualification — across two professional fields: Tourism (3.9) and Administration and Management (3.7). Its specialties are Organization and Management of Hotels and Restaurants, Organization and Management of Tourist Services, Tourist Animation and Tour Guiding, and Business Administration, offered in both full-time and part-time forms.\n\nTeaching combines classroom study with a strong emphasis on practice: students train in service, hospitality, tourism operations and management, and complete internships in partner hotels, restaurants and tour operators. A Moodle-based e-learning platform supports distance and blended learning, and the college takes part in Erasmus+ mobility for study and traineeships across Europe.\n\nAs a private college, COTUR charges moderate tuition (indicatively around €700–€750 per year for full-time study, lower for part-time), and supports students through national scholarship schemes, Erasmus+ grants and flexible payment. Based in a renovated building at 2 Bregalnitsa Street, it offers a focused, career-oriented route into the hotel, restaurant and tourism professions.",
+      "location": "Blagoevgrad, Bulgaria",
+      "degree": "Professional Bachelor (Tourism / Business)",
+      "tuitionRange": "€560 - €750 / year",
+      "website": "https://cotur.bg/",
+      "applyUrl": "https://cotur.bg/"
     }
   },
   "universityProfiles": {
@@ -4213,6 +4379,48 @@
         "Online application through the university candidate-student system",
         "Some specialties (arts, sport, health) have an aptitude or practical exam",
         "Separate procedure and Bulgarian-language check for foreign applicants"
+      ]
+    },
+    "30": {
+      "name": "American University in Bulgaria",
+      "focus": "an American-style liberal-arts education across business, economics, computer science, politics, journalism, humanities and mathematics, taught entirely in English",
+      "style": "small classes, interdisciplinary study, double majors, a US-accredited degree, an international campus and strong career and graduate-school outcomes",
+      "careers": [
+        "Business / finance professional",
+        "Entrepreneur / startup founder",
+        "Software developer / IT specialist",
+        "Journalist / communications specialist",
+        "Diplomat / policy analyst",
+        "Consultant / analyst",
+        "Graduate study at top universities worldwide"
+      ],
+      "admissionNotes": [
+        "Rolling admission for autumn and spring, assessed holistically",
+        "Proof of English proficiency (TOEFL, IELTS, Duolingo) or an AUBG English test",
+        "Application essay and a recommendation letter; SAT optional",
+        "All programmes taught in English and awarded as a US-style Bachelor of Arts",
+        "Merit- and need-based financial aid available; apply early for a tuition waiver"
+      ]
+    },
+    "31": {
+      "name": "College of Tourism – Blagoevgrad",
+      "focus": "hotel and restaurant management, tourist services, tourist animation and tour guiding, and business administration for the tourism industry",
+      "style": "a practical, career-focused professional-bachelor education with internships in hotels and resorts, e-learning and Erasmus+ mobility",
+      "careers": [
+        "Hotel / restaurant manager",
+        "Tourism / travel-agency specialist",
+        "Tour guide / animator",
+        "Event and hospitality coordinator",
+        "Front-office / reservations manager",
+        "Tourism entrepreneur",
+        "Business administration specialist"
+      ],
+      "admissionNotes": [
+        "Open to secondary-school graduates, ranked by state matriculation grades",
+        "Full-time (redovno) and part-time (zadochno) forms of study",
+        "A three-year professional-bachelor degree in tourism or business",
+        "Internships in partner hotels, restaurants and tour operators",
+        "Apply at the college's academic department; autumn intake"
       ]
     }
   },
@@ -4886,7 +5094,16 @@
     "sport": "Sport",
     "educational-management": "Educational Management",
     "social-work": "Social Work",
-    "cultural-tourism": "Cultural Tourism"
+    "cultural-tourism": "Cultural Tourism",
+    "political-science-and-international-relations": "Political Science and International Relations",
+    "history-and-civilizations": "History and Civilizations",
+    "journalism-and-mass-communication": "Journalism and Mass Communication",
+    "literature": "Literature",
+    "modern-languages-and-cultures": "Modern Languages and Cultures",
+    "executive-mba": "Executive MBA",
+    "organization-and-management-of-hotels-and-restaurants": "Organization and Management of Hotels and Restaurants",
+    "organization-and-management-of-tourist-services": "Organization and Management of Tourist Services",
+    "tourist-animation-and-tour-guiding": "Tourist Animation and Tour Guiding"
   },
   "programOverrides": {
     "22:bachelor:painting": {
@@ -13718,6 +13935,344 @@
         "Suited to law, political-science and administration graduates",
         "Online application through the university candidate system"
       ]
+    },
+    "30:bachelor:business-administration": {
+      "overview": "Business Administration is AUBG's flagship major and consistently ranked first in Bulgaria, combining a liberal-arts foundation with practical, international business skills.",
+      "keyFocus": "management, marketing, finance, accounting, entrepreneurship and strategy",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Business and Economics, AUBG",
+        "Multinational employers and regional companies for internships",
+        "Elevate incubator and the 'Aspire' innovation hub"
+      ],
+      "highlights": [
+        "The university's flagship, top-ranked programme in Bulgaria",
+        "US-style, case-based teaching in small classes",
+        "Strong pipeline into global companies and graduate business schools"
+      ],
+      "careers": [
+        "Business / management professional",
+        "Consultant / analyst",
+        "Entrepreneur / startup founder",
+        "Finance or marketing specialist"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency (TOEFL / IELTS / Duolingo) required",
+        "Merit- and need-based aid available"
+      ]
+    },
+    "30:bachelor:economics": {
+      "overview": "Economics at AUBG blends rigorous theory with quantitative and analytical skills, taught in the American liberal-arts model entirely in English.",
+      "keyFocus": "micro- and macroeconomics, econometrics, finance and data analysis",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Business and Economics, AUBG",
+        "Banks, consultancies and international organisations",
+        "Exchange partners in the US and Europe"
+      ],
+      "highlights": [
+        "Strong quantitative and analytical grounding",
+        "Frequently combined with Business, Mathematics or Computer Science",
+        "Excellent placement into graduate programmes abroad"
+      ],
+      "careers": [
+        "Economist / analyst",
+        "Financial analyst / banker",
+        "Data / policy analyst",
+        "Researcher / graduate study"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "A strong record in mathematics is an advantage"
+      ]
+    },
+    "30:bachelor:computer-science": {
+      "overview": "Computer Science at AUBG offers a US-accredited CS degree with a liberal-arts breadth, preparing graduates for the global tech industry and top graduate schools.",
+      "keyFocus": "programming, algorithms, software engineering, AI and data",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Computer Science, AUBG",
+        "Tech companies and startups (many founded by AUBG alumni)",
+        "ACM student chapter and hackathons"
+      ],
+      "highlights": [
+        "US-accredited CS degree taught in English",
+        "Project- and lab-based learning in small groups",
+        "Alumni founders include the co-founders of Telerik"
+      ],
+      "careers": [
+        "Software engineer / developer",
+        "Data scientist / ML engineer",
+        "Product / systems engineer",
+        "Tech entrepreneur"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "Interest and ability in mathematics is important"
+      ]
+    },
+    "30:bachelor:political-science-and-international-relations": {
+      "overview": "Political Science and International Relations is a top-ranked AUBG major exploring government, diplomacy and global affairs from an international perspective.",
+      "keyFocus": "comparative politics, international relations, political theory and public policy",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Politics and European Studies, AUBG",
+        "Embassies, NGOs and international organisations",
+        "Model UN and study-abroad partners"
+      ],
+      "highlights": [
+        "Consistently ranked first in Bulgaria",
+        "Diverse, international classroom and faculty",
+        "Strong route into diplomacy, policy and graduate study"
+      ],
+      "careers": [
+        "Diplomat / foreign-service officer",
+        "Policy / political analyst",
+        "NGO / international-organisation professional",
+        "Journalist / researcher"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "An application essay and recommendation letter are reviewed"
+      ]
+    },
+    "30:bachelor:journalism-and-mass-communication": {
+      "overview": "Journalism and Mass Communication, ranked first in Bulgaria, trains storytellers and communicators for a digital, global media landscape.",
+      "keyFocus": "reporting, digital and broadcast media, PR, and media studies",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Journalism and Mass Communication, AUBG",
+        "Media outlets, agencies and Radio AURA / AUBG Daily",
+        "International newsrooms and communications firms"
+      ],
+      "highlights": [
+        "Top-ranked journalism programme in Bulgaria",
+        "Hands-on work with campus media and real newsrooms",
+        "Alumni include award-winning investigative journalists"
+      ],
+      "careers": [
+        "Journalist / reporter",
+        "Communications / PR specialist",
+        "Content creator / editor",
+        "Media and marketing professional"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "A portfolio or writing sample can strengthen the application"
+      ]
+    },
+    "30:bachelor:european-studies": {
+      "overview": "European Studies is a top-ranked interdisciplinary AUBG major examining Europe's history, politics, economics and culture, with a focus on the EU.",
+      "keyFocus": "European history, politics, law, economics and integration",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Politics and European Studies, AUBG",
+        "EU institutions, think-tanks and NGOs",
+        "Erasmus and study-abroad partners in Europe"
+      ],
+      "highlights": [
+        "Consistently ranked first in Bulgaria",
+        "Interdisciplinary and international in focus",
+        "Frequently combined with Political Science or Economics"
+      ],
+      "careers": [
+        "EU / public-affairs specialist",
+        "Policy analyst / researcher",
+        "Diplomat / NGO professional",
+        "Graduate study in European affairs"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "Interest in politics, history and languages is valued"
+      ]
+    },
+    "30:bachelor:information-systems": {
+      "overview": "Information Systems bridges computing and business, preparing graduates to design and manage the technology that runs modern organisations.",
+      "keyFocus": "databases, systems analysis, business processes and IT management",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Computer Science, AUBG",
+        "IT and consulting companies for internships",
+        "Business and tech employers across the region"
+      ],
+      "highlights": [
+        "Combines computer science with business and management",
+        "Practical, project-based learning",
+        "Often paired with a Business or CS major"
+      ],
+      "careers": [
+        "IT / systems analyst",
+        "Business analyst",
+        "Product / project manager",
+        "IT consultant"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "Interest in both technology and business helps"
+      ]
+    },
+    "30:bachelor:literature": {
+      "overview": "Literature (English and Comparative Literature) develops critical reading, writing and analytical skills at the heart of the liberal-arts tradition.",
+      "keyFocus": "English and world literature, critical theory, and academic writing",
+      "duration": "Bachelor of Arts — 4 years, full-time; taught in English",
+      "partners": [
+        "Department of Literature and Modern Languages, AUBG",
+        "Publishing, media and cultural organisations",
+        "Writing centre and campus publications"
+      ],
+      "highlights": [
+        "Rigorous training in reading, analysis and writing",
+        "Small seminar-style classes",
+        "A strong foundation for law, media and graduate study"
+      ],
+      "careers": [
+        "Writer / editor",
+        "Communications specialist",
+        "Teacher / academic",
+        "Publishing / cultural-sector professional"
+      ],
+      "admissionNotes": [
+        "Rolling admission, assessed holistically",
+        "Proof of English proficiency required",
+        "A love of reading and writing is essential"
+      ]
+    },
+    "30:master:executive-mba": {
+      "overview": "The AUBG Executive MBA, delivered in Sofia, is a part-time graduate programme for working professionals and managers seeking to advance into leadership.",
+      "keyFocus": "leadership, strategy, finance, marketing and management in practice",
+      "duration": "Executive MBA — part-time, delivered in Sofia; taught in English",
+      "partners": [
+        "AUBG Executive Education, Sofia",
+        "Senior faculty and international business practitioners",
+        "A network of executives and employer organisations"
+      ],
+      "highlights": [
+        "AUBG's flagship graduate programme, taught in English",
+        "Designed for working professionals and managers",
+        "Cohort-based, practical and leadership-focused"
+      ],
+      "careers": [
+        "Senior manager / director",
+        "Entrepreneur / business owner",
+        "Consultant / strategist",
+        "Executive / team leader"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree and professional experience",
+        "Assessment includes an interview and professional profile",
+        "Tuition around €18,500; instalment plans available"
+      ]
+    },
+    "31:bachelor:organization-and-management-of-hotels-and-restaurants": {
+      "overview": "This is COTUR's flagship specialty, training managers for hotels, restaurants and the wider hospitality industry.",
+      "keyFocus": "hotel and restaurant operations, front office, food and beverage, service and hospitality management",
+      "duration": "Professional Bachelor — 3 years, full-time or part-time; with internships",
+      "partners": [
+        "Department of Tourism, College of Tourism – Blagoevgrad",
+        "Partner hotels and restaurants for internships",
+        "Tourism employers in the Pirin and south-west Bulgaria region"
+      ],
+      "highlights": [
+        "The college's core hospitality-management programme",
+        "Practical training in hotel and restaurant service",
+        "Internships and seasonal placements in the industry"
+      ],
+      "careers": [
+        "Hotel manager",
+        "Restaurant / F&B manager",
+        "Front-office / reservations manager",
+        "Hospitality entrepreneur"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation grades; open to secondary-school graduates",
+        "Full-time or part-time; a three-year professional-bachelor degree",
+        "Includes practical internships in partner hotels and restaurants"
+      ]
+    },
+    "31:bachelor:organization-and-management-of-tourist-services": {
+      "overview": "This specialty prepares professionals to organise and manage tourist services, travel and destination operations.",
+      "keyFocus": "tour operations, travel agencies, destination management, tourism marketing and services",
+      "duration": "Professional Bachelor — 3 years, full-time or part-time; with internships",
+      "partners": [
+        "Department of Tourism, College of Tourism – Blagoevgrad",
+        "Tour operators and travel agencies",
+        "Destination and tourism organisations"
+      ],
+      "highlights": [
+        "Focused on the travel and tour-operations side of tourism",
+        "Service, marketing and destination management",
+        "Placements with tour operators and agencies"
+      ],
+      "careers": [
+        "Tour operator / travel specialist",
+        "Tourism services manager",
+        "Destination / product manager",
+        "Tourism marketing specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation grades; open to secondary-school graduates",
+        "Full-time or part-time; a three-year professional-bachelor degree",
+        "Foreign languages are an advantage for the tourism sector"
+      ]
+    },
+    "31:bachelor:tourist-animation-and-tour-guiding": {
+      "overview": "This specialty trains tourist animators and tour guides who create and lead engaging visitor experiences.",
+      "keyFocus": "tourist animation, entertainment, cultural and eco tour guiding, and excursion planning",
+      "duration": "Professional Bachelor — 3 years, full-time or part-time; practice-based",
+      "partners": [
+        "Department of Tourism, College of Tourism – Blagoevgrad",
+        "Resorts, animation teams and cultural sites",
+        "Tour operators for guided-tour practice"
+      ],
+      "highlights": [
+        "A creative, people-focused tourism specialty",
+        "Animation, entertainment and guiding skills",
+        "Cultural, mountain and eco-tourism of the Pirin region"
+      ],
+      "careers": [
+        "Tourist animator / entertainer",
+        "Tour guide / excursion leader",
+        "Resort activities coordinator",
+        "Cultural-tourism specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation grades; open to secondary-school graduates",
+        "Full-time or part-time; a three-year professional-bachelor degree",
+        "Communication skills and foreign languages are valued"
+      ]
+    },
+    "31:bachelor:business-administration": {
+      "overview": "Business Administration at COTUR gives a practical grounding in management, ideal for the tourism and service economy.",
+      "keyFocus": "management, marketing, finance, entrepreneurship and administration of small and medium firms",
+      "duration": "Professional Bachelor — 3 years, full-time or part-time; project-based",
+      "partners": [
+        "Department of Business Administration, College of Tourism – Blagoevgrad",
+        "Local businesses and employers for internships",
+        "Tourism and service companies in the region"
+      ],
+      "highlights": [
+        "Practical management and administration skills",
+        "Well suited to the tourism and service sector",
+        "A route into management roles or self-employment"
+      ],
+      "careers": [
+        "Business / office manager",
+        "Administration specialist",
+        "Marketing / sales specialist",
+        "Entrepreneur / small-business owner"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation grades; open to secondary-school graduates",
+        "Full-time or part-time; a three-year professional-bachelor degree",
+        "Apply at the college's academic department for the autumn intake"
+      ]
     }
   },
   "na_faculties": {
@@ -14520,5 +15075,27 @@
     "applied-mathematics": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "sciences" },
     "art-management": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" },
     "cultural-tourism": { "tuition": "€150–€260/sem (BG/EU) · €3,000/yr (foreign)", "facultyKey": "arts" }
+  },
+  "aubg_programInfo": {
+    "business-administration": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "business" },
+    "economics": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "business" },
+    "finance": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "business" },
+    "computer-science": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "cs" },
+    "information-systems": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "cs" },
+    "mathematics": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "science" },
+    "political-science-and-international-relations": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "politics" },
+    "european-studies": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "politics" },
+    "history-and-civilizations": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "politics" },
+    "journalism-and-mass-communication": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "journalism" },
+    "literature": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "literature" },
+    "modern-languages-and-cultures": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "literature" },
+    "psychology": { "tuition": "€13,800/yr (€6,900/sem) · taught in English", "facultyKey": "science" },
+    "executive-mba": { "tuition": "€18,500 (full programme) · Sofia", "facultyKey": "business" }
+  },
+  "cotur_programInfo": {
+    "organization-and-management-of-hotels-and-restaurants": { "tuition": "€750/yr full-time · €560 part-time (indicative)", "facultyKey": "tourism" },
+    "organization-and-management-of-tourist-services": { "tuition": "€750/yr full-time · €560 part-time (indicative)", "facultyKey": "tourism" },
+    "tourist-animation-and-tour-guiding": { "tuition": "€750/yr full-time · €560 part-time (indicative)", "facultyKey": "tourism" },
+    "business-administration": { "tuition": "€700/yr full-time · €560 part-time (indicative)", "facultyKey": "business" }
   }
 }

@@ -324,6 +324,28 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "30",
+    rating: 5,
+    color: "#1f4e8c",
+    image: require("../assets/images/aubg-blagoevgrad.jpg"),
+    category: "Business",
+    categories: ["Business", "Economics", "Engineering", "Arts", "Law"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
+  {
+    id: "31",
+    rating: 4,
+    color: "#0f766e",
+    image: require("../assets/images/cotur-blagoevgrad.jpg"),
+    category: "Business",
+    categories: ["Business", "Economics"],
+    scholarship: true,
+    degreeLevels: ["Bachelor"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {

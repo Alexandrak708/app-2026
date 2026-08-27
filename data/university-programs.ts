@@ -991,6 +991,35 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Cultural Tourism",
     ],
   },
+  "30": {
+    bachelor: [
+      "Business Administration",
+      "Economics",
+      "Finance",
+      "Computer Science",
+      "Information Systems",
+      "Mathematics",
+      "Political Science and International Relations",
+      "European Studies",
+      "History and Civilizations",
+      "Journalism and Mass Communication",
+      "Literature",
+      "Modern Languages and Cultures",
+      "Psychology",
+    ],
+    master: [
+      "Executive MBA",
+    ],
+  },
+  "31": {
+    bachelor: [
+      "Organization and Management of Hotels and Restaurants",
+      "Organization and Management of Tourist Services",
+      "Tourist Animation and Tour Guiding",
+      "Business Administration",
+    ],
+    master: [],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1452,6 +1481,32 @@ function getSwuProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getAubgProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`aubg_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getCoturProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`cotur_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1724,6 +1779,26 @@ function getMtmFaculty(facultyKey: string): string | null {
 
 function getSwuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`swu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getAubgFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`aubg_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getCoturFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`cotur_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2030,6 +2105,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (swuInfo.tuition) summary.tuition = swuInfo.tuition;
         if (swuInfo.facultyKey) {
           const facultyName = getSwuFaculty(swuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "30") {
+      const aubgInfo = getAubgProgramInfo(slug);
+      if (aubgInfo) {
+        if (aubgInfo.tuition) summary.tuition = aubgInfo.tuition;
+        if (aubgInfo.facultyKey) {
+          const facultyName = getAubgFaculty(aubgInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "31") {
+      const coturInfo = getCoturProgramInfo(slug);
+      if (coturInfo) {
+        if (coturInfo.tuition) summary.tuition = coturInfo.tuition;
+        if (coturInfo.facultyKey) {
+          const facultyName = getCoturFaculty(coturInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2393,6 +2486,26 @@ export function buildProgramDetail(
       if (swuInfo.tuition) result.tuition = swuInfo.tuition;
       if (swuInfo.facultyKey) {
         const facultyName = getSwuFaculty(swuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "30" && normalizedSlug) {
+    const aubgInfo = getAubgProgramInfo(normalizedSlug);
+
+    if (aubgInfo) {
+      if (aubgInfo.tuition) result.tuition = aubgInfo.tuition;
+      if (aubgInfo.facultyKey) {
+        const facultyName = getAubgFaculty(aubgInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "31" && normalizedSlug) {
+    const coturInfo = getCoturProgramInfo(normalizedSlug);
+
+    if (coturInfo) {
+      if (coturInfo.tuition) result.tuition = coturInfo.tuition;
+      if (coturInfo.facultyKey) {
+        const facultyName = getCoturFaculty(coturInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
