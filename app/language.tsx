@@ -9,7 +9,7 @@ import { useAppTheme } from "@/hooks/use-theme-color";
 
 type LanguageCode = "en" | "bg";
 
-const LANGUAGES: Array<{ code: LanguageCode; labelKey: string }> = [
+const LANGUAGES: { code: LanguageCode; labelKey: string }[] = [
   { code: "en", labelKey: "languages.en" },
   { code: "bg", labelKey: "languages.bg" },
 ];

@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
-import { useRouter } from "expo-router";
 
 import { useAppTheme } from "@/hooks/use-theme-color";
 import { useAppSettings } from "@/contexts/settings-context";
@@ -48,8 +47,6 @@ export default function SettingsWeb({
 }) {
   const { t } = useTranslation();
   const { colors, isDark } = useAppTheme();
-  const router = useRouter();
-
   const [selected, setSelected] = useState<PanelKey>("profile");
   const [hovered, setHovered] = useState<PanelKey | "logout" | null>(null);
   const [lang, setLang] = useState(i18n.language);
@@ -96,7 +93,6 @@ export default function SettingsWeb({
   }) {
     const isSelected = selected === itemKey;
     const isHovered = hovered === itemKey;
-    const active = isSelected || isHovered;
     const tint = accent ? colors.accent : isSelected ? colors.accent : isHovered ? colors.text : colors.textSecondary;
 
     return (
