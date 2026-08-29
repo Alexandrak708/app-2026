@@ -909,6 +909,18 @@
       "labsText": "Departments",
       "tuitionFreeLabel": "2003",
       "tuitionFreeText": "Specialist tourism college"
+    },
+    "32": {
+      "yearsTradition": "60+",
+      "bachelorPrograms": "103",
+      "masterPrograms": "100+",
+      "internationalPartners": "200+",
+      "countries": "30+",
+      "studentsGraduated": "100K+",
+      "labs": "9",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€350",
+      "tuitionFreeText": "Lowest annual fee (BG/EU)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -1469,6 +1481,24 @@
       {
         "range": "€30",
         "label": "Application fee"
+      }
+    ],
+    "32": [
+      {
+        "range": "€350",
+        "label": "Lowest state-subsidised fee / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€500",
+        "label": "Higher-fee programmes / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€1,500",
+        "label": "Dual-citizenship applicants / year"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students / year"
       }
     ]
   },
@@ -2630,7 +2660,44 @@
     "cotur_erasmusMobility": "Incoming and outgoing Erasmus+ mobility for study and traineeships",
     "cotur_bulgarianCourses": "Bulgarian-language courses for foreign students",
     "cotur_support": "Admission and settling-in support for international applicants",
-    "cotur_recognition": "A state-recognised professional-bachelor diploma, valid across the EU"
+    "cotur_recognition": "A state-recognised professional-bachelor diploma, valid across the EU",
+    "pu_scholarshipsDesc": "As a large state university, Plovdiv offers a full range of state and mobility scholarships:",
+    "pu_merit": "Merit scholarships from the state budget for strong exam results, paid each semester",
+    "pu_social": "Social scholarships for students from low-income families and special-support groups",
+    "pu_erasmus": "Erasmus+ mobility grants for study and traineeships at 200+ partner universities",
+    "pu_phd": "State scholarships and research funding for full-time doctoral (PhD) students",
+    "pu_special": "Named and special-purpose scholarships in priority fields and for top new entrants",
+    "pu_applicationDesc": "Admission is competitive, for secondary-school graduates, in several rounds:",
+    "pu_appExams": "Ranking by state matriculation exams or a university entrance exam for the specialty",
+    "pu_appRanking": "Candidates are ranked by an aggregate score across several admission rounds",
+    "pu_appOnline": "Online application and candidate account through the university admissions system",
+    "pu_appDocuments": "Secondary-school diploma, application form and the relevant supporting documents",
+    "pu_appForeign": "Separate procedure for foreign applicants, with diploma recognition and a Bulgarian-language check",
+    "pu_feesTitle": "Tuition & Fees",
+    "pu_feesDesc": "Plovdiv keeps fees among the lowest for a Bulgarian state university; amounts are per year (indicative):",
+    "pu_feeState": "State-subsidised places: roughly €350–€500 per year for Bulgarian and EU students",
+    "pu_feePaid": "Paid form of study is available in many specialties at a moderate annual fee",
+    "pu_feeForeign": "Foreign (non-EU) students: around €3,000 per year, set annually by the Council of Ministers",
+    "pu_feeDual": "Applicants with dual (incl. Bulgarian) citizenship pay a reduced fee of about €1,500 per year",
+    "pu_feeExam": "A one-year Bulgarian-language preparatory course for foreigners is about €3,000; exam fee €100",
+    "pu_campus": "Campus & Facilities",
+    "pu_campusDesc": "Plovdiv University is spread across several buildings in Plovdiv, plus two branches:",
+    "pu_rectorate": "The landmark Rectorate at 24 Tsar Asen St — a historic building in the city centre",
+    "pu_faculties9": "Nine faculties, from biology, chemistry and physics to law, economics and philology",
+    "pu_branches": "Branches in Smolyan and Kardzhali, and a technical college in Smolyan",
+    "pu_labs": "Modern science labs, computer rooms, an observatory and specialised research centres",
+    "pu_library": "A large university library and digital academic resources",
+    "pu_partnersDesc": "Plovdiv University is an active partner in European and national research networks:",
+    "pu_erasmusPartners": "Erasmus+ partnerships with 200+ universities across the EU for mobility",
+    "pu_researchPartners": "Joint research and doctoral projects with the Bulgarian Academy of Sciences and institutes",
+    "pu_industry": "Links with IT, biotech and business employers for internships and projects",
+    "pu_regional": "The leading university of southern Bulgaria, with strong regional ties",
+    "pu_internationalDesc": "Plovdiv University has a long tradition of teaching international students:",
+    "pu_englishTaught": "Selected programmes and courses are available in English",
+    "pu_prep": "A one-year Bulgarian-language and specialised preparatory course before degree study",
+    "pu_visaSupport": "Admission, visa and residence support through a dedicated foreign-students department",
+    "pu_intake": "Autumn intake with international-office guidance throughout the application",
+    "pu_recognition": "State-recognised Bulgarian diplomas, valid across the EU"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -2859,6 +2926,17 @@
   "cotur_faculties": {
     "tourism": "Department of Tourism",
     "business": "Department of Business Administration"
+  },
+  "pu_faculties": {
+    "biology": "Faculty of Biology",
+    "chemistry": "Faculty of Chemistry",
+    "physics": "Faculty of Physics and Technology",
+    "math": "Faculty of Mathematics and Informatics",
+    "economics": "Faculty of Economic and Social Sciences",
+    "law": "Faculty of Law",
+    "philology": "Faculty of Philology",
+    "philosophy": "Faculty of Philosophy and History",
+    "pedagogy": "Faculty of Pedagogy"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -3752,6 +3830,16 @@
       "tuitionRange": "€560 - €750 / year",
       "website": "https://cotur.bg/",
       "applyUrl": "https://cotur.bg/"
+    },
+    "32": {
+      "name": "University of Plovdiv \"Paisii Hilendarski\"",
+      "description": "Plovdiv's large public university (est. 1961) — the biggest in southern Bulgaria and second-largest in the country, a classical, comprehensive university with nine faculties across the sciences, humanities, economics and law.",
+      "longDescription": "The University of Plovdiv \"Paisii Hilendarski\" is a state university in Plovdiv, the second city of Bulgaria. It was founded in 1961 as the Higher Pedagogical Institute of Natural Sciences and was granted full university status in 1972, taking the name of Paisii Hilendarski, the monk-historian who helped spark the Bulgarian National Revival. Today it is the largest university in southern Bulgaria and the second-largest in the country, with around 18,000–20,000 students and some 560 academic staff; its rector is Prof. Dr. Rumen Mladenov.\n\nThe university is organised into nine faculties — Biology, Chemistry, Physics and Technology, Mathematics and Informatics, Economic and Social Sciences, Law, Philology, Philosophy and History, and Pedagogy — together with branches in Smolyan and Kardzhali and a technical college in Smolyan. Although it began as a natural-sciences school, it has grown into a broad classical university offering more than a hundred bachelor's, master's and doctoral specialties.\n\nPlovdiv University is especially strong in the natural sciences and in mathematics and informatics: its Faculty of Mathematics and Informatics is one of the country's leading schools for computer science, software engineering, artificial intelligence and data science, while the biology, chemistry and physics faculties combine teaching with active research. Alongside these it has well-regarded programmes in economics, law, philology, history, philosophy and teacher education.\n\nStudy is mainly in Bulgarian, with selected courses in English and a one-year Bulgarian-language preparatory course for international students. Admission is by state matriculation results or university entrance exams, in several competitive rounds. Tuition is among the lowest at any Bulgarian state university — roughly €350–€500 per year for Bulgarian and EU students on state-subsidised places — and a wide range of merit, social and Erasmus+ scholarships is available. The landmark Rectorate on Tsar Asen Street, a historic building in the city centre, is the university's best-known address.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€350 - €500 / year (BG/EU)",
+      "website": "https://uni-plovdiv.bg/en/",
+      "applyUrl": "https://uni-plovdiv.bg/en/pages/index/19/"
     }
   },
   "universityProfiles": {
@@ -4421,6 +4509,27 @@
         "A three-year professional-bachelor degree in tourism or business",
         "Internships in partner hotels, restaurants and tour operators",
         "Apply at the college's academic department; autumn intake"
+      ]
+    },
+    "32": {
+      "name": "University of Plovdiv \"Paisii Hilendarski\"",
+      "focus": "a broad classical education strong in the natural sciences, mathematics and informatics, alongside economics, law, philology and teacher education",
+      "style": "research-backed teaching, modern science and computing labs, an observatory, Erasmus+ mobility and strong links with IT and biotech employers",
+      "careers": [
+        "IT / software developer / data specialist",
+        "Scientist / researcher (biology, chemistry, physics)",
+        "Economist / financial specialist",
+        "Lawyer / public administration specialist",
+        "Teacher / lecturer",
+        "Translator / philologist",
+        "Analyst / consultant"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation exam grades or a university entrance exam",
+        "Several competitive admission rounds, mainly in the summer",
+        "Online application through the university candidate-student system",
+        "Selected programmes taught in English; most in Bulgarian",
+        "Separate procedure and Bulgarian-language check for foreign applicants"
       ]
     }
   },
@@ -5103,7 +5212,14 @@
     "executive-mba": "Executive MBA",
     "organization-and-management-of-hotels-and-restaurants": "Organization and Management of Hotels and Restaurants",
     "organization-and-management-of-tourist-services": "Organization and Management of Tourist Services",
-    "tourist-animation-and-tour-guiding": "Tourist Animation and Tour Guiding"
+    "tourist-animation-and-tour-guiding": "Tourist Animation and Tour Guiding",
+    "biology": "Biology",
+    "medicinal-chemistry": "Medicinal Chemistry",
+    "engineering-physics": "Engineering Physics",
+    "software-technologies-and-design": "Software Technologies and Design",
+    "applied-biotechnology": "Applied Biotechnology",
+    "analytical-chemistry": "Analytical Chemistry",
+    "translation-and-intercultural-communication": "Translation and Intercultural Communication"
   },
   "programOverrides": {
     "22:bachelor:painting": {
@@ -14273,6 +14389,240 @@
         "Full-time or part-time; a three-year professional-bachelor degree",
         "Apply at the college's academic department for the autumn intake"
       ]
+    },
+    "32:bachelor:informatics": {
+      "overview": "Informatics at Plovdiv's Faculty of Mathematics and Informatics — one of Bulgaria's leading computing schools — trains software and IT specialists in high demand.",
+      "keyFocus": "programming, algorithms, databases, web and software development, and applied computing",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Mathematics and Informatics, University of Plovdiv",
+        "Plovdiv's strong IT sector and software companies",
+        "Erasmus+ partner universities across Europe"
+      ],
+      "highlights": [
+        "Part of a top-ranked Bulgarian computing faculty",
+        "Strong links with Plovdiv's growing IT industry",
+        "A direct route into software and data careers"
+      ],
+      "careers": [
+        "Software developer",
+        "Web / mobile developer",
+        "Database / systems specialist",
+        "IT consultant"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics / IT entrance exam",
+        "Interest in mathematics and programming is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:bachelor:software-technologies-and-design": {
+      "overview": "Software Technologies and Design is a modern, industry-focused programme combining software engineering with user-centred design.",
+      "keyFocus": "software engineering, web and mobile technologies, UX/UI design and project work",
+      "duration": "Bachelor — 4 years, full-time; project- and internship-based",
+      "partners": [
+        "Faculty of Mathematics and Informatics, University of Plovdiv",
+        "IT companies in Plovdiv for internships and real projects",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Blends coding with design and product thinking",
+        "Built around real projects and internships",
+        "Excellent employability in the local IT sector"
+      ],
+      "careers": [
+        "Software engineer",
+        "Front-end / full-stack developer",
+        "UX / UI designer",
+        "Product / project specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or an entrance exam",
+        "Interest in both programming and design helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:bachelor:biology": {
+      "overview": "Biology at the Faculty of Biology combines strong laboratory training with research, in one of the university's founding fields.",
+      "keyFocus": "cell biology, genetics, ecology, physiology and laboratory methods",
+      "duration": "Bachelor — 4 years, full-time; lab- and field-based",
+      "partners": [
+        "Faculty of Biology, University of Plovdiv",
+        "Research institutes of the Bulgarian Academy of Sciences",
+        "Biotech, environmental and health-sector employers"
+      ],
+      "highlights": [
+        "Extensive laboratory and field practice",
+        "Research-active teaching staff",
+        "A route into biotech, ecology and health careers"
+      ],
+      "careers": [
+        "Biologist / lab specialist",
+        "Ecologist / environmental specialist",
+        "Biotech / pharma technician",
+        "Science teacher (with pedagogy)"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "A strong interest in the natural sciences is important",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:bachelor:law": {
+      "overview": "Law at Plovdiv's Faculty of Law is a five-year integrated Master's programme leading to the regulated legal profession in Bulgaria.",
+      "keyFocus": "constitutional, civil, criminal, administrative and EU law, with legal practice",
+      "duration": "Integrated Master of Laws — 5 years, full-time",
+      "partners": [
+        "Faculty of Law, University of Plovdiv",
+        "Courts, prosecutor's offices and law firms in Plovdiv",
+        "Public administration for internships"
+      ],
+      "highlights": [
+        "A regulated five-year programme leading to the Master of Laws degree",
+        "Grounding in Bulgarian and European Union law",
+        "Moot courts and practical placements"
+      ],
+      "careers": [
+        "Lawyer / attorney",
+        "Judge / prosecutor (after the state exam)",
+        "Legal adviser",
+        "Public administration specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation exams or a Bulgarian-language and history entrance exam",
+        "Five-year integrated programme entered after secondary school",
+        "Leads to the regulated legal profession after the state legal exam"
+      ]
+    },
+    "32:bachelor:economics": {
+      "overview": "Economics at the Faculty of Economic and Social Sciences prepares analysts and managers for business, finance and the public sector.",
+      "keyFocus": "microeconomics, macroeconomics, finance, statistics and applied economics",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Economic and Social Sciences, University of Plovdiv",
+        "Banks, companies and public institutions for internships",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "A broad, practical economics education",
+        "Strong quantitative and analytical training",
+        "Well connected to Plovdiv's business community"
+      ],
+      "careers": [
+        "Economist / analyst",
+        "Financial specialist",
+        "Business / management specialist",
+        "Public-sector economist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Mathematics and analytical skills are an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:bachelor:bulgarian-philology": {
+      "overview": "Bulgarian Philology at the Faculty of Philology is one of the university's founding programmes, studying the Bulgarian language and literature in depth.",
+      "keyFocus": "Bulgarian language, literature, linguistics and text analysis",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Philology, University of Plovdiv",
+        "Schools, publishers and cultural institutions",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "A deep grounding in Bulgarian language and literature",
+        "Strong preparation for teaching, editing and research",
+        "Part of a large, well-established philology faculty"
+      ],
+      "careers": [
+        "Teacher of Bulgarian",
+        "Editor / proofreader",
+        "Journalist / content specialist",
+        "Researcher / lecturer"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a Bulgarian-language entrance exam",
+        "A love of language and literature is important",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:master:artificial-intelligence": {
+      "overview": "The Artificial Intelligence master's at the Faculty of Mathematics and Informatics develops advanced skills in AI, machine learning and intelligent systems.",
+      "keyFocus": "machine learning, neural networks, natural language processing and AI applications",
+      "duration": "Master — 2–3 semesters, full-time; project-based",
+      "partners": [
+        "Faculty of Mathematics and Informatics, University of Plovdiv",
+        "IT and data-driven companies in Plovdiv",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Cutting-edge AI and machine-learning curriculum",
+        "Project work on real datasets and problems",
+        "Builds on a computing or mathematics bachelor's"
+      ],
+      "careers": [
+        "AI / machine-learning engineer",
+        "Data scientist",
+        "Research engineer",
+        "AI product specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to computing, mathematics and engineering graduates",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:master:data-science": {
+      "overview": "The Data Science master's trains specialists to turn data into insight, combining statistics, programming and machine learning.",
+      "keyFocus": "data analysis, statistics, machine learning, big data and visualisation",
+      "duration": "Master — 2–3 semesters, full-time; project-based",
+      "partners": [
+        "Faculty of Mathematics and Informatics, University of Plovdiv",
+        "Companies working with data and analytics",
+        "Research institutes and Erasmus+ partners"
+      ],
+      "highlights": [
+        "High-demand data-science skill set",
+        "Hands-on work with real data and tools",
+        "Bridges statistics, computing and business"
+      ],
+      "careers": [
+        "Data scientist / analyst",
+        "Machine-learning engineer",
+        "Business-intelligence specialist",
+        "Data engineer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "A background in mathematics, statistics or computing helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "32:master:clinical-psychology": {
+      "overview": "Clinical Psychology at Plovdiv deepens knowledge of mental health, assessment and therapeutic practice, building on a psychology degree.",
+      "keyFocus": "clinical assessment, psychopathology, counselling and therapeutic methods",
+      "duration": "Master — 2–3 semesters, full-time; with practical placements",
+      "partners": [
+        "Faculty of Pedagogy, University of Plovdiv",
+        "Clinics, counselling centres and social institutions",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Advanced clinical and counselling training",
+        "Supervised practical placements",
+        "A route towards work as a psychologist"
+      ],
+      "careers": [
+        "Clinical psychologist",
+        "Counsellor / therapist",
+        "Mental-health specialist",
+        "Research psychologist"
+      ],
+      "admissionNotes": [
+        "Requires a bachelor's degree in psychology or a related field",
+        "Suited to graduates aiming for clinical practice",
+        "Online application through the university candidate system"
+      ]
     }
   },
   "na_faculties": {
@@ -15097,5 +15447,45 @@
     "organization-and-management-of-tourist-services": { "tuition": "€750/yr full-time · €560 part-time (indicative)", "facultyKey": "tourism" },
     "tourist-animation-and-tour-guiding": { "tuition": "€750/yr full-time · €560 part-time (indicative)", "facultyKey": "tourism" },
     "business-administration": { "tuition": "€700/yr full-time · €560 part-time (indicative)", "facultyKey": "business" }
+  },
+  "pu_programInfo": {
+    "biology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "biology" },
+    "molecular-biology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "biology" },
+    "chemistry": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "chemistry" },
+    "medicinal-chemistry": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "chemistry" },
+    "physics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "physics" },
+    "engineering-physics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "physics" },
+    "telecommunications": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "physics" },
+    "mathematics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "informatics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "computer-science": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "software-technologies-and-design": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "economics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "marketing": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "tourism": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "accounting-and-finance": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "law": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "law" },
+    "bulgarian-philology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "english-philology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "applied-linguistics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "philosophy": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philosophy" },
+    "history": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philosophy" },
+    "preschool-and-primary-school-pedagogy": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "psychology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "social-work": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "applied-biotechnology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "biology" },
+    "analytical-chemistry": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "chemistry" },
+    "software-technologies": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "artificial-intelligence": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "data-science": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "applied-mathematics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "cybersecurity": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "math" },
+    "finance-and-banking": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "marketing-management": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "international-economic-relations": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "public-administration": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "economics" },
+    "clinical-psychology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
+    "translation-and-intercultural-communication": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
+    "educational-management": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" }
   }
 }

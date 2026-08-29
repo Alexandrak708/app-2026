@@ -1020,6 +1020,50 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
     ],
     master: [],
   },
+  "32": {
+    bachelor: [
+      "Biology",
+      "Molecular Biology",
+      "Chemistry",
+      "Medicinal Chemistry",
+      "Physics",
+      "Engineering Physics",
+      "Telecommunications",
+      "Mathematics",
+      "Informatics",
+      "Computer Science",
+      "Software Technologies and Design",
+      "Economics",
+      "Marketing",
+      "Tourism",
+      "Accounting and Finance",
+      "Law",
+      "Bulgarian Philology",
+      "English Philology",
+      "Applied Linguistics",
+      "Philosophy",
+      "History",
+      "Preschool and Primary School Pedagogy",
+      "Psychology",
+      "Social Work",
+    ],
+    master: [
+      "Applied Biotechnology",
+      "Analytical Chemistry",
+      "Software Technologies",
+      "Artificial Intelligence",
+      "Data Science",
+      "Applied Mathematics",
+      "Cybersecurity",
+      "Finance and Banking",
+      "Marketing Management",
+      "International Economic Relations",
+      "Public Administration",
+      "Clinical Psychology",
+      "Translation and Intercultural Communication",
+      "Educational Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1507,6 +1551,19 @@ function getCoturProgramInfo(programSlug: string): { tuition?: string; facultyKe
   };
 }
 
+function getPuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`pu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1799,6 +1856,16 @@ function getAubgFaculty(facultyKey: string): string | null {
 
 function getCoturFaculty(facultyKey: string): string | null {
   const name = i18n.t(`cotur_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getPuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`pu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2123,6 +2190,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (coturInfo.tuition) summary.tuition = coturInfo.tuition;
         if (coturInfo.facultyKey) {
           const facultyName = getCoturFaculty(coturInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "32") {
+      const puInfo = getPuProgramInfo(slug);
+      if (puInfo) {
+        if (puInfo.tuition) summary.tuition = puInfo.tuition;
+        if (puInfo.facultyKey) {
+          const facultyName = getPuFaculty(puInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2506,6 +2582,16 @@ export function buildProgramDetail(
       if (coturInfo.tuition) result.tuition = coturInfo.tuition;
       if (coturInfo.facultyKey) {
         const facultyName = getCoturFaculty(coturInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "32" && normalizedSlug) {
+    const puInfo = getPuProgramInfo(normalizedSlug);
+
+    if (puInfo) {
+      if (puInfo.tuition) result.tuition = puInfo.tuition;
+      if (puInfo.facultyKey) {
+        const facultyName = getPuFaculty(puInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
