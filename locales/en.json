@@ -921,6 +921,18 @@
       "labsText": "Faculties",
       "tuitionFreeLabel": "€350",
       "tuitionFreeText": "Lowest annual fee (BG/EU)"
+    },
+    "33": {
+      "yearsTradition": "80",
+      "bachelorPrograms": "16",
+      "masterPrograms": "8",
+      "internationalPartners": "100+",
+      "countries": "45+",
+      "studentsGraduated": "40K+",
+      "labs": "2,000",
+      "labsText": "University hospital beds",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Protected specialties (state-funded)"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -1499,6 +1511,24 @@
       {
         "range": "€3,000",
         "label": "Foreign students / year"
+      }
+    ],
+    "33": [
+      {
+        "range": "€10,000",
+        "label": "Medicine / Dental Medicine (English) / year"
+      },
+      {
+        "range": "€6,200",
+        "label": "Pharmacy (English) / year"
+      },
+      {
+        "range": "€800",
+        "label": "Integrated masters (BG/EU) / year (indicative)"
+      },
+      {
+        "range": "€0",
+        "label": "Nursing & Midwifery (protected, state-funded)"
       }
     ]
   },
@@ -2697,7 +2727,44 @@
     "pu_prep": "A one-year Bulgarian-language and specialised preparatory course before degree study",
     "pu_visaSupport": "Admission, visa and residence support through a dedicated foreign-students department",
     "pu_intake": "Autumn intake with international-office guidance throughout the application",
-    "pu_recognition": "State-recognised Bulgarian diplomas, valid across the EU"
+    "pu_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
+    "mup_scholarshipsDesc": "As a leading medical university, MU-Plovdiv supports students in several ways:",
+    "mup_merit": "Merit scholarships from the state budget for strong academic results",
+    "mup_social": "Social scholarships for students from low-income families and special-support groups",
+    "mup_erasmus": "Erasmus+ and CEEPUS grants for study and clinical mobility abroad",
+    "mup_phd": "State scholarships and funding for doctoral (PhD) students via the Doctoral School",
+    "mup_protected": "Nursing and Midwifery are protected specialties — state-funded (no tuition) for BG/EU places",
+    "mup_applicationDesc": "Admission is competitive and based on biology and chemistry results:",
+    "mup_appExams": "Ranking by state matriculation or entrance exams in biology and chemistry",
+    "mup_appEnglish": "English-programme applicants sit an entrance test in biology and chemistry (in English)",
+    "mup_appDocuments": "Secondary-school diploma, medical certificate and the relevant documents",
+    "mup_appDeadlines": "Separate application rounds and deadlines for Bulgarian and international students",
+    "mup_appOnline": "Online application through the International Welcome Center for foreign students",
+    "mup_feesTitle": "Tuition & Fees",
+    "mup_feesDesc": "Tuition depends on the programme and language (2025/2026):",
+    "mup_feeMedicineEn": "Medicine and Dental Medicine in English: about €10,000 per year",
+    "mup_feePharmacyEn": "Pharmacy in English: about €6,200 per year",
+    "mup_feeState": "Bulgarian/EU integrated masters (Medicine, Dental, Pharmacy): roughly €800 per year (indicative)",
+    "mup_feeProtected": "Nursing and Midwifery: no tuition on state-funded places (protected specialties)",
+    "mup_feePayment": "English-programme fees are usually paid in two instalments per year",
+    "mup_facilities": "University Hospitals & Facilities",
+    "mup_facilitiesDesc": "MU-Plovdiv combines teaching with a large clinical and research base:",
+    "mup_hospital": "A university hospital base with around 2,000 beds for clinical training",
+    "mup_simulation": "A modern Simulation Centre for hands-on medical and dental practice",
+    "mup_library": "A Central University Library with 170,000+ volumes and digital resources",
+    "mup_research": "The Research Institute (RIMU) and specialised laboratories",
+    "mup_auditorium": "A modern Auditorium Complex, Dental Medicine building and campus in central Plovdiv",
+    "mup_partnersDesc": "MU-Plovdiv is well connected in medical education and research:",
+    "mup_erasmusPartners": "Erasmus+ and CEEPUS partnerships with medical schools across Europe",
+    "mup_clinical": "Partner hospitals and clinics across the Plovdiv region for clinical placements",
+    "mup_research2": "Joint research with the Bulgarian Academy of Sciences and international partners",
+    "mup_foliaMedica": "Publisher of Folia Medica, a long-running peer-reviewed medical journal",
+    "mup_internationalDesc": "MU-Plovdiv is one of Bulgaria's most international medical schools:",
+    "mup_englishDegrees": "English-taught degrees in Medicine, Dental Medicine, Pharmacy and Nursing",
+    "mup_welcomeCenter": "An International Welcome Center supports foreign applicants and students",
+    "mup_visaSupport": "Admission, visa and residence support, plus a preparatory Bulgarian-language course",
+    "mup_dormitories": "Dormitories, health insurance and active student organisations",
+    "mup_recognition": "Diplomas recognised across the EU and in many countries worldwide"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -2937,6 +3004,13 @@
     "philology": "Faculty of Philology",
     "philosophy": "Faculty of Philosophy and History",
     "pedagogy": "Faculty of Pedagogy"
+  },
+  "mup_faculties": {
+    "medicine": "Faculty of Medicine",
+    "dental": "Faculty of Dental Medicine",
+    "pharmacy": "Faculty of Pharmacy",
+    "public-health": "Faculty of Public Health",
+    "college": "Medical College"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -3840,6 +3914,16 @@
       "tuitionRange": "€350 - €500 / year (BG/EU)",
       "website": "https://uni-plovdiv.bg/en/",
       "applyUrl": "https://uni-plovdiv.bg/en/pages/index/19/"
+    },
+    "33": {
+      "name": "Medical University of Plovdiv",
+      "description": "Plovdiv's public medical university (est. 1945) — one of Bulgaria's leading medical schools, teaching Medicine, Dental Medicine and Pharmacy in Bulgarian and English, with a 2,000-bed university hospital base.",
+      "longDescription": "The Medical University of Plovdiv (MU-Plovdiv) is a state medical university in Plovdiv, the second city of Bulgaria. It was founded in 1945 as the Medical Faculty of Plovdiv University, became an independent Medical Academy in 1950, and took its current name in 2002. Its motto is \"Dedicated to Humanity\", and its rector is Prof. Angel Uchikov, DMSc. Around 5,000 Bulgarian and international students study here, taught by some 690 academic staff.\n\nThe university is organised into four faculties — Medicine, Dental Medicine, Pharmacy and Public Health — together with a Medical College, a Department of Languages and Specialized Training, and a Doctoral School. It is one of the most international medical schools in Bulgaria: Medicine, Dental Medicine, Pharmacy and Nursing are all offered in English, attracting students from across Europe and beyond.\n\nTeaching is closely tied to practice. The university's clinical base includes a university hospital with around 2,000 beds, a modern Simulation Centre, research laboratories and the Research Institute (RIMU). Its Central Library holds more than 170,000 volumes, and the university publishes the long-running peer-reviewed journal Folia Medica. A modern Auditorium Complex and a dedicated Dental Medicine building anchor the campus in central Plovdiv.\n\nMedicine, Dental Medicine and Pharmacy are studied as long integrated master's programmes (five to six years), while the Faculty of Public Health and the Medical College train nurses, midwives, kinesitherapists, medical laboratory assistants, dental technicians and other health professionals. Tuition for the English programmes is about €10,000 per year for Medicine and Dental Medicine and €6,200 for Pharmacy, while Bulgarian and EU students on state-subsidised places pay much less — and Nursing and Midwifery are protected, tuition-free specialties. A range of scholarships, Erasmus+ mobility and dedicated support for international students is available.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Master (Medicine, Dental, Pharmacy) / Bachelor",
+      "tuitionRange": "€6,200 - €10,000 / year (English)",
+      "website": "https://mu-plovdiv.bg/en/",
+      "applyUrl": "https://mu-plovdiv.bg/en/prospective-students/"
     }
   },
   "universityProfiles": {
@@ -4531,6 +4615,27 @@
         "Selected programmes taught in English; most in Bulgarian",
         "Separate procedure and Bulgarian-language check for foreign applicants"
       ]
+    },
+    "33": {
+      "name": "Medical University of Plovdiv",
+      "focus": "medicine, dental medicine, pharmacy, nursing, public health and allied health professions, taught in Bulgarian and English",
+      "style": "hospital-based clinical training on a ~2,000-bed base, a modern simulation centre, research institutes and strong international programmes",
+      "careers": [
+        "Doctor / physician",
+        "Dentist",
+        "Pharmacist",
+        "Nurse / midwife",
+        "Kinesitherapist / rehabilitation specialist",
+        "Medical laboratory / imaging specialist",
+        "Public-health / healthcare manager"
+      ],
+      "admissionNotes": [
+        "Ranking by biology and chemistry results (matriculation or entrance exams)",
+        "English-programme applicants sit an entrance test in biology and chemistry",
+        "Medicine, Dental Medicine and Pharmacy are 5–6-year integrated master's programmes",
+        "A medical certificate is required; clinical placements are part of study",
+        "Foreign students apply through the International Welcome Center"
+      ]
     }
   },
   "programThemes": {
@@ -5219,7 +5324,10 @@
     "software-technologies-and-design": "Software Technologies and Design",
     "applied-biotechnology": "Applied Biotechnology",
     "analytical-chemistry": "Analytical Chemistry",
-    "translation-and-intercultural-communication": "Translation and Intercultural Communication"
+    "translation-and-intercultural-communication": "Translation and Intercultural Communication",
+    "pharmaceutical-care": "Pharmaceutical Care",
+    "nutrition-and-dietetics": "Nutrition and Dietetics",
+    "medical-rehabilitation": "Medical Rehabilitation"
   },
   "programOverrides": {
     "22:bachelor:painting": {
@@ -14623,6 +14731,240 @@
         "Suited to graduates aiming for clinical practice",
         "Online application through the university candidate system"
       ]
+    },
+    "33:bachelor:medicine": {
+      "overview": "Medicine is MU-Plovdiv's flagship programme — a six-year integrated Master's that trains doctors through preclinical study and extensive hospital-based clinical rotations.",
+      "keyFocus": "anatomy, physiology, pathology, clinical disciplines and hospital practice",
+      "duration": "Integrated Master (MD) — 6 years, full-time; taught in Bulgarian",
+      "partners": [
+        "Faculty of Medicine, MU-Plovdiv",
+        "University hospital base (~2,000 beds) for clinical training",
+        "Partner hospitals and clinics across the Plovdiv region"
+      ],
+      "highlights": [
+        "The university's flagship six-year medical degree",
+        "Extensive clinical rotations on a large hospital base",
+        "A modern Simulation Centre for hands-on practice"
+      ],
+      "careers": [
+        "Doctor / physician",
+        "Medical specialist (after residency)",
+        "Clinical researcher",
+        "Public-health doctor"
+      ],
+      "admissionNotes": [
+        "Ranking by entrance exams in biology and chemistry",
+        "A six-year integrated Master's entered after secondary school",
+        "A medical certificate is required; leads to the MD degree"
+      ]
+    },
+    "33:bachelor:medicine-english": {
+      "overview": "The English-taught Medicine programme offers the same six-year MD degree to international students, taught entirely in English with a Bulgarian-language course for the clinical years.",
+      "keyFocus": "the full medical curriculum, in English, with hospital-based clinical training",
+      "duration": "Integrated Master (MD) — 6 years, full-time; taught in English",
+      "partners": [
+        "Faculty of Medicine, MU-Plovdiv",
+        "International Welcome Center",
+        "University hospital base for clinical placements"
+      ],
+      "highlights": [
+        "A full MD degree taught entirely in English",
+        "One of Bulgaria's most international medical faculties",
+        "A diploma recognised across the EU and worldwide"
+      ],
+      "careers": [
+        "Doctor / physician (internationally)",
+        "Medical specialist (after residency)",
+        "Clinical researcher",
+        "Global-health professional"
+      ],
+      "admissionNotes": [
+        "Entrance test in biology and chemistry, in English",
+        "Tuition about €10,000 per year, usually paid in two instalments",
+        "Apply through the International Welcome Center"
+      ]
+    },
+    "33:bachelor:dental-medicine": {
+      "overview": "Dental Medicine is a long integrated Master's programme training dentists, taught in a dedicated modern building with well-equipped clinical facilities.",
+      "keyFocus": "oral anatomy, prosthetics, surgery, orthodontics and clinical dental practice",
+      "duration": "Integrated Master (DMD) — 5.5–6 years, full-time; Bulgarian or English",
+      "partners": [
+        "Faculty of Dental Medicine, MU-Plovdiv",
+        "The dedicated Dental Medicine building and clinics",
+        "Partner dental practices for placements"
+      ],
+      "highlights": [
+        "Taught in a modern, purpose-built dental building",
+        "Extensive hands-on clinical practice",
+        "Available in Bulgarian and in English"
+      ],
+      "careers": [
+        "Dentist",
+        "Dental specialist (after further training)",
+        "Oral surgeon",
+        "Orthodontist"
+      ],
+      "admissionNotes": [
+        "Ranking by entrance exams in biology and chemistry",
+        "A 5.5–6-year integrated Master's entered after secondary school",
+        "English track tuition about €10,000 per year"
+      ]
+    },
+    "33:bachelor:pharmacy": {
+      "overview": "Pharmacy is a five-year integrated Master's programme at the Faculty of Pharmacy, preparing pharmacists for community, hospital and industry roles.",
+      "keyFocus": "pharmaceutical chemistry, pharmacology, pharmacognosy and pharmacy practice",
+      "duration": "Integrated Master (MPharm) — 5 years, full-time; Bulgarian or English",
+      "partners": [
+        "Faculty of Pharmacy, MU-Plovdiv",
+        "Community and hospital pharmacies for placements",
+        "Pharmaceutical companies and laboratories"
+      ],
+      "highlights": [
+        "A five-year integrated Master of Pharmacy",
+        "Strong laboratory and practice training",
+        "Available in Bulgarian and in English (about €6,200/year)"
+      ],
+      "careers": [
+        "Pharmacist (community / hospital)",
+        "Clinical pharmacist",
+        "Pharmaceutical industry specialist",
+        "Regulatory / quality specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by entrance exams in biology and chemistry",
+        "A five-year integrated Master's entered after secondary school",
+        "English track tuition about €6,200 per year"
+      ]
+    },
+    "33:bachelor:nursing": {
+      "overview": "Nursing at the Faculty of Public Health is a regulated, protected health-care programme that is tuition-free on state-funded places for Bulgarian and EU students.",
+      "keyFocus": "clinical nursing care, anatomy, physiology and patient support",
+      "duration": "Bachelor — 4 years, full-time; extensive clinical placements",
+      "partners": [
+        "Faculty of Public Health, MU-Plovdiv",
+        "University hospital base and partner clinics",
+        "Community health services"
+      ],
+      "highlights": [
+        "A protected specialty — no tuition on state-funded places",
+        "Extensive supervised clinical practice",
+        "Strong demand for graduates in Bulgaria and the EU"
+      ],
+      "careers": [
+        "Registered nurse",
+        "Hospital / clinic nurse",
+        "Community and primary-care nurse",
+        "Nursing team leader"
+      ],
+      "admissionNotes": [
+        "Ranking by biology results (matriculation or entrance exam)",
+        "A regulated specialty with a medical fitness requirement",
+        "Tuition-free on state-funded Bulgarian/EU places"
+      ]
+    },
+    "33:bachelor:medical-cosmetics": {
+      "overview": "Medical Cosmetics is a practical Medical College programme training specialists in skin care, cosmetic procedures and aesthetic health.",
+      "keyFocus": "dermatology basics, cosmetic procedures, skin care and aesthetic practice",
+      "duration": "Professional Bachelor — 3 years, full-time; practice-based",
+      "partners": [
+        "Medical College, MU-Plovdiv",
+        "Clinics, spas and cosmetic centres for practice",
+        "Health and beauty employers"
+      ],
+      "highlights": [
+        "A hands-on, career-focused health-and-beauty programme",
+        "Practical training in cosmetic and skin-care procedures",
+        "Part of a medical university's Medical College"
+      ],
+      "careers": [
+        "Medical cosmetician",
+        "Skin-care / aesthetic specialist",
+        "Spa / clinic professional",
+        "Cosmetics consultant"
+      ],
+      "admissionNotes": [
+        "Open to secondary-school graduates; ranked by matriculation results",
+        "A three-year professional-bachelor degree",
+        "Includes practical placements in clinics and centres"
+      ]
+    },
+    "33:master:public-health-and-health-management": {
+      "overview": "Public Health and Health Management prepares leaders for hospitals, health services and public-health institutions.",
+      "keyFocus": "health policy, epidemiology, health economics and management of health services",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Public Health, MU-Plovdiv",
+        "Hospitals and public-health institutions",
+        "Regional health authorities"
+      ],
+      "highlights": [
+        "Bridges public health with management and policy",
+        "Suited to health professionals moving into leadership",
+        "Taught by a strong public-health faculty"
+      ],
+      "careers": [
+        "Healthcare manager / administrator",
+        "Public-health specialist",
+        "Health-policy analyst",
+        "Hospital director"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's or master's degree",
+        "Suited to doctors, nurses and health professionals",
+        "Full-time and part-time forms available"
+      ]
+    },
+    "33:master:clinical-pharmacy": {
+      "overview": "Clinical Pharmacy deepens pharmacists' skills in patient-centred, hospital and clinical practice, building on a pharmacy degree.",
+      "keyFocus": "clinical pharmacology, pharmacotherapy, patient counselling and hospital pharmacy",
+      "duration": "Master — 2–3 semesters, full-time; with clinical practice",
+      "partners": [
+        "Faculty of Pharmacy, MU-Plovdiv",
+        "Hospital pharmacies and clinical wards",
+        "Healthcare institutions"
+      ],
+      "highlights": [
+        "Advanced, patient-focused pharmacy practice",
+        "Hospital and clinical placements",
+        "Builds on an integrated pharmacy degree"
+      ],
+      "careers": [
+        "Clinical / hospital pharmacist",
+        "Pharmacotherapy specialist",
+        "Medicines-information specialist",
+        "Pharmaceutical-care consultant"
+      ],
+      "admissionNotes": [
+        "Requires a Master of Pharmacy or related degree",
+        "Suited to practising and newly qualified pharmacists",
+        "Includes supervised clinical practice"
+      ]
+    },
+    "33:master:speech-therapy": {
+      "overview": "Speech Therapy (Logopedics) trains specialists to assess and treat speech, language and communication disorders across all ages.",
+      "keyFocus": "speech and language disorders, assessment, therapy and rehabilitation",
+      "duration": "Master — 2–3 semesters, full-time; with practical placements",
+      "partners": [
+        "Faculty of Public Health, MU-Plovdiv",
+        "Clinics, schools and rehabilitation centres",
+        "Health and education services"
+      ],
+      "highlights": [
+        "A regulated, in-demand health-and-education specialty",
+        "Practical placements with real clients",
+        "Combines health, education and rehabilitation"
+      ],
+      "careers": [
+        "Speech and language therapist",
+        "Rehabilitation specialist",
+        "Clinic / hospital logopedist",
+        "School / special-education specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to health, education and psychology graduates",
+        "Includes supervised practical placements"
+      ]
     }
   },
   "na_faculties": {
@@ -15487,5 +15829,31 @@
     "clinical-psychology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" },
     "translation-and-intercultural-communication": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "philology" },
     "educational-management": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pedagogy" }
+  },
+  "mup_programInfo": {
+    "medicine": { "tuition": "€800/yr (BG/EU) · integrated master", "facultyKey": "medicine" },
+    "medicine-english": { "tuition": "€10,000/yr (English-taught)", "facultyKey": "medicine" },
+    "dental-medicine": { "tuition": "€800/yr (BG/EU) · integrated master", "facultyKey": "dental" },
+    "dental-medicine-english": { "tuition": "€10,000/yr (English-taught)", "facultyKey": "dental" },
+    "pharmacy": { "tuition": "€700/yr (BG/EU) · integrated master", "facultyKey": "pharmacy" },
+    "pharmacy-english": { "tuition": "€6,200/yr (English-taught)", "facultyKey": "pharmacy" },
+    "nursing": { "tuition": "€0 (protected specialty, state-funded)", "facultyKey": "public-health" },
+    "midwifery": { "tuition": "€0 (protected specialty, state-funded)", "facultyKey": "public-health" },
+    "kinesitherapy": { "tuition": "€700/yr (BG/EU)", "facultyKey": "public-health" },
+    "medical-laboratory-assistant": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "assistant-pharmacist": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "dental-technician": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "medical-cosmetics": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "rehabilitator": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "sanitary-inspector": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "medical-optician": { "tuition": "€600–€800/yr (BG/EU)", "facultyKey": "college" },
+    "public-health-and-health-management": { "tuition": "€900/yr (BG/EU)", "facultyKey": "public-health" },
+    "health-care-management": { "tuition": "€900/yr (BG/EU)", "facultyKey": "public-health" },
+    "speech-therapy": { "tuition": "€800/yr (BG/EU)", "facultyKey": "public-health" },
+    "ergotherapy": { "tuition": "€800/yr (BG/EU)", "facultyKey": "public-health" },
+    "clinical-pharmacy": { "tuition": "€900/yr (BG/EU)", "facultyKey": "pharmacy" },
+    "pharmaceutical-care": { "tuition": "€900/yr (BG/EU)", "facultyKey": "pharmacy" },
+    "nutrition-and-dietetics": { "tuition": "€800/yr (BG/EU)", "facultyKey": "public-health" },
+    "medical-rehabilitation": { "tuition": "€800/yr (BG/EU)", "facultyKey": "public-health" }
   }
 }
