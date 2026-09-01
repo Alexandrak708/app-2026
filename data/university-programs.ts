@@ -1094,6 +1094,101 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Medical Rehabilitation",
     ],
   },
+  "34": {
+    bachelor: [
+      "Computer Systems and Technologies",
+      "Software Engineering",
+      "Automation and Information Technologies",
+      "Electronics",
+      "Electrical Engineering",
+      "Design and Programming of Electronic Systems",
+      "Communication Technologies",
+      "Industrial Engineering",
+      "Mechanical Engineering",
+      "Mechatronics",
+      "Transport Equipment and Technologies",
+      "Computer Modelling and Technologies in Mechanical Engineering",
+      "Industrial Management",
+    ],
+    master: [
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "Robotics",
+      "Computer Systems and Technologies",
+      "Automation and Information Technologies",
+      "Electronics",
+      "Mechatronics",
+      "Transport Equipment and Technologies",
+      "Industrial Management",
+      "Renewable Energy Sources",
+      "Communication Technologies",
+    ],
+  },
+  "35": {
+    bachelor: [
+      "Agronomy",
+      "Zoo Engineering",
+      "Agricultural Engineering",
+      "Selection and Seed Production",
+      "Viticulture and Winemaking",
+      "Horticulture",
+      "Ornamental Horticulture and Landscaping",
+      "Fruit and Vegetable Growing",
+      "Plant Protection",
+      "Agroecology",
+      "Ecology and Environmental Protection",
+      "Agrarian Economics",
+      "Agribusiness",
+      "Management",
+      "Marketing",
+      "Tourism",
+    ],
+    master: [
+      "Agronomy",
+      "Plant Protection",
+      "Agroecology",
+      "Viticulture and Winemaking",
+      "Horticulture",
+      "Zoo Engineering",
+      "Agrarian Economics",
+      "Agribusiness",
+      "Organic Farming",
+      "Plant Biotechnology",
+    ],
+  },
+  "36": {
+    bachelor: [
+      "Food Technology",
+      "Wine and Beer Technology",
+      "Meat and Fish Technology",
+      "Dairy Technology",
+      "Bread and Confectionery Technology",
+      "Biotechnology",
+      "Nutrition and Dietetics",
+      "Machines and Apparatus for the Food Industry",
+      "Computer Systems and Technologies",
+      "Automation and Information Technologies",
+      "Refrigeration and Air-Conditioning Engineering",
+      "Industrial Engineering",
+      "Economics of the Food Industry",
+      "Industrial Business and Entrepreneurship",
+      "Tourism",
+      "Catering",
+    ],
+    master: [
+      "Food Safety and Quality",
+      "Food Technology",
+      "Wine and Beer Technology",
+      "Biotechnology",
+      "Nutrition and Dietetics",
+      "Machines and Apparatus for the Food Industry",
+      "Computer Systems and Technologies",
+      "Economics of the Food Industry",
+      "Industrial Business and Entrepreneurship",
+      "Tourism",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1607,6 +1702,45 @@ function getMupProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getTupProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`tup_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getAuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`au_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUftProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uft_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1919,6 +2053,36 @@ function getPuFaculty(facultyKey: string): string | null {
 
 function getMupFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mup_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getTupFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`tup_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getAuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`au_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUftFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uft_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2261,6 +2425,33 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (mupInfo.tuition) summary.tuition = mupInfo.tuition;
         if (mupInfo.facultyKey) {
           const facultyName = getMupFaculty(mupInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "34") {
+      const tupInfo = getTupProgramInfo(slug);
+      if (tupInfo) {
+        if (tupInfo.tuition) summary.tuition = tupInfo.tuition;
+        if (tupInfo.facultyKey) {
+          const facultyName = getTupFaculty(tupInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "35") {
+      const auInfo = getAuProgramInfo(slug);
+      if (auInfo) {
+        if (auInfo.tuition) summary.tuition = auInfo.tuition;
+        if (auInfo.facultyKey) {
+          const facultyName = getAuFaculty(auInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "36") {
+      const uftInfo = getUftProgramInfo(slug);
+      if (uftInfo) {
+        if (uftInfo.tuition) summary.tuition = uftInfo.tuition;
+        if (uftInfo.facultyKey) {
+          const facultyName = getUftFaculty(uftInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2664,6 +2855,36 @@ export function buildProgramDetail(
       if (mupInfo.tuition) result.tuition = mupInfo.tuition;
       if (mupInfo.facultyKey) {
         const facultyName = getMupFaculty(mupInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "34" && normalizedSlug) {
+    const tupInfo = getTupProgramInfo(normalizedSlug);
+
+    if (tupInfo) {
+      if (tupInfo.tuition) result.tuition = tupInfo.tuition;
+      if (tupInfo.facultyKey) {
+        const facultyName = getTupFaculty(tupInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "35" && normalizedSlug) {
+    const auInfo = getAuProgramInfo(normalizedSlug);
+
+    if (auInfo) {
+      if (auInfo.tuition) result.tuition = auInfo.tuition;
+      if (auInfo.facultyKey) {
+        const facultyName = getAuFaculty(auInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "36" && normalizedSlug) {
+    const uftInfo = getUftProgramInfo(normalizedSlug);
+
+    if (uftInfo) {
+      if (uftInfo.tuition) result.tuition = uftInfo.tuition;
+      if (uftInfo.facultyKey) {
+        const facultyName = getUftFaculty(uftInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

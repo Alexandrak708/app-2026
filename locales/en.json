@@ -492,7 +492,8 @@
     "Arts": "Arts",
     "Security": "Security",
     "Military": "Military",
-    "Defence": "Defence"
+    "Defence": "Defence",
+    "Agriculture": "Agriculture"
   },
   "tabs": {
     "favourites": "Favourites",
@@ -933,6 +934,42 @@
       "labsText": "University hospital beds",
       "tuitionFreeLabel": "€0",
       "tuitionFreeText": "Protected specialties (state-funded)"
+    },
+    "34": {
+      "yearsTradition": "39",
+      "bachelorPrograms": "13",
+      "masterPrograms": "12",
+      "internationalPartners": "50+",
+      "countries": "20+",
+      "studentsGraduated": "20K+",
+      "labs": "2",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "EUt+",
+      "tuitionFreeText": "European University of Technology alliance"
+    },
+    "35": {
+      "yearsTradition": "80",
+      "bachelorPrograms": "20+",
+      "masterPrograms": "30+",
+      "internationalPartners": "80+",
+      "countries": "76",
+      "studentsGraduated": "30K+",
+      "labs": "4",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "UNIgreen",
+      "tuitionFreeText": "European agricultural universities alliance"
+    },
+    "36": {
+      "yearsTradition": "70",
+      "bachelorPrograms": "20+",
+      "masterPrograms": "20+",
+      "internationalPartners": "60+",
+      "countries": "20+",
+      "studentsGraduated": "40K+",
+      "labs": "3",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "Balkans",
+      "tuitionFreeText": "Only specialised food-technology university"
     }
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
@@ -1529,6 +1566,60 @@
       {
         "range": "€0",
         "label": "Nursing & Midwifery (protected, state-funded)"
+      }
+    ],
+    "34": [
+      {
+        "range": "€300",
+        "label": "State-subsidised / semester (BG/EU, indicative)"
+      },
+      {
+        "range": "€360",
+        "label": "IT & engineering fields / semester (BG/EU)"
+      },
+      {
+        "range": "€1,750",
+        "label": "Industrial Engineering in English / semester"
+      },
+      {
+        "range": "€3,300",
+        "label": "Foreign students / year (indicative)"
+      }
+    ],
+    "35": [
+      {
+        "range": "€350",
+        "label": "State-subsidised / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€500",
+        "label": "Higher-fee programmes / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€1,500",
+        "label": "Dual-citizenship applicants / year"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students / year"
+      }
+    ],
+    "36": [
+      {
+        "range": "€350",
+        "label": "State-subsidised / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€500",
+        "label": "Higher-fee programmes / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€1,500",
+        "label": "Dual-citizenship applicants / year"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students / year"
       }
     ]
   },
@@ -2764,7 +2855,118 @@
     "mup_welcomeCenter": "An International Welcome Center supports foreign applicants and students",
     "mup_visaSupport": "Admission, visa and residence support, plus a preparatory Bulgarian-language course",
     "mup_dormitories": "Dormitories, health insurance and active student organisations",
-    "mup_recognition": "Diplomas recognised across the EU and in many countries worldwide"
+    "mup_recognition": "Diplomas recognised across the EU and in many countries worldwide",
+    "tup_scholarshipsDesc": "As part of TU-Sofia, the Plovdiv Branch offers state and mobility support:",
+    "tup_merit": "Merit scholarships from the state budget for strong exam results, paid each semester",
+    "tup_social": "Social scholarships for students from low-income families and special-support groups",
+    "tup_erasmus": "Erasmus+ grants for study and traineeships at partner universities in Europe",
+    "tup_eut": "Extra mobility and joint activities through the EUt+ (European University of Technology) alliance",
+    "tup_industry": "Company scholarships and paid internships with regional engineering and IT employers",
+    "tup_applicationDesc": "Admission is competitive, for secondary-school graduates, in several rounds:",
+    "tup_appExams": "Ranking by state matriculation exams or a mathematics entrance exam",
+    "tup_appRanking": "Candidates are ranked by an aggregate score across several admission rounds",
+    "tup_appOnline": "Online application through the TU-Sofia / Plovdiv Branch admissions system",
+    "tup_appDocuments": "Secondary-school diploma, application form and the relevant supporting documents",
+    "tup_appEnglish": "Industrial Engineering is taught in English; applicants show English proficiency",
+    "tup_feesTitle": "Tuition & Fees",
+    "tup_feesDesc": "Fees follow TU-Sofia; amounts are per semester unless noted (indicative):",
+    "tup_feeState": "State-subsidised places: roughly €300 per semester for Bulgarian and EU students",
+    "tup_feePaid": "IT and engineering fields on paid places: around €360 per semester",
+    "tup_feeEnglish": "Industrial Engineering in English: about €1,750 per semester",
+    "tup_feeForeign": "Foreign (non-EU) students: around €3,300 per year",
+    "tup_feeApplication": "A small application and entrance-exam fee applies for each admission round",
+    "tup_campus": "Campus & Facilities",
+    "tup_campusDesc": "The Plovdiv Branch has a compact central campus in three teaching buildings:",
+    "tup_location": "Main building at 25 Tsanko Dyustabanov St, central Plovdiv",
+    "tup_faculties2": "Two faculties: Electronics & Automation, and Mechanical Engineering & Instrument Engineering",
+    "tup_labs": "Modern engineering, electronics, computing and mechatronics laboratories",
+    "tup_dormitory": "A student dormitory with 385 beds and a student cafeteria",
+    "tup_competence": "A 'Center of Competence' for intelligent mechatronic, eco- and energy-saving systems",
+    "tup_partnersDesc": "The branch is strongly connected in engineering education and industry:",
+    "tup_eutPlus": "Member of the EUt+ (European University of Technology) alliance",
+    "tup_tuSofia": "Part of the Technical University of Sofia — Bulgaria's leading technical university",
+    "tup_employers": "Close links with regional engineering, electronics and IT employers",
+    "tup_erasmusPartners": "Erasmus+ partnerships with technical universities across Europe",
+    "tup_internationalDesc": "The branch welcomes international students to its engineering programmes:",
+    "tup_englishTaught": "Industrial Engineering is taught entirely in English",
+    "tup_prep": "A preparatory Bulgarian-language and specialised course for foreign students",
+    "tup_visaSupport": "Admission, visa and residence support for international applicants",
+    "tup_intake": "Autumn intake with support for foreign students throughout the application",
+    "tup_recognition": "A state-recognised TU-Sofia diploma, valid across the EU",
+    "au_scholarshipsDesc": "As Bulgaria's leading agricultural university, AU-Plovdiv offers state and mobility support:",
+    "au_merit": "Merit scholarships from the state budget for strong exam results, paid each semester",
+    "au_social": "Social scholarships for students from low-income families and special-support groups",
+    "au_erasmus": "Erasmus+ and UNIgreen mobility grants for study and traineeships across Europe",
+    "au_phd": "State scholarships and research funding for doctoral (PhD) students",
+    "au_industry": "Company scholarships and paid internships on farms, in agribusiness and food companies",
+    "au_applicationDesc": "Admission is competitive, for secondary-school graduates, in several rounds:",
+    "au_appExams": "Ranking by state matriculation exams or a university entrance exam (biology or geography)",
+    "au_appRanking": "Candidates are ranked by an aggregate score across several admission rounds",
+    "au_appOnline": "Online application and candidate account through the university admissions system",
+    "au_appDocuments": "Secondary-school diploma, application form and the relevant supporting documents",
+    "au_appForeign": "Separate procedure for foreign applicants, with diploma recognition and a Bulgarian-language check",
+    "au_feesTitle": "Tuition & Fees",
+    "au_feesDesc": "AU-Plovdiv keeps fees among the lowest for a state university; amounts are per year (indicative):",
+    "au_feeState": "State-subsidised places: roughly €350–€500 per year for Bulgarian and EU students",
+    "au_feePaid": "Paid form of study is available in many specialties at a moderate annual fee",
+    "au_feeForeign": "Foreign (non-EU) students: around €3,000 per year, set annually by the Council of Ministers",
+    "au_feeDual": "Applicants with dual (incl. Bulgarian) citizenship pay a reduced fee of about €1,500 per year",
+    "au_feeExam": "A one-year Bulgarian-language preparatory course for foreigners; a small entrance-exam fee applies",
+    "au_campus": "Campus & Facilities",
+    "au_campusDesc": "AU-Plovdiv has a green central campus in Plovdiv, with fields and research stations:",
+    "au_location": "Main building at 12 Mendeleev Blvd, Plovdiv, with a park-like campus",
+    "au_faculties4": "Four faculties: Agronomy; Viticulture & Horticulture; Plant Protection & Agroecology; Economics",
+    "au_fields": "Experimental fields, greenhouses, vineyards and orchards for practical training",
+    "au_labs": "Modern accredited laboratories for soil, plant, food and agro-ecological testing",
+    "au_dormitory": "Dormitories, a career-development centre and student facilities",
+    "au_partnersDesc": "AU-Plovdiv is well connected in agricultural education and research:",
+    "au_unigreen": "Member of the UNIgreen alliance of European agricultural and life-sciences universities",
+    "au_research": "Research collaborations with scientists from more than 25 countries",
+    "au_industry2": "Close links with farms, agribusiness, food and biotech companies",
+    "au_erasmusPartners": "Erasmus+ partnerships with agricultural universities across Europe",
+    "au_internationalDesc": "AU-Plovdiv has long trained international students in the agricultural sciences:",
+    "au_englishTaught": "Selected programmes and courses are available in English",
+    "au_countries": "More than 3,000 international graduates from over 76 countries",
+    "au_prep": "A one-year Bulgarian-language and specialised preparatory course before degree study",
+    "au_visaSupport": "Admission, visa and residence support for foreign applicants",
+    "au_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
+    "uft_scholarshipsDesc": "As a specialised state university, UFT-Plovdiv offers state and mobility support:",
+    "uft_merit": "Merit scholarships from the state budget for strong exam results, paid each semester",
+    "uft_social": "Social scholarships for students from low-income families and special-support groups",
+    "uft_erasmus": "Erasmus+ mobility grants for study and traineeships at partner universities in Europe",
+    "uft_phd": "State scholarships and research funding for doctoral (PhD) students",
+    "uft_industry": "Company scholarships and paid internships with food, beverage and biotech producers",
+    "uft_applicationDesc": "Admission is competitive, for secondary-school graduates, in several rounds:",
+    "uft_appExams": "Ranking by state matriculation exams or a university entrance exam (biology, chemistry or maths)",
+    "uft_appRanking": "Candidates are ranked by an aggregate score across several admission rounds",
+    "uft_appOnline": "Online application and candidate account through the university admissions system",
+    "uft_appDocuments": "Secondary-school diploma, application form and the relevant supporting documents",
+    "uft_appForeign": "Separate procedure for foreign applicants, with diploma recognition and a Bulgarian-language check",
+    "uft_feesTitle": "Tuition & Fees",
+    "uft_feesDesc": "UFT keeps fees among the lowest for a state university; amounts are per year (indicative):",
+    "uft_feeState": "State-subsidised places: roughly €350–€500 per year for Bulgarian and EU students",
+    "uft_feePaid": "Paid form of study is available in many specialties at a moderate annual fee",
+    "uft_feeForeign": "Foreign (non-EU) students: around €3,000 per year, set annually by the Council of Ministers",
+    "uft_feeDual": "Applicants with dual (incl. Bulgarian) citizenship pay a reduced fee of about €1,500 per year",
+    "uft_feeExam": "A one-year Bulgarian-language preparatory course for foreigners; a small entrance-exam fee applies",
+    "uft_campus": "Campus & Facilities",
+    "uft_campusDesc": "UFT has a compact campus in Plovdiv built around food-science practice:",
+    "uft_location": "Main building at 26 Maritsa Blvd, Plovdiv",
+    "uft_faculties3": "Three faculties: Technological; Technical; and Economics",
+    "uft_pilot": "Pilot plants and workshops for wine, beer, dairy, meat, bread and confectionery",
+    "uft_labs": "Modern food-science, biotechnology, sensory-analysis and engineering laboratories",
+    "uft_dormitory": "Dormitories, a student cafeteria and a career-development centre",
+    "uft_partnersDesc": "UFT is a unique hub for food science, closely tied to industry and research:",
+    "uft_unique": "The only specialised food-technology university in Bulgaria and the Balkans",
+    "uft_industry2": "Close links with food, beverage, dairy, meat and biotech companies",
+    "uft_research": "Research and joint projects with Bulgarian and international partners",
+    "uft_erasmusPartners": "Erasmus+ partnerships with food and technical universities across Europe",
+    "uft_internationalDesc": "UFT welcomes international students to its food-science programmes:",
+    "uft_englishTaught": "Selected programmes and courses are available in English",
+    "uft_prep": "A one-year Bulgarian-language and specialised preparatory course before degree study",
+    "uft_visaSupport": "Admission, visa and residence support for foreign applicants",
+    "uft_intake": "Autumn intake with international-office guidance throughout the application",
+    "uft_recognition": "State-recognised Bulgarian diplomas, valid across the EU"
   },
   "programDetail": {
     "notFound": "Program not found",
@@ -3011,6 +3213,21 @@
     "pharmacy": "Faculty of Pharmacy",
     "public-health": "Faculty of Public Health",
     "college": "Medical College"
+  },
+  "tup_faculties": {
+    "ea": "Faculty of Electronics and Automation",
+    "me": "Faculty of Mechanical Engineering and Instrument Engineering"
+  },
+  "au_faculties": {
+    "agro": "Faculty of Agronomy",
+    "vh": "Faculty of Viticulture and Horticulture",
+    "pp": "Faculty of Plant Protection and Agroecology",
+    "econ": "Faculty of Economics"
+  },
+  "uft_faculties": {
+    "tech": "Technological Faculty",
+    "tech2": "Technical Faculty",
+    "econ": "Faculty of Economics"
   },
   "tu_programInfo": {
     "automation-information-and-control-computer-systems-aiccs": {
@@ -3924,6 +4141,36 @@
       "tuitionRange": "€6,200 - €10,000 / year (English)",
       "website": "https://mu-plovdiv.bg/en/",
       "applyUrl": "https://mu-plovdiv.bg/en/prospective-students/"
+    },
+    "34": {
+      "name": "Technical University of Sofia – Plovdiv Branch",
+      "description": "Plovdiv's public engineering school (est. 1986) — the Plovdiv branch of the Technical University of Sofia, teaching computing, electronics, automation, mechatronics and mechanical engineering, and a member of the EUt+ alliance.",
+      "longDescription": "The Technical University of Sofia – Plovdiv Branch is a public engineering institution in the centre of Plovdiv and part of the Technical University of Sofia, Bulgaria's leading technical university. It was established by a Council of Ministers decree on 13 June 1986, opening with 300 students, and in 1987 moved into the landmark former French girls' college building on Tsanko Dyustabanov Street.\n\nThe branch is organised into two faculties — the Faculty of Electronics and Automation and the Faculty of Mechanical Engineering and Instrument Engineering — and awards Bachelor's, Master's and Doctoral degrees. It offers around 13 bachelor's and 12 master's programmes covering computer systems, software engineering, automation, electronics, electrical engineering, communication technologies, mechatronics, transport equipment, mechanical engineering and industrial management.\n\nTeaching is hands-on and closely tied to industry: the branch runs modern engineering, electronics, computing and mechatronics laboratories, including a 'Center of Competence' for intelligent mechatronic, eco- and energy-saving systems. It is a member of the EUt+ (European University of Technology) alliance, opening extra mobility and joint activities across Europe, and its Industrial Engineering programme is taught entirely in English.\n\nAs part of a state university, tuition is modest — roughly €300–€360 per semester for Bulgarian and EU students, with higher fees for the English-taught programme (about €1,750 per semester) and for non-EU students (around €3,300 per year). Students benefit from a dormitory with 385 beds, a student cafeteria, merit and social scholarships, Erasmus+ mobility and strong links with regional engineering and IT employers.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€300 - €360 / semester (BG/EU)",
+      "website": "https://www.tu-plovdiv.bg/en/",
+      "applyUrl": "https://www.tu-plovdiv.bg/en/"
+    },
+    "35": {
+      "name": "Agricultural University – Plovdiv",
+      "description": "Plovdiv's public agricultural university (est. 1945) — Bulgaria's leading school for agronomy, viticulture and horticulture, plant protection and agro-economics, and a member of the UNIgreen alliance.",
+      "longDescription": "The Agricultural University – Plovdiv is a specialised state university in Plovdiv and Bulgaria's leading centre for higher education in the agricultural sciences. Its roots go back to 1945; after a successful accreditation it was transformed from the Higher Agricultural Institute into the Agricultural University by a decision of the National Assembly on 10 April 2001. Around 219 lecturers, including some 106 professors and associate professors, teach here, and since its founding the university has awarded degrees to more than 30,000 agronomists, engineers, ecologists and economists — over 3,000 of them international students from 76 countries.\n\nThe university is organised into four faculties — Agronomy; Viticulture and Horticulture; Plant Protection and Agroecology; and Economics — and awards Bachelor's, Master's and Doctoral degrees, together with continuing-education and requalification courses. Its programmes span agronomy, animal science (zoo engineering), agricultural engineering, viticulture and winemaking, horticulture and fruit growing, plant protection, agroecology and ecology, and agrarian economics, management and agribusiness.\n\nTeaching is closely tied to practice and research: the campus on Mendeleev Boulevard includes experimental fields, greenhouses, vineyards and orchards, and modern accredited laboratories for soil, plant, food and agro-ecological testing. The university is a member of the UNIgreen alliance of European agricultural and life-sciences universities, takes part in Erasmus+ mobility, and collaborates with researchers from more than 25 countries.\n\nAs a state university, tuition is among the lowest in the country — roughly €350–€500 per year for Bulgarian and EU students on state-subsidised places, with higher fees for foreign students (around €3,000 per year) and a reduced fee for dual-citizenship applicants. A one-year Bulgarian-language preparatory course, dormitories, a career-development centre and a range of merit, social and Erasmus+ scholarships support students, including a large international community.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€350 - €500 / year (BG/EU)",
+      "website": "https://www.au-plovdiv.bg/en/",
+      "applyUrl": "https://www.au-plovdiv.bg/en/"
+    },
+    "36": {
+      "name": "University of Food Technologies – Plovdiv",
+      "description": "Plovdiv's public university for food science (est. 1953) — the only specialised food-technology university in Bulgaria and the Balkans, teaching food and beverage technology, biotechnology, food engineering and the economics of the food industry.",
+      "longDescription": "The University of Food Technologies – Plovdiv (UFT) is a specialised state university and the only one of its kind in Bulgaria and the Balkans, dedicated to food science and technology. It was founded on 10 July 1953 as the Higher Institute of the Food and Flavour Industry, and by a decision of the National Assembly on 23 January 2003 it became the University of Food Technologies. It combines seven decades of heritage with modern teaching and research in food science.\n\nThe university is organised into three faculties — the Technological Faculty, the Technical Faculty and the Faculty of Economics — together with a department of language, physical education and sports, and it awards Bachelor's, Master's and Doctoral degrees. Its programmes span the whole food chain: technologies for wine and beer, meat and fish, milk and dairy, bread and confectionery; industrial and pharmaceutical biotechnology; nutrition and dietetics; machines and apparatus for the food industry; computer and automation engineering; and the economics, business and tourism of the food sector.\n\nTeaching is highly practical, built around pilot plants and workshops for wine, beer, dairy, meat, bread and confectionery, alongside modern food-science, biotechnology, sensory-analysis and engineering laboratories. The university works closely with the food, beverage and biotech industries and takes part in Erasmus+ mobility and international research projects.\n\nAs a state university, tuition is modest — roughly €350–€500 per year for Bulgarian and EU students on state-subsidised places, with higher fees for foreign students (around €3,000 per year) and a reduced fee for dual-citizenship applicants. A one-year Bulgarian-language preparatory course, dormitories, a student cafeteria, a career-development centre and a range of scholarships support students, including an international community.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€350 - €500 / year (BG/EU)",
+      "website": "https://uft-plovdiv.bg/en/",
+      "applyUrl": "https://uft-plovdiv.bg/en/"
     }
   },
   "universityProfiles": {
@@ -4636,6 +4883,69 @@
         "A medical certificate is required; clinical placements are part of study",
         "Foreign students apply through the International Welcome Center"
       ]
+    },
+    "34": {
+      "name": "Technical University of Sofia – Plovdiv Branch",
+      "focus": "computing, software engineering, electronics, automation, mechatronics, transport and mechanical engineering, with an industry- and innovation-driven approach",
+      "style": "hands-on engineering labs, a mechatronics Center of Competence, EUt+ mobility and close links with regional IT and manufacturing employers",
+      "careers": [
+        "Software / systems developer",
+        "Automation / control engineer",
+        "Electronics engineer",
+        "Mechatronics / robotics engineer",
+        "Mechanical / transport engineer",
+        "Industrial manager",
+        "R&D / design engineer"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "Bachelor programmes run 4 years; part of the Technical University of Sofia",
+        "Industrial Engineering is taught in English",
+        "Online application through the branch admissions system",
+        "Preparatory and language support available for foreign students"
+      ]
+    },
+    "35": {
+      "name": "Agricultural University – Plovdiv",
+      "focus": "agronomy, animal science, viticulture and horticulture, plant protection, agroecology, and agrarian economics and management",
+      "style": "practical training on experimental fields, greenhouses, vineyards and orchards, accredited labs, UNIgreen mobility and strong research links",
+      "careers": [
+        "Agronomist",
+        "Viticulturist / winemaker",
+        "Horticulturist / fruit grower",
+        "Plant-protection specialist",
+        "Agroecologist / environmental specialist",
+        "Zoo engineer / animal scientist",
+        "Agrarian economist / agribusiness manager"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Several competitive admission rounds, mainly in the summer",
+        "Online application through the university candidate-student system",
+        "Selected courses in English; most programmes in Bulgarian",
+        "Separate procedure and Bulgarian-language check for foreign applicants"
+      ]
+    },
+    "36": {
+      "name": "University of Food Technologies – Plovdiv",
+      "focus": "food and beverage technology, biotechnology, food engineering, nutrition, and the economics and business of the food industry",
+      "style": "hands-on training in pilot plants and workshops for wine, beer, dairy, meat and bread, modern food-science labs, and close industry links",
+      "careers": [
+        "Food technologist",
+        "Winemaker / brewer / dairy technologist",
+        "Biotechnologist",
+        "Food-safety / quality specialist",
+        "Food-industry engineer",
+        "Nutrition / dietetics specialist",
+        "Food-business manager / entrepreneur"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Several competitive admission rounds, mainly in the summer",
+        "Online application through the university candidate-student system",
+        "Selected courses in English; most programmes in Bulgarian",
+        "Separate procedure and Bulgarian-language check for foreign applicants"
+      ]
     }
   },
   "programThemes": {
@@ -5327,7 +5637,30 @@
     "translation-and-intercultural-communication": "Translation and Intercultural Communication",
     "pharmaceutical-care": "Pharmaceutical Care",
     "nutrition-and-dietetics": "Nutrition and Dietetics",
-    "medical-rehabilitation": "Medical Rehabilitation"
+    "medical-rehabilitation": "Medical Rehabilitation",
+    "design-and-programming-of-electronic-systems": "Design and Programming of Electronic Systems",
+    "computer-modelling-and-technologies-in-mechanical-engineering": "Computer Modelling and Technologies in Mechanical Engineering",
+    "zoo-engineering": "Zoo Engineering",
+    "agricultural-engineering": "Agricultural Engineering",
+    "selection-and-seed-production": "Selection and Seed Production",
+    "viticulture-and-winemaking": "Viticulture and Winemaking",
+    "horticulture": "Horticulture",
+    "ornamental-horticulture-and-landscaping": "Ornamental Horticulture and Landscaping",
+    "fruit-and-vegetable-growing": "Fruit and Vegetable Growing",
+    "agrarian-economics": "Agrarian Economics",
+    "agribusiness": "Agribusiness",
+    "organic-farming": "Organic Farming",
+    "plant-biotechnology": "Plant Biotechnology",
+    "food-technology": "Food Technology",
+    "wine-and-beer-technology": "Wine and Beer Technology",
+    "meat-and-fish-technology": "Meat and Fish Technology",
+    "dairy-technology": "Dairy Technology",
+    "bread-and-confectionery-technology": "Bread and Confectionery Technology",
+    "machines-and-apparatus-for-the-food-industry": "Machines and Apparatus for the Food Industry",
+    "refrigeration-and-air-conditioning-engineering": "Refrigeration and Air-Conditioning Engineering",
+    "economics-of-the-food-industry": "Economics of the Food Industry",
+    "catering": "Catering",
+    "food-safety-and-quality": "Food Safety and Quality"
   },
   "programOverrides": {
     "22:bachelor:painting": {
@@ -14965,6 +15298,708 @@
         "Suited to health, education and psychology graduates",
         "Includes supervised practical placements"
       ]
+    },
+    "34:bachelor:software-engineering": {
+      "overview": "Software Engineering at the Faculty of Electronics and Automation trains software developers and engineers for Plovdiv's fast-growing IT sector.",
+      "keyFocus": "programming, software design, databases, web and mobile development",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Electronics and Automation, TU-Sofia Plovdiv Branch",
+        "IT companies in Plovdiv for internships and projects",
+        "Erasmus+ and EUt+ partner universities"
+      ],
+      "highlights": [
+        "Strong links with Plovdiv's growing IT industry",
+        "Practical, project-based software training",
+        "Part of the Technical University of Sofia"
+      ],
+      "careers": [
+        "Software developer",
+        "Web / mobile developer",
+        "Software engineer",
+        "QA / DevOps specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "Interest in programming and mathematics is an advantage",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:bachelor:computer-systems-and-technologies": {
+      "overview": "Computer Systems and Technologies covers both the hardware and software of modern computer and networked systems.",
+      "keyFocus": "computer architecture, networks, embedded systems and programming",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Electronics and Automation, TU-Sofia Plovdiv Branch",
+        "Regional IT and electronics companies",
+        "Erasmus+ and EUt+ partner universities"
+      ],
+      "highlights": [
+        "Balanced hardware and software engineering",
+        "Labs for computer systems, networks and embedded tech",
+        "A route into IT, systems and hardware careers"
+      ],
+      "careers": [
+        "Computer systems engineer",
+        "Network / systems administrator",
+        "Embedded systems developer",
+        "IT specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "Interest in mathematics and technology helps",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:bachelor:automation-and-information-technologies": {
+      "overview": "Automation and Information Technologies trains engineers to design and control automated systems and industrial processes.",
+      "keyFocus": "automatic control, sensors, industrial automation, PLCs and information systems",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Electronics and Automation, TU-Sofia Plovdiv Branch",
+        "Manufacturing and automation companies in the region",
+        "The mechatronics Center of Competence"
+      ],
+      "highlights": [
+        "Core of Industry 4.0 — automation and control",
+        "Hands-on work with control systems and PLCs",
+        "Strong industrial demand for graduates"
+      ],
+      "careers": [
+        "Automation / control engineer",
+        "Process control designer",
+        "Instrumentation engineer",
+        "Systems integrator"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "Interest in electronics and control systems helps",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:bachelor:mechatronics": {
+      "overview": "Mechatronics combines mechanical engineering, electronics and computing to design smart machines and robotic systems.",
+      "keyFocus": "mechanics, electronics, control and embedded software for smart systems",
+      "duration": "Bachelor — 4 years, full-time; lab- and project-based",
+      "partners": [
+        "Faculty of Mechanical Engineering and Instrument Engineering, TU-Sofia Plovdiv Branch",
+        "The Center of Competence for intelligent mechatronic systems",
+        "Regional manufacturing and automation employers"
+      ],
+      "highlights": [
+        "An interdisciplinary, future-facing engineering field",
+        "Backed by a dedicated mechatronics Center of Competence",
+        "Strong hands-on and project work"
+      ],
+      "careers": [
+        "Mechatronics engineer",
+        "Robotics engineer",
+        "Automation designer",
+        "Product development engineer"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "Interest in both mechanics and electronics is ideal",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:bachelor:industrial-engineering": {
+      "overview": "Industrial Engineering is the branch's English-taught programme, combining engineering with management for international and Bulgarian students alike.",
+      "keyFocus": "production engineering, operations, quality, logistics and engineering management",
+      "duration": "Bachelor — 4 years, full-time; taught entirely in English",
+      "partners": [
+        "TU-Sofia Plovdiv Branch",
+        "EUt+ (European University of Technology) alliance",
+        "International and regional engineering employers"
+      ],
+      "highlights": [
+        "Taught entirely in English",
+        "Bridges engineering and management",
+        "Opens EUt+ mobility across Europe"
+      ],
+      "careers": [
+        "Industrial / production engineer",
+        "Operations / quality manager",
+        "Logistics / supply-chain specialist",
+        "Engineering project manager"
+      ],
+      "admissionNotes": [
+        "Taught in English; applicants show English proficiency",
+        "Tuition about €1,750 per semester",
+        "Open to Bulgarian and international students"
+      ]
+    },
+    "34:bachelor:transport-equipment-and-technologies": {
+      "overview": "Transport Equipment and Technologies trains engineers for the design, maintenance and diagnostics of vehicles and transport systems.",
+      "keyFocus": "vehicle engineering, engines, diagnostics, transport systems and logistics",
+      "duration": "Bachelor — 4 years, full-time; lab- and practice-based",
+      "partners": [
+        "Faculty of Mechanical Engineering and Instrument Engineering, TU-Sofia Plovdiv Branch",
+        "Automotive and transport companies in the region",
+        "Erasmus+ partner universities"
+      ],
+      "highlights": [
+        "Focus on vehicles, engines and transport technology",
+        "Hands-on labs and diagnostics practice",
+        "Strong demand in the automotive sector"
+      ],
+      "careers": [
+        "Automotive / transport engineer",
+        "Vehicle diagnostics specialist",
+        "Fleet / maintenance engineer",
+        "Transport technology designer"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "Interest in vehicles and mechanics helps",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:master:artificial-intelligence": {
+      "overview": "The Artificial Intelligence master's develops advanced skills in machine learning and intelligent systems for engineering applications.",
+      "keyFocus": "machine learning, neural networks, computer vision and AI in engineering",
+      "duration": "Master — 2–3 semesters, full-time; project-based",
+      "partners": [
+        "Faculty of Electronics and Automation, TU-Sofia Plovdiv Branch",
+        "IT and data-driven companies in Plovdiv",
+        "EUt+ and Erasmus+ partners"
+      ],
+      "highlights": [
+        "Applied AI and machine learning",
+        "Project work on real engineering problems",
+        "Builds on a computing or engineering bachelor's"
+      ],
+      "careers": [
+        "AI / machine-learning engineer",
+        "Data scientist",
+        "R&D engineer",
+        "Automation / vision specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to computing and engineering graduates",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:master:cybersecurity": {
+      "overview": "The Cybersecurity master's trains specialists to protect networks, systems and data against modern threats.",
+      "keyFocus": "network security, cryptography, secure systems and incident response",
+      "duration": "Master — 2–3 semesters, full-time; lab-based",
+      "partners": [
+        "Faculty of Electronics and Automation, TU-Sofia Plovdiv Branch",
+        "IT and security companies",
+        "EUt+ and Erasmus+ partners"
+      ],
+      "highlights": [
+        "High-demand cybersecurity skill set",
+        "Hands-on security labs",
+        "Builds on a computing or electronics bachelor's"
+      ],
+      "careers": [
+        "Cybersecurity specialist",
+        "Security / network engineer",
+        "Penetration tester",
+        "Security analyst"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to computing, electronics and IT graduates",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "34:master:robotics": {
+      "overview": "The Robotics master's focuses on the design, control and programming of robotic and automated systems.",
+      "keyFocus": "robot design, control, sensors, vision and industrial robotics",
+      "duration": "Master — 2–3 semesters, full-time; lab- and project-based",
+      "partners": [
+        "Faculty of Mechanical Engineering and Instrument Engineering, TU-Sofia Plovdiv Branch",
+        "The Center of Competence for intelligent mechatronic systems",
+        "Manufacturing and automation employers"
+      ],
+      "highlights": [
+        "Advanced robotics and automation",
+        "Backed by a mechatronics Center of Competence",
+        "Strong industrial and research links"
+      ],
+      "careers": [
+        "Robotics engineer",
+        "Automation engineer",
+        "Control systems engineer",
+        "R&D / design engineer"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to mechatronics, mechanical and electronics graduates",
+        "Online application through the branch admissions system"
+      ]
+    },
+    "35:bachelor:agronomy": {
+      "overview": "Agronomy is AU-Plovdiv's founding field, training specialists in crop production, soil management and modern, sustainable farming.",
+      "keyFocus": "crop science, soil science, plant nutrition, farming systems and agronomic practice",
+      "duration": "Bachelor — 4 years, full-time; with field and lab practice",
+      "partners": [
+        "Faculty of Agronomy, Agricultural University – Plovdiv",
+        "Experimental fields, greenhouses and research stations",
+        "Farms and agribusiness companies for internships"
+      ],
+      "highlights": [
+        "The university's founding, flagship programme",
+        "Extensive practice on experimental fields and greenhouses",
+        "Strong demand across the agricultural sector"
+      ],
+      "careers": [
+        "Agronomist",
+        "Farm / crop manager",
+        "Agricultural adviser",
+        "Agri-input / seed specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "An interest in the natural sciences and farming is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:bachelor:viticulture-and-winemaking": {
+      "overview": "Viticulture and Winemaking combines vine-growing with oenology, training specialists for Bulgaria's vineyards and wineries.",
+      "keyFocus": "viticulture, grape science, winemaking technology and wine analysis",
+      "duration": "Bachelor — 4 years, full-time; with vineyard and cellar practice",
+      "partners": [
+        "Faculty of Viticulture and Horticulture, Agricultural University – Plovdiv",
+        "University vineyards and experimental cellar",
+        "Wineries and grape producers for internships"
+      ],
+      "highlights": [
+        "From vine to wine — the full production chain",
+        "Practice in university vineyards and a training cellar",
+        "Strong links with Bulgaria's growing wine industry"
+      ],
+      "careers": [
+        "Viticulturist",
+        "Winemaker / oenologist",
+        "Cellar / production manager",
+        "Wine-quality specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "An interest in agriculture and food technology helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:bachelor:plant-protection": {
+      "overview": "Plant Protection trains specialists to diagnose and manage pests, diseases and weeds using modern, environmentally sound methods.",
+      "keyFocus": "phytopathology, entomology, weed science and integrated pest management",
+      "duration": "Bachelor — 4 years, full-time; with field and lab practice",
+      "partners": [
+        "Faculty of Plant Protection and Agroecology, Agricultural University – Plovdiv",
+        "Accredited plant-health and diagnostic laboratories",
+        "Farms, agribusiness and plant-health authorities"
+      ],
+      "highlights": [
+        "Focus on crop health and integrated pest management",
+        "Hands-on diagnostics in accredited labs",
+        "Important for sustainable, safe food production"
+      ],
+      "careers": [
+        "Plant-protection specialist",
+        "Crop consultant / agronomist",
+        "Plant-health inspector",
+        "Agri-input specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "An interest in biology and ecology is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:bachelor:zoo-engineering": {
+      "overview": "Zoo Engineering (animal science) trains specialists in animal husbandry, breeding, nutrition and the management of livestock farms.",
+      "keyFocus": "animal breeding, nutrition, husbandry technologies and farm management",
+      "duration": "Bachelor — 4 years, full-time; with farm practice",
+      "partners": [
+        "Faculty of Agronomy (Animal Sciences), Agricultural University – Plovdiv",
+        "Livestock farms and research stations",
+        "Animal-nutrition and agribusiness companies"
+      ],
+      "highlights": [
+        "Covers the science and management of animal production",
+        "Practice on livestock farms and research stations",
+        "A long-established AU-Plovdiv specialty"
+      ],
+      "careers": [
+        "Zoo engineer / animal scientist",
+        "Livestock farm manager",
+        "Animal-nutrition specialist",
+        "Breeding / genetics specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "An interest in animals and biology is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:bachelor:agrarian-economics": {
+      "overview": "Agrarian Economics at the Faculty of Economics prepares economists and managers for agriculture, agribusiness and rural development.",
+      "keyFocus": "agricultural economics, farm management, markets, finance and rural policy",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Economics, Agricultural University – Plovdiv",
+        "Agribusiness, cooperatives and food companies",
+        "Rural-development and agricultural institutions"
+      ],
+      "highlights": [
+        "Economics tailored to agriculture and agribusiness",
+        "Bridges farming, business and rural policy",
+        "Strong employability in the agri-food sector"
+      ],
+      "careers": [
+        "Agrarian economist",
+        "Agribusiness manager",
+        "Farm / cooperative manager",
+        "Rural-development specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Mathematics and analytical skills are an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:bachelor:ecology-and-environmental-protection": {
+      "overview": "Ecology and Environmental Protection trains specialists to monitor and protect ecosystems, soils and water in rural and agricultural settings.",
+      "keyFocus": "ecology, environmental monitoring, agroecology and sustainable resource use",
+      "duration": "Bachelor — 4 years, full-time; with field and lab practice",
+      "partners": [
+        "Faculty of Plant Protection and Agroecology, Agricultural University – Plovdiv",
+        "Accredited agro-ecological testing laboratories",
+        "Environmental agencies and agribusiness"
+      ],
+      "highlights": [
+        "Environmental science with an agricultural focus",
+        "Fieldwork and accredited-lab analysis",
+        "Growing demand for green and sustainability roles"
+      ],
+      "careers": [
+        "Ecologist / environmental specialist",
+        "Environmental-monitoring officer",
+        "Sustainability / ESG specialist",
+        "Agro-environmental consultant"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a biology entrance exam",
+        "An interest in nature, biology and sustainability helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:master:organic-farming": {
+      "overview": "The Organic Farming master's develops expertise in certified organic crop and livestock production and sustainable farming systems.",
+      "keyFocus": "organic crop and animal production, certification, soil health and sustainability",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Agricultural University – Plovdiv",
+        "Organic farms and certification bodies",
+        "UNIgreen and Erasmus+ partners"
+      ],
+      "highlights": [
+        "Focused on the fast-growing organic sector",
+        "Combines agronomy, ecology and certification",
+        "Builds on an agricultural or science bachelor's"
+      ],
+      "careers": [
+        "Organic-farming specialist",
+        "Certification / compliance officer",
+        "Sustainable-agriculture consultant",
+        "Organic-farm manager"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to agronomy, ecology and animal-science graduates",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:master:plant-biotechnology": {
+      "overview": "The Plant Biotechnology master's covers modern tools for plant breeding, genetics and tissue culture in agriculture and research.",
+      "keyFocus": "plant genetics, tissue culture, molecular breeding and biotechnology",
+      "duration": "Master — 2–3 semesters, full-time; lab-based",
+      "partners": [
+        "Agricultural University – Plovdiv",
+        "Research laboratories and institutes",
+        "Seed, breeding and biotech companies"
+      ],
+      "highlights": [
+        "Cutting-edge plant science and biotechnology",
+        "Laboratory-intensive, research-oriented",
+        "A route into breeding, seed and biotech careers"
+      ],
+      "careers": [
+        "Plant biotechnologist",
+        "Plant breeder / geneticist",
+        "Lab / research specialist",
+        "Seed-technology specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to agronomy, biology and biotechnology graduates",
+        "Online application through the university candidate system"
+      ]
+    },
+    "35:master:horticulture": {
+      "overview": "The Horticulture master's deepens expertise in growing vegetables, fruit and ornamental plants using modern, intensive technologies.",
+      "keyFocus": "vegetable, fruit and ornamental production, greenhouse and nursery technologies",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Faculty of Viticulture and Horticulture, Agricultural University – Plovdiv",
+        "University greenhouses, orchards and nurseries",
+        "Horticultural producers and agribusiness"
+      ],
+      "highlights": [
+        "Advanced, technology-driven horticulture",
+        "Practice in greenhouses, orchards and nurseries",
+        "Builds on an agricultural bachelor's"
+      ],
+      "careers": [
+        "Horticulturist",
+        "Greenhouse / nursery manager",
+        "Fruit / vegetable production specialist",
+        "Horticultural consultant"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to agronomy and horticulture graduates",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:food-technology": {
+      "overview": "Food Technology is UFT's flagship field, training technologists to design, produce and control safe, high-quality foods.",
+      "keyFocus": "food chemistry, processing technologies, quality and safety, and product development",
+      "duration": "Bachelor — 4 years, full-time; with pilot-plant and lab practice",
+      "partners": [
+        "Technological Faculty, University of Food Technologies – Plovdiv",
+        "Pilot plants and food-science laboratories",
+        "Food and beverage manufacturers for internships"
+      ],
+      "highlights": [
+        "The university's core, flagship programme",
+        "Hands-on work in pilot plants and labs",
+        "Strong demand across the food industry"
+      ],
+      "careers": [
+        "Food technologist",
+        "Production / quality manager",
+        "Product-development specialist",
+        "Food-safety specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a chemistry / biology entrance exam",
+        "An interest in chemistry and biology is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:wine-and-beer-technology": {
+      "overview": "Wine and Beer Technology trains specialists in the science and craft of fermented beverages, from raw materials to finished product.",
+      "keyFocus": "oenology, brewing, fermentation science, and beverage quality control",
+      "duration": "Bachelor — 4 years, full-time; with cellar and brewery practice",
+      "partners": [
+        "Technological Faculty, University of Food Technologies – Plovdiv",
+        "Training cellar and pilot brewery",
+        "Wineries and breweries for internships"
+      ],
+      "highlights": [
+        "Covers both winemaking and brewing",
+        "Practice in a training cellar and pilot brewery",
+        "Strong links with Bulgaria's wine and beer industry"
+      ],
+      "careers": [
+        "Winemaker / oenologist",
+        "Brewer / brewmaster",
+        "Beverage production manager",
+        "Quality-control specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a chemistry / biology entrance exam",
+        "An interest in chemistry and food technology helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:dairy-technology": {
+      "overview": "Dairy Technology trains specialists to produce milk, cheese, yoghurt and other dairy products to modern quality and safety standards.",
+      "keyFocus": "milk science, dairy processing, cheese and yoghurt technology, and quality control",
+      "duration": "Bachelor — 4 years, full-time; with pilot-plant practice",
+      "partners": [
+        "Technological Faculty, University of Food Technologies – Plovdiv",
+        "Dairy pilot plant and laboratories",
+        "Dairy producers for internships"
+      ],
+      "highlights": [
+        "Specialised training in dairy production",
+        "Hands-on practice in a dairy pilot plant",
+        "Bulgaria has a strong dairy and cheese tradition"
+      ],
+      "careers": [
+        "Dairy technologist",
+        "Cheese / yoghurt production specialist",
+        "Quality-control specialist",
+        "Dairy-plant manager"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a chemistry / biology entrance exam",
+        "An interest in chemistry and biology is an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:biotechnology": {
+      "overview": "Biotechnology at UFT covers industrial and pharmaceutical biotechnology, using living systems to make foods, ingredients and bioproducts.",
+      "keyFocus": "microbiology, fermentation, enzyme technology and bioprocess engineering",
+      "duration": "Bachelor — 4 years, full-time; lab- and pilot-based",
+      "partners": [
+        "Technological Faculty, University of Food Technologies – Plovdiv",
+        "Biotechnology and microbiology laboratories",
+        "Food, ingredient and pharma companies"
+      ],
+      "highlights": [
+        "Industrial and pharmaceutical biotechnology",
+        "Fermentation and bioprocess practice",
+        "A route into food, ingredient and biotech careers"
+      ],
+      "careers": [
+        "Biotechnologist",
+        "Fermentation / bioprocess specialist",
+        "Microbiology / QC specialist",
+        "R&D specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a chemistry / biology entrance exam",
+        "An interest in biology and chemistry is important",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:machines-and-apparatus-for-the-food-industry": {
+      "overview": "This Technical Faculty programme trains engineers to design, operate and maintain the machines and plants of the food and biotech industries.",
+      "keyFocus": "food machinery, process equipment, mechanical design and plant engineering",
+      "duration": "Bachelor — 4 years, full-time; lab- and practice-based",
+      "partners": [
+        "Technical Faculty, University of Food Technologies – Plovdiv",
+        "Engineering workshops and pilot plants",
+        "Food-machinery and manufacturing companies"
+      ],
+      "highlights": [
+        "Engineering focused on the food industry",
+        "Hands-on work with process equipment",
+        "Bridges mechanical engineering and food production"
+      ],
+      "careers": [
+        "Food-industry engineer",
+        "Process / equipment engineer",
+        "Maintenance / plant engineer",
+        "Project engineer"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "An interest in engineering and mechanics helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:computer-systems-and-technologies": {
+      "overview": "Computer Systems and Technologies at the Technical Faculty trains IT specialists, with applications in food-industry automation and digitalisation.",
+      "keyFocus": "programming, computer systems, networks and applied computing",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Technical Faculty, University of Food Technologies – Plovdiv",
+        "Computing and automation laboratories",
+        "IT and food-tech companies"
+      ],
+      "highlights": [
+        "IT and computing with industry applications",
+        "Labs for computer systems and automation",
+        "Strong employability in IT and food-tech"
+      ],
+      "careers": [
+        "Software / systems developer",
+        "IT specialist",
+        "Automation / control specialist",
+        "Data / systems engineer"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a mathematics entrance exam",
+        "An interest in programming and mathematics helps",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:bachelor:economics-of-the-food-industry": {
+      "overview": "Economics of the Food Industry combines economics and management with a focus on the agri-food and beverage sector.",
+      "keyFocus": "economics, management, marketing and finance for the food industry",
+      "duration": "Bachelor — 4 years, full-time; option to continue in a master's",
+      "partners": [
+        "Faculty of Economics, University of Food Technologies – Plovdiv",
+        "Food, beverage and retail companies",
+        "Industry associations and employers"
+      ],
+      "highlights": [
+        "Economics tailored to the food sector",
+        "Bridges business and food production",
+        "Strong employability in agri-food business"
+      ],
+      "careers": [
+        "Food-industry economist",
+        "Business / operations manager",
+        "Marketing / sales specialist",
+        "Supply-chain specialist"
+      ],
+      "admissionNotes": [
+        "Ranking by state matriculation results or a university entrance exam",
+        "Mathematics and communication skills are an advantage",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:master:food-safety-and-quality": {
+      "overview": "The Food Safety and Quality master's develops experts in food-safety systems, quality management and regulatory compliance.",
+      "keyFocus": "food safety, HACCP, quality management systems, analysis and legislation",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "University of Food Technologies – Plovdiv",
+        "Food producers and testing laboratories",
+        "Food-safety authorities and certification bodies"
+      ],
+      "highlights": [
+        "Highly employable food-safety and quality focus",
+        "Covers HACCP, ISO and food legislation",
+        "Builds on a food-science or related bachelor's"
+      ],
+      "careers": [
+        "Food-safety manager",
+        "Quality-assurance manager",
+        "Compliance / certification specialist",
+        "Food inspector / auditor"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to food-science, biology and chemistry graduates",
+        "Online application through the university candidate system"
+      ]
+    },
+    "36:master:nutrition-and-dietetics": {
+      "overview": "The Nutrition and Dietetics master's covers human nutrition, diet design and the role of food in health and disease.",
+      "keyFocus": "human nutrition, dietetics, functional foods and public-health nutrition",
+      "duration": "Master — 2–3 semesters, full-time or part-time",
+      "partners": [
+        "Technological Faculty, University of Food Technologies – Plovdiv",
+        "Health, catering and food-industry organisations",
+        "Research laboratories"
+      ],
+      "highlights": [
+        "Connects food science with health and nutrition",
+        "Growing demand in health and wellness",
+        "Builds on a food-science or health bachelor's"
+      ],
+      "careers": [
+        "Nutritionist",
+        "Dietetics specialist",
+        "Product-development specialist (functional foods)",
+        "Public-health / wellness specialist"
+      ],
+      "admissionNotes": [
+        "Requires a relevant bachelor's degree",
+        "Suited to food-science, biology and health graduates",
+        "Online application through the university candidate system"
+      ]
     }
   },
   "na_faculties": {
@@ -15855,5 +16890,63 @@
     "pharmaceutical-care": { "tuition": "€900/yr (BG/EU)", "facultyKey": "pharmacy" },
     "nutrition-and-dietetics": { "tuition": "€800/yr (BG/EU)", "facultyKey": "public-health" },
     "medical-rehabilitation": { "tuition": "€800/yr (BG/EU)", "facultyKey": "public-health" }
+  },
+  "tup_programInfo": {
+    "computer-systems-and-technologies": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "software-engineering": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "automation-and-information-technologies": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "electronics": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "electrical-engineering": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "design-and-programming-of-electronic-systems": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "communication-technologies": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "industrial-engineering": { "tuition": "€1,750/sem (English) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "mechanical-engineering": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" },
+    "mechatronics": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" },
+    "transport-equipment-and-technologies": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" },
+    "computer-modelling-and-technologies-in-mechanical-engineering": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" },
+    "industrial-management": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" },
+    "artificial-intelligence": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "cybersecurity": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "ea" },
+    "robotics": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" },
+    "renewable-energy-sources": { "tuition": "€300–€360/sem (BG/EU) · €3,300/yr (foreign)", "facultyKey": "me" }
+  },
+  "au_programInfo": {
+    "agronomy": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "agro" },
+    "zoo-engineering": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "agro" },
+    "agricultural-engineering": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "agro" },
+    "selection-and-seed-production": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "agro" },
+    "viticulture-and-winemaking": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "vh" },
+    "horticulture": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "vh" },
+    "ornamental-horticulture-and-landscaping": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "vh" },
+    "fruit-and-vegetable-growing": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "vh" },
+    "plant-protection": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pp" },
+    "agroecology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pp" },
+    "ecology-and-environmental-protection": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pp" },
+    "agrarian-economics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "agribusiness": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "management": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "marketing": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "tourism": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "organic-farming": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "pp" },
+    "plant-biotechnology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "agro" }
+  },
+  "uft_programInfo": {
+    "food-technology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "wine-and-beer-technology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "meat-and-fish-technology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "dairy-technology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "bread-and-confectionery-technology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "biotechnology": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "nutrition-and-dietetics": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" },
+    "machines-and-apparatus-for-the-food-industry": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech2" },
+    "computer-systems-and-technologies": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech2" },
+    "automation-and-information-technologies": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech2" },
+    "refrigeration-and-air-conditioning-engineering": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech2" },
+    "industrial-engineering": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech2" },
+    "economics-of-the-food-industry": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "industrial-business-and-entrepreneurship": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "tourism": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "catering": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "econ" },
+    "food-safety-and-quality": { "tuition": "€350–€500/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "tech" }
   }
 }
