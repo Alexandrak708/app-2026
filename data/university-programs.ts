@@ -1189,6 +1189,46 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Tourism",
     ],
   },
+  "37": {
+    bachelor: [
+      "Music Pedagogy",
+      "Fine Arts Pedagogy",
+      "Performance Art (Classical Instrument or Classical Voice)",
+      "Performance Art (Folk Instrument or Folk Singing)",
+      "Performance Art (Pop and Jazz)",
+      "Conducting of Folk Ensembles",
+      "Bulgarian Folk Choreography",
+      "Ballet Art (Ballet Pedagogy)",
+      "Graphic Design and Photography",
+      "Fashion Design",
+      "Mural Painting",
+      "Scenography",
+      "Photography",
+      "Marketing and Communications in the Arts",
+    ],
+    master: [
+      "Music Pedagogy",
+      "Fine Arts Pedagogy",
+      "Conducting",
+      "Composition",
+      "Performance Art (Classical Instrument or Classical Voice)",
+      "Performance Art (Folk Instrument or Folk Singing)",
+      "Performance Art (Pop and Jazz)",
+      "Sound Engineering",
+      "Music Therapy",
+      "Art Therapy",
+      "Art Management",
+      "PR of Art Organizations",
+      "Bulgarian Folk Choreography",
+      "Ballet Art (Ballet Pedagogy)",
+      "Painting",
+      "Sculpture",
+      "Multimedia and Virtual Reality",
+      "Scenography",
+      "Graphic Design and Photography",
+      "Fashion Design",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1741,6 +1781,19 @@ function getUftProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getAmtiiProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`amtii_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -2083,6 +2136,16 @@ function getAuFaculty(facultyKey: string): string | null {
 
 function getUftFaculty(facultyKey: string): string | null {
   const name = i18n.t(`uft_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getAmtiiFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`amtii_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2452,6 +2515,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (uftInfo.tuition) summary.tuition = uftInfo.tuition;
         if (uftInfo.facultyKey) {
           const facultyName = getUftFaculty(uftInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "37") {
+      const amtiiInfo = getAmtiiProgramInfo(slug);
+      if (amtiiInfo) {
+        if (amtiiInfo.tuition) summary.tuition = amtiiInfo.tuition;
+        if (amtiiInfo.facultyKey) {
+          const facultyName = getAmtiiFaculty(amtiiInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2885,6 +2957,16 @@ export function buildProgramDetail(
       if (uftInfo.tuition) result.tuition = uftInfo.tuition;
       if (uftInfo.facultyKey) {
         const facultyName = getUftFaculty(uftInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "37" && normalizedSlug) {
+    const amtiiInfo = getAmtiiProgramInfo(normalizedSlug);
+
+    if (amtiiInfo) {
+      if (amtiiInfo.tuition) result.tuition = amtiiInfo.tuition;
+      if (amtiiInfo.facultyKey) {
+        const facultyName = getAmtiiFaculty(amtiiInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

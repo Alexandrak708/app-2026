@@ -1,4 +1,35 @@
 {
+  "amtii_faculties": {
+    "music": "Faculty of Music Pedagogy",
+    "folk": "Faculty of Music Folklore and Choreography",
+    "visual": "Faculty of Visual Arts"
+  },
+  "amtii_programInfo": {
+    "music-pedagogy": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "performance-art-classical-instrument-or-classical-voice": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "performance-art-pop-and-jazz": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "conducting": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "composition": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "sound-engineering": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "music-therapy": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "music" },
+    "performance-art-folk-instrument-or-folk-singing": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "conducting-of-folk-ensembles": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "bulgarian-folk-choreography": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "ballet-art-ballet-pedagogy": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "art-therapy": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "art-management": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "pr-of-art-organizations": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "marketing-and-communications-in-the-arts": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "folk" },
+    "fine-arts-pedagogy": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "graphic-design-and-photography": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "fashion-design": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "mural-painting": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "scenography": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "photography": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "painting": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "sculpture": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" },
+    "multimedia-and-virtual-reality": { "tuition": "€350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "visual" }
+  },
   "auth": {
     "signIn": "Log In",
     "signUp": "Register",
@@ -543,6 +574,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "37": {
+      "yearsTradition": "60+",
+      "bachelorPrograms": "14",
+      "masterPrograms": "20+",
+      "internationalPartners": "50+",
+      "countries": "20+",
+      "studentsGraduated": "15K+",
+      "labs": "3",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "Bauhaus",
+      "tuitionFreeText": "New European Bauhaus partner"
+    },
     "1": {
       "yearsTradition": "60+",
       "bachelorPrograms": "33",
@@ -974,6 +1017,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "37": [
+      {
+        "range": "€350–€520",
+        "label": "State-subsidised / year (BG/EU, indicative)"
+      },
+      {
+        "range": "Paid form",
+        "label": "Moderate annual fee where offered"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students / year (indicative)"
+      },
+      {
+        "range": "€24 / €40",
+        "label": "Entrance-exam fee (1st exam / two-stage)"
+      }
+    ],
     "1": [
       {
         "range": "€0",
@@ -1624,6 +1685,43 @@
     ]
   },
   "universityExtra": {
+    "amtii_scholarshipsDesc": "As a state arts academy, AMTII supports students through state and mobility scholarships:",
+    "amtii_merit": "Merit scholarships from the state budget for strong academic and exam results, paid each semester",
+    "amtii_social": "Social scholarships for students from low-income families and special-support groups",
+    "amtii_talent": "Support and awards for outstanding performers and prize-winners at competitions, festivals and exhibitions",
+    "amtii_erasmus": "Erasmus+ mobility grants for study and traineeships at partner arts academies in Europe",
+    "amtii_phd": "State scholarships and research support for doctoral (PhD) students in the arts",
+    "amtii_applicationDesc": "Admission is by competitive creative-aptitude exams, held in several sessions:",
+    "amtii_appExams": "Specialty-specific entrance exams (playing, singing, dance, drawing, composition or a portfolio)",
+    "amtii_appStages": "Some specialties use two-stage exams (e.g. choreography, ballet, design, photography, scenography)",
+    "amtii_appOnline": "Online submission of scanned documents through the candidate-student system",
+    "amtii_appDocuments": "Secondary-school diploma, application form, declarations and proof of exam-fee payment",
+    "amtii_appForeign": "Separate procedure for foreign applicants, with diploma recognition and a Bulgarian-language check",
+    "amtii_feesTitle": "Tuition & Fees",
+    "amtii_feesDesc": "AMTII keeps fees among the lowest for a state academy; amounts are per year unless noted (indicative):",
+    "amtii_feeState": "State-subsidised places: roughly €350–€520 per year for Bulgarian and EU students",
+    "amtii_feePaid": "A paid form of study is available in some specialties at a moderate annual fee",
+    "amtii_feeForeign": "Foreign (non-EU) students: around €3,000 per year, set annually by the Council of Ministers",
+    "amtii_feeExamBachelor": "Bachelor entrance-exam fee: €24 for the first exam, €16 for each additional exam",
+    "amtii_feeExamSpecial": "Two-stage specialty exams: €40 (e.g. choreography, ballet, design, photography, scenography)",
+    "amtii_campus": "Campus & Facilities",
+    "amtii_campusDesc": "AMTII occupies several buildings in central Plovdiv, built around arts practice:",
+    "amtii_location": "Rectorate and central building at 2 Todor Samodumov St, Plovdiv",
+    "amtii_faculties3": "Three faculties: Music Pedagogy; Music Folklore & Choreography; and Visual Arts",
+    "amtii_studio": "Concert and dance halls, ateliers, a recording studio and exhibition spaces",
+    "amtii_library": "Specialised arts library, e-catalogue and career centre",
+    "amtii_dormitory": "Student dormitories and student-council support",
+    "amtii_partnersDesc": "AMTII is closely tied to Bulgaria's cultural life and to European arts networks:",
+    "amtii_bauhaus": "Official partner of the EU's New European Bauhaus initiative (since 2022)",
+    "amtii_jointPrograms": "Joint master's programmes with the National Academy of Music and NATFA",
+    "amtii_erasmusPartners": "Erasmus+ partnerships with music, dance and art academies across Europe",
+    "amtii_festivals": "Regular concerts, competitions, exhibitions and stage productions",
+    "amtii_internationalDesc": "AMTII welcomes international students to its arts programmes:",
+    "amtii_englishTaught": "Individual and studio tuition can be arranged in English for foreign students",
+    "amtii_prep": "A Bulgarian-language and specialised preparatory year before degree study",
+    "amtii_visaSupport": "Admission, visa and residence support through the international-cooperation office",
+    "amtii_intake": "Autumn intake with guidance throughout the application and creative exams",
+    "amtii_recognition": "State-recognised Bulgarian diplomas in the arts, valid across the EU",
     "scholarships": "Scholarships & Funding",
     "scholarshipsDesc": "TU-Varna offers various scholarship opportunities: Evrika Foundation named scholarships (€3,000/year) for 11 academic fields, Erasmus+ mobility grants (€606-€674/month), National Young Scientists and Postdocs Program, state scholarships for doctoral students, and Smart PHD Lab 5.0 project funding.",
     "evrika": "Evrika Foundation: Named scholarships of €3,000/year in 11 fields including Computer Science, Mathematics, Physics, Engineering, and Economics",
@@ -3812,6 +3910,16 @@
     }
   },
   "universities": {
+    "37": {
+      "name": "Academy of Music, Dance and Fine Arts",
+      "description": "Plovdiv's state academy of the arts (est. 1964) — the specialised higher school for music, dance and visual arts in southern Bulgaria, offering bachelor's, master's and doctoral degrees across performance, pedagogy, choreography, design and fine arts.",
+      "longDescription": "The Academy of Music, Dance and Fine Arts “Prof. Asen Diamandiev” – Plovdiv (AMTII) is Bulgaria's specialised state academy for the arts, established in 1964 and named after its long-serving rector and composer Prof. Asen Diamandiev. It is an accredited institution of higher education awarding Bachelor's, Master's and Doctoral degrees, and is the only university of its kind in southern Bulgaria dedicated to music, dance and the visual arts.\n\nThe academy is organised into three faculties — the Faculty of Music Pedagogy, the Faculty of Music Folklore and Choreography, and the Faculty of Visual Arts — supported by a language and specialised-training department, a library, a recording studio and a career centre. Its programmes span performance (classical, folk, pop and jazz instruments and voice), conducting and composition, music and fine-arts pedagogy, Bulgarian folk and ballet choreography, graphic design and photography, fashion design, mural painting, scenography, sculpture, multimedia and virtual reality, sound engineering, art therapy and art management.\n\nTeaching is highly practical and studio-based, built around individual tuition, ensembles, ateliers and stage performance, with regular concerts, exhibitions and productions across the academy's several buildings in central Plovdiv. AMTII takes part in Erasmus+ mobility, runs joint master's programmes with the National Academy of Music and NATFA, and has been an official partner of the EU's New European Bauhaus initiative since October 2022.\n\nAs a state academy, tuition is modest for Bulgarian and EU students on state-subsidised places, with higher fees for foreign students; scholarships, dormitories and a career centre support students. Rector: Assoc. Prof. Dr. Zhan Pehlivanov.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€350 - €520 / year (BG/EU)",
+      "website": "https://www.artacademyplovdiv.com",
+      "applyUrl": "https://www.artacademyplovdiv.com/priem/usloviq.html"
+    },
     "1": {
       "name": "Technical University",
       "description": "Leading engineering and technology programs with state-of-the-art research facilities.",
@@ -4174,6 +4282,27 @@
     }
   },
   "universityProfiles": {
+    "37": {
+      "name": "Academy of Music, Dance and Fine Arts",
+      "focus": "music, dance and the visual arts — performance, pedagogy, choreography, design, and fine arts",
+      "style": "studio- and stage-based training with individual tuition, ensembles, ateliers, concerts and exhibitions",
+      "careers": [
+        "Performer / musician / vocalist",
+        "Music or fine-arts teacher",
+        "Choreographer / dancer / ballet pedagogue",
+        "Graphic / fashion designer",
+        "Fine artist / sculptor / scenographer",
+        "Sound engineer / multimedia artist",
+        "Art manager / cultural producer"
+      ],
+      "admissionNotes": [
+        "Entrance is by competitive creative-aptitude exams specific to each specialty",
+        "Some specialties use two-stage exams (e.g. choreography, design, scenography)",
+        "Graduates of art and music schools may enter directly at the second stage",
+        "Online document submission through the candidate-student system",
+        "Separate procedure and diploma recognition for foreign applicants"
+      ]
+    },
     "1": {
       "name": "Technical University",
       "focus": "engineering, automation, computing, renewable energy, shipbuilding, maritime navigation, industrial systems, and AI",
@@ -5059,6 +5188,21 @@
     }
   },
   "programTitles": {
+    "fine-arts-pedagogy": "Fine Arts Pedagogy",
+    "performance-art-classical-instrument-or-classical-voice": "Performance Art (Classical Instrument or Classical Voice)",
+    "performance-art-folk-instrument-or-folk-singing": "Performance Art (Folk Instrument or Folk Singing)",
+    "performance-art-pop-and-jazz": "Performance Art (Pop and Jazz)",
+    "conducting-of-folk-ensembles": "Conducting of Folk Ensembles",
+    "bulgarian-folk-choreography": "Bulgarian Folk Choreography",
+    "ballet-art-ballet-pedagogy": "Ballet Art (Ballet Pedagogy)",
+    "graphic-design-and-photography": "Graphic Design and Photography",
+    "fashion-design": "Fashion Design",
+    "marketing-and-communications-in-the-arts": "Marketing and Communications in the Arts",
+    "conducting": "Conducting",
+    "music-therapy": "Music Therapy",
+    "art-therapy": "Art Therapy",
+    "pr-of-art-organizations": "PR of Art Organizations",
+    "multimedia-and-virtual-reality": "Multimedia and Virtual Reality",
     "advertising-and-communications": "Advertising and Communications",
     "international-marketing": "International Marketing",
     "acting-for-drama-theatre": "Acting for Drama Theatre",

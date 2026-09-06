@@ -401,6 +401,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "37",
+    rating: 5,
+    color: "#7b2d8e",
+    image: require("../assets/images/amtii-plovdiv.jpg"),
+    category: "Arts",
+    categories: ["Arts"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
