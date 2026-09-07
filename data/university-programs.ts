@@ -1229,6 +1229,73 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Fashion Design",
     ],
   },
+  "38": {
+    bachelor: [
+      "National Security",
+      "Counter-Terrorism",
+      "Crime Prevention and Public Order Protection",
+      "Security and Intelligence",
+      "Cybersecurity",
+      "Security and Criminal Psychology",
+      "Security and Software Technologies",
+      "Security and Artificial Intelligence",
+      "Business Management and Administration",
+      "Business Management",
+      "International Business",
+      "Accounting and Control",
+      "Finance",
+      "Digital Marketing",
+    ],
+    master: [
+      "National Security",
+      "Counter-Terrorism",
+      "Crime Prevention and Public Order Protection",
+      "Criminalistics",
+      "Cybersecurity",
+      "Customs Intelligence and Investigation",
+      "Security and Sport",
+      "Security and Intelligence",
+      "Security and Software Technologies",
+      "Security and Artificial Intelligence",
+      "Security and Criminal Psychology",
+      "Economic Security",
+      "Food Security",
+      "Accounting and Control",
+      "Finance",
+      "Digital Marketing",
+      "Currency, Customs and Tax Control",
+      "Financial-Accounting Management and Insurance",
+      "Business Management",
+      "Business Management and Administration",
+      "Human Resources Management",
+    ],
+  },
+  "39": {
+    bachelor: [
+      "Agrarian Economics",
+      "Finance",
+      "Accounting",
+      "Tourism Economics",
+      "Business and Entrepreneurship",
+      "Business Management",
+      "Agribusiness Management",
+      "Human Resources Management",
+      "Information Systems Management",
+    ],
+    master: [
+      "Economics and Agribusiness Management",
+      "Economics and Education Management",
+      "Finance and Banking",
+      "Accounting and Audit",
+      "Social Economy and Social Entrepreneurship",
+      "Business Management",
+      "Business Management (National Security)",
+      "Project Management",
+      "Human Resources Management",
+      "Health Management",
+      "Food and Nutrition Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1794,6 +1861,32 @@ function getAmtiiProgramInfo(programSlug: string): { tuition?: string; facultyKe
   };
 }
 
+function getVusiProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`vusi_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUardProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uard_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -2146,6 +2239,26 @@ function getUftFaculty(facultyKey: string): string | null {
 
 function getAmtiiFaculty(facultyKey: string): string | null {
   const name = i18n.t(`amtii_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getVusiFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`vusi_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUardFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uard_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2524,6 +2637,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (amtiiInfo.tuition) summary.tuition = amtiiInfo.tuition;
         if (amtiiInfo.facultyKey) {
           const facultyName = getAmtiiFaculty(amtiiInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "38") {
+      const vusiInfo = getVusiProgramInfo(slug);
+      if (vusiInfo) {
+        if (vusiInfo.tuition) summary.tuition = vusiInfo.tuition;
+        if (vusiInfo.facultyKey) {
+          const facultyName = getVusiFaculty(vusiInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "39") {
+      const uardInfo = getUardProgramInfo(slug);
+      if (uardInfo) {
+        if (uardInfo.tuition) summary.tuition = uardInfo.tuition;
+        if (uardInfo.facultyKey) {
+          const facultyName = getUardFaculty(uardInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2967,6 +3098,26 @@ export function buildProgramDetail(
       if (amtiiInfo.tuition) result.tuition = amtiiInfo.tuition;
       if (amtiiInfo.facultyKey) {
         const facultyName = getAmtiiFaculty(amtiiInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "38" && normalizedSlug) {
+    const vusiInfo = getVusiProgramInfo(normalizedSlug);
+
+    if (vusiInfo) {
+      if (vusiInfo.tuition) result.tuition = vusiInfo.tuition;
+      if (vusiInfo.facultyKey) {
+        const facultyName = getVusiFaculty(vusiInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "39" && normalizedSlug) {
+    const uardInfo = getUardProgramInfo(normalizedSlug);
+
+    if (uardInfo) {
+      if (uardInfo.tuition) result.tuition = uardInfo.tuition;
+      if (uardInfo.facultyKey) {
+        const facultyName = getUardFaculty(uardInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

@@ -1,4 +1,57 @@
 {
+  "uard_faculties": {
+    "econ": "Economics",
+    "mgmt": "Administration and Management"
+  },
+  "uard_programInfo": {
+    "agrarian-economics": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "finance": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "accounting": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "tourism-economics": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "business-and-entrepreneurship": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "economics-and-agribusiness-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "economics-and-education-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "finance-and-banking": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "accounting-and-audit": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "social-economy-and-social-entrepreneurship": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "business-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "agribusiness-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "human-resources-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "information-systems-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "business-management-national-security": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "project-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "health-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" },
+    "food-and-nutrition-management": { "tuition": "≈ €800/yr (BG/EU, indicative)", "facultyKey": "mgmt" }
+  },
+  "vusi_faculties": {
+    "security": "National Security",
+    "econ": "Economics",
+    "mgmt": "Administration and Management"
+  },
+  "vusi_programInfo": {
+    "national-security": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "counter-terrorism": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "crime-prevention-and-public-order-protection": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "security-and-intelligence": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "cybersecurity": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "security-and-criminal-psychology": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "security-and-software-technologies": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "security-and-artificial-intelligence": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "criminalistics": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "customs-intelligence-and-investigation": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "security-and-sport": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "economic-security": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "food-security": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "security" },
+    "international-business": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "econ" },
+    "accounting-and-control": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "econ" },
+    "finance": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "econ" },
+    "digital-marketing": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "econ" },
+    "currency-customs-and-tax-control": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "econ" },
+    "financial-accounting-management-and-insurance": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "econ" },
+    "business-management": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "mgmt" },
+    "business-management-and-administration": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "mgmt" },
+    "human-resources-management": { "tuition": "≈ €1,000/yr (indicative)", "facultyKey": "mgmt" }
+  },
   "amtii_faculties": {
     "music": "Faculty of Music Pedagogy",
     "folk": "Faculty of Music Folklore and Choreography",
@@ -574,6 +627,30 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "39": {
+      "yearsTradition": "30+",
+      "bachelorPrograms": "9",
+      "masterPrograms": "11",
+      "internationalPartners": "30+",
+      "countries": "10+",
+      "studentsGraduated": "10K+",
+      "labs": "3",
+      "labsText": "Campuses",
+      "tuitionFreeLabel": "INVEST",
+      "tuitionFreeText": "EU university alliance member"
+    },
+    "38": {
+      "yearsTradition": "20+",
+      "bachelorPrograms": "14",
+      "masterPrograms": "21",
+      "internationalPartners": "100+",
+      "countries": "10+",
+      "studentsGraduated": "2,000+",
+      "labs": "5",
+      "labsText": "Specialist labs",
+      "tuitionFreeLabel": "9.08/10",
+      "tuitionFreeText": "NEAA accreditation (2023)"
+    },
     "37": {
       "yearsTradition": "60+",
       "bachelorPrograms": "14",
@@ -1017,6 +1094,42 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "39": [
+      {
+        "range": "≈ €800",
+        "label": "Bachelor / year (BG/EU, indicative)"
+      },
+      {
+        "range": "≈ €900",
+        "label": "Master / year (indicative)"
+      },
+      {
+        "range": "Lower",
+        "label": "Part-time / distance form"
+      },
+      {
+        "range": "≈ €3,000",
+        "label": "Foreign students / year (indicative)"
+      }
+    ],
+    "38": [
+      {
+        "range": "≈ €1,000",
+        "label": "Bachelor full-time / year (indicative)"
+      },
+      {
+        "range": "Lower",
+        "label": "Part-time / distance form"
+      },
+      {
+        "range": "≈ €1,000",
+        "label": "Master / year (indicative)"
+      },
+      {
+        "range": "FREE",
+        "label": "Orphans & children of fallen MoI staff"
+      }
+    ],
     "37": [
       {
         "range": "€350–€520",
@@ -1685,6 +1798,80 @@
     ]
   },
   "universityExtra": {
+    "uard_scholarshipsDesc": "UARD supports students through merit, social and mobility scholarships:",
+    "uard_merit": "Merit scholarships for students with strong academic results",
+    "uard_founder": "The Prof. Dr. Dimitar Dimitrov memorial scholarship, in honour of the founder",
+    "uard_social": "Social support for students from disadvantaged and low-income groups",
+    "uard_erasmus": "Erasmus+ mobility grants for study and traineeships with European partners",
+    "uard_phd": "Support and funding for doctoral (PhD) students and young researchers",
+    "uard_applicationDesc": "Admission is by documents, without an entrance exam:",
+    "uard_appDiploma": "Ranking by the secondary-school diploma grades — no entrance exam",
+    "uard_appNoExam": "Full-time, part-time and distance forms, each 8 semesters (240 ECTS)",
+    "uard_appOnline": "Online application through the candidate-student system (kskvuarr)",
+    "uard_appDocuments": "Secondary-school diploma, application form and the required documents",
+    "uard_appForeign": "Separate procedure for foreign applicants, with diploma recognition",
+    "uard_feesTitle": "Tuition & Fees",
+    "uard_feesDesc": "As a private higher school, UARD keeps tuition modest; amounts are indicative — confirm with admissions:",
+    "uard_feeBachelor": "Bachelor: roughly €800 per year for Bulgarian and EU students (indicative)",
+    "uard_feeMaster": "Master's: roughly €900 per year, depending on the programme (indicative)",
+    "uard_feePartTime": "Part-time and distance forms are offered at a lower annual fee",
+    "uard_feeForeign": "Foreign (non-EU) students: around €3,000 per year (indicative)",
+    "uard_feeInstallments": "Tuition can be paid by semester or in instalments",
+    "uard_campus": "Campus & Facilities",
+    "uard_campusDesc": "UARD combines a Plovdiv campus with regional branches and strong e-learning:",
+    "uard_location": "Main building at 78 Dunav Blvd, Plovdiv 4003",
+    "uard_fields": "Two professional fields: Economics; and Administration & Management",
+    "uard_branches": "Branches in Ruse and Veliko Tarnovo",
+    "uard_elearning": "Electronic university and ИСАО+ integrated learning system",
+    "uard_career": "Career-development centre, professional-qualification centre and library",
+    "uard_partnersDesc": "UARD is well accredited and active in European academic networks:",
+    "uard_invest": "Member of the INVEST European University Alliance (Slovakia, Greece, Finland, Netherlands)",
+    "uard_eurashe": "Member of EURASHE and the Visegrad University Association",
+    "uard_iso": "Quality management certified to ISO 9001:2015",
+    "uard_erasmusPartners": "Erasmus+ partnerships and joint international projects and journals",
+    "uard_internationalDesc": "UARD welcomes international students and supports mobility:",
+    "uard_erasmusMobility": "Erasmus+ study and traineeship mobility with European partner universities",
+    "uard_englishTaught": "Selected programmes and multilingual courses through the INVEST alliance",
+    "uard_prep": "Bulgarian-language and preparatory support for foreign students",
+    "uard_intake": "Autumn and spring intake with guidance throughout the application",
+    "uard_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
+    "vusi_scholarshipsDesc": "ANIS (formerly VUSI) runs one of the strongest social and scholarship programmes among Bulgaria's private schools:",
+    "vusi_merit": "Merit scholarships for high-achieving students each semester",
+    "vusi_orphans": "Free tuition for students who grew up in orphanages / care homes",
+    "vusi_moi": "Fully free education for children of fallen or injured Interior Ministry staff",
+    "vusi_social": "Tuition discounts for students from disadvantaged and low-income groups",
+    "vusi_loans": "State-backed student loans available for tuition and living costs",
+    "vusi_applicationDesc": "Admission is by documents, without an entrance exam:",
+    "vusi_appDiploma": "Ranking by the doubled matriculation grade (or a competitive essay) plus the diploma average",
+    "vusi_appNoExam": "No entrance exam — apply online or in person, with rolling admission rounds",
+    "vusi_appDocuments": "ID card, secondary-school diploma, application form and four passport photos",
+    "vusi_appForms": "Full-time and part-time study, both 4 years (8 semesters)",
+    "vusi_appOffices": "Apply at the Plovdiv campus or the Sofia and Haskovo offices",
+    "vusi_feesTitle": "Tuition & Fees",
+    "vusi_feesDesc": "As a private academy, ANIS sets its own tuition; amounts below are indicative — confirm with the admissions office:",
+    "vusi_feeBachelor": "Bachelor: roughly €1,000 per year for full-time study (indicative)",
+    "vusi_feePartTime": "Part-time and distance forms are offered at a lower annual fee",
+    "vusi_feeMaster": "Master's: roughly €1,000 per year, depending on the programme (indicative)",
+    "vusi_feeInstallments": "Tuition can be paid by semester or in instalments",
+    "vusi_feeFree": "Free or reduced tuition under the academy's social programme (see Scholarships)",
+    "vusi_campus": "Campus & Facilities",
+    "vusi_campusDesc": "ANIS has a modern 8,000 m² campus in Plovdiv built around security training:",
+    "vusi_location": "Main building at 13 Kuklensko Shose Blvd, Plovdiv (offices in Sofia and Haskovo)",
+    "vusi_directions": "Three directions: National Security; Economics; and Administration & Management",
+    "vusi_cyberlab": "Cybersecurity and forensics laboratories",
+    "vusi_forensics": "Digital shooting range and criminalistics facilities",
+    "vusi_range": "Martial-arts and physical-training halls",
+    "vusi_partnersDesc": "ANIS is well accredited and closely tied to employers and European partners:",
+    "vusi_accreditation": "Institutional accreditation 9.08/10 from the NEAA (2023) and ISO 9001:2015",
+    "vusi_careerCenter": "Career centre working with 100+ Bulgarian and international companies",
+    "vusi_itacademy": "In-house IT Academy and applied training for the security and IT sectors",
+    "vusi_erasmus": "Erasmus+ Charter (2021–2027) for student and staff mobility",
+    "vusi_internationalDesc": "ANIS supports international students through Erasmus+ and its own services:",
+    "vusi_erasmusMobility": "Erasmus+ study and traineeship mobility with European partner institutions",
+    "vusi_englishTaught": "Selected courses and materials available in English on request",
+    "vusi_offices": "Dedicated admissions support at the Plovdiv, Sofia and Haskovo offices",
+    "vusi_intake": "Rolling autumn and spring intake with guidance throughout the application",
+    "vusi_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
     "amtii_scholarshipsDesc": "As a state arts academy, AMTII supports students through state and mobility scholarships:",
     "amtii_merit": "Merit scholarships from the state budget for strong academic and exam results, paid each semester",
     "amtii_social": "Social scholarships for students from low-income families and special-support groups",
@@ -3910,6 +4097,26 @@
     }
   },
   "universities": {
+    "39": {
+      "name": "University of Agribusiness and Rural Development",
+      "description": "Plovdiv's specialised higher school for agribusiness, economics and management (est. 1992) — the “Academy for Leaders”, offering bachelor's, master's and doctoral degrees in agrarian economics, finance, accounting, agribusiness and regional development, with campuses in Plovdiv, Ruse and Veliko Tarnovo.",
+      "longDescription": "The University of Agribusiness and Rural Development (UARD / ВУАРР) is a specialised higher school in Plovdiv focused on the economics and management of agribusiness and the development of regions. It was founded on 23 October 1992 as an Agricultural College and, by a decision of the National Assembly on 6 July 2011, was transformed into the Higher School of Agribusiness and Rural Development. Its founder and long-serving rector was Prof. Dr. Eng. Dimitar Dimitrov (1952–2020), and the school carries the motto “Academy for Leaders”.\n\nUARD teaches across two professional fields — Economics (3.8) and Administration and Management (3.7) — and awards Bachelor's, Master's and Doctoral degrees, together with teacher-training and professional-qualification programmes. Its bachelor's specialties include agrarian economics, finance, accounting, tourism economics, business and entrepreneurship, economic and agribusiness management, and human-resources and information-systems management; master's programmes add agribusiness economics, finance and banking, accounting and audit, social economy, project management, health management and food-and-nutrition management.\n\nStudy is offered in full-time, part-time and distance forms, supported by an electronic university and integrated learning system (ИСАО+), a career-development centre, a professional-qualification centre, a library and a scientific journal. The university has its main campus in Plovdiv and branches in Ruse and Veliko Tarnovo.\n\nUARD is quality-certified to ISO 9001:2015 and is active internationally: it is a member of the INVEST European University Alliance (with partners in Slovakia, Greece, Finland and the Netherlands), of EURASHE and the Visegrad University Association, and takes part in Erasmus+ mobility. As a private higher school it sets its own, modest tuition and offers scholarships, including one in memory of its founder.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "≈ €800 / year (indicative)",
+      "website": "https://www.uard.bg",
+      "applyUrl": "https://www.uard.bg/bg/pages/view/6"
+    },
+    "38": {
+      "name": "Academy of National and Information Security",
+      "description": "Plovdiv's private academy for security and economics (est. 2003, renamed from ВУСИ in 2025) — the first private university in Plovdiv specialising in security studies, offering bachelor's, master's and doctoral degrees in national security, cybersecurity, economics and management.",
+      "longDescription": "The Academy of National and Information Security (ANIS) is a private higher-education institution in Plovdiv and the first private university in the city to specialise in security studies. It was established in 2003 as the College of Economics and Administration, upgraded to a higher school in 2015 as the Higher School of Security and Economics (ВУСИ / VUSI), and renamed the Academy of National and Information Security by a decision of the National Assembly in 2025.\n\nThe academy teaches across three professional directions — National Security, Economics, and Administration and Management — and awards Bachelor's, Master's and Doctoral degrees. Its portfolio is strongly security-focused: national security, counter-terrorism, crime prevention and public order, criminalistics, cybersecurity, security and intelligence, security and software technologies, security and artificial intelligence, and security and criminal psychology, alongside programmes in finance, accounting, digital marketing, business management and human-resources management.\n\nANIS holds institutional accreditation from the National Evaluation and Accreditation Agency (NEAA) with a score of 9.08 out of 10 (2023, valid for six years) and ISO 9001:2015 certification. Its modern campus of over 8,000 m² on Kuklensko Shose Blvd includes cybersecurity and forensics laboratories, a digital shooting range and martial-arts halls, and can host over 2,000 students, with additional offices in Sofia and Haskovo.\n\nAs a private academy it sets its own tuition, but runs one of Bulgaria's strongest social programmes — free or reduced tuition for students from care homes, children of fallen or injured Interior Ministry staff, and disadvantaged groups, plus merit scholarships and state-backed student loans. A career centre working with 100+ companies, an in-house IT Academy and an Erasmus+ Charter (2021–2027) round out the offer.",
+      "location": "Plovdiv, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "≈ €1,000 / year (indicative)",
+      "website": "https://www.anis.bg",
+      "applyUrl": "https://www.anis.bg/admissions/"
+    },
     "37": {
       "name": "Academy of Music, Dance and Fine Arts",
       "description": "Plovdiv's state academy of the arts (est. 1964) — the specialised higher school for music, dance and visual arts in southern Bulgaria, offering bachelor's, master's and doctoral degrees across performance, pedagogy, choreography, design and fine arts.",
@@ -4282,6 +4489,48 @@
     }
   },
   "universityProfiles": {
+    "39": {
+      "name": "University of Agribusiness and Rural Development",
+      "focus": "the economics and management of agribusiness, finance, accounting, and regional and rural development",
+      "style": "practical, leadership-focused training in full-time, part-time and distance forms, with an e-learning platform and career centre",
+      "careers": [
+        "Agribusiness economist / manager",
+        "Finance / banking specialist",
+        "Accountant / auditor",
+        "Regional / rural development expert",
+        "Entrepreneur / business owner",
+        "HR or project manager",
+        "Public administration specialist"
+      ],
+      "admissionNotes": [
+        "Admission by documents on the secondary-school diploma — no entrance exam",
+        "Full-time, part-time and distance forms of study",
+        "Online application through the candidate-student system",
+        "Scholarships, including a memorial grant for the founder Prof. D. Dimitrov",
+        "Separate procedure and diploma recognition for foreign applicants"
+      ]
+    },
+    "38": {
+      "name": "Academy of National and Information Security",
+      "focus": "national and information security, cybersecurity, intelligence, criminal psychology, and the economics and management of security",
+      "style": "applied, career-oriented training with cybersecurity and forensics labs, a shooting range, and strong employer links",
+      "careers": [
+        "Security / intelligence analyst",
+        "Cybersecurity specialist",
+        "Law-enforcement / public-order officer",
+        "Criminalist / forensic specialist",
+        "Counter-terrorism / risk officer",
+        "Finance / accounting professional",
+        "Business or HR manager"
+      ],
+      "admissionNotes": [
+        "Admission by documents — no entrance exam",
+        "Ranking by matriculation grade (or competitive essay) plus diploma average",
+        "Full-time and part-time forms, both four years",
+        "Strong social programme: free or reduced tuition for eligible groups",
+        "Separate procedure and diploma recognition for foreign applicants"
+      ]
+    },
     "37": {
       "name": "Academy of Music, Dance and Fine Arts",
       "focus": "music, dance and the visual arts — performance, pedagogy, choreography, design, and fine arts",
@@ -5188,6 +5437,30 @@
     }
   },
   "programTitles": {
+    "accounting": "Accounting",
+    "tourism-economics": "Tourism Economics",
+    "business-and-entrepreneurship": "Business and Entrepreneurship",
+    "economics-and-agribusiness-management": "Economics and Agribusiness Management",
+    "economics-and-education-management": "Economics and Education Management",
+    "social-economy-and-social-entrepreneurship": "Social Economy and Social Entrepreneurship",
+    "agribusiness-management": "Agribusiness Management",
+    "information-systems-management": "Information Systems Management",
+    "business-management-national-security": "Business Management (National Security)",
+    "food-and-nutrition-management": "Food and Nutrition Management",
+    "counter-terrorism": "Counter-Terrorism",
+    "crime-prevention-and-public-order-protection": "Crime Prevention and Public Order Protection",
+    "security-and-intelligence": "Security and Intelligence",
+    "security-and-criminal-psychology": "Security and Criminal Psychology",
+    "security-and-software-technologies": "Security and Software Technologies",
+    "security-and-artificial-intelligence": "Security and Artificial Intelligence",
+    "business-management-and-administration": "Business Management and Administration",
+    "criminalistics": "Criminalistics",
+    "customs-intelligence-and-investigation": "Customs Intelligence and Investigation",
+    "security-and-sport": "Security and Sport",
+    "economic-security": "Economic Security",
+    "food-security": "Food Security",
+    "currency-customs-and-tax-control": "Currency, Customs and Tax Control",
+    "financial-accounting-management-and-insurance": "Financial-Accounting Management and Insurance",
     "fine-arts-pedagogy": "Fine Arts Pedagogy",
     "performance-art-classical-instrument-or-classical-voice": "Performance Art (Classical Instrument or Classical Voice)",
     "performance-art-folk-instrument-or-folk-singing": "Performance Art (Folk Instrument or Folk Singing)",
