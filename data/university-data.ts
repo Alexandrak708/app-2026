@@ -434,6 +434,28 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "40",
+    rating: 4,
+    color: "#1c6b8a",
+    image: require("../assets/images/btu-burgas.jpg"),
+    category: "Engineering",
+    categories: ["Engineering", "Medical", "Economics", "Business"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
+  {
+    id: "41",
+    rating: 4,
+    color: "#2b5797",
+    image: require("../assets/images/bfu-burgas.jpg"),
+    category: "Law",
+    categories: ["Law", "Economics", "Business", "Engineering"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {

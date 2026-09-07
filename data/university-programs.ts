@@ -1296,6 +1296,108 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Food and Nutrition Management",
     ],
   },
+  "40": {
+    bachelor: [
+      "Nursing",
+      "Midwifery",
+      "Medical Assistant",
+      "Kinesitherapy",
+      "Health Care Management",
+      "Chemical Engineering",
+      "Chemical Technologies",
+      "Biotechnology",
+      "Food Biotechnology",
+      "Electronics",
+      "Electronic Systems in Industry and Medicine",
+      "Computer Systems and Technologies",
+      "Software Engineering",
+      "Engineering Materials",
+      "Technology of Water",
+      "Technology of Oil and Gas",
+      "Engineering and Technology in Transport",
+      "Marketing",
+      "Management",
+      "Industrial Management",
+      "Tourism",
+      "Bulgarian Philology",
+      "History and Philosophy",
+      "Preschool and Primary School Pedagogy",
+      "Social Pedagogy",
+      "Special Pedagogy",
+      "Chemistry",
+      "Ecology and Environmental Protection",
+    ],
+    master: [
+      "Medicine",
+      "Chemical Engineering",
+      "Organic Chemical Technology",
+      "Technology of Oil and Gas",
+      "Technology of Water",
+      "Technology of Materials and Materials Science",
+      "Technology of Silicates",
+      "Electronics",
+      "Electrical Engineering",
+      "Computer Systems and Technologies",
+      "Software Technology",
+      "Artificial Intelligence and Virtual Reality",
+      "Transport Engineering and Technology",
+      "Food, Nutrition and Dietetics",
+      "Cybersecurity in the Financial Sphere",
+      "Ecology and Environmental Management",
+      "Medical Chemistry",
+      "International Business Management",
+      "Financial Management of Enterprise",
+      "Marketing Management",
+      "Tourism Management",
+      "Management and Development of Human Resources",
+      "Administration and Management in the Public Sector",
+      "Health Management",
+      "Health Care Management",
+      "Health Tourism",
+    ],
+  },
+  "41": {
+    bachelor: [
+      "Law",
+      "Accounting and Finance",
+      "Marketing and Digital Communications",
+      "Business Management and International Economics",
+      "Software Engineering",
+      "Computer Systems and Technologies",
+      "Systems Engineering in Industry and Tourism",
+      "Electricity Supply and Electrical Equipment",
+      "Psychology",
+      "Preschool and Primary School Pedagogy",
+    ],
+    master: [
+      "Law",
+      "Administration and Management of the National Security System",
+      "State and Local Administration",
+      "Maritime Law and Coastal Territory Management",
+      "Finance",
+      "Accounting and Control",
+      "Marketing",
+      "Business Administration",
+      "Health Management",
+      "Real Estate Business",
+      "Circular Economy",
+      "International Business and Management",
+      "Aviation Management",
+      "Application Programming",
+      "Artificial Intelligence",
+      "Business Information Technologies",
+      "Integrated Computer Systems and Complexes",
+      "Engineering and Exploitation of Energy Systems",
+      "Forensic Engineering and Technical Expertise",
+      "Fire Safety and Fire Protection Equipment",
+      "Design and Control of Air and Sea Drones",
+      "Psychological Counseling",
+      "Child and Adolescent Psychology",
+      "Preschool and Primary School Pedagogy",
+      "Primary School Pedagogy and Foreign Language",
+      "Innovation and Entrepreneurship in Primary School",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1887,6 +1989,32 @@ function getUardProgramInfo(programSlug: string): { tuition?: string; facultyKey
   };
 }
 
+function getBtuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`btu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getBfuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`bfu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -2259,6 +2387,26 @@ function getVusiFaculty(facultyKey: string): string | null {
 
 function getUardFaculty(facultyKey: string): string | null {
   const name = i18n.t(`uard_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getBtuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`btu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getBfuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`bfu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2655,6 +2803,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (uardInfo.tuition) summary.tuition = uardInfo.tuition;
         if (uardInfo.facultyKey) {
           const facultyName = getUardFaculty(uardInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "40") {
+      const btuInfo = getBtuProgramInfo(slug);
+      if (btuInfo) {
+        if (btuInfo.tuition) summary.tuition = btuInfo.tuition;
+        if (btuInfo.facultyKey) {
+          const facultyName = getBtuFaculty(btuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "41") {
+      const bfuInfo = getBfuProgramInfo(slug);
+      if (bfuInfo) {
+        if (bfuInfo.tuition) summary.tuition = bfuInfo.tuition;
+        if (bfuInfo.facultyKey) {
+          const facultyName = getBfuFaculty(bfuInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3118,6 +3284,26 @@ export function buildProgramDetail(
       if (uardInfo.tuition) result.tuition = uardInfo.tuition;
       if (uardInfo.facultyKey) {
         const facultyName = getUardFaculty(uardInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "40" && normalizedSlug) {
+    const btuInfo = getBtuProgramInfo(normalizedSlug);
+
+    if (btuInfo) {
+      if (btuInfo.tuition) result.tuition = btuInfo.tuition;
+      if (btuInfo.facultyKey) {
+        const facultyName = getBtuFaculty(btuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "41" && normalizedSlug) {
+    const bfuInfo = getBfuProgramInfo(normalizedSlug);
+
+    if (bfuInfo) {
+      if (bfuInfo.tuition) result.tuition = bfuInfo.tuition;
+      if (bfuInfo.facultyKey) {
+        const facultyName = getBfuFaculty(bfuInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
