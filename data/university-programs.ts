@@ -1398,6 +1398,20 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Innovation and Entrepreneurship in Primary School",
     ],
   },
+  "42": {
+    bachelor: [
+      "Painting",
+      "Graphics",
+      "Book, Illustration, Print Graphics",
+      "Poster and Visual Communication",
+      "Fashion Design",
+    ],
+    master: [
+      "Art Therapy",
+      "Photography",
+      "Cultural Heritage of the Bulgarian Black Sea",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2015,6 +2029,19 @@ function getBfuProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getNhabProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nhab_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -2407,6 +2434,16 @@ function getBtuFaculty(facultyKey: string): string | null {
 
 function getBfuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`bfu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNhabFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nhab_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2821,6 +2858,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (bfuInfo.tuition) summary.tuition = bfuInfo.tuition;
         if (bfuInfo.facultyKey) {
           const facultyName = getBfuFaculty(bfuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "42") {
+      const nhabInfo = getNhabProgramInfo(slug);
+      if (nhabInfo) {
+        if (nhabInfo.tuition) summary.tuition = nhabInfo.tuition;
+        if (nhabInfo.facultyKey) {
+          const facultyName = getNhabFaculty(nhabInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3304,6 +3350,16 @@ export function buildProgramDetail(
       if (bfuInfo.tuition) result.tuition = bfuInfo.tuition;
       if (bfuInfo.facultyKey) {
         const facultyName = getBfuFaculty(bfuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "42" && normalizedSlug) {
+    const nhabInfo = getNhabProgramInfo(normalizedSlug);
+
+    if (nhabInfo) {
+      if (nhabInfo.tuition) result.tuition = nhabInfo.tuition;
+      if (nhabInfo.facultyKey) {
+        const facultyName = getNhabFaculty(nhabInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

@@ -1,4 +1,18 @@
 {
+  "nhab_faculties": {
+    "fine": "Fine Arts",
+    "design": "Design"
+  },
+  "nhab_programInfo": {
+    "painting": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "fine" },
+    "graphics": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "fine" },
+    "book-illustration-print-graphics": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "fine" },
+    "photography": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "fine" },
+    "art-therapy": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "fine" },
+    "cultural-heritage-of-the-bulgarian-black-sea": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "fine" },
+    "poster-and-visual-communication": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "design" },
+    "fashion-design": { "tuition": "≈ €350–€520/yr (BG/EU) · €3,000/yr (foreign)", "facultyKey": "design" }
+  },
   "bfu_faculties": {
     "law": "Centre for Legal Sciences",
     "econ": "Centre for Economic and Management Sciences",
@@ -726,6 +740,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "42": {
+      "yearsTradition": "8",
+      "bachelorPrograms": "5",
+      "masterPrograms": "3",
+      "internationalPartners": "30+",
+      "countries": "10+",
+      "studentsGraduated": "200+",
+      "labs": "8",
+      "labsText": "Ateliers & studios",
+      "tuitionFreeLabel": "1896",
+      "tuitionFreeText": "Part of NHA (founded 1896)"
+    },
     "41": {
       "yearsTradition": "35+",
       "bachelorPrograms": "10",
@@ -1217,6 +1243,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "42": [
+      {
+        "range": "€350–€520",
+        "label": "State-subsidised / year (BG/EU, indicative)"
+      },
+      {
+        "range": "€3,000",
+        "label": "Foreign students / year (indicative)"
+      },
+      {
+        "range": "5 + 3",
+        "label": "Bachelor + Master specialties"
+      },
+      {
+        "range": "Est. 2018",
+        "label": "First branch of NHA"
+      }
+    ],
     "41": [
       {
         "range": "€1,800",
@@ -1957,6 +2001,43 @@
     ]
   },
   "universityExtra": {
+    "nhab_scholarshipsDesc": "As part of a state art academy, the Burgas branch offers state and mobility scholarships:",
+    "nhab_merit": "Merit scholarships from the state budget for strong academic and exam results",
+    "nhab_social": "Social scholarships for students from low-income families and special-support groups",
+    "nhab_talent": "Support and awards for prize-winners at art competitions and exhibitions",
+    "nhab_erasmus": "Erasmus+ mobility grants through the National Academy of Art",
+    "nhab_phd": "Research support and doctoral opportunities via the main academy in Sofia",
+    "nhab_applicationDesc": "Admission is by competitive creative-aptitude exams, specialty by specialty:",
+    "nhab_appExams": "Specialty exams — drawing, painting, composition or design tasks",
+    "nhab_appPortfolio": "A portfolio of own works is usually required or advantageous",
+    "nhab_appOnline": "Application through the National Academy of Art's candidate-student system",
+    "nhab_appDocuments": "Secondary-school diploma, application form and proof of exam-fee payment",
+    "nhab_appForeign": "Separate procedure for foreign applicants, with diploma recognition",
+    "nhab_feesTitle": "Tuition & Fees",
+    "nhab_feesDesc": "As a state academy, fees are modest for Bulgarian and EU students; amounts are indicative — confirm with the academy:",
+    "nhab_feeState": "State-subsidised places: roughly €350–€520 per year for Bulgarian and EU students",
+    "nhab_feePaid": "A paid form of study is available in some specialties at a moderate annual fee",
+    "nhab_feeForeign": "Foreign (non-EU) students: around €3,000 per year (indicative)",
+    "nhab_feeExam": "A creative-aptitude entrance-exam fee applies per specialty",
+    "nhab_feeDiploma": "Diplomas are issued by the National Academy of Art, Sofia",
+    "nhab_campus": "Campus & Facilities",
+    "nhab_campusDesc": "The branch occupies a renovated art space in the Port of Burgas:",
+    "nhab_location": "\"Magaziya 1\", free-access zone of the Port of Burgas",
+    "nhab_magazia": "A modern building refurbished with support from the Municipality of Burgas",
+    "nhab_studios": "Painting and design studios, lecture halls and workshops",
+    "nhab_exhibitions": "Exhibition space, plein-air sessions and coast-linked art projects",
+    "nhab_parent": "Part of the National Academy of Art — its first territorial branch (2018)",
+    "nhab_partnersDesc": "The branch is embedded in the academy and the cultural life of the coast:",
+    "nhab_nha": "Full part of the National Academy of Art, Sofia (founded 1896)",
+    "nhab_municipality": "Developed together with the Municipality of Burgas",
+    "nhab_blackSea": "Projects on the cultural heritage of the Bulgarian Black Sea",
+    "nhab_erasmusPartners": "Erasmus+ partnerships and exchanges through the main academy",
+    "nhab_internationalDesc": "The Burgas branch welcomes international art students:",
+    "nhab_englishTaught": "Individual and studio tuition can be arranged in English for foreign students",
+    "nhab_prep": "A Bulgarian-language and specialised preparatory year before degree study",
+    "nhab_erasmusMobility": "Erasmus+ study and traineeship mobility with European art academies",
+    "nhab_intake": "Autumn intake with guidance throughout the creative exams",
+    "nhab_recognition": "State-recognised National Academy of Art diplomas, valid across the EU",
     "bfu_scholarshipsDesc": "BFU supports students with scholarships and financing options:",
     "bfu_merit": "Merit scholarships for students with strong academic results",
     "bfu_social": "Social support and discounts for students in difficult circumstances",
@@ -4330,6 +4411,16 @@
     }
   },
   "universities": {
+    "42": {
+      "name": "National Academy of Art – Burgas Branch",
+      "description": "The Black Sea branch of Bulgaria's National Academy of Art (opened 2018) — the academy's first territorial branch, teaching painting, graphics, illustration, poster and visual communication, fashion design, photography and art therapy at the Port of Burgas.",
+      "longDescription": "The National Academy of Art – Burgas Branch is the first territorial branch in the more than 120-year history of Bulgaria's National Academy of Art (NHA), which was founded in Sofia in 1896. The branch was created by Decree No. 16 of the Council of Ministers on 5 February 2018 and brings the academy's studio-based art education to the Black Sea coast.\n\nIt is housed on a renovated floor of \"Magaziya 1\", a modern building in the free-access zone of the Port of Burgas, with painting and design studios, lecture halls and exhibition space refurbished with support from the Municipality of Burgas. Students receive diplomas of the National Academy of Art and study in the academy's atelier tradition, taught by NHA lecturers and visiting artists.\n\nThe branch offers bachelor's studies in Painting, Graphics, Book/Illustration/Print Graphics, Poster and Visual Communication, and Fashion Design, and master's programmes in Art Therapy, Photography, and Cultural Heritage of the Bulgarian Black Sea. Teaching is practical and studio-centred, with exhibitions, plein-air sessions and projects tied to the cultural life of Burgas and the coast.\n\nAs part of a state academy, tuition for Bulgarian and EU students on state-subsidised places is modest (indicatively €350–€520 per year), with higher fees for foreign students; admission is by competitive creative-aptitude exams. The branch shares the National Academy of Art's accreditation, Erasmus+ mobility and academic standing.",
+      "location": "Burgas, Bulgaria",
+      "degree": "Bachelor / Master",
+      "tuitionRange": "€350 - €520 / year (BG/EU)",
+      "website": "https://nha.bg/bg/kategoriq/filial-burgas",
+      "applyUrl": "https://nha.bg/bg/kategoriq/filial-burgas"
+    },
     "41": {
       "name": "Burgas Free University",
       "description": "One of Bulgaria's first private universities (est. 1991), in Burgas — bachelor's, master's and doctoral degrees in law, economics and management, computer science and engineering, and the humanities, with a strong international profile.",
@@ -4742,6 +4833,27 @@
     }
   },
   "universityProfiles": {
+    "42": {
+      "name": "National Academy of Art – Burgas Branch",
+      "focus": "the visual arts — painting, graphics, illustration, poster and visual communication, fashion design, photography and art therapy",
+      "style": "studio- and atelier-based training with exhibitions, plein-air sessions and projects on the Burgas coast",
+      "careers": [
+        "Painter / fine artist",
+        "Graphic artist / illustrator",
+        "Poster & visual-communication designer",
+        "Fashion designer",
+        "Photographer",
+        "Art therapist",
+        "Cultural-heritage specialist"
+      ],
+      "admissionNotes": [
+        "Admission by competitive creative-aptitude exams for each specialty",
+        "A portfolio and practical drawing/composition tasks are typical",
+        "Diplomas are issued by the National Academy of Art",
+        "State-subsidised and paid places; higher fees for foreign students",
+        "Separate procedure and diploma recognition for foreign applicants"
+      ]
+    },
     "41": {
       "name": "Burgas Free University",
       "focus": "law, economics and management, computer science and engineering, and the humanities — including psychology and pedagogy",
@@ -5732,6 +5844,8 @@
     }
   },
   "programTitles": {
+    "book-illustration-print-graphics": "Book, Illustration, Print Graphics",
+    "cultural-heritage-of-the-bulgarian-black-sea": "Cultural Heritage of the Bulgarian Black Sea",
     "marketing-and-digital-communications": "Marketing and Digital Communications",
     "business-management-and-international-economics": "Business Management and International Economics",
     "systems-engineering-in-industry-and-tourism": "Systems Engineering in Industry and Tourism",

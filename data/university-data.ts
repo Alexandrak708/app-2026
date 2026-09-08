@@ -456,6 +456,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "42",
+    rating: 5,
+    color: "#9c4a6e",
+    image: require("../assets/images/nha-burgas.jpg"),
+    category: "Arts",
+    categories: ["Arts"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
