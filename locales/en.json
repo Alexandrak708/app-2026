@@ -1,4 +1,81 @@
 {
+  "nvu_faculties": {
+    "security": "Faculty of Security and Defence",
+    "logistics": "Faculty of Logistics and Technologies",
+    "artillery": "Faculty of Artillery, Air Defence and CIS (Shumen)",
+    "aviation": "Aviation Faculty (Dolna Mitropolia)"
+  },
+  "nvu_programInfo": {
+    "population-and-infrastructure-protection": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "national-and-regional-security": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "disaster-and-emergency-protection": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "administrative-and-information-security": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "e-governance-security": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "organization-and-management-of-military-formations": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "corporate-security": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "crisis-management": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "classified-information-protection": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
+    "economic-logistics": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "logistics" },
+    "industrial-management": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "logistics" },
+    "automotive-engineering-and-transport-logistics": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "logistics" },
+    "mechatronics": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "logistics" },
+    "technological-entrepreneurship": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "logistics" },
+    "telecommunications": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "computer-systems-and-cybersecurity": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "explosives-and-ammunition": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "cybersecurity": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "artificial-intelligence": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "computer-systems-and-technologies": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "outsourcing-and-cybersecurity": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
+    "aviation-equipment-and-technologies": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "aviation" },
+    "air-traffic-management": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "aviation" }
+  },
+  "uvt_faculties": {
+    "hist": "Historical Faculty",
+    "phil": "Philological Faculty",
+    "philosophy": "Faculty of Philosophy",
+    "theology": "Faculty of Orthodox Theology",
+    "law": "Faculty of Law",
+    "econ": "Faculty of Economics",
+    "mathinf": "Faculty of Mathematics and Informatics",
+    "arts": "Faculty of Fine Arts",
+    "edu": "Faculty of Education"
+  },
+  "uvt_programInfo": {
+    "history": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "hist" },
+    "archaeology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "hist" },
+    "bulgarian-history": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "hist" },
+    "bulgarian-philology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "phil" },
+    "english-philology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "phil" },
+    "applied-linguistics": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "phil" },
+    "bulgarian-language-and-literature": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "phil" },
+    "english-studies": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "phil" },
+    "philosophy": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "philosophy" },
+    "psychology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "philosophy" },
+    "sociology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "philosophy" },
+    "clinical-psychology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "philosophy" },
+    "european-studies": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "philosophy" },
+    "theology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "theology" },
+    "orthodox-theology": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "theology" },
+    "law": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "law" },
+    "economics": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "tourism": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "accounting-and-finance": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "marketing": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "public-administration": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "finance": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "tourism-management": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "accounting-and-control": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "econ" },
+    "informatics": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "mathinf" },
+    "computer-science": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "mathinf" },
+    "software-engineering": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "mathinf" },
+    "information-systems": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "mathinf" },
+    "painting": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "arts" },
+    "graphic-design": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "arts" },
+    "preschool-and-primary-school-pedagogy": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "edu" },
+    "social-pedagogy": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "edu" },
+    "educational-management": { "tuition": "≈ €350–€540/yr (BG/EU, indicative)", "facultyKey": "edu" }
+  },
   "nhab_faculties": {
     "fine": "Fine Arts",
     "design": "Design"
@@ -740,6 +817,30 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "44": {
+      "yearsTradition": "140+",
+      "bachelorPrograms": "15",
+      "masterPrograms": "20+",
+      "internationalPartners": "30+",
+      "countries": "10+",
+      "studentsGraduated": "50K+",
+      "labs": "4",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "1878",
+      "tuitionFreeText": "Bulgaria's first military school"
+    },
+    "43": {
+      "yearsTradition": "60+",
+      "bachelorPrograms": "50+",
+      "masterPrograms": "100+",
+      "internationalPartners": "100+",
+      "countries": "20+",
+      "studentsGraduated": "100K+",
+      "labs": "9",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "2nd",
+      "tuitionFreeText": "Bulgaria's 2nd university (1971)"
+    },
     "42": {
       "yearsTradition": "8",
       "bachelorPrograms": "5",
@@ -1243,6 +1344,42 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "44": [
+      {
+        "range": "€0",
+        "label": "Cadets — funded by the Ministry of Defence"
+      },
+      {
+        "range": "€550–€650",
+        "label": "Civilian / year (most programmes, indicative)"
+      },
+      {
+        "range": "€800–€1,200",
+        "label": "Master / year (indicative)"
+      },
+      {
+        "range": "Higher",
+        "label": "Selected specialised programmes"
+      }
+    ],
+    "43": [
+      {
+        "range": "€350–€540",
+        "label": "State-subsidised / year (BG/EU, indicative)"
+      },
+      {
+        "range": "Higher",
+        "label": "Law, arts & regulated fields"
+      },
+      {
+        "range": "≈ €3,000",
+        "label": "Foreign students / year (indicative)"
+      },
+      {
+        "range": "Est. 1963",
+        "label": "University status since 1971"
+      }
+    ],
     "42": [
       {
         "range": "€350–€520",
@@ -2001,6 +2138,80 @@
     ]
   },
   "universityExtra": {
+    "nvu_scholarshipsDesc": "As a state military university, NVU funds cadets and offers scholarships to civilians:",
+    "nvu_cadets": "Cadets are fully funded by the Ministry of Defence — no tuition, plus salary and board",
+    "nvu_merit": "Merit scholarships from the state budget for strong civilian students",
+    "nvu_social": "Social scholarships for civilian students from special-support groups",
+    "nvu_erasmus": "Erasmus+ mobility and military-exchange opportunities in Europe",
+    "nvu_hostels": "Cadet barracks and student dormitories, canteens and sports facilities",
+    "nvu_applicationDesc": "Admission differs for cadets and civilian students:",
+    "nvu_appCadet": "Cadets: competitive exams plus medical, physical-fitness and psychological screening",
+    "nvu_appCivilian": "Civilians: by state matriculation results or a university entrance exam",
+    "nvu_appMedical": "Cadets must meet military medical-fitness and age requirements",
+    "nvu_appDocuments": "Secondary-school diploma, application and the required documents",
+    "nvu_appDeadline": "Summer application campaign with a set deadline (around July–September)",
+    "nvu_feesTitle": "Tuition & Fees",
+    "nvu_feesDesc": "Cadets study tuition-free; civilian fees are per year and indicative — confirm with admissions:",
+    "nvu_feeCadet": "Cadets (military students): no tuition — funded by the Ministry of Defence",
+    "nvu_feeCivilian": "Civilian bachelor: roughly €550–€650 per year for most programmes",
+    "nvu_feeSpecial": "A few specialised programmes carry higher fees (e.g. up to €1,600–€3,150)",
+    "nvu_feeMaster": "Master's programmes: roughly €800–€1,200 per year",
+    "nvu_feeForeign": "Foreign students by separate arrangement, incl. NATO partner schemes",
+    "nvu_campus": "Campus & Facilities",
+    "nvu_campusDesc": "NVU spans three cities, each with its own military faculty:",
+    "nvu_location": "Headquarters at 76 Bulgaria Blvd, Veliko Tarnovo",
+    "nvu_faculties": "Faculties of Security & Defence and of Logistics & Technologies (Veliko Tarnovo)",
+    "nvu_shumen": "Faculty of Artillery, Air Defence and CIS in Shumen",
+    "nvu_aviation": "Aviation Faculty in Dolna Mitropolia (near Pleven), with an airfield",
+    "nvu_ranges": "Training ranges, drill grounds and engineering, CIS and cyber laboratories",
+    "nvu_partnersDesc": "NVU is tied to the Bulgarian Armed Forces and to NATO:",
+    "nvu_mod": "Trains officers for the Bulgarian Army under the Ministry of Defence",
+    "nvu_nato": "Active NATO cooperation, standards and interoperability training",
+    "nvu_joint": "Joint civilian master's programmes with Southwest University \"Neofit Rilski\"",
+    "nvu_heritage": "Continues the tradition of Bulgaria's first military school (1878)",
+    "nvu_internationalDesc": "NVU hosts international and NATO-partner students:",
+    "nvu_natoStudents": "Places for cadets and officers from NATO and partner nations",
+    "nvu_englishTaught": "Selected courses and modules available in English",
+    "nvu_erasmusMobility": "Erasmus+ and military academic exchange with European institutions",
+    "nvu_intake": "Summer intake with guidance for cadet and civilian candidates",
+    "nvu_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
+    "uvt_scholarshipsDesc": "As a state university, VTU offers state and mobility scholarships and student housing:",
+    "uvt_merit": "Merit scholarships from the state budget for strong exam results, each semester",
+    "uvt_social": "Social scholarships for students from low-income families and special-support groups",
+    "uvt_erasmus": "Erasmus+ mobility grants for study and traineeships across Europe",
+    "uvt_phd": "State scholarships and research funding for doctoral (PhD) students",
+    "uvt_hostels": "Affordable places in student dormitories in Veliko Tarnovo",
+    "uvt_applicationDesc": "Admission is competitive, for secondary-school graduates, in several rounds:",
+    "uvt_appExam": "Ranking by state matriculation results or a university entrance exam by field",
+    "uvt_appMatura": "Fine-arts specialties require a creative-aptitude exam and a portfolio",
+    "uvt_appOnline": "Online application and candidate account, plus on-site submission",
+    "uvt_appDocuments": "Secondary-school diploma, application form and supporting documents",
+    "uvt_appForeign": "Separate procedure for foreign applicants, with diploma recognition and a Bulgarian-language check",
+    "uvt_feesTitle": "Tuition & Fees",
+    "uvt_feesDesc": "State-subsidised fees are modest and vary by field; amounts are per year and indicative — confirm with admissions:",
+    "uvt_feeState": "State-subsidised places: roughly €350–€540 per year for Bulgarian and EU students",
+    "uvt_feePaid": "Paid places are available in many specialties at a moderate annual fee",
+    "uvt_feeForeign": "Foreign (non-EU) students: around €3,000 per year (indicative)",
+    "uvt_feeBranches": "Programmes also offered at the Vratsa and Pleven branches",
+    "uvt_feeInstallments": "Tuition is normally paid per semester, in instalments",
+    "uvt_campus": "Campus & Facilities",
+    "uvt_campusDesc": "VTU sits in the historic old capital, with faculties across the city:",
+    "uvt_location": "Main building at 2 Teodosiy Tarnovski St, Veliko Tarnovo",
+    "uvt_faculties": "Faculties in history, philology, philosophy, theology, law, economics, mathematics & informatics, fine arts and education",
+    "uvt_branches": "Affiliates in Vratsa and Pleven",
+    "uvt_library": "A large university library and Slavic-studies research centres",
+    "uvt_hostels2": "Student dormitories, canteens and sports facilities",
+    "uvt_partnersDesc": "VTU is a major centre of Bulgarian humanities and Slavic studies:",
+    "uvt_heritage": "The second university founded in Bulgaria (university status 1971)",
+    "uvt_erasmusPartners": "Erasmus+ partnerships and international projects across Europe",
+    "uvt_research": "Renowned for history, archaeology, philology and theology research",
+    "uvt_arts": "A distinguished Faculty of Fine Arts with exhibitions and plein-air work",
+    "uvt_internationalDesc": "VTU welcomes international students, especially in Slavic and Bulgarian studies:",
+    "uvt_englishTaught": "Selected programmes and courses available in English",
+    "uvt_prep": "A one-year Bulgarian-language preparatory course for foreign students",
+    "uvt_intake": "Autumn intake with international-office guidance throughout the application",
+    "uvt_slavic": "A leading destination for Bulgarian language, Slavic studies and theology",
+    "uvt_recognition": "State-recognised Bulgarian diplomas, valid across the EU",
     "nhab_scholarshipsDesc": "As part of a state art academy, the Burgas branch offers state and mobility scholarships:",
     "nhab_merit": "Merit scholarships from the state budget for strong academic and exam results",
     "nhab_social": "Social scholarships for students from low-income families and special-support groups",
@@ -4411,6 +4622,26 @@
     }
   },
   "universities": {
+    "44": {
+      "name": "Vasil Levski National Military University",
+      "description": "Bulgaria's national military university (formed 2002, heritage from 1878), based in Veliko Tarnovo with faculties in Shumen and Dolna Mitropolia — military and civilian degrees in security and defence, logistics, aviation, artillery, communications and cybersecurity.",
+      "longDescription": "Vasil Levski National Military University (NVU) is Bulgaria's national military higher-education institution, headquartered in Veliko Tarnovo. Its heritage goes back to the first Bulgarian military school, founded in 1878 in Sofia; the modern university was formed on 14 June 2002 by merging three military schools — in Veliko Tarnovo, Shumen and Dolna Mitropolia — and is named after the national hero Vasil Levski.\n\nThe university trains both officer cadets and civilian students across faculties of Security and Defence and of Logistics and Technologies (in Veliko Tarnovo), the Faculty of Artillery, Air Defence and Communication and Information Systems (in Shumen), and the Aviation Faculty (in Dolna Mitropolia). It awards Bachelor's, Master's and Doctoral degrees, plus a professional-sergeant college.\n\nMilitary (cadet) specialties centre on the organisation and command of military formations, artillery and air defence, aviation and communications; a broad civilian portfolio covers national and regional security, protection of the population and infrastructure, crisis management, logistics and industrial management, automotive and transport engineering, telecommunications, computer systems and cybersecurity, mechatronics, and aviation equipment and air-traffic management.\n\nCadets are funded by the Ministry of Defence and study without tuition, receiving a salary and full board, while civilian students study in state-subsidised or paid places (paid civilian fees are roughly €550–€650 per year for most programmes, higher for a few). The university is closely tied to the Bulgarian Armed Forces and NATO, with training ranges, airfields and modern laboratories.",
+      "location": "Veliko Tarnovo, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "€0 (cadets) - €650 / year (civilian)",
+      "website": "https://nvu.bg",
+      "applyUrl": "https://nvu.bg/bg/priem"
+    },
+    "43": {
+      "name": "University of Veliko Tarnovo \"St. Cyril and St. Methodius\"",
+      "description": "Bulgaria's second-oldest classical university (est. 1963), in Veliko Tarnovo — a large public university strong in the humanities, history, philology, theology, fine arts, law, economics and informatics, with bachelor's, master's and doctoral degrees.",
+      "longDescription": "The University of Veliko Tarnovo \"St. Cyril and St. Methodius\" (VTU) is a large classical public university in the old Bulgarian capital of Veliko Tarnovo. It was founded in 1963 as a Higher Pedagogical Institute and elevated to university status in 1971, becoming the second university in Bulgaria after Sofia University. It is named after the creators of the Slavonic (Cyrillic) alphabet, Saints Cyril and Methodius.\n\nThe university is organised into faculties covering the humanities and beyond — Historical, Philological, Philosophy, Orthodox Theology, Law, Economics, Mathematics and Informatics, Fine Arts, and Education — and awards Bachelor's, Master's and Doctoral degrees. It is especially renowned for history and archaeology, Bulgarian and foreign philology, theology and fine arts, alongside strong programmes in law, economics and tourism, informatics and computer science, pedagogy and psychology.\n\nBeyond its main campus in Veliko Tarnovo, the university has affiliates in Vratsa and Pleven. Teaching combines classical academic traditions with fieldwork — archaeological digs, plein-air art sessions, teaching practice and moot courts — supported by a large academic library and student dormitories.\n\nAs a state university, tuition for Bulgarian and EU students on state-subsidised places is modest (indicatively €350–€540 per year, varying by field), with higher fees for foreign students; scholarships, dormitories and Erasmus+ mobility support students. VTU is a major centre of Bulgarian humanities scholarship and Slavic studies.",
+      "location": "Veliko Tarnovo, Bulgaria",
+      "degree": "Bachelor / Master / Doctoral",
+      "tuitionRange": "≈ €350 - €540 / year (BG/EU)",
+      "website": "https://www.uni-vt.bg",
+      "applyUrl": "https://www.uni-vt.bg/bul/"
+    },
     "42": {
       "name": "National Academy of Art – Burgas Branch",
       "description": "The Black Sea branch of Bulgaria's National Academy of Art (opened 2018) — the academy's first territorial branch, teaching painting, graphics, illustration, poster and visual communication, fashion design, photography and art therapy at the Port of Burgas.",
@@ -4833,6 +5064,48 @@
     }
   },
   "universityProfiles": {
+    "44": {
+      "name": "Vasil Levski National Military University",
+      "focus": "national security and defence, military command, logistics, aviation, artillery, communications and cybersecurity",
+      "style": "military and applied training with cadet drill, ranges, airfields, and modern engineering and CIS laboratories",
+      "careers": [
+        "Army / Air Force officer",
+        "Security & defence specialist",
+        "Logistics / industrial manager",
+        "Communications / CIS engineer",
+        "Cybersecurity specialist",
+        "Aviation / air-traffic specialist",
+        "Crisis-management / emergency officer"
+      ],
+      "admissionNotes": [
+        "Cadet admission includes medical, physical and psychological screening and exams",
+        "Civilian admission by state matriculation results or a university exam",
+        "Cadets are funded by the Ministry of Defence and study tuition-free",
+        "Application in the summer, with a set deadline",
+        "Separate procedure for foreign (incl. NATO partner) applicants"
+      ]
+    },
+    "43": {
+      "name": "University of Veliko Tarnovo \"St. Cyril and St. Methodius\"",
+      "focus": "the humanities, history and archaeology, philology and languages, theology, fine arts, law, economics, and informatics",
+      "style": "classical academic teaching with archaeological fieldwork, plein-air art, teaching practice and moot courts",
+      "careers": [
+        "Historian / archaeologist",
+        "Philologist / translator / teacher",
+        "Lawyer / legal adviser",
+        "Economist / tourism specialist",
+        "Software developer / IT specialist",
+        "Artist / designer",
+        "Theologian / psychologist / pedagogue"
+      ],
+      "admissionNotes": [
+        "Admission by state matriculation results or a university entrance exam, depending on the specialty",
+        "Fine-arts specialties require creative-aptitude exams and a portfolio",
+        "Online and on-site application in several rounds",
+        "State-subsidised and paid places; higher fees for foreign students",
+        "Separate procedure and diploma recognition for foreign applicants"
+      ]
+    },
     "42": {
       "name": "National Academy of Art – Burgas Branch",
       "focus": "the visual arts — painting, graphics, illustration, poster and visual communication, fashion design, photography and art therapy",
@@ -5844,6 +6117,28 @@
     }
   },
   "programTitles": {
+    "economic-logistics": "Economic Logistics",
+    "population-and-infrastructure-protection": "Population and Infrastructure Protection",
+    "automotive-engineering-and-transport-logistics": "Automotive Engineering and Transport Logistics",
+    "national-and-regional-security": "National and Regional Security",
+    "disaster-and-emergency-protection": "Disaster and Emergency Protection",
+    "administrative-and-information-security": "Administrative and Information Security",
+    "computer-systems-and-cybersecurity": "Computer Systems and Cybersecurity",
+    "e-governance-security": "E-Governance Security",
+    "explosives-and-ammunition": "Explosives and Ammunition",
+    "organization-and-management-of-military-formations": "Organization and Management of Military Formations",
+    "aviation-equipment-and-technologies": "Aviation Equipment and Technologies",
+    "air-traffic-management": "Air Traffic Management",
+    "corporate-security": "Corporate Security",
+    "crisis-management": "Crisis Management",
+    "classified-information-protection": "Classified Information Protection",
+    "outsourcing-and-cybersecurity": "Outsourcing and Cybersecurity",
+    "technological-entrepreneurship": "Technological Entrepreneurship",
+    "archaeology": "Archaeology",
+    "theology": "Theology",
+    "bulgarian-history": "Bulgarian History",
+    "bulgarian-language-and-literature": "Bulgarian Language and Literature",
+    "orthodox-theology": "Orthodox Theology",
     "book-illustration-print-graphics": "Book, Illustration, Print Graphics",
     "cultural-heritage-of-the-bulgarian-black-sea": "Cultural Heritage of the Bulgarian Black Sea",
     "marketing-and-digital-communications": "Marketing and Digital Communications",

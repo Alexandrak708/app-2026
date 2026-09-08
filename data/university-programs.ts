@@ -1412,6 +1412,87 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Cultural Heritage of the Bulgarian Black Sea",
     ],
   },
+  "43": {
+    bachelor: [
+      "History",
+      "Archaeology",
+      "Bulgarian Philology",
+      "English Philology",
+      "Applied Linguistics",
+      "Philosophy",
+      "Psychology",
+      "Sociology",
+      "Theology",
+      "Law",
+      "Economics",
+      "Tourism",
+      "Accounting and Finance",
+      "Marketing",
+      "Public Administration",
+      "Informatics",
+      "Computer Science",
+      "Software Engineering",
+      "Painting",
+      "Graphic Design",
+      "Preschool and Primary School Pedagogy",
+      "Social Pedagogy",
+    ],
+    master: [
+      "Bulgarian History",
+      "Archaeology",
+      "Bulgarian Language and Literature",
+      "English Studies",
+      "Clinical Psychology",
+      "European Studies",
+      "Orthodox Theology",
+      "Law",
+      "Finance",
+      "Tourism Management",
+      "Public Administration",
+      "Accounting and Control",
+      "Information Systems",
+      "Software Engineering",
+      "Painting",
+      "Educational Management",
+    ],
+  },
+  "44": {
+    bachelor: [
+      "Economic Logistics",
+      "Industrial Management",
+      "Population and Infrastructure Protection",
+      "Automotive Engineering and Transport Logistics",
+      "National and Regional Security",
+      "Disaster and Emergency Protection",
+      "Administrative and Information Security",
+      "Telecommunications",
+      "Computer Systems and Cybersecurity",
+      "E-Governance Security",
+      "Mechatronics",
+      "Explosives and Ammunition",
+      "Organization and Management of Military Formations",
+      "Aviation Equipment and Technologies",
+      "Air Traffic Management",
+    ],
+    master: [
+      "National and Regional Security",
+      "Population and Infrastructure Protection",
+      "Corporate Security",
+      "Crisis Management",
+      "Classified Information Protection",
+      "Economic Logistics",
+      "Industrial Management",
+      "Automotive Engineering and Transport Logistics",
+      "Cybersecurity",
+      "Artificial Intelligence",
+      "Computer Systems and Technologies",
+      "Aviation Equipment and Technologies",
+      "Air Traffic Management",
+      "Outsourcing and Cybersecurity",
+      "Technological Entrepreneurship",
+      "Organization and Management of Military Formations",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2042,6 +2123,32 @@ function getNhabProgramInfo(programSlug: string): { tuition?: string; facultyKey
   };
 }
 
+function getUvtProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uvt_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getNvuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nvu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -2444,6 +2551,26 @@ function getBfuFaculty(facultyKey: string): string | null {
 
 function getNhabFaculty(facultyKey: string): string | null {
   const name = i18n.t(`nhab_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUvtFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uvt_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNvuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nvu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2867,6 +2994,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (nhabInfo.tuition) summary.tuition = nhabInfo.tuition;
         if (nhabInfo.facultyKey) {
           const facultyName = getNhabFaculty(nhabInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "43") {
+      const uvtInfo = getUvtProgramInfo(slug);
+      if (uvtInfo) {
+        if (uvtInfo.tuition) summary.tuition = uvtInfo.tuition;
+        if (uvtInfo.facultyKey) {
+          const facultyName = getUvtFaculty(uvtInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "44") {
+      const nvuInfo = getNvuProgramInfo(slug);
+      if (nvuInfo) {
+        if (nvuInfo.tuition) summary.tuition = nvuInfo.tuition;
+        if (nvuInfo.facultyKey) {
+          const facultyName = getNvuFaculty(nvuInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3360,6 +3505,26 @@ export function buildProgramDetail(
       if (nhabInfo.tuition) result.tuition = nhabInfo.tuition;
       if (nhabInfo.facultyKey) {
         const facultyName = getNhabFaculty(nhabInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "43" && normalizedSlug) {
+    const uvtInfo = getUvtProgramInfo(normalizedSlug);
+
+    if (uvtInfo) {
+      if (uvtInfo.tuition) result.tuition = uvtInfo.tuition;
+      if (uvtInfo.facultyKey) {
+        const facultyName = getUvtFaculty(uvtInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "44" && normalizedSlug) {
+    const nvuInfo = getNvuProgramInfo(normalizedSlug);
+
+    if (nvuInfo) {
+      if (nvuInfo.tuition) result.tuition = nvuInfo.tuition;
+      if (nvuInfo.facultyKey) {
+        const facultyName = getNvuFaculty(nvuInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
