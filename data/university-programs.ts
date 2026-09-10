@@ -1493,6 +1493,69 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Organization and Management of Military Formations",
     ],
   },
+  "45": {
+    bachelor: [
+      "Agricultural Machinery and Technologies",
+      "Agronomy",
+      "Repair and Reliability of Machinery",
+      "Thermal, Refrigeration and Gas Technology",
+      "Mechanical Engineering",
+      "Materials Science and Technologies",
+      "Industrial Design",
+      "Design and Technologies for Clothing and Textiles",
+      "Electrical Power Engineering and Electrical Equipment",
+      "Electronics",
+      "Automation and Mechatronics",
+      "Computer Systems and Technologies",
+      "Internet and Mobile Communications",
+      "Automotive Engineering",
+      "Transport and Logistics Management",
+      "Economics",
+      "Business Management",
+      "Marketing",
+      "Industrial Management",
+      "Pre-school and Primary School Pedagogy",
+      "Primary School Pedagogy and Foreign Language",
+      "Software Engineering",
+      "Informatics and Information Technologies",
+      "Financial Mathematics",
+      "Bulgarian Language and History",
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Ergotherapy",
+      "Medical Assistant",
+      "Social Work",
+    ],
+    master: [
+      "Agricultural Engineering",
+      "GIS Applications in Ecology",
+      "Veterinary and Hygiene-Sanitary Expertise",
+      "Silicate Materials",
+      "Industrial Design and Product Development",
+      "Quality Management",
+      "Application of Electronic Technologies in Manufacturing",
+      "Computer Control and Automation Systems",
+      "Communications Systems and Technologies",
+      "Transport Management",
+      "Automotive Engineering and Transport Equipment",
+      "Finance",
+      "Management and Business Development",
+      "Marketing Management",
+      "Industrial Management and Innovation",
+      "Pharmaceutical and Cosmetic Products",
+      "Lingvodidactics in Primary School (English)",
+      "Lingvodidactics in Lower Secondary School (English)",
+      "Contemporary Bulgarian Studies and Education",
+      "Software Engineering and Information Systems",
+      "Law",
+      "Legal Regime of National Security Protection",
+      "Strategic Management and Leadership in National Security",
+      "Clinical Kinesitherapy",
+      "Ergotherapy in the Community",
+      "Health Care Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2589,6 +2652,29 @@ function getTuFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getRuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`ru_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getRuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`ru_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3012,6 +3098,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (nvuInfo.tuition) summary.tuition = nvuInfo.tuition;
         if (nvuInfo.facultyKey) {
           const facultyName = getNvuFaculty(nvuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "45") {
+      const ruInfo = getRuProgramInfo(slug);
+      if (ruInfo) {
+        if (ruInfo.tuition) summary.tuition = ruInfo.tuition;
+        if (ruInfo.facultyKey) {
+          const facultyName = getRuFaculty(ruInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3525,6 +3620,16 @@ export function buildProgramDetail(
       if (nvuInfo.tuition) result.tuition = nvuInfo.tuition;
       if (nvuInfo.facultyKey) {
         const facultyName = getNvuFaculty(nvuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "45" && normalizedSlug) {
+    const ruInfo = getRuProgramInfo(normalizedSlug);
+
+    if (ruInfo) {
+      if (ruInfo.tuition) result.tuition = ruInfo.tuition;
+      if (ruInfo.facultyKey) {
+        const facultyName = getRuFaculty(ruInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

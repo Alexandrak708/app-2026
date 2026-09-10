@@ -1,4 +1,244 @@
 {
+  "ru_programInfo": {
+    "agricultural-machinery-and-technologies": {
+      "tuition": "€180",
+      "facultyKey": "aif"
+    },
+    "agronomy": {
+      "tuition": "€180",
+      "facultyKey": "aif"
+    },
+    "repair-and-reliability-of-machinery": {
+      "tuition": "€180",
+      "facultyKey": "aif"
+    },
+    "thermal-refrigeration-and-gas-technology": {
+      "tuition": "€180",
+      "facultyKey": "aif"
+    },
+    "mechanical-engineering": {
+      "tuition": "€180",
+      "facultyKey": "mtf"
+    },
+    "materials-science-and-technologies": {
+      "tuition": "€180",
+      "facultyKey": "mtf"
+    },
+    "industrial-design": {
+      "tuition": "€205",
+      "facultyKey": "mtf"
+    },
+    "design-and-technologies-for-clothing-and-textiles": {
+      "tuition": "€190",
+      "facultyKey": "mtf"
+    },
+    "electrical-power-engineering-and-electrical-equipment": {
+      "tuition": "€180",
+      "facultyKey": "feea"
+    },
+    "electronics": {
+      "tuition": "€205",
+      "facultyKey": "feea"
+    },
+    "automation-and-mechatronics": {
+      "tuition": "€205",
+      "facultyKey": "feea"
+    },
+    "computer-systems-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "feea"
+    },
+    "internet-and-mobile-communications": {
+      "tuition": "€240",
+      "facultyKey": "feea"
+    },
+    "automotive-engineering": {
+      "tuition": "€180",
+      "facultyKey": "tf"
+    },
+    "transport-and-logistics-management": {
+      "tuition": "€190",
+      "facultyKey": "tf"
+    },
+    "economics": {
+      "tuition": "€205",
+      "facultyKey": "fbm"
+    },
+    "business-management": {
+      "tuition": "€205",
+      "facultyKey": "fbm"
+    },
+    "marketing": {
+      "tuition": "€205",
+      "facultyKey": "fbm"
+    },
+    "industrial-management": {
+      "tuition": "€205",
+      "facultyKey": "fbm"
+    },
+    "pre-school-and-primary-school-pedagogy": {
+      "tuition": "€230",
+      "facultyKey": "fpno"
+    },
+    "primary-school-pedagogy-and-foreign-language": {
+      "tuition": "€230",
+      "facultyKey": "fpno"
+    },
+    "software-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fpno"
+    },
+    "informatics-and-information-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fpno"
+    },
+    "financial-mathematics": {
+      "tuition": "€230",
+      "facultyKey": "fpno"
+    },
+    "bulgarian-language-and-history": {
+      "tuition": "€230",
+      "facultyKey": "fpno"
+    },
+    "nursing": {
+      "tuition": "€300",
+      "facultyKey": "fozzg"
+    },
+    "midwifery": {
+      "tuition": "€300",
+      "facultyKey": "fozzg"
+    },
+    "kinesitherapy": {
+      "tuition": "€300",
+      "facultyKey": "fozzg"
+    },
+    "ergotherapy": {
+      "tuition": "€290",
+      "facultyKey": "fozzg"
+    },
+    "medical-assistant": {
+      "tuition": "€300",
+      "facultyKey": "fozzg"
+    },
+    "social-work": {
+      "tuition": "€205",
+      "facultyKey": "fozzg"
+    },
+    "agricultural-engineering": {
+      "tuition": "€230",
+      "facultyKey": "aif"
+    },
+    "gis-applications-in-ecology": {
+      "tuition": "€230",
+      "facultyKey": "aif"
+    },
+    "veterinary-and-hygiene-sanitary-expertise": {
+      "tuition": "€240",
+      "facultyKey": "aif"
+    },
+    "silicate-materials": {
+      "tuition": "€230",
+      "facultyKey": "mtf"
+    },
+    "industrial-design-and-product-development": {
+      "tuition": "€260",
+      "facultyKey": "mtf"
+    },
+    "quality-management": {
+      "tuition": "€230",
+      "facultyKey": "mtf"
+    },
+    "application-of-electronic-technologies-in-manufacturing": {
+      "tuition": "€250",
+      "facultyKey": "feea"
+    },
+    "computer-control-and-automation-systems": {
+      "tuition": "€260",
+      "facultyKey": "feea"
+    },
+    "communications-systems-and-technologies": {
+      "tuition": "€260",
+      "facultyKey": "feea"
+    },
+    "transport-management": {
+      "tuition": "€230",
+      "facultyKey": "tf"
+    },
+    "automotive-engineering-and-transport-equipment": {
+      "tuition": "€230",
+      "facultyKey": "tf"
+    },
+    "finance": {
+      "tuition": "€230",
+      "facultyKey": "fbm"
+    },
+    "management-and-business-development": {
+      "tuition": "€230",
+      "facultyKey": "fbm"
+    },
+    "marketing-management": {
+      "tuition": "€230",
+      "facultyKey": "fbm"
+    },
+    "industrial-management-and-innovation": {
+      "tuition": "€230",
+      "facultyKey": "fbm"
+    },
+    "pharmaceutical-and-cosmetic-products": {
+      "tuition": "€250",
+      "facultyKey": "aif"
+    },
+    "lingvodidactics-in-primary-school-english": {
+      "tuition": "€260",
+      "facultyKey": "fpno"
+    },
+    "lingvodidactics-in-lower-secondary-school-english": {
+      "tuition": "€260",
+      "facultyKey": "fpno"
+    },
+    "contemporary-bulgarian-studies-and-education": {
+      "tuition": "€260",
+      "facultyKey": "fpno"
+    },
+    "software-engineering-and-information-systems": {
+      "tuition": "€280",
+      "facultyKey": "fpno"
+    },
+    "law": {
+      "tuition": "€240",
+      "facultyKey": "uf"
+    },
+    "legal-regime-of-national-security-protection": {
+      "tuition": "€240",
+      "facultyKey": "uf"
+    },
+    "strategic-management-and-leadership-in-national-security": {
+      "tuition": "€240",
+      "facultyKey": "uf"
+    },
+    "clinical-kinesitherapy": {
+      "tuition": "€330",
+      "facultyKey": "fozzg"
+    },
+    "ergotherapy-in-the-community": {
+      "tuition": "€300",
+      "facultyKey": "fozzg"
+    },
+    "health-care-management": {
+      "tuition": "€330",
+      "facultyKey": "fozzg"
+    }
+  },
+  "ru_faculties": {
+    "aif": "Agrarian and Industrial Faculty",
+    "mtf": "Faculty of Mechanical and Manufacturing Engineering",
+    "feea": "Faculty of Electrical Engineering, Electronics and Automation",
+    "tf": "Faculty of Transport",
+    "fbm": "Faculty of Business and Management",
+    "fpno": "Faculty of Natural Sciences and Education",
+    "uf": "Faculty of Law",
+    "fozzg": "Faculty of Public Health and Healthcare"
+  },
   "nvu_faculties": {
     "security": "Faculty of Security and Defence",
     "logistics": "Faculty of Logistics and Technologies",
@@ -817,6 +1057,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "45": {
+      "yearsTradition": "80+",
+      "bachelorPrograms": "50+",
+      "masterPrograms": "80+",
+      "internationalPartners": "570+",
+      "countries": "28",
+      "studentsGraduated": "100K+",
+      "labs": "8",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "9.01",
+      "tuitionFreeText": "NEAA accreditation (2024)"
+    },
     "44": {
       "yearsTradition": "140+",
       "bachelorPrograms": "15",
@@ -1344,6 +1596,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "45": [
+      {
+        "range": "€160–€240",
+        "label": "State-subsidised bachelor (BG/EU, per semester)"
+      },
+      {
+        "range": "€230–€360",
+        "label": "Master & regulated health programmes (per semester)"
+      },
+      {
+        "range": "€1,600–€2,200",
+        "label": "Foreign (non-EU) students (per year, indicative)"
+      },
+      {
+        "range": "€30–€40",
+        "label": "Student dormitory (per month)"
+      }
+    ],
     "44": [
       {
         "range": "€0",
@@ -2138,6 +2408,42 @@
     ]
   },
   "universityExtra": {
+    "ru_scholarshipsDesc": "State scholarships and a range of grants support students throughout their studies, alongside affordable university dormitories.",
+    "ru_meritScholarship": "Merit scholarships for excellent results (GPA 4.00+), paid each semester",
+    "ru_socialScholarship": "Social (income-based) scholarships for students in need",
+    "ru_specialScholarship": "Scholarships without an income test for orphans, students with disabilities or with children",
+    "ru_erasmusGrants": "Erasmus+ mobility grants for study or a traineeship abroad",
+    "ru_hostels": "≈1,100 dormitory beds in four blocks (≈€30–€40 / month)",
+    "ru_applicationDesc": "Admission is open to graduates of secondary education; several parallel ranking rounds run from summer into October.",
+    "ru_appExams": "Admission by competitive exam, matriculation grade or document review",
+    "ru_appOnline": "Apply online at online.uni-ruse.bg",
+    "ru_appDeadline": "Main round in summer; additional ranking rounds through October",
+    "ru_appDocuments": "Secondary-school diploma, ID copy and application form required",
+    "ru_appMaster": "Master admission uses a competitive score from the bachelor's diploma (some programmes add an exam)",
+    "ru_feesTitle": "Tuition & Fees",
+    "ru_feesDesc": "Fees for Bulgarian and EU students are state-subsidised and set annually by the Council of Ministers; amounts below are per semester (2025/2026, indicative).",
+    "ru_feeTechnical": "Engineering & technical bachelor: ≈€180 / semester",
+    "ru_feeEconomics": "Economics & business: ≈€205 / semester",
+    "ru_feePedagogy": "Pedagogy & education: ≈€230 / semester",
+    "ru_feeIT": "Computer science & IT: ≈€240 / semester",
+    "ru_feeForeign": "Foreign (non-EU) students: ≈€1,600–€2,200 / year",
+    "ru_campusTitle": "Campus & Structure",
+    "ru_campusDesc": "A single urban campus in the heart of Ruse, plus three regional branches serving northern Bulgaria.",
+    "ru_location": "Main campus at 8 Studentska Street, Ruse (≈67,000 m²)",
+    "ru_faculties": "8 faculties spanning engineering, business, law, education and health",
+    "ru_branches": "Branches in Silistra, Razgrad and Vidin",
+    "ru_library": "University library, High-Technology park, sports complex and computer centres",
+    "ru_network": "Free Microsoft Office 365 & Autodesk licences; Eduroam Wi-Fi",
+    "ru_partnersDesc": "A wide international network built over decades of cross-border and Erasmus+ cooperation.",
+    "ru_erasmus": "570+ Erasmus+ bilateral agreements with universities in 28 countries",
+    "ru_associations": "Member of the EUA, the Danube Rectors' Conference and Magna Charta Universitatum",
+    "ru_crossBorder": "Leads Bulgarian–Romanian cross-border cooperation along the Danube",
+    "ru_across": "Partner in European university alliances and 250+ international agreements",
+    "ru_internationalDesc": "International students are welcomed through exchange and degree programmes, with dedicated support services.",
+    "ru_intlExchange": "70–100 students on Erasmus mobility each year",
+    "ru_intlMobility": "Annual international mobility of 450–520 participants",
+    "ru_intlErasmusOffice": "Dedicated Erasmus office (room 313.1, Central building)",
+    "ru_intlRecognition": "Diploma-recognition support for international applicants",
     "nvu_scholarshipsDesc": "As a state military university, NVU funds cadets and offers scholarships to civilians:",
     "nvu_cadets": "Cadets are fully funded by the Ministry of Defence — no tuition, plus salary and board",
     "nvu_merit": "Merit scholarships from the state budget for strong civilian students",
@@ -4622,6 +4928,16 @@
     }
   },
   "universities": {
+    "45": {
+      "name": "University of Ruse",
+      "description": "The largest university in northern Bulgaria — engineering, IT, transport, business, law, education and health care, with strong Erasmus+ links.",
+      "longDescription": "University of Ruse \"Angel Kanchev\" is the largest university in the northern Danube region of Bulgaria and the country's first higher technical school established outside the capital. Its roots go back to 12 November 1945; it was transformed into a university by a decision of the National Assembly on 21 July 1995. In 2024 it received its fifth institutional accreditation from the National Evaluation and Accreditation Agency (NEAA) with a score of 9.01.\n\nThe university is organised into 8 faculties — Agrarian and Industrial; Mechanical and Manufacturing Engineering; Electrical Engineering, Electronics and Automation; Transport; Business and Management; Natural Sciences and Education; Law; and Public Health and Healthcare — plus branches in Silistra, Razgrad and Vidin. It trains over 8,000 students across 23 professional fields, with more than 50 bachelor's specialties, over 80 master's programmes and doctoral programmes in full-time, part-time and distance formats.\n\nThe campus at 8 Studentska Street covers around 67,000 m² and includes a High-Technology park, modern laboratories, a university library, a sports complex and about 1,100 dormitory beds in four blocks. Ruse was the first Bulgarian university to offer free Microsoft Office 365 Education to its students.\n\nWith more than 570 bilateral Erasmus+ agreements with universities in 28 countries and membership of the European University Association, the Danube Rectors' Conference and the Magna Charta Universitatum, the university leads Bulgarian–Romanian cross-border cooperation along the Danube. Tuition for Bulgarian and EU students is state-subsidised and set annually by the Council of Ministers. Rector: Prof. Dr. Plamen Kangalov.",
+      "location": "Ruse, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€160 - €360 / semester (BG/EU, state-subsidised)",
+      "website": "https://www.uni-ruse.bg",
+      "applyUrl": "https://www.uni-ruse.bg/admission"
+    },
     "44": {
       "name": "Vasil Levski National Military University",
       "description": "Bulgaria's national military university (formed 2002, heritage from 1878), based in Veliko Tarnovo with faculties in Shumen and Dolna Mitropolia — military and civilian degrees in security and defence, logistics, aviation, artillery, communications and cybersecurity.",
@@ -5064,6 +5380,28 @@
     }
   },
   "universityProfiles": {
+    "45": {
+      "name": "University of Ruse",
+      "focus": "engineering, transport, agriculture, electronics, IT, business, law, education and health care",
+      "style": "applied engineering labs, a High-Technology park, joint projects with industry, and 570+ Erasmus+ partnerships across Europe",
+      "careers": [
+        "Mechanical / Electrical / Transport Engineer",
+        "Software & IT specialist",
+        "Agricultural / industrial engineer",
+        "Economist / Manager / Marketer",
+        "Teacher / Educator",
+        "Nurse / Midwife / Kinesitherapist",
+        "Lawyer / Security specialist",
+        "Researcher / Doctoral candidate"
+      ],
+      "admissionNotes": [
+        "Admission by competitive exam, matriculation grade or document review",
+        "Online application at online.uni-ruse.bg",
+        "Main summer round with additional ranking rounds through October",
+        "Health-care programmes are regulated and may require extra exams or a medical certificate",
+        "Master admission is based on a competitive score from the bachelor's diploma"
+      ]
+    },
     "44": {
       "name": "Vasil Levski National Military University",
       "focus": "national security and defence, military command, logistics, aviation, artillery, communications and cybersecurity",
@@ -6117,6 +6455,40 @@
     }
   },
   "programTitles": {
+    "agricultural-machinery-and-technologies": "Agricultural Machinery and Technologies",
+    "repair-and-reliability-of-machinery": "Repair and Reliability of Machinery",
+    "thermal-refrigeration-and-gas-technology": "Thermal, Refrigeration and Gas Technology",
+    "materials-science-and-technologies": "Materials Science and Technologies",
+    "design-and-technologies-for-clothing-and-textiles": "Design and Technologies for Clothing and Textiles",
+    "electrical-power-engineering-and-electrical-equipment": "Electrical Power Engineering and Electrical Equipment",
+    "automation-and-mechatronics": "Automation and Mechatronics",
+    "internet-and-mobile-communications": "Internet and Mobile Communications",
+    "transport-and-logistics-management": "Transport and Logistics Management",
+    "pre-school-and-primary-school-pedagogy": "Pre-school and Primary School Pedagogy",
+    "informatics-and-information-technologies": "Informatics and Information Technologies",
+    "financial-mathematics": "Financial Mathematics",
+    "bulgarian-language-and-history": "Bulgarian Language and History",
+    "gis-applications-in-ecology": "GIS Applications in Ecology",
+    "veterinary-and-hygiene-sanitary-expertise": "Veterinary and Hygiene-Sanitary Expertise",
+    "silicate-materials": "Silicate Materials",
+    "industrial-design-and-product-development": "Industrial Design and Product Development",
+    "quality-management": "Quality Management",
+    "application-of-electronic-technologies-in-manufacturing": "Application of Electronic Technologies in Manufacturing",
+    "computer-control-and-automation-systems": "Computer Control and Automation Systems",
+    "communications-systems-and-technologies": "Communications Systems and Technologies",
+    "transport-management": "Transport Management",
+    "automotive-engineering-and-transport-equipment": "Automotive Engineering and Transport Equipment",
+    "management-and-business-development": "Management and Business Development",
+    "industrial-management-and-innovation": "Industrial Management and Innovation",
+    "pharmaceutical-and-cosmetic-products": "Pharmaceutical and Cosmetic Products",
+    "lingvodidactics-in-primary-school-english": "Lingvodidactics in Primary School (English)",
+    "lingvodidactics-in-lower-secondary-school-english": "Lingvodidactics in Lower Secondary School (English)",
+    "contemporary-bulgarian-studies-and-education": "Contemporary Bulgarian Studies and Education",
+    "software-engineering-and-information-systems": "Software Engineering and Information Systems",
+    "legal-regime-of-national-security-protection": "Legal Regime of National Security Protection",
+    "strategic-management-and-leadership-in-national-security": "Strategic Management and Leadership in National Security",
+    "clinical-kinesitherapy": "Clinical Kinesitherapy",
+    "ergotherapy-in-the-community": "Ergotherapy in the Community",
     "economic-logistics": "Economic Logistics",
     "population-and-infrastructure-protection": "Population and Infrastructure Protection",
     "automotive-engineering-and-transport-logistics": "Automotive Engineering and Transport Logistics",

@@ -489,6 +489,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "45",
+    rating: 5,
+    color: "#1d4e79",
+    image: require("../assets/images/ruse-university.jpg"),
+    category: "Engineering",
+    categories: ["Engineering", "Business", "Economics", "Law", "Medical", "Agriculture"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
