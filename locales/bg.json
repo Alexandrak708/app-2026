@@ -1,4 +1,311 @@
 {
+  "trak_programInfo": {
+    "veterinary-medicine": {
+      "tuition": "€280",
+      "facultyKey": "vet"
+    },
+    "medicine": {
+      "tuition": "€280",
+      "facultyKey": "med"
+    },
+    "agricultural-engineering": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "agronomy-field-crops": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "agronomy-essential-oil-and-medicinal-crops": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "ecology-and-environmental-protection": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "zooengineering": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "fisheries-and-aquaculture": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "nursing": {
+      "tuition": "€0",
+      "facultyKey": "med"
+    },
+    "midwifery": {
+      "tuition": "€0",
+      "facultyKey": "med"
+    },
+    "medical-assistant": {
+      "tuition": "€205",
+      "facultyKey": "med"
+    },
+    "kinesitherapy": {
+      "tuition": "€205",
+      "facultyKey": "med"
+    },
+    "social-activities": {
+      "tuition": "€205",
+      "facultyKey": "med"
+    },
+    "business-economics": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "agricultural-economy-and-trade": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "regional-economics-and-management": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "information-technology": {
+      "tuition": "€215",
+      "facultyKey": "econ"
+    },
+    "information-technologies-in-economics-and-management": {
+      "tuition": "€215",
+      "facultyKey": "econ"
+    },
+    "software-engineering": {
+      "tuition": "€215",
+      "facultyKey": "econ"
+    },
+    "local-finances": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "preschool-and-primary-school-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "preschool-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "primary-school-pedagogy-with-a-foreign-language": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "social-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "special-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-art-and-graphic-design-education": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-information-technology-education": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-physical-education": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "automation-and-computer-systems": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "electrical-engineering": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "computer-systems-and-communications": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "industrial-engineering": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "road-transport-and-agricultural-machinery": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "food-technology": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "heat-and-gas-supply": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "design-technology-and-management-of-fashion-industry": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "medical-laboratory-assistant": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "rehabilitation-therapist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "assistant-pharmacist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medical-cosmetician": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medical-optician": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "prosthetist-orthotist-and-orthopedist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "agrotronics": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "aquaculture": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "biological-agriculture": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "renewable-energy-sources-in-the-agricultural-sector": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "ecology-of-settlement-systems": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "ecotourism": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "agricultural-machinery": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "safety-and-quality-food-systems-management": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "meat-and-meat-products-technology": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "milk-and-dairy-products-technology": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "reproductive-biotechnologies-in-animal-science": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "veterinary-administration": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "veterinary-business-and-management": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "integrated-systems-for-food-quality-and-safety-management": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "sanitary-microbiology-and-food-safety": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "health-management": {
+      "tuition": "€230",
+      "facultyKey": "med"
+    },
+    "health-tourism": {
+      "tuition": "€230",
+      "facultyKey": "med"
+    },
+    "nutrition-and-biomedicine": {
+      "tuition": "€230",
+      "facultyKey": "med"
+    },
+    "strategic-development-and-administration-of-educational-and-social-institutions": {
+      "tuition": "€255",
+      "facultyKey": "edu"
+    },
+    "teaching-technologies-in-informatics-and-information-technologies": {
+      "tuition": "€255",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-visual-arts-education-and-art-therapy": {
+      "tuition": "€255",
+      "facultyKey": "edu"
+    },
+    "economics-and-business-management": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "economics-and-human-resources-management": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "entrepreneurship-and-strategic-marketing": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "bioeconomy-and-eco-entrepreneurship": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "finance-and-accounting-of-the-company": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "business-information-technology": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "automotive-technical-expertise": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "energy-efficiency": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "information-and-communication-technologies-in-business-and-public-administration": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "fashion-and-textile-design-and-technologies": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "heating-ventilation-and-air-conditioning": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    }
+  },
+  "trak_faculties": {
+    "agri": "Аграрен факултет",
+    "vet": "Ветеринарномедицински факултет",
+    "med": "Медицински факултет",
+    "econ": "Стопански факултет",
+    "edu": "Педагогически факултет",
+    "eng": "Факултет „Техника и технологии“ – Ямбол",
+    "mc": "Медицински колеж – Стара Загора"
+  },
   "ru_programInfo": {
     "agricultural-machinery-and-technologies": {
       "tuition": "€180",
@@ -1057,6 +1364,18 @@
     "tuitionFree": "4 специалности без такси"
   },
   "universityStatsValues": {
+    "46": {
+      "yearsTradition": "30+",
+      "bachelorPrograms": "45+",
+      "masterPrograms": "80+",
+      "internationalPartners": "120+",
+      "countries": "35",
+      "studentsGraduated": "50K+",
+      "labs": "7",
+      "labsText": "Факултета",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Безплатни: сестра и акушерка"
+    },
     "45": {
       "yearsTradition": "80+",
       "bachelorPrograms": "50+",
@@ -1596,6 +1915,24 @@
   },
   "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
   "tuitionTiers": {
+    "46": [
+      {
+        "range": "€0",
+        "label": "Сестра и акушерка (държавна поръчка, безплатно)"
+      },
+      {
+        "range": "€165–€215",
+        "label": "Икономика, инженерство и педагогика (БГ/ЕС, на семестър)"
+      },
+      {
+        "range": "€280",
+        "label": "Медицина и ветеринарна медицина (БГ/ЕС, на семестър)"
+      },
+      {
+        "range": "€8200–€9000",
+        "label": "Медицина/ветеринарна на английски (на година)"
+      }
+    ],
     "45": [
       {
         "range": "€160–€240",
@@ -2408,6 +2745,42 @@
     ]
   },
   "universityExtra": {
+    "trak_scholarshipsDesc": "Държавни стипендии и разнообразни помощи подкрепят студентите по време на обучението, с общежития и стол в кампуса.",
+    "trak_merit": "Стипендии за отличен успех, изплащани по семестри",
+    "trak_social": "Социални стипендии (според дохода) и целева подкрепа",
+    "trak_special": "Стипендии без доходен критерий за сираци, студенти с увреждания или с деца",
+    "trak_erasmus": "Грантове по Еразъм+ за обучение или практика в чужбина",
+    "trak_hostels": "Общежития и стол в Студентски град на компактен кампус",
+    "trak_applicationDesc": "Приемът е отворен за завършилите средно образование, с няколко класирания от лятото до есента.",
+    "trak_appExams": "Прием по оценки от матурите или конкурсен изпит според специалността",
+    "trak_appOnline": "Кандидатстване онлайн или присъствено; няколко класирания",
+    "trak_appMedical": "Медицина, ветеринарна медицина и медицинска сестра изискват медицинско свидетелство",
+    "trak_appEnglish": "Медицина и ветеринарна медицина се предлагат и на английски език за чуждестранни студенти",
+    "trak_appDeadline": "Основен летен прием с допълнителен прием през есента",
+    "trak_feesTitle": "Такси за обучение",
+    "trak_feesDesc": "Таксите за българските и европейските студенти са субсидирани от държавата и се определят ежегодно с постановление на Министерския съвет; сумите по-долу са на семестър (2025/2026 г., ориентировъчно).",
+    "trak_feeAgri": "Земеделие, инженерство и здравни грижи (бакалавър): ≈€205 / семестър",
+    "trak_feeEcon": "Икономика: ≈€165 / семестър",
+    "trak_feeMed": "Медицина и ветеринарна медицина (БГ/ЕС): ≈€280 / семестър",
+    "trak_feeFree": "„Медицинска сестра“ и „Акушерка“: безплатно (държавна поръчка)",
+    "trak_feeForeign": "Медицина на английски ≈€9000/год., ветеринарна медицина ≈€8200/год.",
+    "trak_campusTitle": "Кампус и бази",
+    "trak_campusDesc": "Компактен кампус в Студентски град, Стара Загора, с клинични и полеви учебни бази.",
+    "trak_location": "Основен кампус в Студентски град, Стара Загора",
+    "trak_faculties": "7 факултета, Медицински колеж и департамент за квалификация на учители",
+    "trak_hospitals": "Университетска болница и Университетска ветеринарна болница за клинично обучение",
+    "trak_branches": "Факултет „Техника и технологии“ в Ямбол; филиал в Хасково",
+    "trak_farm": "Опитна учебна ферма и модерни аграрни и биомедицински лаборатории",
+    "trak_partnersDesc": "Международна мрежа, изградена чрез обмен по Еразъм+ и съвместни изследвания в науките за живота.",
+    "trak_eua": "Член на Европейската университетска асоциация (EUA)",
+    "trak_erasmusNet": "Обмен по Еразъм+ с университети партньори в цяла Европа",
+    "trak_research": "Съвместни изследвания в земеделието, ветеринарната и биомедицинската наука",
+    "trak_ranking": "Постоянно сред водещите университети в България",
+    "trak_internationalDesc": "Чуждестранните студенти са добре дошли в програми на английски език и в обмен по Еразъм+, със специализирано обслужване.",
+    "trak_intlEnglish": "Медицина и ветеринарна медицина се преподават на английски език",
+    "trak_intlSupport": "Съдействие за признаване на дипломи и езикова подготовка по български",
+    "trak_intlErasmus": "Входяща и изходяща мобилност по Еразъм+",
+    "trak_intlHousing": "Общежития в кампуса за чуждестранни студенти",
     "ru_scholarshipsDesc": "Държавни стипендии и разнообразни помощи подкрепят студентите по време на обучението им, наред с достъпни студентски общежития.",
     "ru_meritScholarship": "Стипендии за отличен успех (среден успех 4,00+), изплащани всеки семестър",
     "ru_socialScholarship": "Социални стипендии (според дохода) за студенти в затруднено положение",
@@ -4928,6 +5301,16 @@
     }
   },
   "universities": {
+    "46": {
+      "name": "Тракийски университет",
+      "description": "Един от водещите университети в България по ветеринарна медицина, земеделие, медицина и науки за живота, в Стара Загора.",
+      "longDescription": "Тракийският университет е водещ български държавен университет в Стара Загора, създаден през 1995 г. и наименуван на историческата област Тракия, като школите му по ветеринарна медицина и земеделие носят десетилетия по-ранна традиция. Той е акредитиран от Националната агенция за оценяване и акредитация (НАОА) и е член на Европейската университетска асоциация (EUA), като постоянно е сред водещите университети в страната.\n\nУниверситетът обединява 7 факултета — Аграрен; Ветеринарномедицински; Медицински; Стопански; Педагогически; „Дигитални и зелени технологии“; и „Техника и технологии“ в Ямбол — заедно с Медицински колеж в Стара Загора, филиал в Хасково и департамент за квалификация на учители. Около 9000 студенти се обучават в бакалавърски, магистърски, професионално-бакалавърски и докторски програми в редовна, задочна и дистанционна форма.\n\nТракийският университет е особено известен с Ветеринарната медицина и Медицината, които се преподават и на английски език за чуждестранни студенти, както и с аграрните и биомедицинските науки. Клиничното и практическото обучение се подпомага от Университетска болница, Университетска ветеринарна болница, опитна учебна ферма и модерни лаборатории, разположени в компактен кампус в Студентски град, Стара Загора.\n\nТаксите за българските и европейските студенти са субсидирани от държавата и се определят ежегодно с постановление на Министерския съвет; специалностите „Медицинска сестра“ и „Акушерка“ са безплатни. Ректор: проф. д-р Мирослав Карабалиев.",
+      "location": "Стара Загора, България",
+      "degree": "Бакалавър и магистър",
+      "tuitionRange": "€0 – €280 / семестър (БГ/ЕС; сестра и акушерка безплатно)",
+      "website": "https://trakia-uni.bg",
+      "applyUrl": "https://trakia-uni.bg/en/admission/"
+    },
     "45": {
       "name": "Русенски университет",
       "description": "Най-големият университет в Северна България — инженерство, ИТ, транспорт, бизнес, право, педагогика и здравни грижи, със силни връзки по Еразъм+.",
@@ -5380,6 +5763,28 @@
     }
   },
   "universityProfiles": {
+    "46": {
+      "name": "Тракийски университет",
+      "focus": "ветеринарна медицина, земеделие, медицина, науки за живота, икономика, педагогика и инженерство",
+      "style": "практическо клинично и полево обучение в Университетска болница, Университетска ветеринарна болница, опитна ферма и модерни лаборатории",
+      "careers": [
+        "Ветеринарен лекар",
+        "Лекар",
+        "Агроном / зооинженер",
+        "Специалист по храни и биотехнологии",
+        "Медицинска сестра / акушерка / кинезитерапевт",
+        "Икономист / мениджър",
+        "Учител / педагог",
+        "Инженер / ИТ специалист"
+      ],
+      "admissionNotes": [
+        "Прием по оценки от матурите или конкурсен изпит според специалността",
+        "Медицина, ветеринарна медицина и медицинска сестра изискват медицинско свидетелство",
+        "Медицина и ветеринарна медицина се предлагат и на английски език за чуждестранни студенти",
+        "Специалностите „Медицинска сестра“ и „Акушерка“ са безплатни",
+        "Онлайн и присъствено кандидатстване с няколко класирания"
+      ]
+    },
     "45": {
       "name": "Русенски университет",
       "focus": "инженерство, транспорт, земеделие, електроника, ИТ, бизнес, право, педагогика и здравни грижи",
@@ -6455,6 +6860,57 @@
     }
   },
   "programTitles": {
+    "agronomy-field-crops": "Агрономство (полевъдство)",
+    "agronomy-essential-oil-and-medicinal-crops": "Агрономство (етеричномаслени и лечебни култури)",
+    "zooengineering": "Зооинженерство",
+    "fisheries-and-aquaculture": "Рибовъдство и аквакултури",
+    "social-activities": "Социални дейности",
+    "agricultural-economy-and-trade": "Аграрна икономика и търговия",
+    "regional-economics-and-management": "Регионална икономика и управление",
+    "information-technologies-in-economics-and-management": "Информационни технологии в икономиката и управлението",
+    "local-finances": "Местни финанси",
+    "preschool-pedagogy": "Предучилищна педагогика",
+    "primary-school-pedagogy-with-a-foreign-language": "Начална училищна педагогика с чужд език",
+    "pedagogy-of-art-and-graphic-design-education": "Педагогика на обучението по изобразително изкуство и графичен дизайн",
+    "pedagogy-of-information-technology-education": "Педагогика на обучението по информационни технологии",
+    "pedagogy-of-physical-education": "Педагогика на обучението по физическо възпитание",
+    "automation-and-computer-systems": "Автоматика и компютърни системи",
+    "computer-systems-and-communications": "Компютърни системи и комуникации",
+    "road-transport-and-agricultural-machinery": "Автомобилен транспорт и земеделска техника",
+    "heat-and-gas-supply": "Топло- и газоснабдяване",
+    "design-technology-and-management-of-fashion-industry": "Дизайн, технологии и мениджмънт на модната индустрия",
+    "rehabilitation-therapist": "Рехабилитатор",
+    "medical-cosmetician": "Медицинска козметика",
+    "prosthetist-orthotist-and-orthopedist": "Протезист, ортезист и ортопедист",
+    "agrotronics": "Агротроника",
+    "aquaculture": "Аквакултури",
+    "biological-agriculture": "Биологично земеделие",
+    "renewable-energy-sources-in-the-agricultural-sector": "Възобновяеми енергийни източници в аграрния сектор",
+    "ecology-of-settlement-systems": "Екология на селищните системи",
+    "ecotourism": "Екотуризъм",
+    "agricultural-machinery": "Земеделска техника",
+    "safety-and-quality-food-systems-management": "Управление на системите за безопасност и качество на храните",
+    "meat-and-meat-products-technology": "Технология на месото и месните продукти",
+    "milk-and-dairy-products-technology": "Технология на млякото и млечните продукти",
+    "reproductive-biotechnologies-in-animal-science": "Репродуктивни биотехнологии в животновъдството",
+    "veterinary-administration": "Ветеринарна администрация",
+    "veterinary-business-and-management": "Ветеринарен бизнес и мениджмънт",
+    "integrated-systems-for-food-quality-and-safety-management": "Интегрирани системи за управление на качеството и безопасността на храните",
+    "sanitary-microbiology-and-food-safety": "Санитарна микробиология и безопасност на храните",
+    "nutrition-and-biomedicine": "Хранене и биомедицина",
+    "strategic-development-and-administration-of-educational-and-social-institutions": "Стратегическо развитие и администрация на образователни и социални институции",
+    "teaching-technologies-in-informatics-and-information-technologies": "Технологии на обучението по информатика и информационни технологии",
+    "pedagogy-of-visual-arts-education-and-art-therapy": "Педагогика на обучението по изобразително изкуство и арт терапия",
+    "economics-and-business-management": "Икономика и управление на бизнеса",
+    "economics-and-human-resources-management": "Икономика и управление на човешките ресурси",
+    "entrepreneurship-and-strategic-marketing": "Предприемачество и стратегически маркетинг",
+    "bioeconomy-and-eco-entrepreneurship": "Биоикономика и екопредприемачество",
+    "finance-and-accounting-of-the-company": "Финанси и счетоводство на фирмата",
+    "business-information-technology": "Бизнес информационни технологии",
+    "energy-efficiency": "Енергийна ефективност",
+    "information-and-communication-technologies-in-business-and-public-administration": "Информационни и комуникационни технологии в бизнеса и публичната администрация",
+    "fashion-and-textile-design-and-technologies": "Дизайн и технологии за мода и текстил",
+    "heating-ventilation-and-air-conditioning": "Отопление, вентилация и климатизация",
     "agricultural-machinery-and-technologies": "Земеделска техника и технологии",
     "repair-and-reliability-of-machinery": "Ремонт и надеждност на техниката",
     "thermal-refrigeration-and-gas-technology": "Топлотехника, хладилна техника и газоснабдяване",

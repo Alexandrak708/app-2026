@@ -1556,6 +1556,86 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Health Care Management",
     ],
   },
+  "46": {
+    bachelor: [
+      "Veterinary Medicine",
+      "Medicine",
+      "Agricultural Engineering",
+      "Agronomy (Field Crops)",
+      "Agronomy (Essential Oil and Medicinal Crops)",
+      "Ecology and Environmental Protection",
+      "Zooengineering",
+      "Fisheries and Aquaculture",
+      "Nursing",
+      "Midwifery",
+      "Medical Assistant",
+      "Kinesitherapy",
+      "Social Activities",
+      "Business Economics",
+      "Agricultural Economy and Trade",
+      "Regional Economics and Management",
+      "Information Technology",
+      "Information Technologies in Economics and Management",
+      "Software Engineering",
+      "Local Finances",
+      "Preschool and Primary School Pedagogy",
+      "Preschool Pedagogy",
+      "Primary School Pedagogy with a Foreign Language",
+      "Social Pedagogy",
+      "Special Pedagogy",
+      "Pedagogy of Art and Graphic Design Education",
+      "Pedagogy of Information Technology Education",
+      "Pedagogy of Physical Education",
+      "Automation and Computer Systems",
+      "Electrical Engineering",
+      "Computer Systems and Communications",
+      "Industrial Engineering",
+      "Road Transport and Agricultural Machinery",
+      "Food Technology",
+      "Heat and Gas Supply",
+      "Design, Technology and Management of Fashion Industry",
+      "Medical Laboratory Assistant",
+      "Rehabilitation Therapist",
+      "Assistant Pharmacist",
+      "Medical Cosmetician",
+      "Medical Optician",
+      "Prosthetist, Orthotist and Orthopedist",
+    ],
+    master: [
+      "Agrotronics",
+      "Aquaculture",
+      "Biological Agriculture",
+      "Renewable Energy Sources in the Agricultural Sector",
+      "Ecology of Settlement Systems",
+      "Ecotourism",
+      "Agricultural Machinery",
+      "Safety and Quality Food Systems Management",
+      "Meat and Meat Products Technology",
+      "Milk and Dairy Products Technology",
+      "Reproductive Biotechnologies in Animal Science",
+      "Veterinary Administration",
+      "Veterinary Business and Management",
+      "Integrated Systems for Food Quality and Safety Management",
+      "Sanitary Microbiology and Food Safety",
+      "Health Management",
+      "Health Tourism",
+      "Nutrition and Biomedicine",
+      "Strategic Development and Administration of Educational and Social Institutions",
+      "Teaching Technologies in Informatics and Information Technologies",
+      "Pedagogy of Visual Arts Education and Art Therapy",
+      "Economics and Business Management",
+      "Economics and Human Resources Management",
+      "Entrepreneurship and Strategic Marketing",
+      "Bioeconomy and Eco-entrepreneurship",
+      "Finance and Accounting of the Company",
+      "Business Information Technology",
+      "Automotive Technical Expertise",
+      "Energy Efficiency",
+      "Information and Communication Technologies in Business and Public Administration",
+      "Fashion and Textile Design and Technologies",
+      "Heating, Ventilation and Air Conditioning",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2675,6 +2755,29 @@ function getRuFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getTrakProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`trak_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTrakFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`trak_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3107,6 +3210,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (ruInfo.tuition) summary.tuition = ruInfo.tuition;
         if (ruInfo.facultyKey) {
           const facultyName = getRuFaculty(ruInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "46") {
+      const trakInfo = getTrakProgramInfo(slug);
+      if (trakInfo) {
+        if (trakInfo.tuition) summary.tuition = trakInfo.tuition;
+        if (trakInfo.facultyKey) {
+          const facultyName = getTrakFaculty(trakInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3630,6 +3742,16 @@ export function buildProgramDetail(
       if (ruInfo.tuition) result.tuition = ruInfo.tuition;
       if (ruInfo.facultyKey) {
         const facultyName = getRuFaculty(ruInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "46" && normalizedSlug) {
+    const trakInfo = getTrakProgramInfo(normalizedSlug);
+
+    if (trakInfo) {
+      if (trakInfo.tuition) result.tuition = trakInfo.tuition;
+      if (trakInfo.facultyKey) {
+        const facultyName = getTrakFaculty(trakInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

@@ -1,4 +1,311 @@
 {
+  "trak_programInfo": {
+    "veterinary-medicine": {
+      "tuition": "€280",
+      "facultyKey": "vet"
+    },
+    "medicine": {
+      "tuition": "€280",
+      "facultyKey": "med"
+    },
+    "agricultural-engineering": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "agronomy-field-crops": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "agronomy-essential-oil-and-medicinal-crops": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "ecology-and-environmental-protection": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "zooengineering": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "fisheries-and-aquaculture": {
+      "tuition": "€205",
+      "facultyKey": "agri"
+    },
+    "nursing": {
+      "tuition": "€0",
+      "facultyKey": "med"
+    },
+    "midwifery": {
+      "tuition": "€0",
+      "facultyKey": "med"
+    },
+    "medical-assistant": {
+      "tuition": "€205",
+      "facultyKey": "med"
+    },
+    "kinesitherapy": {
+      "tuition": "€205",
+      "facultyKey": "med"
+    },
+    "social-activities": {
+      "tuition": "€205",
+      "facultyKey": "med"
+    },
+    "business-economics": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "agricultural-economy-and-trade": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "regional-economics-and-management": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "information-technology": {
+      "tuition": "€215",
+      "facultyKey": "econ"
+    },
+    "information-technologies-in-economics-and-management": {
+      "tuition": "€215",
+      "facultyKey": "econ"
+    },
+    "software-engineering": {
+      "tuition": "€215",
+      "facultyKey": "econ"
+    },
+    "local-finances": {
+      "tuition": "€165",
+      "facultyKey": "econ"
+    },
+    "preschool-and-primary-school-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "preschool-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "primary-school-pedagogy-with-a-foreign-language": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "social-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "special-pedagogy": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-art-and-graphic-design-education": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-information-technology-education": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-physical-education": {
+      "tuition": "€215",
+      "facultyKey": "edu"
+    },
+    "automation-and-computer-systems": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "electrical-engineering": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "computer-systems-and-communications": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "industrial-engineering": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "road-transport-and-agricultural-machinery": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "food-technology": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "heat-and-gas-supply": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "design-technology-and-management-of-fashion-industry": {
+      "tuition": "€205",
+      "facultyKey": "eng"
+    },
+    "medical-laboratory-assistant": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "rehabilitation-therapist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "assistant-pharmacist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medical-cosmetician": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medical-optician": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "prosthetist-orthotist-and-orthopedist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "agrotronics": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "aquaculture": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "biological-agriculture": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "renewable-energy-sources-in-the-agricultural-sector": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "ecology-of-settlement-systems": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "ecotourism": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "agricultural-machinery": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "safety-and-quality-food-systems-management": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "meat-and-meat-products-technology": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "milk-and-dairy-products-technology": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "reproductive-biotechnologies-in-animal-science": {
+      "tuition": "€255",
+      "facultyKey": "agri"
+    },
+    "veterinary-administration": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "veterinary-business-and-management": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "integrated-systems-for-food-quality-and-safety-management": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "sanitary-microbiology-and-food-safety": {
+      "tuition": "€255",
+      "facultyKey": "vet"
+    },
+    "health-management": {
+      "tuition": "€230",
+      "facultyKey": "med"
+    },
+    "health-tourism": {
+      "tuition": "€230",
+      "facultyKey": "med"
+    },
+    "nutrition-and-biomedicine": {
+      "tuition": "€230",
+      "facultyKey": "med"
+    },
+    "strategic-development-and-administration-of-educational-and-social-institutions": {
+      "tuition": "€255",
+      "facultyKey": "edu"
+    },
+    "teaching-technologies-in-informatics-and-information-technologies": {
+      "tuition": "€255",
+      "facultyKey": "edu"
+    },
+    "pedagogy-of-visual-arts-education-and-art-therapy": {
+      "tuition": "€255",
+      "facultyKey": "edu"
+    },
+    "economics-and-business-management": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "economics-and-human-resources-management": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "entrepreneurship-and-strategic-marketing": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "bioeconomy-and-eco-entrepreneurship": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "finance-and-accounting-of-the-company": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "business-information-technology": {
+      "tuition": "€225",
+      "facultyKey": "econ"
+    },
+    "automotive-technical-expertise": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "energy-efficiency": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "information-and-communication-technologies-in-business-and-public-administration": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "fashion-and-textile-design-and-technologies": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    },
+    "heating-ventilation-and-air-conditioning": {
+      "tuition": "€255",
+      "facultyKey": "eng"
+    }
+  },
+  "trak_faculties": {
+    "agri": "Faculty of Agriculture",
+    "vet": "Faculty of Veterinary Medicine",
+    "med": "Faculty of Medicine",
+    "econ": "Faculty of Economics",
+    "edu": "Faculty of Education",
+    "eng": "Faculty of Engineering and Technology – Yambol",
+    "mc": "Medical College – Stara Zagora"
+  },
   "ru_programInfo": {
     "agricultural-machinery-and-technologies": {
       "tuition": "€180",
@@ -1057,6 +1364,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "46": {
+      "yearsTradition": "30+",
+      "bachelorPrograms": "45+",
+      "masterPrograms": "80+",
+      "internationalPartners": "120+",
+      "countries": "35",
+      "studentsGraduated": "50K+",
+      "labs": "7",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Nursing & Midwifery free"
+    },
     "45": {
       "yearsTradition": "80+",
       "bachelorPrograms": "50+",
@@ -1596,6 +1915,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "46": [
+      {
+        "range": "€0",
+        "label": "Nursing & Midwifery (state-funded, tuition-free)"
+      },
+      {
+        "range": "€165–€215",
+        "label": "Economics, engineering & pedagogy (BG/EU, per semester)"
+      },
+      {
+        "range": "€280",
+        "label": "Medicine & Veterinary Medicine (BG/EU, per semester)"
+      },
+      {
+        "range": "€8,200–€9,000",
+        "label": "English-taught Medicine / Veterinary (per year)"
+      }
+    ],
     "45": [
       {
         "range": "€160–€240",
@@ -2408,6 +2745,42 @@
     ]
   },
   "universityExtra": {
+    "trak_scholarshipsDesc": "State scholarships and a range of grants support students throughout their studies, with dormitories and a canteen on campus.",
+    "trak_merit": "Merit scholarships for strong academic results, paid by semester",
+    "trak_social": "Social (income-based) scholarships and targeted support",
+    "trak_special": "Scholarships without an income test for orphans, students with disabilities or with children",
+    "trak_erasmus": "Erasmus+ mobility grants for study or a placement abroad",
+    "trak_hostels": "Student Town dormitories and canteen on a compact campus",
+    "trak_applicationDesc": "Admission is open to graduates of secondary education, with several ranking rounds from summer into the autumn.",
+    "trak_appExams": "Admission by matriculation grades or an entrance exam, depending on the programme",
+    "trak_appOnline": "Apply online or on-site; several ranking rounds",
+    "trak_appMedical": "Medicine, Veterinary Medicine and Nursing require a health certificate",
+    "trak_appEnglish": "Medicine and Veterinary Medicine are also offered in English for international students",
+    "trak_appDeadline": "Main summer round with additional intake into the autumn",
+    "trak_feesTitle": "Tuition & Fees",
+    "trak_feesDesc": "Fees for Bulgarian and EU students are state-subsidised and set annually by the Council of Ministers; amounts below are per semester (2025/2026, indicative).",
+    "trak_feeAgri": "Agriculture, engineering & health-care bachelor: ≈€205 / semester",
+    "trak_feeEcon": "Economics: ≈€165 / semester",
+    "trak_feeMed": "Medicine & Veterinary Medicine (BG/EU): ≈€280 / semester",
+    "trak_feeFree": "Nursing & Midwifery: tuition-free (state-funded)",
+    "trak_feeForeign": "English-taught Medicine ≈€9,000/yr, Veterinary Medicine ≈€8,200/yr",
+    "trak_campusTitle": "Campus & Facilities",
+    "trak_campusDesc": "A compact campus in Stara Zagora's Student Town, backed by clinical and field training bases.",
+    "trak_location": "Main campus in Student Town, Stara Zagora",
+    "trak_faculties": "7 faculties plus a Medical College and a teacher-training department",
+    "trak_hospitals": "University Hospital and University Veterinary Hospital for clinical training",
+    "trak_branches": "Faculty of Engineering & Technology in Yambol; branch in Haskovo",
+    "trak_farm": "Experimental training farm and modern agricultural & biomedical labs",
+    "trak_partnersDesc": "An international network built on Erasmus+ exchange and joint research in the life sciences.",
+    "trak_eua": "Member of the European University Association (EUA)",
+    "trak_erasmusNet": "Erasmus+ exchanges with partner universities across Europe",
+    "trak_research": "Joint research in agriculture, veterinary and biomedical sciences",
+    "trak_ranking": "Consistently ranked among Bulgaria's leading universities",
+    "trak_internationalDesc": "International students are welcomed to English-taught degrees and Erasmus+ exchange, with dedicated support.",
+    "trak_intlEnglish": "Medicine & Veterinary Medicine taught in English",
+    "trak_intlSupport": "Support for diploma recognition and Bulgarian-language preparation",
+    "trak_intlErasmus": "Incoming and outgoing Erasmus+ mobility",
+    "trak_intlHousing": "On-campus dormitories for international students",
     "ru_scholarshipsDesc": "State scholarships and a range of grants support students throughout their studies, alongside affordable university dormitories.",
     "ru_meritScholarship": "Merit scholarships for excellent results (GPA 4.00+), paid each semester",
     "ru_socialScholarship": "Social (income-based) scholarships for students in need",
@@ -4928,6 +5301,16 @@
     }
   },
   "universities": {
+    "46": {
+      "name": "Trakia University",
+      "description": "One of Bulgaria's leading universities for veterinary medicine, agriculture, medicine and life sciences, in Stara Zagora.",
+      "longDescription": "Trakia University is a leading Bulgarian public university in Stara Zagora, established in 1995 and named after the historical region of Thrace, though its schools of veterinary and agricultural science carry decades of earlier tradition. It is accredited by the National Evaluation and Accreditation Agency (NEAA) and is a member of the European University Association (EUA), consistently ranked among the country's leading universities.\n\nThe university brings together 7 faculties — Agriculture; Veterinary Medicine; Medicine; Economics; Education (Pedagogy); Digital and Green Technologies; and Engineering and Technology in Yambol — together with a Medical College in Stara Zagora, a branch in Haskovo and a department for in-service teacher training. About 9,000 students study across bachelor's, master's, professional-bachelor and doctoral degrees in full-time, part-time and distance formats.\n\nTrakia is especially known for Veterinary Medicine and Medicine, both offered in English to international students, and for its agricultural and biomedical sciences. Clinical and practical training is supported by a University Hospital, a University Veterinary Hospital, an experimental training farm and modern laboratories, all on a compact campus in Stara Zagora's Student Town.\n\nTuition for Bulgarian and EU students is state-subsidised and set annually by the Council of Ministers; Nursing and Midwifery are tuition-free. Rector: Prof. Dr. Miroslav Karabaliev.",
+      "location": "Stara Zagora, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€0 - €280 / semester (BG/EU; Nursing & Midwifery free)",
+      "website": "https://trakia-uni.bg",
+      "applyUrl": "https://trakia-uni.bg/en/admission/"
+    },
     "45": {
       "name": "University of Ruse",
       "description": "The largest university in northern Bulgaria — engineering, IT, transport, business, law, education and health care, with strong Erasmus+ links.",
@@ -5380,6 +5763,28 @@
     }
   },
   "universityProfiles": {
+    "46": {
+      "name": "Trakia University",
+      "focus": "veterinary medicine, agriculture, medicine, life sciences, economics, education and engineering",
+      "style": "hands-on clinical and field training at a University Hospital, a University Veterinary Hospital, an experimental farm and modern laboratories",
+      "careers": [
+        "Veterinarian",
+        "Physician / Medical Doctor",
+        "Agronomist / Zooengineer",
+        "Food & biotechnology specialist",
+        "Nurse / Midwife / Kinesitherapist",
+        "Economist / Manager",
+        "Teacher / Educator",
+        "Engineer / IT specialist"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation grades or an entrance exam, depending on the programme",
+        "Medicine, Veterinary Medicine and Nursing require a health certificate",
+        "Medicine and Veterinary Medicine are also offered in English for international students",
+        "Nursing and Midwifery are tuition-free",
+        "Online and on-site application with several ranking rounds"
+      ]
+    },
     "45": {
       "name": "University of Ruse",
       "focus": "engineering, transport, agriculture, electronics, IT, business, law, education and health care",
@@ -6455,6 +6860,57 @@
     }
   },
   "programTitles": {
+    "agronomy-field-crops": "Agronomy (Field Crops)",
+    "agronomy-essential-oil-and-medicinal-crops": "Agronomy (Essential Oil and Medicinal Crops)",
+    "zooengineering": "Zooengineering",
+    "fisheries-and-aquaculture": "Fisheries and Aquaculture",
+    "social-activities": "Social Activities",
+    "agricultural-economy-and-trade": "Agricultural Economy and Trade",
+    "regional-economics-and-management": "Regional Economics and Management",
+    "information-technologies-in-economics-and-management": "Information Technologies in Economics and Management",
+    "local-finances": "Local Finances",
+    "preschool-pedagogy": "Preschool Pedagogy",
+    "primary-school-pedagogy-with-a-foreign-language": "Primary School Pedagogy with a Foreign Language",
+    "pedagogy-of-art-and-graphic-design-education": "Pedagogy of Art and Graphic Design Education",
+    "pedagogy-of-information-technology-education": "Pedagogy of Information Technology Education",
+    "pedagogy-of-physical-education": "Pedagogy of Physical Education",
+    "automation-and-computer-systems": "Automation and Computer Systems",
+    "computer-systems-and-communications": "Computer Systems and Communications",
+    "road-transport-and-agricultural-machinery": "Road Transport and Agricultural Machinery",
+    "heat-and-gas-supply": "Heat and Gas Supply",
+    "design-technology-and-management-of-fashion-industry": "Design, Technology and Management of Fashion Industry",
+    "rehabilitation-therapist": "Rehabilitation Therapist",
+    "medical-cosmetician": "Medical Cosmetician",
+    "prosthetist-orthotist-and-orthopedist": "Prosthetist, Orthotist and Orthopedist",
+    "agrotronics": "Agrotronics",
+    "aquaculture": "Aquaculture",
+    "biological-agriculture": "Biological Agriculture",
+    "renewable-energy-sources-in-the-agricultural-sector": "Renewable Energy Sources in the Agricultural Sector",
+    "ecology-of-settlement-systems": "Ecology of Settlement Systems",
+    "ecotourism": "Ecotourism",
+    "agricultural-machinery": "Agricultural Machinery",
+    "safety-and-quality-food-systems-management": "Safety and Quality Food Systems Management",
+    "meat-and-meat-products-technology": "Meat and Meat Products Technology",
+    "milk-and-dairy-products-technology": "Milk and Dairy Products Technology",
+    "reproductive-biotechnologies-in-animal-science": "Reproductive Biotechnologies in Animal Science",
+    "veterinary-administration": "Veterinary Administration",
+    "veterinary-business-and-management": "Veterinary Business and Management",
+    "integrated-systems-for-food-quality-and-safety-management": "Integrated Systems for Food Quality and Safety Management",
+    "sanitary-microbiology-and-food-safety": "Sanitary Microbiology and Food Safety",
+    "nutrition-and-biomedicine": "Nutrition and Biomedicine",
+    "strategic-development-and-administration-of-educational-and-social-institutions": "Strategic Development and Administration of Educational and Social Institutions",
+    "teaching-technologies-in-informatics-and-information-technologies": "Teaching Technologies in Informatics and Information Technologies",
+    "pedagogy-of-visual-arts-education-and-art-therapy": "Pedagogy of Visual Arts Education and Art Therapy",
+    "economics-and-business-management": "Economics and Business Management",
+    "economics-and-human-resources-management": "Economics and Human Resources Management",
+    "entrepreneurship-and-strategic-marketing": "Entrepreneurship and Strategic Marketing",
+    "bioeconomy-and-eco-entrepreneurship": "Bioeconomy and Eco-entrepreneurship",
+    "finance-and-accounting-of-the-company": "Finance and Accounting of the Company",
+    "business-information-technology": "Business Information Technology",
+    "energy-efficiency": "Energy Efficiency",
+    "information-and-communication-technologies-in-business-and-public-administration": "Information and Communication Technologies in Business and Public Administration",
+    "fashion-and-textile-design-and-technologies": "Fashion and Textile Design and Technologies",
+    "heating-ventilation-and-air-conditioning": "Heating, Ventilation and Air Conditioning",
     "agricultural-machinery-and-technologies": "Agricultural Machinery and Technologies",
     "repair-and-reliability-of-machinery": "Repair and Reliability of Machinery",
     "thermal-refrigeration-and-gas-technology": "Thermal, Refrigeration and Gas Technology",

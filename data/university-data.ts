@@ -500,6 +500,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "46",
+    rating: 5,
+    color: "#2e6b4f",
+    image: require("../assets/images/trakia-university.jpg"),
+    category: "Agriculture",
+    categories: ["Agriculture", "Medical", "Economics", "Engineering", "Business"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
