@@ -1,4 +1,147 @@
 {
+  "tug_programInfo": {
+    "automation-robotics-and-computer-control-systems": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "power-engineering-and-electrical-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "industrial-and-automotive-electronics": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "computer-systems-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "communication-technologies-and-cybersecurity": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "software-and-computer-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "technical-safety": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "design-engineering-and-technologies-in-textiles": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "computer-technologies-in-mechanical-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "computer-design": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "mechatronics": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "industrial-thermal-and-gas-systems": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "materials-technology-and-materials-science": {
+      "tuition": "€0",
+      "facultyKey": "fmpe"
+    },
+    "social-services": {
+      "tuition": "€184",
+      "facultyKey": "feco"
+    },
+    "automation-information-and-control-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "automotive-electronics": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "electronics": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "optoelectronics-and-laser-technology": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "communication-equipment-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "occupational-safety": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "mechanical-and-precision-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "hydraulic-and-pneumatic-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "heating-ventilation-and-air-conditioning-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "textile-equipment-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "surface-engineering-of-materials": {
+      "tuition": "€0",
+      "facultyKey": "fmpe"
+    },
+    "computer-design-in-industry": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "environmental-protection-equipment-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "industrial-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "social-activities": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "social-work-and-european-policies": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "innovations-in-social-services-management": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "human-resources-management": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "business-management": {
+      "tuition": "€184",
+      "facultyKey": "feco"
+    },
+    "project-management": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    }
+  },
+  "tug_faculties": {
+    "fee": "Факултет „Електротехника и електроника“",
+    "fmpe": "Факултет „Машиностроене и уредостроене“",
+    "feco": "Стопански факултет"
+  },
   "mpl_programInfo": {
     "nursing": {
       "tuition": "€205",
@@ -1446,6 +1589,18 @@
     "tuitionFree": "4 специалности без такси"
   },
   "universityStatsValues": {
+    "48": {
+      "yearsTradition": "60+",
+      "bachelorPrograms": "14",
+      "masterPrograms": "25+",
+      "internationalPartners": "100+",
+      "countries": "30",
+      "studentsGraduated": "40K+",
+      "labs": "3",
+      "labsText": "Факултета",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Материалознание – безплатно"
+    },
     "47": {
       "yearsTradition": "50+",
       "bachelorPrograms": "12+",
@@ -2009,6 +2164,24 @@
   },
   "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
   "tuitionTiers": {
+    "48": [
+      {
+        "range": "€0",
+        "label": "Специалности по материалознание (държавна поръчка, безплатно)"
+      },
+      {
+        "range": "€240",
+        "label": "Инженерни и ИТ специалности (БГ/ЕС, на семестър)"
+      },
+      {
+        "range": "€184–€225",
+        "label": "Икономика и социални програми (на семестър)"
+      },
+      {
+        "range": "€3000–€3300",
+        "label": "Чуждестранни студенти (на година, ориентировъчно)"
+      }
+    ],
     "47": [
       {
         "range": "€205–€300",
@@ -2857,6 +3030,42 @@
     ]
   },
   "universityExtra": {
+    "tug_scholarshipsDesc": "Държавни стипендии и студентска подкрепа през цялото обучение, с достъпни общежития в Габрово.",
+    "tug_merit": "Стипендии за отличен успех",
+    "tug_social": "Социални стипендии (според дохода) и подкрепа",
+    "tug_priority": "Допълнителни стипендии за приоритетни инженерни специалности (национална програма)",
+    "tug_erasmus": "Грантове по Еразъм+ за обучение или практика в чужбина",
+    "tug_hostels": "Достъпни студентски общежития и стол в Габрово",
+    "tug_applicationDesc": "Прием след средно образование, с онлайн подаване на кандидатстудентските документи.",
+    "tug_appExam": "Прием по оценки от матурите или конкурсен изпит",
+    "tug_appOnline": "Онлайн кандидатстване на сайта на университета",
+    "tug_appFee": "Такса за кандидатстване €30 (60 лв.) за първия изпит, €15 за всеки следващ",
+    "tug_appMaster": "Магистър: 3 семестъра след технически бакалавър (повече за други области)",
+    "tug_appDeadline": "Основен летен прием с допълнителни класирания през септември",
+    "tug_feesTitle": "Такси за обучение",
+    "tug_feesDesc": "Таксите за българските и европейските студенти са субсидирани от държавата; няколко приоритетни специалности са безплатни. Сумите са ориентировъчни за 2025/2026 г.",
+    "tug_feeFree": "Специалности по материалознание: безплатно (държавна поръчка, приоритетни)",
+    "tug_feeEng": "Инженерни и ИТ специалности (БГ/ЕС): ≈€240 / семестър",
+    "tug_feeEcon": "Икономика и социални програми (БГ/ЕС): ≈€184–€225 / семестър",
+    "tug_feeMaster": "Магистърски програми: ≈€240 / семестър (Управление на бизнеса ≈€184)",
+    "tug_feeForeign": "Чуждестранни студенти: ≈€3000–€3300 / година (ориентировъчно)",
+    "tug_facilitiesTitle": "Кампус и бази",
+    "tug_facilitiesDesc": "Добре оборудвани учебни и научни бази в областта на инженерството, компютрите и материалите.",
+    "tug_labs": "Модерни инженерни, електронни и компютърни лаборатории",
+    "tug_centres": "Центрове за компетентност и технологичен парк за приложни изследвания",
+    "tug_faculties": "3 факултета и Технически колеж в Ловеч",
+    "tug_igip": "Обучение за „Европейски инженер-педагог“, акредитирано от IGIP",
+    "tug_iso": "Сертифицирана по ISO 9001:2015 система за управление на качеството",
+    "tug_internationalDesc": "Чуждестранните студенти са добре дошли с достъпни такси и обмен по Еразъм+.",
+    "tug_englishProg": "Избрани програми, достъпни за чуждестранни студенти",
+    "tug_erasmusMob": "Входяща и изходяща мобилност по Еразъм+",
+    "tug_support": "Съдействие за прием и признаване на дипломи",
+    "tug_affordable": "Ниски такси и разходи за живот в Габрово",
+    "tug_partnersDesc": "Академична и индустриална мрежа, изградена чрез Еразъм+ и приложни инженерни изследвания.",
+    "tug_erasmusNet": "Обмен по Еразъм+ с европейски университети партньори",
+    "tug_feani": "Международно инженерно признаване (IGIP, FEANI)",
+    "tug_industry": "Тясно сътрудничество с регионалната и националната индустрия",
+    "tug_research": "Докторско училище и приложни научни проекти",
     "mpl_scholarshipsDesc": "Държавни стипендии и студентска подкрепа са налични през цялото обучение, с общежития близо до Университетската болница.",
     "mpl_merit": "Стипендии за отличен успех",
     "mpl_social": "Социални стипендии (според дохода) и студентска подкрепа",
@@ -5450,6 +5659,16 @@
     }
   },
   "universities": {
+    "48": {
+      "name": "Технически университет – Габрово",
+      "description": "Модерен инженерен университет в Габрово — електроника, ИТ, мехатроника и индустриални технологии, с безплатни приоритетни специалности.",
+      "longDescription": "Техническият университет – Габрово е модерен държавен технически университет в сърцето на България, чиято история започва през 1964 г., когато в града е създаден Висш технически институт за задочно обучение; през 1972 г. е преименуван във Висш машинно-електротехнически институт, а с решение на Народното събрание от 1995 г. получава статут на технически университет.\n\nУниверситетът е организиран в три факултета — „Електротехника и електроника“; „Машиностроене и уредостроене“; и Стопански — заедно с Технически колеж в Ловеч. Предлага бакалавърски, магистърски и докторски програми в областта на инженерството, компютърните науки, индустриалните технологии, икономиката и социалната сфера. Програмите му носят международна инженерна акредитация от IGIP (квалификация „Европейски инженер-педагог“), наред с институционална акредитация от Националната агенция за оценяване и акредитация (НАОА) и сертифицирана по ISO 9001:2015 система за качество.\n\nСтудентите се обучават в добре оборудвани лаборатории, центрове за компетентност и бази в технологичен парк в области като автоматика и роботика, промишлена и автомобилна електроника, киберсигурност, мехатроника, материалознание и топлинни и газови системи, със силни връзки с индустрията и активна мобилност по Еразъм+.\n\nТаксите за българските и европейските студенти са субсидирани от държавата, а няколко приоритетни специалности — включително „Технология на материалите и материалознание“ — са безплатни. Ректор: проф. д-р инж. Илия Железаров.",
+      "location": "Габрово, България",
+      "degree": "Бакалавър и магистър",
+      "tuitionRange": "€0 – €240 / семестър (БГ/ЕС; приоритетни специалности по материалознание – безплатно)",
+      "website": "https://www.tugab.bg",
+      "applyUrl": "https://www.tugab.bg/priem/kandidatstudentski-priem"
+    },
     "47": {
       "name": "Медицински университет – Плевен",
       "description": "Високотехнологичен медицински университет в Плевен — първият в България с обучение по медицина на английски, с роботизирана хирургия и телемедицина.",
@@ -5922,6 +6141,28 @@
     }
   },
   "universityProfiles": {
+    "48": {
+      "name": "Технически университет – Габрово",
+      "focus": "електроника, автоматика и роботика, ИТ и киберсигурност, мехатроника, материалознание, индустриални и топлинно-газови системи и икономика",
+      "style": "приложни инженерни лаборатории, центрове за компетентност, технологичен парк и силни връзки с индустрията и Еразъм+",
+      "careers": [
+        "Електро / електронен инженер",
+        "Инженер по автоматика и роботика",
+        "Софтуерен / ИТ и киберсигурност специалист",
+        "Мехатроник / машинен инженер",
+        "Инженер по материали и индустрия",
+        "Енергиен / ОВК инженер",
+        "Мениджър / HR / ръководител на проекти",
+        "Социален работник"
+      ],
+      "admissionNotes": [
+        "Прием по оценки от матурите или конкурсен изпит",
+        "Няколко приоритетни инженерни специалности са безплатни",
+        "Такса за кандидатстване €30 (60 лв.) за първия изпит",
+        "Магистратура: 3 семестъра след технически бакалавър",
+        "Онлайн кандидатстване на сайта на университета"
+      ]
+    },
     "47": {
       "name": "Медицински университет – Плевен",
       "focus": "медицина, фармация, ветеринарна медицина, здравни грижи, обществено здраве и здравен мениджмънт",
@@ -7041,6 +7282,32 @@
     }
   },
   "programTitles": {
+    "automation-robotics-and-computer-control-systems": "Автоматика, роботика и компютърни управляващи системи",
+    "power-engineering-and-electrical-equipment": "Електроенергетика и електрообзавеждане",
+    "industrial-and-automotive-electronics": "Промишлена и автомобилна електроника",
+    "communication-technologies-and-cybersecurity": "Комуникационни технологии и киберсигурност",
+    "software-and-computer-engineering": "Софтуерно и компютърно инженерство",
+    "technical-safety": "Техническа безопасност",
+    "design-engineering-and-technologies-in-textiles": "Дизайн, техника и технологии в текстила",
+    "computer-technologies-in-mechanical-engineering": "Компютърни технологии в машиностроенето",
+    "computer-design": "Компютърен дизайн",
+    "industrial-thermal-and-gas-systems": "Индустриални топлинни и газови системи",
+    "materials-technology-and-materials-science": "Технология на материалите и материалознание",
+    "social-services": "Социални дейности",
+    "automation-information-and-control-equipment": "Автоматика, информационна и управляваща техника",
+    "automotive-electronics": "Автомобилна електроника",
+    "optoelectronics-and-laser-technology": "Оптоелектроника и лазерна техника",
+    "communication-equipment-and-technologies": "Комуникационна техника и технологии",
+    "occupational-safety": "Безопасност на труда",
+    "mechanical-and-precision-engineering": "Машиностроене и уредостроене",
+    "hydraulic-and-pneumatic-equipment": "Хидравлична и пневматична техника",
+    "heating-ventilation-and-air-conditioning-equipment": "Отоплителна, вентилационна и климатична техника",
+    "textile-equipment-and-technologies": "Текстилна техника и технологии",
+    "surface-engineering-of-materials": "Повърхностно обработване на инженерни материали",
+    "computer-design-in-industry": "Компютърен дизайн в индустрията",
+    "environmental-protection-equipment-and-technologies": "Техника и технологии за опазване на околната среда",
+    "social-work-and-european-policies": "Социална работа и европейски политики",
+    "innovations-in-social-services-management": "Иновации в управлението на социалните услуги",
     "medical-rehabilitation-and-ergotherapy": "Медицинска рехабилитация и ерготерапия",
     "protection-and-control-of-public-health": "Опазване и контрол на общественото здраве",
     "social-activities-in-healthcare": "Социални дейности в здравеопазването",

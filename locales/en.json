@@ -1,4 +1,147 @@
 {
+  "tug_programInfo": {
+    "automation-robotics-and-computer-control-systems": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "power-engineering-and-electrical-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "industrial-and-automotive-electronics": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "computer-systems-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "communication-technologies-and-cybersecurity": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "software-and-computer-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "technical-safety": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "design-engineering-and-technologies-in-textiles": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "computer-technologies-in-mechanical-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "computer-design": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "mechatronics": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "industrial-thermal-and-gas-systems": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "materials-technology-and-materials-science": {
+      "tuition": "€0",
+      "facultyKey": "fmpe"
+    },
+    "social-services": {
+      "tuition": "€184",
+      "facultyKey": "feco"
+    },
+    "automation-information-and-control-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "automotive-electronics": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "electronics": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "optoelectronics-and-laser-technology": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "communication-equipment-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "occupational-safety": {
+      "tuition": "€240",
+      "facultyKey": "fee"
+    },
+    "mechanical-and-precision-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "hydraulic-and-pneumatic-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "heating-ventilation-and-air-conditioning-equipment": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "textile-equipment-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "surface-engineering-of-materials": {
+      "tuition": "€0",
+      "facultyKey": "fmpe"
+    },
+    "computer-design-in-industry": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "environmental-protection-equipment-and-technologies": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "industrial-engineering": {
+      "tuition": "€240",
+      "facultyKey": "fmpe"
+    },
+    "social-activities": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "social-work-and-european-policies": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "innovations-in-social-services-management": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "human-resources-management": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    },
+    "business-management": {
+      "tuition": "€184",
+      "facultyKey": "feco"
+    },
+    "project-management": {
+      "tuition": "€225",
+      "facultyKey": "feco"
+    }
+  },
+  "tug_faculties": {
+    "fee": "Faculty of Electrical Engineering and Electronics",
+    "fmpe": "Faculty of Mechanical and Precision Engineering",
+    "feco": "Faculty of Economics"
+  },
   "mpl_programInfo": {
     "nursing": {
       "tuition": "€205",
@@ -1446,6 +1589,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "48": {
+      "yearsTradition": "60+",
+      "bachelorPrograms": "14",
+      "masterPrograms": "25+",
+      "internationalPartners": "100+",
+      "countries": "30",
+      "studentsGraduated": "40K+",
+      "labs": "3",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Materials specialties tuition-free"
+    },
     "47": {
       "yearsTradition": "50+",
       "bachelorPrograms": "12+",
@@ -2009,6 +2164,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "48": [
+      {
+        "range": "€0",
+        "label": "Materials Science specialties (state-funded, tuition-free)"
+      },
+      {
+        "range": "€240",
+        "label": "Engineering & IT (BG/EU, per semester)"
+      },
+      {
+        "range": "€184–€225",
+        "label": "Economics & social programmes (per semester)"
+      },
+      {
+        "range": "€3,000–€3,300",
+        "label": "International students (per year, indicative)"
+      }
+    ],
     "47": [
       {
         "range": "€205–€300",
@@ -2857,6 +3030,42 @@
     ]
   },
   "universityExtra": {
+    "tug_scholarshipsDesc": "State scholarships and student support run throughout the studies, with affordable dormitories in Gabrovo.",
+    "tug_merit": "Merit scholarships for strong academic results",
+    "tug_social": "Social (income-based) scholarships and support",
+    "tug_priority": "Extra scholarships for priority engineering specialties (national programme)",
+    "tug_erasmus": "Erasmus+ mobility grants for study or a placement abroad",
+    "tug_hostels": "Affordable student dormitories and canteen in Gabrovo",
+    "tug_applicationDesc": "Admission after secondary education, with candidate application submitted online.",
+    "tug_appExam": "Admission by matriculation grades or an entrance exam",
+    "tug_appOnline": "Online candidate application on the university website",
+    "tug_appFee": "Application fee €30 (60 BGN) for the first exam, €15 each further",
+    "tug_appMaster": "Master: 3 semesters after a technical bachelor (longer for other fields)",
+    "tug_appDeadline": "Main summer admission with additional rounds in September",
+    "tug_feesTitle": "Tuition & Fees",
+    "tug_feesDesc": "Fees for Bulgarian and EU students are state-subsidised; several priority specialties are tuition-free. Amounts are indicative for 2025/2026.",
+    "tug_feeFree": "Materials Science specialties: tuition-free (state-funded priority)",
+    "tug_feeEng": "Engineering & IT (BG/EU): ≈€240 / semester",
+    "tug_feeEcon": "Economics & social programmes (BG/EU): ≈€184–€225 / semester",
+    "tug_feeMaster": "Master programmes: ≈€240 / semester (Business Management ≈€184)",
+    "tug_feeForeign": "International students: ≈€3,000–€3,300 / year (indicative)",
+    "tug_facilitiesTitle": "Campus & Facilities",
+    "tug_facilitiesDesc": "Well-equipped teaching and research bases across engineering, computing and materials.",
+    "tug_labs": "Modern engineering, electronics and computing laboratories",
+    "tug_centres": "Competence centres and a technology park for applied research",
+    "tug_faculties": "3 faculties plus the Technical College in Lovech",
+    "tug_igip": "IGIP-accredited 'European Engineering Educator' training",
+    "tug_iso": "ISO 9001:2015-certified quality management system",
+    "tug_internationalDesc": "International students are welcomed with affordable tuition and Erasmus+ exchange.",
+    "tug_englishProg": "Selected programmes available for international students",
+    "tug_erasmusMob": "Incoming and outgoing Erasmus+ mobility",
+    "tug_support": "Support for admission and diploma recognition",
+    "tug_affordable": "Low tuition and living costs in Gabrovo",
+    "tug_partnersDesc": "An academic and industry network built on Erasmus+ and applied engineering research.",
+    "tug_erasmusNet": "Erasmus+ exchanges with European partner universities",
+    "tug_feani": "International engineering recognition (IGIP, FEANI)",
+    "tug_industry": "Close cooperation with regional and national industry",
+    "tug_research": "Doctoral school and applied research projects",
     "mpl_scholarshipsDesc": "State scholarships and student support are available throughout the studies, with dormitories close to the University Hospital.",
     "mpl_merit": "Merit scholarships for excellent academic results",
     "mpl_social": "Social (income-based) scholarships and student support",
@@ -5450,6 +5659,16 @@
     }
   },
   "universities": {
+    "48": {
+      "name": "Technical University of Gabrovo",
+      "description": "A modern engineering university in Gabrovo — electronics, IT, mechatronics and industrial technologies, with tuition-free priority specialties.",
+      "longDescription": "The Technical University of Gabrovo is a modern state technical university in the heart of Bulgaria, tracing its history to 1964, when a Higher Technical Institute for part-time studies was founded in the city; it was renamed the Higher Mechanical and Electrical Engineering Institute in 1972 and granted university status by the National Assembly in 1995.\n\nThe university is organised into three faculties — Electrical Engineering and Electronics; Mechanical and Precision Engineering; and Economics — together with the Technical College in Lovech. It offers bachelor's, master's and doctoral programmes in engineering, computing, industrial technologies, economics and the social sphere. Its programmes carry international engineering accreditation from IGIP (the 'European Engineering Educator' qualification), alongside institutional accreditation from the National Evaluation and Accreditation Agency (NEAA) and an ISO 9001:2015-certified quality system.\n\nStudents train in well-equipped laboratories, competence centres and technology-park facilities in fields such as automation and robotics, industrial and automotive electronics, cybersecurity, mechatronics, materials science and thermal-and-gas systems, with strong ties to industry and active Erasmus+ mobility.\n\nTuition for Bulgarian and EU students is state-subsidised, and several priority specialties — including Materials Technology and Materials Science — are tuition-free. Rector: Prof. Dr. Eng. Iliya Zhelezarov.",
+      "location": "Gabrovo, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€0 - €240 / semester (BG/EU; priority materials specialties tuition-free)",
+      "website": "https://www.tugab.bg",
+      "applyUrl": "https://www.tugab.bg/priem/kandidatstudentski-priem"
+    },
     "47": {
       "name": "Medical University – Pleven",
       "description": "A high-tech medical university in Pleven — the first in Bulgaria to teach Medicine in English, with robotic surgery and telemedicine training.",
@@ -5922,6 +6141,28 @@
     }
   },
   "universityProfiles": {
+    "48": {
+      "name": "Technical University of Gabrovo",
+      "focus": "electronics, automation and robotics, IT and cybersecurity, mechatronics, materials science, industrial and thermal-gas systems, and economics",
+      "style": "applied engineering labs, competence centres, a technology park, and strong industry and Erasmus+ links",
+      "careers": [
+        "Electrical / Electronics Engineer",
+        "Automation & Robotics Engineer",
+        "Software / IT & Cybersecurity specialist",
+        "Mechatronics / Mechanical Engineer",
+        "Materials & Industrial Engineer",
+        "Energy & HVAC Engineer",
+        "Manager / HR / Project manager",
+        "Social worker"
+      ],
+      "admissionNotes": [
+        "Admission by matriculation grades or an entrance exam",
+        "Several priority engineering specialties are tuition-free",
+        "Application fee €30 (60 BGN) for the first exam",
+        "Master programmes: 3 semesters after a technical bachelor",
+        "Online candidate application on the university website"
+      ]
+    },
     "47": {
       "name": "Medical University – Pleven",
       "focus": "medicine, pharmacy, veterinary medicine, nursing, public health and health management",
@@ -7041,6 +7282,32 @@
     }
   },
   "programTitles": {
+    "automation-robotics-and-computer-control-systems": "Automation, Robotics and Computer Control Systems",
+    "power-engineering-and-electrical-equipment": "Power Engineering and Electrical Equipment",
+    "industrial-and-automotive-electronics": "Industrial and Automotive Electronics",
+    "communication-technologies-and-cybersecurity": "Communication Technologies and Cybersecurity",
+    "software-and-computer-engineering": "Software and Computer Engineering",
+    "technical-safety": "Technical Safety",
+    "design-engineering-and-technologies-in-textiles": "Design, Engineering and Technologies in Textiles",
+    "computer-technologies-in-mechanical-engineering": "Computer Technologies in Mechanical Engineering",
+    "computer-design": "Computer Design",
+    "industrial-thermal-and-gas-systems": "Industrial Thermal and Gas Systems",
+    "materials-technology-and-materials-science": "Materials Technology and Materials Science",
+    "social-services": "Social Services",
+    "automation-information-and-control-equipment": "Automation, Information and Control Equipment",
+    "automotive-electronics": "Automotive Electronics",
+    "optoelectronics-and-laser-technology": "Optoelectronics and Laser Technology",
+    "communication-equipment-and-technologies": "Communication Equipment and Technologies",
+    "occupational-safety": "Occupational Safety",
+    "mechanical-and-precision-engineering": "Mechanical and Precision Engineering",
+    "hydraulic-and-pneumatic-equipment": "Hydraulic and Pneumatic Equipment",
+    "heating-ventilation-and-air-conditioning-equipment": "Heating, Ventilation and Air-Conditioning Equipment",
+    "textile-equipment-and-technologies": "Textile Equipment and Technologies",
+    "surface-engineering-of-materials": "Surface Engineering of Materials",
+    "computer-design-in-industry": "Computer Design in Industry",
+    "environmental-protection-equipment-and-technologies": "Environmental Protection Equipment and Technologies",
+    "social-work-and-european-policies": "Social Work and European Policies",
+    "innovations-in-social-services-management": "Innovations in Social Services Management",
     "medical-rehabilitation-and-ergotherapy": "Medical Rehabilitation and Ergotherapy",
     "protection-and-control-of-public-health": "Protection and Control of Public Health",
     "social-activities-in-healthcare": "Social Activities in Healthcare",

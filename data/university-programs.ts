@@ -1660,6 +1660,53 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Public Health and Health Management",
     ],
   },
+  "48": {
+    bachelor: [
+      "Automation, Robotics and Computer Control Systems",
+      "Power Engineering and Electrical Equipment",
+      "Industrial and Automotive Electronics",
+      "Computer Systems and Technologies",
+      "Communication Technologies and Cybersecurity",
+      "Software and Computer Engineering",
+      "Technical Safety",
+      "Design, Engineering and Technologies in Textiles",
+      "Computer Technologies in Mechanical Engineering",
+      "Computer Design",
+      "Mechatronics",
+      "Industrial Thermal and Gas Systems",
+      "Materials Technology and Materials Science",
+      "Social Services",
+    ],
+    master: [
+      "Automation, Information and Control Equipment",
+      "Automotive Electronics",
+      "Electronics",
+      "Optoelectronics and Laser Technology",
+      "Power Engineering and Electrical Equipment",
+      "Computer Systems and Technologies",
+      "Software and Computer Engineering",
+      "Communication Technologies and Cybersecurity",
+      "Communication Equipment and Technologies",
+      "Occupational Safety",
+      "Computer Technologies in Mechanical Engineering",
+      "Mechatronics",
+      "Mechanical and Precision Engineering",
+      "Hydraulic and Pneumatic Equipment",
+      "Heating, Ventilation and Air-Conditioning Equipment",
+      "Textile Equipment and Technologies",
+      "Materials Technology and Materials Science",
+      "Surface Engineering of Materials",
+      "Computer Design in Industry",
+      "Environmental Protection Equipment and Technologies",
+      "Industrial Engineering",
+      "Social Activities",
+      "Social Work and European Policies",
+      "Innovations in Social Services Management",
+      "Human Resources Management",
+      "Business Management",
+      "Project Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2825,6 +2872,29 @@ function getMplFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getTugProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`tug_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTugFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`tug_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3275,6 +3345,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (mplInfo.tuition) summary.tuition = mplInfo.tuition;
         if (mplInfo.facultyKey) {
           const facultyName = getMplFaculty(mplInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "48") {
+      const tugInfo = getTugProgramInfo(slug);
+      if (tugInfo) {
+        if (tugInfo.tuition) summary.tuition = tugInfo.tuition;
+        if (tugInfo.facultyKey) {
+          const facultyName = getTugFaculty(tugInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3818,6 +3897,16 @@ export function buildProgramDetail(
       if (mplInfo.tuition) result.tuition = mplInfo.tuition;
       if (mplInfo.facultyKey) {
         const facultyName = getMplFaculty(mplInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "48" && normalizedSlug) {
+    const tugInfo = getTugProgramInfo(normalizedSlug);
+
+    if (tugInfo) {
+      if (tugInfo.tuition) result.tuition = tugInfo.tuition;
+      if (tugInfo.facultyKey) {
+        const facultyName = getTugFaculty(tugInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

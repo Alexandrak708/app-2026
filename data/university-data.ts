@@ -522,6 +522,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "48",
+    rating: 4,
+    color: "#2a5674",
+    image: require("../assets/images/tu-gabrovo.jpg"),
+    category: "Engineering",
+    categories: ["Engineering", "Economics", "Business"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
