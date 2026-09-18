@@ -511,6 +511,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "47",
+    rating: 5,
+    color: "#1e5f8c",
+    image: require("../assets/images/mu-pleven.jpg"),
+    category: "Medical",
+    categories: ["Medical"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {

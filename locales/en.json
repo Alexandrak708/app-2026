@@ -1,4 +1,86 @@
 {
+  "mpl_programInfo": {
+    "nursing": {
+      "tuition": "€205",
+      "facultyKey": "hc"
+    },
+    "midwifery": {
+      "tuition": "€205",
+      "facultyKey": "hc"
+    },
+    "kinesitherapy": {
+      "tuition": "€205",
+      "facultyKey": "ph"
+    },
+    "medical-rehabilitation-and-ergotherapy": {
+      "tuition": "€205",
+      "facultyKey": "ph"
+    },
+    "protection-and-control-of-public-health": {
+      "tuition": "€205",
+      "facultyKey": "ph"
+    },
+    "social-activities-in-healthcare": {
+      "tuition": "€205",
+      "facultyKey": "ph"
+    },
+    "health-care-management": {
+      "tuition": "€205",
+      "facultyKey": "hc"
+    },
+    "medical-laboratory-assistant": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "x-ray-laboratory-technician": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "assistant-pharmacist": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medico-social-activities": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medical-cosmetics": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "public-health-protection": {
+      "tuition": "€205",
+      "facultyKey": "mc"
+    },
+    "medicine": {
+      "tuition": "€300",
+      "facultyKey": "med"
+    },
+    "pharmacy": {
+      "tuition": "€300",
+      "facultyKey": "pharm"
+    },
+    "veterinary-medicine": {
+      "tuition": "€280",
+      "facultyKey": "vet"
+    },
+    "health-care-management-master": {
+      "tuition": "€230",
+      "facultyKey": "hc"
+    },
+    "public-health-and-health-management": {
+      "tuition": "€230",
+      "facultyKey": "ph"
+    }
+  },
+  "mpl_faculties": {
+    "med": "Faculty of Medicine",
+    "pharm": "Faculty of Pharmacy",
+    "vet": "Faculty of Veterinary Medicine",
+    "ph": "Faculty of Public Health",
+    "hc": "Faculty of Health Care",
+    "mc": "Medical College – Pleven"
+  },
   "trak_programInfo": {
     "veterinary-medicine": {
       "tuition": "€280",
@@ -1364,6 +1446,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "47": {
+      "yearsTradition": "50+",
+      "bachelorPrograms": "12+",
+      "masterPrograms": "5",
+      "internationalPartners": "60+",
+      "countries": "45",
+      "studentsGraduated": "20K+",
+      "labs": "5",
+      "labsText": "Faculties",
+      "tuitionFreeLabel": "1997",
+      "tuitionFreeText": "First English Medicine in Bulgaria"
+    },
     "46": {
       "yearsTradition": "30+",
       "bachelorPrograms": "45+",
@@ -1915,6 +2009,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "47": [
+      {
+        "range": "€205–€300",
+        "label": "State-subsidised (BG/EU, per semester)"
+      },
+      {
+        "range": "€9,000",
+        "label": "Medicine in English (per year)"
+      },
+      {
+        "range": "€3,500",
+        "label": "Nursing in English (per year)"
+      },
+      {
+        "range": "€4,000",
+        "label": "Preparatory language year (per year)"
+      }
+    ],
     "46": [
       {
         "range": "€0",
@@ -2745,6 +2857,43 @@
     ]
   },
   "universityExtra": {
+    "mpl_scholarshipsDesc": "State scholarships and student support are available throughout the studies, with dormitories close to the University Hospital.",
+    "mpl_merit": "Merit scholarships for excellent academic results",
+    "mpl_social": "Social (income-based) scholarships and student support",
+    "mpl_erasmus": "Erasmus+ mobility grants for study or a clinical placement abroad",
+    "mpl_special": "Targeted scholarships for priority specialties and special categories",
+    "mpl_hostels": "Student dormitories and canteen near the University Hospital",
+    "mpl_applicationDesc": "Admission after secondary education; documents are submitted fully online.",
+    "mpl_appExam": "Medicine & Pharmacy: combined Biology + Chemistry entrance exam (4 hours)",
+    "mpl_appOnline": "Fully online application for candidate students",
+    "mpl_appHealthCare": "Nursing, Midwifery & College programmes admit by matriculation grades",
+    "mpl_appIntl": "International applicants: €40 registration and €200 entrance-exam fee",
+    "mpl_appDeadline": "Main summer admission with online document submission",
+    "mpl_feesTitle": "Tuition & Fees",
+    "mpl_feesDesc": "Fees for Bulgarian and EU students are state-subsidised; English-taught programmes are paid. Amounts are indicative for 2025/2026.",
+    "mpl_feeMed": "Medicine & Pharmacy (BG/EU): ≈€300 / semester",
+    "mpl_feeHealth": "Nursing, Midwifery & College programmes (BG/EU): ≈€205 / semester",
+    "mpl_feeMedEng": "Medicine in English: €9,000 / year",
+    "mpl_feeNurseEng": "Nursing in English: €3,500 / year",
+    "mpl_feePrep": "Preparatory language year: €4,000 / year",
+    "mpl_facilitiesTitle": "Facilities & Technology",
+    "mpl_facilitiesDesc": "Pleven is a pioneer in high-technology medical training, from endoscopic and robotic surgery to telemedicine and virtual reality.",
+    "mpl_telec": "TELEC — Teaching Experimental Centre for Endoscopic Surgery (2007)",
+    "mpl_robotic": "Robotic (da Vinci) surgery and telemedicine training",
+    "mpl_simulation": "Simulation centre, virtual-reality studios and 3D-printing labs",
+    "mpl_hospital": "Clinical practice at the University Hospital and clinics",
+    "mpl_lecturio": "Digital learning with the Lecturio platform and Medical TV",
+    "mpl_internationalDesc": "International students are welcomed to English-taught degrees, with dedicated language and support services.",
+    "mpl_english": "Medicine and Nursing taught fully in English",
+    "mpl_first": "First Bulgarian medical school to teach Medicine in English (1997)",
+    "mpl_countries": "Students from 45+ countries worldwide",
+    "mpl_delst": "Language and preparatory training through the DELST department",
+    "mpl_recognition": "EU-recognised diplomas; support for credential recognition",
+    "mpl_partnersDesc": "An international academic network built on Erasmus+ exchange and biomedical research.",
+    "mpl_eua": "Member of the European University Association (EUA)",
+    "mpl_erasmusNet": "Erasmus+ exchanges with European partner universities",
+    "mpl_research": "Research Institute and a doctoral school",
+    "mpl_motto": "Motto: Non sibi sed omnibus — Not for ourselves, but for all",
     "trak_scholarshipsDesc": "State scholarships and a range of grants support students throughout their studies, with dormitories and a canteen on campus.",
     "trak_merit": "Merit scholarships for strong academic results, paid by semester",
     "trak_social": "Social (income-based) scholarships and targeted support",
@@ -5301,6 +5450,16 @@
     }
   },
   "universities": {
+    "47": {
+      "name": "Medical University – Pleven",
+      "description": "A high-tech medical university in Pleven — the first in Bulgaria to teach Medicine in English, with robotic surgery and telemedicine training.",
+      "longDescription": "Medical University – Pleven is a leading specialised medical university in northern Bulgaria. Founded in 1974 as a medical faculty and granted university status in 2004, it is best known as the first higher medical school in Bulgaria to teach Medicine in English, which it has done since 1997, and today educates students from more than 45 countries.\n\nThe university is organised into faculties of Medicine, Pharmacy, Public Health, Health Care and Veterinary Medicine, together with a Medical College, a Department for Language and Specialised Training (DELST) and a Research Institute. It offers around 17 programmes — integrated Medicine, Pharmacy and Veterinary Medicine, bachelor programmes in nursing, midwifery, kinesitherapy and health management, and professional-bachelor programmes at the Medical College — accredited by the National Evaluation and Accreditation Agency (NEAA).\n\nPleven is a pioneer in high-technology medical education: its Teaching Experimental Centre for Endoscopic Surgery (TELEC, opened 2007), robotic (da Vinci) surgery and telemedicine, a simulation centre, virtual-reality studios and 3D-printing laboratories give students hands-on training, with clinical practice at the University Hospital.\n\nTuition for Bulgarian and EU students is state-subsidised; the English-taught Medicine programme costs about €9,000 per year. Motto: Non sibi sed omnibus (Not for ourselves, but for all). Rector: Prof. Dr. Dobromir Dimitrov.",
+      "location": "Pleven, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€205 - €300 / semester (BG/EU); Medicine in English €9,000 / year",
+      "website": "https://www.mu-pleven.bg",
+      "applyUrl": "https://ksk.mu-pleven.bg"
+    },
     "46": {
       "name": "Trakia University",
       "description": "One of Bulgaria's leading universities for veterinary medicine, agriculture, medicine and life sciences, in Stara Zagora.",
@@ -5763,6 +5922,28 @@
     }
   },
   "universityProfiles": {
+    "47": {
+      "name": "Medical University – Pleven",
+      "focus": "medicine, pharmacy, veterinary medicine, nursing, public health and health management",
+      "style": "clinical training at the University Hospital, endoscopic and robotic surgery (TELEC & da Vinci), telemedicine, simulation and virtual-reality labs",
+      "careers": [
+        "Physician / Medical Doctor",
+        "Pharmacist",
+        "Veterinarian",
+        "Nurse / Midwife",
+        "Kinesitherapist / Rehabilitation therapist",
+        "Public health & health-care manager",
+        "Medical laboratory / X-ray technician",
+        "Researcher / Doctoral candidate"
+      ],
+      "admissionNotes": [
+        "Medicine & Pharmacy: combined Biology + Chemistry entrance exam (4 hours)",
+        "Medicine and Nursing are offered in English for international students",
+        "Health-care and Medical College programmes admit by matriculation grades",
+        "International applicants pay a €40 registration and €200 entrance-exam fee",
+        "Fully online application for candidate students"
+      ]
+    },
     "46": {
       "name": "Trakia University",
       "focus": "veterinary medicine, agriculture, medicine, life sciences, economics, education and engineering",
@@ -6860,6 +7041,12 @@
     }
   },
   "programTitles": {
+    "medical-rehabilitation-and-ergotherapy": "Medical Rehabilitation and Ergotherapy",
+    "protection-and-control-of-public-health": "Protection and Control of Public Health",
+    "social-activities-in-healthcare": "Social Activities in Healthcare",
+    "x-ray-laboratory-technician": "X-ray Laboratory Technician",
+    "medico-social-activities": "Medico-Social Activities",
+    "public-health-protection": "Public Health Protection",
     "agronomy-field-crops": "Agronomy (Field Crops)",
     "agronomy-essential-oil-and-medicinal-crops": "Agronomy (Essential Oil and Medicinal Crops)",
     "zooengineering": "Zooengineering",

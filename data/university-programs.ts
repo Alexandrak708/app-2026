@@ -1636,6 +1636,30 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Heating, Ventilation and Air Conditioning",
     ],
   },
+  "47": {
+    bachelor: [
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Medical Rehabilitation and Ergotherapy",
+      "Protection and Control of Public Health",
+      "Social Activities in Healthcare",
+      "Health Care Management",
+      "Medical Laboratory Assistant",
+      "X-ray Laboratory Technician",
+      "Assistant Pharmacist",
+      "Medico-Social Activities",
+      "Medical Cosmetics",
+      "Public Health Protection",
+    ],
+    master: [
+      "Medicine",
+      "Pharmacy",
+      "Veterinary Medicine",
+      "Health Care Management (Master)",
+      "Public Health and Health Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2778,6 +2802,29 @@ function getTrakFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getMplProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`mpl_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getMplFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`mpl_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3219,6 +3266,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (trakInfo.tuition) summary.tuition = trakInfo.tuition;
         if (trakInfo.facultyKey) {
           const facultyName = getTrakFaculty(trakInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "47") {
+      const mplInfo = getMplProgramInfo(slug);
+      if (mplInfo) {
+        if (mplInfo.tuition) summary.tuition = mplInfo.tuition;
+        if (mplInfo.facultyKey) {
+          const facultyName = getMplFaculty(mplInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3752,6 +3808,16 @@ export function buildProgramDetail(
       if (trakInfo.tuition) result.tuition = trakInfo.tuition;
       if (trakInfo.facultyKey) {
         const facultyName = getTrakFaculty(trakInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "47" && normalizedSlug) {
+    const mplInfo = getMplProgramInfo(normalizedSlug);
+
+    if (mplInfo) {
+      if (mplInfo.tuition) result.tuition = mplInfo.tuition;
+      if (mplInfo.facultyKey) {
+        const facultyName = getMplFaculty(mplInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
