@@ -1,4 +1,99 @@
 {
+  "ibs_programInfo": {
+    "business-administration": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "international-business": {
+      "tuition": "€1,000 (BG) · €1,500 (English)",
+      "facultyKey": "mgmt"
+    },
+    "marketing": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "accounting-and-control": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "finance": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "business-informatics": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "tourism": {
+      "tuition": "€1,000",
+      "facultyKey": "tourism"
+    },
+    "business-finance": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "taxation": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "digital-marketing": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "logistics": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "music-business": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "project-management": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "artificial-intelligence-in-business": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "marketing-management": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "financial-management": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "human-resources-management": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "tourism-management": {
+      "tuition": "€1,000",
+      "facultyKey": "tourism"
+    },
+    "international-business-and-management": {
+      "tuition": "€1,000 (BG) · €1,500 (English)",
+      "facultyKey": "mgmt"
+    },
+    "entrepreneurship": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    },
+    "accounting-and-auditing": {
+      "tuition": "€1,000",
+      "facultyKey": "econ"
+    },
+    "public-administration": {
+      "tuition": "€1,000",
+      "facultyKey": "mgmt"
+    }
+  },
+  "ibs_faculties": {
+    "mgmt": "Administration and Management",
+    "econ": "Economics and Finance",
+    "tourism": "Tourism"
+  },
   "cenov_programInfo": {
     "finance": {
       "tuition": "€180",
@@ -1974,6 +2069,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "51": {
+      "yearsTradition": "30+",
+      "bachelorPrograms": "8+",
+      "masterPrograms": "18",
+      "internationalPartners": "40+",
+      "countries": "20",
+      "studentsGraduated": "30K+",
+      "labs": "2",
+      "labsText": "Campuses",
+      "tuitionFreeLabel": "2005",
+      "tuitionFreeText": "Distance-learning pioneer"
+    },
     "50": {
       "yearsTradition": "90",
       "bachelorPrograms": "20",
@@ -2573,6 +2680,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "51": [
+      {
+        "range": "€1,000",
+        "label": "Bulgarian-taught (per semester)"
+      },
+      {
+        "range": "€1,500",
+        "label": "English-taught, EU (per semester)"
+      },
+      {
+        "range": "€2,100–€2,300",
+        "label": "English-taught, non-EU (per semester)"
+      },
+      {
+        "range": "€250",
+        "label": "Additional discipline / elective"
+      }
+    ],
     "50": [
       {
         "range": "€180",
@@ -3475,6 +3600,42 @@
     ]
   },
   "universityExtra": {
+    "ibs_scholarshipsDesc": "Merit awards, social support, discounts and flexible online study help students fund their education.",
+    "ibs_merit": "Merit awards and scholarships for strong applicants",
+    "ibs_social": "Social support and instalment payment plans",
+    "ibs_erasmus": "Erasmus+ mobility grants for study or a placement abroad",
+    "ibs_discount": "Discounts for early enrolment and returning students",
+    "ibs_distance": "Affordable online and distance-learning options",
+    "ibs_applicationDesc": "Rolling admission runs through the year; entry is based on your diploma and a short motivational essay.",
+    "ibs_appRolling": "Rolling admission with a short motivational essay",
+    "ibs_appDocs": "Secondary-school diploma and application form",
+    "ibs_appForms": "Full-time, part-time and distance learning",
+    "ibs_appLang": "Programmes taught in Bulgarian and in English",
+    "ibs_appOnline": "Online application; application fee €30",
+    "ibs_feesTitle": "Tuition & Fees",
+    "ibs_feesDesc": "IBS is a private school with fee-based tuition. Amounts are per semester for 2025/2026.",
+    "ibs_feeBg": "Bulgarian-taught: ≈€1,000 / semester",
+    "ibs_feeEnEu": "English-taught (EU): €1,500 / semester",
+    "ibs_feeEnNonEu": "English-taught (non-EU): €2,100–€2,300 / semester",
+    "ibs_feeMaster": "Master programmes: ≈€1,000 / semester (Bulgarian-taught)",
+    "ibs_feeExtra": "Additional discipline €250; application fee €30",
+    "ibs_campusTitle": "Profile & Campuses",
+    "ibs_campusDesc": "A modern private business school with campuses in Botevgrad and Sofia.",
+    "ibs_accredited": "Among the highest-accredited private universities in Bulgaria",
+    "ibs_campuses": "Campuses in Botevgrad and Sofia (award-nominated building)",
+    "ibs_distanceLeader": "A leader in distance and online learning since 2005",
+    "ibs_dsLabel": "European Commission Diploma Supplement (DS) Label",
+    "ibs_fields": "Fields: Management, Economics and Tourism",
+    "ibs_internationalDesc": "English-taught programmes and Erasmus+ exchange welcome international students.",
+    "ibs_english": "Bachelor and master programmes taught in English",
+    "ibs_erasmusMob": "Incoming and outgoing Erasmus+ mobility",
+    "ibs_support": "Admissions support for EU and non-EU applicants",
+    "ibs_recognition": "Diploma Supplement; EU-recognised degrees",
+    "ibs_partnersDesc": "Strong employer and academic partnerships underpin career-focused study.",
+    "ibs_industry": "Employer partners including KPMG Audit and Adecco",
+    "ibs_academic": "Academic partners: Jones International (USA), Ariel (Israel), Breda (NL)",
+    "ibs_erasmusNet": "Erasmus+ exchanges with European partner universities",
+    "ibs_career": "Career services and practice-oriented projects",
     "cenov_scholarshipsDesc": "State scholarships and student support run throughout the studies, with dormitories and a canteen on the Svishtov campus.",
     "cenov_merit": "Merit scholarships for excellent academic results",
     "cenov_social": "Social (income-based) scholarships and student support",
@@ -6176,6 +6337,16 @@
     }
   },
   "universities": {
+    "51": {
+      "name": "International Business School",
+      "description": "Bulgaria's top-accredited private business school, in Botevgrad and Sofia — management, finance, marketing, tourism and business, taught in Bulgarian and English.",
+      "longDescription": "The International Business School (IBS / MVBU) is a private higher school of business based in Botevgrad, with a modern campus in Sofia. It was founded in 1991 as the Bulgarian-Danish College of Business, Export and Marketing, and was transformed into a specialised higher school of learning by an Act of the National Assembly on 25 July 2002. It is among the highest institutionally accredited private universities in Bulgaria.\n\nThe school teaches about 6,000 students in the professional fields of Economics, Administration and Management, and Tourism, across bachelor's, master's and doctoral degrees, in Bulgarian and in English. Its master's portfolio spans some 18 programmes, from Business Administration, Digital Marketing and Project Management to distinctive tracks such as Music Business and the new Artificial Intelligence in Business.\n\nIBS has been a leader in distance and online learning in Bulgaria since 2005, and its degrees carry the European Commission's Diploma Supplement (DS) Label. It maintains partnerships with employers and academic institutions including KPMG Audit, Adecco, Jones International University (USA), Ariel University (Israel) and Breda University of Applied Sciences (Netherlands), alongside active Erasmus+ mobility.\n\nAs a private school, tuition is fee-based — about €1,000 per semester for Bulgarian-taught programmes and €1,500 (EU) for English-taught programmes. Rector: Prof. Dr. Ruslan Penchev.",
+      "location": "Botevgrad, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€1,000 - €2,300 / semester (private; English-taught higher)",
+      "website": "https://ibsedu.bg",
+      "applyUrl": "https://ibsedu.bg/en/"
+    },
     "50": {
       "name": "D. A. Tsenov Academy of Economics",
       "description": "Bulgaria's oldest and first specialised academy of economics, in Svishtov — finance, accounting, management and business, with 145,000 alumni.",
@@ -6678,6 +6849,28 @@
     }
   },
   "universityProfiles": {
+    "51": {
+      "name": "International Business School",
+      "focus": "business administration, management, finance and accounting, marketing, business informatics, tourism, and entrepreneurship",
+      "style": "practice-oriented business education, online and distance learning, employer partnerships and Erasmus+ mobility",
+      "careers": [
+        "Manager / Business administrator",
+        "Financier / Accountant",
+        "Marketing & digital specialist",
+        "Entrepreneur / Start-up founder",
+        "Tourism & hospitality manager",
+        "Project manager",
+        "HR specialist",
+        "Business analyst"
+      ],
+      "admissionNotes": [
+        "Rolling admission with a short motivational essay",
+        "Programmes taught in Bulgarian and in English",
+        "Full-time, part-time and distance learning",
+        "Application fee €30; light entrance formalities",
+        "Private tuition (about €1,000 per semester, Bulgarian-taught)"
+      ]
+    },
     "50": {
       "name": "D. A. Tsenov Academy of Economics",
       "focus": "finance, accounting and control, banking and insurance, management, marketing, business informatics, statistics, tourism, trade and public administration",
@@ -7863,6 +8056,11 @@
     }
   },
   "programTitles": {
+    "business-finance": "Business Finance",
+    "taxation": "Taxation",
+    "music-business": "Music Business",
+    "artificial-intelligence-in-business": "Artificial Intelligence in Business",
+    "accounting-and-auditing": "Accounting and Auditing",
     "insurance-and-social-security": "Insurance and Social Security",
     "economic-and-financial-control": "Economic and Financial Control",
     "finance-banking-and-insurance": "Finance, Banking and Insurance",

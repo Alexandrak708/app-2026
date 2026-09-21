@@ -1813,6 +1813,35 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "E-commerce",
     ],
   },
+  "51": {
+    bachelor: [
+      "Business Administration",
+      "International Business",
+      "Marketing",
+      "Accounting and Control",
+      "Finance",
+      "Business Informatics",
+      "Tourism",
+    ],
+    master: [
+      "Business Administration",
+      "Business Finance",
+      "Taxation",
+      "Digital Marketing",
+      "Logistics",
+      "Music Business",
+      "Project Management",
+      "Artificial Intelligence in Business",
+      "Marketing Management",
+      "Financial Management",
+      "Human Resources Management",
+      "Tourism Management",
+      "International Business and Management",
+      "Entrepreneurship",
+      "Accounting and Auditing",
+      "Public Administration",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -3047,6 +3076,29 @@ function getCenovFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getIbsProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`ibs_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getIbsFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`ibs_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3524,6 +3576,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (cenovInfo.tuition) summary.tuition = cenovInfo.tuition;
         if (cenovInfo.facultyKey) {
           const facultyName = getCenovFaculty(cenovInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "51") {
+      const ibsInfo = getIbsProgramInfo(slug);
+      if (ibsInfo) {
+        if (ibsInfo.tuition) summary.tuition = ibsInfo.tuition;
+        if (ibsInfo.facultyKey) {
+          const facultyName = getIbsFaculty(ibsInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -4097,6 +4158,16 @@ export function buildProgramDetail(
       if (cenovInfo.tuition) result.tuition = cenovInfo.tuition;
       if (cenovInfo.facultyKey) {
         const facultyName = getCenovFaculty(cenovInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "51" && normalizedSlug) {
+    const ibsInfo = getIbsProgramInfo(normalizedSlug);
+
+    if (ibsInfo) {
+      if (ibsInfo.tuition) result.tuition = ibsInfo.tuition;
+      if (ibsInfo.facultyKey) {
+        const facultyName = getIbsFaculty(ibsInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

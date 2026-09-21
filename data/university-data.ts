@@ -555,6 +555,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "51",
+    rating: 4,
+    color: "#a34a3c",
+    image: require("../assets/images/ibs-botevgrad.jpg"),
+    category: "Business",
+    categories: ["Business", "Economics"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
