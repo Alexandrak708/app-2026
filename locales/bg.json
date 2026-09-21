@@ -1,4 +1,389 @@
 {
+  "cenov_programInfo": {
+    "finance": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "insurance-and-social-security": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "economic-and-financial-control": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "finance-banking-and-insurance": {
+      "tuition": "€180 (BG/EU) · €1,400 (Russian)",
+      "facultyKey": "fin"
+    },
+    "marketing": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "public-administration": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "business-management": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "international-economic-relations": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "international-business": {
+      "tuition": "€180 (BG/EU) · €1,400 (English)",
+      "facultyKey": "mm"
+    },
+    "project-management": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "macroeconomics": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "industrial-business-and-entrepreneurship": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "trade-economics": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "agricultural-economics": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "tourism-economics": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "tourism-business-and-management": {
+      "tuition": "€180 (BG/EU) · €1,400 (English)",
+      "facultyKey": "ptb"
+    },
+    "business-economics": {
+      "tuition": "€180 (BG/EU) · €1,400 (English)",
+      "facultyKey": "ptb"
+    },
+    "accounting-and-control": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "business-informatics": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "business-statistics-and-analytics": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "financial-management": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "banking-management": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "investment-management": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "insurance": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "financial-analysis-and-control": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "financial-control-and-external-audit": {
+      "tuition": "€180",
+      "facultyKey": "fin"
+    },
+    "marketing-management": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "digital-marketing": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "business-administration": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "human-resources-management": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "international-business-and-management": {
+      "tuition": "€180",
+      "facultyKey": "mm"
+    },
+    "agribusiness": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "tourism-economics-and-management": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "trade-management": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "corporate-management": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "health-management": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "social-management": {
+      "tuition": "€180",
+      "facultyKey": "ptb"
+    },
+    "accounting-and-audit-in-the-public-sector": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "accounting-and-audit-in-non-financial-enterprises": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "data-analysis-and-business-statistics": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "digital-business": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    },
+    "e-commerce": {
+      "tuition": "€180",
+      "facultyKey": "acc"
+    }
+  },
+  "cenov_faculties": {
+    "fin": "Факултет „Финанси“",
+    "mm": "Факултет „Мениджмънт и маркетинг“",
+    "ptb": "Факултет „Производствен и търговски бизнес“",
+    "acc": "Факултет „Стопанска отчетност“"
+  },
+  "shu_programInfo": {
+    "bulgarian-philology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "english-philology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "russian-philology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "german-philology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "turkish-philology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "history": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "applied-archaeology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "theology": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "journalism": {
+      "tuition": "€160",
+      "facultyKey": "hum"
+    },
+    "mathematics": {
+      "tuition": "€190",
+      "facultyKey": "mi"
+    },
+    "informatics": {
+      "tuition": "€200",
+      "facultyKey": "mi"
+    },
+    "computer-informatics": {
+      "tuition": "€200",
+      "facultyKey": "mi"
+    },
+    "information-technologies": {
+      "tuition": "€200",
+      "facultyKey": "mi"
+    },
+    "economics": {
+      "tuition": "€190",
+      "facultyKey": "mi"
+    },
+    "biology": {
+      "tuition": "€170",
+      "facultyKey": "ns"
+    },
+    "chemistry": {
+      "tuition": "€0",
+      "facultyKey": "ns"
+    },
+    "physics": {
+      "tuition": "€0",
+      "facultyKey": "ns"
+    },
+    "geography": {
+      "tuition": "€170",
+      "facultyKey": "ns"
+    },
+    "ecology-and-environmental-protection": {
+      "tuition": "€170",
+      "facultyKey": "ns"
+    },
+    "preschool-and-primary-school-pedagogy": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "primary-school-pedagogy-with-a-foreign-language": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "social-pedagogy": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "special-pedagogy": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "music-pedagogy": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "physical-education": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "social-activities": {
+      "tuition": "€160",
+      "facultyKey": "ped"
+    },
+    "communication-and-information-systems": {
+      "tuition": "€200",
+      "facultyKey": "tech"
+    },
+    "signal-security-systems-and-security": {
+      "tuition": "€200",
+      "facultyKey": "tech"
+    },
+    "security-systems": {
+      "tuition": "€200",
+      "facultyKey": "tech"
+    },
+    "cybersecurity-technologies": {
+      "tuition": "€200",
+      "facultyKey": "tech"
+    },
+    "engineering-logistics": {
+      "tuition": "€200",
+      "facultyKey": "tech"
+    },
+    "computer-technologies-for-production-automation": {
+      "tuition": "€200",
+      "facultyKey": "tech"
+    },
+    "applied-linguistics": {
+      "tuition": "€170",
+      "facultyKey": "hum"
+    },
+    "bulgarian-language-and-literature": {
+      "tuition": "€170",
+      "facultyKey": "hum"
+    },
+    "history-and-archaeology": {
+      "tuition": "€170",
+      "facultyKey": "hum"
+    },
+    "media-and-public-communications": {
+      "tuition": "€170",
+      "facultyKey": "hum"
+    },
+    "software-technologies": {
+      "tuition": "€210",
+      "facultyKey": "mi"
+    },
+    "information-systems-and-technologies": {
+      "tuition": "€210",
+      "facultyKey": "mi"
+    },
+    "financial-mathematics": {
+      "tuition": "€190",
+      "facultyKey": "mi"
+    },
+    "astronomy-and-astrophysics": {
+      "tuition": "€180",
+      "facultyKey": "ns"
+    },
+    "applied-ecology-and-environmental-protection": {
+      "tuition": "€180",
+      "facultyKey": "ns"
+    },
+    "meteorology-and-agrometeorology": {
+      "tuition": "€180",
+      "facultyKey": "ns"
+    },
+    "educational-management": {
+      "tuition": "€170",
+      "facultyKey": "ped"
+    },
+    "inclusive-education": {
+      "tuition": "€170",
+      "facultyKey": "ped"
+    },
+    "social-work": {
+      "tuition": "€170",
+      "facultyKey": "ped"
+    },
+    "administrative-and-organizational-security": {
+      "tuition": "€210",
+      "facultyKey": "tech"
+    },
+    "geodesy": {
+      "tuition": "€210",
+      "facultyKey": "tech"
+    },
+    "geomatics": {
+      "tuition": "€210",
+      "facultyKey": "tech"
+    },
+    "technical-systems-operation": {
+      "tuition": "€210",
+      "facultyKey": "tech"
+    },
+    "cybersecurity": {
+      "tuition": "€210",
+      "facultyKey": "tech"
+    }
+  },
+  "shu_faculties": {
+    "hum": "Факултет по хуманитарни науки",
+    "mi": "Факултет по математика и информатика",
+    "ns": "Факултет по природни науки",
+    "ped": "Педагогически факултет",
+    "tech": "Факултет по технически науки"
+  },
   "tug_programInfo": {
     "automation-robotics-and-computer-control-systems": {
       "tuition": "€240",
@@ -1589,6 +1974,30 @@
     "tuitionFree": "4 специалности без такси"
   },
   "universityStatsValues": {
+    "50": {
+      "yearsTradition": "90",
+      "bachelorPrograms": "20",
+      "masterPrograms": "40+",
+      "internationalPartners": "100+",
+      "countries": "30",
+      "studentsGraduated": "145K+",
+      "labs": "4",
+      "labsText": "Факултета",
+      "tuitionFreeLabel": "1936",
+      "tuitionFreeText": "Първата стопанска академия в БГ"
+    },
+    "49": {
+      "yearsTradition": "50+",
+      "bachelorPrograms": "40+",
+      "masterPrograms": "60+",
+      "internationalPartners": "80+",
+      "countries": "25",
+      "studentsGraduated": "40K+",
+      "labs": "5",
+      "labsText": "Факултета",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "Физика и химия – безплатно"
+    },
     "48": {
       "yearsTradition": "60+",
       "bachelorPrograms": "14",
@@ -2164,6 +2573,42 @@
   },
   "tuitionTiersHeader": "СЕМЕСТРИАЛНИ ТАКСИ (БАКАЛАВЪР, 2025/2026)",
   "tuitionTiers": {
+    "50": [
+      {
+        "range": "€180",
+        "label": "Държавна поръчка (БГ/ЕС, на семестър)"
+      },
+      {
+        "range": "€620–€866",
+        "label": "Платено обучение (БГ/ЕС, на семестър)"
+      },
+      {
+        "range": "€400",
+        "label": "Дистанционно обучение (на семестър)"
+      },
+      {
+        "range": "€925–€1400",
+        "label": "Чуждестранни студенти (на семестър)"
+      }
+    ],
+    "49": [
+      {
+        "range": "€0",
+        "label": "Физика и химия (защитени, безплатно)"
+      },
+      {
+        "range": "€150–€200",
+        "label": "Държавна поръчка (БГ/ЕС, на семестър)"
+      },
+      {
+        "range": "€2500–€3000",
+        "label": "Чуждестранни студенти (на година, ориентировъчно)"
+      },
+      {
+        "range": "€3000",
+        "label": "Подготвителна езикова година (ориентировъчно)"
+      }
+    ],
     "48": [
       {
         "range": "€0",
@@ -3030,6 +3475,78 @@
     ]
   },
   "universityExtra": {
+    "cenov_scholarshipsDesc": "Държавни стипендии и студентска подкрепа през цялото обучение, с общежития и стол в кампуса в Свищов.",
+    "cenov_merit": "Стипендии за отличен успех",
+    "cenov_social": "Социални стипендии (според дохода) и студентска подкрепа",
+    "cenov_erasmus": "Грантове по Еразъм+ за обучение или практика в чужбина",
+    "cenov_priority": "Целеви стипендии и награди за най-изявените студенти",
+    "cenov_hostels": "Студентски общежития и стол в Свищов",
+    "cenov_applicationDesc": "Прием след средно образование, по оценка от държавния зрелостен изпит.",
+    "cenov_appExam": "Прием по оценка от държавен зрелостен изпит (матура)",
+    "cenov_appFields": "Две професионални направления: „Икономика“ и „Администрация и управление“",
+    "cenov_appForms": "Редовна, задочна и дистанционна форма на обучение",
+    "cenov_appLang": "Програми на български, английски и руски език",
+    "cenov_appOnline": "Онлайн кандидатстване през сайта на академията",
+    "cenov_feesTitle": "Такси за обучение",
+    "cenov_feesDesc": "Таксите се определят ежегодно от Министерския съвет; ставките по държавна поръчка са сред най-ниските в България. Суми за 2025/2026 г., на семестър.",
+    "cenov_feeState": "Държавна поръчка (БГ/ЕС): €180 / семестър",
+    "cenov_feePaid": "Платено обучение (БГ/ЕС): €620–€866 / семестър",
+    "cenov_feeDistance": "Дистанционно обучение: €400 / семестър",
+    "cenov_feeEnglish": "Програми на английски език: ≈€1400 / семестър",
+    "cenov_feeForeign": "Чуждестранни студенти (на български): €925–€1325 / семестър",
+    "cenov_campusTitle": "Наследство и кампус",
+    "cenov_campusDesc": "Историческа академия с компактен крайдунавски кампус в Свищов.",
+    "cenov_founding": "Основана през 1936 г. със завещанието на Димитър Ценов от 5 милиона златни лева",
+    "cenov_faculties": "4 факултета, 18 катедри и Научноизследователски институт",
+    "cenov_museum": "Академичен музей и 90-годишна академична традиция (2026)",
+    "cenov_kreativeu": "Член на алианса на европейските университети KreativEU",
+    "cenov_town": "Компактен крайдунавски кампус в Свищов",
+    "cenov_internationalDesc": "Чуждестранните студенти са добре дошли в програми на английски и руски език със специализирано обслужване.",
+    "cenov_english": "Бакалавърски програми на английски и руски език",
+    "cenov_intlOffice": "Център за международна дейност за чуждестранни студенти",
+    "cenov_erasmusMob": "Входяща и изходяща мобилност по Еразъм+",
+    "cenov_recognition": "Европейско дипломно приложение; съдействие за признаване",
+    "cenov_partnersDesc": "Академична мрежа, изградена чрез Еразъм+ и алианса KreativEU.",
+    "cenov_erasmusNet": "Обмен по Еразъм+ с европейски университети партньори",
+    "cenov_alliance": "Алианс на европейските университети KreativEU",
+    "cenov_research": "Научноизследователски институт и докторско училище",
+    "cenov_dual": "Възможност за двойна диплома („Международен финансов мениджмънт“)",
+    "shu_scholarshipsDesc": "Държавни стипендии и студентска подкрепа през цялото обучение, с достъпни общежития в Шумен.",
+    "shu_merit": "Стипендии за отличен успех, изплащани по семестри",
+    "shu_social": "Социални стипендии (според дохода) и студентска подкрепа",
+    "shu_priority": "Допълнителни стипендии за приоритетни специалности (национална програма)",
+    "shu_erasmus": "Грантове по Еразъм+ за обучение или практика в чужбина",
+    "shu_hostels": "Достъпни студентски общежития и стол в Шумен",
+    "shu_applicationDesc": "Прием след средно образование, с онлайн подаване на кандидатстудентските документи.",
+    "shu_appExam": "Прием по оценки от матурите или конкурсен изпит според специалността",
+    "shu_appOnline": "Онлайн кандидатстване; редовна и задочна форма на обучение",
+    "shu_appFree": "Национално защитените специалности (физика, химия) са безплатни",
+    "shu_appForms": "Бакалавърски, магистърски и докторски програми в пет факултета",
+    "shu_appDeadline": "Основен летен прием с допълнителни есенни класирания",
+    "shu_feesTitle": "Такси за обучение",
+    "shu_feesDesc": "Таксите за българските и европейските студенти са субсидирани от държавата и са сред най-ниските в страната. Сумите са ориентировъчни за 2025/2026 г.",
+    "shu_feeFree": "Физика и химия: безплатно (национално защитени специалности)",
+    "shu_feeHum": "Хуманитаристика, педагогика и природни науки (БГ/ЕС): ≈€150–€175 / семестър",
+    "shu_feeTech": "Информатика, технически и специалности по сигурност (БГ/ЕС): ≈€200 / семестър",
+    "shu_feeLowest": "Сред най-ниските такси за обучение в България",
+    "shu_feeForeign": "Чуждестранни студенти: ≈€2500–€3000 / година (ориентировъчно)",
+    "shu_campusTitle": "Кампус и бази",
+    "shu_campusDesc": "Зелен кампус в Шумен с отличителни научни и културно-исторически бази.",
+    "shu_observatory": "Астрономически център и обсерватория за обучение и изследвания",
+    "shu_library": "Университетска библиотека с богати медиевистични фондове",
+    "shu_preslav": "Научен център „Преславска книжовна школа“",
+    "shu_dobrich": "Колеж в Добрич и департамент ДИКПО за квалификация на учители във Варна",
+    "shu_labs": "Лаборатории по природни науки, компютри, комуникации и сигурност",
+    "shu_internationalDesc": "Чуждестранните студенти са добре дошли с ниски такси и обмен по Еразъм+.",
+    "shu_erasmusMob": "Входяща и изходяща мобилност по Еразъм+",
+    "shu_languages": "Силна филологическа школа (английски, руски, немски, турски)",
+    "shu_support": "Съдействие за прием и признаване на дипломи",
+    "shu_affordable": "Ниски такси и разходи за живот в Шумен",
+    "shu_partnersDesc": "Академична мрежа, изградена чрез обмен по Еразъм+ и водеща регионална изследователска роля.",
+    "shu_erasmusNet": "Обмен по Еразъм+ с европейски университети партньори",
+    "shu_research": "Докторско училище и активни научни центрове",
+    "shu_regional": "Регионален център за висше образование в Североизточна България",
+    "shu_heritage": "Пазител на Преславското средновековно книжовно наследство",
     "tug_scholarshipsDesc": "Държавни стипендии и студентска подкрепа през цялото обучение, с достъпни общежития в Габрово.",
     "tug_merit": "Стипендии за отличен успех",
     "tug_social": "Социални стипендии (според дохода) и подкрепа",
@@ -5659,6 +6176,26 @@
     }
   },
   "universities": {
+    "50": {
+      "name": "Стопанска академия „Д. А. Ценов“",
+      "description": "Най-старата и първа специализирана стопанска академия в България, в Свищов — финанси, счетоводство, мениджмънт и бизнес, със 145 000 възпитаници.",
+      "longDescription": "Стопанска академия „Димитър А. Ценов“ в Свищов е най-старото и първо специализирано висше икономическо училище в България. Създадена е с указ на цар Борис III от 8 ноември 1936 г., финансирана от завещанието на свищовския търговец и дарител Димитър Апостолов Ценов — дарение от 5 милиона златни лева, второто по големина за създаване на български университет. През 2026 г. академията отбелязва своята 90-годишнина.\n\nАкадемията е организирана в четири факултета — „Финанси“; „Мениджмънт и маркетинг“; „Производствен и търговски бизнес“; и „Стопанска отчетност“ — с 18 катедри, Научноизследователски институт и 17 академични центъра. В нея се обучават над 7000 български и чуждестранни студенти в бакалавърски, магистърски и докторски програми в професионалните направления „Икономика“ и „Администрация и управление“, а възпитаниците ѝ са около 145 000. Дипломите се издават с европейско дипломно приложение и акредитация от НАОА.\n\nОбучението е редовно, задочно и дистанционно, като няколко програми се преподават на английски език — „Бизнес икономика“, „Международен бизнес“ и „Туристически бизнес и мениджмънт“ — и една на руски. Академията е член на алианса на европейските университети KreativEU и активно участва в мобилността по Еразъм+, с Център за международна дейност в подкрепа на чуждестранните студенти.\n\nТаксите за българските и европейските студенти по държавна поръчка са сред най-ниските в страната — около €180 на семестър. Ректор: доц. д-р Марин Маринов.",
+      "location": "Свищов, България",
+      "degree": "Бакалавър и магистър",
+      "tuitionRange": "€180 – €1400 / семестър (БГ/ЕС държавна поръчка до чуждестранни)",
+      "website": "https://www.uni-svishtov.bg",
+      "applyUrl": "https://www.uni-svishtov.bg/en/admission"
+    },
+    "49": {
+      "name": "Шуменски университет",
+      "description": "Класически университет в Шумен — хуманитаристика, науки, педагогика и технологии, с астрономическа обсерватория и едни от най-ниските такси в България.",
+      "longDescription": "Шуменският университет „Епископ Константин Преславски“ е класически държавен университет в Североизточна България. Академичната му традиция води началото си от първите учителски курсове в Шумен през 1879 г.; съвременната институция е създадена през 1971 г. като Висш педагогически институт и получава статут на университет с решение на Народното събрание през 1995 г. Носи името на епископ Константин Преславски — книжовник от Преславската книжовна школа.\n\nУниверситетът е организиран в пет факултета — по хуманитарни науки; по математика и информатика; по природни науки; педагогически; и по технически науки — заедно с Колеж в Добрич и Департамент за информация, квалификация и продължаващо образование (ДИКПО) във Варна. Над 7000 студенти се обучават в около 100 бакалавърски, магистърски и докторски програми, преподавани от близо 580 преподаватели, в областта на хуманитаристиката, природните и математическите науки, педагогиката, сигурността и инженерството.\n\nСред отличителните черти са Астрономическият център и обсерваторията на университета, научният център „Преславска книжовна школа“ и Факултетът по технически науки, насочен към комуникации, сигнално-охранителни системи, киберсигурност и геодезия. Университетът активно участва в обмена по Еразъм+.\n\nШуменският университет запазва едни от най-ниските такси за обучение в България, а национално защитени специалности като „Физика“ и „Химия“ са безплатни за българските и европейските студенти. Мото: „Заедно пишем историята“. Ректор: проф. д.н. Наталия Витанова.",
+      "location": "Шумен, България",
+      "degree": "Бакалавър и магистър",
+      "tuitionRange": "€0 – €200 / семестър (БГ/ЕС; физика и химия – безплатно)",
+      "website": "https://www.shu.bg",
+      "applyUrl": "https://www.shu.bg"
+    },
     "48": {
       "name": "Технически университет – Габрово",
       "description": "Модерен инженерен университет в Габрово — електроника, ИТ, мехатроника и индустриални технологии, с безплатни приоритетни специалности.",
@@ -6141,6 +6678,50 @@
     }
   },
   "universityProfiles": {
+    "50": {
+      "name": "Стопанска академия „Д. А. Ценов“",
+      "focus": "финанси, счетоводство и контрол, банково дело и застраховане, мениджмънт, маркетинг, бизнес информатика, статистика, туризъм, търговия и публична администрация",
+      "style": "казуси, бизнес симулации, Научноизследователски институт, мобилност по Еразъм+ и алианса KreativEU",
+      "careers": [
+        "Финансист / банкер",
+        "Счетоводител / одитор",
+        "Мениджър / предприемач",
+        "Маркетинг специалист",
+        "Бизнес анализатор / статистик",
+        "Публичен администратор",
+        "Мениджър в туризма и търговията",
+        "Икономист / изследовател"
+      ],
+      "admissionNotes": [
+        "Прием по оценка от държавен зрелостен изпит (матура)",
+        "Програми в „Икономика“ и „Администрация и управление“",
+        "Няколко програми на английски език; една на руски",
+        "Редовна, задочна и дистанционна форма на обучение",
+        "Сред най-ниските държавни такси в България"
+      ]
+    },
+    "49": {
+      "name": "Шуменски университет",
+      "focus": "хуманитаристика и филология, математика и информатика, природни науки и астрономия, педагогика и комуникации, сигурност и инженерство",
+      "style": "семинари, педагогическа практика, лаборатории, астрономическа обсерватория и обмен по Еразъм+",
+      "careers": [
+        "Учител / педагог",
+        "Филолог / преводач / журналист",
+        "Софтуерен и ИТ специалист",
+        "Инженер по комуникации и сигурност",
+        "Специалист по киберсигурност",
+        "Биолог / химик / физик / еколог",
+        "Геодезист",
+        "Изследовател / докторант"
+      ],
+      "admissionNotes": [
+        "Прием по оценки от матурите или конкурсен изпит според специалността",
+        "Едни от най-ниските такси за обучение в България",
+        "Национално защитените специалности (физика, химия) са безплатни",
+        "Редовна и задочна (дистанционна) форма на обучение",
+        "Онлайн кандидатстване за кандидат-студенти"
+      ]
+    },
     "48": {
       "name": "Технически университет – Габрово",
       "focus": "електроника, автоматика и роботика, ИТ и киберсигурност, мехатроника, материалознание, индустриални и топлинно-газови системи и икономика",
@@ -7282,6 +7863,50 @@
     }
   },
   "programTitles": {
+    "insurance-and-social-security": "Застраховане и социално дело",
+    "economic-and-financial-control": "Стопански и финансов контрол",
+    "finance-banking-and-insurance": "Финанси, банково дело и застраховане",
+    "macroeconomics": "Макроикономика",
+    "trade-economics": "Икономика на търговията",
+    "agricultural-economics": "Аграрна икономика",
+    "tourism-business-and-management": "Туристически бизнес и мениджмънт",
+    "business-informatics": "Бизнес информатика",
+    "business-statistics-and-analytics": "Бизнес статистика и анализи",
+    "financial-management": "Финансов мениджмънт",
+    "banking-management": "Банков мениджмънт",
+    "investment-management": "Инвестиционен мениджмънт",
+    "insurance": "Застраховане",
+    "financial-analysis-and-control": "Финансов анализ и контрол",
+    "financial-control-and-external-audit": "Финансов контрол и външен одит",
+    "tourism-economics-and-management": "Икономика и мениджмънт на туризма",
+    "trade-management": "Мениджмънт на търговската дейност",
+    "corporate-management": "Корпоративен мениджмънт",
+    "social-management": "Социален мениджмънт",
+    "accounting-and-audit-in-the-public-sector": "Счетоводство и одит в публичния сектор",
+    "accounting-and-audit-in-non-financial-enterprises": "Счетоводство и одит в нефинансовите предприятия",
+    "data-analysis-and-business-statistics": "Анализ на данни и бизнес статистика",
+    "digital-business": "Дигитален бизнес",
+    "e-commerce": "Електронна търговия",
+    "russian-philology": "Руска филология",
+    "german-philology": "Немска филология",
+    "turkish-philology": "Турска филология",
+    "applied-archaeology": "Приложна археология",
+    "computer-informatics": "Компютърна информатика",
+    "communication-and-information-systems": "Комуникационни и информационни системи",
+    "signal-security-systems-and-security": "Сигнално-охранителни системи и сигурност",
+    "security-systems": "Системи за сигурност",
+    "cybersecurity-technologies": "Технологии за киберсигурност",
+    "engineering-logistics": "Инженерна логистика",
+    "computer-technologies-for-production-automation": "Компютърни технологии за автоматизация на производството",
+    "history-and-archaeology": "История и археология",
+    "media-and-public-communications": "Медии и публични комуникации",
+    "astronomy-and-astrophysics": "Астрономия и астрофизика",
+    "applied-ecology-and-environmental-protection": "Приложна екология и опазване на околната среда",
+    "meteorology-and-agrometeorology": "Метеорология и агрометеорология",
+    "inclusive-education": "Приобщаващо образование",
+    "administrative-and-organizational-security": "Административна и организационна сигурност",
+    "geomatics": "Геоматика",
+    "technical-systems-operation": "Експлоатация на техническите системи",
     "automation-robotics-and-computer-control-systems": "Автоматика, роботика и компютърни управляващи системи",
     "power-engineering-and-electrical-equipment": "Електроенергетика и електрообзавеждане",
     "industrial-and-automotive-electronics": "Промишлена и автомобилна електроника",

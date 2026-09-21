@@ -1707,6 +1707,112 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Project Management",
     ],
   },
+  "49": {
+    bachelor: [
+      "Bulgarian Philology",
+      "English Philology",
+      "Russian Philology",
+      "German Philology",
+      "Turkish Philology",
+      "History",
+      "Applied Archaeology",
+      "Theology",
+      "Journalism",
+      "Mathematics",
+      "Informatics",
+      "Computer Informatics",
+      "Information Technologies",
+      "Economics",
+      "Biology",
+      "Chemistry",
+      "Physics",
+      "Geography",
+      "Ecology and Environmental Protection",
+      "Preschool and Primary School Pedagogy",
+      "Primary School Pedagogy with a Foreign Language",
+      "Social Pedagogy",
+      "Special Pedagogy",
+      "Music Pedagogy",
+      "Physical Education",
+      "Social Activities",
+      "Communication and Information Systems",
+      "Signal-Security Systems and Security",
+      "Security Systems",
+      "Cybersecurity Technologies",
+      "Engineering Logistics",
+      "Computer Technologies for Production Automation",
+    ],
+    master: [
+      "Applied Linguistics",
+      "Bulgarian Language and Literature",
+      "History and Archaeology",
+      "Media and Public Communications",
+      "Software Technologies",
+      "Information Systems and Technologies",
+      "Financial Mathematics",
+      "Astronomy and Astrophysics",
+      "Applied Ecology and Environmental Protection",
+      "Meteorology and Agrometeorology",
+      "Educational Management",
+      "Inclusive Education",
+      "Social Work",
+      "Administrative and Organizational Security",
+      "Geodesy",
+      "Geomatics",
+      "Technical Systems Operation",
+      "Cybersecurity",
+    ],
+  },
+  "50": {
+    bachelor: [
+      "Finance",
+      "Insurance and Social Security",
+      "Economic and Financial Control",
+      "Finance, Banking and Insurance",
+      "Marketing",
+      "Public Administration",
+      "Business Management",
+      "International Economic Relations",
+      "International Business",
+      "Project Management",
+      "Macroeconomics",
+      "Industrial Business and Entrepreneurship",
+      "Trade Economics",
+      "Agricultural Economics",
+      "Tourism Economics",
+      "Tourism Business and Management",
+      "Business Economics",
+      "Accounting and Control",
+      "Business Informatics",
+      "Business Statistics and Analytics",
+    ],
+    master: [
+      "Financial Management",
+      "Banking Management",
+      "Investment Management",
+      "Insurance",
+      "Financial Analysis and Control",
+      "Financial Control and External Audit",
+      "Marketing Management",
+      "Digital Marketing",
+      "Public Administration",
+      "Business Administration",
+      "Human Resources Management",
+      "International Business and Management",
+      "Project Management",
+      "Agribusiness",
+      "Tourism Economics and Management",
+      "Trade Management",
+      "Corporate Management",
+      "Health Management",
+      "Social Management",
+      "Accounting and Audit in the Public Sector",
+      "Accounting and Audit in Non-Financial Enterprises",
+      "Data Analysis and Business Statistics",
+      "Digital Business",
+      "E-commerce",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -2895,6 +3001,52 @@ function getTugFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getShuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`shu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getShuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`shu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getCenovProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`cenov_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getCenovFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`cenov_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3354,6 +3506,24 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (tugInfo.tuition) summary.tuition = tugInfo.tuition;
         if (tugInfo.facultyKey) {
           const facultyName = getTugFaculty(tugInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "49") {
+      const shuInfo = getShuProgramInfo(slug);
+      if (shuInfo) {
+        if (shuInfo.tuition) summary.tuition = shuInfo.tuition;
+        if (shuInfo.facultyKey) {
+          const facultyName = getShuFaculty(shuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "50") {
+      const cenovInfo = getCenovProgramInfo(slug);
+      if (cenovInfo) {
+        if (cenovInfo.tuition) summary.tuition = cenovInfo.tuition;
+        if (cenovInfo.facultyKey) {
+          const facultyName = getCenovFaculty(cenovInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -3907,6 +4077,26 @@ export function buildProgramDetail(
       if (tugInfo.tuition) result.tuition = tugInfo.tuition;
       if (tugInfo.facultyKey) {
         const facultyName = getTugFaculty(tugInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "49" && normalizedSlug) {
+    const shuInfo = getShuProgramInfo(normalizedSlug);
+
+    if (shuInfo) {
+      if (shuInfo.tuition) result.tuition = shuInfo.tuition;
+      if (shuInfo.facultyKey) {
+        const facultyName = getShuFaculty(shuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "50" && normalizedSlug) {
+    const cenovInfo = getCenovProgramInfo(normalizedSlug);
+
+    if (cenovInfo) {
+      if (cenovInfo.tuition) result.tuition = cenovInfo.tuition;
+      if (cenovInfo.facultyKey) {
+        const facultyName = getCenovFaculty(cenovInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }
