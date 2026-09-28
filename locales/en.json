@@ -1,4 +1,63 @@
 {
+  "epu_programInfo": {
+    "civil-engineering": {
+      "tuition": "€358 (BG) · €500 (EU) · €750 (non-EU)",
+      "facultyKey": "civil"
+    },
+    "applied-computer-science": {
+      "tuition": "€358 (BG) · €500 (EU) · €750 (non-EU)",
+      "facultyKey": "computing"
+    },
+    "green-energetics": {
+      "tuition": "€358 (BG) · €500 (EU) · €750 (non-EU)",
+      "facultyKey": "energy"
+    },
+    "engineering-design": {
+      "tuition": "€358–€1,000 (by level & citizenship)",
+      "facultyKey": "energy"
+    },
+    "renovation-of-buildings-facilities-and-cultural-monuments": {
+      "tuition": "€358 (BG) · €500 (EU) · €750 (non-EU)",
+      "facultyKey": "civil"
+    },
+    "hydrogen-technologies": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "energy"
+    },
+    "solar-energetics": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "energy"
+    },
+    "wind-energetics": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "energy"
+    },
+    "biofuels": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "energy"
+    },
+    "earthquake-engineering": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "civil"
+    },
+    "information-security": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "computing"
+    },
+    "personal-data-security": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "computing"
+    },
+    "information-technology-management": {
+      "tuition": "€383 (BG) · €750 (EU) · €1,000 (non-EU)",
+      "facultyKey": "computing"
+    }
+  },
+  "epu_faculties": {
+    "civil": "Department of Civil Engineering",
+    "energy": "Department of Green Energetics",
+    "computing": "Department of Applied Computer Science"
+  },
   "ibs_programInfo": {
     "business-administration": {
       "tuition": "€1,000",
@@ -2069,6 +2128,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "52": {
+      "yearsTradition": "15+",
+      "bachelorPrograms": "5",
+      "masterPrograms": "9",
+      "internationalPartners": "20+",
+      "countries": "4",
+      "studentsGraduated": "80+",
+      "labs": "3",
+      "labsText": "Professional fields",
+      "tuitionFreeLabel": "€358",
+      "tuitionFreeText": "Lowest full-time semester fee"
+    },
     "51": {
       "yearsTradition": "30+",
       "bachelorPrograms": "8+",
@@ -2680,6 +2751,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "52": [
+      {
+        "range": "€358",
+        "label": "Bachelor, Bulgarian citizens (700 BGN, full-time)"
+      },
+      {
+        "range": "€500",
+        "label": "Bachelor, EU citizens (full-time)"
+      },
+      {
+        "range": "€750",
+        "label": "Bachelor, non-EU citizens (full-time)"
+      },
+      {
+        "range": "€1,000",
+        "label": "Master, non-EU citizens"
+      }
+    ],
     "51": [
       {
         "range": "€1,000",
@@ -3600,6 +3689,57 @@
     ]
   },
   "universityExtra": {
+    "epu_statusTitle": "Accreditation & Admissions Status",
+    "epu_statusDesc": "Important: Bulgaria's National Agency for Assessment and Accreditation (NEAA) refused to renew EPU's institutional accreditation in March 2025. The university currently cannot enrol new students.",
+    "epu_statusRefused": "27 March 2025 — NEAA refused continued institutional accreditation (shortcomings in academic staff and facilities)",
+    "epu_statusAdmissions": "Ministry of Education (June 2026): EPU may not announce admissions or enrol new students",
+    "epu_statusCurrent": "Students already enrolled (about 48 in 2025/26) may continue their studies",
+    "epu_statusDeadline": "EPU has 18 months (to about autumn 2026) to fix the findings and reapply",
+    "epu_statusCourt": "The university is challenging the decision in court",
+    "epu_statusCheck": "Check the current status on neaa.government.bg before applying or paying any fee",
+    "epu_fundingTitle": "Funding & Student Support",
+    "epu_fundingDesc": "EPU is a private, fee-paying university. It publishes no merit or social scholarship scheme; the funding routes it lists are below.",
+    "epu_noScholarship": "No university scholarships or tuition waivers are published",
+    "epu_loans": "State-backed student loans for Bulgarian, EU, EEA and Swiss citizens aged up to 35",
+    "epu_loanBanks": "Loans from authorised Bulgarian banks (e.g. DSK Bank, Investbank) — confirm eligibility with the bank",
+    "epu_erasmus": "Erasmus+ mobility enquiries handled by the university's Erasmus+ office",
+    "epu_payment": "Tuition is paid per semester to the university's finance office",
+    "epu_applicationDesc": "Admission is based on documents (no entrance exam). The steps below are as published by EPU — remember that new enrolments are currently suspended.",
+    "epu_appScore": "Secondary diploma with at least 62% average and 62% in mathematics",
+    "epu_appEnglish": "Proof of English: TOEFL/IELTS, English-medium schooling or other evidence",
+    "epu_appDocs": "Application form, diploma and transcript, passport/ID copy, medical certificate, four 3×4 cm photos",
+    "epu_appLegal": "Documents legalised (apostille) and translated into Bulgarian, notarised in Bulgaria",
+    "epu_appRecognition": "Recognition of secondary education by a Bulgarian Regional Education Office (EPU can arrange it for €120)",
+    "epu_appFee": "Application fee €40; hard copies sent by courier to the admissions office in Pernik",
+    "epu_appDeadlines": "Last published deadlines: winter semester 12 Sept (non-EU) / 15 Oct (EU); summer 15 Jan / 15 Feb",
+    "epu_feesTitle": "Tuition & Fees",
+    "epu_feesDesc": "Fees are per semester, as published by EPU. Bulgarian-citizen fees are set in leva (BGN) and converted at the fixed rate of 1.95583 BGN = €1.",
+    "epu_feeBgFull": "Bachelor, Bulgarian citizens, full-time: 700 BGN ≈ €358",
+    "epu_feeBgPart": "Bachelor, Bulgarian citizens, part-time: 550 BGN ≈ €281",
+    "epu_feeEu": "Bachelor, EU citizens, full-time: €500",
+    "epu_feeNonEu": "Bachelor, non-EU citizens, full-time: €750",
+    "epu_feeMaster": "Master: 750 BGN ≈ €383 (Bulgarian) · €750 (EU) · €1,000 (non-EU)",
+    "epu_feeExtra": "Other charges: €40 application fee; optional €120 document-recognition service",
+    "epu_campusTitle": "Campus & Location",
+    "epu_campusDesc": "EPU is housed in a modern multi-storey building at 23 Sv. Sv. Kiril i Metodiy St in Pernik, about 30 km south-west of Sofia.",
+    "epu_campusLocation": "Next to the Mall of Pernik, a supermarket and the city centre; restaurant on the ground floor",
+    "epu_campusTransport": "Buses to Sofia every 20 minutes; trains every 30 minutes",
+    "epu_campusAccess": "Wheelchair-accessible classrooms, lifts and bathrooms",
+    "epu_campusDorm": "Dormitory places in Sofia (VSU 'Lyuben Karavelov'), on request and subject to availability",
+    "epu_campusLibrary": "Library of about 13,900 items plus Multiversity digital collections",
+    "epu_campusOnline": "Distance-learning platform (edu.epu.eu) for online study",
+    "epu_partnersDesc": "Since 2015 EPU has been part of the Italian Pegaso / Multiversity university network, and it lists partner universities across Europe and Asia.",
+    "epu_pegaso": "Part of the Pegaso / Multiversity group (Italy) since 2015",
+    "epu_partnersEu": "Partners include RWTH Aachen, SRH Hochschule, Ulster University and the University of Niš",
+    "epu_partnersOther": "Also TU Košice, the Polytechnic Institute of Bragança, Istanbul Technical University and Ankara University",
+    "epu_networks": "Member of the Balkan Universities Association, IFPAM and CUAM",
+    "epu_acquin": "Programmes accredited in 2015 by Germany's ACQUIN agency (an ENQA member)",
+    "epu_internationalDesc": "Programmes are taught in English, and EPU's Office of International Student Affairs helps newcomers settle in Bulgaria.",
+    "epu_intlEnglish": "Bachelor and master programmes taught entirely in English",
+    "epu_intlSupport": "Visa support letters, airport pickup and help finding housing",
+    "epu_intlVisa": "Student visas are decided by Bulgarian authorities — in 2025/26 only 15 of 150+ applicants received one",
+    "epu_intlStudents": "About 48 students in 2025/26, half of them international (Nigeria, Greece, Syria)",
+    "epu_checkStatus": "Check status",
     "ibs_scholarshipsDesc": "Merit awards, social support, discounts and flexible online study help students fund their education.",
     "ibs_merit": "Merit awards and scholarships for strong applicants",
     "ibs_social": "Social support and instalment payment plans",
@@ -6337,6 +6477,16 @@
     }
   },
   "universities": {
+    "52": {
+      "name": "European Polytechnical University",
+      "description": "A small private STEM university in Pernik teaching civil engineering, green energy and computing in English — its accreditation was refused in 2025 and it is not currently admitting new students.",
+      "longDescription": "The European Polytechnical University (EPU) is a private higher school in Pernik, about 30 km south-west of Sofia. It was opened by decision of the National Assembly in 2010, founded by Investec Ltd, Bulgarian Properties Ltd and the Municipality of Pernik, and since 2015 it has been part of the Italian Pegaso / Multiversity university group. EPU specialises in science, technology, engineering and mathematics (STEM).\n\nTeaching covers three professional fields — Informatics and Computer Science, Energetics, and Architecture, Construction and Geodesy. The university offers five bachelor's programmes (Civil Engineering, Applied Computer Science, Green Energetics, Engineering Design, and Renovation of Buildings, Facilities and Cultural Monuments), nine master's programmes ranging from Hydrogen Technologies and Solar Energetics to Information Security and Earthquake Engineering, and a PhD in Green Energetics. Most programmes are taught in English, with distance-learning options.\n\nImportant — accreditation status: on 27 March 2025 the National Agency for Assessment and Accreditation (NEAA) refused to renew EPU's institutional accreditation, citing shortcomings in academic staff and facilities. According to the Ministry of Education (June 2026), the university may keep teaching students already enrolled — about 48 in 2025/26 — but cannot announce admissions or enrol new students during its 18-month period to address the findings. EPU is challenging the decision in court. Anyone considering EPU should confirm its current status with NEAA before applying or paying any fees.\n\nAs a private university, tuition is fee-based: bachelor's fees are 700 BGN (≈€358) per semester for Bulgarian citizens, €500 for EU citizens and €750 for non-EU citizens, and master's fees reach €1,000 per semester. Rector: Prof. Ivan Petkov, DSc.",
+      "location": "Pernik, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€358 - €1,000 / semester (private)",
+      "website": "https://epu.eu",
+      "applyUrl": "https://www.neaa.government.bg/en/home-en/114-english/accredited-higher-education-institutions/higher-institutions/368-european-polytechnical-university-pernik"
+    },
     "51": {
       "name": "International Business School",
       "description": "Bulgaria's top-accredited private business school, in Botevgrad and Sofia — management, finance, marketing, tourism and business, taught in Bulgarian and English.",
@@ -6849,6 +6999,28 @@
     }
   },
   "universityProfiles": {
+    "52": {
+      "name": "European Polytechnical University",
+      "focus": "civil and earthquake engineering, green and renewable energy (solar, wind, hydrogen, biofuels), applied computer science, information and data security, and engineering design",
+      "style": "small English-taught classes, project-based work, distance-learning options and the Pegaso / Multiversity partner network",
+      "careers": [
+        "Civil / structural engineer",
+        "Renewable-energy engineer",
+        "Energy-efficiency consultant",
+        "Software developer",
+        "Information-security specialist",
+        "Data protection officer (DPO)",
+        "Industrial / product designer",
+        "IT project manager"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Document-based admission, no entrance exam",
+        "Minimum 62% diploma average and 62% in mathematics",
+        "Proof of English proficiency required",
+        "Application fee €40"
+      ]
+    },
     "51": {
       "name": "International Business School",
       "focus": "business administration, management, finance and accounting, marketing, business informatics, tourism, and entrepreneurship",
@@ -8056,6 +8228,15 @@
     }
   },
   "programTitles": {
+    "applied-computer-science": "Applied Computer Science",
+    "green-energetics": "Green Energetics",
+    "renovation-of-buildings-facilities-and-cultural-monuments": "Renovation of Buildings, Facilities and Cultural Monuments",
+    "hydrogen-technologies": "Hydrogen Technologies",
+    "solar-energetics": "Solar Energetics",
+    "wind-energetics": "Wind Energetics",
+    "biofuels": "Biofuels",
+    "personal-data-security": "Personal Data Security",
+    "information-technology-management": "Information Technology Management",
     "business-finance": "Business Finance",
     "taxation": "Taxation",
     "music-business": "Music Business",
@@ -8935,6 +9116,398 @@
     "food-safety-and-quality": "Food Safety and Quality"
   },
   "programOverrides": {
+    "52:bachelor:civil-engineering": {
+      "overview": "A practice-oriented Civil Engineering degree built on mathematics, physics and economics. The curriculum is designed to match leading European and American programmes and prepares engineers for design, construction, consultancy and public-sector work.",
+      "keyFocus": "structural design, construction technology and management, engineering mathematics and physics, and sustainability to European environmental standards",
+      "duration": "Bachelor — 4 years; full-time or part-time, taught in English",
+      "partners": [
+        "Department of Civil Engineering, EPU",
+        "Erasmus+ visiting lecturers",
+        "Pegaso / Multiversity partner universities"
+      ],
+      "highlights": [
+        "Curriculum aligned with leading European and American programmes",
+        "Practice- and application-oriented teaching",
+        "Graduates working in eight countries, including China, Norway and Dubai",
+        "Communication, teamwork and leadership built into the degree"
+      ],
+      "careers": [
+        "Site / process engineer in construction firms",
+        "Technical supervisor or consultant",
+        "Building operation and maintenance manager",
+        "Expert in inspection bodies or international construction organisations",
+        "Real-estate professional"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Secondary diploma with at least 62% average and 62% in mathematics",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:bachelor:applied-computer-science": {
+      "overview": "Applied Computer Science balances classical computer-science theory with practical skills, so graduates can design, build and run software and computer systems. It is taught entirely in English, ends with a thesis and is also offered by distance learning.",
+      "keyFocus": "programming, algorithms, computer architecture, operating systems, databases, computer networks and high-performance computing",
+      "duration": "Bachelor — 4 years; full-time or distance learning, taught in English",
+      "partners": [
+        "Department of Applied Computer Science, EPU",
+        "Distance-learning platform (edu.epu.eu)",
+        "Pegaso / Multiversity partner universities"
+      ],
+      "highlights": [
+        "Taught entirely in English, ends with a thesis",
+        "Also available online through distance learning",
+        "Advanced topics: supercomputing, virtual reality, image processing, robotics, bioinformatics",
+        "Electives in Software Engineering and Information Technology"
+      ],
+      "careers": [
+        "Software developer / programmer",
+        "Systems and software maintenance engineer",
+        "IT specialist in engineering and consulting firms",
+        "Technical sales specialist for software and systems",
+        "Computing teacher (with an added teaching qualification)"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Secondary diploma with at least 62% average and 62% in mathematics",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:bachelor:green-energetics": {
+      "overview": "An engineering degree with an environmental emphasis, focused on energy efficiency and alternative energy sources — solar, wind, water, geothermal, biomass, hydrogen and ocean energy — for sustainable development. The entire programme is taught in English.",
+      "keyFocus": "renewable-energy systems, photovoltaics, energy efficiency, green buildings, energy management and European energy policy",
+      "duration": "Bachelor — 4 years; taught in English (ECTS credits)",
+      "partners": [
+        "Department of Green Energetics, EPU",
+        "Joint electives with the Civil Engineering programme",
+        "Pegaso / Multiversity partner universities"
+      ],
+      "highlights": [
+        "EPU's flagship field, with a follow-on PhD in Green Energetics",
+        "Specialised courses in solar, wind, geothermal, biomass and hydrogen energy",
+        "Electives in hydrogen & fuel cells, biofuels and green buildings",
+        "ECTS credits recognised across Europe"
+      ],
+      "careers": [
+        "Renewable-energy system designer",
+        "Energy-efficiency consultant",
+        "Energy expert in consulting firms",
+        "Specialist in public administration or NGOs",
+        "Green-energy entrepreneur"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Secondary diploma with at least 62% average and 62% in mathematics",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:bachelor:engineering-design": {
+      "overview": "Engineering Design blends engineering, art and creativity to develop innovative products and systems with a strong focus on function, aesthetics and energy efficiency. Students follow a structured design process and build experimental prototypes of their projects.",
+      "keyFocus": "product and industrial design, 3D design, ergonomics, colour science, mechatronics and sustainable, energy-efficient design",
+      "duration": "Bachelor — 4 years; full-time or part-time",
+      "partners": [
+        "EPU engineering design programme",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Design projects end in experimental prototypes",
+        "Options: advertising & branding, interiors, fashion, children's environments, vehicles",
+        "Classes in Bulgarian, English, Russian and Italian",
+        "Ends with a thesis defence"
+      ],
+      "careers": [
+        "Industrial / product designer",
+        "Design consultant",
+        "Spatial and furniture designer",
+        "Graphic and advertising designer",
+        "Design entrepreneur"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Secondary diploma with at least 62% average and 62% in mathematics",
+        "Proof of proficiency in the chosen teaching language"
+      ]
+    },
+    "52:bachelor:renovation-of-buildings-facilities-and-cultural-monuments": {
+      "overview": "A specialised programme in the renovation, reconstruction and modernisation of buildings, facilities and cultural monuments — from assessing existing structures and seismic retrofitting to modern façade, insulation and dry-construction systems.",
+      "keyFocus": "structural assessment, seismic retrofitting, façade and insulation systems, construction management and heritage conservation",
+      "duration": "Bachelor — 4 years; taught in English",
+      "partners": [
+        "Department of Civil Engineering, EPU",
+        "Erasmus+ visiting lecturers",
+        "Pegaso / Multiversity partner universities"
+      ],
+      "highlights": [
+        "Rare specialisation in preserving architectural heritage",
+        "Seismic design for reconstructed buildings",
+        "Modern materials, façades and dry-construction systems",
+        "Natural path to EPU's Earthquake Engineering master"
+      ],
+      "careers": [
+        "Renovation and reconstruction designer",
+        "Technical expert or consultant",
+        "Construction / renovation project manager",
+        "Specialist in building-control authorities",
+        "Heritage-conservation engineer"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Secondary diploma with at least 62% average and 62% in mathematics",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:hydrogen-technologies": {
+      "overview": "An applied master's in the hydrogen cycle — producing hydrogen from solar power by water photolysis, storing it and using it in fuel cells — together with the technical, environmental, economic and legal sides of hydrogen energy.",
+      "keyFocus": "hydrogen production and storage, fuel cells, energy conversion, energy strategy and EU standards",
+      "duration": "Master — length depends on your bachelor's degree; taught in English",
+      "partners": [
+        "Department of Green Energetics, EPU",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Builds on the Green Energetics bachelor",
+        "Covers fuel-cell models and their modifications",
+        "Includes hydrogen legislation and standards",
+        "Pathway to the PhD in Green Energetics"
+      ],
+      "careers": [
+        "Hydrogen energy-system designer",
+        "Energy-efficiency consultant",
+        "Researcher or lecturer",
+        "Energy specialist in public administration",
+        "Green-energy entrepreneur"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in an engineering field",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:solar-energetics": {
+      "overview": "Trains specialists to design, build and run systems that turn solar radiation into heat, electricity and chemical energy — including energy storage, conversion and efficient use.",
+      "keyFocus": "solar heating and cooling, photovoltaics, concentrator PV, sun tracking, energy storage and solar-field monitoring",
+      "duration": "Master — length depends on your degree; non-Green-Energetics graduates take 8–10 bridging courses",
+      "partners": [
+        "Department of Green Energetics, EPU",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Hybrid photovoltaic/thermal panels and concentrator systems",
+        "Mathematical modelling of solar-energy yield",
+        "Project work and an applied master's thesis",
+        "Part of the professional field 5.4 Energetics"
+      ],
+      "careers": [
+        "Solar / PV system designer",
+        "Energy consultant",
+        "Solar-plant project developer",
+        "Researcher or lecturer",
+        "Energy entrepreneur"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in an engineering field",
+        "Bridging courses for graduates outside Green Energetics"
+      ]
+    },
+    "52:master:wind-energetics": {
+      "overview": "Prepares experts to plan, design, analyse and evaluate wind-energy projects and wind turbines, using modern modelling, simulation and optimisation methods.",
+      "keyFocus": "wind-turbine design, computational fluid dynamics, electric machines, monitoring and diagnostics, and environmental impact",
+      "duration": "Master — length depends on your bachelor's degree; taught in English",
+      "partners": [
+        "Department of Green Energetics, EPU",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Electives: aeroelastic design, rotor-blade manufacturing, wind resources & loads",
+        "Project work and an applied master's thesis",
+        "European legislation and ecological requirements",
+        "Part of the professional field 5.4 Energetics"
+      ],
+      "careers": [
+        "Wind-farm engineer / designer",
+        "Turbine monitoring & diagnostics specialist",
+        "Energy consultant",
+        "Researcher or lecturer",
+        "Energy-strategy specialist"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in an engineering field",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:biofuels": {
+      "overview": "Specialises in turning biomass into fuels — biodiesel, ethanol and other alcohols — and links biomass with hydrogen production and modern methods of converting biomass into useful products.",
+      "keyFocus": "biomass preparation, biodiesel and bioethanol production, conversion technologies and energy management",
+      "duration": "Master — length depends on your bachelor's degree; taught in English",
+      "partners": [
+        "Department of Green Energetics, EPU",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Strong emphasis on project work",
+        "Covers biomass-to-hydrogen routes",
+        "European policies and standards",
+        "Part of the professional field 5.4 Energetics"
+      ],
+      "careers": [
+        "Biofuel energy-system designer",
+        "Energy-efficiency adviser",
+        "Researcher or lecturer",
+        "Energy specialist in public administration",
+        "Entrepreneur"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in an engineering field",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:earthquake-engineering": {
+      "overview": "Deepens civil engineers' expertise in the anti-seismic safety of buildings and facilities — vital in seismically active Bulgaria — and trains specialists to evaluate, predict and reduce earthquake risk.",
+      "keyFocus": "seismic structural analysis and design, geomechanics, reliability and risk management, and structural monitoring",
+      "duration": "Master — length depends on your bachelor's degree; taught in English",
+      "partners": [
+        "Department of Civil Engineering, EPU",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Computational mechanics and engineering informatics",
+        "Monitoring the behaviour of building systems",
+        "Environmental aspects of seismic risk",
+        "Programme accredited by ACQUIN (2015)"
+      ],
+      "careers": [
+        "Seismic design engineer",
+        "Consulting engineer",
+        "Building repair & strengthening manager",
+        "Construction quality-control specialist",
+        "Codes and standards expert"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in civil engineering",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:engineering-design": {
+      "overview": "Builds on the bachelor's with interdisciplinary training in modern engineering and industrial design, combining engineering practice with artistic and creative approaches.",
+      "keyFocus": "industrial-design research, integrated design and manufacturing, living-environment design, design expertise and copyright",
+      "duration": "Master — 2 semesters; full-time or part-time, in English and Bulgarian",
+      "partners": [
+        "EPU engineering design programme",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Two semesters of lectures and seminars, then a thesis",
+        "Taught in English and Bulgarian",
+        "Covers design copyright and negotiation",
+        "Specialisation across many design fields"
+      ],
+      "careers": [
+        "Industrial designer",
+        "3D modeller",
+        "Packaging and graphic designer",
+        "Furniture / spatial designer",
+        "Web and virtual-product designer"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in engineering design or a related field",
+        "Proof of English or Bulgarian"
+      ]
+    },
+    "52:master:information-security": {
+      "overview": "A three-semester programme for IT bachelor's graduates covering the technical, economic, legal and ethical sides of information security.",
+      "keyFocus": "computer, network and physical security, cryptography, access control, computer-crime investigation and risk management",
+      "duration": "Master — 3 semesters; taught in English, ends with a thesis",
+      "partners": [
+        "Department of Applied Computer Science, EPU",
+        "Pegaso / Multiversity partner universities",
+        "Erasmus+ exchanges"
+      ],
+      "highlights": [
+        "Hands-on course and diploma projects",
+        "Covers computer virology and the future of cryptocurrencies",
+        "Legal and ethical compliance",
+        "Prepares for public- and private-sector security roles"
+      ],
+      "careers": [
+        "Information-security specialist",
+        "Security analyst",
+        "Risk manager",
+        "Computer-crime investigator",
+        "IT auditor"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree in an IT field",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:personal-data-security": {
+      "overview": "Prepares graduates to plan and manage personal data across its lifecycle in large IT projects and to work as Data Protection Officers under the GDPR and related EU rules.",
+      "keyFocus": "GDPR compliance, data auditing and minimisation, anonymisation, cryptography and data-breach incident management",
+      "duration": "Master — taught entirely in English, ends with a thesis",
+      "partners": [
+        "Department of Applied Computer Science, EPU",
+        "Guest lecturers: lawyers and cybersecurity experts",
+        "Pegaso / Multiversity partner universities"
+      ],
+      "highlights": [
+        "Prepares for the Data Protection Officer (DPO) role",
+        "Guest lecturers: practising lawyers and cybersecurity experts",
+        "A real research & development project for a client",
+        "Covers the GDPR, the Police Directive and sensitive data"
+      ],
+      "careers": [
+        "Data Protection Officer (DPO)",
+        "Personal-data administrator",
+        "Compliance / privacy specialist",
+        "Cybersecurity consultant",
+        "Data manager in IT projects"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree; suits working professionals and recent graduates",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
+    "52:master:information-technology-management": {
+      "overview": "A professional master's for software architects, system integrators, team leaders and recent graduates who want to lead in the IT industry — from strategy and governance to projects and people.",
+      "keyFocus": "IT governance, business processes, strategy, change management, IT-project risk and finance, and supply-chain management",
+      "duration": "Master — taught entirely in English, ends with a thesis",
+      "partners": [
+        "Department of Applied Computer Science, EPU",
+        "Guest lecturers from the IT industry",
+        "Pegaso / Multiversity partner universities"
+      ],
+      "highlights": [
+        "Guest lecturers from the IT industry",
+        "A real research & development project for a client",
+        "Covers marketing, law and business ethics",
+        "Open to working professionals and fresh graduates"
+      ],
+      "careers": [
+        "IT manager",
+        "IT project manager",
+        "Team / delivery lead",
+        "IT strategy consultant",
+        "Business-development manager"
+      ],
+      "admissionNotes": [
+        "New admissions currently suspended — check NEAA status first",
+        "Bachelor's degree; IT work experience is a plus",
+        "Proof of English (TOEFL/IELTS or English-medium schooling)"
+      ]
+    },
     "22:bachelor:painting": {
       "overview": "Painting at NHA is a cornerstone of Bulgaria's oldest art academy, developing artists' skills in composition, colour and a personal visual language.",
       "keyFocus": "Painting techniques, composition, colour, drawing and personal artistic expression",

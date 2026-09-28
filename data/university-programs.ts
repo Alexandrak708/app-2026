@@ -1842,6 +1842,26 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Public Administration",
     ],
   },
+  "52": {
+    bachelor: [
+      "Civil Engineering",
+      "Applied Computer Science",
+      "Green Energetics",
+      "Engineering Design",
+      "Renovation of Buildings, Facilities and Cultural Monuments",
+    ],
+    master: [
+      "Hydrogen Technologies",
+      "Solar Energetics",
+      "Wind Energetics",
+      "Biofuels",
+      "Earthquake Engineering",
+      "Engineering Design",
+      "Information Security",
+      "Personal Data Security",
+      "Information Technology Management",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -3099,6 +3119,29 @@ function getIbsFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getEpuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`epu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getEpuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`epu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3585,6 +3628,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (ibsInfo.tuition) summary.tuition = ibsInfo.tuition;
         if (ibsInfo.facultyKey) {
           const facultyName = getIbsFaculty(ibsInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "52") {
+      const epuInfo = getEpuProgramInfo(slug);
+      if (epuInfo) {
+        if (epuInfo.tuition) summary.tuition = epuInfo.tuition;
+        if (epuInfo.facultyKey) {
+          const facultyName = getEpuFaculty(epuInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -4168,6 +4220,16 @@ export function buildProgramDetail(
       if (ibsInfo.tuition) result.tuition = ibsInfo.tuition;
       if (ibsInfo.facultyKey) {
         const facultyName = getIbsFaculty(ibsInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "52" && normalizedSlug) {
+    const epuInfo = getEpuProgramInfo(normalizedSlug);
+
+    if (epuInfo) {
+      if (epuInfo.tuition) result.tuition = epuInfo.tuition;
+      if (epuInfo.facultyKey) {
+        const facultyName = getEpuFaculty(epuInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

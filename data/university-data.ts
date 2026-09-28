@@ -566,6 +566,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "52",
+    rating: 3,
+    color: "#2f6b5e",
+    image: require("../assets/images/epu-pernik.jpg"),
+    category: "Engineering",
+    categories: ["Engineering", "Architecture"],
+    scholarship: false,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
