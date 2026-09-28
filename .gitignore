@@ -42,3 +42,4 @@ Thumbs.db
 .sixth/
 .vercel
 .env*
+node_modules

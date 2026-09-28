@@ -991,6 +991,857 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Cultural Tourism",
     ],
   },
+  "30": {
+    bachelor: [
+      "Business Administration",
+      "Economics",
+      "Finance",
+      "Computer Science",
+      "Information Systems",
+      "Mathematics",
+      "Political Science and International Relations",
+      "European Studies",
+      "History and Civilizations",
+      "Journalism and Mass Communication",
+      "Literature",
+      "Modern Languages and Cultures",
+      "Psychology",
+    ],
+    master: [
+      "Executive MBA",
+    ],
+  },
+  "31": {
+    bachelor: [
+      "Organization and Management of Hotels and Restaurants",
+      "Organization and Management of Tourist Services",
+      "Tourist Animation and Tour Guiding",
+      "Business Administration",
+    ],
+    master: [],
+  },
+  "32": {
+    bachelor: [
+      "Biology",
+      "Molecular Biology",
+      "Chemistry",
+      "Medicinal Chemistry",
+      "Physics",
+      "Engineering Physics",
+      "Telecommunications",
+      "Mathematics",
+      "Informatics",
+      "Computer Science",
+      "Software Technologies and Design",
+      "Economics",
+      "Marketing",
+      "Tourism",
+      "Accounting and Finance",
+      "Law",
+      "Bulgarian Philology",
+      "English Philology",
+      "Applied Linguistics",
+      "Philosophy",
+      "History",
+      "Preschool and Primary School Pedagogy",
+      "Psychology",
+      "Social Work",
+    ],
+    master: [
+      "Applied Biotechnology",
+      "Analytical Chemistry",
+      "Software Technologies",
+      "Artificial Intelligence",
+      "Data Science",
+      "Applied Mathematics",
+      "Cybersecurity",
+      "Finance and Banking",
+      "Marketing Management",
+      "International Economic Relations",
+      "Public Administration",
+      "Clinical Psychology",
+      "Translation and Intercultural Communication",
+      "Educational Management",
+    ],
+  },
+  "33": {
+    bachelor: [
+      "Medicine",
+      "Medicine (English)",
+      "Dental Medicine",
+      "Dental Medicine (English)",
+      "Pharmacy",
+      "Pharmacy (English)",
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Medical Laboratory Assistant",
+      "Assistant Pharmacist",
+      "Dental Technician",
+      "Medical Cosmetics",
+      "Rehabilitator",
+      "Sanitary Inspector",
+      "Medical Optician",
+    ],
+    master: [
+      "Public Health and Health Management",
+      "Health Care Management",
+      "Speech Therapy",
+      "Ergotherapy",
+      "Clinical Pharmacy",
+      "Pharmaceutical Care",
+      "Nutrition and Dietetics",
+      "Medical Rehabilitation",
+    ],
+  },
+  "34": {
+    bachelor: [
+      "Computer Systems and Technologies",
+      "Software Engineering",
+      "Automation and Information Technologies",
+      "Electronics",
+      "Electrical Engineering",
+      "Design and Programming of Electronic Systems",
+      "Communication Technologies",
+      "Industrial Engineering",
+      "Mechanical Engineering",
+      "Mechatronics",
+      "Transport Equipment and Technologies",
+      "Computer Modelling and Technologies in Mechanical Engineering",
+      "Industrial Management",
+    ],
+    master: [
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "Robotics",
+      "Computer Systems and Technologies",
+      "Automation and Information Technologies",
+      "Electronics",
+      "Mechatronics",
+      "Transport Equipment and Technologies",
+      "Industrial Management",
+      "Renewable Energy Sources",
+      "Communication Technologies",
+    ],
+  },
+  "35": {
+    bachelor: [
+      "Agronomy",
+      "Zoo Engineering",
+      "Agricultural Engineering",
+      "Selection and Seed Production",
+      "Viticulture and Winemaking",
+      "Horticulture",
+      "Ornamental Horticulture and Landscaping",
+      "Fruit and Vegetable Growing",
+      "Plant Protection",
+      "Agroecology",
+      "Ecology and Environmental Protection",
+      "Agrarian Economics",
+      "Agribusiness",
+      "Management",
+      "Marketing",
+      "Tourism",
+    ],
+    master: [
+      "Agronomy",
+      "Plant Protection",
+      "Agroecology",
+      "Viticulture and Winemaking",
+      "Horticulture",
+      "Zoo Engineering",
+      "Agrarian Economics",
+      "Agribusiness",
+      "Organic Farming",
+      "Plant Biotechnology",
+    ],
+  },
+  "36": {
+    bachelor: [
+      "Food Technology",
+      "Wine and Beer Technology",
+      "Meat and Fish Technology",
+      "Dairy Technology",
+      "Bread and Confectionery Technology",
+      "Biotechnology",
+      "Nutrition and Dietetics",
+      "Machines and Apparatus for the Food Industry",
+      "Computer Systems and Technologies",
+      "Automation and Information Technologies",
+      "Refrigeration and Air-Conditioning Engineering",
+      "Industrial Engineering",
+      "Economics of the Food Industry",
+      "Industrial Business and Entrepreneurship",
+      "Tourism",
+      "Catering",
+    ],
+    master: [
+      "Food Safety and Quality",
+      "Food Technology",
+      "Wine and Beer Technology",
+      "Biotechnology",
+      "Nutrition and Dietetics",
+      "Machines and Apparatus for the Food Industry",
+      "Computer Systems and Technologies",
+      "Economics of the Food Industry",
+      "Industrial Business and Entrepreneurship",
+      "Tourism",
+    ],
+  },
+  "37": {
+    bachelor: [
+      "Music Pedagogy",
+      "Fine Arts Pedagogy",
+      "Performance Art (Classical Instrument or Classical Voice)",
+      "Performance Art (Folk Instrument or Folk Singing)",
+      "Performance Art (Pop and Jazz)",
+      "Conducting of Folk Ensembles",
+      "Bulgarian Folk Choreography",
+      "Ballet Art (Ballet Pedagogy)",
+      "Graphic Design and Photography",
+      "Fashion Design",
+      "Mural Painting",
+      "Scenography",
+      "Photography",
+      "Marketing and Communications in the Arts",
+    ],
+    master: [
+      "Music Pedagogy",
+      "Fine Arts Pedagogy",
+      "Conducting",
+      "Composition",
+      "Performance Art (Classical Instrument or Classical Voice)",
+      "Performance Art (Folk Instrument or Folk Singing)",
+      "Performance Art (Pop and Jazz)",
+      "Sound Engineering",
+      "Music Therapy",
+      "Art Therapy",
+      "Art Management",
+      "PR of Art Organizations",
+      "Bulgarian Folk Choreography",
+      "Ballet Art (Ballet Pedagogy)",
+      "Painting",
+      "Sculpture",
+      "Multimedia and Virtual Reality",
+      "Scenography",
+      "Graphic Design and Photography",
+      "Fashion Design",
+    ],
+  },
+  "38": {
+    bachelor: [
+      "National Security",
+      "Counter-Terrorism",
+      "Crime Prevention and Public Order Protection",
+      "Security and Intelligence",
+      "Cybersecurity",
+      "Security and Criminal Psychology",
+      "Security and Software Technologies",
+      "Security and Artificial Intelligence",
+      "Business Management and Administration",
+      "Business Management",
+      "International Business",
+      "Accounting and Control",
+      "Finance",
+      "Digital Marketing",
+    ],
+    master: [
+      "National Security",
+      "Counter-Terrorism",
+      "Crime Prevention and Public Order Protection",
+      "Criminalistics",
+      "Cybersecurity",
+      "Customs Intelligence and Investigation",
+      "Security and Sport",
+      "Security and Intelligence",
+      "Security and Software Technologies",
+      "Security and Artificial Intelligence",
+      "Security and Criminal Psychology",
+      "Economic Security",
+      "Food Security",
+      "Accounting and Control",
+      "Finance",
+      "Digital Marketing",
+      "Currency, Customs and Tax Control",
+      "Financial-Accounting Management and Insurance",
+      "Business Management",
+      "Business Management and Administration",
+      "Human Resources Management",
+    ],
+  },
+  "39": {
+    bachelor: [
+      "Agrarian Economics",
+      "Finance",
+      "Accounting",
+      "Tourism Economics",
+      "Business and Entrepreneurship",
+      "Business Management",
+      "Agribusiness Management",
+      "Human Resources Management",
+      "Information Systems Management",
+    ],
+    master: [
+      "Economics and Agribusiness Management",
+      "Economics and Education Management",
+      "Finance and Banking",
+      "Accounting and Audit",
+      "Social Economy and Social Entrepreneurship",
+      "Business Management",
+      "Business Management (National Security)",
+      "Project Management",
+      "Human Resources Management",
+      "Health Management",
+      "Food and Nutrition Management",
+    ],
+  },
+  "40": {
+    bachelor: [
+      "Nursing",
+      "Midwifery",
+      "Medical Assistant",
+      "Kinesitherapy",
+      "Health Care Management",
+      "Chemical Engineering",
+      "Chemical Technologies",
+      "Biotechnology",
+      "Food Biotechnology",
+      "Electronics",
+      "Electronic Systems in Industry and Medicine",
+      "Computer Systems and Technologies",
+      "Software Engineering",
+      "Engineering Materials",
+      "Technology of Water",
+      "Technology of Oil and Gas",
+      "Engineering and Technology in Transport",
+      "Marketing",
+      "Management",
+      "Industrial Management",
+      "Tourism",
+      "Bulgarian Philology",
+      "History and Philosophy",
+      "Preschool and Primary School Pedagogy",
+      "Social Pedagogy",
+      "Special Pedagogy",
+      "Chemistry",
+      "Ecology and Environmental Protection",
+    ],
+    master: [
+      "Medicine",
+      "Chemical Engineering",
+      "Organic Chemical Technology",
+      "Technology of Oil and Gas",
+      "Technology of Water",
+      "Technology of Materials and Materials Science",
+      "Technology of Silicates",
+      "Electronics",
+      "Electrical Engineering",
+      "Computer Systems and Technologies",
+      "Software Technology",
+      "Artificial Intelligence and Virtual Reality",
+      "Transport Engineering and Technology",
+      "Food, Nutrition and Dietetics",
+      "Cybersecurity in the Financial Sphere",
+      "Ecology and Environmental Management",
+      "Medical Chemistry",
+      "International Business Management",
+      "Financial Management of Enterprise",
+      "Marketing Management",
+      "Tourism Management",
+      "Management and Development of Human Resources",
+      "Administration and Management in the Public Sector",
+      "Health Management",
+      "Health Care Management",
+      "Health Tourism",
+    ],
+  },
+  "41": {
+    bachelor: [
+      "Law",
+      "Accounting and Finance",
+      "Marketing and Digital Communications",
+      "Business Management and International Economics",
+      "Software Engineering",
+      "Computer Systems and Technologies",
+      "Systems Engineering in Industry and Tourism",
+      "Electricity Supply and Electrical Equipment",
+      "Psychology",
+      "Preschool and Primary School Pedagogy",
+    ],
+    master: [
+      "Law",
+      "Administration and Management of the National Security System",
+      "State and Local Administration",
+      "Maritime Law and Coastal Territory Management",
+      "Finance",
+      "Accounting and Control",
+      "Marketing",
+      "Business Administration",
+      "Health Management",
+      "Real Estate Business",
+      "Circular Economy",
+      "International Business and Management",
+      "Aviation Management",
+      "Application Programming",
+      "Artificial Intelligence",
+      "Business Information Technologies",
+      "Integrated Computer Systems and Complexes",
+      "Engineering and Exploitation of Energy Systems",
+      "Forensic Engineering and Technical Expertise",
+      "Fire Safety and Fire Protection Equipment",
+      "Design and Control of Air and Sea Drones",
+      "Psychological Counseling",
+      "Child and Adolescent Psychology",
+      "Preschool and Primary School Pedagogy",
+      "Primary School Pedagogy and Foreign Language",
+      "Innovation and Entrepreneurship in Primary School",
+    ],
+  },
+  "42": {
+    bachelor: [
+      "Painting",
+      "Graphics",
+      "Book, Illustration, Print Graphics",
+      "Poster and Visual Communication",
+      "Fashion Design",
+    ],
+    master: [
+      "Art Therapy",
+      "Photography",
+      "Cultural Heritage of the Bulgarian Black Sea",
+    ],
+  },
+  "43": {
+    bachelor: [
+      "History",
+      "Archaeology",
+      "Bulgarian Philology",
+      "English Philology",
+      "Applied Linguistics",
+      "Philosophy",
+      "Psychology",
+      "Sociology",
+      "Theology",
+      "Law",
+      "Economics",
+      "Tourism",
+      "Accounting and Finance",
+      "Marketing",
+      "Public Administration",
+      "Informatics",
+      "Computer Science",
+      "Software Engineering",
+      "Painting",
+      "Graphic Design",
+      "Preschool and Primary School Pedagogy",
+      "Social Pedagogy",
+    ],
+    master: [
+      "Bulgarian History",
+      "Archaeology",
+      "Bulgarian Language and Literature",
+      "English Studies",
+      "Clinical Psychology",
+      "European Studies",
+      "Orthodox Theology",
+      "Law",
+      "Finance",
+      "Tourism Management",
+      "Public Administration",
+      "Accounting and Control",
+      "Information Systems",
+      "Software Engineering",
+      "Painting",
+      "Educational Management",
+    ],
+  },
+  "44": {
+    bachelor: [
+      "Economic Logistics",
+      "Industrial Management",
+      "Population and Infrastructure Protection",
+      "Automotive Engineering and Transport Logistics",
+      "National and Regional Security",
+      "Disaster and Emergency Protection",
+      "Administrative and Information Security",
+      "Telecommunications",
+      "Computer Systems and Cybersecurity",
+      "E-Governance Security",
+      "Mechatronics",
+      "Explosives and Ammunition",
+      "Organization and Management of Military Formations",
+      "Aviation Equipment and Technologies",
+      "Air Traffic Management",
+    ],
+    master: [
+      "National and Regional Security",
+      "Population and Infrastructure Protection",
+      "Corporate Security",
+      "Crisis Management",
+      "Classified Information Protection",
+      "Economic Logistics",
+      "Industrial Management",
+      "Automotive Engineering and Transport Logistics",
+      "Cybersecurity",
+      "Artificial Intelligence",
+      "Computer Systems and Technologies",
+      "Aviation Equipment and Technologies",
+      "Air Traffic Management",
+      "Outsourcing and Cybersecurity",
+      "Technological Entrepreneurship",
+      "Organization and Management of Military Formations",
+    ],
+  },
+  "45": {
+    bachelor: [
+      "Agricultural Machinery and Technologies",
+      "Agronomy",
+      "Repair and Reliability of Machinery",
+      "Thermal, Refrigeration and Gas Technology",
+      "Mechanical Engineering",
+      "Materials Science and Technologies",
+      "Industrial Design",
+      "Design and Technologies for Clothing and Textiles",
+      "Electrical Power Engineering and Electrical Equipment",
+      "Electronics",
+      "Automation and Mechatronics",
+      "Computer Systems and Technologies",
+      "Internet and Mobile Communications",
+      "Automotive Engineering",
+      "Transport and Logistics Management",
+      "Economics",
+      "Business Management",
+      "Marketing",
+      "Industrial Management",
+      "Pre-school and Primary School Pedagogy",
+      "Primary School Pedagogy and Foreign Language",
+      "Software Engineering",
+      "Informatics and Information Technologies",
+      "Financial Mathematics",
+      "Bulgarian Language and History",
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Ergotherapy",
+      "Medical Assistant",
+      "Social Work",
+    ],
+    master: [
+      "Agricultural Engineering",
+      "GIS Applications in Ecology",
+      "Veterinary and Hygiene-Sanitary Expertise",
+      "Silicate Materials",
+      "Industrial Design and Product Development",
+      "Quality Management",
+      "Application of Electronic Technologies in Manufacturing",
+      "Computer Control and Automation Systems",
+      "Communications Systems and Technologies",
+      "Transport Management",
+      "Automotive Engineering and Transport Equipment",
+      "Finance",
+      "Management and Business Development",
+      "Marketing Management",
+      "Industrial Management and Innovation",
+      "Pharmaceutical and Cosmetic Products",
+      "Lingvodidactics in Primary School (English)",
+      "Lingvodidactics in Lower Secondary School (English)",
+      "Contemporary Bulgarian Studies and Education",
+      "Software Engineering and Information Systems",
+      "Law",
+      "Legal Regime of National Security Protection",
+      "Strategic Management and Leadership in National Security",
+      "Clinical Kinesitherapy",
+      "Ergotherapy in the Community",
+      "Health Care Management",
+    ],
+  },
+  "46": {
+    bachelor: [
+      "Veterinary Medicine",
+      "Medicine",
+      "Agricultural Engineering",
+      "Agronomy (Field Crops)",
+      "Agronomy (Essential Oil and Medicinal Crops)",
+      "Ecology and Environmental Protection",
+      "Zooengineering",
+      "Fisheries and Aquaculture",
+      "Nursing",
+      "Midwifery",
+      "Medical Assistant",
+      "Kinesitherapy",
+      "Social Activities",
+      "Business Economics",
+      "Agricultural Economy and Trade",
+      "Regional Economics and Management",
+      "Information Technology",
+      "Information Technologies in Economics and Management",
+      "Software Engineering",
+      "Local Finances",
+      "Preschool and Primary School Pedagogy",
+      "Preschool Pedagogy",
+      "Primary School Pedagogy with a Foreign Language",
+      "Social Pedagogy",
+      "Special Pedagogy",
+      "Pedagogy of Art and Graphic Design Education",
+      "Pedagogy of Information Technology Education",
+      "Pedagogy of Physical Education",
+      "Automation and Computer Systems",
+      "Electrical Engineering",
+      "Computer Systems and Communications",
+      "Industrial Engineering",
+      "Road Transport and Agricultural Machinery",
+      "Food Technology",
+      "Heat and Gas Supply",
+      "Design, Technology and Management of Fashion Industry",
+      "Medical Laboratory Assistant",
+      "Rehabilitation Therapist",
+      "Assistant Pharmacist",
+      "Medical Cosmetician",
+      "Medical Optician",
+      "Prosthetist, Orthotist and Orthopedist",
+    ],
+    master: [
+      "Agrotronics",
+      "Aquaculture",
+      "Biological Agriculture",
+      "Renewable Energy Sources in the Agricultural Sector",
+      "Ecology of Settlement Systems",
+      "Ecotourism",
+      "Agricultural Machinery",
+      "Safety and Quality Food Systems Management",
+      "Meat and Meat Products Technology",
+      "Milk and Dairy Products Technology",
+      "Reproductive Biotechnologies in Animal Science",
+      "Veterinary Administration",
+      "Veterinary Business and Management",
+      "Integrated Systems for Food Quality and Safety Management",
+      "Sanitary Microbiology and Food Safety",
+      "Health Management",
+      "Health Tourism",
+      "Nutrition and Biomedicine",
+      "Strategic Development and Administration of Educational and Social Institutions",
+      "Teaching Technologies in Informatics and Information Technologies",
+      "Pedagogy of Visual Arts Education and Art Therapy",
+      "Economics and Business Management",
+      "Economics and Human Resources Management",
+      "Entrepreneurship and Strategic Marketing",
+      "Bioeconomy and Eco-entrepreneurship",
+      "Finance and Accounting of the Company",
+      "Business Information Technology",
+      "Automotive Technical Expertise",
+      "Energy Efficiency",
+      "Information and Communication Technologies in Business and Public Administration",
+      "Fashion and Textile Design and Technologies",
+      "Heating, Ventilation and Air Conditioning",
+    ],
+  },
+  "47": {
+    bachelor: [
+      "Nursing",
+      "Midwifery",
+      "Kinesitherapy",
+      "Medical Rehabilitation and Ergotherapy",
+      "Protection and Control of Public Health",
+      "Social Activities in Healthcare",
+      "Health Care Management",
+      "Medical Laboratory Assistant",
+      "X-ray Laboratory Technician",
+      "Assistant Pharmacist",
+      "Medico-Social Activities",
+      "Medical Cosmetics",
+      "Public Health Protection",
+    ],
+    master: [
+      "Medicine",
+      "Pharmacy",
+      "Veterinary Medicine",
+      "Health Care Management (Master)",
+      "Public Health and Health Management",
+    ],
+  },
+  "48": {
+    bachelor: [
+      "Automation, Robotics and Computer Control Systems",
+      "Power Engineering and Electrical Equipment",
+      "Industrial and Automotive Electronics",
+      "Computer Systems and Technologies",
+      "Communication Technologies and Cybersecurity",
+      "Software and Computer Engineering",
+      "Technical Safety",
+      "Design, Engineering and Technologies in Textiles",
+      "Computer Technologies in Mechanical Engineering",
+      "Computer Design",
+      "Mechatronics",
+      "Industrial Thermal and Gas Systems",
+      "Materials Technology and Materials Science",
+      "Social Services",
+    ],
+    master: [
+      "Automation, Information and Control Equipment",
+      "Automotive Electronics",
+      "Electronics",
+      "Optoelectronics and Laser Technology",
+      "Power Engineering and Electrical Equipment",
+      "Computer Systems and Technologies",
+      "Software and Computer Engineering",
+      "Communication Technologies and Cybersecurity",
+      "Communication Equipment and Technologies",
+      "Occupational Safety",
+      "Computer Technologies in Mechanical Engineering",
+      "Mechatronics",
+      "Mechanical and Precision Engineering",
+      "Hydraulic and Pneumatic Equipment",
+      "Heating, Ventilation and Air-Conditioning Equipment",
+      "Textile Equipment and Technologies",
+      "Materials Technology and Materials Science",
+      "Surface Engineering of Materials",
+      "Computer Design in Industry",
+      "Environmental Protection Equipment and Technologies",
+      "Industrial Engineering",
+      "Social Activities",
+      "Social Work and European Policies",
+      "Innovations in Social Services Management",
+      "Human Resources Management",
+      "Business Management",
+      "Project Management",
+    ],
+  },
+  "49": {
+    bachelor: [
+      "Bulgarian Philology",
+      "English Philology",
+      "Russian Philology",
+      "German Philology",
+      "Turkish Philology",
+      "History",
+      "Applied Archaeology",
+      "Theology",
+      "Journalism",
+      "Mathematics",
+      "Informatics",
+      "Computer Informatics",
+      "Information Technologies",
+      "Economics",
+      "Biology",
+      "Chemistry",
+      "Physics",
+      "Geography",
+      "Ecology and Environmental Protection",
+      "Preschool and Primary School Pedagogy",
+      "Primary School Pedagogy with a Foreign Language",
+      "Social Pedagogy",
+      "Special Pedagogy",
+      "Music Pedagogy",
+      "Physical Education",
+      "Social Activities",
+      "Communication and Information Systems",
+      "Signal-Security Systems and Security",
+      "Security Systems",
+      "Cybersecurity Technologies",
+      "Engineering Logistics",
+      "Computer Technologies for Production Automation",
+    ],
+    master: [
+      "Applied Linguistics",
+      "Bulgarian Language and Literature",
+      "History and Archaeology",
+      "Media and Public Communications",
+      "Software Technologies",
+      "Information Systems and Technologies",
+      "Financial Mathematics",
+      "Astronomy and Astrophysics",
+      "Applied Ecology and Environmental Protection",
+      "Meteorology and Agrometeorology",
+      "Educational Management",
+      "Inclusive Education",
+      "Social Work",
+      "Administrative and Organizational Security",
+      "Geodesy",
+      "Geomatics",
+      "Technical Systems Operation",
+      "Cybersecurity",
+    ],
+  },
+  "50": {
+    bachelor: [
+      "Finance",
+      "Insurance and Social Security",
+      "Economic and Financial Control",
+      "Finance, Banking and Insurance",
+      "Marketing",
+      "Public Administration",
+      "Business Management",
+      "International Economic Relations",
+      "International Business",
+      "Project Management",
+      "Macroeconomics",
+      "Industrial Business and Entrepreneurship",
+      "Trade Economics",
+      "Agricultural Economics",
+      "Tourism Economics",
+      "Tourism Business and Management",
+      "Business Economics",
+      "Accounting and Control",
+      "Business Informatics",
+      "Business Statistics and Analytics",
+    ],
+    master: [
+      "Financial Management",
+      "Banking Management",
+      "Investment Management",
+      "Insurance",
+      "Financial Analysis and Control",
+      "Financial Control and External Audit",
+      "Marketing Management",
+      "Digital Marketing",
+      "Public Administration",
+      "Business Administration",
+      "Human Resources Management",
+      "International Business and Management",
+      "Project Management",
+      "Agribusiness",
+      "Tourism Economics and Management",
+      "Trade Management",
+      "Corporate Management",
+      "Health Management",
+      "Social Management",
+      "Accounting and Audit in the Public Sector",
+      "Accounting and Audit in Non-Financial Enterprises",
+      "Data Analysis and Business Statistics",
+      "Digital Business",
+      "E-commerce",
+    ],
+  },
+  "51": {
+    bachelor: [
+      "Business Administration",
+      "International Business",
+      "Marketing",
+      "Accounting and Control",
+      "Finance",
+      "Business Informatics",
+      "Tourism",
+    ],
+    master: [
+      "Business Administration",
+      "Business Finance",
+      "Taxation",
+      "Digital Marketing",
+      "Logistics",
+      "Music Business",
+      "Project Management",
+      "Artificial Intelligence in Business",
+      "Marketing Management",
+      "Financial Management",
+      "Human Resources Management",
+      "Tourism Management",
+      "International Business and Management",
+      "Entrepreneurship",
+      "Accounting and Auditing",
+      "Public Administration",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -1452,6 +2303,201 @@ function getSwuProgramInfo(programSlug: string): { tuition?: string; facultyKey?
   };
 }
 
+function getAubgProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`aubg_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getCoturProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`cotur_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getPuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`pu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getMupProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`mup_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTupProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`tup_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getAuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`au_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUftProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uft_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getAmtiiProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`amtii_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getVusiProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`vusi_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUardProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uard_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getBtuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`btu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getBfuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`bfu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getNhabProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nhab_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getUvtProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`uvt_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getNvuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`nvu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
 function getMuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`mu_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
@@ -1732,8 +2778,319 @@ function getSwuFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getAubgFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`aubg_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getCoturFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`cotur_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getPuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`pu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getMupFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`mup_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getTupFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`tup_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getAuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`au_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUftFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uft_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getAmtiiFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`amtii_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getVusiFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`vusi_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUardFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uard_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getBtuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`btu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getBfuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`bfu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNhabFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nhab_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getUvtFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`uvt_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getNvuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`nvu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function getTuFaculty(facultyKey: string): string | null {
   const name = i18n.t(`tu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getRuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`ru_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getRuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`ru_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getTrakProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`trak_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTrakFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`trak_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getMplProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`mpl_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getMplFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`mpl_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getTugProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`tug_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getTugFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`tug_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getShuProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`shu_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getShuFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`shu_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getCenovProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`cenov_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getCenovFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`cenov_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
+function getIbsProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`ibs_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getIbsFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`ibs_faculties.${facultyKey}`, { returnObjects: false }) as string;
 
   if (typeof name === "string" && name) {
     return name;
@@ -2030,6 +3387,204 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (swuInfo.tuition) summary.tuition = swuInfo.tuition;
         if (swuInfo.facultyKey) {
           const facultyName = getSwuFaculty(swuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "30") {
+      const aubgInfo = getAubgProgramInfo(slug);
+      if (aubgInfo) {
+        if (aubgInfo.tuition) summary.tuition = aubgInfo.tuition;
+        if (aubgInfo.facultyKey) {
+          const facultyName = getAubgFaculty(aubgInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "31") {
+      const coturInfo = getCoturProgramInfo(slug);
+      if (coturInfo) {
+        if (coturInfo.tuition) summary.tuition = coturInfo.tuition;
+        if (coturInfo.facultyKey) {
+          const facultyName = getCoturFaculty(coturInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "32") {
+      const puInfo = getPuProgramInfo(slug);
+      if (puInfo) {
+        if (puInfo.tuition) summary.tuition = puInfo.tuition;
+        if (puInfo.facultyKey) {
+          const facultyName = getPuFaculty(puInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "33") {
+      const mupInfo = getMupProgramInfo(slug);
+      if (mupInfo) {
+        if (mupInfo.tuition) summary.tuition = mupInfo.tuition;
+        if (mupInfo.facultyKey) {
+          const facultyName = getMupFaculty(mupInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "34") {
+      const tupInfo = getTupProgramInfo(slug);
+      if (tupInfo) {
+        if (tupInfo.tuition) summary.tuition = tupInfo.tuition;
+        if (tupInfo.facultyKey) {
+          const facultyName = getTupFaculty(tupInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "35") {
+      const auInfo = getAuProgramInfo(slug);
+      if (auInfo) {
+        if (auInfo.tuition) summary.tuition = auInfo.tuition;
+        if (auInfo.facultyKey) {
+          const facultyName = getAuFaculty(auInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "36") {
+      const uftInfo = getUftProgramInfo(slug);
+      if (uftInfo) {
+        if (uftInfo.tuition) summary.tuition = uftInfo.tuition;
+        if (uftInfo.facultyKey) {
+          const facultyName = getUftFaculty(uftInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "37") {
+      const amtiiInfo = getAmtiiProgramInfo(slug);
+      if (amtiiInfo) {
+        if (amtiiInfo.tuition) summary.tuition = amtiiInfo.tuition;
+        if (amtiiInfo.facultyKey) {
+          const facultyName = getAmtiiFaculty(amtiiInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "38") {
+      const vusiInfo = getVusiProgramInfo(slug);
+      if (vusiInfo) {
+        if (vusiInfo.tuition) summary.tuition = vusiInfo.tuition;
+        if (vusiInfo.facultyKey) {
+          const facultyName = getVusiFaculty(vusiInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "39") {
+      const uardInfo = getUardProgramInfo(slug);
+      if (uardInfo) {
+        if (uardInfo.tuition) summary.tuition = uardInfo.tuition;
+        if (uardInfo.facultyKey) {
+          const facultyName = getUardFaculty(uardInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "40") {
+      const btuInfo = getBtuProgramInfo(slug);
+      if (btuInfo) {
+        if (btuInfo.tuition) summary.tuition = btuInfo.tuition;
+        if (btuInfo.facultyKey) {
+          const facultyName = getBtuFaculty(btuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "41") {
+      const bfuInfo = getBfuProgramInfo(slug);
+      if (bfuInfo) {
+        if (bfuInfo.tuition) summary.tuition = bfuInfo.tuition;
+        if (bfuInfo.facultyKey) {
+          const facultyName = getBfuFaculty(bfuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "42") {
+      const nhabInfo = getNhabProgramInfo(slug);
+      if (nhabInfo) {
+        if (nhabInfo.tuition) summary.tuition = nhabInfo.tuition;
+        if (nhabInfo.facultyKey) {
+          const facultyName = getNhabFaculty(nhabInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "43") {
+      const uvtInfo = getUvtProgramInfo(slug);
+      if (uvtInfo) {
+        if (uvtInfo.tuition) summary.tuition = uvtInfo.tuition;
+        if (uvtInfo.facultyKey) {
+          const facultyName = getUvtFaculty(uvtInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "44") {
+      const nvuInfo = getNvuProgramInfo(slug);
+      if (nvuInfo) {
+        if (nvuInfo.tuition) summary.tuition = nvuInfo.tuition;
+        if (nvuInfo.facultyKey) {
+          const facultyName = getNvuFaculty(nvuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "45") {
+      const ruInfo = getRuProgramInfo(slug);
+      if (ruInfo) {
+        if (ruInfo.tuition) summary.tuition = ruInfo.tuition;
+        if (ruInfo.facultyKey) {
+          const facultyName = getRuFaculty(ruInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "46") {
+      const trakInfo = getTrakProgramInfo(slug);
+      if (trakInfo) {
+        if (trakInfo.tuition) summary.tuition = trakInfo.tuition;
+        if (trakInfo.facultyKey) {
+          const facultyName = getTrakFaculty(trakInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "47") {
+      const mplInfo = getMplProgramInfo(slug);
+      if (mplInfo) {
+        if (mplInfo.tuition) summary.tuition = mplInfo.tuition;
+        if (mplInfo.facultyKey) {
+          const facultyName = getMplFaculty(mplInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "48") {
+      const tugInfo = getTugProgramInfo(slug);
+      if (tugInfo) {
+        if (tugInfo.tuition) summary.tuition = tugInfo.tuition;
+        if (tugInfo.facultyKey) {
+          const facultyName = getTugFaculty(tugInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "49") {
+      const shuInfo = getShuProgramInfo(slug);
+      if (shuInfo) {
+        if (shuInfo.tuition) summary.tuition = shuInfo.tuition;
+        if (shuInfo.facultyKey) {
+          const facultyName = getShuFaculty(shuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "50") {
+      const cenovInfo = getCenovProgramInfo(slug);
+      if (cenovInfo) {
+        if (cenovInfo.tuition) summary.tuition = cenovInfo.tuition;
+        if (cenovInfo.facultyKey) {
+          const facultyName = getCenovFaculty(cenovInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "51") {
+      const ibsInfo = getIbsProgramInfo(slug);
+      if (ibsInfo) {
+        if (ibsInfo.tuition) summary.tuition = ibsInfo.tuition;
+        if (ibsInfo.facultyKey) {
+          const facultyName = getIbsFaculty(ibsInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -2393,6 +3948,226 @@ export function buildProgramDetail(
       if (swuInfo.tuition) result.tuition = swuInfo.tuition;
       if (swuInfo.facultyKey) {
         const facultyName = getSwuFaculty(swuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "30" && normalizedSlug) {
+    const aubgInfo = getAubgProgramInfo(normalizedSlug);
+
+    if (aubgInfo) {
+      if (aubgInfo.tuition) result.tuition = aubgInfo.tuition;
+      if (aubgInfo.facultyKey) {
+        const facultyName = getAubgFaculty(aubgInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "31" && normalizedSlug) {
+    const coturInfo = getCoturProgramInfo(normalizedSlug);
+
+    if (coturInfo) {
+      if (coturInfo.tuition) result.tuition = coturInfo.tuition;
+      if (coturInfo.facultyKey) {
+        const facultyName = getCoturFaculty(coturInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "32" && normalizedSlug) {
+    const puInfo = getPuProgramInfo(normalizedSlug);
+
+    if (puInfo) {
+      if (puInfo.tuition) result.tuition = puInfo.tuition;
+      if (puInfo.facultyKey) {
+        const facultyName = getPuFaculty(puInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "33" && normalizedSlug) {
+    const mupInfo = getMupProgramInfo(normalizedSlug);
+
+    if (mupInfo) {
+      if (mupInfo.tuition) result.tuition = mupInfo.tuition;
+      if (mupInfo.facultyKey) {
+        const facultyName = getMupFaculty(mupInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "34" && normalizedSlug) {
+    const tupInfo = getTupProgramInfo(normalizedSlug);
+
+    if (tupInfo) {
+      if (tupInfo.tuition) result.tuition = tupInfo.tuition;
+      if (tupInfo.facultyKey) {
+        const facultyName = getTupFaculty(tupInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "35" && normalizedSlug) {
+    const auInfo = getAuProgramInfo(normalizedSlug);
+
+    if (auInfo) {
+      if (auInfo.tuition) result.tuition = auInfo.tuition;
+      if (auInfo.facultyKey) {
+        const facultyName = getAuFaculty(auInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "36" && normalizedSlug) {
+    const uftInfo = getUftProgramInfo(normalizedSlug);
+
+    if (uftInfo) {
+      if (uftInfo.tuition) result.tuition = uftInfo.tuition;
+      if (uftInfo.facultyKey) {
+        const facultyName = getUftFaculty(uftInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "37" && normalizedSlug) {
+    const amtiiInfo = getAmtiiProgramInfo(normalizedSlug);
+
+    if (amtiiInfo) {
+      if (amtiiInfo.tuition) result.tuition = amtiiInfo.tuition;
+      if (amtiiInfo.facultyKey) {
+        const facultyName = getAmtiiFaculty(amtiiInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "38" && normalizedSlug) {
+    const vusiInfo = getVusiProgramInfo(normalizedSlug);
+
+    if (vusiInfo) {
+      if (vusiInfo.tuition) result.tuition = vusiInfo.tuition;
+      if (vusiInfo.facultyKey) {
+        const facultyName = getVusiFaculty(vusiInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "39" && normalizedSlug) {
+    const uardInfo = getUardProgramInfo(normalizedSlug);
+
+    if (uardInfo) {
+      if (uardInfo.tuition) result.tuition = uardInfo.tuition;
+      if (uardInfo.facultyKey) {
+        const facultyName = getUardFaculty(uardInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "40" && normalizedSlug) {
+    const btuInfo = getBtuProgramInfo(normalizedSlug);
+
+    if (btuInfo) {
+      if (btuInfo.tuition) result.tuition = btuInfo.tuition;
+      if (btuInfo.facultyKey) {
+        const facultyName = getBtuFaculty(btuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "41" && normalizedSlug) {
+    const bfuInfo = getBfuProgramInfo(normalizedSlug);
+
+    if (bfuInfo) {
+      if (bfuInfo.tuition) result.tuition = bfuInfo.tuition;
+      if (bfuInfo.facultyKey) {
+        const facultyName = getBfuFaculty(bfuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "42" && normalizedSlug) {
+    const nhabInfo = getNhabProgramInfo(normalizedSlug);
+
+    if (nhabInfo) {
+      if (nhabInfo.tuition) result.tuition = nhabInfo.tuition;
+      if (nhabInfo.facultyKey) {
+        const facultyName = getNhabFaculty(nhabInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "43" && normalizedSlug) {
+    const uvtInfo = getUvtProgramInfo(normalizedSlug);
+
+    if (uvtInfo) {
+      if (uvtInfo.tuition) result.tuition = uvtInfo.tuition;
+      if (uvtInfo.facultyKey) {
+        const facultyName = getUvtFaculty(uvtInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "44" && normalizedSlug) {
+    const nvuInfo = getNvuProgramInfo(normalizedSlug);
+
+    if (nvuInfo) {
+      if (nvuInfo.tuition) result.tuition = nvuInfo.tuition;
+      if (nvuInfo.facultyKey) {
+        const facultyName = getNvuFaculty(nvuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "45" && normalizedSlug) {
+    const ruInfo = getRuProgramInfo(normalizedSlug);
+
+    if (ruInfo) {
+      if (ruInfo.tuition) result.tuition = ruInfo.tuition;
+      if (ruInfo.facultyKey) {
+        const facultyName = getRuFaculty(ruInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "46" && normalizedSlug) {
+    const trakInfo = getTrakProgramInfo(normalizedSlug);
+
+    if (trakInfo) {
+      if (trakInfo.tuition) result.tuition = trakInfo.tuition;
+      if (trakInfo.facultyKey) {
+        const facultyName = getTrakFaculty(trakInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "47" && normalizedSlug) {
+    const mplInfo = getMplProgramInfo(normalizedSlug);
+
+    if (mplInfo) {
+      if (mplInfo.tuition) result.tuition = mplInfo.tuition;
+      if (mplInfo.facultyKey) {
+        const facultyName = getMplFaculty(mplInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "48" && normalizedSlug) {
+    const tugInfo = getTugProgramInfo(normalizedSlug);
+
+    if (tugInfo) {
+      if (tugInfo.tuition) result.tuition = tugInfo.tuition;
+      if (tugInfo.facultyKey) {
+        const facultyName = getTugFaculty(tugInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "49" && normalizedSlug) {
+    const shuInfo = getShuProgramInfo(normalizedSlug);
+
+    if (shuInfo) {
+      if (shuInfo.tuition) result.tuition = shuInfo.tuition;
+      if (shuInfo.facultyKey) {
+        const facultyName = getShuFaculty(shuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "50" && normalizedSlug) {
+    const cenovInfo = getCenovProgramInfo(normalizedSlug);
+
+    if (cenovInfo) {
+      if (cenovInfo.tuition) result.tuition = cenovInfo.tuition;
+      if (cenovInfo.facultyKey) {
+        const facultyName = getCenovFaculty(cenovInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "51" && normalizedSlug) {
+    const ibsInfo = getIbsProgramInfo(normalizedSlug);
+
+    if (ibsInfo) {
+      if (ibsInfo.tuition) result.tuition = ibsInfo.tuition;
+      if (ibsInfo.facultyKey) {
+        const facultyName = getIbsFaculty(ibsInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

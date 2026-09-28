@@ -10,7 +10,9 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "LSApplicationQueriesSchemes": ["googlegmail"]
+        "LSApplicationQueriesSchemes": [
+          "googlegmail"
+        ]
       }
     },
     "android": {
@@ -51,7 +53,9 @@
         {
           "photosPermission": "This app needs access to your photos so you can set a profile picture."
         }
-      ]
+      ],
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true

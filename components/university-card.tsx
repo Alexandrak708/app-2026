@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Pressable, TouchableOpacity, useWindowDimensions, type DimensionValue } from "react-native";
+import { Text, Pressable, TouchableOpacity, useWindowDimensions, type DimensionValue } from "react-native";
 import Animated, { useAnimatedStyle, interpolate, Extrapolation, SharedValue, useSharedValue, withTiming } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
