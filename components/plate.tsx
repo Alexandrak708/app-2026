@@ -56,7 +56,7 @@ export function Plate({
         {warm && (
           <View
             pointerEvents="none"
-            style={[StyleSheet.absoluteFillObject, { backgroundColor: "rgba(129,11,56,0.06)" }]}
+            style={[StyleSheet.absoluteFill, { backgroundColor: "rgba(129,11,56,0.06)" }]}
           />
         )}
         {children}
