@@ -19,14 +19,15 @@
       "package": "com.yourcompany.app2026",
       "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "permissions": [
-        "android.permission.RECORD_AUDIO"
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
       ]
     },
     "web": {
@@ -41,16 +42,18 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#f3f2f2",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#1c1b1a"
           }
         }
       ],
       [
         "expo-image-picker",
         {
-          "photosPermission": "This app needs access to your photos so you can set a profile picture."
+          "photosPermission": "U&I needs access to your photos so you can set a profile picture.",
+          "cameraPermission": false,
+          "microphonePermission": false
         }
       ],
       "expo-font",

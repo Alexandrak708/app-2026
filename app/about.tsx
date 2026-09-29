@@ -1,6 +1,9 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants';
+import { useRouter } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
+import { useAppTheme } from '@/hooks/use-theme-color';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +14,8 @@ import { AppInfo } from '@/constants/app-info';
 
 export default function About() {
   const { t } = useTranslation();
+  const router = useRouter();
+  const { colors } = useAppTheme();
   const version = Constants.expoConfig?.version ?? '1.0.0';
 
   const vars = {
@@ -59,6 +64,17 @@ export default function About() {
           subject={t('about.emailSubject', vars)}
         />
 
+        <TouchableOpacity
+          style={[styles.creditsLink, { borderColor: colors.border }]}
+          onPress={() => router.push('/photo-credits')}
+          activeOpacity={0.7}
+          accessibilityRole="link"
+        >
+          <Ionicons name="images-outline" size={18} color={colors.accent} />
+          <ThemedText style={styles.creditsLinkText}>{t('about.photoCreditsLink')}</ThemedText>
+          <Ionicons name="chevron-forward" size={16} color={colors.textMuted} />
+        </TouchableOpacity>
+
         <ThemedText style={styles.credits}>{t('about.credits', vars)}</ThemedText>
        </ContentWrap>
       </ScrollView>
@@ -76,5 +92,15 @@ const styles = StyleSheet.create({
   bulletRow: { flexDirection: 'row', gap: 8, paddingRight: 8 },
   bullet: { opacity: 0.6 },
   bulletText: { flex: 1, opacity: 0.85, lineHeight: 22 },
+  creditsLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginTop: 18,
+    paddingVertical: 14,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+  creditsLinkText: { flex: 1, fontWeight: '600' },
   credits: { opacity: 0.5, fontSize: 12, marginTop: 20 },
 });

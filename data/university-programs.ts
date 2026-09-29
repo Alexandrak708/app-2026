@@ -1471,8 +1471,6 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Mechatronics",
       "Explosives and Ammunition",
       "Organization and Management of Military Formations",
-      "Aviation Equipment and Technologies",
-      "Air Traffic Management",
     ],
     master: [
       "National and Regional Security",
@@ -1486,8 +1484,6 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Cybersecurity",
       "Artificial Intelligence",
       "Computer Systems and Technologies",
-      "Aviation Equipment and Technologies",
-      "Air Traffic Management",
       "Outsourcing and Cybersecurity",
       "Technological Entrepreneurship",
       "Organization and Management of Military Formations",

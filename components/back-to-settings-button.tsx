@@ -7,9 +7,10 @@ import { ThemedText } from '@/components/themed-text';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-export function BackToSettingsButton() {
+export function BackToSettingsButton({ label }: { label?: string } = {}) {
   const router = useRouter();
   const { t } = useTranslation();
+  const text = label ?? t('settings.backToSettings');
   const colorScheme = useColorScheme() ?? 'light';
   const isDark = colorScheme === 'dark';
   const palette = Colors[isDark ? 'dark' : 'light'];
@@ -19,7 +20,7 @@ export function BackToSettingsButton() {
       onPress={() => router.back()}
       activeOpacity={0.8}
       accessibilityRole="button"
-      accessibilityLabel={t('settings.backToSettings')}
+      accessibilityLabel={text}
       hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }}
       style={[
         styles.button,
@@ -32,7 +33,7 @@ export function BackToSettingsButton() {
       <View style={styles.content}>
         <Ionicons name="chevron-back" size={16} color={palette.text} />
         <ThemedText type="defaultSemiBold" style={styles.label}>
-          {t('settings.backToSettings')}
+          {text}
         </ThemedText>
       </View>
     </TouchableOpacity>

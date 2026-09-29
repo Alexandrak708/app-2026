@@ -186,19 +186,19 @@ export default function UniversityPage() {
     : t("university.noScholarship");
 
   const quickInfoRows = [
-    { icon: "earth-outline" as const, label: t("filters.location"), value: university.location },
-    { icon: "book-outline" as const, label: t("filters.degree"), value: university.degreeLabel },
-    { icon: "grid-outline" as const, label: t("filters.category"), value: categoryLabel },
+    { icon: "earth-outline" as const, label: t("university.infoLocation"), value: university.location },
+    { icon: "book-outline" as const, label: t("university.infoDegree"), value: university.degreeLabel },
+    { icon: "grid-outline" as const, label: t("university.infoCategory"), value: categoryLabel },
     {
       icon: "ribbon-outline" as const,
-      label: t("filters.scholarship"),
+      label: t("university.infoScholarship"),
       value: university.scholarship
         ? t("university.available")
         : t("university.notAvailable"),
     },
     {
       icon: "cash-outline" as const,
-      label: t("filters.tuition"),
+      label: t("university.infoTuition"),
       value: university.tuitionRange,
     },
   ];
@@ -323,7 +323,7 @@ export default function UniversityPage() {
           {/* About */}
           <SectionTitle style={{ marginBottom: 8 }}>{t("university.about")}</SectionTitle>
           <Text
-            style={{ fontFamily: Fonts.body, fontSize: 14, color: colors.textSecondary, lineHeight: 23, textAlign: "justify" }}
+            style={{ fontFamily: Fonts.body, fontSize: 14, color: colors.textSecondary, lineHeight: 23 }}
             numberOfLines={expanded ? undefined : 4}
           >
             {university.longDescription || university.description}
@@ -2891,7 +2891,6 @@ export default function UniversityPage() {
                     <InfoRow label={t("universityExtra.nvu_location")} colors={colors} />
                     <InfoRow label={t("universityExtra.nvu_faculties")} colors={colors} />
                     <InfoRow label={t("universityExtra.nvu_shumen")} colors={colors} />
-                    <InfoRow label={t("universityExtra.nvu_aviation")} colors={colors} />
                     <InfoRow label={t("universityExtra.nvu_ranges")} colors={colors} />
                   </ExpandableSection>
 

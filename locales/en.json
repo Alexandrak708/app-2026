@@ -1359,8 +1359,7 @@
   "nvu_faculties": {
     "security": "Faculty of Security and Defence",
     "logistics": "Faculty of Logistics and Technologies",
-    "artillery": "Faculty of Artillery, Air Defence and CIS (Shumen)",
-    "aviation": "Aviation Faculty (Dolna Mitropolia)"
+    "artillery": "Faculty of Artillery, Air Defence and CIS (Shumen)"
   },
   "nvu_programInfo": {
     "population-and-infrastructure-protection": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "security" },
@@ -1383,9 +1382,7 @@
     "cybersecurity": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
     "artificial-intelligence": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
     "computer-systems-and-technologies": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
-    "outsourcing-and-cybersecurity": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" },
-    "aviation-equipment-and-technologies": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "aviation" },
-    "air-traffic-management": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "aviation" }
+    "outsourcing-and-cybersecurity": { "tuition": "≈ €550–€650/yr (civilian, indicative)", "facultyKey": "artillery" }
   },
   "uvt_faculties": {
     "hist": "Historical Faculty",
@@ -1919,7 +1916,17 @@
     "contactBody": "Questions, feedback, or found something that needs fixing? We'd love to hear from you.",
     "emailButton": "Contact us",
     "emailSubject": "{{app}} — Feedback",
-    "credits": "{{app}} · Made by {{entity}} · v{{version}}"
+    "credits": "{{app}} · Made by {{entity}} · v{{version}}",
+    "photoCreditsLink": "Photo credits"
+  },
+  "photoCredits": {
+    "title": "Photo credits",
+    "back": "Back",
+    "intro": "University photos are used to help you recognise each campus. Most come from Wikimedia Commons under free licences, credited below with the author and licence; the rest are the institutions' own photos from their official websites.",
+    "byAuthor": "Photo: {{author}} · {{license}}",
+    "byInstitution": "Photo: the institution's official website",
+    "viewOnCommons": "View on Wikimedia Commons",
+    "viewWebsite": "Visit official website"
   },
   "terms": {
     "title": "Terms of Service",
@@ -2145,6 +2152,11 @@
     "readMore": "Read more",
     "showLess": "Show less",
     "quickInfo": "Quick Info",
+    "infoLocation": "Location",
+    "infoDegree": "Degree",
+    "infoCategory": "Category",
+    "infoScholarship": "Scholarship",
+    "infoTuition": "Tuition",
     "programs": "Programs",
     "viewMore": "View more",
     "website": "Website",
@@ -2284,12 +2296,12 @@
     },
     "44": {
       "yearsTradition": "140+",
-      "bachelorPrograms": "15",
+      "bachelorPrograms": "13",
       "masterPrograms": "20+",
       "internationalPartners": "30+",
       "countries": "10+",
       "studentsGraduated": "50K+",
-      "labs": "4",
+      "labs": "3",
       "labsText": "Faculties",
       "tuitionFreeLabel": "1878",
       "tuitionFreeText": "Bulgaria's first military school"
@@ -2807,7 +2819,7 @@
       "tuitionFreeText": "Only specialised food-technology university"
     }
   },
-  "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
+  "tuitionTiersHeader": "Tuition at a glance",
   "tuitionTiers": {
     "53": [
       {
@@ -2830,19 +2842,19 @@
     "52": [
       {
         "range": "€358",
-        "label": "Bachelor, Bulgarian citizens (700 BGN, full-time)"
+        "label": "Bachelor, Bulgarian citizens (700 BGN, full-time) / semester"
       },
       {
         "range": "€500",
-        "label": "Bachelor, EU citizens (full-time)"
+        "label": "Bachelor, EU citizens (full-time) / semester"
       },
       {
         "range": "€750",
-        "label": "Bachelor, non-EU citizens (full-time)"
+        "label": "Bachelor, non-EU citizens (full-time) / semester"
       },
       {
         "range": "€1,000",
-        "label": "Master, non-EU citizens"
+        "label": "Master, non-EU citizens / semester"
       }
     ],
     "51": [
@@ -3122,15 +3134,15 @@
       },
       {
         "range": "€176-€220",
-        "label": "Most regular programs"
+        "label": "Most regular programs / semester"
       },
       {
         "range": "€332-€358",
-        "label": "Maritime engineering"
+        "label": "Maritime engineering / semester"
       },
       {
         "range": "€409.50",
-        "label": "Navigation"
+        "label": "Navigation / semester"
       }
     ],
     "2": [
@@ -3154,19 +3166,19 @@
     "3": [
       {
         "range": "€245",
-        "label": "State-subsidised (EU)"
+        "label": "State-subsidised (EU) / semester"
       },
       {
         "range": "€553–€1,045",
-        "label": "Paid full-time (EU)"
+        "label": "Paid full-time (EU) / semester"
       },
       {
         "range": "€440–€568",
-        "label": "Distance learning"
+        "label": "Distance learning / semester"
       },
       {
         "range": "€1,350–€1,500",
-        "label": "International (non-EU)"
+        "label": "International (non-EU) / semester"
       }
     ],
     "4": [
@@ -3198,11 +3210,11 @@
       },
       {
         "range": "€1,600",
-        "label": "International students (bachelor)"
+        "label": "International students (bachelor) / semester"
       },
       {
         "range": "€1,800",
-        "label": "International (architecture/engineering)"
+        "label": "International (architecture/engineering) / semester"
       }
     ],
     "6": [
@@ -4143,11 +4155,10 @@
     "nvu_feeMaster": "Master's programmes: roughly €800–€1,200 per year",
     "nvu_feeForeign": "Foreign students by separate arrangement, incl. NATO partner schemes",
     "nvu_campus": "Campus & Facilities",
-    "nvu_campusDesc": "NVU spans three cities, each with its own military faculty:",
+    "nvu_campusDesc": "NVU is based in two cities, each with its own military faculties:",
     "nvu_location": "Headquarters at 76 Bulgaria Blvd, Veliko Tarnovo",
     "nvu_faculties": "Faculties of Security & Defence and of Logistics & Technologies (Veliko Tarnovo)",
     "nvu_shumen": "Faculty of Artillery, Air Defence and CIS in Shumen",
-    "nvu_aviation": "Aviation Faculty in Dolna Mitropolia (near Pleven), with an airfield",
     "nvu_ranges": "Training ranges, drill grounds and engineering, CIS and cyber laboratories",
     "nvu_partnersDesc": "NVU is tied to the Bulgarian Armed Forces and to NATO:",
     "nvu_mod": "Trains officers for the Bulgarian Army under the Ministry of Defence",
@@ -4332,7 +4343,7 @@
     "uard_location": "Main building at 78 Dunav Blvd, Plovdiv 4003",
     "uard_fields": "Two professional fields: Economics; and Administration & Management",
     "uard_branches": "Branches in Ruse and Veliko Tarnovo",
-    "uard_elearning": "Electronic university and ИСАО+ integrated learning system",
+    "uard_elearning": "Electronic university and integrated distance-learning system",
     "uard_career": "Career-development centre, professional-qualification centre and library",
     "uard_partnersDesc": "UARD is well accredited and active in European academic networks:",
     "uard_invest": "Member of the INVEST European University Alliance (Slovakia, Greece, Finland, Netherlands)",
@@ -6630,7 +6641,7 @@
     "51": {
       "name": "International Business School",
       "description": "Bulgaria's top-accredited private business school, in Botevgrad and Sofia — management, finance, marketing, tourism and business, taught in Bulgarian and English.",
-      "longDescription": "The International Business School (IBS / MVBU) is a private higher school of business based in Botevgrad, with a modern campus in Sofia. It was founded in 1991 as the Bulgarian-Danish College of Business, Export and Marketing, and was transformed into a specialised higher school of learning by an Act of the National Assembly on 25 July 2002. It is among the highest institutionally accredited private universities in Bulgaria.\n\nThe school teaches about 6,000 students in the professional fields of Economics, Administration and Management, and Tourism, across bachelor's, master's and doctoral degrees, in Bulgarian and in English. Its master's portfolio spans some 18 programmes, from Business Administration, Digital Marketing and Project Management to distinctive tracks such as Music Business and the new Artificial Intelligence in Business.\n\nIBS has been a leader in distance and online learning in Bulgaria since 2005, and its degrees carry the European Commission's Diploma Supplement (DS) Label. It maintains partnerships with employers and academic institutions including KPMG Audit, Adecco, Jones International University (USA), Ariel University (Israel) and Breda University of Applied Sciences (Netherlands), alongside active Erasmus+ mobility.\n\nAs a private school, tuition is fee-based — about €1,000 per semester for Bulgarian-taught programmes and €1,500 (EU) for English-taught programmes. Rector: Prof. Dr. Ruslan Penchev.",
+      "longDescription": "The International Business School (IBS / MVBU) is a private higher school of business based in Botevgrad, with a modern campus in Sofia. It was founded in 1991 as the Bulgarian-Danish College of Business, Export and Marketing, and was transformed into a specialised higher school of learning by an Act of the National Assembly on 25 July 2002. It is among the highest institutionally accredited private universities in Bulgaria.\n\nThe school teaches about 6,000 students in the professional fields of Economics, Administration and Management, and Tourism, across bachelor's, master's and doctoral degrees, in Bulgarian and in English. Its master's portfolio spans some 18 programmes, from Business Administration, Digital Marketing and Project Management to distinctive tracks such as Music Business and the new Artificial Intelligence in Business.\n\nIBS has been a leader in distance and online learning in Bulgaria since 2005, and its degrees carry the European Commission's Diploma Supplement (DS) Label. It maintains partnerships with employers and academic institutions including KPMG Audit, Adecco, Jones International University (USA), Ariel University (Israel) and Breda University of Applied Sciences (Netherlands), alongside active Erasmus+ mobility.\n\nAs a private school, tuition is fee-based — about €1,000 per semester for Bulgarian-taught programmes and €1,500 (EU) for English-taught programmes. Rector: Prof. Dr. Georgi Apostolov.",
       "location": "Botevgrad, Bulgaria",
       "degree": "Bachelor and Master",
       "tuitionRange": "€1,000 - €2,300 / semester (private; English-taught higher)",
@@ -6699,8 +6710,8 @@
     },
     "44": {
       "name": "Vasil Levski National Military University",
-      "description": "Bulgaria's national military university (formed 2002, heritage from 1878), based in Veliko Tarnovo with faculties in Shumen and Dolna Mitropolia — military and civilian degrees in security and defence, logistics, aviation, artillery, communications and cybersecurity.",
-      "longDescription": "Vasil Levski National Military University (NVU) is Bulgaria's national military higher-education institution, headquartered in Veliko Tarnovo. Its heritage goes back to the first Bulgarian military school, founded in 1878 in Sofia; the modern university was formed on 14 June 2002 by merging three military schools — in Veliko Tarnovo, Shumen and Dolna Mitropolia — and is named after the national hero Vasil Levski.\n\nThe university trains both officer cadets and civilian students across faculties of Security and Defence and of Logistics and Technologies (in Veliko Tarnovo), the Faculty of Artillery, Air Defence and Communication and Information Systems (in Shumen), and the Aviation Faculty (in Dolna Mitropolia). It awards Bachelor's, Master's and Doctoral degrees, plus a professional-sergeant college.\n\nMilitary (cadet) specialties centre on the organisation and command of military formations, artillery and air defence, aviation and communications; a broad civilian portfolio covers national and regional security, protection of the population and infrastructure, crisis management, logistics and industrial management, automotive and transport engineering, telecommunications, computer systems and cybersecurity, mechatronics, and aviation equipment and air-traffic management.\n\nCadets are funded by the Ministry of Defence and study without tuition, receiving a salary and full board, while civilian students study in state-subsidised or paid places (paid civilian fees are roughly €550–€650 per year for most programmes, higher for a few). The university is closely tied to the Bulgarian Armed Forces and NATO, with training ranges, airfields and modern laboratories.",
+      "description": "Bulgaria's national military university (formed 2002, heritage from 1878), based in Veliko Tarnovo with a faculty in Shumen — military and civilian degrees in security and defence, logistics, artillery and air defence, communications and cybersecurity.",
+      "longDescription": "Vasil Levski National Military University (NVU) is Bulgaria's national military higher-education institution, headquartered in Veliko Tarnovo. Its heritage goes back to the first Bulgarian military school, founded in 1878 in Sofia; the modern university was formed on 14 June 2002 by merging the military schools in Veliko Tarnovo, Shumen and Dolna Mitropolia, and is named after the national hero Vasil Levski. In 2020 the aviation faculty in Dolna Mitropolia became a separate higher school — today's Georgi Benkovski Bulgarian Air Force Academy.\n\nThe university trains both officer cadets and civilian students in three faculties — Security and Defence and Logistics and Technologies (in Veliko Tarnovo), and Artillery, Air Defence and Communication and Information Systems (in Shumen). It awards Bachelor's, Master's and Doctoral degrees, plus a professional-sergeant college.\n\nMilitary (cadet) specialties centre on the organisation and command of military formations, artillery, air defence and communications; a broad civilian portfolio covers national and regional security, protection of the population and infrastructure, disaster protection, logistics and industrial management, automotive engineering and transport logistics, telecommunications, computer systems and cybersecurity, e-governance security, mechatronics, and explosives and ammunition.\n\nCadets are funded by the Ministry of Defence and study without tuition, receiving a salary and full board, while civilian students study in state-subsidised or paid places (paid civilian fees are roughly €550–€650 per year for most programmes, up to about €3,150 for a few). The university is closely tied to the Bulgarian Armed Forces and NATO, with training ranges and modern laboratories.",
       "location": "Veliko Tarnovo, Bulgaria",
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€0 (cadets) - €650 / year (civilian)",
@@ -6708,7 +6719,7 @@
       "applyUrl": "https://nvu.bg/bg/priem"
     },
     "43": {
-      "name": "University of Veliko Tarnovo \"St. Cyril and St. Methodius\"",
+      "name": "University of Veliko Tarnovo “St. Cyril and St. Methodius”",
       "description": "Bulgaria's second-oldest classical university (est. 1963), in Veliko Tarnovo — a large public university strong in the humanities, history, philology, theology, fine arts, law, economics and informatics, with bachelor's, master's and doctoral degrees.",
       "longDescription": "The University of Veliko Tarnovo \"St. Cyril and St. Methodius\" (VTU) is a large classical public university in the old Bulgarian capital of Veliko Tarnovo. It was founded in 1963 as a Higher Pedagogical Institute and elevated to university status in 1971, becoming the second university in Bulgaria after Sofia University. It is named after the creators of the Slavonic (Cyrillic) alphabet, Saints Cyril and Methodius.\n\nThe university is organised into faculties covering the humanities and beyond — Historical, Philological, Philosophy, Orthodox Theology, Law, Economics, Mathematics and Informatics, Fine Arts, and Education — and awards Bachelor's, Master's and Doctoral degrees. It is especially renowned for history and archaeology, Bulgarian and foreign philology, theology and fine arts, alongside strong programmes in law, economics and tourism, informatics and computer science, pedagogy and psychology.\n\nBeyond its main campus in Veliko Tarnovo, the university has affiliates in Vratsa and Pleven. Teaching combines classical academic traditions with fieldwork — archaeological digs, plein-air art sessions, teaching practice and moot courts — supported by a large academic library and student dormitories.\n\nAs a state university, tuition for Bulgarian and EU students on state-subsidised places is modest (indicatively €350–€540 per year, varying by field), with higher fees for foreign students; scholarships, dormitories and Erasmus+ mobility support students. VTU is a major centre of Bulgarian humanities scholarship and Slavic studies.",
       "location": "Veliko Tarnovo, Bulgaria",
@@ -6730,7 +6741,7 @@
     "41": {
       "name": "Burgas Free University",
       "description": "One of Bulgaria's first private universities (est. 1991), in Burgas — bachelor's, master's and doctoral degrees in law, economics and management, computer science and engineering, and the humanities, with a strong international profile.",
-      "longDescription": "Burgas Free University (BFU) is one of Bulgaria's first private universities, established by an Act of the Grand National Assembly on 18 September 1991. It is an accredited, autonomous university in the city of Burgas on the Black Sea coast, certified to ISO 9001 and recognised for its modern, practice-oriented teaching.\n\nThe university is organised into four faculties, run through its teaching centres — the Centre for Legal Sciences, the Centre for Economic and Management Sciences, the Centre for Informatics and Technical Sciences, and the Centre for Humanities. It awards Bachelor's, Master's and Doctoral degrees and offers professional-qualification courses. Bachelor's studies span law, accounting and finance, marketing and digital communications, business and international economics, software engineering, computer systems, systems and electrical engineering, psychology and pedagogy; the master's portfolio is broad, adding national-security and public administration, maritime law, finance and business administration, circular economy, aviation and real-estate management, artificial intelligence, application programming, drone design, fire safety and forensic engineering, and applied psychology.\n\nBFU is strongly international: it is a member of the European University Association (EUA), hosts a UNESCO Chair on Culture of Peace and Human Rights, takes part in Erasmus+ and ECTS, and has 36 cooperation agreements and student and staff exchanges with universities across Europe and beyond. Teaching is supported by an e-learning platform, electronic student services and a university library.\n\nAs a private university, BFU sets its own tuition — around €1,800 per semester (≈ €3,600 per year) for bachelor's and master's study, with its own doctoral and preparatory-course fees — and offers scholarships and student loans. President and Rector: Prof. Petko Chobanov, PhD.",
+      "longDescription": "Burgas Free University (BFU) is one of Bulgaria's first private universities, established by an Act of the Grand National Assembly on 18 September 1991. It is an accredited, autonomous university in the city of Burgas on the Black Sea coast, certified to ISO 9001 and recognised for its modern, practice-oriented teaching.\n\nThe university is organised into four faculties, run through its teaching centres — the Centre for Legal Sciences, the Centre for Economic and Management Sciences, the Centre for Informatics and Technical Sciences, and the Centre for Humanities. It awards Bachelor's, Master's and Doctoral degrees and offers professional-qualification courses. Bachelor's studies span law, accounting and finance, marketing and digital communications, business and international economics, software engineering, computer systems, systems and electrical engineering, psychology and pedagogy; the master's portfolio is broad, adding national-security and public administration, maritime law, finance and business administration, circular economy, aviation and real-estate management, artificial intelligence, application programming, drone design, fire safety and forensic engineering, and applied psychology.\n\nBFU is strongly international: it is a member of the European University Association (EUA), hosts a UNESCO Chair on Culture of Peace and Human Rights, takes part in Erasmus+ and ECTS, and has 36 cooperation agreements and student and staff exchanges with universities across Europe and beyond. Teaching is supported by an e-learning platform, electronic student services and a university library.\n\nAs a private university, BFU sets its own tuition — around €1,800 per semester (≈ €3,600 per year) for bachelor's and master's study, with its own doctoral and preparatory-course fees — and offers scholarships and student loans. Rector: Prof. Dr. Milen Baltov.",
       "location": "Burgas, Bulgaria",
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€1,800 / semester (≈ €3,600/yr)",
@@ -6738,9 +6749,9 @@
       "applyUrl": "https://www.bfu.bg/en/priem"
     },
     "40": {
-      "name": "Prof. Dr. Asen Zlatarov University",
+      "name": "Burgas State University “Prof. Dr. Asen Zlatarov”",
       "description": "Burgas's public university (est. 1963) — a state university rooted in chemical technology and engineering, now spanning medicine, natural, technical and social sciences, with bachelor's, master's and doctoral degrees across 18 professional fields.",
-      "longDescription": "Prof. Dr. Asen Zlatarov University is the public university of Burgas. It was founded on 6 October 1963 as the Higher Institute of Chemical Technology, was named after the Bulgarian scientist Prof. Dr. Asen Zlatarov in 1968, gained full university status in 1995, and in February 2025 was designated Burgas State University “Prof. Dr. Asen Zlatarov”.\n\nThe university is organised into five faculties — Technical Sciences, Natural Sciences, Social Sciences, Public Health and Health Care, and Medicine — together with three colleges (Technical, Medical and Tourism). It offers Professional Bachelor's, Bachelor's, Master's and Doctoral degrees, with 38 accredited bachelor programmes and over 40 master programmes across 18 professional fields. Its historic strengths in chemical, oil-and-gas, materials and food technology sit alongside computing, electronics, transport, economics, tourism, pedagogy, ecology, health care and a full Medicine programme.\n\nThe campus has six academic buildings, science and engineering laboratories, a medical centre, a sports complex, three student hostels, three canteens and a library with access to Scopus and ScienceDirect. Over 350 lecturers (some 138 habilitated) teach and research here, and the university ranks among Bulgaria's stronger research institutions.\n\nAs a state university, tuition for Bulgarian and EU students on state-subsidised places is modest, with higher fees for the Medicine programme and for foreign students; scholarships, dormitories and an active Erasmus+ programme support students, including a growing international community. Rector: Prof. Dr. Eng. Magdalena Mitkova.",
+      "longDescription": "Prof. Dr. Asen Zlatarov University is the public university of Burgas. It was founded on 6 October 1963 as the Higher Institute of Chemical Technology, was named after the Bulgarian scientist Prof. Dr. Asen Zlatarov in 1968, gained full university status in 1995, and in February 2025 was designated Burgas State University “Prof. Dr. Asen Zlatarov”.\n\nThe university is organised into five faculties — Technical Sciences, Natural Sciences, Social Sciences, Public Health and Health Care, and Medicine — together with three colleges (Technical, Medical and Tourism). It offers Professional Bachelor's, Bachelor's, Master's and Doctoral degrees, with 38 accredited bachelor programmes and over 40 master programmes across 18 professional fields. Its historic strengths in chemical, oil-and-gas, materials and food technology sit alongside computing, electronics, transport, economics, tourism, pedagogy, ecology, health care and a full Medicine programme.\n\nThe campus has six academic buildings, science and engineering laboratories, a medical centre, a sports complex, three student hostels, three canteens and a library with access to Scopus and ScienceDirect. Over 350 lecturers (some 138 habilitated) teach and research here, and the university ranks among Bulgaria's stronger research institutions.\n\nAs a state university, tuition for Bulgarian and EU students on state-subsidised places is modest, with higher fees for the Medicine programme and for foreign students; scholarships, dormitories and an active Erasmus+ programme support students, including a growing international community. Rector: Prof. Dr. Sotir Sotirov.",
       "location": "Burgas, Bulgaria",
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "≈ €400 - €600 / year (BG/EU)",
@@ -6750,7 +6761,7 @@
     "39": {
       "name": "University of Agribusiness and Rural Development",
       "description": "Plovdiv's specialised higher school for agribusiness, economics and management (est. 1992) — the “Academy for Leaders”, offering bachelor's, master's and doctoral degrees in agrarian economics, finance, accounting, agribusiness and regional development, with campuses in Plovdiv, Ruse and Veliko Tarnovo.",
-      "longDescription": "The University of Agribusiness and Rural Development (UARD / ВУАРР) is a specialised higher school in Plovdiv focused on the economics and management of agribusiness and the development of regions. It was founded on 23 October 1992 as an Agricultural College and, by a decision of the National Assembly on 6 July 2011, was transformed into the Higher School of Agribusiness and Rural Development. Its founder and long-serving rector was Prof. Dr. Eng. Dimitar Dimitrov (1952–2020), and the school carries the motto “Academy for Leaders”.\n\nUARD teaches across two professional fields — Economics (3.8) and Administration and Management (3.7) — and awards Bachelor's, Master's and Doctoral degrees, together with teacher-training and professional-qualification programmes. Its bachelor's specialties include agrarian economics, finance, accounting, tourism economics, business and entrepreneurship, economic and agribusiness management, and human-resources and information-systems management; master's programmes add agribusiness economics, finance and banking, accounting and audit, social economy, project management, health management and food-and-nutrition management.\n\nStudy is offered in full-time, part-time and distance forms, supported by an electronic university and integrated learning system (ИСАО+), a career-development centre, a professional-qualification centre, a library and a scientific journal. The university has its main campus in Plovdiv and branches in Ruse and Veliko Tarnovo.\n\nUARD is quality-certified to ISO 9001:2015 and is active internationally: it is a member of the INVEST European University Alliance (with partners in Slovakia, Greece, Finland and the Netherlands), of EURASHE and the Visegrad University Association, and takes part in Erasmus+ mobility. As a private higher school it sets its own, modest tuition and offers scholarships, including one in memory of its founder.",
+      "longDescription": "The University of Agribusiness and Rural Development (UARD) is a specialised higher school in Plovdiv focused on the economics and management of agribusiness and the development of regions. It was founded on 23 October 1992 as an Agricultural College and, by a decision of the National Assembly on 6 July 2011, was transformed into the Higher School of Agribusiness and Rural Development. Its founder and long-serving rector was Prof. Dr. Eng. Dimitar Dimitrov (1952–2020), and the school carries the motto “Academy for Leaders”.\n\nUARD teaches across two professional fields — Economics (3.8) and Administration and Management (3.7) — and awards Bachelor's, Master's and Doctoral degrees, together with teacher-training and professional-qualification programmes. Its bachelor's specialties include agrarian economics, finance, accounting, tourism economics, business and entrepreneurship, economic and agribusiness management, and human-resources and information-systems management; master's programmes add agribusiness economics, finance and banking, accounting and audit, social economy, project management, health management and food-and-nutrition management.\n\nStudy is offered in full-time, part-time and distance forms, supported by an electronic university and integrated distance-learning system, a career-development centre, a professional-qualification centre, a library and a scientific journal. The university has its main campus in Plovdiv and branches in Ruse and Veliko Tarnovo.\n\nUARD is quality-certified to ISO 9001:2015 and is active internationally: it is a member of the INVEST European University Alliance (with partners in Slovakia, Greece, Finland and the Netherlands), of EURASHE and the Visegrad University Association, and takes part in Erasmus+ mobility. As a private higher school it sets its own, modest tuition and offers scholarships, including one in memory of its founder.",
       "location": "Plovdiv, Bulgaria",
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "≈ €800 / year (indicative)",
@@ -6759,8 +6770,8 @@
     },
     "38": {
       "name": "Academy of National and Information Security",
-      "description": "Plovdiv's private academy for security and economics (est. 2003, renamed from ВУСИ in 2025) — the first private university in Plovdiv specialising in security studies, offering bachelor's, master's and doctoral degrees in national security, cybersecurity, economics and management.",
-      "longDescription": "The Academy of National and Information Security (ANIS) is a private higher-education institution in Plovdiv and the first private university in the city to specialise in security studies. It was established in 2003 as the College of Economics and Administration, upgraded to a higher school in 2015 as the Higher School of Security and Economics (ВУСИ / VUSI), and renamed the Academy of National and Information Security by a decision of the National Assembly in 2025.\n\nThe academy teaches across three professional directions — National Security, Economics, and Administration and Management — and awards Bachelor's, Master's and Doctoral degrees. Its portfolio is strongly security-focused: national security, counter-terrorism, crime prevention and public order, criminalistics, cybersecurity, security and intelligence, security and software technologies, security and artificial intelligence, and security and criminal psychology, alongside programmes in finance, accounting, digital marketing, business management and human-resources management.\n\nANIS holds institutional accreditation from the National Evaluation and Accreditation Agency (NEAA) with a score of 9.08 out of 10 (2023, valid for six years) and ISO 9001:2015 certification. Its modern campus of over 8,000 m² on Kuklensko Shose Blvd includes cybersecurity and forensics laboratories, a digital shooting range and martial-arts halls, and can host over 2,000 students, with additional offices in Sofia and Haskovo.\n\nAs a private academy it sets its own tuition, but runs one of Bulgaria's strongest social programmes — free or reduced tuition for students from care homes, children of fallen or injured Interior Ministry staff, and disadvantaged groups, plus merit scholarships and state-backed student loans. A career centre working with 100+ companies, an in-house IT Academy and an Erasmus+ Charter (2021–2027) round out the offer.",
+      "description": "Plovdiv's private academy for security and economics (est. 2003, formerly VUSI, renamed in 2025) — the first private university in Plovdiv specialising in security studies, offering bachelor's, master's and doctoral degrees in national security, cybersecurity, economics and management.",
+      "longDescription": "The Academy of National and Information Security (ANIS) is a private higher-education institution in Plovdiv and the first private university in the city to specialise in security studies. It was established in 2003 as the College of Economics and Administration, upgraded to a higher school in 2015 as the Higher School of Security and Economics (VUSI), and renamed the Academy of National and Information Security by a decision of the National Assembly in 2025.\n\nThe academy teaches across three professional directions — National Security, Economics, and Administration and Management — and awards Bachelor's, Master's and Doctoral degrees. Its portfolio is strongly security-focused: national security, counter-terrorism, crime prevention and public order, criminalistics, cybersecurity, security and intelligence, security and software technologies, security and artificial intelligence, and security and criminal psychology, alongside programmes in finance, accounting, digital marketing, business management and human-resources management.\n\nANIS holds institutional accreditation from the National Evaluation and Accreditation Agency (NEAA) with a score of 9.08 out of 10 (2023, valid for six years) and ISO 9001:2015 certification. Its modern campus of over 8,000 m² on Kuklensko Shose Blvd includes cybersecurity and forensics laboratories, a digital shooting range and martial-arts halls, and can host over 2,000 students, with additional offices in Sofia and Haskovo.\n\nAs a private academy it sets its own tuition, but runs one of Bulgaria's strongest social programmes — free or reduced tuition for students from care homes, children of fallen or injured Interior Ministry staff, and disadvantaged groups, plus merit scholarships and state-backed student loans. A career centre working with 100+ companies, an in-house IT Academy and an Erasmus+ Charter (2021–2027) round out the offer.",
       "location": "Plovdiv, Bulgaria",
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "≈ €1,000 / year (indicative)",
@@ -6790,7 +6801,7 @@
     "2": {
       "name": "Medical University",
       "description": "Bulgaria's leading medical university with top-ranked clinical training and research programs.",
-      "longDescription": "Medical University of Varna (Prof. Dr. Paraskev Stoyanov) is a leading Bulgarian medical university founded in 1961. It is accredited with the highest rating by the National Evaluation and Accreditation Agency (NEAA) and holds the EFQM Excellence Model recognition. The university comprises 4 faculties — Medicine, Dental Medicine, Pharmacy, and Public Health — along with the Medical College - Varna and affiliates in Shumen, Veliko Tarnovo, and Burgas.\n\nThe university has over 7,000 students, 2,000 of whom are international students from 56 countries. The campus features modern simulation centers, clinical bases at the University Hospital St. Marina, research laboratories, a library, sports facilities, and student dormitories.\n\nInternational students can study Medicine, Dental Medicine, and Pharmacy in English. Nursing and Midwifery are tuition-free. The university has 100+ international partner institutions and active Erasmus+ exchange programs.\n\nOver 50,000 alumni have graduated since its founding. Rector: Prof. Dr. Valentin Ignatov.",
+      "longDescription": "Medical University of Varna (Prof. Dr. Paraskev Stoyanov) is a leading Bulgarian medical university founded in 1961. It is accredited with the highest rating by the National Evaluation and Accreditation Agency (NEAA) and holds the EFQM Excellence Model recognition. The university comprises 4 faculties — Medicine, Dental Medicine, Pharmacy, and Public Health — along with the Medical College - Varna and affiliates in Shumen, Veliko Tarnovo, and Burgas.\n\nThe university has over 7,000 students, 2,000 of whom are international students from 56 countries. The campus features modern simulation centers, clinical bases at the University Hospital St. Marina, research laboratories, a library, sports facilities, and student dormitories.\n\nInternational students can study Medicine, Dental Medicine, and Pharmacy in English. Nursing and Midwifery are tuition-free. The university has 100+ international partner institutions and active Erasmus+ exchange programs.\n\nOver 50,000 alumni have graduated since its founding. Rector: Prof. Dr. Dimitar Raykov.",
       "location": "Varna, Bulgaria",
       "degree": "Bachelor/Master",
       "tuitionRange": "€0 - €10,000 / year",
@@ -6840,7 +6851,7 @@
     "7": {
       "name": "Sofia University",
       "description": "Bulgaria's oldest and largest university (est. 1888) — a comprehensive research university in the heart of Sofia with 16 faculties spanning law, sciences, humanities, economics and medicine.",
-      "longDescription": "Sofia University \"St. Kliment Ohridski\" is the oldest and largest higher-education institution in Bulgaria, founded on 1 October 1888 and established as a university in 1904. Named after the medieval scholar St. Kliment Ohridski, it is the country's leading centre of teaching and research and is consistently ranked the No. 1 university in Bulgaria.\n\nThe university is organised into 16 faculties — Law, Philosophy, History, Classical and Modern Philology, Slavic Studies, Education, Educational Studies and the Arts, Journalism and Mass Communication, Theology, Economics and Business Administration, Mathematics and Informatics, Physics, Chemistry and Pharmacy, Biology, Geology and Geography, and Medicine — together with three departments. It offers more than 100 bachelor's and over 200 master's programmes, plus doctoral training, in Bulgarian and in English and other foreign languages.\n\nToday over 20,000 students study at the university, taught by around 1,700 academic staff. Its landmark Rectorate on Tsar Osvoboditel Boulevard — built between 1924 and 1934 with a donation from the brothers Evlogi and Hristo Georgiev — spans more than 18,000 m² with 324 rooms. The university also runs the largest university library in the country, a botanical garden, observatories and modern research institutes, including INSAIT, which won Bulgaria's first European Research Council grant.\n\nSofia University maintains a wide international network through Erasmus+, the Transform4Europe alliance and hundreds of bilateral agreements, and its alumni include Bulgarian presidents, prime ministers, academicians and cultural figures. Bulgarian and EU students study on state-subsidised or paid places, while foreign students pay tuition set per programme; Medicine and Pharmacy are also offered as English-taught degrees. Rector: Prof. Dr. Georgi Valchev.",
+      "longDescription": "Sofia University \"St. Kliment Ohridski\" is the oldest and largest higher-education institution in Bulgaria, founded on 1 October 1888 and established as a university in 1904. Named after the medieval scholar St. Kliment Ohridski, it is the country's leading centre of teaching and research and is consistently ranked the No. 1 university in Bulgaria.\n\nThe university is organised into 16 faculties — Law, Philosophy, History, Classical and Modern Philology, Slavic Studies, Education, Educational Studies and the Arts, Journalism and Mass Communication, Theology, Economics and Business Administration, Mathematics and Informatics, Physics, Chemistry and Pharmacy, Biology, Geology and Geography, and Medicine — together with three departments. It offers more than 100 bachelor's and over 200 master's programmes, plus doctoral training, in Bulgarian and in English and other foreign languages.\n\nToday over 20,000 students study at the university, taught by around 1,700 academic staff. Its landmark Rectorate on Tsar Osvoboditel Boulevard — built between 1924 and 1934 with a donation from the brothers Evlogi and Hristo Georgiev — spans more than 18,000 m² with 324 rooms. The university also runs the largest university library in the country, a botanical garden, observatories and modern research institutes, including INSAIT, which won Bulgaria's first European Research Council grant.\n\nSofia University maintains a wide international network through Erasmus+, the Transform4Europe alliance and hundreds of bilateral agreements, and its alumni include Bulgarian presidents, prime ministers, academicians and cultural figures. Bulgarian and EU students study on state-subsidised or paid places, while foreign students pay tuition set per programme; Medicine and Pharmacy are also offered as English-taught degrees. Rector: Prof. Dr. Eliza Stefanova — elected in July 2026 as the first woman to lead the university.",
       "location": "Sofia, Bulgaria",
       "degree": "Bachelor and Master",
       "tuitionRange": "€230 – €7,700 / year",
@@ -6900,7 +6911,7 @@
     "13": {
       "name": "University of Chemical Technology and Metallurgy",
       "description": "Bulgaria's leading specialised university for chemical technology, metallurgy and materials science (est. 1953) — chemistry, biotechnology, metallurgy, environmental and industrial engineering in Sofia, with English, French and German-taught programs.",
-      "longDescription": "The University of Chemical Technology and Metallurgy (UCTM) is Bulgaria's leading specialised state university for chemical engineering, chemical technology, metallurgy and materials science, established in 1953 as the Institute of Chemical Technology. It holds the highest institutional accreditation in the country for its professional field and its engineering specialties are recognised by FEANI (the European Federation of National Engineering Associations).\n\nThe university is organised into three faculties — Chemical Technologies, Chemical and Systems Engineering, and Metallurgy and Materials Science — together with a Francophone Faculty of Chemical Engineering. Its departments cover chemical and biochemical technology, biotechnology, polymers, pharmaceutical and fine chemistry, metallurgy, materials and nanomaterials, electrochemistry, environmental engineering, automation, information technology and industrial management.\n\nUCTM has around 3,800 students in bachelor's, master's and doctoral programmes, taught in Bulgarian and — for many programmes — in English, French and German. It offers European double-diploma engineering degrees jointly with partner universities such as Hamburg and Otto von Guericke Magdeburg.\n\nThe campus in Sofia's Studentski Grad district features modern chemical, metallurgical and materials laboratories, pilot installations, a scientific-technical library, computer halls, a sports complex and student dormitories. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students in the foreign-language programmes pay tuition from about €4,600 per year. Rector: Prof. Dr. Eng. Senia Terzieva.",
+      "longDescription": "The University of Chemical Technology and Metallurgy (UCTM) is Bulgaria's leading specialised state university for chemical engineering, chemical technology, metallurgy and materials science, established in 1953 as the Institute of Chemical Technology. It holds the highest institutional accreditation in the country for its professional field and its engineering specialties are recognised by FEANI (the European Federation of National Engineering Associations).\n\nThe university is organised into three faculties — Chemical Technologies, Chemical and Systems Engineering, and Metallurgy and Materials Science — together with a Francophone Faculty of Chemical Engineering. Its departments cover chemical and biochemical technology, biotechnology, polymers, pharmaceutical and fine chemistry, metallurgy, materials and nanomaterials, electrochemistry, environmental engineering, automation, information technology and industrial management.\n\nUCTM has around 3,800 students in bachelor's, master's and doctoral programmes, taught in Bulgarian and — for many programmes — in English, French and German. It offers European double-diploma engineering degrees jointly with partner universities such as Hamburg and Otto von Guericke Magdeburg.\n\nThe campus in Sofia's Studentski Grad district features modern chemical, metallurgical and materials laboratories, pilot installations, a scientific-technical library, computer halls, a sports complex and student dormitories. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students in the foreign-language programmes pay tuition from about €4,600 per year. Rector: Prof. Dr. Eng. Nikolay Karev.",
       "location": "Sofia, Bulgaria",
       "degree": "Bachelor and Master",
       "tuitionRange": "€430 - €5,000 / year",
@@ -6908,7 +6919,7 @@
       "applyUrl": "https://uctm.edu/en/"
     },
     "14": {
-      "name": "University of Mining and Geology \"St. Ivan Rilski\"",
+      "name": "University of Mining and Geology “St. Ivan Rilski”",
       "description": "Bulgaria's only specialised university for mining, geology and earth sciences (est. 1953) — mining, geology, geophysics, oil & gas, electromechanics and environmental engineering in Sofia.",
       "longDescription": "The University of Mining and Geology \"St. Ivan Rilski\" (MGU) is Bulgaria's only specialised state university for mining, geology and the earth sciences, established on 10 June 1953. Named after St. Ivan Rilski, the patron of Bulgarian miners and geologists, it is the country's leading centre for training engineers in geological exploration, mining, oil and gas, and mineral resources, and is accredited by the National Evaluation and Accreditation Agency.\n\nThe university is organised into three faculties — Mining Technology, Mining Electromechanics, and Geology and Exploration — with a Humanitarian Department. Its departments cover mineral-resource development, underground construction, mine surveying, mineral processing and recycling, blasting technologies, electromechanics and automation, mining machinery, geology and geoinformatics, geophysics, hydrogeology and engineering geology, geoecology, and drilling, oil and gas production.\n\nSince its founding MGU has trained over 14,000 engineers who work in geology, mining, energy, construction and environmental protection worldwide. It has around 2,000 students in bachelor's (4 years), master's and doctoral programmes, with a main campus in Sofia's Studentski Grad district and a branch in Kardzhali.\n\nThe campus features specialised mining, geology and materials laboratories, a rich mineralogical and geological museum, a scientific-technical library, computer halls, a sports complex and student dormitories, and the university works closely with the mining and energy industry, which sponsors scholarships and internships. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students pay tuition set per programme. Rector: Prof. Dr. Eng. Ivaylo Koprev.",
       "location": "Sofia, Bulgaria",
@@ -6920,7 +6931,7 @@
     "15": {
       "name": "University of Forestry",
       "description": "Bulgaria's only university for forestry, ecology and landscape architecture (est. 1925) — forestry, wood technology, veterinary medicine, agronomy, landscape architecture and business in Sofia.",
-      "longDescription": "The University of Forestry (LTU) is Bulgaria's oldest and only specialised state university for forestry, forest management, landscape architecture and wood technology, with roots dating to 1925 when a Forestry Division was founded at Sofia University. It became an independent higher school in 1953 and took its present name in 1995, and it is accredited by the National Evaluation and Accreditation Agency under the motto \"Bulgarian traditions and European standards in education\".\n\nThe university is organised into six faculties — Forestry, Forest Industry, Ecology and Landscape Architecture, Agronomy, Veterinary Medicine, and Business Management — with around 30 departments. In the 1990s it broadened from forestry, wood processing and landscape architecture to also cover ecology, agronomy, veterinary medicine and business.\n\nLTU offers bachelor's, master's and doctoral programmes on the European credit system. It is the only university in Sofia teaching Veterinary Medicine in English, and it welcomes international students across several fields. Practical training is supported by two university research forests near Yundola and Barzia and a training facility in the Vrazhdebna area.\n\nThe wooded campus in central Sofia features specialised forestry, wood, agronomy and veterinary laboratories, a veterinary clinic, an arboretum and botanical collections, a scientific library, a sports complex and student dormitories. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students pay tuition set per programme. Rector: Prof. Dr. Ivan Iliev.",
+      "longDescription": "The University of Forestry (LTU) is Bulgaria's oldest and only specialised state university for forestry, forest management, landscape architecture and wood technology, with roots dating to 1925 when a Forestry Division was founded at Sofia University. It became an independent higher school in 1953 and took its present name in 1995, and it is accredited by the National Evaluation and Accreditation Agency under the motto \"Bulgarian traditions and European standards in education\".\n\nThe university is organised into six faculties — Forestry, Forest Industry, Ecology and Landscape Architecture, Agronomy, Veterinary Medicine, and Business Management — with around 30 departments. In the 1990s it broadened from forestry, wood processing and landscape architecture to also cover ecology, agronomy, veterinary medicine and business.\n\nLTU offers bachelor's, master's and doctoral programmes on the European credit system. It is the only university in Sofia teaching Veterinary Medicine in English, and it welcomes international students across several fields. Practical training is supported by two university research forests near Yundola and Barzia and a training facility in the Vrazhdebna area.\n\nThe wooded campus in central Sofia features specialised forestry, wood, agronomy and veterinary laboratories, a veterinary clinic, an arboretum and botanical collections, a scientific library, a sports complex and student dormitories. Bulgarian and EU students study on state-subsidised or paid places (from about €430 per year), while foreign students pay tuition set per programme. Rector: Assoc. Prof. Dr. Hristo Mihaylov.",
       "location": "Sofia, Bulgaria",
       "degree": "Bachelor and Master",
       "tuitionRange": "€430 - €4,500 / year",
@@ -6940,7 +6951,7 @@
     "17": {
       "name": "Todor Kableshkov University of Transport",
       "description": "Bulgaria's specialised state university for transport (est. 1922) — railway, automotive and transport engineering, telecommunications, electrical equipment, logistics and transport management, in Sofia.",
-      "longDescription": "Todor Kableshkov University of Transport (VTU) is Bulgaria's specialised state university for transport, and one of the country's oldest engineering-technical higher schools. It was founded in 1922 as the State Railway School and, over more than a century, has grown into a modern university under the motto \"Traditions and professional knowledge\", training engineers and managers for the whole transport sector.\n\nThe university is organised into three faculties — Transport Management, Machinery and Construction Technologies in Transport, and Telecommunications and Electrical Equipment in Transport. Around 2,500 students study across bachelor's, master's and doctoral programmes, taught by more than 160 lecturers, and VTU counts over 30,000 alumni. The rector is Prof. Dr. Eng. Daniela Todorova.\n\nProgrammes span railway and automotive engineering, rolling stock, transport construction, hoisting and construction machinery, electric transport and electric vehicles, telecommunications and signalling, transport economics, logistics, accounting and industrial management. VTU was among the first Bulgarian universities to enrol students directly into master's programmes and is institutionally accredited by the National Evaluation and Accreditation Agency.\n\nThe campus in Sofia's Slatina district (158 Geo Milev Street) has specialised transport laboratories including a Road Safety Laboratory, a transport museum, a library, dormitories and a Black Sea recreation centre at Ravda. Bulgarian and EU students study at low state-subsidised fees (from about €300 per year, with full exemptions for certain categories), while foreign students pay around €3,000 per year.",
+      "longDescription": "Todor Kableshkov University of Transport (VTU) is Bulgaria's specialised state university for transport, and one of the country's oldest engineering-technical higher schools. It was founded in 1922 as the State Railway School and, over more than a century, has grown into a modern university under the motto \"Traditions and professional knowledge\", training engineers and managers for the whole transport sector.\n\nThe university is organised into three faculties — Transport Management, Machinery and Construction Technologies in Transport, and Telecommunications and Electrical Equipment in Transport. Around 2,500 students study across bachelor's, master's and doctoral programmes, taught by more than 160 lecturers, and VTU counts over 30,000 alumni. The rector is Prof. Dr. Eng. Krasimir Krastanov.\n\nProgrammes span railway and automotive engineering, rolling stock, transport construction, hoisting and construction machinery, electric transport and electric vehicles, telecommunications and signalling, transport economics, logistics, accounting and industrial management. VTU was among the first Bulgarian universities to enrol students directly into master's programmes and is institutionally accredited by the National Evaluation and Accreditation Agency.\n\nThe campus in Sofia's Slatina district (158 Geo Milev Street) has specialised transport laboratories including a Road Safety Laboratory, a transport museum, a library, dormitories and a Black Sea recreation centre at Ravda. Bulgarian and EU students study at low state-subsidised fees (from about €300 per year, with full exemptions for certain categories), while foreign students pay around €3,000 per year.",
       "location": "Sofia, Bulgaria",
       "degree": "Bachelor and Master",
       "tuitionRange": "€300 - €3,000 / year",
@@ -6968,7 +6979,7 @@
       "applyUrl": "https://uzf.bg/en/programs"
     },
     "20": {
-      "name": "National Sports Academy \"Vasil Levski\"",
+      "name": "National Sports Academy “Vasil Levski”",
       "description": "Bulgaria's national state university for sport, physical education and kinesitherapy (est. 1942) — coaching in around 60 sports, PE teaching, sports management, kinesitherapy and rehabilitation, in Sofia.",
       "longDescription": "The National Sports Academy \"Vasil Levski\" (NSA) is Bulgaria's only specialised state university for sport, physical education and kinesitherapy (physiotherapy). It was founded in 1942 by decree of Tsar Boris III as the Higher School for Physical Education, became the Higher Institute for Physical Education and Sports in 1953, and took its present name in 1995. It has a strong Olympic heritage, and its alumni include many Olympic and world champions, coaches and national-team specialists.\n\nAround 3,500 students study across three faculties — Sports, Pedagogy, and Public Health, Health Care and Tourism — plus a department of language education and information technologies. The Faculty of Sports trains coaches across roughly 60 sports disciplines, the Faculty of Pedagogy prepares physical-education teachers, and the health faculty educates kinesitherapists, ergotherapists and sports-animation specialists. The rector is Prof. Krasimir Petkov.\n\nNSA offers bachelor's, master's and doctoral programmes covering coaching, sports management, physical education, adapted physical activity, sports journalism, kinesitherapy, sports psychology, sports medicine and rehabilitation, and more. Admission is competitive and usually includes a practical aptitude examination alongside secondary-school results, and several programmes — including Kinesitherapy — are offered in English for international students.\n\nThe campus in Sofia's Studentski grad, with views of Mount Vitosha, offers stadiums, sports halls, an athletics track, a swimming pool and tennis courts, an Educational and Olympic Centre, the Centre for Scientific and Applied Activities in Sports, kinesitherapy clinics and student dormitories. Bulgarian and EU students pay affordable state fees — about €1,230 per year for sport and pedagogy specialties and €1,340 for Kinesitherapy — while foreign students pay around €3,300 per year.",
       "location": "Sofia, Bulgaria",
@@ -6978,7 +6989,7 @@
       "applyUrl": "https://www.nsa.bg/en"
     },
     "21": {
-      "name": "VSU \"Lyuben Karavelov\"",
+      "name": "VSU “Lyuben Karavelov”",
       "description": "Bulgaria's specialised state university for civil engineering and architecture (est. 1938) — construction of buildings, construction management, fire safety, architecture and the unique engineer-architect degree, in Sofia.",
       "longDescription": "VSU \"Lyuben Karavelov\" (the Higher School of Civil Engineering \"Lyuben Karavelov\") is a specialised state university in Sofia for civil engineering and architecture. It was founded in 1938 as a military engineering school for Bulgaria's Construction Troops and became a civilian higher school in 2000; a Faculty of Architecture was added in 2006. It still trains both civilian and military students, under the motto \"Vision. Construction. Success\".\n\nThe university is organised into two faculties — Civil Engineering and Architecture — teaching in the professional field of Architecture, Construction and Geodesy. Around 1,000 students study bachelor's, master's and doctoral programmes with about 99 lecturers, and the rector is Assoc. Prof. Dr. Eng. Iliyana Stoynova. VSU is institutionally accredited by the National Evaluation and Accreditation Agency.\n\nProgrammes cover construction of buildings and facilities, construction management (also taught in English), fire safety and rescue, architecture, and the combined \"engineer-architect\" degree that is unique in Bulgaria. Master's specialisations include building constructions, construction technology and management, investment project management, urbanism, design, and architectural heritage preservation — the last offered only at VSU.\n\nVSU has its own student campus in south-west Sofia (175 Suhodolska Street), with construction and structural-testing laboratories, architecture and design studios, a specialised library, dormitories and sports facilities. Bulgarian and EU students pay affordable state fees from about €430 per year (around €700 for architecture and paid programmes), while foreign students pay around €3,000 per year.",
       "location": "Sofia, Bulgaria",
@@ -7030,7 +7041,7 @@
     "26": {
       "name": "Academy of the Ministry of the Interior",
       "description": "Bulgaria's state academy for police, security and fire-safety officers (police education since 1879, university status 2002) — counteraction to crime, national security, border police, public administration and fire safety, in Sofia.",
-      "longDescription": "The Academy of the Ministry of the Interior (Academy of the MoI) is Bulgaria's specialised state higher-education institution for police, security and fire-safety professionals. Its lineage goes back to the police-administrative department founded in 1879, through the Higher Special School and the Higher Institute (VIPOND); it gained university status as the \"Academy of the Ministry of the Interior\" in 2002. It trains civil servants for the Ministry of the Interior and specialists for other law-enforcement and security bodies.\n\nThe Academy is organised into two faculties — Police, and Fire Safety and Civil Protection — together with a Scientific Research Institute and a Centre for Vocational Training, and is led by its rector, Senior Commissioner Assoc. Prof. Dr. Milorad Yordanov. Its campus is in the Mladost district of Sofia (1 Aleksandar Malinov Blvd), on the historic former grounds of the American College.\n\nThe Academy offers accredited bachelor's, master's and doctoral programmes in the professional fields of national security and law. Bachelor's specialties include counteraction to crime and public order, border police, protection of national security, public administration, and fire safety and protection of the population, while master's specialties add strategic management of security and public order, psychological support for operational-investigative activities, and fire and emergency safety.\n\nCadets study on a fully Ministry-of-Interior-funded basis — four years of tuition-free education, guaranteed accommodation and a state-guaranteed stipend for the whole course, followed by appointment in the Ministry of the Interior. Civilian students may enrol in state-subsidised or paid places (paid civilian fees are around €360-€640 per year, with foreign students paying about €3,000). The Academy takes part in Erasmus+ and CEPOL cooperation and works closely with the structures of the Ministry of the Interior.",
+      "longDescription": "The Academy of the Ministry of the Interior (Academy of the MoI) is Bulgaria's specialised state higher-education institution for police, security and fire-safety professionals. Its lineage goes back to the police-administrative department founded in 1879, through the Higher Special School and the Higher Institute (VIPOND); it gained university status as the \"Academy of the Ministry of the Interior\" in 2002. It trains civil servants for the Ministry of the Interior and specialists for other law-enforcement and security bodies.\n\nThe Academy is organised into two faculties — Police, and Fire Safety and Civil Protection — together with a Scientific Research Institute and a Centre for Vocational Training, and is led by its rector, Senior Commissioner Prof. Dr. Ilin Savov. Its campus is in the Mladost district of Sofia (1 Aleksandar Malinov Blvd), on the historic former grounds of the American College.\n\nThe Academy offers accredited bachelor's, master's and doctoral programmes in the professional fields of national security and law. Bachelor's specialties include counteraction to crime and public order, border police, protection of national security, public administration, and fire safety and protection of the population, while master's specialties add strategic management of security and public order, psychological support for operational-investigative activities, and fire and emergency safety.\n\nCadets study on a fully Ministry-of-Interior-funded basis — four years of tuition-free education, guaranteed accommodation and a state-guaranteed stipend for the whole course, followed by appointment in the Ministry of the Interior. Civilian students may enrol in state-subsidised or paid places (paid civilian fees are around €360-€640 per year, with foreign students paying about €3,000). The Academy takes part in Erasmus+ and CEPOL cooperation and works closely with the structures of the Ministry of the Interior.",
       "location": "Sofia, Bulgaria",
       "degree": "Bachelor and Master",
       "tuitionRange": "€0 - €3,000 / year",
@@ -7058,7 +7069,7 @@
       "applyUrl": "https://mtmcollege.org/en/admissions/"
     },
     "29": {
-      "name": "South-West University \"Neofit Rilski\"",
+      "name": "South-West University “Neofit Rilski”",
       "description": "Blagoevgrad's large public university (est. 1975) — a classical, comprehensive university with nine faculties spanning law, economics, philology, philosophy, pedagogy, sciences, public health and sport, arts and engineering.",
       "longDescription": "South-West University \"Neofit Rilski\" is a state university in Blagoevgrad, in the heart of south-west Bulgaria between the Rila and Pirin mountains. It was founded in 1975 as a branch of Sofia University, became an independent Higher Pedagogical Institute in 1983 and was granted full university status by the National Assembly in 1995. It is named after Neofit Rilski, the \"patriarch of modern Bulgarian education\".\n\nToday it is one of the country's leading classical, comprehensive universities, with around 12,500 students and some 470 academic staff. Its structure includes nine faculties — Law and History, Economics, Philology, Philosophy, Pedagogy, Natural Sciences and Mathematics, Public Health, Health Care and Sport, Arts, and the Technical (Engineering) Faculty — together with a department for language training and continuing education.\n\nThe university offers a very broad academic portfolio: roughly 71 bachelor's, 100 master's and more than 70 doctoral programmes across the humanities, social and natural sciences, health, sport, the arts and engineering. Its Faculty of Arts is unique in Bulgaria, teaching music, fine arts, fashion, choreography, theatre and film alongside cultural studies and cultural tourism, while the Faculty of Public Health, Health Care and Sport prepares nurses, midwives, kinesitherapists and speech therapists.\n\nStudy is mainly in Bulgarian, with selected programmes and courses in English and a one-year Bulgarian-language preparatory course for international students. Admission is by state matriculation results or university entrance exams, in several competitive rounds. Tuition is among the lowest at any Bulgarian state university — roughly €150–€260 per semester for Bulgarian and EU students on state-subsidised places — and a wide range of merit, social and Erasmus+ scholarships is available.",
       "location": "Blagoevgrad, Bulgaria",
@@ -7088,7 +7099,7 @@
       "applyUrl": "https://cotur.bg/"
     },
     "32": {
-      "name": "University of Plovdiv \"Paisii Hilendarski\"",
+      "name": "University of Plovdiv “Paisii Hilendarski”",
       "description": "Plovdiv's large public university (est. 1961) — the biggest in southern Bulgaria and second-largest in the country, a classical, comprehensive university with nine faculties across the sciences, humanities, economics and law.",
       "longDescription": "The University of Plovdiv \"Paisii Hilendarski\" is a state university in Plovdiv, the second city of Bulgaria. It was founded in 1961 as the Higher Pedagogical Institute of Natural Sciences and was granted full university status in 1972, taking the name of Paisii Hilendarski, the monk-historian who helped spark the Bulgarian National Revival. Today it is the largest university in southern Bulgaria and the second-largest in the country, with around 18,000–20,000 students and some 560 academic staff; its rector is Prof. Dr. Rumen Mladenov.\n\nThe university is organised into nine faculties — Biology, Chemistry, Physics and Technology, Mathematics and Informatics, Economic and Social Sciences, Law, Philology, Philosophy and History, and Pedagogy — together with branches in Smolyan and Kardzhali and a technical college in Smolyan. Although it began as a natural-sciences school, it has grown into a broad classical university offering more than a hundred bachelor's, master's and doctoral specialties.\n\nPlovdiv University is especially strong in the natural sciences and in mathematics and informatics: its Faculty of Mathematics and Informatics is one of the country's leading schools for computer science, software engineering, artificial intelligence and data science, while the biology, chemistry and physics faculties combine teaching with active research. Alongside these it has well-regarded programmes in economics, law, philology, history, philosophy and teacher education.\n\nStudy is mainly in Bulgarian, with selected courses in English and a one-year Bulgarian-language preparatory course for international students. Admission is by state matriculation results or university entrance exams, in several competitive rounds. Tuition is among the lowest at any Bulgarian state university — roughly €350–€500 per year for Bulgarian and EU students on state-subsidised places — and a wide range of merit, social and Erasmus+ scholarships is available. The landmark Rectorate on Tsar Asen Street, a historic building in the city centre, is the university's best-known address.",
       "location": "Plovdiv, Bulgaria",
@@ -7339,15 +7350,15 @@
     },
     "44": {
       "name": "Vasil Levski National Military University",
-      "focus": "national security and defence, military command, logistics, aviation, artillery, communications and cybersecurity",
-      "style": "military and applied training with cadet drill, ranges, airfields, and modern engineering and CIS laboratories",
+      "focus": "national security and defence, military command, logistics, artillery and air defence, communications and cybersecurity",
+      "style": "military and applied training with cadet drill, training ranges, and modern engineering and CIS laboratories",
       "careers": [
-        "Army / Air Force officer",
+        "Army officer",
         "Security & defence specialist",
         "Logistics / industrial manager",
         "Communications / CIS engineer",
         "Cybersecurity specialist",
-        "Aviation / air-traffic specialist",
+        "Artillery / air-defence officer",
         "Crisis-management / emergency officer"
       ],
       "admissionNotes": [
@@ -7359,7 +7370,7 @@
       ]
     },
     "43": {
-      "name": "University of Veliko Tarnovo \"St. Cyril and St. Methodius\"",
+      "name": "University of Veliko Tarnovo “St. Cyril and St. Methodius”",
       "focus": "the humanities, history and archaeology, philology and languages, theology, fine arts, law, economics, and informatics",
       "style": "classical academic teaching with archaeological fieldwork, plein-air art, teaching practice and moot courts",
       "careers": [
@@ -7422,7 +7433,7 @@
       ]
     },
     "40": {
-      "name": "Prof. Dr. Asen Zlatarov University",
+      "name": "Burgas State University “Prof. Dr. Asen Zlatarov”",
       "focus": "chemical, oil-and-gas, materials and food technology, engineering and computing, natural and social sciences, health care and medicine",
       "style": "laboratory- and practice-based training across five faculties and three colleges, with strong industry and Erasmus+ links",
       "careers": [
@@ -7795,7 +7806,7 @@
       ]
     },
     "14": {
-      "name": "University of Mining and Geology \"St. Ivan Rilski\"",
+      "name": "University of Mining and Geology “St. Ivan Rilski”",
       "focus": "mining engineering, geology, geophysics, oil and gas, mineral processing, underground construction, mine surveying, electromechanics and environmental engineering",
       "style": "laboratory and field practice, geological expeditions and mine visits, strong applied-earth-science fundamentals, industry-sponsored internships, and Erasmus+ mobility",
       "careers": [
@@ -7923,7 +7934,7 @@
       ]
     },
     "20": {
-      "name": "National Sports Academy \"Vasil Levski\"",
+      "name": "National Sports Academy “Vasil Levski”",
       "focus": "sport and coaching, physical education and PE teaching, sports management, adapted physical activity, sports journalism, kinesitherapy and rehabilitation, ergotherapy and sports animation",
       "style": "practical training on the academy's stadiums, halls, pool and clinics, coaching and sport-specific practice, applied sports science, and Erasmus+ mobility, with several programmes offered in English",
       "careers": [
@@ -7944,7 +7955,7 @@
       ]
     },
     "21": {
-      "name": "VSU \"Lyuben Karavelov\"",
+      "name": "VSU “Lyuben Karavelov”",
       "focus": "civil and structural engineering, construction of buildings and facilities, construction management, fire safety, architecture and urban design, and the combined engineer-architect qualification",
       "style": "studio-based architecture and design work, construction and structural-testing laboratories, site and applied practice, and Erasmus+ mobility, with some programmes taught in English",
       "careers": [
@@ -8111,7 +8122,7 @@
       ]
     },
     "29": {
-      "name": "South-West University \"Neofit Rilski\"",
+      "name": "South-West University “Neofit Rilski”",
       "focus": "a broad classical education across law, economics, humanities, natural sciences, health, sport, the arts and engineering",
       "style": "academic teaching backed by research, art studios, health-care and speech-therapy centres, sports facilities and Erasmus+ mobility across Europe",
       "careers": [
@@ -8174,7 +8185,7 @@
       ]
     },
     "32": {
-      "name": "University of Plovdiv \"Paisii Hilendarski\"",
+      "name": "University of Plovdiv “Paisii Hilendarski”",
       "focus": "a broad classical education strong in the natural sciences, mathematics and informatics, alongside economics, law, philology and teacher education",
       "style": "research-backed teaching, modern science and computing labs, an observatory, Erasmus+ mobility and strong links with IT and biotech employers",
       "careers": [

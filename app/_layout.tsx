@@ -17,6 +17,11 @@ import AppThemeProvider from '@/contexts/theme-context';
 import { SettingsProvider } from '@/contexts/settings-context';
 import { FavouritesProvider } from '@/contexts/favourites-context';
 import { ensureProfileRecord, createSessionFromUrl } from "@/lib/auth";
+import * as SplashScreen from "expo-splash-screen";
+
+// Keep the native U&I splash up until fonts, translations and the session are
+// ready, so launch goes straight from the splash to the app (no loader flash).
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 export default function RootLayout() {
   const [session, setSession] = useState<Session | null>(null);
@@ -131,8 +136,20 @@ export default function RootLayout() {
     }
   }, [session, loading, segments, router, recoveryMode]);
 
+  const appReady = !loading && i18nReady && fontsLoaded;
+
+  useEffect(() => {
+    if (appReady) {
+      SplashScreen.hideAsync().catch(() => {});
+      return;
+    }
+    // Safety net: never leave the splash up if something stalls on startup.
+    const timer = setTimeout(() => SplashScreen.hideAsync().catch(() => {}), 8000);
+    return () => clearTimeout(timer);
+  }, [appReady]);
+
   // 👇 updated - wait for loading, i18n AND the editorial fonts to be ready
-  if (loading || !i18nReady || !fontsLoaded) {
+  if (!appReady) {
     return (
       <View style={{ flex: 1, backgroundColor: "#21030d", justifyContent: "center", alignItems: "center" }}>
         <ActivityIndicator color="#ffffff" size="large" />
