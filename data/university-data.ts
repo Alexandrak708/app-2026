@@ -577,6 +577,17 @@ const UNIVERSITY_META: UniversityMeta[] = [
     degreeLevels: ["Bachelor", "Master"],
     countryKey: "Bulgaria",
   },
+  {
+    id: "53",
+    rating: 5,
+    color: "#2a5d8f",
+    image: require("../assets/images/afa-dolna-mitropolia.jpg"),
+    category: "Military",
+    categories: ["Military", "Engineering", "Defence", "Business"],
+    scholarship: true,
+    degreeLevels: ["Bachelor", "Master"],
+    countryKey: "Bulgaria",
+  },
 ];
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {

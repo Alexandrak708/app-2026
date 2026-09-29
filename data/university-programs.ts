@@ -1862,6 +1862,25 @@ const PROGRAMS: Record<UniversityId, Record<ProgramLevel, string[]>> = {
       "Information Technology Management",
     ],
   },
+  "53": {
+    bachelor: [
+      "Organization and Management of Military Formations",
+      "Aviation Management",
+      "Aircraft and Aviation Engines",
+      "Electronics",
+      "Automation, Information and Control Equipment",
+      "Robotic Aviation Systems",
+    ],
+    master: [
+      "Aviation Management",
+      "Aerospace Equipment",
+      "Electronics",
+      "Automation, Information and Control Equipment",
+      "Aviation Armament",
+      "Armament and Ammunition",
+      "Space Engineering and Technologies",
+    ],
+  },
 };
 
 function normalizeInput(value: string | string[] | undefined) {
@@ -3142,6 +3161,29 @@ function getEpuFaculty(facultyKey: string): string | null {
   return null;
 }
 
+function getAfaProgramInfo(programSlug: string): { tuition?: string; facultyKey?: string } | null {
+  const info = i18n.t(`afa_programInfo.${programSlug}`, { returnObjects: true }) as Record<string, string> | string;
+
+  if (!info || typeof info === "string") {
+    return null;
+  }
+
+  return {
+    tuition: info.tuition,
+    facultyKey: info.facultyKey,
+  };
+}
+
+function getAfaFaculty(facultyKey: string): string | null {
+  const name = i18n.t(`afa_faculties.${facultyKey}`, { returnObjects: false }) as string;
+
+  if (typeof name === "string" && name) {
+    return name;
+  }
+
+  return null;
+}
+
 function ensureArray(value: unknown): string[] {
   if (Array.isArray(value)) {
     return value as string[];
@@ -3637,6 +3679,15 @@ export function getProgramSummaries(universityId: string | string[] | undefined,
         if (epuInfo.tuition) summary.tuition = epuInfo.tuition;
         if (epuInfo.facultyKey) {
           const facultyName = getEpuFaculty(epuInfo.facultyKey);
+          if (facultyName) summary.faculty = facultyName;
+        }
+      }
+    } else if (normalizedId === "53") {
+      const afaInfo = getAfaProgramInfo(slug);
+      if (afaInfo) {
+        if (afaInfo.tuition) summary.tuition = afaInfo.tuition;
+        if (afaInfo.facultyKey) {
+          const facultyName = getAfaFaculty(afaInfo.facultyKey);
           if (facultyName) summary.faculty = facultyName;
         }
       }
@@ -4230,6 +4281,16 @@ export function buildProgramDetail(
       if (epuInfo.tuition) result.tuition = epuInfo.tuition;
       if (epuInfo.facultyKey) {
         const facultyName = getEpuFaculty(epuInfo.facultyKey);
+        if (facultyName) result.faculty = facultyName;
+      }
+    }
+  } else if (normalizedId === "53" && normalizedSlug) {
+    const afaInfo = getAfaProgramInfo(normalizedSlug);
+
+    if (afaInfo) {
+      if (afaInfo.tuition) result.tuition = afaInfo.tuition;
+      if (afaInfo.facultyKey) {
+        const facultyName = getAfaFaculty(afaInfo.facultyKey);
         if (facultyName) result.faculty = facultyName;
       }
     }

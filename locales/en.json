@@ -1,4 +1,50 @@
 {
+  "afa_programInfo": {
+    "organization-and-management-of-military-formations": {
+      "tuition": "FREE — full state support (officer cadets)",
+      "facultyKey": "cadets"
+    },
+    "aviation-management": {
+      "tuition": "€450/yr (state-funded) · €850/yr (paid, part-time)",
+      "facultyKey": "aviation"
+    },
+    "aircraft-and-aviation-engines": {
+      "tuition": "€450/yr (state-funded) · €1,650/yr (paid, full-time) · €850 (part-time)",
+      "facultyKey": "aviation"
+    },
+    "electronics": {
+      "tuition": "€450/yr (state-funded) · €1,650/yr (paid, full-time) · €850 (part-time)",
+      "facultyKey": "aviation"
+    },
+    "automation-information-and-control-equipment": {
+      "tuition": "€450/yr (state-funded) · €1,650/yr (paid, full-time) · €850 (part-time)",
+      "facultyKey": "aviation"
+    },
+    "robotic-aviation-systems": {
+      "tuition": "€450/yr (state-funded) · €1,650/yr (paid, full-time) · €850 (part-time)",
+      "facultyKey": "aviation"
+    },
+    "aerospace-equipment": {
+      "tuition": "€450/yr (state-funded) · €1,650/yr (paid, full-time) · €850 (part-time)",
+      "facultyKey": "aviation"
+    },
+    "aviation-armament": {
+      "tuition": "€450/yr (state-funded) · €850/yr (paid, part-time)",
+      "facultyKey": "aviation"
+    },
+    "armament-and-ammunition": {
+      "tuition": "€450/yr (state-funded) · €850/yr (paid, part-time)",
+      "facultyKey": "aviation"
+    },
+    "space-engineering-and-technologies": {
+      "tuition": "€450/yr (state-funded) · €1,650/yr (paid, full-time)",
+      "facultyKey": "aviation"
+    }
+  },
+  "afa_faculties": {
+    "aviation": "Aviation Faculty",
+    "cadets": "Aviation Faculty — officer cadets (Military Science)"
+  },
   "epu_programInfo": {
     "civil-engineering": {
       "tuition": "€358 (BG) · €500 (EU) · €750 (non-EU)",
@@ -2128,6 +2174,18 @@
     "tuitionFree": "4 programs tuition-free"
   },
   "universityStatsValues": {
+    "53": {
+      "yearsTradition": "110+",
+      "bachelorPrograms": "6",
+      "masterPrograms": "7",
+      "internationalPartners": "10+",
+      "countries": "5+",
+      "studentsGraduated": "10K+",
+      "labs": "9",
+      "labsText": "Cadet specialisations",
+      "tuitionFreeLabel": "€0",
+      "tuitionFreeText": "For officer cadets (state-funded)"
+    },
     "52": {
       "yearsTradition": "15+",
       "bachelorPrograms": "5",
@@ -2751,6 +2809,24 @@
   },
   "tuitionTiersHeader": "SEMESTER TUITION (BACHELOR, 2025/2026)",
   "tuitionTiers": {
+    "53": [
+      {
+        "range": "€0",
+        "label": "Officer cadets — full state support (Ministry of Defence)"
+      },
+      {
+        "range": "€450",
+        "label": "Civilian, state-funded place / year (2026/27)"
+      },
+      {
+        "range": "€1,650",
+        "label": "Civilian, paid place, full-time / year"
+      },
+      {
+        "range": "€2,500",
+        "label": "English-taught master, non-EU citizens / year"
+      }
+    ],
     "52": [
       {
         "range": "€358",
@@ -3689,6 +3765,60 @@
     ]
   },
   "universityExtra": {
+    "afa_cadetsTitle": "Officer Cadets & Military Specialisations",
+    "afa_cadetsDesc": "Cadets study for four years on full state support and graduate as Air Force officers with two degrees: a bachelor's in Military Science (organisation and management of military formations) and a civilian bachelor's in an aviation or engineering field.",
+    "afa_cadPilot": "Pilot — aeroplane or helicopter, for the Ministry of Defence and the Ministry of the Interior",
+    "afa_cadFlightOps": "Flight operations officer (navigator and air-traffic control)",
+    "afa_cadEngineering": "Aircraft and aviation engines · aircraft radio-electronic equipment · aviation electrical and automatic systems",
+    "afa_cadSystems": "Aviation armament · communication, information and navigation systems",
+    "afa_cadLogistics": "Air Force logistics · air surveillance, reconnaissance and control systems",
+    "afa_cadSupport": "Full state support: no tuition, free accommodation and uniform, and a laptop for the whole course",
+    "afa_cadPlaces": "2025/26 intake: 66 cadet places, including 19 for pilots",
+    "afa_applicationDesc": "Cadets and civilian students apply separately. Documents can be submitted online, through the regional military offices or in person at the academy.",
+    "afa_appCadetAge": "Cadets: Bulgarian citizens who are adults and no older than 31 on 31 December of the application year, with no criminal record",
+    "afa_appCadetTests": "Cadet selection: military medical and psychological assessment, then a general-knowledge test, Bulgarian language, an English test and a physical fitness test",
+    "afa_appPilot": "Pilot candidates must be 157–185 cm tall and weigh no more than 80 kg",
+    "afa_appCivilian": "Civilian bachelor: ranking on state matriculation exam results (general-knowledge score doubled, plus Bulgarian language and a subject exam)",
+    "afa_appMaster": "Master: a completed higher-education degree with at least a 'good' grade; most master's programmes take one year",
+    "afa_appFees": "Application fee: €20 per exam for civilian candidates, €40 for cadet candidates",
+    "afa_appDeadlines": "2026/27: civilian applications until 30 July (rankings on 7 and 21 August); cadet documents until 20 August, exams on 31 August",
+    "afa_feesTitle": "Tuition & Fees",
+    "afa_feesDesc": "Fees are per year for 2026/27 and are paid in two instalments, one each semester. Officer cadets pay no tuition.",
+    "afa_feeCadets": "Officer cadets: €0 — full state support from the Ministry of Defence",
+    "afa_feeState": "State-funded places, bachelor and master: €450 per year",
+    "afa_feePaidFull": "Paid places, full-time: €1,650 per year (bachelor or master)",
+    "afa_feePaidPart": "Paid places, part-time: €850 per year (€800 for holders of a professional bachelor's degree)",
+    "afa_feeEnglish": "English-taught master's: €1,300 per year (Bulgarian, EU, EEA and Swiss citizens) · €2,500 (other foreign citizens)",
+    "afa_feeDoctoral": "Doctoral studies: €1,100 per year full-time, €550 part-time · English preparatory course: €450",
+    "afa_feeExtra": "Other charges: €150 master's state exam or thesis defence, €15 enrolment documents, €10 library subscription",
+    "afa_campusTitle": "Airfield & Campus",
+    "afa_campusDesc": "The academy is based in Dolna Mitropolia, just north-west of Pleven in northern Bulgaria, beside the military airfield it shares with the Bulgarian Air Force's training squadrons.",
+    "afa_campusAirfield": "Military airfield with a 2.2 km concrete runway and a grass runway; Air Force flight training on Pilatus PC-9M and L-39 aircraft",
+    "afa_campusFleet": "The academy's own Zlin training aeroplane and Cabri G2 training helicopter, plus hangars with aircraft for hands-on engineering work",
+    "afa_campusPleven": "Aviation Education Complex in Pleven (opened January 2023) with classrooms and a student dormitory",
+    "afa_campusDorm": "Dormitory in Pleven: €100 per month for Bulgarian students, €105 for EU and €115 for non-EU students",
+    "afa_campusLibrary": "Scientific library with about 79,000 volumes — the largest collection of aviation literature in Bulgaria",
+    "afa_campusOnline": "Distance-learning sector and a Moodle e-learning platform for part-time students",
+    "afa_trainingTitle": "Flight & Aviation Training Centres",
+    "afa_trainingDesc": "Alongside its degrees, the academy runs licensed training centres for military and civil aviation.",
+    "afa_ato": "Approved Training Organisation \"Dimitar Spisarevski\" (BG/ATO-018) — civil pilot training, including ATPL(H)/IR helicopter theory",
+    "afa_part147": "Part-147 maintenance training organisation — basic and aircraft-type training and exams for Part-66 B1, B2 and B3 engineers",
+    "afa_ppl": "Optional private pilot licence (PPL) and aviation technician qualification for Aviation Management students",
+    "afa_drones": "Training for remote pilots of unmanned aircraft (drone categories A1/A3)",
+    "afa_englishCentre": "ICAO aviation-English exam centre, accredited by Bulgaria's Civil Aviation Administration",
+    "afa_sergeantCollege": "Professional Sergeant College training Air Force non-commissioned officers",
+    "afa_partnersDesc": "The academy works closely with the Bulgarian Air Force, the aviation and space industry and partner military universities in Europe.",
+    "afa_partnersAirForce": "Bulgarian Air Force, Ministry of Defence and Ministry of the Interior — the main employers of its graduates",
+    "afa_partnersSpace": "EnduroSat, the Bulgarian satellite maker, partners on the Space Engineering and Technologies master's",
+    "afa_partnersMilitary": "Military University of Technology (Warsaw) and Military Technical Academy \"Ferdinand I\" (Bucharest) — co-organisers of joint conferences",
+    "afa_partnersErasmus": "Erasmus Charter for Higher Education since 2021, with student and staff exchanges",
+    "afa_accreditation": "NEAA institutional accreditation: 9.01 out of 10 (2021–2027)",
+    "afa_alumni": "Alumni include both Bulgarian cosmonauts and a President of Bulgaria",
+    "afa_internationalDesc": "Teaching is mainly in Bulgarian, but the academy trains foreign cadets, takes part in Erasmus+ and offers English-taught master's options.",
+    "afa_intlCadets": "Foreign cadets: in 2025/26 five cadets from Vietnam began pilot training after a Bulgarian-language year",
+    "afa_intlEnglish": "English-taught master's for EU and non-EU students (€1,300 / €2,500 per year)",
+    "afa_intlPrep": "English preparatory course (€450) and NATO STANAG / ALCPT English testing",
+    "afa_intlErasmus": "Erasmus+ exchanges for students and staff with partner universities in Europe",
     "epu_statusTitle": "Accreditation & Admissions Status",
     "epu_statusDesc": "Important: Bulgaria's National Agency for Assessment and Accreditation (NEAA) refused to renew EPU's institutional accreditation in March 2025. The university currently cannot enrol new students.",
     "epu_statusRefused": "27 March 2025 — NEAA refused continued institutional accreditation (shortcomings in academic staff and facilities)",
@@ -6477,6 +6607,16 @@
     }
   },
   "universities": {
+    "53": {
+      "name": "Georgi Benkovski Bulgarian Air Force Academy",
+      "description": "Bulgaria's only higher school for military and civil aviation, in Dolna Mitropolia near Pleven — training pilots, flight-operations officers, aviation engineers and managers, with its own airfield and training aircraft.",
+      "longDescription": "The Georgi Benkovski Bulgarian Air Force Academy (Higher Military Air Force School) in Dolna Mitropolia, just outside Pleven, is the only higher school of its kind in Bulgaria, training pilots and aviation specialists for the Air Force, the Ministry of the Interior, air ambulance services and civil aviation. Its roots go back to Bulgaria's first aviation school of 1914. The People's Air Force School founded in 1945 moved to Dolna Mitropolia in 1948, and in 1959 it was merged with the navigator, communications and technician schools into a single higher air force school named after Georgi Benkovski, a leader of the April Uprising of 1876. From 2002 to 2019 it was the Aviation Faculty of the Vasil Levski National Military University, and on 1 January 2020 it was re-established as an independent higher school by decision of the National Assembly.\n\nThe academy is made up of the Aviation Faculty, a Department of Natural and Humanitarian Sciences, a Professional Sergeant College, a distance-learning sector, a Part-147 aircraft-maintenance training organisation and the approved flight-training organisation \"Dimitar Spisarevski\" (BG/ATO-018). Officer cadets study for four years and graduate as Air Force officers with two degrees — a bachelor's in Military Science plus a civilian bachelor's — in specialisations such as pilot (aeroplane or helicopter), flight operations officer, aircraft and engines, avionics, aviation armament, communication and navigation systems, Air Force logistics and air surveillance. Civilian students can take bachelor's degrees in Aviation Management, Aircraft and Aviation Engines, Electronics, Automation, Information and Control Equipment, and Robotic Aviation Systems, and one-year master's programmes including Aerospace Equipment, Aviation Armament, Armament and Ammunition, and Space Engineering and Technologies, run with the satellite company EnduroSat. Doctoral programmes are also offered.\n\nFlying training takes place on the Dolna Mitropolia military airfield, which the academy shares with the Bulgarian Air Force's training squadrons flying Pilatus PC-9M and L-39 aircraft, and on the academy's own Zlin training aeroplane and Cabri G2 training helicopter. Since 2023 the academy has also run an Aviation Education Complex with a dormitory in Pleven. Its scientific library holds about 79,000 volumes — the largest collection of aviation literature in the country — and it hosts an ICAO aviation-English exam centre. Alumni include both Bulgarian cosmonauts and a President of Bulgaria.\n\nOfficer cadets study on full state support: they pay no tuition and receive free accommodation, uniform and a laptop. For civilian students in 2026/27, state-funded places cost €450 per year and paid places €1,650 per year full-time or €850 part-time, with English-taught master's at €1,300 (EU) or €2,500 (non-EU) per year. The academy holds NEAA institutional accreditation with a score of 9.01/10 (2021–2027). Commandant and rector: Brigadier General Yulian Radoyski.",
+      "location": "Dolna Mitropolia, Bulgaria",
+      "degree": "Bachelor and Master",
+      "tuitionRange": "€0 (cadets) · €450 - €1,650 / year (civilian)",
+      "website": "https://www.af-acad.bg",
+      "applyUrl": "https://www.af-acad.bg/students_admission"
+    },
     "52": {
       "name": "European Polytechnical University",
       "description": "A small private STEM university in Pernik teaching civil engineering, green energy and computing in English — its accreditation was refused in 2025 and it is not currently admitting new students.",
@@ -6999,6 +7139,28 @@
     }
   },
   "universityProfiles": {
+    "53": {
+      "name": "Georgi Benkovski Bulgarian Air Force Academy",
+      "focus": "military and civil aviation — pilot training, flight operations, aircraft and engine engineering, avionics and electronics, automation and robotic (unmanned) aviation systems, aviation armament, space engineering and aviation management",
+      "style": "officer cadets and civilian students side by side, flying and hangar training on the academy's own airfield and aircraft, laboratory work, and part-time and distance-learning options",
+      "careers": [
+        "Military pilot (aeroplane or helicopter)",
+        "Flight operations officer / air-traffic controller",
+        "Aircraft maintenance engineer",
+        "Avionics and electronics engineer",
+        "Drone / unmanned-systems specialist",
+        "Aviation manager at airlines and airports",
+        "Aviation armament and defence-industry engineer",
+        "Space and satellite-systems engineer"
+      ],
+      "admissionNotes": [
+        "Cadets: Bulgarian citizens aged 18 to 31, with medical, psychological and fitness tests",
+        "Cadet exams: general-knowledge test, Bulgarian language, English test and physical fitness test",
+        "Civilian bachelor: ranking on state matriculation exam results",
+        "Master: any completed higher education with at least a 'good' grade",
+        "Application fee €20 (civilian) or €40 (cadets)"
+      ]
+    },
     "52": {
       "name": "European Polytechnical University",
       "focus": "civil and earthquake engineering, green and renewable energy (solar, wind, hydrogen, biofuels), applied computer science, information and data security, and engineering design",
@@ -8228,6 +8390,11 @@
     }
   },
   "programTitles": {
+    "aircraft-and-aviation-engines": "Aircraft and Aviation Engines",
+    "robotic-aviation-systems": "Robotic Aviation Systems",
+    "aerospace-equipment": "Aerospace Equipment",
+    "aviation-armament": "Aviation Armament",
+    "armament-and-ammunition": "Armament and Ammunition",
     "applied-computer-science": "Applied Computer Science",
     "green-energetics": "Green Energetics",
     "renovation-of-buildings-facilities-and-cultural-monuments": "Renovation of Buildings, Facilities and Cultural Monuments",
@@ -9116,6 +9283,371 @@
     "food-safety-and-quality": "Food Safety and Quality"
   },
   "programOverrides": {
+    "53:bachelor:organization-and-management-of-military-formations": {
+      "overview": "The officer-cadet programme of the Air Force Academy. Cadets study on full state support and graduate as Air Force officers with a bachelor's in Military Science (organisation and management of military formations at tactical level) plus a civilian bachelor's linked to their military specialisation.",
+      "keyFocus": "military leadership and command, flight or technical operation of military aircraft, aviation engineering and systems, and the civilian degree that matches each specialisation",
+      "duration": "Bachelor — 4 years, full-time (officer cadets); graduates become Air Force officers",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Bulgarian Air Force and Ministry of Defence",
+        "Dolna Mitropolia military airfield"
+      ],
+      "highlights": [
+        "Nine military specialisations, including aeroplane and helicopter pilot",
+        "Two degrees: Military Science plus a civilian bachelor's",
+        "Full state support — no tuition, free accommodation, uniform and a laptop",
+        "Pilot places for both the Ministry of Defence and the Ministry of the Interior"
+      ],
+      "careers": [
+        "Air Force pilot (aeroplane or helicopter)",
+        "Flight operations officer",
+        "Aircraft and avionics engineering officer",
+        "Aviation armament or communications officer",
+        "Air Force logistics or air-surveillance officer"
+      ],
+      "admissionNotes": [
+        "Bulgarian citizens only, adults aged up to 31 by 31 December",
+        "Military medical, psychological and physical fitness tests",
+        "Exams: general-knowledge test, Bulgarian language and an English test",
+        "Pilots: height 157–185 cm and weight up to 80 kg"
+      ]
+    },
+    "53:bachelor:aviation-management": {
+      "overview": "Aviation Management trains managers for the aviation business, combining economics, management, aviation English, human factors, statistics, economic analysis and insurance. Graduates understand how airports and aviation companies are organised and run.",
+      "keyFocus": "aviation economics and management, airport and airline organisation, human factors, economic analysis, insurance and aviation English",
+      "duration": "Bachelor — 4 years (8 semesters); professional qualification 'Manager'; part-time for civilians in 2026/27",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Approved Training Organisation \"Dimitar Spisarevski\"",
+        "Aviation companies and airports"
+      ],
+      "highlights": [
+        "Optional private pilot licence (PPL, aeroplane or helicopter) module",
+        "Optional aviation technician qualification",
+        "Taught mainly by habilitated staff and PhD holders",
+        "Also the civilian degree earned by pilot cadets"
+      ],
+      "careers": [
+        "Manager in an airline or aviation company",
+        "Airport operations manager",
+        "Aviation business analyst",
+        "Middle or senior manager in other businesses",
+        "Private pilot (with the optional PPL module)"
+      ],
+      "admissionNotes": [
+        "Ranking on state matriculation exam results",
+        "Application fee €20 per exam",
+        "Civilian study is part-time in 2026/27"
+      ]
+    },
+    "53:bachelor:aircraft-and-aviation-engines": {
+      "overview": "An aviation-engineering degree covering how aircraft and engines are designed, built, operated and repaired. The programme follows Bulgaria's rules for licensing aviation personnel, preparing graduates to maintain and repair aircraft.",
+      "keyFocus": "aerodynamics, aircraft stability and control, aircraft and engine design, maintenance and repair technology, and on-board electrical and instrument systems",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time; professional qualification 'Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Part-147 maintenance training organisation",
+        "Dolna Mitropolia airfield and hangars"
+      ],
+      "highlights": [
+        "Meets national requirements for aviation-personnel licensing",
+        "Hands-on work with real aircraft in the academy's hangars",
+        "Links to Part-66 maintenance-engineer training",
+        "Professional field: Transport, Shipping and Aviation"
+      ],
+      "careers": [
+        "Flight engineer",
+        "Aircraft maintenance engineer",
+        "Aircraft repair engineer",
+        "Engineer at an aircraft repair plant",
+        "Technical specialist at an airline"
+      ],
+      "admissionNotes": [
+        "Ranking on state matriculation exam results",
+        "Application fee €20 per exam",
+        "Full-time and part-time places"
+      ]
+    },
+    "53:bachelor:electronics": {
+      "overview": "Electronics gives a broad engineering grounding in electronic components, analogue and digital circuits, microprocessors, power conversion and computer systems, taught in labs equipped with measuring instruments and circuit-simulation software.",
+      "keyFocus": "analogue and digital circuit design, microprocessor systems, power electronics, electronic technologies and the operation and repair of electronic equipment",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time; professional qualification 'Electronics Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Electronics and simulation laboratories",
+        "Aviation and electronics companies"
+      ],
+      "highlights": [
+        "Labs with measuring, computer and simulation equipment",
+        "Design of electronic devices and systems",
+        "Meets European educational standards",
+        "Professional field: Electrical Engineering, Electronics and Automation"
+      ],
+      "careers": [
+        "Electronics design engineer",
+        "Service and maintenance engineer",
+        "Technologist in electronics manufacturing",
+        "Avionics technician or engineer",
+        "Technical consultant or sales engineer"
+      ],
+      "admissionNotes": [
+        "Ranking on state matriculation exam results",
+        "Application fee €20 per exam",
+        "Full-time and part-time places"
+      ]
+    },
+    "53:bachelor:automation-information-and-control-equipment": {
+      "overview": "Automation, Information and Control Equipment prepares engineers to design, build, install, operate and repair automatic control systems in aviation, and to develop and run information and control systems in industry.",
+      "keyFocus": "automatic control systems, aviation automation, information systems, programming, computer networks and industrial electronics",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time; qualification 'Bachelor-Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Air Force air bases",
+        "Aviation and defence-industry companies"
+      ],
+      "highlights": [
+        "Automation focused on aircraft and aviation equipment",
+        "Strong IT side: information systems and software",
+        "Prepares for aviation-engineering licensing after work experience",
+        "Professional field: Electrical Engineering, Electronics and Automation"
+      ],
+      "careers": [
+        "Automation engineer at air bases or aviation companies",
+        "Technologist at repair plants and in the defence industry",
+        "Information-systems developer",
+        "System and network administrator",
+        "IT project manager"
+      ],
+      "admissionNotes": [
+        "Ranking on state matriculation exam results",
+        "Application fee €20 per exam",
+        "Full-time and part-time places"
+      ]
+    },
+    "53:bachelor:robotic-aviation-systems": {
+      "overview": "Robotic Aviation Systems trains engineers to design, build, operate and repair robotic and unmanned systems, including their support equipment and test instruments, using a systematic engineering approach from research to deployment.",
+      "keyFocus": "robotics, unmanned aviation systems, automation and control, mechatronics, electrical engineering and the maintenance and repair of robotic equipment",
+      "duration": "Bachelor — 4 years (8 semesters); full-time or part-time; qualification 'Bachelor-Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Robotics and automation laboratories",
+        "Industry, research and repair companies"
+      ],
+      "highlights": [
+        "Engineering for drones and robotic aviation systems",
+        "Research, design, production and maintenance skills",
+        "Meets European Union requirements for engineers",
+        "Remote-pilot drone training available at the academy"
+      ],
+      "careers": [
+        "Robotics and drone systems engineer",
+        "Automation and robotisation engineer",
+        "Service and maintenance engineer for robotic systems",
+        "Research and development engineer",
+        "Technical team leader"
+      ],
+      "admissionNotes": [
+        "Ranking on state matriculation exam results",
+        "Application fee €20 per exam",
+        "Full-time and part-time places"
+      ]
+    },
+    "53:master:aviation-management": {
+      "overview": "A management master's for the aviation industry covering finance, leadership, principles of flight, international project management, aviation security and sustainable development in aviation.",
+      "keyFocus": "aviation financial management, leadership in aviation services, international aviation projects, aviation security and sustainability",
+      "duration": "Master — 2 semesters (3 semesters for graduates from other fields); part-time; ends with a thesis",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Airports and aviation companies",
+        "Bulgarian Air Force"
+      ],
+      "highlights": [
+        "18 courses in 3 modules, 75 ECTS credits",
+        "Two semesters for graduates in engineering, transport, management or economics",
+        "Covers aviation security and sustainable aviation",
+        "Part-time study for working professionals"
+      ],
+      "careers": [
+        "Airline or airport manager",
+        "Aviation project manager",
+        "Aviation-security manager",
+        "Aviation finance specialist",
+        "Senior manager in the aviation business"
+      ],
+      "admissionNotes": [
+        "Bachelor's or master's degree with at least a 'good' grade",
+        "Two-semester route for related fields (engineering, transport, management, economics)",
+        "Application fee €20"
+      ]
+    },
+    "53:master:aerospace-equipment": {
+      "overview": "A one-year engineering master's in aerospace equipment, building specialist knowledge of modern aviation and aerospace technology and the skills to evaluate new equipment and make technical and management decisions.",
+      "keyFocus": "aerospace technology, operation of modern aircraft and systems, technical analysis and engineering decision-making",
+      "duration": "Master — 1 year (2 semesters); full-time, part-time or distance learning; qualification 'Master-Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Dolna Mitropolia airfield and hangars",
+        "Aviation and aerospace companies"
+      ],
+      "highlights": [
+        "Six core courses plus five electives, then a thesis",
+        "Available full-time, part-time or by distance learning",
+        "Professional field: Transport, Shipping and Aviation",
+        "Open to graduates of any engineering field"
+      ],
+      "careers": [
+        "Aerospace engineer",
+        "Aircraft technical-operations engineer",
+        "Aviation technology specialist",
+        "Engineering team leader",
+        "Researcher or lecturer"
+      ],
+      "admissionNotes": [
+        "Bachelor's or master's degree in a technical-sciences field",
+        "At least a 'good' final grade",
+        "Application fee €20"
+      ]
+    },
+    "53:master:electronics": {
+      "overview": "An engineering master's that deepens knowledge of electronic systems, digital signal processing, and on-board and ground electronic, radio-navigation, radar and antenna systems.",
+      "keyFocus": "electronic systems design, digital signal processing, radio-navigation and radar, antennas, computer modelling and adaptive control",
+      "duration": "Master — 1 year (2 semesters); full-time or part-time; ends with a diploma project",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Electronics laboratories",
+        "Aviation and defence companies"
+      ],
+      "highlights": [
+        "On-board and ground aviation electronics",
+        "Radar, radio-navigation and antenna systems",
+        "Prepares for research, design and management roles",
+        "Ends with a diploma project"
+      ],
+      "careers": [
+        "Electronics design engineer",
+        "Radar and navigation systems engineer",
+        "Research and development engineer",
+        "Engineering manager",
+        "Lecturer or researcher"
+      ],
+      "admissionNotes": [
+        "Bachelor's degree with at least a 'good' grade",
+        "Suits electronics and related engineering graduates",
+        "Application fee €20"
+      ]
+    },
+    "53:master:automation-information-and-control-equipment": {
+      "overview": "An engineering master's for managing and developing automation, measurement and information systems — from the technical operation and repair of electrical and automatic aircraft systems to automation projects across industry.",
+      "keyFocus": "automatic control, electrical and instrument systems, measurement and information technology, and engineering management",
+      "duration": "Master — 2 semesters; full-time or part-time; qualification 'Master-Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Air Force air bases",
+        "Industrial and aviation companies"
+      ],
+      "highlights": [
+        "Engineering, management and teaching career paths",
+        "Operation and repair of aircraft automatic systems",
+        "Automation projects across all industries",
+        "Open to graduates in technical sciences"
+      ],
+      "careers": [
+        "Automation engineer",
+        "Engineering or operations manager",
+        "Service and development engineer",
+        "Measurement and instrumentation specialist",
+        "Researcher or lecturer"
+      ],
+      "admissionNotes": [
+        "Bachelor's degree in a technical-sciences field",
+        "At least a 'good' final grade",
+        "Application fee €20"
+      ]
+    },
+    "53:master:aviation-armament": {
+      "overview": "A specialist engineering master's in aviation armament — how aircraft weapons systems are created, operated and repaired — for research, design and management roles in defence.",
+      "keyFocus": "aviation weapons systems, their design, operation and repair, and problem-solving for the defence industry",
+      "duration": "Master — 1 year (2 semesters); part-time; qualification 'Master-Engineer in Aviation Armament'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Bulgarian Air Force",
+        "Defence-industry companies"
+      ],
+      "highlights": [
+        "Rare specialisation taught only here in Bulgaria",
+        "Research, design and development skills",
+        "Prepares engineers to lead teams in the defence industry",
+        "Part-time study for working engineers"
+      ],
+      "careers": [
+        "Aviation armament engineer",
+        "Defence-industry design engineer",
+        "Research and development engineer",
+        "Team leader in the defence industry",
+        "Researcher or lecturer"
+      ],
+      "admissionNotes": [
+        "Bachelor's or master's in mechanical, electrical, computer, energy, transport or general engineering",
+        "At least a 'good' final grade",
+        "Application fee €20"
+      ]
+    },
+    "53:master:armament-and-ammunition": {
+      "overview": "An engineering master's in the weapon–ammunition complex: creating, producing, repairing and operating armament and ammunition, including the safe disposal of ammunition.",
+      "keyFocus": "armament and ammunition design, production and operation, defence-industry engineering and ammunition disposal",
+      "duration": "Master — 1 year (2 semesters); part-time or distance learning; qualification 'Master-Engineer'",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "Defence-industry companies",
+        "Bulgarian Armed Forces"
+      ],
+      "highlights": [
+        "Covers the full armament–ammunition life cycle",
+        "Includes ammunition disposal",
+        "Prepares engineers to lead defence-industry teams",
+        "Part-time or distance study"
+      ],
+      "careers": [
+        "Armament and ammunition engineer",
+        "Defence-industry production engineer",
+        "Research and design engineer",
+        "Ammunition disposal specialist",
+        "Team leader in the defence industry"
+      ],
+      "admissionNotes": [
+        "Bachelor's degree in Transport, Shipping and Aviation (technical sciences)",
+        "At least a 'good' final grade",
+        "Application fee €20"
+      ]
+    },
+    "53:master:space-engineering-and-technologies": {
+      "overview": "A one-year master's in small spacecraft and their communications — mission design, orbital dynamics, satellite construction, propulsion, navigation and telemetry, plus wireless and satellite links — taught by academics together with specialists from the space industry.",
+      "keyFocus": "space-mission design, orbital dynamics, small-satellite design and build, spacecraft propulsion, microwave and satellite communications, antennas and wireless networks",
+      "duration": "Master — 1 year (2 semesters), full-time only; 75 ECTS credits; ends with a thesis",
+      "partners": [
+        "Aviation Faculty, Air Force Academy",
+        "EnduroSat (Bulgarian satellite maker)",
+        "Space-industry guest lecturers"
+      ],
+      "highlights": [
+        "Run with EnduroSat, which pays the 2026/27 application fee",
+        "12 core courses plus projects, practice and internships",
+        "Growing demand as Bulgaria's space sector expands",
+        "About 34,000 jobs in the European space industry"
+      ],
+      "careers": [
+        "Small-satellite / spacecraft engineer",
+        "Satellite-communications engineer",
+        "Communications-standards specialist at the regulator",
+        "Manager in aerospace or telecoms companies",
+        "Researcher or lecturer"
+      ],
+      "admissionNotes": [
+        "Bachelor's in engineering physics, electronics, computing, communications, optics, aerospace or similar",
+        "Competitive entrance test (a sample test is available in English)",
+        "No application fee in 2026/27 (covered by EnduroSat)"
+      ]
+    },
     "52:bachelor:civil-engineering": {
       "overview": "A practice-oriented Civil Engineering degree built on mathematics, physics and economics. The curriculum is designed to match leading European and American programmes and prepares engineers for design, construction, consultancy and public-sector work.",
       "keyFocus": "structural design, construction technology and management, engineering mathematics and physics, and sustainability to European environmental standards",
