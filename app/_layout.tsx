@@ -10,6 +10,8 @@ import { View, ActivityIndicator } from "react-native";
 import { useFonts } from "expo-font";
 import {
   CormorantGaramond_400Regular,
+  CormorantGaramond_500Medium,
+  CormorantGaramond_500Medium_Italic,
   CormorantGaramond_600SemiBold,
 } from "@expo-google-fonts/cormorant-garamond";
 import { Lora_400Regular, Lora_600SemiBold } from "@expo-google-fonts/lora";
@@ -35,6 +37,8 @@ export default function RootLayout() {
 
   const [fontsLoaded] = useFonts({
     CormorantGaramond_400Regular,
+    CormorantGaramond_500Medium,
+    CormorantGaramond_500Medium_Italic,
     CormorantGaramond_600SemiBold,
     Lora_400Regular,
     Lora_600SemiBold,

@@ -7,6 +7,8 @@ import * as Haptics from "expo-haptics";
 import { useTranslation } from "react-i18next";
 import { useAppTheme } from "@/hooks/use-theme-color";
 import { Fonts } from "@/constants/typography";
+import { useIsDesktopWeb } from "@/components/responsive";
+import { WebTopNav } from "@/components/web-top-nav";
 
 type IconName = "heart" | "home" | "settings";
 
@@ -17,11 +19,18 @@ const TAB_ICONS: Record<string, IconName> = {
 };
 
 /**
- * Flat editorial tab bar: three tabs, a hairline top rule instead of a
- * shadowed/coloured bar, the active tab tinted with the burgundy accent and
- * inactive tabs muted. Navigation + haptics behaviour is unchanged.
+ * Tab bar. On desktop web it becomes the top navigation bar (`WebTopNav`,
+ * positioned by `tabBarPosition: "top"` in the tabs layout). On phones it is a
+ * flat bottom bar: hairline top rule, the active tab's icon sat in a soft
+ * burgundy pill, inactive tabs muted.
  */
-export function AnimatedTabBar({ state, navigation }: BottomTabBarProps) {
+export function AnimatedTabBar(props: BottomTabBarProps) {
+  const desktopWeb = useIsDesktopWeb();
+  if (desktopWeb) return <WebTopNav {...props} />;
+  return <PhoneTabBar {...props} />;
+}
+
+function PhoneTabBar({ state, navigation }: BottomTabBarProps) {
   const { t } = useTranslation();
   const { colors } = useAppTheme();
   const insets = useSafeAreaInsets();
@@ -45,21 +54,20 @@ export function AnimatedTabBar({ state, navigation }: BottomTabBarProps) {
   return (
     <View
       style={{
-        backgroundColor: colors.background,
+        backgroundColor: colors.card,
         borderTopWidth: 1,
-        borderTopColor: colors.divider,
+        borderTopColor: colors.softBorder,
         alignItems: "center",
-        paddingBottom: Math.max(insets.bottom, 12),
+        paddingBottom: Math.max(insets.bottom, 10),
       }}
     >
      <View
        style={{
          flexDirection: "row",
          width: "100%",
-         // Web: keep the three tabs in a centred, readable cluster instead of
-         // stretched across a wide monitor. Native leaves it full-width.
+         // Narrow web: keep the three tabs in a centred cluster.
          maxWidth: Platform.OS === "web" ? 560 : undefined,
-         paddingTop: 10,
+         paddingTop: 8,
          paddingHorizontal: 12,
        }}
      >
@@ -79,12 +87,33 @@ export function AnimatedTabBar({ state, navigation }: BottomTabBarProps) {
             key={route.key}
             accessibilityRole="button"
             accessibilityState={isFocused ? { selected: true } : {}}
+            accessibilityLabel={label}
             onPress={() => handleTabPress(route, isFocused)}
             activeOpacity={0.7}
             style={styles.tabItem}
           >
-            <Ionicons name={isFocused ? iconName : (`${iconName}-outline` as any)} size={22} color={color} />
-            <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 10, marginTop: 4, color }}>{label}</Text>
+            <View
+              style={{
+                width: 56,
+                height: 30,
+                borderRadius: 15,
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: isFocused ? colors.accentTint : "transparent",
+              }}
+            >
+              <Ionicons name={isFocused ? iconName : (`${iconName}-outline` as any)} size={21} color={color} />
+            </View>
+            <Text
+              style={{
+                fontFamily: isFocused ? Fonts.bodyMedium : Fonts.body,
+                fontSize: 11,
+                marginTop: 3,
+                color,
+              }}
+            >
+              {label}
+            </Text>
           </TouchableOpacity>
         );
       })}
@@ -98,6 +127,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    gap: 2,
+    minHeight: 50,
   },
 });

@@ -1,10 +1,13 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { AnimatedTabBar } from "@/components/animated-tab-bar";
+import { useIsDesktopWeb } from "@/components/responsive";
 import { useTranslation } from "react-i18next"; // 👈 ADDED
 
 export default function TabLayout() {
   const { t } = useTranslation(); // 👈 ADDED
+  // Desktop web shows the tab bar as a top navigation bar (see AnimatedTabBar).
+  const desktopWeb = useIsDesktopWeb();
 
   return (
       <Tabs
@@ -13,6 +16,7 @@ export default function TabLayout() {
           tabBarActiveTintColor: "#0f172a",
           tabBarInactiveTintColor: "#94a3b8",
           headerShown: false,
+          tabBarPosition: desktopWeb ? "top" : "bottom",
         }}
       >
         <Tabs.Screen

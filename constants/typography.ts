@@ -14,6 +14,10 @@
 export const Fonts = {
   /** Large serif display headlines (screen H1s) — the lighter, airier cut. */
   display: 'CormorantGaramond_400Regular',
+  /** Display medium (section titles on the redesigned home). */
+  displayMedium: 'CormorantGaramond_500Medium',
+  /** Italic display cut for the accented half of the home headline. */
+  displayItalic: 'CormorantGaramond_500Medium_Italic',
   /** Serif headings/kickers/card titles — semibold, the interface ceiling. */
   heading: 'CormorantGaramond_600SemiBold',
   /** Running body copy. */

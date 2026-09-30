@@ -71,6 +71,16 @@ export function useIsWideWeb(min: number = BP.md) {
 }
 
 /**
+ * The desktop web layout (top navigation bar + the wide Home) switches on at
+ * this width; below it web uses the same phone layout as the native app.
+ */
+export const DESKTOP_WEB_MIN = BP.lg;
+
+export function useIsDesktopWeb() {
+  return useIsWideWeb(DESKTOP_WEB_MIN);
+}
+
+/**
  * Centres content in a capped-width column on web; a transparent pass-through
  * on native (no extra view in the tree, so the mobile layout is unchanged).
  *

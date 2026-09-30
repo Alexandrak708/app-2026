@@ -76,6 +76,17 @@ export function getAppPalette(isDark: boolean) {
       // Misc
       heroOverlay: 'rgba(0,0,0,0.5)',
       cardShadow: '#000',
+      // Home redesign: raised cards/inputs, accent tint, solid (inverse) buttons,
+      // the deep burgundy "ink" panels (stats card, web footer) and the beige
+      // ampersand of the U&I wordmark.
+      card: '#262422',
+      accentTint: 'rgba(201,67,110,0.16)',
+      solid: '#f2efec',
+      onSolid: '#1c1b1a',
+      inkSurface: '#2b0b17',
+      onInk: '#f6efe9',
+      onInkMuted: 'rgba(246,239,233,0.72)',
+      beige: '#d9b99a',
     };
   }
 
@@ -101,6 +112,15 @@ export function getAppPalette(isDark: boolean) {
     // Misc
     heroOverlay: 'rgba(0,0,0,0.45)',
     cardShadow: '#201f1d',
+    // Home redesign (see the dark branch above for what each is for).
+    card: '#fbfafa',
+    accentTint: 'rgba(129,11,56,0.08)',
+    solid: Brand.ink,
+    onSolid: '#f6efe9',
+    inkSurface: Brand.ink,
+    onInk: '#f6efe9',
+    onInkMuted: 'rgba(246,239,233,0.72)',
+    beige: '#c29a74',
   };
 }
 
