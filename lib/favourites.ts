@@ -1,12 +1,9 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+import { isUniversityId } from "@/data/university-data";
 import type { UniversityId } from "@/types/university";
 
 const FAVOURITES_STORAGE_KEY = "app:favourites:universities";
-
-function isUniversityId(value: unknown): value is UniversityId {
-  return value === "1" || value === "2" || value === "3" || value === "4" || value === "5" || value === "6";
-}
 
 export async function loadFavouriteUniversityIds(): Promise<UniversityId[]> {
   const raw = await AsyncStorage.getItem(FAVOURITES_STORAGE_KEY);

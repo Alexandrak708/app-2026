@@ -12,7 +12,9 @@ import { categoriesLabel, cityOf } from "@/lib/university-groups";
 /**
  * Featured university card for the redesigned Home: a rounded photo with a
  * heart button, then a city kicker, the serif name and the fields it teaches.
- * `variant="web"` is the larger desktop card and adds scholarship/degree pills.
+ * `variant="web"` is the larger desktop card and adds scholarship/degree pills
+ * (`details` adds them on phone too). Passing `onCompareToggle` adds the
+ * Favourites "Compare" pill in the photo's top-left corner.
  */
 export default function UniversityTile({
   item,
@@ -20,6 +22,9 @@ export default function UniversityTile({
   width,
   photoHeight = 192,
   variant = "phone",
+  details,
+  compareSelected = false,
+  onCompareToggle,
 }: {
   item: UniversityDisplay;
   onPress?: () => void;
@@ -27,6 +32,10 @@ export default function UniversityTile({
   width?: DimensionValue;
   photoHeight?: number;
   variant?: "phone" | "web";
+  /** Show the scholarship/degree pills (always on for `variant="web"`). */
+  details?: boolean;
+  compareSelected?: boolean;
+  onCompareToggle?: () => void;
 }) {
   const { colors } = useAppTheme();
   const { t } = useTranslation();
@@ -35,6 +44,7 @@ export default function UniversityTile({
   const favourite = isFavourite(item.id);
   const web = variant === "web";
   const heartSize = web ? 40 : 44;
+  const photoRadius = web ? 16 : 18;
 
   return (
     <View style={{ width: width ?? "100%" }}>
@@ -45,13 +55,19 @@ export default function UniversityTile({
         accessibilityRole="link"
         accessibilityLabel={item.name}
       >
-        <View style={{ height: photoHeight, borderRadius: web ? 16 : 18, overflow: "hidden", backgroundColor: colors.surface }}>
+        <View style={{ height: photoHeight, borderRadius: photoRadius, overflow: "hidden", backgroundColor: colors.surface }}>
           <ExpoImage
             source={item.image}
             style={{ width: "100%", height: "100%", opacity: hovered ? 0.9 : 1 }}
             contentFit="cover"
             transition={120}
           />
+          {compareSelected ? (
+            <View
+              pointerEvents="none"
+              style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, borderRadius: photoRadius, borderWidth: 3, borderColor: colors.accent }}
+            />
+          ) : null}
         </View>
 
         <Text
@@ -91,8 +107,8 @@ export default function UniversityTile({
           {categoriesLabel(item, t)}
         </Text>
 
-        {web && (
-          <View style={{ marginTop: 14, flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+        {(web || details) && (
+          <View style={{ marginTop: web ? 14 : 12, flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
             {item.scholarship && (
               <View
                 style={{
@@ -140,6 +156,34 @@ export default function UniversityTile({
       >
         <Ionicons name={favourite ? "heart" : "heart-outline"} size={18} color="#810B38" />
       </Pressable>
+
+      {onCompareToggle ? (
+        <Pressable
+          onPress={onCompareToggle}
+          accessibilityRole="button"
+          accessibilityLabel={`${t("favourites.compare")}: ${item.name}`}
+          accessibilityState={{ selected: compareSelected }}
+          aria-selected={compareSelected}
+          hitSlop={4}
+          style={{
+            position: "absolute",
+            top: web ? 12 : 10,
+            left: web ? 12 : 10,
+            height: heartSize,
+            paddingHorizontal: 14,
+            borderRadius: heartSize / 2,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 7,
+            backgroundColor: compareSelected ? colors.accent : "rgba(251,250,250,0.94)",
+          }}
+        >
+          <Ionicons name={compareSelected ? "checkmark" : "swap-horizontal-outline"} size={17} color={compareSelected ? "#ffffff" : "#810B38"} />
+          <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 13, color: compareSelected ? "#ffffff" : "#201f1d" }}>
+            {compareSelected ? t("favourites.selected") : t("favourites.compare")}
+          </Text>
+        </Pressable>
+      ) : null}
     </View>
   );
 }

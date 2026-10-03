@@ -1,6 +1,6 @@
 import type { TFunction } from "i18next";
 
-import type { UniversityDisplay, UniversityMeta } from "@/types/university";
+import type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
 
 export type { UniversityDisplay, UniversityId, UniversityMeta } from "@/types/university";
 
@@ -589,6 +589,13 @@ const UNIVERSITY_META: UniversityMeta[] = [
     countryKey: "Bulgaria",
   },
 ];
+
+const UNIVERSITY_IDS = new Set<string>(UNIVERSITY_META.map((meta) => meta.id));
+
+/** True for an id that exists in the data — used to validate ids read back from storage. */
+export function isUniversityId(value: unknown): value is UniversityId {
+  return typeof value === "string" && UNIVERSITY_IDS.has(value);
+}
 
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
   return UNIVERSITY_META.map((meta) => {

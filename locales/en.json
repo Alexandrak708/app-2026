@@ -1757,7 +1757,18 @@
     "emptyMessage": "Tap the heart on any university card to save it here.",
     "remove": "Remove from favourites",
     "compare": "Compare",
-    "selectOneMore": "Select 1 more to compare"
+    "selectOneMore": "Select 1 more to compare",
+    "compareReady": "Compare selected",
+    "selected": "Selected",
+    "clearSelection": "Clear selection",
+    "compareHint": "Tap “Compare” on two universities to see them side by side.",
+    "browse": "Browse universities",
+    "statSaved_one": "saved university",
+    "statSaved_other": "saved universities",
+    "statCities_one": "city",
+    "statCities_other": "cities",
+    "statFields_one": "field",
+    "statFields_other": "fields"
   },
   "compare": {
     "title": "Compare universities",
