@@ -2224,7 +2224,19 @@
     "title": "Programs",
     "available_one": "{{count}} PROGRAM AVAILABLE",
     "available_other": "{{count}} PROGRAMS AVAILABLE",
-    "noneAvailable": "No programs available"
+    "noneAvailable": "No programs available",
+    "programCount_one": "{{count}} program",
+    "programCount_other": "{{count}} programs",
+    "showing": "Showing {{count}} of {{total}}",
+    "searchPlaceholder": "Search programs…",
+    "clearSearch": "Clear search",
+    "freeOnly": "Tuition-free",
+    "allFaculties": "All",
+    "faculties": "Faculties",
+    "otherPrograms": "Other programs",
+    "noResults": "No programs match your search",
+    "noResultsHint": "Try another word or clear the filters.",
+    "clearFilters": "Clear filters"
   },
   "universityStats": {
     "title": "Key Facts",
@@ -5846,7 +5858,18 @@
     "careers": "Career Paths",
     "admissionNotes": "Admission Notes",
     "tuition": "Tuition (semester)",
-    "faculty": "Faculty"
+    "faculty": "Faculty",
+    "tuitionShort": "Tuition",
+    "free": "Free",
+    "fromPrice": "from {{price}}",
+    "tuitionUnknown": "See the university website",
+    "whatYouStudy": "What you'll study",
+    "keyFacts": "Key facts",
+    "admissionKicker": "Admission",
+    "visitWebsite": "Go to the university website",
+    "viewUniversity": "View university",
+    "morePrograms": "More programs",
+    "allPrograms": "All programs"
   },
   "tu_faculties": {
     "fita": "Computer Systems & Automation (FITA)",

@@ -2224,7 +2224,19 @@
     "title": "Програми",
     "available_one": "{{count}} НАЛИЧНА ПРОГРАМА",
     "available_other": "{{count}} НАЛИЧНИ ПРОГРАМИ",
-    "noneAvailable": "Няма налични програми"
+    "noneAvailable": "Няма налични програми",
+    "programCount_one": "{{count}} програма",
+    "programCount_other": "{{count}} програми",
+    "showing": "Показани {{count}} от {{total}}",
+    "searchPlaceholder": "Търси програма…",
+    "clearSearch": "Изчисти търсенето",
+    "freeOnly": "Безплатни",
+    "allFaculties": "Всички",
+    "faculties": "Факултети",
+    "otherPrograms": "Други програми",
+    "noResults": "Няма програми, които отговарят на търсенето",
+    "noResultsHint": "Опитай с друга дума или изчисти филтрите.",
+    "clearFilters": "Изчисти филтрите"
   },
   "universityStats": {
     "title": "Основни факти",
@@ -5846,7 +5858,18 @@
     "careers": "Кариерни пътища",
     "admissionNotes": "Бележки за кандидатстване",
     "tuition": "Такса (семестър)",
-    "faculty": "Факултет"
+    "faculty": "Факултет",
+    "tuitionShort": "Такса",
+    "free": "Безплатно",
+    "fromPrice": "от {{price}}",
+    "tuitionUnknown": "Виж сайта на университета",
+    "whatYouStudy": "Какво ще учиш",
+    "keyFacts": "Основни факти",
+    "admissionKicker": "Кандидатстване",
+    "visitWebsite": "Към сайта на университета",
+    "viewUniversity": "Виж университета",
+    "morePrograms": "Още програми",
+    "allPrograms": "Всички програми"
   },
   "tu_faculties": {
     "fita": "Изчислителна техника и автоматизация (ФИТА)",
