@@ -8,9 +8,10 @@ import { useAppTheme } from "@/hooks/use-theme-color";
 import { Fonts } from "@/constants/typography";
 
 /**
- * Pieces shared by the program list (`app/university/project.tsx`) and program
- * detail (`app/university/program/[programId].tsx`) screens: the university
- * photo hero with its scrim, badges and back button, plus web hover helpers.
+ * Pieces shared by the program list (`app/university/project.tsx`), program
+ * detail (`app/university/program/[programId].tsx`) and compare (`app/compare.tsx`)
+ * screens: the university photo hero with its scrim, badges and back button,
+ * plus web hover helpers.
  */
 
 export const FILL = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 } as const;
@@ -29,7 +30,7 @@ export function useHover() {
 }
 
 /** Darkens the top (controls) and bottom (title) of a hero photo, fading into brand ink. */
-function HeroScrim() {
+export function HeroScrim() {
   // On web every gradient id lives in one document: the list and detail screens are
   // both mounted while the stack animates, and `url(#id)` resolving to the hidden
   // screen's gradient paints nothing. A per-instance id keeps them apart.
@@ -52,7 +53,7 @@ function HeroScrim() {
   );
 }
 
-function HeroBackButton({ desktop, label, top, onPress }: { desktop: boolean; label: string; top: number; onPress: () => void }) {
+export function HeroBackButton({ desktop, label, top, onPress }: { desktop: boolean; label: string; top: number; onPress: () => void }) {
   const hover = useHover();
   return (
     <Pressable

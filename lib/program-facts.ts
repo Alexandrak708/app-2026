@@ -16,9 +16,9 @@ export function isFreeTuition(tuition?: string) {
   return FREE_PATTERN.test(tuition) || /^\s*€\s?0\s*$/.test(tuition);
 }
 
-// "€450/год.", "≈ €550–€650/год.", "€1,000", "191.00 €", "325-1 994 лв./сем"
+// "€450/год.", "≈ €550–€650/год.", "€1,000", "€2 750 – €3 900 / година", "191.00 €", "325-1 994 лв./сем"
 const PRICE_PATTERN =
-  /≈?\s?(?:€\s?\d[\d.,]*(?:\s?[–-]\s?€?\s?\d[\d.,]*)?|\d[\d.,]*(?:\s\d{3})*(?:\s?[–-]\s?\d[\d.,]*(?:\s\d{3})*)?\s?(?:€|лв\.?|BGN))(?:\s?\/\s?(?:год\.?|година|сем\.?|семестър|year|yr|sem\.?|semester))?/i;
+  /≈?\s?(?:€\s?\d[\d.,]*(?:\s\d{3})*(?:\s?[–-]\s?€?\s?\d[\d.,]*(?:\s\d{3})*)?|\d[\d.,]*(?:\s\d{3})*(?:\s?[–-]\s?\d[\d.,]*(?:\s\d{3})*)?\s?(?:€|лв\.?|BGN))(?:\s?\/\s?(?:година|год\.?|г\.|семестър|сем\.?|year|yr|semester|sem\.?))?/i;
 
 /**
  * The first price in a tuition sentence, or `null` when there is none.
