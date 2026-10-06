@@ -1,53 +1,14 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ThemedView } from '@/components/themed-view';
-import { ThemedText } from '@/components/themed-text';
 import { useTranslation } from 'react-i18next';
-import { BackToSettingsButton } from '@/components/back-to-settings-button';
-import { DocSections, EmailSupportButton, type DocSection } from '@/components/support-ui';
-import { ContentWrap } from '@/components/responsive';
-import { AppInfo } from '@/constants/app-info';
+import { SettingsPage } from '@/components/settings-ui';
+import { LegalContent, useDocVars } from '@/components/settings-content';
 
 export default function Privacy() {
   const { t } = useTranslation();
-
-  const vars = {
-    app: AppInfo.appName,
-    entity: AppInfo.legalEntity,
-    email: AppInfo.supportEmail,
-    website: AppInfo.websiteUrl,
-    country: AppInfo.governingCountry,
-    age: AppInfo.minAge,
-    date: AppInfo.effectiveDate,
-  };
-
-  const sections = t('privacy.sections', { returnObjects: true, ...vars }) as DocSection[];
-
+  const vars = useDocVars();
   return (
-    <ThemedView style={styles.container}>
-      <BackToSettingsButton />
-      <ScrollView contentContainerStyle={styles.card} showsVerticalScrollIndicator={false}>
-       <ContentWrap maxWidth={760} style={{ width: '100%', gap: 10 }}>
-        <ThemedText type="title">{t('privacy.title')}</ThemedText>
-        <ThemedText style={styles.updated}>{t('privacy.updated', vars)}</ThemedText>
-        <ThemedText style={styles.intro}>{t('privacy.intro', vars)}</ThemedText>
-
-        <DocSections sections={sections} />
-
-        <EmailSupportButton
-          email={AppInfo.supportEmail}
-          label={t('privacy.emailButton')}
-          subject={t('privacy.emailSubject', vars)}
-        />
-       </ContentWrap>
-      </ScrollView>
-    </ThemedView>
+    <SettingsPage kicker={t('settings.groups.support.kicker')} title={t('privacy.title')} intro={t('privacy.intro', vars)} maxWidth={760}>
+      <LegalContent ns="privacy" showIntro={false} />
+    </SettingsPage>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1 },
-  card: { padding: 24, paddingTop: 76, paddingBottom: 48, gap: 10 },
-  intro: { opacity: 0.85, lineHeight: 22, marginTop: 4 },
-  updated: { opacity: 0.55, fontSize: 12 },
-});

@@ -17,7 +17,8 @@ import * as FileSystem from 'expo-file-system/legacy';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import type { User } from '@supabase/supabase-js';
 import { useTranslation } from 'react-i18next';
-import { Brand, getAppPalette } from '@/constants/theme';
+import { getAppPalette } from '@/constants/theme';
+import { Fonts } from '@/constants/typography';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import {
   ensureProfileRecord,
@@ -381,20 +382,20 @@ export default function ProfileForm() {
               width: 104,
               height: 104,
               borderRadius: 52,
-              borderWidth: 1,
-              borderColor: palette.border,
-              backgroundColor: palette.mutedSurface,
+              borderWidth: 2,
+              borderColor: palette.accent,
+              backgroundColor: palette.accentTint,
               alignItems: 'center',
               justifyContent: 'center',
               overflow: 'hidden',
             }}
           >
             {loadingAvatar ? (
-              <ActivityIndicator color={Brand.primary} />
+              <ActivityIndicator color={palette.accent} />
             ) : avatarUrl ? (
               <Image source={{ uri: avatarUrl }} style={{ width: 104, height: 104 }} resizeMode="cover" />
             ) : (
-              <Text style={{ fontSize: 34, fontWeight: '700', color: palette.textSecondary }}>{initials}</Text>
+              <Text style={{ fontFamily: Fonts.heading, fontSize: 38, color: palette.accent }}>{initials}</Text>
             )}
           </View>
           {/* Camera badge */}
@@ -406,7 +407,7 @@ export default function ProfileForm() {
               width: 32,
               height: 32,
               borderRadius: 16,
-              backgroundColor: Brand.primary,
+              backgroundColor: palette.accent,
               alignItems: 'center',
               justifyContent: 'center',
               borderWidth: 2,
@@ -417,7 +418,7 @@ export default function ProfileForm() {
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={handlePickAvatar} disabled={loadingAvatar} activeOpacity={0.7}>
-          <Text style={{ marginTop: 10, fontSize: 13, fontWeight: '600', color: Brand.primary }}>
+          <Text style={{ marginTop: 10, fontFamily: Fonts.bodyMedium, fontSize: 13.5, color: palette.accent }}>
             {t('profile.changePhoto', { defaultValue: 'Change photo' })}
           </Text>
         </TouchableOpacity>
@@ -501,11 +502,11 @@ export default function ProfileForm() {
         <View style={styles.field}>
           <Text style={[styles.fieldLabel, { color: palette.textSecondary }]}>{t('profile.region')}</Text>
           <TouchableOpacity
-            style={[styles.input, styles.selectInput, { borderColor: palette.border, backgroundColor: palette.mutedSurface }]}
+            style={[styles.input, styles.selectInput, { borderColor: palette.softBorder, backgroundColor: palette.background }]}
             onPress={() => setRegionModalOpen(true)}
             activeOpacity={0.7}
           >
-            <Text style={{ color: region ? palette.text : palette.textMuted, fontSize: 16 }}>{regionLabel}</Text>
+            <Text style={{ fontFamily: Fonts.body, color: region ? palette.text : palette.textMuted, fontSize: 15.5 }}>{regionLabel}</Text>
             <Ionicons name="chevron-down" size={18} color={palette.textMuted} />
           </TouchableOpacity>
         </View>
@@ -545,7 +546,9 @@ export default function ProfileForm() {
             }}
             activeOpacity={0.7}
           >
-            <MaterialCommunityIcons name="lock-outline" size={20} color={palette.text} />
+            <View style={{ width: 38, height: 38, borderRadius: 12, alignItems: 'center', justifyContent: 'center', backgroundColor: palette.accentTint }}>
+              <MaterialCommunityIcons name="lock-outline" size={19} color={palette.accent} />
+            </View>
             <Text style={[styles.changePwLabel, { color: palette.text }]}>{t('profile.changePassword')}</Text>
             <Ionicons name="chevron-forward" size={18} color={palette.textMuted} />
           </TouchableOpacity>
@@ -600,15 +603,15 @@ export default function ProfileForm() {
 
             <View style={styles.pwActions}>
               <TouchableOpacity
-                style={[styles.primaryBtn, styles.flex1, { backgroundColor: Brand.primary }, pwSaving && { opacity: 0.7 }]}
+                style={[styles.primaryBtn, styles.flex1, { backgroundColor: palette.solid }, pwSaving && { opacity: 0.7 }]}
                 onPress={handleChangePassword}
                 disabled={pwSaving}
                 activeOpacity={0.85}
               >
                 {pwSaving ? (
-                  <ActivityIndicator color="#fff" />
+                  <ActivityIndicator color={palette.onSolid} />
                 ) : (
-                  <Text style={styles.primaryBtnText}>{t('profile.updatePassword')}</Text>
+                  <Text style={[styles.primaryBtnText, { color: palette.onSolid }]}>{t('profile.updatePassword')}</Text>
                 )}
               </TouchableOpacity>
               <TouchableOpacity
@@ -641,14 +644,14 @@ export default function ProfileForm() {
             style={{ alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 4 }}
           >
             {forgotSending ? (
-              <ActivityIndicator size="small" color={Brand.primary} />
+              <ActivityIndicator size="small" color={palette.accent} />
             ) : (
-              <MaterialCommunityIcons name="lock-reset" size={19} color={Brand.primary} />
+              <MaterialCommunityIcons name="lock-reset" size={19} color={palette.accent} />
             )}
-            <Text style={{ color: Brand.primary, fontSize: 14, fontWeight: '600' }}>{t('auth.forgotPassword')}</Text>
+            <Text style={{ fontFamily: Fonts.bodyMedium, color: palette.accent, fontSize: 14 }}>{t('auth.forgotPassword')}</Text>
           </TouchableOpacity>
           {forgotNotice ? (
-            <Text style={{ fontSize: 13, lineHeight: 18, color: forgotNotice.type === 'ok' ? '#16a34a' : '#dc2626' }}>
+            <Text style={{ fontFamily: Fonts.body, fontSize: 13, lineHeight: 18, color: forgotNotice.type === 'ok' ? '#16a34a' : '#dc2626' }}>
               {forgotNotice.text}
             </Text>
           ) : null}
@@ -663,7 +666,7 @@ export default function ProfileForm() {
         onRequestClose={() => setRegionModalOpen(false)}
       >
         <Pressable style={styles.modalBackdrop} onPress={() => setRegionModalOpen(false)}>
-          <Pressable style={[styles.modalCard, { backgroundColor: palette.surface }]} onPress={() => {}}>
+          <Pressable style={[styles.modalCard, { backgroundColor: palette.card }]} onPress={() => {}}>
             <Text style={[styles.modalTitle, { color: palette.text }]}>{t('profile.region')}</Text>
             {REGION_OPTIONS.map((key) => {
               const selected = region === key;
@@ -677,10 +680,10 @@ export default function ProfileForm() {
                   }}
                   activeOpacity={0.7}
                 >
-                  <Text style={[styles.regionOptionText, { color: palette.text, fontWeight: selected ? '700' : '500' }]}>
+                  <Text style={[styles.regionOptionText, { color: selected ? palette.accent : palette.text, fontFamily: selected ? Fonts.bodyMedium : Fonts.body }]}>
                     {t(`profile.regions.${key}`)}
                   </Text>
-                  {selected ? <Ionicons name="checkmark" size={20} color={Brand.primary} /> : null}
+                  {selected ? <Ionicons name="checkmark-circle" size={20} color={palette.accent} /> : null}
                 </TouchableOpacity>
               );
             })}
@@ -696,8 +699,8 @@ export default function ProfileForm() {
 function Card({ title, palette, children }: { title: string; palette: Palette; children: React.ReactNode }) {
   return (
     <View style={styles.section}>
-      <Text style={[styles.sectionLabel, { color: Brand.primary }]}>{title}</Text>
-      <View style={[styles.card, { backgroundColor: palette.surface, shadowColor: palette.cardShadow }]}>{children}</View>
+      <Text style={[styles.sectionLabel, { color: palette.accent }]}>{title}</Text>
+      <View style={[styles.card, { backgroundColor: palette.card, borderColor: palette.softBorder }]}>{children}</View>
     </View>
   );
 }
@@ -724,7 +727,7 @@ function Field({ label, value, onChangeText, placeholder, palette, multiline, ..
         style={[
           styles.input,
           multiline && styles.multiline,
-          { color: palette.text, borderColor: palette.border, backgroundColor: palette.mutedSurface },
+          { color: palette.text, borderColor: palette.softBorder, backgroundColor: palette.background },
         ]}
         value={value}
         onChangeText={onChangeText}
@@ -757,7 +760,7 @@ function PasswordInput({ label, value, onChangeText, placeholder, show, onToggle
         <TextInput
           style={[
             styles.input,
-            { color: palette.text, borderColor: palette.border, backgroundColor: palette.mutedSurface, paddingRight: 46 },
+            { color: palette.text, borderColor: palette.softBorder, backgroundColor: palette.background, paddingRight: 46 },
           ]}
           value={value}
           onChangeText={onChangeText}
@@ -785,21 +788,18 @@ const styles = StyleSheet.create({
   // Sections / cards
   section: { marginBottom: 22 },
   sectionLabel: {
+    fontFamily: Fonts.bodyMedium,
     fontSize: 11,
-    fontWeight: '700',
-    letterSpacing: 1.5,
+    letterSpacing: 1.8,
     textTransform: 'uppercase',
     marginBottom: 10,
     paddingHorizontal: 4,
   },
   card: {
-    borderRadius: 20,
+    borderRadius: 22,
+    borderWidth: 1,
     padding: 18,
-    gap: 14,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 16,
-    elevation: 4,
+    gap: 16,
   },
 
   // Fields
@@ -807,43 +807,44 @@ const styles = StyleSheet.create({
   rowItem: { flex: 1 },
   field: { gap: 6 },
   fieldLabel: {
-    fontSize: 12,
-    fontWeight: '600',
-    letterSpacing: 0.2,
+    fontFamily: Fonts.bodyMedium,
+    fontSize: 11.5,
+    letterSpacing: 1,
     marginLeft: 2,
     textTransform: 'uppercase',
   },
   input: {
     borderWidth: 1,
-    borderRadius: 12,
+    borderRadius: 14,
     paddingHorizontal: 14,
     paddingVertical: Platform.OS === 'ios' ? 13 : 10,
-    fontSize: 16,
+    fontFamily: Fonts.body,
+    fontSize: 15.5,
   },
   multiline: { minHeight: 72, textAlignVertical: 'top', paddingTop: 12 },
   selectInput: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   eyeBtn: { position: 'absolute', right: 12, height: '100%', justifyContent: 'center' },
-  emailNotice: { fontSize: 12, lineHeight: 16, marginLeft: 2 },
+  emailNotice: { fontFamily: Fonts.body, fontSize: 12, lineHeight: 17, marginLeft: 2 },
 
   // Auto-save status
   statusRow: { flexDirection: 'row', alignItems: 'center', gap: 8, minHeight: 20, marginTop: 2 },
-  statusText: { fontSize: 13, fontWeight: '600' },
+  statusText: { fontFamily: Fonts.bodyMedium, fontSize: 13 },
 
   // Buttons
-  primaryBtn: { marginTop: 4, borderRadius: 12, paddingVertical: 14, alignItems: 'center', justifyContent: 'center' },
-  primaryBtnText: { color: '#fff', fontSize: 16, fontWeight: '700', letterSpacing: 0.2 },
-  secondaryBtn: { borderRadius: 12, paddingVertical: 14, paddingHorizontal: 20, alignItems: 'center', justifyContent: 'center' },
-  secondaryBtnText: { fontSize: 16, fontWeight: '600' },
+  primaryBtn: { marginTop: 4, borderRadius: 16, paddingVertical: 15, alignItems: 'center', justifyContent: 'center' },
+  primaryBtnText: { fontFamily: Fonts.bodyMedium, fontSize: 15 },
+  secondaryBtn: { borderRadius: 16, paddingVertical: 15, paddingHorizontal: 20, alignItems: 'center', justifyContent: 'center' },
+  secondaryBtnText: { fontFamily: Fonts.bodyMedium, fontSize: 15 },
   flex1: { flex: 1 },
 
   // Password area
   changePwRow: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 4 },
-  changePwLabel: { flex: 1, fontSize: 16, fontWeight: '600' },
-  helperText: { fontSize: 13, lineHeight: 18 },
+  changePwLabel: { flex: 1, fontFamily: Fonts.bodyMedium, fontSize: 15 },
+  helperText: { fontFamily: Fonts.body, fontSize: 13, lineHeight: 19 },
   pwActions: { flexDirection: 'row', gap: 10, alignItems: 'stretch' },
-  errorText: { color: '#dc2626', fontSize: 13, fontWeight: '600' },
+  errorText: { fontFamily: Fonts.bodyMedium, color: '#dc2626', fontSize: 13 },
   successRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 4 },
-  successText: { color: '#16a34a', fontSize: 14, fontWeight: '600' },
+  successText: { fontFamily: Fonts.bodyMedium, color: '#16a34a', fontSize: 14 },
 
   // Region modal
   modalBackdrop: { flex: 1, backgroundColor: 'rgba(0,0,0,0.45)', justifyContent: 'center', alignItems: 'center', padding: 24 },
@@ -859,14 +860,14 @@ const styles = StyleSheet.create({
     elevation: 8,
   },
   modalTitle: {
-    fontSize: 13,
-    fontWeight: '700',
-    letterSpacing: 1,
+    fontFamily: Fonts.bodyMedium,
+    fontSize: 12,
+    letterSpacing: 1.6,
     textTransform: 'uppercase',
     marginBottom: 8,
     paddingHorizontal: 4,
     opacity: 0.6,
   },
   regionOption: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 14, paddingHorizontal: 6 },
-  regionOptionText: { fontSize: 16 },
+  regionOptionText: { fontSize: 15.5 },
 });

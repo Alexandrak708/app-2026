@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity, Linking, Platform } from 'react-native';
+import { View, Text, Pressable, Linking, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { ThemedText } from '@/components/themed-text';
 import { useAppTheme } from '@/hooks/use-theme-color';
-import { Brand } from '@/constants/theme';
+import { Fonts } from '@/constants/typography';
+import { hoverTransition, useHover } from '@/components/program-ui';
 
 export type DocSection = { heading: string; paragraphs: string[] };
 
@@ -41,49 +41,75 @@ export function openSupportEmail(email: string, subject?: string) {
   );
 }
 
-/** Renders an array of { heading, paragraphs } sections for the legal docs. */
+/** Renders the legal docs' { heading, paragraphs } sections as numbered blocks. */
 export function DocSections({ sections }: { sections: DocSection[] }) {
+  const { colors } = useAppTheme();
   return (
-    <>
+    <View style={{ gap: 22 }}>
       {sections.map((section, i) => (
-        <View key={i} style={styles.section}>
-          <ThemedText type="subtitle" style={styles.heading}>
-            {section.heading}
-          </ThemedText>
-          {section.paragraphs.map((p, j) => (
-            <ThemedText key={j} style={styles.paragraph}>
-              {p}
-            </ThemedText>
-          ))}
+        <View key={i} style={{ flexDirection: 'row', gap: 14 }}>
+          <Text style={{ width: 28, marginTop: 4, fontFamily: Fonts.number, fontSize: 13, color: colors.accent }}>
+            {String(i + 1).padStart(2, '0')}
+          </Text>
+          <View style={{ flex: 1, gap: 8 }}>
+            <Text accessibilityRole="header" style={{ fontFamily: Fonts.heading, fontSize: 21, lineHeight: 25, color: colors.text }}>
+              {section.heading.replace(/^\d+\.\s*/, '')}
+            </Text>
+            {section.paragraphs.map((p, j) => (
+              <Text key={j} style={{ fontFamily: Fonts.body, fontSize: 14.5, lineHeight: 23, color: colors.textSecondary }}>
+                {p}
+              </Text>
+            ))}
+          </View>
         </View>
       ))}
-    </>
+    </View>
   );
 }
 
-/** A filled button that opens the user's mail app with support pre-addressed. */
+/** A solid button that opens the user's mail app with support pre-addressed. */
 export function EmailSupportButton({
   email,
   label,
   subject,
+  variant = 'solid',
 }: {
   email: string;
   label: string;
   subject?: string;
+  /** `onInk` is the beige version for the deep burgundy cards. */
+  variant?: 'solid' | 'onInk';
 }) {
+  const { colors } = useAppTheme();
+  const hover = useHover();
+  const onInk = variant === 'onInk';
+  const background = onInk ? (hover.hovered ? colors.onInk : colors.beige) : colors.solid;
+  const foreground = onInk ? colors.accentInk : colors.onSolid;
+
   return (
-    <TouchableOpacity
-      style={styles.emailBtn}
+    <Pressable
       onPress={() => openSupportEmail(email, subject)}
-      activeOpacity={0.85}
+      {...hover}
       accessibilityRole="button"
       accessibilityLabel={label}
+      style={({ pressed }) => [
+        {
+          height: 50,
+          paddingHorizontal: 20,
+          borderRadius: 16,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 10,
+          backgroundColor: background,
+          opacity: pressed ? 0.85 : !onInk && hover.hovered ? 0.9 : 1,
+        },
+        hoverTransition,
+      ]}
     >
-      <Ionicons name="mail-outline" size={18} color="#ffffff" />
-      <ThemedText style={styles.emailBtnText} lightColor="#ffffff" darkColor="#ffffff">
-        {label}
-      </ThemedText>
-    </TouchableOpacity>
+      <Ionicons name="mail-outline" size={18} color={foreground} />
+      <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 14.5, color: foreground }}>{label}</Text>
+    </Pressable>
   );
 }
 
@@ -91,36 +117,11 @@ export function EmailSupportButton({
 export function EmailLink({ email }: { email: string }) {
   const { colors } = useAppTheme();
   return (
-    <ThemedText
-      style={styles.emailLink}
-      lightColor={colors.accent}
-      darkColor={colors.accent}
+    <Text
+      style={{ fontFamily: Fonts.bodyMedium, color: colors.accent, textDecorationLine: 'underline' }}
       onPress={() => openSupportEmail(email)}
     >
       {email}
-    </ThemedText>
+    </Text>
   );
 }
-
-const styles = StyleSheet.create({
-  section: { gap: 6, marginTop: 8 },
-  heading: { fontSize: 18 },
-  paragraph: { opacity: 0.85, lineHeight: 22 },
-  emailBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    backgroundColor: Brand.primary,
-    borderRadius: 12,
-    paddingVertical: 14,
-    paddingHorizontal: 20,
-    marginTop: 8,
-    ...Platform.select({
-      web: { cursor: 'pointer' as any },
-      default: {},
-    }),
-  },
-  emailBtnText: { fontSize: 15, fontWeight: '700' },
-  emailLink: { textDecorationLine: 'underline', fontWeight: '600' },
-});

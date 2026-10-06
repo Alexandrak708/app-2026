@@ -1,99 +1,90 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  Image,
-  TextInput,
-  Alert,
-  ActivityIndicator,
-  Animated,
-  Easing,
-  ScrollView,
-  Platform,
-} from "react-native";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { ActivityIndicator, Alert, Animated, Easing, Platform, Pressable, ScrollView, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
-import { useState, useEffect, useRef } from "react";
 import type { User } from "@supabase/supabase-js";
-import { deleteAccount } from "@/lib/account";
 import Constants from "expo-constants";
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system/legacy";
 import { useRouter } from "expo-router";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+
+import { deleteAccount } from "@/lib/account";
 import { useAppTheme } from "@/hooks/use-theme-color";
 import { useAppSettings } from "@/contexts/settings-context";
+import { useFavourites } from "@/contexts/favourites-context";
 import { Fonts } from "@/constants/typography";
-import { ScreenHeader } from "@/components/editorial";
-import { useIsWideWeb } from "@/components/responsive";
-import SettingsWeb from "@/components/settings-web";
+import { ContentWrap, isWeb, useIsDesktopWeb } from "@/components/responsive";
+import { hoverTransition, useHover } from "@/components/program-ui";
+import SettingsWeb, { type PanelKey } from "@/components/settings-web";
+import SiteFooter from "@/components/home/site-footer";
+import { WEB_PAGE_GUTTER, WEB_PAGE_MAX_WIDTH } from "@/components/web-top-nav";
+import { Wordmark } from "@/components/wordmark";
+import {
+  FieldLabel, LanguagePicker, NavRow, OutlineButton, RowDivider, SectionHeading, SettingsCard, ThemePicker, ToggleRow,
+  pressFade, type IconName,
+} from "@/components/settings-ui";
+import { DangerZone, DeleteAccountDialog, NotificationsFootnote, ProfileCard } from "@/components/settings-parts";
 import { ensureProfileRecord, getCurrentUser, signOutLocal } from "@/lib/auth";
 import { updateProfileAvatarUrl, updateProfileFullName, uploadAvatar } from "@/lib/profile";
 import type { Profile } from "@/types/profile";
 
-// ── Reusable hairline row ──────────────────────────────────────────────────────
-function SettingsRow({
-  icon,
-  label,
-  value,
-  onPress,
-  isLast,
-  colors,
-}: {
-  icon: keyof typeof Ionicons.glyphMap;
-  label: string;
-  value?: string;
-  onPress?: () => void;
-  isLast?: boolean;
-  colors: any;
-}) {
+/** Phone layout column (native + narrow web). */
+const PHONE_MAX_WIDTH = 720;
+
+type SectionKey = "appearance" | "accessibility" | "notifications" | "support" | "account";
+const SECTIONS: { key: SectionKey; icon: IconName }[] = [
+  { key: "appearance", icon: "color-palette-outline" },
+  { key: "accessibility", icon: "accessibility-outline" },
+  { key: "notifications", icon: "notifications-outline" },
+  { key: "support", icon: "help-buoy-outline" },
+  { key: "account", icon: "person-circle-outline" },
+];
+
+/** Shortcut pill under the profile card that scrolls to a section. */
+function JumpChip({ icon, label, onPress }: { icon: IconName; label: string; onPress: () => void }) {
+  const { colors } = useAppTheme();
+  const hover = useHover();
   return (
-    <TouchableOpacity
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        gap: 14,
-        paddingVertical: 14,
-        borderBottomWidth: isLast ? 0 : 1,
-        borderBottomColor: colors.divider,
-      }}
+    <Pressable
       onPress={onPress}
-      activeOpacity={0.7}
+      {...hover}
+      accessibilityRole="button"
+      style={(state) => [
+        pressFade(state),
+        {
+          height: 38, paddingLeft: 12, paddingRight: 15, borderRadius: 19, borderWidth: 1, flexDirection: "row", alignItems: "center", gap: 7,
+          borderColor: hover.hovered ? colors.accent : colors.border, backgroundColor: hover.hovered ? colors.accentTint : colors.card,
+        },
+        hoverTransition,
+      ]}
     >
-      <Ionicons name={icon} size={18} color={colors.accent} />
-      <Text style={{ flex: 1, fontFamily: Fonts.body, fontSize: 14, color: colors.text }}>{label}</Text>
-      {value ? <Text style={{ fontFamily: Fonts.body, fontSize: 12, color: colors.textMuted }}>{value}</Text> : null}
-      <Ionicons name="chevron-forward" size={14} color={colors.textMuted} />
-    </TouchableOpacity>
+      <Ionicons name={icon} size={15} color={colors.accent} />
+      <Text style={{ fontFamily: Fonts.body, fontSize: 13.5, color: colors.text }}>{label}</Text>
+    </Pressable>
   );
 }
 
-function SectionLabel({ children, colors }: { children: React.ReactNode; colors: any }) {
-  return (
-    <Text
-      style={{
-        fontFamily: Fonts.heading,
-        fontSize: 11,
-        letterSpacing: 0.8,
-        textTransform: "uppercase",
-        color: colors.textMuted,
-        marginTop: 22,
-        marginBottom: 2,
-      }}
-    >
-      {children}
-    </Text>
-  );
-}
-
-// ── Main ──────────────────────────────────────────────────────────────────────
+/**
+ * Settings — one shared screen for phone and web. Phones (and narrow web) get a
+ * single scrolling page: a burgundy profile card, shortcut chips, then Look
+ * (theme + language, applied on tap), Accessibility, Notifications, Help and
+ * Account, each explained in a line. Desktop web (≥1024) gets the page header
+ * with the profile card and a labelled sidebar + panel layout (`SettingsWeb`).
+ */
 export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
-  const { colors, isDark } = useAppTheme();
-  const { reduceMotion } = useAppSettings();
-  const wide = useIsWideWeb(900); // web ≥900px: two-column, wider settings
+  const { colors } = useAppTheme();
+  const settings = useAppSettings();
+  const { reduceMotion } = settings;
+  const { favouriteIds } = useFavourites();
+  const insets = useSafeAreaInsets();
+  const desktop = useIsDesktopWeb();
   const scrollRef = useRef<ScrollView>(null);
+  const columnY = useRef(0);
+  const sectionY = useRef<Partial<Record<SectionKey, number>>>({});
+  const [panel, setPanel] = useState<PanelKey>("profile");
   const [user, setUser] = useState<Profile | null>(null);
   const [authUser, setAuthUser] = useState<User | null>(null);
   const [isEditingName, setIsEditingName] = useState(false);
@@ -105,7 +96,7 @@ export default function Settings() {
   const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false);
   const [deleteError, setDeleteError] = useState("");
 
-  const pulseAnim = useRef(new Animated.Value(1)).current;
+  const [pulseAnim] = useState(() => new Animated.Value(1));
 
   const assetToBytes = async (asset: ImagePicker.ImagePickerAsset) => {
     if (Platform.OS === "web") {
@@ -135,10 +126,6 @@ export default function Settings() {
     return new Uint8Array(byteNumbers);
   };
 
-  useEffect(() => {
-    fetchUserProfile();
-  }, []);
-
   const startPulse = () => {
     if (reduceMotion) return; // Respect the Reduce Motion accessibility setting.
     Animated.sequence([
@@ -157,25 +144,32 @@ export default function Settings() {
     ]).start();
   };
 
-  const fetchUserProfile = async () => {
-    try {
-      const au = await getCurrentUser();
+  // Load the signed-in user and their profile once on mount.
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      try {
+        const au = await getCurrentUser();
 
-      if (au) {
-        setAuthUser(au);
-        const data = await ensureProfileRecord(au.id);
+        if (au && active) {
+          setAuthUser(au);
+          const data = await ensureProfileRecord(au.id);
 
-        if (data) {
-          setUser(data);
-          setEditedName(data.full_name || "");
+          if (data && active) {
+            setUser(data);
+            setEditedName(data.full_name || "");
+          }
         }
+      } catch (error) {
+        console.error("Error fetching profile:", error);
+      } finally {
+        if (active) setInitialLoading(false);
       }
-    } catch (error) {
-      console.error("Error fetching profile:", error);
-    } finally {
-      setInitialLoading(false);
-    }
-  };
+    })();
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const handlePickAvatar = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -280,8 +274,8 @@ export default function Settings() {
     }
   };
 
-  // Opens the confirmation dialog. Uses a cross-platform <Modal> rather than
-  // Alert.alert, which react-native-web does not render.
+  // Opens the confirmation dialog (an in-app overlay: Alert.alert doesn't
+  // render on react-native-web).
   const handleDeleteAccount = () => {
     setDeleteError("");
     setConfirmDeleteOpen(true);
@@ -289,7 +283,7 @@ export default function Settings() {
 
   if (initialLoading) {
     return (
-      <View style={[styles.loadingContainer, { backgroundColor: colors.background }]}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: colors.background }}>
         <ActivityIndicator size="large" color={colors.accent} />
       </View>
     );
@@ -304,251 +298,206 @@ export default function Settings() {
     .toUpperCase();
 
   const version = Constants.expoConfig?.version ?? "1.0.0";
+  const go = (path: string) => router.push(path as any);
 
-  // Editable avatar + name + email. Shared between the native/narrow list (top
-  // of the page) and the web master-detail's Profile panel.
-  const profileBlock = (
-    <View style={{ flexDirection: "row", alignItems: "center", gap: 14, marginTop: 8, marginBottom: 4 }}>
-      <TouchableOpacity onPress={handlePickAvatar} activeOpacity={0.85} disabled={loadingAvatar}>
-        <Animated.View
-          style={{
-            width: 56,
-            height: 56,
-            borderRadius: 999,
-            borderWidth: 1,
-            borderColor: colors.accent,
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden",
-            transform: [{ scale: pulseAnim }],
-          }}
-        >
-          {loadingAvatar ? (
-            <ActivityIndicator color={colors.accent} size="small" />
-          ) : user?.avatar_url ? (
-            <Image source={{ uri: user.avatar_url }} style={{ width: 56, height: 56 }} />
-          ) : (
-            <Text style={{ fontFamily: Fonts.heading, fontSize: 20, color: colors.accent }}>{initials}</Text>
-          )}
-        </Animated.View>
-      </TouchableOpacity>
+  const profileCard = (
+    <ProfileCard
+      name={user?.full_name}
+      email={authUser?.email}
+      avatarUrl={user?.avatar_url}
+      initials={initials}
+      loadingAvatar={loadingAvatar}
+      onPickAvatar={handlePickAvatar}
+      pulse={pulseAnim}
+      editing={isEditingName}
+      editedName={editedName}
+      onChangeName={setEditedName}
+      savingName={loadingName}
+      onStartEdit={() => setIsEditingName(true)}
+      onSaveName={handleSaveName}
+      onCancelEdit={handleCancelEdit}
+      favouritesCount={favouriteIds.length}
+      onEditProfile={() => (desktop ? setPanel("profile") : go("/profile"))}
+      onFavourites={() => router.navigate("/(tabs)/favourites" as any)}
+      desktop={desktop}
+    />
+  );
 
-      <View style={{ flex: 1 }}>
-        {isEditingName ? (
-          <View style={{ gap: 8 }}>
-            <TextInput
-              style={{
-                fontFamily: Fonts.heading,
-                fontSize: 17,
-                color: colors.text,
-                borderBottomWidth: 1,
-                borderBottomColor: colors.accent,
-                paddingBottom: 4,
-              }}
-              value={editedName}
-              onChangeText={setEditedName}
-              placeholder={t("settings.yourNamePlaceholder")}
-              placeholderTextColor={colors.textMuted}
-              editable={!loadingName}
-              autoFocus
-              returnKeyType="done"
-              onSubmitEditing={handleSaveName}
-            />
-            <View style={{ flexDirection: "row", gap: 8 }}>
-              <TouchableOpacity
-                style={{
-                  borderWidth: 1, borderColor: colors.accent, borderRadius: 4,
-                  paddingHorizontal: 16, paddingVertical: 7, minWidth: 60, alignItems: "center",
-                }}
-                onPress={handleSaveName}
-                disabled={loadingName}
-              >
-                {loadingName ? (
-                  <ActivityIndicator color={colors.accent} size="small" />
-                ) : (
-                  <Text style={{ fontFamily: Fonts.heading, color: colors.accent, fontSize: 13 }}>{t("settings.save")}</Text>
-                )}
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  borderWidth: 1, borderColor: colors.divider, borderRadius: 4,
-                  paddingHorizontal: 14, paddingVertical: 7,
-                }}
-                onPress={handleCancelEdit}
-              >
-                <Text style={{ fontFamily: Fonts.heading, color: colors.text, fontSize: 13 }}>{t("settings.cancel")}</Text>
-              </TouchableOpacity>
+  const dialog = confirmDeleteOpen ? (
+    <DeleteAccountDialog deleting={deleting} error={deleteError} onCancel={() => setConfirmDeleteOpen(false)} onConfirm={performDeleteAccount} />
+  ) : null;
+
+  const pageTitle = (big: boolean) => (
+    <View>
+      <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: big ? 12 : 11, letterSpacing: 1.9, textTransform: "uppercase", color: colors.accent }}>
+        {t("settings.kicker")}
+      </Text>
+      <Text
+        accessibilityRole="header"
+        style={{
+          marginTop: big ? 18 : 12, fontFamily: Fonts.display, fontSize: big ? 84 : 46,
+          lineHeight: big ? 84 : 48, letterSpacing: big ? -1.2 : -0.4, color: colors.text,
+        }}
+      >
+        {t("settings.title")}
+      </Text>
+      <Text style={{ marginTop: big ? 18 : 10, maxWidth: 520, fontFamily: Fonts.body, fontSize: big ? 18 : 15, lineHeight: big ? 29 : 23, color: colors.textSecondary }}>
+        {t("settings.subtitle")}
+      </Text>
+    </View>
+  );
+
+  if (desktop) {
+    return (
+      <View style={{ flex: 1, backgroundColor: colors.background }}>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View style={{ width: "100%", maxWidth: WEB_PAGE_MAX_WIDTH, alignSelf: "center", paddingHorizontal: WEB_PAGE_GUTTER, paddingTop: 64, paddingBottom: 96 }}>
+            <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 56 }}>
+              <View style={{ flex: 1, minWidth: 0 }}>{pageTitle(true)}</View>
+              <View style={{ width: 480 }}>{profileCard}</View>
             </View>
+            <View style={{ height: 1, backgroundColor: colors.divider, marginTop: 48, marginBottom: 44 }} />
+            <SettingsWeb selected={panel} onSelect={setPanel} onLogout={handleLogout} onDeleteAccount={handleDeleteAccount} deleting={deleting} />
           </View>
-        ) : (
-          <TouchableOpacity
-            onPress={() => setIsEditingName(true)}
-            style={{ flexDirection: "row", alignItems: "center", gap: 6 }}
-            activeOpacity={0.7}
-          >
-            <Text style={{ fontFamily: Fonts.heading, fontSize: 17, color: colors.text }}>
-              {user?.full_name || t("settings.addYourName")}
-            </Text>
-            <Ionicons name="pencil-outline" size={13} color={colors.textMuted} />
-          </TouchableOpacity>
-        )}
-        <Text style={{ fontFamily: Fonts.body, fontSize: 12, color: colors.textSecondary, marginTop: 2 }}>
-          {authUser?.email || ""}
-        </Text>
+          <SiteFooter onHome={() => router.push("/" as any)} />
+        </ScrollView>
+        {dialog}
       </View>
+    );
+  }
+
+  const jumpTo = (key: SectionKey) => {
+    const y = sectionY.current[key];
+    if (y == null) return;
+    scrollRef.current?.scrollTo({ y: Math.max(0, columnY.current + y - 16), animated: !reduceMotion });
+  };
+
+  const section = (key: SectionKey, children: ReactNode, hint?: string) => (
+    <View key={key} onLayout={(e) => (sectionY.current[key] = e.nativeEvent.layout.y)}>
+      <SectionHeading
+        icon={SECTIONS.find((s) => s.key === key)?.icon}
+        kicker={t(`settings.groups.${key}.kicker`)}
+        title={t(`settings.groups.${key}.title`)}
+        hint={hint}
+      />
+      {children}
     </View>
   );
 
   return (
-    <View style={{ flex: 1 }}>
-    <ScrollView
-      ref={scrollRef}
-      style={{ flex: 1, backgroundColor: colors.background }}
-      contentContainerStyle={{ alignItems: "center", paddingBottom: 48 }}
-      showsVerticalScrollIndicator={false}
-    >
-      <View style={{ width: "100%", maxWidth: wide ? 1180 : 640, paddingHorizontal: 24, paddingTop: 64 }}>
-        <ScreenHeader kicker={t("settings.sections.account")} title={t("settings.title")} titleSize={30} />
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScrollView ref={scrollRef} showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 120 }}>
+        <ContentWrap maxWidth={PHONE_MAX_WIDTH}>
+          <View style={{ paddingHorizontal: 20, paddingTop: (isWeb ? 20 : insets.top) + 22 }}>
+            {pageTitle(false)}
+            <View style={{ marginTop: 22 }}>{profileCard}</View>
 
-        {wide ? (
-          /* Web: icon rail + content pane (Profile shown first). */
-          <View style={{ marginTop: 18 }}>
-            <SettingsWeb
-              version={version}
-              onLogout={handleLogout}
-              onDeleteAccount={handleDeleteAccount}
-              deleting={deleting}
-            />
-          </View>
-        ) : (
-          /* Native / narrow web: the original single-column list (unchanged). */
-          <>
-            <View style={{ marginTop: 14 }}>{profileBlock}</View>
-
-            <View style={{ height: 1, backgroundColor: colors.divider, marginTop: 18 }} />
-
-            {/* ── Account ── */}
-            <SectionLabel colors={colors}>{t("settings.sections.account")}</SectionLabel>
-            <SettingsRow icon="person-outline" label={t("settings.items.profile")} onPress={() => router.push("/profile")} colors={colors} />
-            <SettingsRow icon="notifications-outline" label={t("settings.items.emailNotifications")} onPress={() => router.push("/email-notifications")} isLast colors={colors} />
-
-            {/* ── Preferences ── */}
-            <SectionLabel colors={colors}>{t("settings.sections.preferences")}</SectionLabel>
-            <SettingsRow icon="sunny-outline" label={t("settings.items.appearance")} onPress={() => router.push("/appearance")} colors={colors} />
-            <SettingsRow icon="globe-outline" label={t("settings.language")} onPress={() => router.push("/language")} colors={colors} />
-            <SettingsRow icon="accessibility-outline" label={t("settings.items.accessibility")} onPress={() => router.push("/accessibility")} isLast colors={colors} />
-
-            {/* ── Support ── */}
-            <SectionLabel colors={colors}>{t("settings.sections.support")}</SectionLabel>
-            <SettingsRow icon="help-circle-outline" label={t("settings.items.helpCenter")} onPress={() => router.push("/help-center")} colors={colors} />
-            <SettingsRow icon="information-circle-outline" label={t("settings.items.about")} onPress={() => router.push("/about")} colors={colors} />
-            <SettingsRow icon="document-text-outline" label={t("settings.items.termsOfService")} onPress={() => router.push("/terms")} colors={colors} />
-            <SettingsRow icon="shield-checkmark-outline" label={t("settings.items.privacyPolicy")} onPress={() => router.push("/privacy")} isLast colors={colors} />
-
-            {/* ── Sign out ── */}
-            <TouchableOpacity
-              style={{
-                borderWidth: 1, borderColor: colors.divider, borderRadius: 4,
-                paddingVertical: 13, alignItems: "center", marginTop: 26, marginBottom: 18,
-              }}
-              onPress={handleLogout}
-              activeOpacity={0.8}
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              style={{ marginTop: 16, marginHorizontal: -20 }}
+              contentContainerStyle={{ paddingHorizontal: 20, gap: 8 }}
             >
-              <Text style={{ fontFamily: Fonts.heading, fontSize: 15, color: colors.accent }}>{t("settings.logout") || "Log Out"}</Text>
-            </TouchableOpacity>
+              {SECTIONS.map((s) => (
+                <JumpChip key={s.key} icon={s.icon} label={t(`settings.groups.${s.key}.kicker`)} onPress={() => jumpTo(s.key)} />
+              ))}
+            </ScrollView>
 
-            <TouchableOpacity style={{ padding: 12, alignItems: "center", marginBottom: 12 }} onPress={handleDeleteAccount} activeOpacity={0.7} disabled={deleting}>
-              {deleting ? (
-                <ActivityIndicator color={isDark ? "#fca5a5" : "#dc2626"} size="small" />
-              ) : (
-                <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: isDark ? "#fca5a5" : "#dc2626", textDecorationLine: "underline" }}>
-                  {t("settings.deleteAccount")}
-                </Text>
+            <View onLayout={(e) => (columnY.current = e.nativeEvent.layout.y)} style={{ marginTop: 38, gap: 42 }}>
+              {section(
+                "appearance",
+                <SettingsCard padded>
+                  <FieldLabel label={t("settings.theme")} />
+                  <ThemePicker />
+                  <View style={{ height: 1, backgroundColor: colors.softBorder, marginVertical: 18 }} />
+                  <FieldLabel label={t("settings.language")} />
+                  <LanguagePicker />
+                </SettingsCard>,
+                t("settings.groups.appearance.hint"),
               )}
-            </TouchableOpacity>
 
-            <Text style={{ textAlign: "center", fontFamily: Fonts.body, fontSize: 12, color: colors.textMuted }}>
-              {t("settings.appVersion", { version })}
-            </Text>
-          </>
-        )}
-      </View>
-    </ScrollView>
+              {section(
+                "accessibility",
+                <SettingsCard>
+                  <ToggleRow
+                    icon="pulse-outline"
+                    title={t("accessibility.reduceMotion")}
+                    hint={t("accessibility.reduceMotionHint")}
+                    value={settings.reduceMotion}
+                    onValueChange={settings.setReduceMotion}
+                  />
+                  <RowDivider />
+                  <ToggleRow
+                    icon="text-outline"
+                    title={t("accessibility.largeText")}
+                    hint={t("accessibility.largeTextHint")}
+                    value={settings.largeText}
+                    onValueChange={settings.setLargeText}
+                  />
+                </SettingsCard>,
+                t("accessibility.intro"),
+              )}
 
-      {/* Delete-account confirmation. An explicit absolute overlay (not RN
-          <Modal>, which does not reliably stack above the app on
-          react-native-web). Confirming permanently deletes the account + data
-          via the delete-account Edge Function. */}
-      {confirmDeleteOpen ? (
-        <View
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            zIndex: 1000,
-            elevation: 1000,
-            backgroundColor: "rgba(0,0,0,0.5)",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: 24,
-          }}
-        >
-          <View style={{ width: "100%", maxWidth: 440, backgroundColor: colors.surface, borderRadius: 16, padding: 24, gap: 12 }}>
-            <Text style={{ fontFamily: Fonts.heading, fontSize: 20, color: colors.text }}>
-              {t("settings.deleteAccountConfirmTitle")}
-            </Text>
-            <Text style={{ fontFamily: Fonts.body, fontSize: 14, lineHeight: 21, color: colors.textSecondary }}>
-              {t("settings.deleteAccountConfirmMessage")}
-            </Text>
-            {deleteError ? (
-              <Text style={{ fontFamily: Fonts.body, fontSize: 13, color: "#dc2626" }}>{deleteError}</Text>
-            ) : null}
-            <View style={{ flexDirection: "row", gap: 10, marginTop: 8, justifyContent: "flex-end" }}>
-              <TouchableOpacity
-                onPress={() => setConfirmDeleteOpen(false)}
-                disabled={deleting}
-                activeOpacity={0.7}
-                style={{ paddingHorizontal: 18, paddingVertical: 11, borderRadius: 8, borderWidth: 1, borderColor: colors.divider }}
-              >
-                <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 14, color: colors.text }}>{t("settings.cancel")}</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={performDeleteAccount}
-                disabled={deleting}
-                activeOpacity={0.85}
-                style={{
-                  paddingHorizontal: 18,
-                  paddingVertical: 11,
-                  borderRadius: 8,
-                  backgroundColor: isDark ? "#7f1d1d" : "#dc2626",
-                  minWidth: 132,
-                  alignItems: "center",
-                  justifyContent: "center",
-                  opacity: deleting ? 0.85 : 1,
-                }}
-              >
-                {deleting ? (
-                  <ActivityIndicator color="#ffffff" size="small" />
-                ) : (
-                  <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 14, color: "#ffffff" }}>
-                    {t("settings.deleteAccountConfirm")}
-                  </Text>
-                )}
-              </TouchableOpacity>
+              {section(
+                "notifications",
+                <>
+                  <SettingsCard>
+                    <ToggleRow
+                      icon="megaphone-outline"
+                      title={t("emailNotifications.marketing")}
+                      hint={t("emailNotifications.marketingHint")}
+                      value={settings.emailMarketing}
+                      onValueChange={settings.setEmailMarketing}
+                    />
+                    <RowDivider />
+                    <ToggleRow
+                      icon="sparkles-outline"
+                      title={t("emailNotifications.productUpdates")}
+                      hint={t("emailNotifications.productUpdatesHint")}
+                      value={settings.emailUpdates}
+                      onValueChange={settings.setEmailUpdates}
+                    />
+                  </SettingsCard>
+                  <NotificationsFootnote />
+                </>,
+                t("emailNotifications.intro"),
+              )}
+
+              {section(
+                "support",
+                <SettingsCard>
+                  <NavRow icon="help-buoy-outline" title={t("settings.items.helpCenter")} hint={t("settings.hints.help")} onPress={() => go("/help-center")} />
+                  <RowDivider />
+                  <NavRow icon="information-circle-outline" title={t("about.title", { app: "U&I" })} hint={t("settings.hints.about")} onPress={() => go("/about")} />
+                  <RowDivider />
+                  <NavRow icon="document-text-outline" title={t("settings.items.termsOfService")} hint={t("settings.hints.terms")} onPress={() => go("/terms")} />
+                  <RowDivider />
+                  <NavRow icon="shield-checkmark-outline" title={t("settings.items.privacyPolicy")} hint={t("settings.hints.privacy")} onPress={() => go("/privacy")} />
+                  <RowDivider />
+                  <NavRow icon="images-outline" title={t("photoCredits.title")} hint={t("settings.hints.photoCredits")} onPress={() => go("/photo-credits")} />
+                </SettingsCard>,
+              )}
+
+              {section(
+                "account",
+                <View style={{ gap: 14 }}>
+                  <SettingsCard>
+                    <NavRow icon="person-outline" title={t("settings.items.profileSecurity")} hint={t("settings.hints.profile")} onPress={() => go("/profile")} />
+                  </SettingsCard>
+                  <OutlineButton label={t("settings.logout")} icon="log-out-outline" onPress={handleLogout} />
+                  <DangerZone onDelete={handleDeleteAccount} deleting={deleting} />
+                </View>,
+              )}
+            </View>
+
+            <View style={{ alignItems: "center", marginTop: 48, gap: 6 }}>
+              <Wordmark size={30} />
+              <Text style={{ fontFamily: Fonts.body, fontSize: 12.5, color: colors.textMuted }}>{t("settings.appVersion", { version })}</Text>
             </View>
           </View>
-        </View>
-      ) : null}
+        </ContentWrap>
+      </ScrollView>
+      {dialog}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  loadingContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});

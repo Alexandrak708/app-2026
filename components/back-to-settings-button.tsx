@@ -1,68 +1,47 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet, View } from 'react-native';
+import { Pressable, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
-import { ThemedText } from '@/components/themed-text';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { useAppTheme } from '@/hooks/use-theme-color';
+import { Fonts } from '@/constants/typography';
+import { hoverTransition, useHover } from '@/components/program-ui';
 
-export function BackToSettingsButton({ label }: { label?: string } = {}) {
+/** Hairline pill "‹ Back to Settings" used at the top of every settings screen. */
+export function BackToSettingsButton({ label, onPress }: { label?: string; onPress?: () => void } = {}) {
   const router = useRouter();
   const { t } = useTranslation();
+  const { colors } = useAppTheme();
+  const hover = useHover();
   const text = label ?? t('settings.backToSettings');
-  const colorScheme = useColorScheme() ?? 'light';
-  const isDark = colorScheme === 'dark';
-  const palette = Colors[isDark ? 'dark' : 'light'];
 
   return (
-    <TouchableOpacity
-      onPress={() => router.back()}
-      activeOpacity={0.8}
+    <Pressable
+      onPress={onPress ?? (() => router.back())}
+      {...hover}
       accessibilityRole="button"
       accessibilityLabel={text}
-      hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }}
-      style={[
-        styles.button,
+      hitSlop={10}
+      style={({ pressed }) => [
         {
-          backgroundColor: isDark ? '#171a21' : '#ffffff',
-          borderColor: isDark ? '#2a303c' : '#e6e9ee',
+          alignSelf: 'flex-start',
+          height: 42,
+          paddingLeft: 10,
+          paddingRight: 16,
+          borderRadius: 21,
+          borderWidth: 1,
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 6,
+          borderColor: hover.hovered ? colors.accent : colors.border,
+          backgroundColor: hover.hovered ? colors.accentTint : colors.card,
+          opacity: pressed ? 0.8 : 1,
         },
+        hoverTransition,
       ]}
     >
-      <View style={styles.content}>
-        <Ionicons name="chevron-back" size={16} color={palette.text} />
-        <ThemedText type="defaultSemiBold" style={styles.label}>
-          {text}
-        </ThemedText>
-      </View>
-    </TouchableOpacity>
+      <Ionicons name="chevron-back" size={18} color={hover.hovered ? colors.accent : colors.text} />
+      <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 14, color: hover.hovered ? colors.accent : colors.text }}>{text}</Text>
+    </Pressable>
   );
 }
-
-const styles = StyleSheet.create({
-  button: {
-    alignSelf: 'flex-start',
-    marginTop: 4,
-    marginBottom: 16,
-    borderRadius: 999,
-    borderWidth: 1,
-    minHeight: 42,
-    minWidth: 42,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    shadowColor: '#000',
-    shadowOpacity: 0.08,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 3 },
-    elevation: 3,
-  },
-  content: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  label: {
-    fontSize: 14,
-  },
-});

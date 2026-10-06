@@ -1,12 +1,47 @@
 import React, { useMemo } from 'react';
-import { View, ScrollView, StyleSheet, Linking } from 'react-native';
+import { Linking, Pressable, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-import { ThemedView } from '@/components/themed-view';
-import { ThemedText } from '@/components/themed-text';
-import { BackToSettingsButton } from '@/components/back-to-settings-button';
-import { ContentWrap } from '@/components/responsive';
 import { useAppTheme } from '@/hooks/use-theme-color';
+import { Fonts } from '@/constants/typography';
+import { RowDivider, SettingsCard, SettingsPage } from '@/components/settings-ui';
+import { hoverTransition, useHover } from '@/components/program-ui';
 import { PHOTO_CREDITS } from '@/data/photo-credits';
+
+type CreditRow = (typeof PHOTO_CREDITS)[number] & { name: string };
+
+function Credit({ credit }: { credit: CreditRow }) {
+  const { t } = useTranslation();
+  const { colors } = useAppTheme();
+  const hover = useHover();
+  const commons = credit.kind === 'commons';
+  return (
+    <Pressable
+      onPress={() => Linking.openURL(credit.sourceUrl).catch(() => {})}
+      {...hover}
+      accessibilityRole="link"
+      accessibilityLabel={`${credit.name} — ${commons ? t('photoCredits.viewOnCommons') : t('photoCredits.viewWebsite')}`}
+      style={({ pressed }) => [
+        {
+          flexDirection: 'row', alignItems: 'center', gap: 14, paddingVertical: 13, paddingHorizontal: 12, borderRadius: 17,
+          backgroundColor: hover.hovered ? colors.mutedSurface : 'transparent', opacity: pressed ? 0.82 : 1,
+        },
+        hoverTransition,
+      ]}
+    >
+      <View style={{ width: 42, height: 42, borderRadius: 13, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.accentTint }}>
+        <Ionicons name={commons ? 'images-outline' : 'business-outline'} size={19} color={colors.accent} />
+      </View>
+      <View style={{ flex: 1, gap: 2 }}>
+        <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 14.5, lineHeight: 20, color: hover.hovered ? colors.accent : colors.text }}>{credit.name}</Text>
+        <Text style={{ fontFamily: Fonts.body, fontSize: 12.5, lineHeight: 18, color: colors.textSecondary }}>
+          {commons ? t('photoCredits.byAuthor', { author: credit.author, license: credit.license }) : t('photoCredits.byInstitution')}
+        </Text>
+      </View>
+      <Ionicons name="open-outline" size={17} color={hover.hovered ? colors.accent : colors.textMuted} />
+    </Pressable>
+  );
+}
 
 /**
  * Attribution for every university photo. Most photos come from Wikimedia
@@ -15,7 +50,6 @@ import { PHOTO_CREDITS } from '@/data/photo-credits';
  */
 export default function PhotoCredits() {
   const { t } = useTranslation();
-  const { colors } = useAppTheme();
 
   const rows = useMemo(
     () =>
@@ -26,46 +60,15 @@ export default function PhotoCredits() {
   );
 
   return (
-    <ThemedView style={styles.container}>
-      <BackToSettingsButton label={t('photoCredits.back')} />
-      <ScrollView contentContainerStyle={styles.card} showsVerticalScrollIndicator={false}>
-        <ContentWrap maxWidth={760} style={{ width: '100%', gap: 10 }}>
-          <ThemedText type="title">{t('photoCredits.title')}</ThemedText>
-          <ThemedText style={styles.paragraph}>{t('photoCredits.intro')}</ThemedText>
-
-          {rows.map((c) => (
-            <View key={c.universityId} style={[styles.row, { borderColor: colors.border }]}>
-              <ThemedText type="defaultSemiBold" style={styles.name}>
-                {c.name}
-              </ThemedText>
-              <ThemedText style={styles.meta}>
-                {c.kind === 'commons'
-                  ? t('photoCredits.byAuthor', { author: c.author, license: c.license })
-                  : t('photoCredits.byInstitution')}
-              </ThemedText>
-              <ThemedText
-                style={styles.link}
-                lightColor={colors.accent}
-                darkColor={colors.accent}
-                onPress={() => Linking.openURL(c.sourceUrl).catch(() => {})}
-                accessibilityRole="link"
-              >
-                {c.kind === 'commons' ? t('photoCredits.viewOnCommons') : t('photoCredits.viewWebsite')}
-              </ThemedText>
-            </View>
-          ))}
-        </ContentWrap>
-      </ScrollView>
-    </ThemedView>
+    <SettingsPage kicker={t('settings.groups.support.kicker')} title={t('photoCredits.title')} intro={t('photoCredits.intro')} backLabel={t('photoCredits.back')} maxWidth={760}>
+      <SettingsCard>
+        {rows.map((credit, index) => (
+          <View key={credit.universityId}>
+            {index ? <RowDivider /> : null}
+            <Credit credit={credit} />
+          </View>
+        ))}
+      </SettingsCard>
+    </SettingsPage>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1 },
-  card: { padding: 24, paddingTop: 76, paddingBottom: 48, gap: 10 },
-  paragraph: { opacity: 0.85, lineHeight: 22, marginBottom: 6 },
-  row: { paddingVertical: 12, borderTopWidth: StyleSheet.hairlineWidth, gap: 2 },
-  name: { fontSize: 15 },
-  meta: { opacity: 0.7, fontSize: 13, lineHeight: 19 },
-  link: { fontSize: 13, fontWeight: '600', marginTop: 2 },
-});

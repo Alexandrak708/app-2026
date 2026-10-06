@@ -1845,7 +1845,57 @@
       "helpCenter": "Help Center",
       "about": "About",
       "termsOfService": "Terms of Service",
-      "privacyPolicy": "Privacy Policy"
+      "privacyPolicy": "Privacy Policy",
+      "appearanceLanguage": "Look & language",
+      "profileSecurity": "Profile & security"
+    },
+    "kicker": "Your U&I",
+    "subtitle": "Profile, look, notifications and help — all in one place. Changes are saved right away.",
+    "theme": "Theme",
+    "editProfile": "Edit profile",
+    "favouritesCount": "Favourites · {{count}}",
+    "changePhoto": "Change photo",
+    "editName": "Edit name",
+    "dangerHint": "Permanently deletes your profile and favourites. This can't be undone.",
+    "previewTitle": "Preview",
+    "previewHeading": "This is how text looks",
+    "previewText": "Turn on “Large text” and this sample grows together with the whole app.",
+    "panels": {
+      "profile": "Name, email, phone and password. Changes are saved automatically."
+    },
+    "groups": {
+      "appearance": {
+        "kicker": "Look",
+        "title": "How U&I looks",
+        "hint": "Pick a theme and a language — the change shows right away."
+      },
+      "accessibility": {
+        "kicker": "Accessibility",
+        "title": "Easier for you"
+      },
+      "notifications": {
+        "kicker": "Notifications",
+        "title": "What we email you"
+      },
+      "support": {
+        "kicker": "Help",
+        "title": "Help & information"
+      },
+      "account": {
+        "kicker": "Account",
+        "title": "Your account"
+      }
+    },
+    "hints": {
+      "profile": "Name, email, phone and password",
+      "notifications": "News and updates by email",
+      "appearance": "Light or dark theme and language",
+      "accessibility": "Animations and text size",
+      "help": "Answers to common questions",
+      "about": "What U&I is and what you can do",
+      "terms": "The rules for using the app",
+      "privacy": "How we protect your data",
+      "photoCredits": "Who took the university photos"
     }
   },
   "appearance": {
@@ -1927,7 +1977,7 @@
     "reduceMotion": "Reduce Motion",
     "reduceMotionHint": "Turns off non-essential animations and movement.",
     "largeText": "Large Text",
-    "largeTextHint": "Increases the text size on the information screens."
+    "largeTextHint": "Makes text larger across the whole app."
   },
   "helpCenter": {
     "title": "Help Center",
