@@ -84,6 +84,8 @@ export default function Settings() {
   const scrollRef = useRef<ScrollView>(null);
   const columnY = useRef(0);
   const sectionY = useRef<Partial<Record<SectionKey, number>>>({});
+  const scrollY = useRef(0);
+  const panelTop = useRef(0);
   const [panel, setPanel] = useState<PanelKey>("profile");
   const [user, setUser] = useState<Profile | null>(null);
   const [authUser, setAuthUser] = useState<User | null>(null);
@@ -300,6 +302,13 @@ export default function Settings() {
   const version = Constants.expoConfig?.version ?? "1.0.0";
   const go = (path: string) => router.push(path as any);
 
+  // Desktop: switching section while scrolled past the panel's top brings its heading back into view.
+  const selectPanel = (key: PanelKey) => {
+    setPanel(key);
+    const top = Math.max(0, panelTop.current - 24);
+    if (scrollY.current > top) scrollRef.current?.scrollTo({ y: top, animated: !reduceMotion });
+  };
+
   const profileCard = (
     <ProfileCard
       name={user?.full_name}
@@ -317,7 +326,7 @@ export default function Settings() {
       onSaveName={handleSaveName}
       onCancelEdit={handleCancelEdit}
       favouritesCount={favouriteIds.length}
-      onEditProfile={() => (desktop ? setPanel("profile") : go("/profile"))}
+      onEditProfile={() => (desktop ? selectPanel("profile") : go("/profile"))}
       onFavourites={() => router.navigate("/(tabs)/favourites" as any)}
       desktop={desktop}
     />
@@ -350,14 +359,21 @@ export default function Settings() {
   if (desktop) {
     return (
       <View style={{ flex: 1, backgroundColor: colors.background }}>
-        <ScrollView showsVerticalScrollIndicator={false}>
+        <ScrollView
+          ref={scrollRef}
+          showsVerticalScrollIndicator={false}
+          scrollEventThrottle={64}
+          onScroll={(e) => (scrollY.current = e.nativeEvent.contentOffset.y)}
+        >
           <View style={{ width: "100%", maxWidth: WEB_PAGE_MAX_WIDTH, alignSelf: "center", paddingHorizontal: WEB_PAGE_GUTTER, paddingTop: 64, paddingBottom: 96 }}>
             <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 56 }}>
               <View style={{ flex: 1, minWidth: 0 }}>{pageTitle(true)}</View>
               <View style={{ width: 480 }}>{profileCard}</View>
             </View>
             <View style={{ height: 1, backgroundColor: colors.divider, marginTop: 48, marginBottom: 44 }} />
-            <SettingsWeb selected={panel} onSelect={setPanel} onLogout={handleLogout} onDeleteAccount={handleDeleteAccount} deleting={deleting} />
+            <View onLayout={(e) => (panelTop.current = e.nativeEvent.layout.y)}>
+              <SettingsWeb selected={panel} onSelect={selectPanel} onLogout={handleLogout} onDeleteAccount={handleDeleteAccount} deleting={deleting} />
+            </View>
           </View>
           <SiteFooter onHome={() => router.push("/" as any)} />
         </ScrollView>

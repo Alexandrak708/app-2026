@@ -1852,6 +1852,7 @@
     "kicker": "Your U&I",
     "subtitle": "Profile, look, notifications and help — all in one place. Changes are saved right away.",
     "theme": "Theme",
+    "currentLanguage": "Current language",
     "editProfile": "Edit profile",
     "favouritesCount": "Favourites · {{count}}",
     "changePhoto": "Change photo",
@@ -1911,6 +1912,7 @@
   },
   "profile": {
     "title": "Profile",
+    "changePhoto": "Change photo",
     "name": "Name",
     "email": "Email",
     "namePlaceholder": "Your name",

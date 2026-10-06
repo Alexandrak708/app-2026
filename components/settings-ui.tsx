@@ -359,7 +359,10 @@ function LanguageTile({ code, badge, native, selected, onPress }: { code: "bg" |
         <Text style={{ fontFamily: Fonts.bodyMedium, fontSize: 13, letterSpacing: 0.5, color: selected ? "#ffffff" : colors.textSecondary }}>{badge}</Text>
       </View>
       <Text numberOfLines={1} style={{ marginTop: 8, fontFamily: Fonts.bodyMedium, fontSize: 15, color: selected ? colors.accent : colors.text }}>{native}</Text>
-      <Text numberOfLines={1} style={{ marginTop: 1, fontFamily: Fonts.body, fontSize: 12.5, color: colors.textSecondary }}>{t(`languages.${code}`)}</Text>
+      <Text numberOfLines={1} style={{ marginTop: 1, fontFamily: Fonts.body, fontSize: 12.5, color: colors.textSecondary }}>
+        {/* The name in the current language, unless that just repeats the native name. */}
+        {t(`languages.${code}`) === native ? t("settings.currentLanguage") : t(`languages.${code}`)}
+      </Text>
       {selected ? (
         <View style={{ position: "absolute", top: 8, right: 8, width: 22, height: 22, borderRadius: 11, alignItems: "center", justifyContent: "center", backgroundColor: colors.accent }}>
           <Ionicons name="checkmark" size={14} color="#ffffff" />
