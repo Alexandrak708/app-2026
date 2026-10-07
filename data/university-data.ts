@@ -597,6 +597,28 @@ export function isUniversityId(value: unknown): value is UniversityId {
   return typeof value === "string" && UNIVERSITY_IDS.has(value);
 }
 
+/**
+ * The hand-picked top 10 universities in Bulgaria, in ranking order — the only
+ * schools shown in the Home "Most searched" row (web and phone).
+ */
+export const TOP_UNIVERSITY_IDS: readonly UniversityId[] = [
+  "7", // Sofia University "St. Kliment Ohridski"
+  "8", // Technical University of Sofia
+  "10", // Medical University of Sofia
+  "9", // University of National and World Economy
+  "32", // University of Plovdiv "Paisii Hilendarski"
+  "2", // Medical University of Varna
+  "11", // New Bulgarian University
+  "3", // University of Economics – Varna
+  "30", // American University in Bulgaria
+  "45", // University of Ruse "Angel Kanchev"
+];
+
+/** `universities` narrowed to {@link TOP_UNIVERSITY_IDS}, in ranking order. */
+export function topUniversities<T extends { id: string }>(universities: T[]): T[] {
+  return TOP_UNIVERSITY_IDS.flatMap((id) => universities.find((u) => u.id === id) ?? []);
+}
+
 export function buildUniversities(t: TFunction): UniversityDisplay[] {
   return UNIVERSITY_META.map((meta) => {
     const baseKey = `universities.${meta.id}`;

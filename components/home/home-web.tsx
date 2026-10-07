@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { Image as ExpoImage } from "expo-image";
-import { buildUniversities } from "@/data/university-data";
+import { buildUniversities, topUniversities } from "@/data/university-data";
 import type { DegreeLevel, UniversityCategory, UniversityDisplay } from "@/types/university";
 import UniversityTile from "@/components/university-tile";
 import CompactUniversityCard from "@/components/compact-university-card";
@@ -192,10 +192,12 @@ export default function HomeWeb() {
   const rowWidth = (listWidth - LIST_COLUMN_GAP * (listColumns - 1)) / listColumns;
 
   const focus = universities.find((u) => u.id === FOCUS_UNIVERSITY_ID) ?? universities[0];
-  const featured = useMemo(() => [...universities].sort((a, b) => b.rating - a.rating), [universities]);
+  const featured = useMemo(() => topUniversities(universities), [universities]);
   const pageCount = Math.max(1, Math.ceil(featured.length / columns));
   const page = Math.min(featuredPage, pageCount - 1);
-  const featuredVisible = featured.slice(page * columns, page * columns + columns);
+  // The last page shows the final full row rather than a half-empty one.
+  const pageStart = Math.min(page * columns, Math.max(0, featured.length - columns));
+  const featuredVisible = featured.slice(pageStart, pageStart + columns);
 
   const hasQuery = query.trim().length > 0;
   const filtersActive = city !== null || fields.length > 0 || degrees.length > 0 || scholarshipOnly;

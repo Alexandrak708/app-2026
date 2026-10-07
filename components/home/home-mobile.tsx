@@ -9,7 +9,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Image as ExpoImage } from "expo-image";
 import Animated, { useSharedValue, useAnimatedStyle, withTiming, Easing } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { buildUniversities } from "@/data/university-data";
+import { buildUniversities, topUniversities } from "@/data/university-data";
 import UniversityTile from "@/components/university-tile";
 import CompactUniversityCard from "@/components/compact-university-card";
 import { Wordmark } from "@/components/wordmark";
@@ -138,8 +138,8 @@ export default function HomeMobile() {
   const hasQuery = searchText.trim().length > 0;
   const results = hasQuery ? searchUniversities(filtered, searchText) : filtered;
 
-  // "Most searched": the highest-rated schools first, data order within a rating.
-  const featured = [...filtered].sort((a, b) => b.rating - a.rating).slice(0, 12);
+  // "Most searched": the hand-picked top 10, in ranking order (narrowed by the active filters).
+  const featured = topUniversities(filtered);
   const cityGroups = useMemo(() => groupByCity(universities), [universities]);
   const fieldChips = useMemo(() => categoryCounts(universities), [universities]);
 

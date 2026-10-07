@@ -80,13 +80,48 @@ export function HeroBackButton({ desktop, label, top, onPress }: { desktop: bool
   );
 }
 
+/** A round white control for the hero's top-right corner (e.g. favourite); `active` fills it burgundy. */
+export function HeroIconButton({
+  icon, activeIcon, active = false, label, onPress,
+}: {
+  icon: keyof typeof Ionicons.glyphMap;
+  activeIcon?: keyof typeof Ionicons.glyphMap;
+  active?: boolean;
+  label: string;
+  onPress: () => void;
+}) {
+  const { colors } = useAppTheme();
+  const hover = useHover();
+  return (
+    <Pressable
+      onPress={onPress}
+      {...hover}
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ selected: active }}
+      hitSlop={8}
+      style={[
+        {
+          width: 42, height: 42, borderRadius: 21, alignItems: "center", justifyContent: "center",
+          backgroundColor: active ? colors.accent : hover.hovered ? "#ffffff" : "rgba(255,255,255,0.9)",
+        },
+        hoverTransition,
+      ]}
+    >
+      <Ionicons name={active && activeIcon ? activeIcon : icon} size={20} color={active ? "#ffffff" : colors.accent} />
+    </Pressable>
+  );
+}
+
 /**
- * The university photo with the scrim, a back button in the top-left corner and
- * `children` anchored to the bottom-left. `bottomInset` leaves room for the card
- * row that overlaps the hero's lower edge.
+ * The university photo with the scrim, a back button in the top-left corner,
+ * an optional `action` (e.g. a {@link HeroIconButton}) in the top-right corner
+ * and `children` anchored to the bottom-left, above the card row that overlaps
+ * the hero's lower edge. `height` is a minimum: a title that wraps further grows
+ * the hero instead of sliding under the controls.
  */
 export function PhotoHero({
-  image, color, desktop, topInset, height, backLabel, onBack, children,
+  image, color, desktop, topInset, height, backLabel, onBack, action, children,
 }: {
   image?: number;
   color?: string;
@@ -95,13 +130,16 @@ export function PhotoHero({
   height: number;
   backLabel: string;
   onBack: () => void;
+  action?: React.ReactNode;
   children: React.ReactNode;
 }) {
   const { colors } = useAppTheme();
+  const controlsTop = desktop ? 24 : topInset + 12;
   return (
     <View
       style={{
-        height,
+        minHeight: height,
+        justifyContent: "flex-end",
         borderRadius: desktop ? 28 : 0,
         borderBottomLeftRadius: 28, borderBottomRightRadius: 28,
         overflow: "hidden",
@@ -110,10 +148,17 @@ export function PhotoHero({
     >
       {image ? <ExpoImage source={image} style={FILL} contentFit="cover" transition={200} /> : null}
       <HeroScrim />
-      <HeroBackButton desktop={desktop} label={backLabel} top={desktop ? 24 : topInset + 12} onPress={onBack} />
-      <View style={{ position: "absolute", left: desktop ? 48 : 20, right: desktop ? 48 : 20, bottom: HERO_OVERLAP + (desktop ? 44 : 24) }}>
+      <View
+        style={{
+          marginTop: controlsTop + 42 + 16,
+          marginHorizontal: desktop ? 48 : 20,
+          marginBottom: HERO_OVERLAP + (desktop ? 44 : 24),
+        }}
+      >
         {children}
       </View>
+      <HeroBackButton desktop={desktop} label={backLabel} top={controlsTop} onPress={onBack} />
+      {action ? <View style={{ position: "absolute", top: controlsTop, right: desktop ? 28 : 16 }}>{action}</View> : null}
     </View>
   );
 }
@@ -135,10 +180,11 @@ export function HeroBadge({ label, filled }: { label: string; filled?: boolean }
   );
 }
 
-/** Serif white headline for a hero; long titles step down a size. */
+/** Serif white headline for a hero; long titles step down a size (twice) so they fit in three lines. */
 export function HeroTitle({ title, desktop }: { title: string; desktop: boolean }) {
   const long = title.length > 38;
-  const size = desktop ? (long ? 50 : 62) : (long ? 32 : 40);
+  const veryLong = title.length > 50;
+  const size = desktop ? (veryLong ? 44 : long ? 50 : 62) : (veryLong ? 28 : long ? 32 : 40);
   return (
     <Text
       accessibilityRole="header"
