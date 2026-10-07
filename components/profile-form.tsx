@@ -98,7 +98,7 @@ export default function ProfileForm() {
         const au = await getCurrentUser();
         setAuthUser(au);
         if (au) {
-          const p = (await ensureProfileRecord(au.id)) as Profile;
+          const p = (await ensureProfileRecord(au.id, au.user_metadata)) as Profile;
 
           let fn = p.first_name ?? '';
           let ln = p.last_name ?? '';

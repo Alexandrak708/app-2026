@@ -1896,7 +1896,8 @@
       "about": "What U&I is and what you can do",
       "terms": "The rules for using the app",
       "privacy": "How we protect your data",
-      "photoCredits": "Who took the university photos"
+      "photoCredits": "Who took the university photos",
+      "logout": "Sign out of your account on this device."
     }
   },
   "appearance": {
@@ -6801,7 +6802,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€1,000 - €2,300 / semester (private; English-taught higher)",
       "website": "https://ibsedu.bg",
-      "applyUrl": "https://ibsedu.bg/en/"
+      "applyUrl": "https://ibsedu.bg/en/admission/"
     },
     "50": {
       "name": "D. A. Tsenov Academy of Economics",
@@ -6821,7 +6822,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€0 - €200 / semester (BG/EU; Physics & Chemistry tuition-free)",
       "website": "https://www.shu.bg",
-      "applyUrl": "https://www.shu.bg"
+      "applyUrl": "https://www.shu.bg/en/admission-en/"
     },
     "48": {
       "name": "Technical University of Gabrovo",
@@ -6831,7 +6832,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€0 - €240 / semester (BG/EU; priority materials specialties tuition-free)",
       "website": "https://www.tugab.bg",
-      "applyUrl": "https://www.tugab.bg/priem/kandidatstudentski-priem"
+      "applyUrl": "https://www.tugab.bg/en/admission"
     },
     "47": {
       "name": "Medical University – Pleven",
@@ -6841,7 +6842,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€205 - €300 / semester (BG/EU); Medicine in English €9,000 / year",
       "website": "https://www.mu-pleven.bg",
-      "applyUrl": "https://ksk.mu-pleven.bg"
+      "applyUrl": "https://www.mu-pleven.bg/index.php/en/admission-en"
     },
     "46": {
       "name": "Trakia University",
@@ -6861,7 +6862,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€160 - €360 / semester (BG/EU, state-subsidised)",
       "website": "https://www.uni-ruse.bg",
-      "applyUrl": "https://www.uni-ruse.bg/admission"
+      "applyUrl": "https://www.uni-ruse.bg/en/directorates/FSD"
     },
     "44": {
       "name": "Vasil Levski National Military University",
@@ -6881,7 +6882,7 @@
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "≈ €350 - €540 / year (BG/EU)",
       "website": "https://www.uni-vt.bg",
-      "applyUrl": "https://www.uni-vt.bg/bul/"
+      "applyUrl": "https://www.uni-vt.bg/eng/pages/?page=50"
     },
     "42": {
       "name": "National Academy of Art – Burgas Branch",
@@ -6891,7 +6892,7 @@
       "degree": "Bachelor / Master",
       "tuitionRange": "€350 - €520 / year (BG/EU)",
       "website": "https://nha.bg/bg/kategoriq/filial-burgas",
-      "applyUrl": "https://nha.bg/bg/kategoriq/filial-burgas"
+      "applyUrl": "https://nha.bg/bg/kategoriq/kandidatstvane"
     },
     "41": {
       "name": "Burgas Free University",
@@ -6961,7 +6962,7 @@
       "degree": "Bachelor/Master",
       "tuitionRange": "€0 - €10,000 / year",
       "website": "https://www.mu-varna.bg",
-      "applyUrl": "https://www.mu-varna.bg"
+      "applyUrl": "https://www.mu-varna.bg/EN/Admission/Pages/default.aspx"
     },
     "3": {
       "name": "University of Economics – Varna",
@@ -6991,7 +6992,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€848 – €1,800 / semester",
       "website": "https://www.vfu.bg",
-      "applyUrl": "https://ksp.vfu.bg"
+      "applyUrl": "https://www.vfu.bg/admission-2.html"
     },
     "6": {
       "name": "University of Management",
@@ -7001,7 +7002,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€850 – €2,400 / semester",
       "website": "https://www.vum.bg",
-      "applyUrl": "https://vum.bg/bg/kandidatstvai-onlain/"
+      "applyUrl": "https://vum.bg/apply-online/"
     },
     "7": {
       "name": "Sofia University",
@@ -7041,7 +7042,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€0 - €10,340 / year",
       "website": "https://mu-sofia.bg",
-      "applyUrl": "https://mu-sofia.bg"
+      "applyUrl": "https://mu-sofia.bg/en/admission/"
     },
     "11": {
       "name": "New Bulgarian University",
@@ -7071,7 +7072,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€430 - €5,000 / year",
       "website": "https://uctm.edu",
-      "applyUrl": "https://uctm.edu/en/"
+      "applyUrl": "https://uctm.edu/en/index.php?option=com_sppagebuilder&view=page&id=628"
     },
     "14": {
       "name": "University of Mining and Geology “St. Ivan Rilski”",
@@ -7081,7 +7082,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€430 - €3,800 / year",
       "website": "https://mgu.bg",
-      "applyUrl": "https://mgu.bg/en/"
+      "applyUrl": "https://mgu.inventum.tech/"
     },
     "15": {
       "name": "University of Forestry",
@@ -7091,7 +7092,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€430 - €4,500 / year",
       "website": "https://ltu.bg",
-      "applyUrl": "https://ltu.bg/en/"
+      "applyUrl": "https://ltu.bg/en/admission/"
     },
     "16": {
       "name": "University of Library Studies and Information Technologies",
@@ -7101,7 +7102,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€530 - €4,600 / year",
       "website": "https://www.unibit.bg",
-      "applyUrl": "https://apply.unibit.bg"
+      "applyUrl": "https://www.unibit.bg/en/apply/apply-bachelor/regular-part-time-bachelor"
     },
     "17": {
       "name": "Todor Kableshkov University of Transport",
@@ -7111,7 +7112,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€300 - €3,000 / year",
       "website": "https://www.vtu.bg/en/",
-      "applyUrl": "https://www.vtu.bg/admission-vtu/"
+      "applyUrl": "https://www.vtu.bg/en/admission-international-students/"
     },
     "18": {
       "name": "University of Telecommunications and Post",
@@ -7121,7 +7122,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€360 - €2,900 / year",
       "website": "https://www.utp.bg/en/",
-      "applyUrl": "https://www.utp.bg/en/bachelor-admission/"
+      "applyUrl": "https://www.utp.bg/en/admission-of-students/"
     },
     "19": {
       "name": "University of Insurance and Finance (VUZF)",
@@ -7131,7 +7132,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€1,000 - €3,410 / semester",
       "website": "https://uzf.bg/en",
-      "applyUrl": "https://uzf.bg/en/programs"
+      "applyUrl": "https://uzf.bg/en/admission"
     },
     "20": {
       "name": "National Sports Academy “Vasil Levski”",
@@ -7141,7 +7142,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€1,230 - €3,300 / year",
       "website": "https://www.nsa.bg/en",
-      "applyUrl": "https://www.nsa.bg/en"
+      "applyUrl": "https://www.nsa.bg/en/page,1905"
     },
     "21": {
       "name": "VSU “Lyuben Karavelov”",
@@ -7161,7 +7162,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€2,308 - €3,500 / year",
       "website": "https://nha.bg/en",
-      "applyUrl": "https://nha.bg/en"
+      "applyUrl": "https://nha.bg/bg/kategoriq/kandidatstvane"
     },
     "23": {
       "name": "National Academy of Music",
@@ -7181,7 +7182,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€0 - €3,000 / year",
       "website": "https://rndc.bg/en/",
-      "applyUrl": "https://rndc.bg/en/"
+      "applyUrl": "https://rndc.bg/priem-na-studenti/"
     },
     "25": {
       "name": "National Academy of Theatre and Film Arts",
@@ -7201,7 +7202,7 @@
       "degree": "Bachelor and Master",
       "tuitionRange": "€0 - €3,000 / year",
       "website": "https://www.mvr.bg/academy/en",
-      "applyUrl": "https://www.mvr.bg/academy/en"
+      "applyUrl": "https://www.mvr.bg/academy/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC"
     },
     "27": {
       "name": "Luben Groys Theatre College",
@@ -7211,7 +7212,7 @@
       "degree": "Professional Bachelor (Acting)",
       "tuitionRange": "€2,730 / year",
       "website": "https://www.lgroys-college.com/new/",
-      "applyUrl": "https://www.lgroys-college.com/new/admissionsdramathetre.html"
+      "applyUrl": "https://lubengroys-college.com/admissions"
     },
     "28": {
       "name": "MT&M College",
@@ -7231,7 +7232,7 @@
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€150 - €1,360 / semester",
       "website": "https://www.swu.bg/en/",
-      "applyUrl": "https://www.swu.bg/en/for-candidate-students/"
+      "applyUrl": "https://www.swu.bg/en/prospsten"
     },
     "30": {
       "name": "American University in Bulgaria",
@@ -7251,7 +7252,7 @@
       "degree": "Professional Bachelor (Tourism / Business)",
       "tuitionRange": "€560 - €750 / year",
       "website": "https://cotur.bg/",
-      "applyUrl": "https://cotur.bg/"
+      "applyUrl": "https://cotur.bg/%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%B0-%D0%B4%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC-2022-2023-%D0%B3/"
     },
     "32": {
       "name": "University of Plovdiv “Paisii Hilendarski”",
@@ -7261,7 +7262,7 @@
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€350 - €500 / year (BG/EU)",
       "website": "https://uni-plovdiv.bg/en/",
-      "applyUrl": "https://uni-plovdiv.bg/en/pages/index/19/"
+      "applyUrl": "https://uni-plovdiv.bg/en/pages/index/59/"
     },
     "33": {
       "name": "Medical University of Plovdiv",
@@ -7271,7 +7272,7 @@
       "degree": "Master (Medicine, Dental, Pharmacy) / Bachelor",
       "tuitionRange": "€6,200 - €10,000 / year (English)",
       "website": "https://mu-plovdiv.bg/en/",
-      "applyUrl": "https://mu-plovdiv.bg/en/prospective-students/"
+      "applyUrl": "https://mu-plovdiv.bg/en/admission-info/"
     },
     "34": {
       "name": "Technical University of Sofia – Plovdiv Branch",
@@ -7281,7 +7282,7 @@
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€300 - €360 / semester (BG/EU)",
       "website": "https://www.tu-plovdiv.bg/en/",
-      "applyUrl": "https://www.tu-plovdiv.bg/en/"
+      "applyUrl": "https://www.tu-plovdiv.bg/en/admission/"
     },
     "35": {
       "name": "Agricultural University – Plovdiv",
@@ -7291,7 +7292,7 @@
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€350 - €500 / year (BG/EU)",
       "website": "https://www.au-plovdiv.bg/en/",
-      "applyUrl": "https://www.au-plovdiv.bg/en/"
+      "applyUrl": "https://www.au-plovdiv.bg/en/admission-agricultural-university"
     },
     "36": {
       "name": "University of Food Technologies – Plovdiv",
@@ -7301,7 +7302,7 @@
       "degree": "Bachelor / Master / Doctoral",
       "tuitionRange": "€350 - €500 / year (BG/EU)",
       "website": "https://uft-plovdiv.bg/en/",
-      "applyUrl": "https://uft-plovdiv.bg/en/"
+      "applyUrl": "https://uft-plovdiv.bg/chujdestranni-studenti-priem/"
     }
   },
   "universityProfiles": {

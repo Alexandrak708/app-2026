@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Pressable, Linking, Platform } from 'react-native';
+import { View, Text, Linking, Platform } from 'react-native';
+import { Pressable } from '@/components/pressable';
 import { Ionicons } from '@expo/vector-icons';
 import { useAppTheme } from '@/hooks/use-theme-color';
 import { Fonts } from '@/constants/typography';

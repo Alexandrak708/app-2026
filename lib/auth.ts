@@ -55,7 +55,8 @@ export async function signInWithGoogle(): Promise<{ error: SupabaseLikeError | n
   const redirectTo = Linking.createURL("/");
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
-    options: { redirectTo, skipBrowserRedirect: true },
+    // select_account: on a shared phone each person can pick their own Google account.
+    options: { redirectTo, skipBrowserRedirect: true, queryParams: { prompt: "select_account" } },
   });
   if (error) {
     return { error };
@@ -129,7 +130,29 @@ type AuthErrorMessages = {
   fallback: string;
 };
 
-export async function ensureProfileRecord(userId: string) {
+/**
+ * Google sign-ins carry the person's name and photo in the auth user's metadata.
+ * Returns the profile fields that are still empty and can be filled from it —
+ * never anything the user has already set themselves.
+ */
+function profileFieldsFromMetadata(
+  profile: { full_name?: string | null; avatar_url?: string | null },
+  metadata: Record<string, unknown> | undefined,
+) {
+  const text = (value: unknown) => (typeof value === "string" && value.trim() ? value.trim() : undefined);
+  const name = text(metadata?.full_name) ?? text(metadata?.name);
+  const photo = text(metadata?.avatar_url) ?? text(metadata?.picture);
+  return {
+    ...(!profile.full_name && name ? { full_name: name } : {}),
+    ...(!profile.avatar_url && photo ? { avatar_url: photo } : {}),
+  };
+}
+
+/**
+ * Make sure the signed-in user has a `profiles` row. Pass the auth user's
+ * `user_metadata` so a Google account starts with its name and photo.
+ */
+export async function ensureProfileRecord(userId: string, metadata?: Record<string, unknown>) {
   const { data, error } = await supabase
     .from("profiles")
     .upsert({ id: userId }, { onConflict: "id" })
@@ -140,7 +163,20 @@ export async function ensureProfileRecord(userId: string) {
     throw error;
   }
 
-  return data;
+  const fill = profileFieldsFromMetadata(data, metadata);
+  if (Object.keys(fill).length === 0) {
+    return data;
+  }
+
+  const { data: filled, error: fillError } = await supabase
+    .from("profiles")
+    .update(fill)
+    .eq("id", userId)
+    .select("*")
+    .single();
+
+  // The name/photo are a nicety — never let them block signing in.
+  return fillError ? data : filled;
 }
 
 export function getAuthErrorMessage(error: SupabaseLikeError | null | undefined, messages: AuthErrorMessages): string {

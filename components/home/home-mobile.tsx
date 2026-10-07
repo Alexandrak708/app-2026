@@ -1,8 +1,9 @@
 import { useMemo, useRef, useState } from "react";
 import {
-  View, Text, ScrollView, TextInput, KeyboardAvoidingView, Platform, Pressable,
+  View, Text, ScrollView, TextInput, KeyboardAvoidingView, Platform,
   TouchableOpacity, useWindowDimensions,
 } from "react-native";
+import { Pressable } from "@/components/pressable";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";

@@ -5,7 +5,6 @@ import {
   KeyboardAvoidingView,
   Modal,
   Platform,
-  Pressable,
   ScrollView,
   Text,
   TextInput,
@@ -14,6 +13,7 @@ import {
   type NativeScrollEvent,
   type NativeSyntheticEvent,
 } from "react-native";
+import { Pressable } from "@/components/pressable";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { Image as ExpoImage } from "expo-image";
@@ -959,7 +959,8 @@ function TopicChips({ keyFocus, side, desktop }: { keyFocus: string; side: Side;
   return (
     <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, justifyContent: side === 0 ? "flex-end" : "flex-start" }}>
       {topics.slice(0, limit).map((topic) => (
-        <View key={topic} style={{ paddingHorizontal: desktop ? 12 : 9, paddingVertical: desktop ? 6 : 5, borderRadius: 999, backgroundColor: sides.tint[side], maxWidth: "100%" }}>
+        // A pill on one line; a long topic that wraps becomes a rounded box (a 999 radius would cut into its lines).
+        <View key={topic} style={{ paddingHorizontal: desktop ? 12 : 10, paddingVertical: desktop ? 6 : 5, borderRadius: desktop ? 17 : 14, backgroundColor: sides.tint[side], maxWidth: "100%" }}>
           <Text style={{ fontFamily: Fonts.body, fontSize: desktop ? 13 : 11.5, lineHeight: desktop ? 18 : 15.5, color: colors.text }}>{topic}</Text>
         </View>
       ))}
@@ -995,7 +996,13 @@ function CareerList({ items, side, desktop }: { items: string[]; side: Side; des
   );
 }
 
-function OutlineButton({ label, icon, onPress, side }: { label: string; icon: IconName; onPress: () => void; side?: Side }) {
+function OutlineButton({
+  label, icon, onPress, side, compact,
+}: {
+  label: string; icon: IconName; onPress: () => void; side?: Side;
+  /** Half-width phone buttons: no trailing icon and the label may wrap, so it never gets cut off. */
+  compact?: boolean;
+}) {
   const { colors } = useAppTheme();
   const sides = useSides();
   const hover = useHover();
@@ -1008,7 +1015,7 @@ function OutlineButton({ label, icon, onPress, side }: { label: string; icon: Ic
       style={(state) => [
         pressFade(state),
         {
-          flex: 1, minHeight: 50, paddingHorizontal: 14, borderRadius: 16, borderWidth: 1,
+          flex: 1, minHeight: 50, paddingHorizontal: compact ? 10 : 14, paddingVertical: compact ? 8 : 0, borderRadius: 16, borderWidth: 1,
           flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 9,
           borderColor: hover.hovered ? accent : colors.border,
           backgroundColor: hover.hovered ? (side == null ? colors.accentTint : sides.tint[side]) : "transparent",
@@ -1017,8 +1024,8 @@ function OutlineButton({ label, icon, onPress, side }: { label: string; icon: Ic
       ]}
     >
       {side != null ? <SideDot side={side} size={9} /> : <Ionicons name={icon} size={17} color={colors.text} />}
-      <Text numberOfLines={1} style={{ flexShrink: 1, fontFamily: Fonts.bodyMedium, fontSize: 14, color: colors.text }}>{label}</Text>
-      {side != null ? <Ionicons name={icon} size={16} color={colors.text} /> : null}
+      <Text numberOfLines={compact ? 2 : 1} style={{ flexShrink: 1, fontFamily: Fonts.bodyMedium, fontSize: 14, lineHeight: 19, color: colors.text, textAlign: "center" }}>{label}</Text>
+      {side != null && !compact ? <Ionicons name={icon} size={16} color={colors.text} /> : null}
     </Pressable>
   );
 }
@@ -1687,8 +1694,8 @@ export default function CompareScreen() {
             desktop={desktop}
           />
           <View style={{ flexDirection: "row", gap: desktop ? 16 : 10 }}>
-            <OutlineButton label={desktop ? `${t("compare.openProgram")}: ${detailA.title}` : t("compare.openProgram")} icon="arrow-forward" side={0} onPress={() => openProgram(0)} />
-            <OutlineButton label={desktop ? `${t("compare.openProgram")}: ${detailB.title}` : t("compare.openProgram")} icon="arrow-forward" side={1} onPress={() => openProgram(1)} />
+            <OutlineButton label={desktop ? `${t("compare.openProgram")}: ${detailA.title}` : t("compare.openProgram")} icon="arrow-forward" side={0} compact={!desktop} onPress={() => openProgram(0)} />
+            <OutlineButton label={desktop ? `${t("compare.openProgram")}: ${detailB.title}` : t("compare.openProgram")} icon="arrow-forward" side={1} compact={!desktop} onPress={() => openProgram(1)} />
           </View>
         </View>
       ) : null}

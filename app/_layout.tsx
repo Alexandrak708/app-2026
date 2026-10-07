@@ -98,7 +98,7 @@ export default function RootLayout() {
       return;
     }
 
-    ensureProfileRecord(session.user.id).catch((error) => {
+    ensureProfileRecord(session.user.id, session.user.user_metadata).catch((error) => {
       console.error("Profile bootstrap error:", error);
     });
   }, [session]);

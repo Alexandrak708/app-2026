@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState, type ReactNode } from "react";
-import { Animated, Easing, KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, View } from "react-native";
+import { Animated, Easing, KeyboardAvoidingView, Platform, ScrollView, Text, View } from "react-native";
+import { Pressable } from "@/components/pressable";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -184,9 +185,11 @@ export function ToggleRow({
 
 /** A link row: icon, title, short "what's in there" hint and a chevron. */
 export function NavRow({
-  icon, title, hint, onPress, tone,
+  icon, title, hint, onPress, tone, role = "link",
 }: {
   icon: IconName; title: string; hint?: string; onPress: () => void; tone?: "danger";
+  /** "button" for rows that act (e.g. sign out) rather than open a page. */
+  role?: "link" | "button";
 }) {
   const { colors } = useAppTheme();
   const danger = useDanger();
@@ -196,7 +199,7 @@ export function NavRow({
     <Pressable
       onPress={onPress}
       {...hover}
-      accessibilityRole="link"
+      accessibilityRole={role}
       accessibilityLabel={title}
       accessibilityHint={hint}
       style={(state) => [
@@ -493,6 +496,18 @@ export function OutlineButton({ label, icon, onPress, tone, disabled }: { label:
 // ─── Standalone screen shell ─────────────────────────────────────────────────
 
 /**
+ * Solid page-coloured strip behind the phone's status bar (clock, Dynamic
+ * Island), so scrolled content disappears under it instead of behind the clock.
+ * Renders nothing on web. Place it in an absolutely positioned top layer.
+ */
+export function StatusBarScrim() {
+  const { colors } = useAppTheme();
+  const insets = useSafeAreaInsets();
+  if (isWeb) return null;
+  return <View style={{ height: insets.top, backgroundColor: colors.background }} />;
+}
+
+/**
  * Frame for the standalone settings screens: back pill, kicker, serif title,
  * intro and content in a readable column. Native gets the safe-area top inset
  * and keyboard avoidance (the profile editor has inputs).
@@ -535,6 +550,9 @@ export function SettingsPage({
           </View>
         </ContentWrap>
       </ScrollView>
+      <View pointerEvents="none" style={{ position: "absolute", top: 0, left: 0, right: 0 }}>
+        <StatusBarScrim />
+      </View>
     </KeyboardAvoidingView>
   );
 }

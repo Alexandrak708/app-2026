@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { ActivityIndicator, Alert, Animated, Easing, Platform, Pressable, ScrollView, Text, View } from "react-native";
+import { ActivityIndicator, Alert, Animated, Easing, Platform, ScrollView, Text, View } from "react-native";
+import { Pressable } from "@/components/pressable";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import type { User } from "@supabase/supabase-js";
@@ -21,7 +22,7 @@ import SiteFooter from "@/components/home/site-footer";
 import { WEB_PAGE_GUTTER, WEB_PAGE_MAX_WIDTH } from "@/components/web-top-nav";
 import { Wordmark } from "@/components/wordmark";
 import {
-  FieldLabel, LanguagePicker, NavRow, OutlineButton, RowDivider, SectionHeading, SettingsCard, ThemePicker, ToggleRow,
+  FieldLabel, LanguagePicker, NavRow, RowDivider, SectionHeading, SettingsCard, StatusBarScrim, ThemePicker, ToggleRow,
   pressFade, type IconName,
 } from "@/components/settings-ui";
 import { DangerZone, DeleteAccountDialog, NotificationsFootnote, ProfileCard } from "@/components/settings-parts";
@@ -31,6 +32,8 @@ import type { Profile } from "@/types/profile";
 
 /** Phone layout column (native + narrow web). */
 const PHONE_MAX_WIDTH = 720;
+/** The compact title bar that slides in under the status bar on phones. */
+const COMPACT_BAR_HEIGHT = 46;
 
 type SectionKey = "appearance" | "accessibility" | "notifications" | "support" | "account";
 const SECTIONS: { key: SectionKey; icon: IconName }[] = [
@@ -99,6 +102,8 @@ export default function Settings() {
   const [deleteError, setDeleteError] = useState("");
 
   const [pulseAnim] = useState(() => new Animated.Value(1));
+  // Phone scroll offset — fades in the compact title bar once the big title has scrolled away.
+  const [scrollAnim] = useState(() => new Animated.Value(0));
 
   const assetToBytes = async (asset: ImagePicker.ImagePickerAsset) => {
     if (Platform.OS === "web") {
@@ -155,7 +160,7 @@ export default function Settings() {
 
         if (au && active) {
           setAuthUser(au);
-          const data = await ensureProfileRecord(au.id);
+          const data = await ensureProfileRecord(au.id, au.user_metadata);
 
           if (data && active) {
             setUser(data);
@@ -382,10 +387,12 @@ export default function Settings() {
     );
   }
 
+  // Native keeps the status bar + compact title bar over the content, so land below them.
+  const topChrome = isWeb ? 16 : insets.top + COMPACT_BAR_HEIGHT + 14;
   const jumpTo = (key: SectionKey) => {
     const y = sectionY.current[key];
     if (y == null) return;
-    scrollRef.current?.scrollTo({ y: Math.max(0, columnY.current + y - 16), animated: !reduceMotion });
+    scrollRef.current?.scrollTo({ y: Math.max(0, columnY.current + y - topChrome), animated: !reduceMotion });
   };
 
   const section = (key: SectionKey, children: ReactNode, hint?: string) => (
@@ -402,7 +409,13 @@ export default function Settings() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
-      <ScrollView ref={scrollRef} showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 120 }}>
+      <ScrollView
+        ref={scrollRef}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 120 }}
+        scrollEventThrottle={16}
+        onScroll={(e) => scrollAnim.setValue(e.nativeEvent.contentOffset.y)}
+      >
         <ContentWrap maxWidth={PHONE_MAX_WIDTH}>
           <View style={{ paddingHorizontal: 20, paddingTop: (isWeb ? 20 : insets.top) + 22 }}>
             {pageTitle(false)}
@@ -497,10 +510,10 @@ export default function Settings() {
               {section(
                 "account",
                 <View style={{ gap: 14 }}>
+                  {/* Name, photo and "Edit profile" live in the card at the top, so this is just sign-out + delete. */}
                   <SettingsCard>
-                    <NavRow icon="person-outline" title={t("settings.items.profileSecurity")} hint={t("settings.hints.profile")} onPress={() => go("/profile")} />
+                    <NavRow icon="log-out-outline" title={t("settings.logout")} hint={t("settings.hints.logout")} onPress={handleLogout} role="button" />
                   </SettingsCard>
-                  <OutlineButton label={t("settings.logout")} icon="log-out-outline" onPress={handleLogout} />
                   <DangerZone onDelete={handleDeleteAccount} deleting={deleting} />
                 </View>,
               )}
@@ -513,6 +526,22 @@ export default function Settings() {
           </View>
         </ContentWrap>
       </ScrollView>
+
+      {/* Phones: content slides under a solid status-bar strip, and a compact title appears once the big one is gone. */}
+      {!isWeb ? (
+        <View pointerEvents="none" style={{ position: "absolute", top: 0, left: 0, right: 0 }}>
+          <StatusBarScrim />
+          <Animated.View
+            style={{
+              height: COMPACT_BAR_HEIGHT, alignItems: "center", justifyContent: "center",
+              backgroundColor: colors.background, borderBottomWidth: 1, borderBottomColor: colors.softBorder,
+              opacity: scrollAnim.interpolate({ inputRange: [40, 80], outputRange: [0, 1], extrapolate: "clamp" }),
+            }}
+          >
+            <Text numberOfLines={1} style={{ fontFamily: Fonts.heading, fontSize: 19, color: colors.text }}>{t("settings.title")}</Text>
+          </Animated.View>
+        </View>
+      ) : null}
       {dialog}
     </View>
   );

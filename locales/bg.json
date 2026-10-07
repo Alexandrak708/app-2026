@@ -1896,7 +1896,8 @@
       "about": "Какво е U&I и какво можеш с него",
       "terms": "Правилата за ползване",
       "privacy": "Как пазим данните ти",
-      "photoCredits": "Авторите на снимките на университетите"
+      "photoCredits": "Авторите на снимките на университетите",
+      "logout": "Излез от профила си на това устройство."
     }
   },
   "appearance": {
@@ -6801,7 +6802,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€1000 – €2300 / семестър (частно; на английски по-високо)",
       "website": "https://ibsedu.bg",
-      "applyUrl": "https://ibsedu.bg/en/"
+      "applyUrl": "https://ibsedu.bg/kandidat-studenti/"
     },
     "50": {
       "name": "Стопанска академия „Д. А. Ценов“",
@@ -6811,7 +6812,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€180 – €1400 / семестър (БГ/ЕС държавна поръчка до чуждестранни)",
       "website": "https://www.uni-svishtov.bg",
-      "applyUrl": "https://www.uni-svishtov.bg/en/admission"
+      "applyUrl": "https://www.uni-svishtov.bg/bg/admission"
     },
     "49": {
       "name": "Шуменски университет",
@@ -6821,7 +6822,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€0 – €200 / семестър (БГ/ЕС; физика и химия – безплатно)",
       "website": "https://www.shu.bg",
-      "applyUrl": "https://www.shu.bg"
+      "applyUrl": "https://www.shu.bg/admission/"
     },
     "48": {
       "name": "Технически университет – Габрово",
@@ -6841,7 +6842,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€205 – €300 / семестър (БГ/ЕС); медицина на английски €9000 / година",
       "website": "https://www.mu-pleven.bg",
-      "applyUrl": "https://ksk.mu-pleven.bg"
+      "applyUrl": "https://www.mu-pleven.bg/index.php/bg/admission/bulgarian-students"
     },
     "46": {
       "name": "Тракийски университет",
@@ -6851,7 +6852,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€0 – €280 / семестър (БГ/ЕС; сестра и акушерка безплатно)",
       "website": "https://trakia-uni.bg",
-      "applyUrl": "https://trakia-uni.bg/en/admission/"
+      "applyUrl": "https://trakia-uni.bg/bg/admission/"
     },
     "45": {
       "name": "Русенски университет",
@@ -6861,7 +6862,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€160 – €360 / семестър (БГ/ЕС, държавна поръчка)",
       "website": "https://www.uni-ruse.bg",
-      "applyUrl": "https://www.uni-ruse.bg/admission"
+      "applyUrl": "https://www.uni-ruse.bg/admission/Pages/default.aspx"
     },
     "44": {
       "name": "Национален военен университет „Васил Левски“",
@@ -6881,7 +6882,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "≈ €350 - €540 / година (БГ/ЕС)",
       "website": "https://www.uni-vt.bg",
-      "applyUrl": "https://www.uni-vt.bg/bul/"
+      "applyUrl": "https://www.uni-vt.bg/bul/pages/?zid=1&page=2"
     },
     "42": {
       "name": "Национална художествена академия – Филиал Бургас",
@@ -6891,7 +6892,7 @@
       "degree": "Бакалавър / Магистър",
       "tuitionRange": "€350 - €520 / година (БГ/ЕС)",
       "website": "https://nha.bg/bg/kategoriq/filial-burgas",
-      "applyUrl": "https://nha.bg/bg/kategoriq/filial-burgas"
+      "applyUrl": "https://nha.bg/bg/kategoriq/kandidatstvane"
     },
     "41": {
       "name": "Бургаски свободен университет",
@@ -6901,7 +6902,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "€1800 / семестър (≈ €3600/год.)",
       "website": "https://www.bfu.bg/en",
-      "applyUrl": "https://www.bfu.bg/en/priem"
+      "applyUrl": "https://www.bfu.bg/bg/priem"
     },
     "40": {
       "name": "Бургаски държавен университет „Проф. д-р Асен Златаров“",
@@ -6911,7 +6912,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "≈ €400 - €600 / година (БГ/ЕС)",
       "website": "https://www.btu.bg",
-      "applyUrl": "https://btu.bg/index.php/en/admission/admission-steps"
+      "applyUrl": "https://btu.bg/index.php/bg/priem"
     },
     "39": {
       "name": "Университет по агробизнес и развитие на регионите",
@@ -6961,7 +6962,7 @@
       "degree": "Бакалавър/Магистър",
       "tuitionRange": "€0 - €10,000 / година",
       "website": "https://www.mu-varna.bg",
-      "applyUrl": "https://www.mu-varna.bg"
+      "applyUrl": "https://www.mu-varna.bg/BG/Admission/Pages/default.aspx"
     },
     "3": {
       "name": "Икономически университет – Варна",
@@ -6971,7 +6972,7 @@
       "degree": "Бакалавър/Магистър",
       "tuitionRange": "245 € - 1500 € / на семестър",
       "website": "https://www.ue-varna.bg",
-      "applyUrl": "https://ue-varna.bg/en/p/7742/admission"
+      "applyUrl": "https://ue-varna.bg/bg/p/7742/priem"
     },
     "4": {
       "name": "Военноморски университет",
@@ -6981,7 +6982,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€2 750 – €3 900 / година",
       "website": "https://www.naval-acad.bg",
-      "applyUrl": "https://www.naval-acad.bg/home/admission/bachelor"
+      "applyUrl": "https://fees.nvna.eu/"
     },
     "5": {
       "name": "Варненски свободен университет",
@@ -7031,7 +7032,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€179 – €2 000 / семестър",
       "website": "https://www.unwe.bg",
-      "applyUrl": "https://priem.unwe.bg"
+      "applyUrl": "https://www.unwe.bg/bg/pages/12900/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC.html"
     },
     "10": {
       "name": "Медицински университет – София",
@@ -7041,7 +7042,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€0 - €10 340 / година",
       "website": "https://mu-sofia.bg",
-      "applyUrl": "https://mu-sofia.bg"
+      "applyUrl": "https://mu-sofia.bg/priem/"
     },
     "11": {
       "name": "Нов български университет",
@@ -7071,7 +7072,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€430 - €5 000 / година",
       "website": "https://uctm.edu",
-      "applyUrl": "https://uctm.edu/bg/"
+      "applyUrl": "https://applicants.uctm.edu/"
     },
     "14": {
       "name": "Минно-геоложки университет „Св. Иван Рилски“",
@@ -7081,7 +7082,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€430 - €3 800 / година",
       "website": "https://mgu.bg",
-      "applyUrl": "https://mgu.bg/"
+      "applyUrl": "https://mgu.inventum.tech/"
     },
     "15": {
       "name": "Лесотехнически университет",
@@ -7091,7 +7092,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€430 - €4 500 / година",
       "website": "https://ltu.bg",
-      "applyUrl": "https://ltu.bg/"
+      "applyUrl": "https://ltu.bg/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC/"
     },
     "16": {
       "name": "Университет по библиотекознание и информационни технологии",
@@ -7121,7 +7122,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€360 - €2 900 / година",
       "website": "https://www.utp.bg/en/",
-      "applyUrl": "https://www.utp.bg/en/bachelor-admission/"
+      "applyUrl": "https://www.utp.bg/admission-of-students/"
     },
     "19": {
       "name": "Висше училище по застраховане и финанси (ВУЗФ)",
@@ -7131,7 +7132,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€1 000 - €3 410 / семестър",
       "website": "https://uzf.bg/en",
-      "applyUrl": "https://uzf.bg/en/programs"
+      "applyUrl": "https://uzf.bg/kandidat-studenti"
     },
     "20": {
       "name": "Национална спортна академия „Васил Левски“",
@@ -7141,7 +7142,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€1 230 - €3 300 / година",
       "website": "https://www.nsa.bg/en",
-      "applyUrl": "https://www.nsa.bg/en"
+      "applyUrl": "https://www.nsa.bg/bg/page,1905"
     },
     "21": {
       "name": "ВСУ „Любен Каравелов“",
@@ -7151,7 +7152,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€430 - €3 000 / година",
       "website": "https://vsu.bg/en_gb/",
-      "applyUrl": "https://priem.vsu.bg/?lang=en"
+      "applyUrl": "https://priem.vsu.bg/"
     },
     "22": {
       "name": "Национална художествена академия",
@@ -7161,7 +7162,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€2 308 - €3 500 / година",
       "website": "https://nha.bg/en",
-      "applyUrl": "https://nha.bg/en"
+      "applyUrl": "https://nha.bg/bg/kategoriq/kandidatstvane"
     },
     "23": {
       "name": "Национална музикална академия",
@@ -7171,7 +7172,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€450 - €8 500 / година",
       "website": "https://nma.bg/en/",
-      "applyUrl": "https://nma.bg/en/admission/"
+      "applyUrl": "https://nma.bg/priem/"
     },
     "24": {
       "name": "Военна академия „Г. С. Раковски“",
@@ -7181,7 +7182,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€0 - €3 000 / година",
       "website": "https://rndc.bg/en/",
-      "applyUrl": "https://rndc.bg/en/"
+      "applyUrl": "https://rndc.bg/priem-na-studenti/"
     },
     "25": {
       "name": "Национална академия за театрално и филмово изкуство",
@@ -7191,7 +7192,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€920 - €6 000 / година",
       "website": "https://natfiz.bg/en/",
-      "applyUrl": "https://natfiz.bg/en/european-citizenship/"
+      "applyUrl": "https://ksk.natfiz.bg/"
     },
     "26": {
       "name": "Академия на МВР",
@@ -7201,7 +7202,7 @@
       "degree": "Бакалавър и магистър",
       "tuitionRange": "€0 - €3 000 / година",
       "website": "https://www.mvr.bg/academy/en",
-      "applyUrl": "https://www.mvr.bg/academy/en"
+      "applyUrl": "https://www.mvr.bg/academy/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC"
     },
     "27": {
       "name": "Театрален колеж „Любен Гройс“",
@@ -7211,7 +7212,7 @@
       "degree": "Професионален бакалавър (Актьорство)",
       "tuitionRange": "€2 730 / година",
       "website": "https://www.lgroys-college.com/new/",
-      "applyUrl": "https://www.lgroys-college.com/new/admissionsdramathetre.html"
+      "applyUrl": "https://lubengroys-college.com/admissions"
     },
     "28": {
       "name": "МТ&М Колеж",
@@ -7231,7 +7232,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "€150 - €1 360 / семестър",
       "website": "https://www.swu.bg/en/",
-      "applyUrl": "https://www.swu.bg/en/for-candidate-students/"
+      "applyUrl": "https://www.swu.bg/bg/prospectivestbg"
     },
     "30": {
       "name": "Американски университет в България",
@@ -7251,7 +7252,7 @@
       "degree": "Професионален бакалавър (Туризъм / Бизнес)",
       "tuitionRange": "€560 - €750 / година",
       "website": "https://cotur.bg/",
-      "applyUrl": "https://cotur.bg/"
+      "applyUrl": "https://cotur.bg/%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%B0-%D0%B4%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC-2022-2023-%D0%B3/"
     },
     "32": {
       "name": "Пловдивски университет „Паисий Хилендарски“",
@@ -7261,7 +7262,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "€350 - €500 / година (БГ/ЕС)",
       "website": "https://uni-plovdiv.bg/en/",
-      "applyUrl": "https://uni-plovdiv.bg/en/pages/index/19/"
+      "applyUrl": "https://uni-plovdiv.bg/pages/index/59/"
     },
     "33": {
       "name": "Медицински университет – Пловдив",
@@ -7271,7 +7272,7 @@
       "degree": "Магистър (Медицина, Дентална, Фармация) / Бакалавър",
       "tuitionRange": "€6 200 - €10 000 / година (английски)",
       "website": "https://mu-plovdiv.bg/en/",
-      "applyUrl": "https://mu-plovdiv.bg/en/prospective-students/"
+      "applyUrl": "https://mu-plovdiv.bg/priem/"
     },
     "34": {
       "name": "Технически университет – София, филиал Пловдив",
@@ -7281,7 +7282,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "€300 - €360 / семестър (БГ/ЕС)",
       "website": "https://www.tu-plovdiv.bg/en/",
-      "applyUrl": "https://www.tu-plovdiv.bg/en/"
+      "applyUrl": "https://www.tu-plovdiv.bg/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC/"
     },
     "35": {
       "name": "Аграрен университет – Пловдив",
@@ -7291,7 +7292,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "€350 - €500 / година (БГ/ЕС)",
       "website": "https://www.au-plovdiv.bg/en/",
-      "applyUrl": "https://www.au-plovdiv.bg/en/"
+      "applyUrl": "https://www.au-plovdiv.bg/%D0%BF%D1%80%D0%B8%D0%B5%D0%BC-%D0%BD%D0%B0-%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B8-%D0%B8-%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82%D0%B8"
     },
     "36": {
       "name": "Университет по хранителни технологии – Пловдив",
@@ -7301,7 +7302,7 @@
       "degree": "Бакалавър / Магистър / Доктор",
       "tuitionRange": "€350 - €500 / година (БГ/ЕС)",
       "website": "https://uft-plovdiv.bg/en/",
-      "applyUrl": "https://uft-plovdiv.bg/en/"
+      "applyUrl": "https://uft-plovdiv.bg/kandidat-studenti/"
     }
   },
   "universityProfiles": {

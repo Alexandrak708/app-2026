@@ -1,4 +1,5 @@
-import { ActivityIndicator, Animated, Image, Pressable, Text, TextInput, View } from "react-native";
+import { ActivityIndicator, Animated, Image, Text, TextInput, View } from "react-native";
+import { Pressable } from "@/components/pressable";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 
